@@ -529,7 +529,8 @@ def _parse_linkedin_cards(html: str) -> tuple[list[dict], int]:
 
 
 def _linkedin_search(terms: list[str], lookback_seconds: int,
-                     geos: list[dict] | None = None) -> tuple[list[dict], int]:
+                     geos: list[dict] | None = None,
+                     max_results: int = 500) -> tuple[list[dict], int]:
     """
     Per-geo, per-term, paginated LinkedIn guest-endpoint search. Dedupes by job
     ID across every geography and sorts by recency. Used by both the general
@@ -537,6 +538,11 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
 
     Returns (jobs, total_raw_cards). total_raw_cards == 0 across everything means
     LinkedIn gave us no data at all — the callers' block guard.
+
+    Pagination: the guest API returns 10 cards per page. We step by 10 to avoid
+    skipping cards. max_results caps the total cards fetched per term per geo
+    (default 500 = 50 pages). The empty-page check breaks early when a term
+    has fewer results, so the hourly watcher stays fast.
     """
     if geos is None:
         geos = LINKEDIN_GEOS
@@ -545,7 +551,7 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
     for geo in geos:
         geo_param = f"&geoId={geo['geoId']}" if geo.get("geoId") else ""
         for term in terms:
-            for start in range(0, 75, 25):
+            for start in range(0, max_results, 10):
                 time.sleep(LINKEDIN_REQUEST_DELAY + random.uniform(0, 2))
                 url = (
                     "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
@@ -561,7 +567,7 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
                 parsed, raw_count = _parse_linkedin_cards(html)
                 total_raw_cards += raw_count
                 # Break on a truly empty page, NOT on "no keyword matches" — a page
-                # of 25 off-target roles must not end pagination for the term.
+                # of 10 off-target roles must not end pagination for the term.
                 if not raw_count:
                     break
                 for p in parsed:
@@ -717,7 +723,8 @@ def _enrich_linkedin_postings(jobs: list) -> tuple[int, int]:
 
 def scrape_linkedin_recent() -> list:
     print(f"🔎 Scraping LinkedIn (last {LINKEDIN_LOOKBACK_SECONDS // 3600}h)...")
-    jobs, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, LINKEDIN_LOOKBACK_SECONDS)
+    jobs, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, LINKEDIN_LOOKBACK_SECONDS,
+                                        max_results=100)
     # Block guard (mirrors Indeed's): zero raw cards across every term means
     # LinkedIn gave us nothing — rate-limited or blocked, not a quiet hour.
     # Reuse the previous results so we don't clobber the dedupe baseline.
