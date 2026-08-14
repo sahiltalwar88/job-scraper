@@ -2500,7 +2500,7 @@ ALL_JOBS_PRUNE_DAYS = 50
 # LinkedIn's guest API reliably supports ~30 days via f_TPR; use this for the
 # one-time historical backfill (--linkedin-backfill) so new users get a full
 # picture without running hourly for weeks.
-LINKEDIN_BACKFILL_DAYS = 30
+LINKEDIN_BACKFILL_DAYS = 5
 
 
 def _merge_into_all_jobs(new_jobs: list) -> int:
