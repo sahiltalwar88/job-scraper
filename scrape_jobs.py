@@ -198,11 +198,26 @@ def is_mle_role_text(title: str, *parts: str) -> bool:
 # location_filter.terms; case-insensitive substring match on the job location.
 TARGET_LOCATIONS = [str(t).lower() for t in _cfg("location_filter.terms", [])]
 
+# Countries to reject even if a target substring matches (e.g. ", ca" matches
+# "Canada", ", wa" matches "Wales"). LinkedIn's "Remote" geo returns global jobs.
+NON_US_COUNTRIES = [
+    "canada", "australia", "united kingdom", "uk", "england", "scotland",
+    "wales", "ireland", "germany", "france", "netherlands", "switzerland",
+    "sweden", "norway", "denmark", "finland", "spain", "portugal", "italy",
+    "india", "singapore", "japan", "china", "south korea", "brazil",
+    "mexico", "argentina", "south africa", "new zealand", "belgium",
+    "austria", "poland", "czech", "romania", "hungary", "israel",
+    "united arab emirates", "saudi arabia", "qatar", "egypt",
+]
+
 
 def is_target_location(location: str) -> bool:
     if not location:
         return False
     loc = location.lower()
+    # Reject non-US countries first — prevents ", ca" matching "Canada", etc.
+    if any(country in loc for country in NON_US_COUNTRIES):
+        return False
     return any(place in loc for place in TARGET_LOCATIONS)
 
 
