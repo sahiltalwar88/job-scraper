@@ -35,6 +35,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Write config.json from secret
+        run: echo "$CONFIG_JSON" > config.json
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+
       - name: Run scraper (priority-employer LinkedIn, last 24h, or 30-day backfill)
         run: |
           if [ "${{ github.event.inputs.backfill }}" = "true" ]; then

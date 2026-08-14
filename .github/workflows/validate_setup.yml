@@ -35,14 +35,15 @@ jobs:
             FAIL=$((FAIL+1))
           fi
 
-          # config.json
-          if [ -f "config.json" ]; then
-            echo "✓  config.json exists"
+          # config.json (stored as secret CONFIG_JSON, written at runtime)
+          if [ -n "$CONFIG_JSON" ]; then
+            echo "✓  CONFIG_JSON secret: configured"
             PASS=$((PASS+1))
           else
-            echo "✗  config.json missing"
-            echo "   Fix: Copy config.example.json → config.json and edit your keywords/locations."
-            echo "        (See README Step 2 or use docs/cv-to-config-prompt.md)"
+            echo "✗  CONFIG_JSON secret is NOT set"
+            echo "   Fix: Settings → Secrets and variables → Actions → New repository secret"
+            echo "        Name: CONFIG_JSON"
+            echo "        Value: contents of your local config.json"
             FAIL=$((FAIL+1))
           fi
 
@@ -50,6 +51,7 @@ jobs:
           echo "REQUIRED_FAIL=$FAIL" >> "$GITHUB_OUTPUT"
         env:
           ENABLE_DATA_COMMITS: ${{ vars.ENABLE_DATA_COMMITS }}
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
 
       - name: Check optional — notifications
         run: |
