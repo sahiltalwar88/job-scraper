@@ -2519,10 +2519,10 @@ def _load_prev_ids(json_path: str) -> set[str]:
 
 
 ALL_JOBS_PRUNE_DAYS = 50
-# LinkedIn's guest API reliably supports ~30 days via f_TPR; we use 5 days for
+# LinkedIn's guest API reliably supports ~30 days via f_TPR; we use 7 days for
 # the one-time historical backfill (--linkedin-backfill) so new users get a
 # recent picture without pulling weeks of stale listings.
-LINKEDIN_BACKFILL_DAYS = 5
+LINKEDIN_BACKFILL_DAYS = 7
 
 
 def _merge_into_all_jobs(new_jobs: list) -> int:
@@ -3007,7 +3007,7 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if "--priority-backfill" in sys.argv:
-        # One-time backfill for priority employers: uses the same 5-day LinkedIn
+        # One-time backfill for priority employers: uses the same 7-day LinkedIn
         # window as --linkedin-backfill but filtered to the priority-employer allowlist.
         backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
         print(f"🔁 Priority Employer backfill (last {LINKEDIN_BACKFILL_DAYS} days)…")
