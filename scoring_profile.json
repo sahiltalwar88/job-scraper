@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "description": "Empty scoring profile — dashboard scoring is disabled. Job fit grading is handled by the job-hunter pipeline.",
+  "settings": {
+    "title_multiplier": 3,
+    "body_multiplier": 1,
+    "score_multiplier": 1.6,
+    "generic_cap": 0,
+    "standout_threshold": 100
+  },
+  "fit_terms": [],
+  "signature_terms": [],
+  "poor_fit_terms": []
+}

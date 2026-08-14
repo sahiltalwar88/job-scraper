@@ -2497,9 +2497,9 @@ def _load_prev_ids(json_path: str) -> set[str]:
 
 
 ALL_JOBS_PRUNE_DAYS = 50
-# LinkedIn's guest API reliably supports ~30 days via f_TPR; use this for the
-# one-time historical backfill (--linkedin-backfill) so new users get a full
-# picture without running hourly for weeks.
+# LinkedIn's guest API reliably supports ~30 days via f_TPR; we use 5 days for
+# the one-time historical backfill (--linkedin-backfill) so new users get a
+# recent picture without pulling weeks of stale listings.
 LINKEDIN_BACKFILL_DAYS = 5
 
 
@@ -2912,7 +2912,11 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if "--linkedin-only" in sys.argv:
-        save_linkedin_results(scrape_linkedin_recent())
+        jobs = scrape_linkedin_recent()
+        before = len(jobs)
+        jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
+        print(f"📍 Location filter: {before} → {len(jobs)} roles")
+        save_linkedin_results(jobs)
         sys.exit(0)
 
     if "--linkedin-backfill" in sys.argv:
@@ -2924,7 +2928,9 @@ if __name__ == "__main__":
         jobs, _ = _linkedin_search(list(LINKEDIN_SEARCH_TERMS), backfill_s)
         if jobs:
             _enrich_linkedin_postings(jobs)
-        print(f"  ✅ Backfill: {len(jobs)} role(s) found")
+        before = len(jobs)
+        jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
+        print(f"  ✅ Backfill: {len(jobs)} role(s) found (location filter: {before} → {len(jobs)})")
         save_linkedin_results(jobs)
         sys.exit(0)
 
@@ -2979,7 +2985,7 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if "--priority-backfill" in sys.argv:
-        # One-time backfill for priority employers: uses the same 30-day LinkedIn
+        # One-time backfill for priority employers: uses the same 5-day LinkedIn
         # window as --linkedin-backfill but filtered to the priority-employer allowlist.
         backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
         print(f"🔁 Priority Employer backfill (last {LINKEDIN_BACKFILL_DAYS} days)…")
