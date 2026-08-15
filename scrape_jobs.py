@@ -154,8 +154,16 @@ _KEYWORD_RE = re.compile(
 # Helpers
 # ---------------------------------------------------------------------------
 
-def fetch(url, *, retries=1, _base_wait=35.0):
-    """Fetch URL, retrying once on 429 with a randomised backoff."""
+# Module-level flag: set True when fetch() hits a 429. Callers can check
+# this to increase their inter-request delay dynamically.
+_RATE_LIMITED = False
+
+
+def fetch(url, *, retries=4, _base_wait=30.0):
+    """Fetch URL, retrying on 429 with exponential backoff.
+    Sets the module-level _RATE_LIMITED flag if a 429 was encountered,
+    so callers (e.g. _linkedin_search) can increase their delay."""
+    global _RATE_LIMITED
     req = Request(url, headers=HEADERS)
     for attempt in range(retries + 1):
         try:
@@ -163,8 +171,9 @@ def fetch(url, *, retries=1, _base_wait=35.0):
                 return r.read().decode("utf-8", errors="ignore")
         except HTTPError as e:
             if e.code == 429 and attempt < retries:
-                wait = _base_wait + random.uniform(0, 15)
-                print(f"  ⏳ Rate-limited (429); waiting {wait:.0f}s then retrying…")
+                _RATE_LIMITED = True
+                wait = _base_wait * (2 ** attempt) + random.uniform(0, 15)
+                print(f"  ⏳ Rate-limited (429) on attempt {attempt + 1}/{retries + 1}; waiting {wait:.0f}s then retrying…")
                 time.sleep(wait)
                 continue
             print(f"  WARNING: Could not fetch {url}: {e}")
@@ -543,16 +552,30 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
     skipping cards. max_results caps the total cards fetched per term per geo
     (default 500 = 50 pages). The empty-page check breaks early when a term
     has fewer results, so the hourly watcher stays fast.
+
+    Rate-limit handling: fetch() retries 429s with exponential backoff. If a
+    page still comes back empty after all retries, we retry the same start
+    offset once more with a long pause — only giving up if the second attempt
+    is also empty. A module-level _RATE_LIMITED flag dynamically increases the
+    inter-request delay when 429s have been seen.
     """
+    global _RATE_LIMITED
     if geos is None:
         geos = LINKEDIN_GEOS
     jobs_by_id: dict[str, dict] = {}
     total_raw_cards = 0
+    consecutive_empty = 0
+    pages_fetched = 0
     for geo in geos:
         geo_param = f"&geoId={geo['geoId']}" if geo.get("geoId") else ""
         for term in terms:
+            term_start = pages_fetched
             for start in range(0, max_results, 10):
-                time.sleep(LINKEDIN_REQUEST_DELAY + random.uniform(0, 2))
+                # Dynamic delay: increase when we've been rate-limited
+                delay = LINKEDIN_REQUEST_DELAY + random.uniform(0, 2)
+                if _RATE_LIMITED:
+                    delay += 10  # slow down significantly after any 429
+                time.sleep(delay)
                 url = (
                     "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
                     f"?keywords={urllib.parse.quote(term)}"
@@ -563,9 +586,31 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
                 )
                 html = fetch(url)
                 if not html.strip():
-                    break
+                    # Could be rate-limited (429 exhausted retries) or genuinely
+                    # no more results. Retry once with a long pause before giving
+                    # up on this term.
+                    consecutive_empty += 1
+                    if consecutive_empty == 1:
+                        wait = 60 + random.uniform(0, 30)
+                        print(f"  ⏸  Empty response at start={start} for \"{term}\" in {geo['name']}; "
+                              f"pausing {wait:.0f}s before one retry…")
+                        time.sleep(wait)
+                        html = fetch(url)
+                        if not html.strip():
+                            print(f"  ⛔ Still empty after retry; stopping \"{term}\" in {geo['name']} "
+                                  f"at start={start}")
+                            break
+                    else:
+                        break
+                consecutive_empty = 0
                 parsed, raw_count = _parse_linkedin_cards(html)
                 total_raw_cards += raw_count
+                pages_fetched += 1
+                if pages_fetched % 10 == 0:
+                    print(f"  📊 {pages_fetched} pages fetched | "
+                          f"{len(jobs_by_id)} unique jobs | "
+                          f"{total_raw_cards} raw cards"
+                          f"{' [RATE-LIMITED — slowing down]' if _RATE_LIMITED else ''}")
                 # Break on a truly empty page, NOT on "no keyword matches" — a page
                 # of 10 off-target roles must not end pagination for the term.
                 if not raw_count:
@@ -585,6 +630,9 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
 
     jobs = list(jobs_by_id.values())
     jobs.sort(key=lambda j: -_iso_to_ts(j.get("date_posted", "")))
+    print(f"  ✅ LinkedIn search complete: {pages_fetched} pages, "
+          f"{total_raw_cards} raw cards, {len(jobs)} unique jobs"
+          f"{' (rate-limited during run)' if _RATE_LIMITED else ''}")
     return jobs, total_raw_cards
 
 
