@@ -540,6 +540,11 @@ LINKEDIN_GEOS = _cfg("locations.linkedin", [])
 # --linkedin-emit-matrix and --linkedin-backfill-partition.
 LINKEDIN_PARTITION_STATES = _cfg("locations.linkedin_partitions.states", [])
 
+# High-volume locations that hit the 1000-card cap in production. Phase 2
+# of the backfill queries these with 1-day time slices to get complete
+# coverage. Each entry: {"name": "...", "location": "..."}.
+LINKEDIN_HIGH_VOLUME_LOCATIONS = _cfg("locations.linkedin_partitions.high_volume.locations", [])
+
 # Priority-employer allowlist used by the LinkedIn-side filter to build the
 # daily "Priority Employers" digest (jobs.json), from config.json →
 # employers.priority. Match is case-insensitive on alphanum-stripped names
@@ -756,11 +761,17 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
 
 
 def _linkedin_search_partition(term: str, location: str, lookback_seconds: int,
-                                max_results: int = 1000) -> tuple[list[dict], int, bool]:
+                                max_results: int = 1000,
+                                target_date: str | None = None) -> tuple[list[dict], int, bool]:
     """
     Paginate one (term, location) partition fully (up to 1000 cards).
     Streams progress on every page. Returns (jobs, total_raw_cards, hit_cap).
     hit_cap=True means we reached ~1000 cards and may have missed results.
+
+    If target_date is set (YYYY-MM-DD), only jobs with date_posted == target_date
+    are kept. This is used for Phase 2 day-slicing: the lookback_seconds is set
+    cumulatively (e.g. day 3 uses r345600 = last 4 days), but we filter to keep
+    only jobs from the target day. Earlier days are captured by their own workers.
     """
     global _RATE_LIMITED
     jobs_by_id: dict[str, dict] = {}
@@ -825,6 +836,13 @@ def _linkedin_search_partition(term: str, location: str, lookback_seconds: int,
               f"time window (e.g. 30 min) for this partition.")
 
     jobs = list(jobs_by_id.values())
+    # Filter to target date if specified (Phase 2 day-slicing)
+    if target_date:
+        before = len(jobs)
+        jobs = [j for j in jobs if j.get("date_posted", "") == target_date]
+        if before != len(jobs):
+            print(f"  📅 Day-slice filter: {before} → {len(jobs)} jobs "
+                  f"(target date: {target_date})")
     jobs.sort(key=lambda j: -_iso_to_ts(j.get("date_posted", "")))
     print(f"  ✅ Partition complete: {pages_fetched} pages, {total_raw_cards} raw, "
           f"{len(jobs)} unique, {time.time() - start_time:.0f}s total"
@@ -3438,37 +3456,98 @@ if __name__ == "__main__":
     if "--linkedin-emit-matrix" in sys.argv:
         # Emit the work matrix for the partitioned backfill workflow.
         # Batches 2 terms per worker to stay under GitHub's 256 matrix limit.
-        # Locations = 50 states + US-wide + Remote.
+        #
+        # Two phases:
+        #   Phase 1 (default): low-volume locations, full 7-day lookback.
+        #   Phase 2 (--phase high): high-volume locations split into 1-day
+        #     slices to bypass the 1000-card cap. Each location produces 7
+        #     workers (one per day), each with a 1-day lookback window.
+        phase = "low"
+        if "--phase" in sys.argv:
+            idx = sys.argv.index("--phase")
+            phase = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else "low"
+
         terms = list(LINKEDIN_SEARCH_TERMS)
         term_batches = []
         for i in range(0, len(terms), 2):
             term_batches.append(terms[i:i+2])
-        locations = []
-        for state in LINKEDIN_PARTITION_STATES:
-            locations.append(state["location"])
-        locations.append("United States")  # US-wide
-        locations.append("Remote")         # Remote (mostly international, but cheap)
+
+        # Build the set of high-volume location strings for filtering
+        high_volume_locs = set(
+            entry["location"] for entry in LINKEDIN_HIGH_VOLUME_LOCATIONS
+            if isinstance(entry, dict) and entry.get("location")
+        )
+
         matrix = []
-        for term_batch in term_batches:
-            for location in locations:
-                if location == "United States":
-                    loc_label = "USwide"
-                elif location == "Remote":
-                    loc_label = "Remote"
-                else:
-                    loc_label = location.split(",")[0]
-                terms_label = "_".join(_slug(t) for t in term_batch)
-                matrix.append({
-                    "terms": term_batch,
-                    "location": location,
-                    "partition_key": f"{terms_label}__{loc_label}",
-                })
+        if phase == "high":
+            # Phase 2: high-volume locations, 1-day time slices.
+            # Each day-slice worker uses cumulative lookback (f_TPR=r{(N+1)*86400})
+            # and filters by date_posted to keep only the target day's jobs.
+            # LinkedIn's f_TPR only supports "last N seconds" (not date ranges),
+            # so day N fetches all jobs from the last N+1 days, then filters.
+            # Earlier days are captured by their own workers; merge deduplicates
+            # by URL.
+            backfill_days = LINKEDIN_BACKFILL_DAYS
+            now = datetime.now(timezone.utc)
+            for term_batch in term_batches:
+                for hv in LINKEDIN_HIGH_VOLUME_LOCATIONS:
+                    location = hv["location"]
+                    loc_label = "USwide" if location == "United States" else \
+                                "Remote" if location == "Remote" else \
+                                location.split(",")[0]
+                    terms_label = "_".join(_slug(t) for t in term_batch)
+                    for day in range(backfill_days):
+                        # Cumulative lookback: day 0 = last 24h, day 6 = last 168h
+                        lookback_seconds = (day + 1) * 24 * 3600
+                        # Target date: the calendar date for this day-slice
+                        target_date = (now - timedelta(days=day)).strftime("%Y-%m-%d")
+                        matrix.append({
+                            "terms": term_batch,
+                            "location": location,
+                            "partition_key": f"{terms_label}__{loc_label}_d{day}",
+                            "lookback_seconds": lookback_seconds,
+                            "target_date": target_date,
+                        })
+            print(f"  📋 Phase 2 matrix (high-volume, 1-day slices): "
+                  f"{len(matrix)} work items "
+                  f"({len(term_batches)} term-batches × "
+                  f"{len(LINKEDIN_HIGH_VOLUME_LOCATIONS)} locations × "
+                  f"{backfill_days} days)")
+        else:
+            # Phase 1: low-volume locations, full 7-day lookback.
+            # Exclude high-volume locations (they're handled in Phase 2).
+            locations = []
+            for state in LINKEDIN_PARTITION_STATES:
+                loc = state["location"]
+                if loc not in high_volume_locs:
+                    locations.append(loc)
+            # Add US-wide and Remote only if they're NOT in high-volume
+            if "United States" not in high_volume_locs:
+                locations.append("United States")
+            if "Remote" not in high_volume_locs:
+                locations.append("Remote")
+
+            for term_batch in term_batches:
+                for location in locations:
+                    if location == "United States":
+                        loc_label = "USwide"
+                    elif location == "Remote":
+                        loc_label = "Remote"
+                    else:
+                        loc_label = location.split(",")[0]
+                    terms_label = "_".join(_slug(t) for t in term_batch)
+                    matrix.append({
+                        "terms": term_batch,
+                        "location": location,
+                        "partition_key": f"{terms_label}__{loc_label}",
+                    })
+            print(f"  📋 Phase 1 matrix (low-volume, 7-day lookback): "
+                  f"{len(matrix)} work items "
+                  f"({len(term_batches)} term-batches × {len(locations)} locations)")
+        print(f"  Term batches: {term_batches}")
         matrix_path = os.path.join(OUTPUT_DIR, "linkedin_matrix.json")
         with open(matrix_path, "w", encoding="utf-8") as f:
             json.dump({"matrix": matrix}, f, indent=2, ensure_ascii=False)
-        print(f"  📋 Matrix: {len(matrix)} work items "
-              f"({len(term_batches)} term-batches × {len(locations)} locations)")
-        print(f"  Term batches: {term_batches}")
         print(f"  📄 Wrote {matrix_path}")
         gh_output = os.environ.get("GITHUB_OUTPUT")
         if gh_output:
@@ -3479,6 +3558,7 @@ if __name__ == "__main__":
     if "--linkedin-backfill-partition" in sys.argv:
         # Fan-out worker: fully paginate one partition from the discovery matrix.
         # Reads partition spec from a JSON file path argument.
+        # Supports Phase 2 day-slicing via lookback_seconds + target_date in spec.
         idx = sys.argv.index("--linkedin-backfill-partition")
         spec_path = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else ""
         if not spec_path:
@@ -3489,14 +3569,21 @@ if __name__ == "__main__":
         terms = spec["terms"]  # list of 1-2 terms
         location = spec["location"]
         partition_key = spec["partition_key"]
-        backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
-        print(f"🔁 Partition \"{partition_key}\": terms={terms}, location=\"{location}\"")
+        # Phase 1: full lookback. Phase 2: cumulative lookback + target_date filter.
+        backfill_s = spec.get("lookback_seconds", LINKEDIN_BACKFILL_DAYS * 24 * 3600)
+        target_date = spec.get("target_date")
+        if target_date:
+            print(f"🔁 Partition \"{partition_key}\": terms={terms}, "
+                  f"location=\"{location}\", target_date={target_date}")
+        else:
+            print(f"🔁 Partition \"{partition_key}\": terms={terms}, location=\"{location}\"")
         all_jobs = []
         total_raw = 0
         any_cap_hit = False
         for term in terms:
             print(f"\n  --- Term: \"{term}\" ---")
-            jobs, raw_cards, hit_cap = _linkedin_search_partition(term, location, backfill_s)
+            jobs, raw_cards, hit_cap = _linkedin_search_partition(
+                term, location, backfill_s, target_date=target_date)
             all_jobs.extend(jobs)
             total_raw += raw_cards
             any_cap_hit = any_cap_hit or hit_cap
@@ -3520,8 +3607,8 @@ if __name__ == "__main__":
         part_path = os.path.join(OUTPUT_DIR, f"linkedin_partition_{partition_key}.json")
         with open(part_path, "w", encoding="utf-8") as f:
             json.dump({"partition_key": partition_key, "terms": terms, "location": location,
-                       "jobs": all_jobs, "raw_cards": total_raw, "hit_cap": any_cap_hit}, f,
-                      indent=2, ensure_ascii=False)
+                       "jobs": all_jobs, "raw_cards": total_raw, "hit_cap": any_cap_hit},
+                      f, indent=2, ensure_ascii=False)
         print(f"  📄 Wrote {part_path}")
         sys.exit(0)
 
