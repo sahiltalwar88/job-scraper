@@ -343,7 +343,7 @@
   .scorechip.fit { cursor: help; }
   .scorechip.top { box-shadow: 0 0 0 1px rgba(34,197,94,0.5); }
 
-  /* Priority-topic star/highlight (microplastics, ecotox, EDCs, R/Shiny) */
+  /* Priority-topic star/highlight (distributed systems, dev productivity, AI/ML, etc.) */
   .job.starred { outline: 1.5px solid rgba(251,191,36,0.55); outline-offset: -1px;
     background: rgba(251,191,36,0.06); }
   .starbadge { color: #fbbf24; font-size: 14px; margin-right: 4px; cursor: help;
@@ -564,6 +564,7 @@
   <a href="https://scottcoff.in" target="_blank" rel="noopener noreferrer">Dr. Scott Coffin</a>,
   based on the original Bay Area ML job scraper by
   <a href="https://github.com/ernestod1998" target="_blank" rel="noopener noreferrer">Ernesto Diaz</a>.
+  Forked and adapted for engineering leadership roles.
 </footer>
 
 </div>
@@ -658,32 +659,21 @@
   //            applyConfig() overrides them from config.json at load. ----------
   let CONFIG = {};
 
-  // Company exclusion — drop roles from these companies (case-insensitive
-  // substring on the company name). Mirrors employers.exclude in config.json.
-  let EXCLUDE_COMPANY = [
-    'pharmaceutic', 'pharma ', 'therapeutics', 'biopharma', 'biotech', 'biologics',
-    'biosciences', 'genomics', 'oncolog', 'biomedicine', 'genentech', 'gilead',
-    'pfizer', 'merck', 'novartis', 'abbvie', 'regeneron', 'moderna', 'biogen',
-    'sanofi', 'astrazeneca', 'takeda', 'biomarin', 'alnylam', 'incyte', 'exelixis',
-    'neurocrine', 'ionis', 'denali', 'acadia', 'adarx', 'genmab', 'galapagos',
-    'insitro', 'recursion', 'cytokinetics', 'vertex pharm', 'bristol-myers', 'bristol myers',
-  ];
+  // Company exclusion — drop roles from companies in config.json → employers.exclude.
+  // (Previously hardcoded pharma list for env/tox scraping — now driven by config.)
+  let EXCLUDE_COMPANY = [];
   function isPharma(company) {
     const c = (company || '').toLowerCase();
-    return EXCLUDE_COMPANY.some(t => t && c.includes(t));
+    return EXCLUDE_COMPANY.some(t => t && t && c.includes(t));
   }
 
   // Role buckets for the Role filter: [name, RegExp], applied top-to-bottom.
   let ROLE_CATS = [
-    ['Toxicology', /toxicolog/],
-    ['Risk/Exposure', /risk assess|exposure|hazard|dose.response|pharmacokinetic|toxicokinetic/],
-    ['Water', /water|drinking water|watershed|aquatic|marine|limnolog/],
-    ['Contaminants', /microplastic|nanoplastic|pfas|contaminant|pollution|remediation/],
-    ['Environmental Health', /environmental health|epidemiolog|public health/],
-    ['Environmental Science', /environmental|ecolog|sustainab|conservation|chemist/],
-    ['Policy/Regulatory', /policy|regulatory|stewardship|registration|reach\b|affairs/],
-    ['Data Science', /data scien|data analyst|biostatistic|informatic/],
-    ['Academic', /professor|faculty|lecturer/],
+    ['VP/Head', /vp|vice president|head of/i],
+    ['Director', /director/i],
+    ['Engineering Manager', /engineering manager/i],
+    ['Platform', /platform/i],
+    ['Software', /software/i],
   ];
   let ROLE_NAMES = ROLE_CATS.map(r => r[0]).concat('Other');
   function classifyRole(title) {
@@ -801,39 +791,16 @@
   }
 
   // ---------- Resume-fit scoring (client-side, deterministic) ----------
-  // Weighted keywords from Dr. Coffin's specializations. Title matches count
-  // ~3x (title is the strongest signal); company / agent "why" text also count.
-  // Tune these weights freely — higher = stronger pull toward the top of Rank.
-  let FIT_TERMS = [
-    // Tier 1 — his signature topics
-    [/microplastic|nanoplastic|plastic pollution|microfiber/, 12],
-    [/ecotoxicolog/, 12],
-    [/risk assess|risk character|human health risk|ecological risk/, 11],
-    [/\bexposure\b|exposure assess|exposure scien/, 10],
-    [/\bqsar\b|read-across|structure.activity/, 11],
-    [/\bpfas\b|per- and polyfluoro|perfluoro|forever chemical/, 10],
-    // Tier 2 — core toxicology / methods
-    [/toxicolog/, 8],
-    [/pharmacokinetic|toxicokinetic|\bpbpk\b/, 8],
-    [/dose.response|benchmark dose|\bbmd\b/, 7],
-    [/computational tox|predictive tox|new approach method|\bnam\b|in vitro|high.throughput/, 8],
-    [/emerging contaminant|\bcec\b|contaminant|pollutant/, 6],
-    [/drinking water|water quality|wastewater|recycled water|potable reuse/, 7],
-    [/hazard (?:assess|identification|character)/, 6],
-    [/endocrine|bioaccumulat|sediment|aquatic|marine|estuar/, 5],
-    // Tier 3 — adjacent / skills
-    [/environmental health|environmental chemist|environmental scien/, 4],
-    [/regulatory|policy|standard setting|guidance/, 4],
-    [/data scien|machine learning|\bshiny\b|\br programming\b|biostatistic|modeling|modelling/, 4],
-    [/cheminformatic|chemical safety|chemical risk|product steward/, 5],
-  ];
+  // Fallback terms — overridden by scoring_profile.json (which sets generic_cap: 0
+  // to disable dashboard scoring; real grading happens in job-hunter).
+  let FIT_TERMS = [];
   let SIGNATURE_TERMS = [];
   let POOR_FIT_TERMS = [];
   let FIT_SETTINGS = {
     title_multiplier: 3,
     body_multiplier: 1,
     score_multiplier: 1.6,
-    generic_cap: 35,
+    generic_cap: 0,
   };
   function compileScoringRegex(pattern) {
     try { return new RegExp(pattern, 'i'); }
@@ -1050,10 +1017,11 @@
   // Flag (★) roles touching signature topics, scanning title + company +
   // description. Default fallback; overridden by config.json → priority_topics.
   let STAR_TERMS = [
-    ['microplastics', /microplastic|nanoplastic|microfiber/i],
-    ['ecotoxicology', /ecotoxicolog/i],
-    ['endocrine-disrupting chemicals', /endocrine[\s-]?disrupt|\bedcs?\b/i],
-    ['R / Shiny', /\brshiny\b|\br[\s-]?shiny\b|shiny\s*(?:app|dashboard|server)|\bshiny\b/i],
+    ['Distributed Systems', /distributed systems|internet.?scale|high throughput|high availability/i],
+    ['Developer Productivity', /developer productivity|developer experience|devex|platform engineering|internal tools/i],
+    ['AI-Native SDLC', /ai.?native|agentic|claude|copilot|cursor|ai.?enabled sdlc/i],
+    ['Engineering Governance', /dora|space.?framework|engineering governance|engineering metrics|code climate/i],
+    ['AI/ML Platform', /ai.?platform|ml.?platform|machine learning platform|ai infrastructure/i],
   ];
   function starHits(j) {
     const text = `${j.title || ''} ${j.company || ''} ${j.description || ''}`;
@@ -1277,7 +1245,6 @@
     });
     if (okCount === 0) throw new Error('all sources failed');
     const jobs = [...byUrl.values()]
-      .filter(j => !isPharma(j.company))   // env-tox only — drop pharma/drug-dev
       .sort((a, b) => (b.date_posted || '').localeCompare(a.date_posted || ''));
     return { scraped_at, new_count, new_jobs, jobs };
   }
@@ -2203,14 +2170,13 @@
   // the scraper — keep this regex in sync with EXCLUDED_SENIORITY_RE in
   // scrape_jobs.py) or older than 30 days. Anything saved/applied/dismissed
   // is kept — that's the user's triage history.
-  const EXCLUDED_TITLE_RE = /\b(intern|interns|internship|co-?op|trainee|apprentice|technician|research assistant|lab assistant|teaching assistant|undergraduate|postdoc|postdoctoral|work-study|volunteer|fellowship|engineer|engineering|ehs|occupational safety|occupational health)\b|health\s*&\s*safety|health and safety/i;
+  const EXCLUDED_TITLE_RE = /\b(intern|interns|internship|co-?op|trainee|apprentice|technician|research assistant|lab assistant|teaching assistant|undergraduate|postdoc|postdoctoral|work-study|volunteer|fellowship)\b/i;
   function pruneState() {
     const cutoff = Date.now() - 30 * 86400000;
     const before = state.jobs.length;
     state.jobs = state.jobs.filter(j => {
       if (state.triage[j.url]) return true;
       if (EXCLUDED_TITLE_RE.test(j.title || '')) return false;
-      if (isPharma(j.company)) return false;   // env-tox only — drop cached pharma
       const t = jobFreshMs(j);
       return t == null || t >= cutoff;
     });
