@@ -637,9 +637,7 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
 
 
 # LinkedIn search-result cards omit the full description and often omit pay, but
-# the public guest *posting* page includes both. Fetch it only for jobs that need
-# enrichment, capped per run to bound runtime.
-LINKEDIN_SALARY_FETCH_CAP = 120
+# the public guest *posting* page includes both. Every job gets enriched — no cap.
 LINKEDIN_DESCRIPTION_MAX_CHARS = 12000
 
 
@@ -738,11 +736,11 @@ def _linkedin_posting_salary(job_id: str) -> str:
 
 def _enrich_linkedin_postings(jobs: list) -> tuple[int, int]:
     """Backfill salary and description on LinkedIn jobs from posting pages.
-    Returns (salary_filled, description_filled). Bounded and never raises."""
+    No cap — enriches every job. Failed fetches get one retry pass.
+    Returns (salary_filled, description_filled)."""
     salary_filled = desc_filled = fetched = 0
+    failed: list[dict] = []
     for job in jobs:
-        if fetched >= LINKEDIN_SALARY_FETCH_CAP:
-            break
         if job.get("ats") != "LinkedIn":
             continue
         if job.get("salary") and job.get("description"):
@@ -755,6 +753,7 @@ def _enrich_linkedin_postings(jobs: list) -> tuple[int, int]:
         try:
             sal, desc = _linkedin_posting_details(m.group(1))
         except (URLError, TimeoutError, OSError):
+            failed.append(job)
             continue
         if sal:
             job["salary"] = sal
@@ -762,10 +761,40 @@ def _enrich_linkedin_postings(jobs: list) -> tuple[int, int]:
         if desc:
             job["description"] = desc
             desc_filled += 1
+        if not sal and not desc:
+            failed.append(job)
+
+    # Retry pass for failed enrichments
+    if failed:
+        wait = 60 + random.uniform(0, 30)
+        print(f"  ⏸  {len(failed)} enrichment(s) failed; pausing {wait:.0f}s before retry…")
+        time.sleep(wait)
+        retry_sal = retry_desc = 0
+        for job in failed:
+            m = re.search(r'/jobs/view/(\d+)', job.get("url", ""))
+            if not m:
+                continue
+            time.sleep(LINKEDIN_REQUEST_DELAY + random.uniform(0, 2))
+            try:
+                sal, desc = _linkedin_posting_details(m.group(1))
+            except (URLError, TimeoutError, OSError):
+                continue
+            if sal:
+                job["salary"] = sal
+                salary_filled += 1
+                retry_sal += 1
+            if desc:
+                job["description"] = desc
+                desc_filled += 1
+                retry_desc += 1
+        print(f"  🔁 Retry: +{retry_sal} salary, +{retry_desc} descriptions "
+              f"({len(failed) - retry_desc} still without description)")
+
     if fetched:
         print(
             "  LinkedIn posting backfill: "
-            f"{salary_filled}/{fetched} had pay; {desc_filled}/{fetched} had descriptions"
+            f"{salary_filled}/{fetched + len(failed)} had pay; "
+            f"{desc_filled}/{fetched + len(failed)} had descriptions"
         )
     return salary_filled, desc_filled
 
@@ -781,6 +810,9 @@ def scrape_linkedin_recent() -> list:
         print(f"  ⛔ LinkedIn returned 0 cards across all terms (likely blocked); "
               f"preserving previous {len(prev)} result(s)")
         return prev
+    before = len(jobs)
+    jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
+    print(f"  📍 Location filter: {before} → {len(jobs)} roles")
     print(f"  ✅ LinkedIn: {len(jobs)} role(s)")
     _enrich_linkedin_postings(jobs)
     return jobs
@@ -2997,11 +3029,12 @@ if __name__ == "__main__":
         backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
         print(f"🔁 LinkedIn backfill (last {LINKEDIN_BACKFILL_DAYS} days)…")
         jobs, _ = _linkedin_search(list(LINKEDIN_SEARCH_TERMS), backfill_s)
-        if jobs:
-            _enrich_linkedin_postings(jobs)
         before = len(jobs)
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
-        print(f"  ✅ Backfill: {len(jobs)} role(s) found (location filter: {before} → {len(jobs)})")
+        print(f"  📍 Location filter: {before} → {len(jobs)} roles")
+        if jobs:
+            _enrich_linkedin_postings(jobs)
+        print(f"  ✅ Backfill: {len(jobs)} role(s) found")
         save_linkedin_results(jobs)
         sys.exit(0)
 
@@ -3017,12 +3050,12 @@ if __name__ == "__main__":
         backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
         print(f"🔁 LinkedIn backfill for \"{term}\" (last {LINKEDIN_BACKFILL_DAYS} days)…")
         jobs, raw_cards = _linkedin_search([term], backfill_s)
-        if jobs:
-            _enrich_linkedin_postings(jobs)
         before = len(jobs)
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
-        print(f"  ✅ Term \"{term}\": {len(jobs)} role(s) "
-              f"(location filter: {before} → {len(jobs)}, raw cards: {raw_cards})")
+        print(f"  📍 Location filter: {before} → {len(jobs)} roles")
+        if jobs:
+            _enrich_linkedin_postings(jobs)
+        print(f"  ✅ Term \"{term}\": {len(jobs)} role(s) (raw cards: {raw_cards})")
         slug = re.sub(r'[^a-z0-9]+', '_', term.lower()).strip('_')
         term_path = os.path.join(OUTPUT_DIR, f"linkedin_backfill_{slug}.json")
         with open(term_path, "w", encoding="utf-8") as f:
@@ -3165,10 +3198,10 @@ if __name__ == "__main__":
         print(f"🔁 Priority Employer backfill (last {LINKEDIN_BACKFILL_DAYS} days)…")
         raw, _ = _linkedin_search(list(LINKEDIN_SEARCH_TERMS), backfill_s)
         jobs = [j for j in raw if _is_biotech_company(j["company"])]
-        if jobs:
-            _enrich_linkedin_postings(jobs)
         jobs = list(scrape_curated_biotechs()) + jobs
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
+        if jobs:
+            _enrich_linkedin_postings(jobs)
         seen: set[tuple[str, str]] = set()
         deduped_p: list[dict] = []
         for j in jobs:
