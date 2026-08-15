@@ -20,30 +20,30 @@ def fixtures_dir():
 
 
 @pytest.fixture
-def ca_raw_html():
+def linkedin_search_results_html():
     """Real LinkedIn search results HTML (5 pages, 50 cards) from California."""
-    path = FIXTURES_DIR / "ca_raw_5pages.html"
+    path = FIXTURES_DIR / "linkedin_search_results_california_5pages.html"
     return path.read_text(encoding="utf-8")
 
 
 @pytest.fixture
-def linkedin_posting_html():
-    """Real LinkedIn posting detail page HTML."""
-    path = FIXTURES_DIR / "linkedin_posting_page.html"
+def linkedin_job_posting_html():
+    """Real LinkedIn job posting detail page HTML."""
+    path = FIXTURES_DIR / "linkedin_job_posting_detail_page.html"
     return path.read_text(encoding="utf-8")
 
 
 @pytest.fixture
-def all_jobs_sample():
+def sample_all_jobs():
     """Synthetic all_jobs.json with 10 jobs (mix of feasible/infeasible/unchecked)."""
-    path = FIXTURES_DIR / "all_jobs_sample.json"
+    path = FIXTURES_DIR / "sample_all_jobs_with_feasibility_tags.json"
     return json.loads(path.read_text(encoding="utf-8"))
 
 
 @pytest.fixture
-def partition_files():
-    """List of 3 synthetic partition JSON file paths."""
-    return sorted((FIXTURES_DIR / "partition_files").glob("partition*.json"))
+def sample_partition_files():
+    """List of 3 synthetic LinkedIn partition JSON file paths."""
+    return sorted((FIXTURES_DIR / "sample_linkedin_partitions").glob("*.json"))
 
 
 @pytest.fixture

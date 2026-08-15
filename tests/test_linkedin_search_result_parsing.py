@@ -6,15 +6,15 @@ previous scraping session.
 from scrape_jobs import _parse_linkedin_cards, is_leadership_role
 
 
-def test_parses_50_raw_cards(ca_raw_html):
+def test_parses_50_raw_cards(linkedin_search_results_html):
     """Real HTML should contain 50 raw cards."""
-    jobs, raw_count = _parse_linkedin_cards(ca_raw_html)
+    jobs, raw_count = _parse_linkedin_cards(linkedin_search_results_html)
     assert raw_count == 50
 
 
-def test_parsed_jobs_have_required_fields(ca_raw_html):
+def test_parsed_jobs_have_required_fields(linkedin_search_results_html):
     """Each parsed job must have id, company, title, location, date_posted."""
-    jobs, _ = _parse_linkedin_cards(ca_raw_html)
+    jobs, _ = _parse_linkedin_cards(linkedin_search_results_html)
     assert len(jobs) > 0
     for job in jobs:
         assert "id" in job
@@ -24,9 +24,9 @@ def test_parsed_jobs_have_required_fields(ca_raw_html):
         assert "date_posted" in job
 
 
-def test_parsed_jobs_pass_leadership_filter(ca_raw_html):
+def test_parsed_jobs_pass_leadership_filter(linkedin_search_results_html):
     """Every parsed job title should pass is_leadership_role (that's the filter)."""
-    jobs, _ = _parse_linkedin_cards(ca_raw_html)
+    jobs, _ = _parse_linkedin_cards(linkedin_search_results_html)
     for job in jobs:
         assert is_leadership_role(job["title"], job["company"]), (
             f'"{job["title"]}" @ {job["company"]} passed _parse_linkedin_cards '
@@ -34,9 +34,9 @@ def test_parsed_jobs_pass_leadership_filter(ca_raw_html):
         )
 
 
-def test_company_parsed_before_filter(ca_raw_html):
+def test_company_parsed_before_filter(linkedin_search_results_html):
     """Company must be available to is_leadership_role at filter time."""
-    jobs, _ = _parse_linkedin_cards(ca_raw_html)
+    jobs, _ = _parse_linkedin_cards(linkedin_search_results_html)
     # If company wasn't parsed before the filter, priority-company matches
     # would fail. Verify at least one job has a non-Unknown company.
     companies = [j["company"] for j in jobs]

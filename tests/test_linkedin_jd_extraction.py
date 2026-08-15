@@ -5,16 +5,16 @@ Uses a real LinkedIn posting page saved as a fixture.
 from scrape_jobs import _linkedin_description_from_page, LINKEDIN_DESCRIPTION_MAX_CHARS
 
 
-def test_extracts_description_from_real_page(linkedin_posting_html):
+def test_extracts_description_from_real_page(linkedin_job_posting_html):
     """Real posting page should yield a non-empty description."""
-    desc = _linkedin_description_from_page(linkedin_posting_html)
+    desc = _linkedin_description_from_page(linkedin_job_posting_html)
     assert desc, "Expected non-empty description from real posting page"
     assert len(desc) > 50  # real JDs are long
 
 
-def test_strips_html_tags(linkedin_posting_html):
+def test_strips_html_tags(linkedin_job_posting_html):
     """Description should not contain HTML tags."""
-    desc = _linkedin_description_from_page(linkedin_posting_html)
+    desc = _linkedin_description_from_page(linkedin_job_posting_html)
     assert "<" not in desc or ">" not in desc, (
         "Description contains HTML tags — stripping failed"
     )

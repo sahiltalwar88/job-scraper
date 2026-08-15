@@ -3,11 +3,11 @@ import json
 from scrape_jobs import _merge_into_all_jobs
 
 
-def test_merge_adds_new_jobs(tmp_output_dir, all_jobs_sample):
+def test_merge_adds_new_jobs(tmp_output_dir, sample_all_jobs):
     """Merging 3 new jobs (2 genuinely new, 1 duplicate) → added == 2."""
     # Write the sample to the temp output dir
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     new_jobs = [
         {"url": "https://www.linkedin.com/jobs/view/9900000001/",
@@ -26,10 +26,10 @@ def test_merge_adds_new_jobs(tmp_output_dir, all_jobs_sample):
     assert added == 2
 
 
-def test_preserves_feasible_true_tag(tmp_output_dir, all_jobs_sample):
+def test_preserves_feasible_true_tag(tmp_output_dir, sample_all_jobs):
     """Existing feasible:true tag must be preserved when merging a duplicate."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     # Merge a job that duplicates an existing feasible:true job
     new_jobs = [
@@ -44,10 +44,10 @@ def test_preserves_feasible_true_tag(tmp_output_dir, all_jobs_sample):
     assert job.get("feasible") is True
 
 
-def test_preserves_feasible_false_tag(tmp_output_dir, all_jobs_sample):
+def test_preserves_feasible_false_tag(tmp_output_dir, sample_all_jobs):
     """Existing feasible:false tag must be preserved when merging a duplicate."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     new_jobs = [
         {"url": "https://www.linkedin.com/jobs/view/4400000008/",
@@ -61,10 +61,10 @@ def test_preserves_feasible_false_tag(tmp_output_dir, all_jobs_sample):
     assert job.get("feasible") is False
 
 
-def test_sets_first_seen_on_new_jobs(tmp_output_dir, all_jobs_sample):
+def test_sets_first_seen_on_new_jobs(tmp_output_dir, sample_all_jobs):
     """New jobs should get a first_seen timestamp."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     new_jobs = [
         {"url": "https://www.linkedin.com/jobs/view/9900000099/",
@@ -79,10 +79,10 @@ def test_sets_first_seen_on_new_jobs(tmp_output_dir, all_jobs_sample):
     assert job["first_seen"]
 
 
-def test_output_is_valid_json(tmp_output_dir, all_jobs_sample):
+def test_output_is_valid_json(tmp_output_dir, sample_all_jobs):
     """Output file should be valid JSON with updated_at and jobs keys."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     _merge_into_all_jobs([])
 

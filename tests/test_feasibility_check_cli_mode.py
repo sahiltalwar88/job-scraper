@@ -21,10 +21,10 @@ class MockChecker(FeasibilityChecker):
         return {j["url"]: self._verdicts.get(j["url"], True) for j in jobs}
 
 
-def test_tags_all_unchecked_jobs(tmp_output_dir, all_jobs_sample):
+def test_tags_all_unchecked_jobs(tmp_output_dir, sample_all_jobs):
     """All jobs without a `feasible` field should get tagged."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     checker = MockChecker(verdicts={
         "https://www.linkedin.com/jobs/view/4400000005/": True,
@@ -39,10 +39,10 @@ def test_tags_all_unchecked_jobs(tmp_output_dir, all_jobs_sample):
         assert "feasible" in job, f"Job {job['url']} missing feasible field"
 
 
-def test_does_not_recheck_tagged_jobs(tmp_output_dir, all_jobs_sample):
+def test_does_not_recheck_tagged_jobs(tmp_output_dir, sample_all_jobs):
     """Jobs with existing `feasible` field should NOT be rechecked."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     checker = MockChecker()
     run_feasibility_check(checker)
@@ -52,11 +52,11 @@ def test_does_not_recheck_tagged_jobs(tmp_output_dir, all_jobs_sample):
     assert checker.call_count == 1
 
 
-def test_safe_default_on_empty_verdicts(tmp_output_dir, all_jobs_sample):
+def test_safe_default_on_empty_verdicts(tmp_output_dir, sample_all_jobs):
     """If checker returns empty dict, jobs default to feasible: True."""
     path = tmp_output_dir / "all_jobs.json"
     # Remove all feasible fields so all jobs are unchecked
-    sample = json.loads(json.dumps(all_jobs_sample))
+    sample = json.loads(json.dumps(sample_all_jobs))
     for job in sample["jobs"]:
         job.pop("feasible", None)
     path.write_text(json.dumps(sample, separators=(",", ":")))
@@ -69,10 +69,10 @@ def test_safe_default_on_empty_verdicts(tmp_output_dir, all_jobs_sample):
         assert job.get("feasible") is True
 
 
-def test_idempotent_second_run(tmp_output_dir, all_jobs_sample):
+def test_idempotent_second_run(tmp_output_dir, sample_all_jobs):
     """Running twice should not recheck any jobs on the second run."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     checker = MockChecker()
     run_feasibility_check(checker)
@@ -82,11 +82,11 @@ def test_idempotent_second_run(tmp_output_dir, all_jobs_sample):
     assert checker.call_count == first_calls  # no new calls
 
 
-def test_zero_pending_jobs(tmp_output_dir, all_jobs_sample):
+def test_zero_pending_jobs(tmp_output_dir, sample_all_jobs):
     """All jobs already checked → should not call checker."""
     path = tmp_output_dir / "all_jobs.json"
     # Add feasible to all jobs
-    sample = json.loads(json.dumps(all_jobs_sample))
+    sample = json.loads(json.dumps(sample_all_jobs))
     for job in sample["jobs"]:
         job["feasible"] = True
     path.write_text(json.dumps(sample, separators=(",", ":")))
@@ -96,10 +96,10 @@ def test_zero_pending_jobs(tmp_output_dir, all_jobs_sample):
     assert checker.call_count == 0
 
 
-def test_preserves_other_fields(tmp_output_dir, all_jobs_sample):
+def test_preserves_other_fields(tmp_output_dir, sample_all_jobs):
     """Existing fields (description, salary, etc.) should be preserved."""
     path = tmp_output_dir / "all_jobs.json"
-    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+    path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     checker = MockChecker()
     run_feasibility_check(checker)
