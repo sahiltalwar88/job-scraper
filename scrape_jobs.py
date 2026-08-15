@@ -2993,6 +2993,7 @@ if __name__ == "__main__":
         # One-time historical backfill. Queries the last LINKEDIN_BACKFILL_DAYS of
         # LinkedIn postings so new users get a full picture on first run. Run once
         # via Actions → LinkedIn watcher → Run workflow → backfill=true.
+        # For large backfills, use the parallel "LinkedIn Backfill" workflow instead.
         backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
         print(f"🔁 LinkedIn backfill (last {LINKEDIN_BACKFILL_DAYS} days)…")
         jobs, _ = _linkedin_search(list(LINKEDIN_SEARCH_TERMS), backfill_s)
@@ -3002,6 +3003,109 @@ if __name__ == "__main__":
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
         print(f"  ✅ Backfill: {len(jobs)} role(s) found (location filter: {before} → {len(jobs)})")
         save_linkedin_results(jobs)
+        sys.exit(0)
+
+    if "--linkedin-backfill-term" in sys.argv:
+        # Per-term backfill for parallel execution. Each matrix job runs this
+        # with one search term. Writes to a per-term JSON file that the merge
+        # step collects. Does NOT touch all_jobs.json or linkedin_jobs.json.
+        idx = sys.argv.index("--linkedin-backfill-term")
+        term = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else ""
+        if not term:
+            print("ERROR: --linkedin-backfill-term requires a search term argument")
+            sys.exit(1)
+        backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
+        print(f"🔁 LinkedIn backfill for \"{term}\" (last {LINKEDIN_BACKFILL_DAYS} days)…")
+        jobs, raw_cards = _linkedin_search([term], backfill_s)
+        if jobs:
+            _enrich_linkedin_postings(jobs)
+        before = len(jobs)
+        jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
+        print(f"  ✅ Term \"{term}\": {len(jobs)} role(s) "
+              f"(location filter: {before} → {len(jobs)}, raw cards: {raw_cards})")
+        slug = re.sub(r'[^a-z0-9]+', '_', term.lower()).strip('_')
+        term_path = os.path.join(OUTPUT_DIR, f"linkedin_backfill_{slug}.json")
+        with open(term_path, "w", encoding="utf-8") as f:
+            json.dump({"term": term, "jobs": jobs, "raw_cards": raw_cards}, f,
+                      indent=2, ensure_ascii=False)
+        print(f"  📄 Wrote {term_path}")
+        sys.exit(0)
+
+    if "--linkedin-merge-backfill" in sys.argv:
+        # Merge per-term backfill results into linkedin_jobs.json + all_jobs.json.
+        # Run after all --linkedin-backfill-term jobs have completed.
+        import glob
+        print("🔗 Merging per-term backfill results…")
+        term_files = sorted(glob.glob(os.path.join(OUTPUT_DIR, "linkedin_backfill_*.json")))
+        if not term_files:
+            print("  ⚠️  No linkedin_backfill_*.json files found in output/")
+            sys.exit(0)
+        all_jobs: list[dict] = []
+        seen_urls: set[str] = set()
+        for tf in term_files:
+            with open(tf, encoding="utf-8") as f:
+                data = json.load(f)
+            term = data.get("term", "?")
+            term_jobs = data.get("jobs", [])
+            new_count = 0
+            for j in term_jobs:
+                url = j.get("url", "")
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    all_jobs.append(j)
+                    new_count += 1
+            print(f"  {os.path.basename(tf)}: {len(term_jobs)} jobs ({new_count} new after dedup)")
+        all_jobs = [j for j in all_jobs if not _is_pharma_company(j.get("company", ""))]
+        for job in all_jobs:
+            _ensure_work_arrangement(job)
+        print(f"  Total after merge + dedup: {len(all_jobs)} unique jobs")
+        save_linkedin_results(all_jobs)
+        print(f"  ✅ Merge complete: {len(all_jobs)} jobs in linkedin_jobs.json + all_jobs.json")
+        for tf in term_files:
+            os.remove(tf)
+            print(f"  🗑  Removed {os.path.basename(tf)}")
+        sys.exit(0)
+
+    if "--linkedin-test" in sys.argv:
+        # Local test mode: 2 terms, both geos, 5 pages max, no enrichment.
+        # Writes to output/linkedin_test.json. Does NOT touch production files.
+        test_terms = list(LINKEDIN_SEARCH_TERMS[:2])
+        test_max = 50  # 5 pages × 10 cards per page
+        lookback = LINKEDIN_BACKFILL_DAYS * 24 * 3600
+        print(f"🧪 LinkedIn test mode: {len(test_terms)} terms, "
+              f"{len(LINKEDIN_GEOS)} geos, {test_max} max cards per term per geo, "
+              f"no enrichment")
+        print(f"   Terms: {test_terms}")
+        jobs, raw_cards = _linkedin_search(test_terms, lookback,
+                                           geos=LINKEDIN_GEOS, max_results=test_max)
+        before = len(jobs)
+        jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
+        print(f"\n🧪 Test results:")
+        print(f"   Raw cards fetched: {raw_cards}")
+        print(f"   Keyword-matched: {before}")
+        print(f"   Location-filtered: {len(jobs)}")
+        print(f"   Rate-limited during run: {_RATE_LIMITED}")
+        if jobs:
+            from collections import Counter
+            print(f"\n   Sample titles (first 10):")
+            for title, count in Counter(j["title"] for j in jobs).most_common(10):
+                print(f"     {count:3d}  {title}")
+            print(f"\n   Sample locations (first 10):")
+            for loc, count in Counter(j["location"] for j in jobs).most_common(10):
+                print(f"     {count:3d}  {loc}")
+        test_path = os.path.join(OUTPUT_DIR, "linkedin_test.json")
+        with open(test_path, "w", encoding="utf-8") as f:
+            json.dump({
+                "test_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+                "terms": test_terms,
+                "max_results_per_term_per_geo": test_max,
+                "raw_cards": raw_cards,
+                "keyword_matched": before,
+                "location_filtered": len(jobs),
+                "rate_limited": _RATE_LIMITED,
+                "jobs": jobs,
+            }, f, indent=2, ensure_ascii=False)
+        print(f"\n   📄 Wrote {test_path}")
         sys.exit(0)
 
     if "--calcareers-only" in sys.argv:

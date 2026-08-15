@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       backfill:
-        description: "One-time backfill: fetch last 7 days instead of last hour (run once when setting up)"
+        description: "Legacy single-run backfill (last 7 days). For large backfills, use the 'LinkedIn Backfill (Parallel)' workflow instead."
         required: false
         type: boolean
         default: false

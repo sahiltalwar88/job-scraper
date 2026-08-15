@@ -1,0 +1,129 @@
+name: LinkedIn Backfill (Parallel)
+
+# Parallel per-term backfill: 7 matrix jobs each scrape one search term on
+# its own runner (fresh IP from Azure pool), upload results as artifacts.
+# A final merge job downloads all artifacts, merges into all_jobs.json +
+# linkedin_jobs.json, and commits once. Total ~10 min vs. 54 min sequential.
+#
+# Trigger manually via Actions → "LinkedIn Backfill (Parallel)" → Run workflow.
+# The matrix terms MUST match config.json → search_terms.linkedin.
+on:
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    name: Scrape "${{ matrix.term }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        term:
+          - "Director of Engineering"
+          - "VP of Engineering"
+          - "Head of Engineering"
+          - "Senior Engineering Manager"
+          - "Engineering Director"
+          - "Senior Director of Engineering"
+          - "Director of Platform Engineering"
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Write config.json from secret
+        run: echo "$CONFIG_JSON" > config.json
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+
+      - name: Scrape single term (7-day backfill)
+        run: python scrape_jobs.py --linkedin-backfill-term "${{ matrix.term }}"
+        env:
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          NOTIFY_MIN_FIT: ${{ vars.NOTIFY_MIN_FIT }}
+
+      - name: Upload per-term results
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkedin-backfill-${{ strategy.job-index }}
+          path: output/linkedin_backfill_*.json
+          retention-days: 1
+
+  merge:
+    name: Merge + commit
+    needs: scrape
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: job-scraper-commit-push
+      cancel-in-progress: false
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Write config.json from secret
+        run: echo "$CONFIG_JSON" > config.json
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: linkedin-backfill-*
+          merge-multiple: true
+          path: output/
+
+      - name: Merge per-term results
+        run: python scrape_jobs.py --linkedin-merge-backfill
+        env:
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+
+      - name: Record workflow run
+        run: |
+          python - <<'EOF'
+          import json
+          import os
+          from datetime import datetime, timezone
+
+          with open("output/linkedin_jobs.json", encoding="utf-8") as f:
+              data = json.load(f)
+
+          entry = {
+              "workflow": "linkedin-backfill",
+              "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "job_count": int(data.get("total", 0)),
+              "run_id": os.environ.get("GITHUB_RUN_ID", ""),
+              "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT", ""),
+          }
+
+          with open("output/workflow_runs.jsonl", "a", encoding="utf-8") as f:
+              f.write(json.dumps(entry, sort_keys=True) + "\n")
+          EOF
+
+      - name: Commit results to repo
+        if: vars.ENABLE_DATA_COMMITS == 'true'
+        run: |
+          git config user.name  "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/notified.json
+          git diff --cached --quiet || git commit -m "chore: linkedin backfill (parallel) [$(date -u '+%Y-%m-%d %H:%MZ')]"
+          git pull --rebase -X ours origin main
+          git push
