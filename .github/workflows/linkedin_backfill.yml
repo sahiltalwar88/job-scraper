@@ -1,40 +1,30 @@
 name: LinkedIn Backfill (Parallel)
 
-# Parallel per-term backfill: 7 matrix jobs each scrape one search term on
-# its own runner (fresh IP from Azure pool), upload results as artifacts.
-# A final merge job downloads all artifacts, merges into all_jobs.json +
-# linkedin_jobs.json, and commits once. Total ~10 min vs. 54 min sequential.
+# Partitioned backfill: emit-matrix job generates a work matrix (4 term-batches
+# × 52 locations = 208 workers), fan-out runs each partition in parallel on its
+# own runner, merge downloads all artifacts, deduplicates, and commits once.
+#
+# Each worker paginates 2 terms for one location (up to 1000 cards each),
+# location-filters, enriches, and writes a per-partition JSON artifact.
+# The merge job collects all artifacts, deduplicates by URL/job ID, and merges
+# into linkedin_jobs.json + all_jobs.json.
 #
 # Trigger manually via Actions → "LinkedIn Backfill (Parallel)" → Run workflow.
-# The matrix terms MUST match config.json → search_terms.linkedin.
 on:
   workflow_dispatch:
 
 jobs:
-  scrape:
-    name: Scrape "${{ matrix.term }}"
+  emit-matrix:
+    name: Emit matrix
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        term:
-          - "Director of Engineering"
-          - "VP of Engineering"
-          - "Head of Engineering"
-          - "Senior Engineering Manager"
-          - "Engineering Director"
-          - "Senior Director of Engineering"
-          - "Director of Platform Engineering"
-
     permissions:
       contents: read
-
+    outputs:
+      matrix: ${{ steps.emit.outputs.matrix }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -43,23 +33,59 @@ jobs:
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
 
-      - name: Scrape single term (7-day backfill)
-        run: python scrape_jobs.py --linkedin-backfill-term "${{ matrix.term }}"
+      - name: Emit work matrix
+        id: emit
+        run: python scrape_jobs.py --linkedin-emit-matrix
+
+      - name: Upload matrix (debugging)
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-matrix
+          path: output/linkedin_matrix.json
+          retention-days: 1
+
+  fanout:
+    name: Scrape "${{ matrix.partition.partition_key }}"
+    needs: emit-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        partition: ${{ fromJson(needs.emit-matrix.outputs.matrix) }}
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Write config.json from secret
+        run: echo "$CONFIG_JSON" > config.json
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+
+      - name: Write partition spec
+        run: echo '${{ toJSON(matrix.partition) }}' > output/partition_spec.json
+
+      - name: Scrape partition
+        run: python scrape_jobs.py --linkedin-backfill-partition output/partition_spec.json
         env:
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
           NOTIFY_MIN_FIT: ${{ vars.NOTIFY_MIN_FIT }}
 
-      - name: Upload per-term results
+      - name: Upload partition results
         uses: actions/upload-artifact@v4
         with:
-          name: linkedin-backfill-${{ strategy.job-index }}
-          path: output/linkedin_backfill_*.json
+          name: linkedin-partition-${{ matrix.partition.partition_key }}
+          path: output/linkedin_partition_*.json
           retention-days: 1
 
   merge:
     name: Merge + commit
-    needs: scrape
+    needs: fanout
     runs-on: ubuntu-latest
 
     concurrency:
@@ -70,11 +96,9 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -86,11 +110,11 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
-          pattern: linkedin-backfill-*
+          pattern: linkedin-partition-*
           merge-multiple: true
           path: output/
 
-      - name: Merge per-term results
+      - name: Merge partition results
         run: python scrape_jobs.py --linkedin-merge-backfill
         env:
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
@@ -107,7 +131,7 @@ jobs:
               data = json.load(f)
 
           entry = {
-              "workflow": "linkedin-backfill",
+              "workflow": "linkedin-backfill-partitioned",
               "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
               "job_count": int(data.get("total", 0)),
               "run_id": os.environ.get("GITHUB_RUN_ID", ""),
@@ -124,6 +148,6 @@ jobs:
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/notified.json
-          git diff --cached --quiet || git commit -m "chore: linkedin backfill (parallel) [$(date -u '+%Y-%m-%d %H:%MZ')]"
+          git diff --cached --quiet || git commit -m "chore: linkedin backfill (partitioned) [$(date -u '+%Y-%m-%d %H:%MZ')]"
           git pull --rebase -X ours origin main
           git push

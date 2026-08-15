@@ -427,6 +427,11 @@ LINKEDIN_BIOTECH_LOOKBACK_SECONDS = 86400 # 24h — biotech is a daily 8pm PT di
 # its geoId (or leaving it blank for a city LinkedIn can resolve).
 LINKEDIN_GEOS = _cfg("locations.linkedin", [])
 
+# All 50 US states for partitioned backfill — each queried independently to
+# bypass the 1000-result-per-query cap on the guest endpoint. See
+# --linkedin-emit-matrix and --linkedin-backfill-partition.
+LINKEDIN_PARTITION_STATES = _cfg("locations.linkedin_partitions.states", [])
+
 # Priority-employer allowlist used by the LinkedIn-side filter to build the
 # daily "Priority Employers" digest (jobs.json), from config.json →
 # employers.priority. Match is case-insensitive on alphanum-stripped names
@@ -487,6 +492,11 @@ def _is_pharma_company(name: str) -> bool:
         low = (name or "").lower()
         return any(t in low for t in _EXCLUDE_COMPANY_TERMS)
     return bool(PHARMA_COMPANY_RE.search(name or ""))
+
+
+def _slug(s: str) -> str:
+    """Slugify a string for use in filenames and partition keys."""
+    return re.sub(r'[^a-z0-9]+', '_', s.lower()).strip('_')
 
 
 def _parse_linkedin_cards(html: str) -> tuple[list[dict], int]:
@@ -634,6 +644,83 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
           f"{total_raw_cards} raw cards, {len(jobs)} unique jobs"
           f"{' (rate-limited during run)' if _RATE_LIMITED else ''}")
     return jobs, total_raw_cards
+
+
+def _linkedin_search_partition(term: str, location: str, lookback_seconds: int,
+                                max_results: int = 1000) -> tuple[list[dict], int, bool]:
+    """
+    Paginate one (term, location) partition fully (up to 1000 cards).
+    Streams progress on every page. Returns (jobs, total_raw_cards, hit_cap).
+    hit_cap=True means we reached ~1000 cards and may have missed results.
+    """
+    global _RATE_LIMITED
+    jobs_by_id: dict[str, dict] = {}
+    total_raw_cards = 0
+    consecutive_empty = 0
+    pages_fetched = 0
+    start_time = time.time()
+
+    for start in range(0, max_results, 10):
+        delay = LINKEDIN_REQUEST_DELAY + random.uniform(0, 2)
+        if _RATE_LIMITED:
+            delay += 10
+        time.sleep(delay)
+        url = (
+            "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+            f"?keywords={urllib.parse.quote(term)}"
+            f"&location={urllib.parse.quote(location)}"
+            f"&f_TPR=r{lookback_seconds}"
+            f"&start={start}"
+        )
+        html = fetch(url)
+        if not html.strip():
+            consecutive_empty += 1
+            if consecutive_empty == 1:
+                wait = 60 + random.uniform(0, 30)
+                print(f"  ⏸  Empty at start={start}; pausing {wait:.0f}s before retry…")
+                time.sleep(wait)
+                html = fetch(url)
+                if not html.strip():
+                    print(f"  ⛔ Still empty after retry; stopping at start={start}")
+                    break
+            else:
+                break
+        consecutive_empty = 0
+        parsed, raw_count = _parse_linkedin_cards(html)
+        total_raw_cards += raw_count
+        pages_fetched += 1
+        elapsed = time.time() - start_time
+        # STREAM: log every page with running counts
+        print(f"  📄 p{pages_fetched} start={start} | +{raw_count} raw "
+              f"({total_raw_cards} total) | {len(jobs_by_id)} unique | "
+              f"{elapsed:.0f}s elapsed"
+              f"{' [RATE-LIMITED]' if _RATE_LIMITED else ''}")
+        if not raw_count:
+            break
+        for p in parsed:
+            if p["id"] not in jobs_by_id:
+                jobs_by_id[p["id"]] = {
+                    "company": p["company"],
+                    "title": p["title"],
+                    "location": p["location"],
+                    "url": f"https://www.linkedin.com/jobs/view/{p['id']}/",
+                    "date_posted": p["date_posted"],
+                    "salary": p.get("salary", ""),
+                    "ats": "LinkedIn",
+                }
+
+    hit_cap = total_raw_cards >= 990
+    if hit_cap:
+        print(f"  🚨 CAP-HIT ALERT: Partition reached {total_raw_cards} raw cards "
+              f"(~1000 cap). Some results may be missed. Consider a shorter "
+              f"time window (e.g. 30 min) for this partition.")
+
+    jobs = list(jobs_by_id.values())
+    jobs.sort(key=lambda j: -_iso_to_ts(j.get("date_posted", "")))
+    print(f"  ✅ Partition complete: {pages_fetched} pages, {total_raw_cards} raw, "
+          f"{len(jobs)} unique, {time.time() - start_time:.0f}s total"
+          f"{' [CAP-HIT]' if hit_cap else ''}")
+    return jobs, total_raw_cards, hit_cap
 
 
 # LinkedIn search-result cards omit the full description and often omit pay, but
@@ -3065,38 +3152,202 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if "--linkedin-merge-backfill" in sys.argv:
-        # Merge per-term backfill results into linkedin_jobs.json + all_jobs.json.
-        # Run after all --linkedin-backfill-term jobs have completed.
+        # Merge per-term AND per-partition backfill results into linkedin_jobs.json
+        # + all_jobs.json. Run after all --linkedin-backfill-term or
+        # --linkedin-backfill-partition jobs have completed.
         import glob
-        print("🔗 Merging per-term backfill results…")
+        print("🔗 Merging backfill results…")
         term_files = sorted(glob.glob(os.path.join(OUTPUT_DIR, "linkedin_backfill_*.json")))
-        if not term_files:
-            print("  ⚠️  No linkedin_backfill_*.json files found in output/")
+        part_files = sorted(glob.glob(os.path.join(OUTPUT_DIR, "linkedin_partition_*.json")))
+        all_files = term_files + part_files
+        if not all_files:
+            print("  ⚠️  No backfill files found in output/")
             sys.exit(0)
         all_jobs: list[dict] = []
         seen_urls: set[str] = set()
-        for tf in term_files:
+        cap_hits = []
+        partition_stats = []  # for summary table
+        for tf in all_files:
             with open(tf, encoding="utf-8") as f:
                 data = json.load(f)
-            term = data.get("term", "?")
-            term_jobs = data.get("jobs", [])
+            part_key = data.get("partition_key", data.get("term", os.path.basename(tf)))
+            part_jobs = data.get("jobs", [])
+            raw = data.get("raw_cards", 0)
+            hit_cap = data.get("hit_cap", False)
             new_count = 0
-            for j in term_jobs:
+            for j in part_jobs:
                 url = j.get("url", "")
                 if url not in seen_urls:
                     seen_urls.add(url)
                     all_jobs.append(j)
                     new_count += 1
-            print(f"  {os.path.basename(tf)}: {len(term_jobs)} jobs ({new_count} new after dedup)")
+            # STREAM: log each partition as it's merged
+            cap_flag = " 🚨 CAP-HIT" if hit_cap else ""
+            print(f"  📦 {part_key}: {len(part_jobs)} jobs ({new_count} new){cap_flag}")
+            if hit_cap:
+                cap_hits.append(part_key)
+            partition_stats.append({
+                "partition": part_key,
+                "jobs": len(part_jobs),
+                "new": new_count,
+                "raw": raw,
+                "hit_cap": hit_cap,
+            })
         all_jobs = [j for j in all_jobs if not _is_pharma_company(j.get("company", ""))]
         for job in all_jobs:
             _ensure_work_arrangement(job)
-        print(f"  Total after merge + dedup: {len(all_jobs)} unique jobs")
+        print()
+        print(f"  ═══════════════════════════════════════════════════════════")
+        print(f"  📊 SUMMARY: {len(all_jobs)} unique jobs from {len(all_files)} partitions")
+        print(f"  ═══════════════════════════════════════════════════════════")
+        # Top 10 partitions by job count
+        top = sorted(partition_stats, key=lambda s: -s["jobs"])[:10]
+        for s in top:
+            cap = " 🚨" if s["hit_cap"] else ""
+            print(f"    {s['partition']:45s} {s['jobs']:4d} jobs ({s['new']:4d} new, {s['raw']:4d} raw){cap}")
+        if len(partition_stats) > 10:
+            print(f"    ... and {len(partition_stats) - 10} more partitions")
+        if cap_hits:
+            print()
+            print(f"  🚨🚨🚨 CAP-HIT ALERT: {len(cap_hits)} partition(s) hit the 1000-card cap:")
+            for pk in cap_hits:
+                print(f"    - {pk}")
+            print(f"  These partitions may have missed results.")
+            print(f"  Recommended action: re-run those partitions with a shorter")
+            print(f"  time window (e.g. 30 min).")
+        print()
         save_linkedin_results(all_jobs)
         print(f"  ✅ Merge complete: {len(all_jobs)} jobs in linkedin_jobs.json + all_jobs.json")
-        for tf in term_files:
+        for tf in all_files:
             os.remove(tf)
-            print(f"  🗑  Removed {os.path.basename(tf)}")
+        print(f"  🗑  Cleaned up {len(all_files)} partition files")
+        sys.exit(0)
+
+    if "--linkedin-emit-matrix" in sys.argv:
+        # Emit the work matrix for the partitioned backfill workflow.
+        # Batches 2 terms per worker to stay under GitHub's 256 matrix limit.
+        # Locations = 50 states + US-wide + Remote.
+        terms = list(LINKEDIN_SEARCH_TERMS)
+        term_batches = []
+        for i in range(0, len(terms), 2):
+            term_batches.append(terms[i:i+2])
+        locations = []
+        for state in LINKEDIN_PARTITION_STATES:
+            locations.append(state["location"])
+        locations.append("United States")  # US-wide
+        locations.append("Remote")         # Remote (mostly international, but cheap)
+        matrix = []
+        for term_batch in term_batches:
+            for location in locations:
+                if location == "United States":
+                    loc_label = "USwide"
+                elif location == "Remote":
+                    loc_label = "Remote"
+                else:
+                    loc_label = location.split(",")[0]
+                terms_label = "_".join(_slug(t) for t in term_batch)
+                matrix.append({
+                    "terms": term_batch,
+                    "location": location,
+                    "partition_key": f"{terms_label}__{loc_label}",
+                })
+        matrix_path = os.path.join(OUTPUT_DIR, "linkedin_matrix.json")
+        with open(matrix_path, "w", encoding="utf-8") as f:
+            json.dump({"matrix": matrix}, f, indent=2, ensure_ascii=False)
+        print(f"  📋 Matrix: {len(matrix)} work items "
+              f"({len(term_batches)} term-batches × {len(locations)} locations)")
+        print(f"  Term batches: {term_batches}")
+        print(f"  📄 Wrote {matrix_path}")
+        gh_output = os.environ.get("GITHUB_OUTPUT")
+        if gh_output:
+            with open(gh_output, "a") as f:
+                f.write(f"matrix={json.dumps(matrix)}\n")
+        sys.exit(0)
+
+    if "--linkedin-backfill-partition" in sys.argv:
+        # Fan-out worker: fully paginate one partition from the discovery matrix.
+        # Reads partition spec from a JSON file path argument.
+        idx = sys.argv.index("--linkedin-backfill-partition")
+        spec_path = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else ""
+        if not spec_path:
+            print("ERROR: --linkedin-backfill-partition requires a spec JSON file path")
+            sys.exit(1)
+        with open(spec_path, encoding="utf-8") as f:
+            spec = json.load(f)
+        terms = spec["terms"]  # list of 1-2 terms
+        location = spec["location"]
+        partition_key = spec["partition_key"]
+        backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
+        print(f"🔁 Partition \"{partition_key}\": terms={terms}, location=\"{location}\"")
+        all_jobs = []
+        total_raw = 0
+        any_cap_hit = False
+        for term in terms:
+            print(f"\n  --- Term: \"{term}\" ---")
+            jobs, raw_cards, hit_cap = _linkedin_search_partition(term, location, backfill_s)
+            all_jobs.extend(jobs)
+            total_raw += raw_cards
+            any_cap_hit = any_cap_hit or hit_cap
+        # Dedup within this partition (same job may appear under both terms)
+        seen = set()
+        deduped = []
+        for j in all_jobs:
+            url = j.get("url", "")
+            if url not in seen:
+                seen.add(url)
+                deduped.append(j)
+        all_jobs = deduped
+        before = len(all_jobs)
+        all_jobs = [j for j in all_jobs if is_target_location(j.get("location", ""))]
+        print(f"\n  📍 Location filter: {before} → {len(all_jobs)} roles")
+        if all_jobs:
+            _enrich_linkedin_postings(all_jobs)
+        print(f"  ✅ Partition \"{partition_key}\": {len(all_jobs)} role(s) (raw: {total_raw})"
+              f"{' [CAP-HIT]' if any_cap_hit else ''}")
+        part_path = os.path.join(OUTPUT_DIR, f"linkedin_partition_{partition_key}.json")
+        with open(part_path, "w", encoding="utf-8") as f:
+            json.dump({"partition_key": partition_key, "terms": terms, "location": location,
+                       "jobs": all_jobs, "raw_cards": total_raw, "hit_cap": any_cap_hit}, f,
+                      indent=2, ensure_ascii=False)
+        print(f"  📄 Wrote {part_path}")
+        sys.exit(0)
+
+    if "--linkedin-test-partition" in sys.argv:
+        # Local test: 1 term-batch (2 terms) × 3 states, one partition with
+        # 24h lookback and max 50 cards. No enrichment. Does NOT touch production files.
+        print("🧪 Partition test mode")
+        test_terms = list(LINKEDIN_SEARCH_TERMS[:2])
+        test_states = LINKEDIN_PARTITION_STATES[:3]
+        test_matrix = []
+        for state in test_states:
+            test_matrix.append({
+                "terms": test_terms,
+                "location": state["location"],
+                "partition_key": _slug(f"{'_'.join(test_terms)}_{state['name']}"),
+            })
+        print(f"  Test matrix: {len(test_matrix)} items (1 term-batch × 3 states)")
+        for item in test_matrix:
+            print(f"    - {item['partition_key']}")
+        # Paginate first partition with 24h lookback, max 50 cards per term
+        first = test_matrix[0]
+        print(f"\n  Paginating: {first['partition_key']}")
+        all_jobs = []
+        total_raw = 0
+        any_cap_hit = False
+        for term in first["terms"]:
+            print(f"\n  --- Term: \"{term}\" ---")
+            jobs, raw, hit_cap = _linkedin_search_partition(term, first["location"],
+                                                              24 * 3600, max_results=50)
+            all_jobs.extend(jobs)
+            total_raw += raw
+            any_cap_hit = any_cap_hit or hit_cap
+        before = len(all_jobs)
+        all_jobs = [j for j in all_jobs if is_target_location(j.get("location", ""))]
+        print(f"\n🧪 Test results:")
+        print(f"   Total raw cards: {total_raw}")
+        print(f"   Unique jobs (pre-filter): {before}")
+        print(f"   Location-filtered: {len(all_jobs)}")
+        print(f"   Hit cap: {any_cap_hit}")
         sys.exit(0)
 
     if "--linkedin-test" in sys.argv:
