@@ -9,6 +9,7 @@ Tune the search in config.json: title keywords, board-specific search terms,
 priority employers, locations, and LinkedIn geoIds / JobSpy locations.
 """
 
+import abc
 import http.cookiejar
 import base64
 import json
@@ -149,6 +150,75 @@ _KEYWORD_RE = re.compile(
     re.IGNORECASE,
 )
 
+# ---------------------------------------------------------------------------
+# Fuzzy leadership pre-filter — deliberately BROAD. Used by the LinkedIn
+# partitioned backfill to catch title variants the exact-phrase KEYWORDS miss
+# (e.g. "Director, Engineering", "Senior Engineering Manager", "Head of
+# Dropbox"). The LLM feasibility check (--feasibility-check) makes the final
+# cut. Config: keywords.fuzzy_seniority, keywords.fuzzy_domain,
+# keywords.fuzzy_exclude. See plan-40f6b25ee646a0c0.md for the full design.
+_FUZZY_SENIORITY = _cfg("keywords.fuzzy_seniority", [
+    "director", "vp", "vice president", "head", "chief", "president",
+])
+_FUZZY_DOMAIN = _cfg("keywords.fuzzy_domain", [
+    "software", "platform", "infrastructure", "technology", "engineering",
+])
+_FUZZY_EXCLUDE = _cfg("keywords.fuzzy_exclude", [
+    "hardware", "defense", "manufacturing", "aerospace", "energy",
+    "materials", "civil", "mechanical", "electrical", "chemical",
+    "structural", "industrial", "mining", "petroleum", "nuclear",
+    "marine", "automotive", "construction", "facilities", "quality",
+    "project", "program",
+])
+
+_SENIORITY_RE = re.compile(
+    rf"\b(?:{'|'.join(re.escape(t) for t in _FUZZY_SENIORITY)})\b",
+    re.IGNORECASE,
+)
+_DOMAIN_RE = re.compile(
+    rf"\b(?:{'|'.join(re.escape(t) for t in _FUZZY_DOMAIN)})\b",
+    re.IGNORECASE,
+)
+_FUZZY_EXCLUDE_RE = re.compile(
+    rf"\b(?:{'|'.join(re.escape(t) for t in _FUZZY_EXCLUDE)})\b",
+    re.IGNORECASE,
+)
+_SR_MGR_RE = re.compile(
+    r"\b(?:senior|sr)\b.*\bmanager\b|\bmanager\b.*\b(?:senior|sr)\b",
+    re.IGNORECASE,
+)
+_HEAD_OF_RE = re.compile(r"\bhead\s+of\b", re.IGNORECASE)
+
+
+def is_leadership_role(title: str, company: str = "") -> bool:
+    """Broad fuzzy pre-filter for software engineering leadership roles.
+
+    Deliberately permissive — the LLM feasibility check makes the final cut.
+    Targets Director+ level (Senior Manager at minimum) in software/engineering
+    at tech companies. Excludes non-software domains (hardware, manufacturing,
+    defense, etc.) at the filter level; ambiguous cases pass to the LLM.
+    """
+    if not title:
+        return False
+    if EXCLUDED_SENIORITY_RE.search(title):
+        return False
+    if _FUZZY_EXCLUDE_RE.search(title):
+        return False
+    # Director+ : seniority token + domain token (e.g. "Director of Engineering")
+    if _SENIORITY_RE.search(title) and _DOMAIN_RE.search(title):
+        return True
+    # Senior Manager : (senior|sr) + manager + domain (e.g. "Senior Engineering Manager")
+    if _SR_MGR_RE.search(title) and _DOMAIN_RE.search(title):
+        return True
+    # "head of" + domain token or priority company (e.g. "Head of Engineering",
+    # "Head of Dropbox" — LLM decides if it's engineering)
+    if _HEAD_OF_RE.search(title) and (_DOMAIN_RE.search(title) or _is_biotech_company(company)):
+        return True
+    # Seniority token + priority company (e.g. "VP at Google")
+    if _SENIORITY_RE.search(title) and _is_biotech_company(company):
+        return True
+    return False
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -209,14 +279,42 @@ TARGET_LOCATIONS = [str(t).lower() for t in _cfg("location_filter.terms", [])]
 
 # Countries to reject even if a target substring matches (e.g. ", ca" matches
 # "Canada", ", wa" matches "Wales"). LinkedIn's "Remote" geo returns global jobs.
-NON_US_COUNTRIES = [
-    "canada", "australia", "united kingdom", "uk", "england", "scotland",
+# Multi-word country names are matched as substrings; single-word names are
+# matched with word boundaries to avoid false positives like "india" matching
+# "Indiana" or "mexico" matching "New Mexico".
+NON_US_COUNTRIES_MULTI = [
+    "united kingdom", "south korea", "south africa", "new zealand",
+    "saudi arabia", "united arab emirates",
+]
+NON_US_COUNTRIES_SINGLE = [
+    "canada", "australia", "uk", "england", "scotland",
     "wales", "ireland", "germany", "france", "netherlands", "switzerland",
     "sweden", "norway", "denmark", "finland", "spain", "portugal", "italy",
-    "india", "singapore", "japan", "china", "south korea", "brazil",
-    "mexico", "argentina", "south africa", "new zealand", "belgium",
+    "india", "singapore", "japan", "china", "brazil",
+    "mexico", "argentina", "belgium",
     "austria", "poland", "czech", "romania", "hungary", "israel",
-    "united arab emirates", "saudi arabia", "qatar", "egypt",
+    "qatar", "egypt",
+]
+_NON_US_COUNTRY_RE = re.compile(
+    r'\b(?:' + '|'.join(re.escape(c) for c in NON_US_COUNTRIES_SINGLE) + r')\b'
+)
+
+
+# US state full names (lowercased) — used to override country-match false
+# positives like "New Mexico" (contains "mexico") and "Indiana" (contains
+# "india"). Hardcoded because LINKEDIN_PARTITION_STATES is defined later in
+# this module and the 50 state names don't change.
+_US_STATE_NAMES = [
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
+    "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana",
+    "maine", "maryland", "massachusetts", "michigan", "minnesota",
+    "mississippi", "missouri", "montana", "nebraska", "nevada",
+    "new hampshire", "new jersey", "new mexico", "new york",
+    "north carolina", "north dakota", "ohio", "oklahoma", "oregon",
+    "pennsylvania", "rhode island", "south carolina", "south dakota",
+    "tennessee", "texas", "utah", "vermont", "virginia", "washington",
+    "west virginia", "wisconsin", "wyoming",
 ]
 
 
@@ -224,8 +322,18 @@ def is_target_location(location: str) -> bool:
     if not location:
         return False
     loc = location.lower()
-    # Reject non-US countries first — prevents ", ca" matching "Canada", etc.
-    if any(country in loc for country in NON_US_COUNTRIES):
+    # If a US state full name matches, accept immediately — this handles
+    # "New Mexico" (contains "mexico") and "Indiana" (contains "india")
+    # which would otherwise be rejected by the country check below.
+    if any(state in loc for state in _US_STATE_NAMES):
+        return True
+    # Reject non-US countries — prevents ", ca" matching "Canada", etc.
+    # Multi-word countries: substring match (safe, distinctive phrases).
+    if any(country in loc for country in NON_US_COUNTRIES_MULTI):
+        return False
+    # Single-word countries: word-boundary match (prevents "india" matching
+    # "Indiana", "mexico" matching "New Mexico", etc.).
+    if _NON_US_COUNTRY_RE.search(loc):
         return False
     return any(place in loc for place in TARGET_LOCATIONS)
 
@@ -523,12 +631,13 @@ def _parse_linkedin_cards(html: str) -> tuple[list[dict], int]:
         salary_m = re.search(r'job-search-card__salary-info[^>]*>\s*([^<]+)', card)
 
         title = html_mod.unescape(title_m.group(1).strip()) if title_m else ""
-        if not title or not is_mle_role(title):
-            continue
         company = (
             html_mod.unescape(re.sub(r'\s+', ' ', company_m.group(1).strip()))
             if company_m else "Unknown"
         )
+        # Fuzzy pre-filter (broad) — LLM feasibility check makes the final cut.
+        if not title or not is_leadership_role(title, company):
+            continue
         location = html_mod.unescape(
             (location_m.group(1).strip() if location_m else "")
         ).replace("\n", " ")
@@ -3051,6 +3160,105 @@ def save_results(jobs: list):
 
 
 # ---------------------------------------------------------------------------
+# Feasibility check — LLM-based filter for engineering leadership roles.
+# Adapter pattern: FeasibilityChecker ABC allows swapping backends
+# (Devin CLI, Anthropic API, pure algorithm) without changing call sites.
+# ---------------------------------------------------------------------------
+
+class FeasibilityChecker(abc.ABC):
+    """Check whether a job is plausibly an engineering leadership role."""
+
+    @abc.abstractmethod
+    def check_batch(self, jobs: list[dict]) -> dict[str, bool]:
+        """Return {url: feasible_bool} for each job. Jobs not in the
+        result dict default to feasible=True (safe default)."""
+        ...
+
+
+class DevinCLIChecker(FeasibilityChecker):
+    """Uses `devin -p` (GLM-5.2 High, free promo) for feasibility checks.
+    Batches 10 jobs per call to minimize subprocess overhead."""
+
+    BATCH_SIZE = 10
+
+    def __init__(self, model: str = "glm-5.2-high"):
+        self.model = model
+
+    def check_batch(self, jobs: list[dict]) -> dict[str, bool]:
+        if not jobs:
+            return {}
+        lines = [
+            "You are a job filter. For each job below, reply with its number "
+            "followed by YES or NO. A job is YES if it is plausibly an "
+            "engineering leadership role (Director, VP, Head, Chief, or senior "
+            "engineering manager level) at a technology company. Reply with "
+            "one line per job, format: 'N. YES' or 'N. NO'.\n"
+        ]
+        for i, job in enumerate(jobs, 1):
+            lines.append(
+                f"{i}. Title: {job.get('title', '?')} | "
+                f"Company: {job.get('company', '?')} | "
+                f"Location: {job.get('location', '?')}"
+            )
+        prompt = "\n".join(lines)
+        result = subprocess.run(
+            ["devin", "-p", prompt, "--model", self.model,
+             "--respect-workspace-trust", "false"],
+            capture_output=True, text=True, timeout=60,
+        )
+        verdicts: dict[str, bool] = {}
+        for line in result.stdout.strip().split("\n"):
+            m = re.match(r"(\d+)\.\s*(YES|NO)", line.strip(), re.I)
+            if m:
+                idx = int(m.group(1)) - 1
+                if 0 <= idx < len(jobs):
+                    url = jobs[idx].get("url", "")
+                    verdicts[url] = m.group(2).upper() == "YES"
+        return verdicts
+
+
+def run_feasibility_check(checker: FeasibilityChecker) -> None:
+    """Tag each job in all_jobs.json with feasible: true/false.
+
+    Only checks jobs without an existing `feasible` field (incremental).
+    Saves after each batch (crash-safe). Defaults to True on errors.
+    """
+    path = os.path.join(OUTPUT_DIR, "all_jobs.json")
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    jobs = data.get("jobs", [])
+    unchecked = [j for j in jobs if "feasible" not in j]
+    print(f"🔍 Feasibility check: {len(unchecked)}/{len(jobs)} jobs to check")
+    if not unchecked:
+        print("  All jobs already checked.")
+        return
+    batch_size = checker.BATCH_SIZE
+    checked = 0
+    feasible_count = 0
+    for i in range(0, len(unchecked), batch_size):
+        batch = unchecked[i:i + batch_size]
+        try:
+            verdicts = checker.check_batch(batch)
+        except Exception as e:
+            print(f"  ⚠️  Batch {i//batch_size + 1} failed: {e}")
+            verdicts = {}
+        for job in batch:
+            url = job.get("url", "")
+            feasible = verdicts.get(url, True)
+            job["feasible"] = feasible
+            checked += 1
+            if feasible:
+                feasible_count += 1
+        print(f"  📊 Checked {checked}/{len(unchecked)} "
+              f"({feasible_count} feasible, {checked - feasible_count} rejected)")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
+    total_feasible = sum(1 for j in jobs if j.get("feasible"))
+    print(f"\n✅ Done: {total_feasible}/{len(jobs)} feasible "
+          f"({len(jobs) - total_feasible} rejected)")
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -3149,6 +3357,10 @@ if __name__ == "__main__":
             json.dump({"term": term, "jobs": jobs, "raw_cards": raw_cards}, f,
                       indent=2, ensure_ascii=False)
         print(f"  📄 Wrote {term_path}")
+        sys.exit(0)
+
+    if "--feasibility-check" in sys.argv:
+        run_feasibility_check(DevinCLIChecker())
         sys.exit(0)
 
     if "--linkedin-merge-backfill" in sys.argv:
@@ -3300,8 +3512,9 @@ if __name__ == "__main__":
         before = len(all_jobs)
         all_jobs = [j for j in all_jobs if is_target_location(j.get("location", ""))]
         print(f"\n  📍 Location filter: {before} → {len(all_jobs)} roles")
-        if all_jobs:
-            _enrich_linkedin_postings(all_jobs)
+        # Enrichment (JD fetching) is deferred to the job-hunter pipeline.
+        # The scraper only discovers and filters jobs; JDs are fetched only
+        # for jobs that pass the LLM feasibility check.
         print(f"  ✅ Partition \"{partition_key}\": {len(all_jobs)} role(s) (raw: {total_raw})"
               f"{' [CAP-HIT]' if any_cap_hit else ''}")
         part_path = os.path.join(OUTPUT_DIR, f"linkedin_partition_{partition_key}.json")

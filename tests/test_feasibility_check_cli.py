@@ -1,0 +1,112 @@
+"""Test the --feasibility-check CLI mode via run_feasibility_check().
+
+Uses a mock checker — no real Devin CLI calls.
+"""
+import json
+from unittest.mock import MagicMock
+
+from scrape_jobs import run_feasibility_check, FeasibilityChecker
+
+
+class MockChecker(FeasibilityChecker):
+    """Deterministic mock checker for testing."""
+    BATCH_SIZE = 10
+
+    def __init__(self, verdicts=None):
+        self._verdicts = verdicts or {}
+        self.call_count = 0
+
+    def check_batch(self, jobs):
+        self.call_count += 1
+        return {j["url"]: self._verdicts.get(j["url"], True) for j in jobs}
+
+
+def test_tags_all_unchecked_jobs(tmp_output_dir, all_jobs_sample):
+    """All jobs without a `feasible` field should get tagged."""
+    path = tmp_output_dir / "all_jobs.json"
+    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+
+    checker = MockChecker(verdicts={
+        "https://www.linkedin.com/jobs/view/4400000005/": True,
+        "https://www.linkedin.com/jobs/view/4400000006/": False,
+        "https://www.linkedin.com/jobs/view/4400000007/": True,
+        "https://www.linkedin.com/jobs/view/4400000010/": False,
+    })
+    run_feasibility_check(checker)
+
+    data = json.loads(path.read_text())
+    for job in data["jobs"]:
+        assert "feasible" in job, f"Job {job['url']} missing feasible field"
+
+
+def test_does_not_recheck_tagged_jobs(tmp_output_dir, all_jobs_sample):
+    """Jobs with existing `feasible` field should NOT be rechecked."""
+    path = tmp_output_dir / "all_jobs.json"
+    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+
+    checker = MockChecker()
+    run_feasibility_check(checker)
+
+    # 9 jobs have feasible field, only 1 doesn't (the last one)
+    # So only 1 batch should be called
+    assert checker.call_count == 1
+
+
+def test_safe_default_on_empty_verdicts(tmp_output_dir, all_jobs_sample):
+    """If checker returns empty dict, jobs default to feasible: True."""
+    path = tmp_output_dir / "all_jobs.json"
+    # Remove all feasible fields so all jobs are unchecked
+    sample = json.loads(json.dumps(all_jobs_sample))
+    for job in sample["jobs"]:
+        job.pop("feasible", None)
+    path.write_text(json.dumps(sample, separators=(",", ":")))
+
+    checker = MockChecker(verdicts={})  # empty → all default to True
+    run_feasibility_check(checker)
+
+    data = json.loads(path.read_text())
+    for job in data["jobs"]:
+        assert job.get("feasible") is True
+
+
+def test_idempotent_second_run(tmp_output_dir, all_jobs_sample):
+    """Running twice should not recheck any jobs on the second run."""
+    path = tmp_output_dir / "all_jobs.json"
+    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+
+    checker = MockChecker()
+    run_feasibility_check(checker)
+    first_calls = checker.call_count
+
+    run_feasibility_check(checker)
+    assert checker.call_count == first_calls  # no new calls
+
+
+def test_zero_pending_jobs(tmp_output_dir, all_jobs_sample):
+    """All jobs already checked → should not call checker."""
+    path = tmp_output_dir / "all_jobs.json"
+    # Add feasible to all jobs
+    sample = json.loads(json.dumps(all_jobs_sample))
+    for job in sample["jobs"]:
+        job["feasible"] = True
+    path.write_text(json.dumps(sample, separators=(",", ":")))
+
+    checker = MockChecker()
+    run_feasibility_check(checker)
+    assert checker.call_count == 0
+
+
+def test_preserves_other_fields(tmp_output_dir, all_jobs_sample):
+    """Existing fields (description, salary, etc.) should be preserved."""
+    path = tmp_output_dir / "all_jobs.json"
+    path.write_text(json.dumps(all_jobs_sample, separators=(",", ":")))
+
+    checker = MockChecker()
+    run_feasibility_check(checker)
+
+    data = json.loads(path.read_text())
+    for job in data["jobs"]:
+        assert "title" in job
+        assert "company" in job
+        assert "url" in job
+        assert "location" in job
