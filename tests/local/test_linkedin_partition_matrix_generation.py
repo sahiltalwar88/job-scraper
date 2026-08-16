@@ -11,7 +11,7 @@ import sys
 
 import pytest
 
-SCRAPER_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCRAPER_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def _run_emit_matrix(phase):

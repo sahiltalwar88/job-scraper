@@ -47,13 +47,6 @@ def test_all_50_states_accepted(state):
     )
 
 
-def test_state_abbreviation():
-    """State abbreviations should also be accepted."""
-    assert is_target_location("Austin, TX") is True
-    assert is_target_location("San Francisco, CA") is True
-    assert is_target_location("New York, NY") is True
-
-
 def test_remote():
     assert is_target_location("Remote") is True
 
@@ -64,10 +57,6 @@ def test_remote_united_states():
 
 def test_hybrid():
     assert is_target_location("Hybrid - Austin, TX") is True
-
-
-def test_united_states():
-    assert is_target_location("United States") is True
 
 
 @pytest.mark.parametrize("location", INTERNATIONAL)

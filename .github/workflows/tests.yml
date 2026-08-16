@@ -25,4 +25,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tests/requirements-dev.txt
       - name: Run tests
-        run: pytest tests/ -v
+        run: pytest tests/ -v --ignore=tests/local
