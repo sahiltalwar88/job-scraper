@@ -31,11 +31,30 @@ All 18 workflows live in `.github/workflows/`. Pattern:
 | Item | Where to set | Required? |
 |------|-------------|-----------|
 | `ENABLE_DATA_COMMITS=true` | Settings → Secrets and variables → Actions → **Variables** tab | **Yes** |
+| `CONFIG_JSON` secret | Settings → Secrets and variables → Actions → **Secrets** tab | **Yes** |
 | Workflow permissions: Read+write | Settings → Actions → General → Workflow permissions | **Yes** |
 | GitHub Pages: main branch, / root | Settings → Pages | Yes (for dashboard) |
 | `PUSHOVER_TOKEN` + `PUSHOVER_USER` secrets | Settings → Secrets | Optional |
 | `ANTHROPIC_API_KEY` secret | Settings → Secrets | Optional (AI triage only) |
 | `CANDIDATE_PROFILE` + `CANDIDATE_RESUME` secrets | Settings → Secrets | Optional (AI triage only) |
+
+### Exporting `CONFIG_JSON` to the secret
+
+The config must be stored as a **single-line, ASCII-safe** JSON string. If stored
+multi-line, GitHub Actions treats each line as a separate secret pattern and
+redacts any step output containing those substrings — including the partition
+matrix, which breaks the parallel backfill with `fromJson: empty input`.
+
+```bash
+# Print to stdout:
+bash scripts/export-config-secret.sh
+
+# Copy directly to Windows clipboard (WSL):
+bash scripts/export-config-secret.sh --clip
+```
+
+The script minifies to one line and escapes non-ASCII chars as `\uXXXX` to
+prevent corruption through `clip.exe`.
 
 ## Automated setup
 

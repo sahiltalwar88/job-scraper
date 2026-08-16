@@ -81,6 +81,31 @@ Want it on a custom domain (like `you.com/jobs`)? See [Managing a custom domain]
 
    This tells CI to commit scraped results back to your repo. Without it, scrapers run but nothing is saved. The upstream template repo deliberately leaves this unset so its CI never commits data that would conflict with your copy when you sync.
 
+4. **Settings → Secrets and variables → Actions → New repository secret** — add:
+
+   | Secret | Value |
+   |--------|-------|
+   | `CONFIG_JSON` | The full contents of your `config.json` (see below) |
+
+   The scraper workflows reconstruct `config.json` on the runner from this secret at the start of each job (your real `config.json` is gitignored and not in the repo).
+
+   **Important — store it as a single line, not pretty-printed:**
+   GitHub Actions treats each line of a multi-line secret as a separate secret pattern for masking. If your config is stored multi-line, each line (e.g. `"Director of Engineering",`) becomes its own secret, and any step output containing that text gets redacted — including the partition matrix that drives the parallel backfill, which will fail with `fromJson: empty input`.
+
+   **Export command (run from the repo root):**
+
+   ```bash
+   # Print single-line, ASCII-safe JSON to stdout:
+   bash scripts/export-config-secret.sh
+
+   # Copy directly to Windows clipboard (WSL only):
+   bash scripts/export-config-secret.sh --clip
+   ```
+
+   The script minifies the JSON to one line and escapes non-ASCII characters (em-dashes, emoji) as `\uXXXX` to prevent corruption through `clip.exe`. Paste the result into the `CONFIG_JSON` secret value field.
+
+   > **Why a secret and not a variable?** The config is stored as a secret to keep your search parameters private. Variables are visible in plain text in the Actions tab. The trade-off is the single-line requirement above — if you don't need privacy, a variable works too and avoids the redaction issue entirely.
+
 ## Step 5 — Run it the first time
 
 In the **Actions** tab, open each watcher and click **Run workflow**. Afterwards they run automatically on their schedule — this first manual run seeds your dataset.
