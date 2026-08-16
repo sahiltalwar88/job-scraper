@@ -100,15 +100,17 @@ def test_phase2_cumulative_lookback():
 
 
 def test_phase2_target_dates_are_recent():
-    """Target dates should be within the last 7 days."""
+    """Target dates should be within the last 7 days (allowing for timezone drift)."""
     from datetime import datetime, timedelta
     matrix = _run_emit_matrix("high")
     now = datetime.now()
     for item in matrix:
         target = datetime.strptime(item["target_date"], "%Y-%m-%d")
         delta = (now - target).days
-        assert 0 <= delta <= 7, (
-            f"Target date {item['target_date']} is {delta} days ago, expected 0-7"
+        # Allow -1 to 7 to handle UTC midnight boundary (target_date may be "today"
+        # in UTC but "tomorrow" in local time, or vice versa)
+        assert -1 <= delta <= 7, (
+            f"Target date {item['target_date']} is {delta} days ago, expected -1 to 7"
         )
 
 
