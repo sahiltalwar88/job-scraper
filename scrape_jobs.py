@@ -151,38 +151,35 @@ _KEYWORD_RE = re.compile(
 )
 
 # ---------------------------------------------------------------------------
-# Fuzzy leadership pre-filter — deliberately BROAD. Used by the LinkedIn
-# partitioned backfill to catch title variants the exact-phrase KEYWORDS miss
+# Fuzzy pre-filter — deliberately BROAD. Used by the LinkedIn partitioned
+# backfill to catch title variants the exact-phrase KEYWORDS miss
 # (e.g. "Director, Engineering", "Senior Engineering Manager", "Head of
 # Dropbox"). The LLM feasibility check (--feasibility-check) makes the final
 # cut. Config: keywords.fuzzy_seniority, keywords.fuzzy_domain,
-# keywords.fuzzy_exclude. See plan-40f6b25ee646a0c0.md for the full design.
-_FUZZY_SENIORITY = _cfg("keywords.fuzzy_seniority", [
-    "director", "vp", "vice president", "head", "chief", "president",
-])
-_FUZZY_DOMAIN = _cfg("keywords.fuzzy_domain", [
-    "software", "platform", "infrastructure", "technology", "engineering",
-])
-_FUZZY_EXCLUDE = _cfg("keywords.fuzzy_exclude", [
-    "hardware", "defense", "manufacturing", "aerospace", "energy",
-    "materials", "civil", "mechanical", "electrical", "chemical",
-    "structural", "industrial", "mining", "petroleum", "nuclear",
-    "marine", "automotive", "construction", "facilities", "quality",
-    "project", "program",
-])
+# keywords.fuzzy_exclude. Leave all three empty to disable the fuzzy filter
+# and fall back to keyword-only matching (keywords.include).
+_FUZZY_SENIORITY = _cfg("keywords.fuzzy_seniority", [])
+_FUZZY_DOMAIN = _cfg("keywords.fuzzy_domain", [])
+_FUZZY_EXCLUDE = _cfg("keywords.fuzzy_exclude", [])
 
-_SENIORITY_RE = re.compile(
-    rf"\b(?:{'|'.join(re.escape(t) for t in _FUZZY_SENIORITY)})\b",
-    re.IGNORECASE,
-)
-_DOMAIN_RE = re.compile(
-    rf"\b(?:{'|'.join(re.escape(t) for t in _FUZZY_DOMAIN)})\b",
-    re.IGNORECASE,
-)
-_FUZZY_EXCLUDE_RE = re.compile(
-    rf"\b(?:{'|'.join(re.escape(t) for t in _FUZZY_EXCLUDE)})\b",
-    re.IGNORECASE,
-)
+# Fuzzy filter is active only when both seniority and domain lists are non-empty.
+_FUZZY_ENABLED = bool(_FUZZY_SENIORITY) and bool(_FUZZY_DOMAIN)
+
+
+def _build_word_re(terms: list[str]) -> re.Pattern | None:
+    """Build a word-boundary alternation regex from a term list.
+    Returns None if the list is empty (caller should skip the check)."""
+    if not terms:
+        return None
+    return re.compile(
+        rf"\b(?:{'|'.join(re.escape(t) for t in terms)})\b",
+        re.IGNORECASE,
+    )
+
+
+_SENIORITY_RE = _build_word_re(_FUZZY_SENIORITY)
+_DOMAIN_RE = _build_word_re(_FUZZY_DOMAIN)
+_FUZZY_EXCLUDE_RE = _build_word_re(_FUZZY_EXCLUDE)
 _SR_MGR_RE = re.compile(
     r"\b(?:senior|sr)\b.*\bmanager\b|\bmanager\b.*\b(?:senior|sr)\b",
     re.IGNORECASE,
@@ -190,19 +187,27 @@ _SR_MGR_RE = re.compile(
 _HEAD_OF_RE = re.compile(r"\bhead\s+of\b", re.IGNORECASE)
 
 
-def is_leadership_role(title: str, company: str = "") -> bool:
-    """Broad fuzzy pre-filter for software engineering leadership roles.
+def role_is_relevant(title: str, company: str = "") -> bool:
+    """Check whether a job title is relevant to the configured search.
 
-    Deliberately permissive — the LLM feasibility check makes the final cut.
-    Targets Director+ level (Senior Manager at minimum) in software/engineering
-    at tech companies. Excludes non-software domains (hardware, manufacturing,
-    defense, etc.) at the filter level; ambiguous cases pass to the LLM.
+    When the fuzzy pre-filter is configured (keywords.fuzzy_seniority and
+    keywords.fuzzy_domain both non-empty), applies a broad fuzzy match that
+    catches title variants the exact-phrase KEYWORDS miss. Deliberately
+    permissive — the LLM feasibility check (--feasibility-check) makes the
+    final cut.
+
+    When the fuzzy pre-filter is not configured (either list empty), falls
+    back to the keyword filter (keywords.include) — the same filter used by
+    non-LinkedIn sources.
     """
     if not title:
         return False
     if EXCLUDED_SENIORITY_RE.search(title):
         return False
-    if _FUZZY_EXCLUDE_RE.search(title):
+    if not _FUZZY_ENABLED:
+        return bool(_KEYWORD_RE.search(title))
+    # Fuzzy mode: broad pre-filter for domain-specific seniority + domain tokens.
+    if _FUZZY_EXCLUDE_RE and _FUZZY_EXCLUDE_RE.search(title):
         return False
     # Director+ : seniority token + domain token (e.g. "Director of Engineering")
     if _SENIORITY_RE.search(title) and _DOMAIN_RE.search(title):
@@ -212,10 +217,10 @@ def is_leadership_role(title: str, company: str = "") -> bool:
         return True
     # "head of" + domain token or priority company (e.g. "Head of Engineering",
     # "Head of Dropbox" — LLM decides if it's engineering)
-    if _HEAD_OF_RE.search(title) and (_DOMAIN_RE.search(title) or _is_biotech_company(company)):
+    if _HEAD_OF_RE.search(title) and (_DOMAIN_RE.search(title) or _is_priority_company(company)):
         return True
     # Seniority token + priority company (e.g. "VP at Google")
-    if _SENIORITY_RE.search(title) and _is_biotech_company(company):
+    if _SENIORITY_RE.search(title) and _is_priority_company(company):
         return True
     return False
 
@@ -254,17 +259,17 @@ def fetch(url, *, retries=4, _base_wait=30.0):
     return ""
 
 
-def is_mle_role(title: str) -> bool:
-    """True if a job title is on-target for Dr. Coffin (env/tox/risk/etc.) and
-    not a junior/student posting. (Name kept for compatibility with the
-    original pipeline; it now gates environmental-toxicology titles.)"""
+def title_matches_keywords(title: str) -> bool:
+    """True if a job title matches any keyword in keywords.include and is not
+    a junior/student posting (keywords.exclude). This is the config-driven
+    keyword filter used by all non-LinkedIn-partition sources."""
     if EXCLUDED_SENIORITY_RE.search(title):
         return False
     return bool(_KEYWORD_RE.search(title))
 
 
-def is_mle_role_text(title: str, *parts: str) -> bool:
-    """Like is_mle_role, but allows source-specific summary text to carry the signal."""
+def text_matches_keywords(title: str, *parts: str) -> bool:
+    """Like title_matches_keywords, but allows source-specific summary text to carry the signal."""
     if EXCLUDED_SENIORITY_RE.search(title or ""):
         return False
     text = " ".join([title or "", *(p or "" for p in parts)])
@@ -402,7 +407,7 @@ def is_recent_posting(job: dict, *, now: datetime | None = None) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Curated Bay Area biotechs — direct ATS probes (Greenhouse / Workday)
+# Curated employers — direct ATS probes (Greenhouse / Workday)
 # ---------------------------------------------------------------------------
 
 # Each entry must include: name, ats, fallback_location, and the ATS-specific id
@@ -417,9 +422,9 @@ def is_recent_posting(job: dict, *, now: datetime | None = None) -> bool:
 # primary sources. To add a verified board here, confirm it returns JSON first:
 #   curl https://boards-api.greenhouse.io/v1/boards/<slug>/jobs   # Greenhouse
 # then add e.g.:
-#   {"name": "Example Env Co", "ats": "greenhouse", "slug": "examplenv",
+#   {"name": "Example Co", "ats": "greenhouse", "slug": "exampleco",
 #    "fallback_location": "Sacramento, CA"},
-CURATED_BIOTECHS: list[dict] = []
+CURATED_EMPLOYERS: list[dict] = []
 
 
 def probe_curated_greenhouse(entry: dict) -> list:
@@ -435,7 +440,7 @@ def probe_curated_greenhouse(entry: dict) -> list:
     jobs = []
     for job in data.get("jobs", []):
         title = job.get("title", "")
-        if not is_mle_role(title):
+        if not title_matches_keywords(title):
             continue
         loc = (job.get("location") or {}).get("name", "") or entry["fallback_location"]
         jobs.append({
@@ -483,7 +488,7 @@ def probe_curated_workday(entry: dict) -> list:
             if ext_path in seen:
                 continue
             title = posting.get("title", "")
-            if not is_mle_role(title):
+            if not title_matches_keywords(title):
                 continue
             public_url = f"https://{domain}/{site}{ext_path}" if ext_path else entry["url"]
             loc = posting.get("locationsText", "") or entry["fallback_location"]
@@ -501,12 +506,12 @@ def probe_curated_workday(entry: dict) -> list:
     return list(seen.values())
 
 
-def scrape_curated_biotechs() -> list:
-    if not CURATED_BIOTECHS:
+def scrape_curated_employers() -> list:
+    if not CURATED_EMPLOYERS:
         return []
-    print(f"🔬 Scraping {len(CURATED_BIOTECHS)} curated organizations (direct ATS)...")
+    print(f"🔬 Scraping {len(CURATED_EMPLOYERS)} curated organizations (direct ATS)...")
     all_jobs: list = []
-    for entry in CURATED_BIOTECHS:
+    for entry in CURATED_EMPLOYERS:
         if entry["ats"] == "greenhouse":
             jobs = probe_curated_greenhouse(entry)
         elif entry["ats"] == "workday":
@@ -527,7 +532,7 @@ def scrape_curated_biotechs() -> list:
 LINKEDIN_SEARCH_TERMS = _cfg("search_terms.linkedin", [])
 
 LINKEDIN_LOOKBACK_SECONDS = 3600          # 1h — every-2h watcher only surfaces the freshest hour
-LINKEDIN_BIOTECH_LOOKBACK_SECONDS = 86400 # 24h — biotech is a daily 8pm PT digest
+LINKEDIN_PRIORITY_LOOKBACK_SECONDS = 86400 # 24h — priority digest is a daily 8pm PT run
 
 # Geographies to search. geoId is LinkedIn's authoritative region filter; an
 # empty geoId lets LinkedIn resolve the location text (verified to work for
@@ -551,60 +556,31 @@ LINKEDIN_HIGH_VOLUME_LOCATIONS = _cfg("locations.linkedin_partitions.high_volume
 # with bidirectional substring matching, so "Ramboll" matches "Ramboll US
 # Corporation". Keep names ~6+ chars to limit incidental substring collisions
 # (avoid bare acronyms like EPA/EWG/ERG/CARB).
-BIOTECH_COMPANY_NAMES = _cfg("employers.priority", [])
+PRIORITY_EMPLOYER_NAMES = _cfg("employers.priority", [])
 
-BIOTECH_COMPANY_ALLOWLIST = frozenset(
-    re.sub(r'[^a-z0-9]', '', n.lower()) for n in BIOTECH_COMPANY_NAMES
+PRIORITY_EMPLOYER_ALLOWLIST = frozenset(
+    re.sub(r'[^a-z0-9]', '', n.lower()) for n in PRIORITY_EMPLOYER_NAMES
 )
 
 
-def _is_biotech_company(name: str) -> bool:
+def _is_priority_company(name: str) -> bool:
     norm = re.sub(r'[^a-z0-9]', '', (name or "").lower())
     if not norm:
         return False
-    return any(b in norm or norm in b for b in BIOTECH_COMPANY_ALLOWLIST)
-
-
-# Pharma / drug-development companies. Dr. Coffin works in ENVIRONMENTAL
-# toxicology, never pharmaceutical / preclinical drug-safety tox, so these are
-# dropped everywhere even when the title (e.g. "Toxicologist", "Toxicology
-# Director") would otherwise match. Agrochemical and chemical manufacturers
-# (Corteva, Syngenta, Dow, BASF) are intentionally NOT here — their product-
-# stewardship / chemical-risk roles are in-scope.
-PHARMA_COMPANY_RE = re.compile(
-    # ---- generic pharma / biotech / drug-development name signals (substring) ----
-    r'pharmaceutic|pharma\b|therapeutic|biopharm|biotech|biologic|bioscience|'
-    r'biosystem|genomics|gene therap|cell therap|immunotherap|\bvaccine|'
-    r'\bmedicines\b|drug discovery|oncolog|biomedicine|nanomedicine'
-    # ---- explicit pharma / biotech companies (word-bounded, length >= 5) ----
-    r'|\b(?:'
-    r'pfizer|merck|novartis|roche|abbvie|bristol[ -]?myers|sanofi|astrazeneca|'
-    r'glaxosmithkline|takeda|boehringer|amgen|gilead|genentech|biogen|regeneron|'
-    r'moderna|vertex|novo nordisk|viatris|bausch|alkermes|halozyme|galapagos|'
-    r'insitro|recursion|cytokinetics|arcus|gritstone|sutro|nurix|rigel|corcept|'
-    r'annexon|kodiak|coherus|vaxcyte|allakos|protagonist|kyverna|septerna|'
-    r'sangamo|atara|allogene|intellia|editas|poseida|nkarta|tenaya|pliant|'
-    r'rezolute|aldeyra|arcturus|caribou|chemocentryx|dynavax|geron|iovance|'
-    r'karuna|mersana|mirati|nektar|prothena|revance|seagen|ultragenyx|zentalis|'
-    r'exelixis|biomarin|alnylam|incyte|neurocrine|ionis|denali|acadia|adarx|'
-    r'genmab|nuvation|exact sciences|revolution medicines|structure therapeutics|'
-    r'relay therapeutics|beam therapeutics|sana biotechnology|fate therapeutics'
-    r')\b',
-    re.IGNORECASE,
-)
+    return any(b in norm or norm in b for b in PRIORITY_EMPLOYER_ALLOWLIST)
 
 
 # config.json → employers.exclude: drop roles from any company whose name
-# contains one of these (case-insensitive substring). When set, it overrides the
-# built-in PHARMA_COMPANY_RE; leave it [] to disable company exclusion entirely.
+# contains one of these (case-insensitive substring). Leave it [] to disable
+# company exclusion entirely.
 _EXCLUDE_COMPANY_TERMS = [str(t).lower() for t in _cfg("employers.exclude", [])]
 
 
-def _is_pharma_company(name: str) -> bool:
-    if _EXCLUDE_COMPANY_TERMS:
-        low = (name or "").lower()
-        return any(t in low for t in _EXCLUDE_COMPANY_TERMS)
-    return bool(PHARMA_COMPANY_RE.search(name or ""))
+def _is_excluded_company(name: str) -> bool:
+    if not _EXCLUDE_COMPANY_TERMS:
+        return False
+    low = (name or "").lower()
+    return any(t in low for t in _EXCLUDE_COMPANY_TERMS)
 
 
 def _slug(s: str) -> str:
@@ -613,9 +589,13 @@ def _slug(s: str) -> str:
 
 
 def _parse_linkedin_cards(html: str) -> tuple[list[dict], int]:
-    """Returns (keyword-matched cards, raw card count on the page). The raw
-    count lets callers distinguish 'page full of non-matching roles' (keep
-    paginating) from 'no results at all' (stop)."""
+    """Parse LinkedIn search result HTML into card dicts (no filtering).
+
+    Returns (all_parsed_cards, raw_card_count). The raw count lets callers
+    distinguish 'page full of non-matching roles' (keep paginating) from
+    'no results at all' (stop). Filtering is applied by callers via
+    role_is_relevant() after parsing.
+    """
     import html as html_mod
     cards = re.split(r'<li[^>]*>', html)[1:]
     parsed = []
@@ -640,9 +620,6 @@ def _parse_linkedin_cards(html: str) -> tuple[list[dict], int]:
             html_mod.unescape(re.sub(r'\s+', ' ', company_m.group(1).strip()))
             if company_m else "Unknown"
         )
-        # Fuzzy pre-filter (broad) — LLM feasibility check makes the final cut.
-        if not title or not is_leadership_role(title, company):
-            continue
         location = html_mod.unescape(
             (location_m.group(1).strip() if location_m else "")
         ).replace("\n", " ")
@@ -742,6 +719,8 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
                 for p in parsed:
                     if p["id"] in jobs_by_id:
                         continue
+                    if not role_is_relevant(p["title"], p["company"]):
+                        continue
                     jobs_by_id[p["id"]] = {
                         "company": p["company"],
                         "title": p["title"],
@@ -818,7 +797,7 @@ def _linkedin_search_partition(term: str, location: str, lookback_seconds: int,
         if not raw_count:
             break
         for p in parsed:
-            if p["id"] not in jobs_by_id:
+            if p["id"] not in jobs_by_id and role_is_relevant(p["title"], p["company"]):
                 jobs_by_id[p["id"]] = {
                     "company": p["company"],
                     "title": p["title"],
@@ -1032,21 +1011,21 @@ def scrape_linkedin_recent() -> list:
     return jobs
 
 
-def scrape_linkedin_biotech() -> list:
+def scrape_linkedin_priority() -> list:
     """
     Last 24h on LinkedIn, filtered to the priority-employer allowlist (env/tox
     consulting, research institutes, agencies, NGOs, universities, product
     safety). LinkedIn's f_I industry filter is silently ignored on the public
     guest endpoint, so we use the env/tox keyword terms + a company allowlist.
     """
-    print(f"🏛  Scraping LinkedIn priority employers (last {LINKEDIN_BIOTECH_LOOKBACK_SECONDS // 3600}h)...")
-    raw, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, LINKEDIN_BIOTECH_LOOKBACK_SECONDS)
+    print(f"🏛  Scraping LinkedIn priority employers (last {LINKEDIN_PRIORITY_LOOKBACK_SECONDS // 3600}h)...")
+    raw, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, LINKEDIN_PRIORITY_LOOKBACK_SECONDS)
     if raw_cards == 0:
         # Blocked run: contribute nothing rather than nuke the digest baseline.
         print("  ⛔ LinkedIn returned 0 cards across all terms (likely blocked); "
               "skipping LinkedIn for this digest")
         return []
-    jobs = [j for j in raw if _is_biotech_company(j["company"])]
+    jobs = [j for j in raw if _is_priority_company(j["company"])]
     print(f"  ✅ Priority employers: {len(jobs)} role(s) (from {len(raw)} total)")
     _enrich_linkedin_postings(jobs)
     return jobs
@@ -1166,7 +1145,7 @@ def _ingest_jobspy_df(df, *, label: str, jobs_by_id: dict[str, dict]) -> int:
     df = df.fillna("")
     for _, row in df.iterrows():
         title = str(row.get("title", "") or "")
-        if not is_mle_role(title):
+        if not title_matches_keywords(title):
             continue
         url = str(row.get("job_url", "") or "")
         if not url:
@@ -1411,7 +1390,7 @@ def _google_jobs_description(raw: dict) -> str:
 
 def _normalize_serpapi_google_job(raw: dict) -> dict | None:
     title = str(raw.get("title", "") or "")
-    if not title or not is_mle_role(title):
+    if not title or not title_matches_keywords(title):
         return None
     detected = raw.get("detected_extensions") if isinstance(raw.get("detected_extensions"), dict) else {}
     extensions = raw.get("extensions") if isinstance(raw.get("extensions"), list) else []
@@ -1448,7 +1427,7 @@ def _normalize_serpapi_google_job(raw: dict) -> dict | None:
 
 def _normalize_oxylabs_google_job(raw: dict) -> dict | None:
     title = str(raw.get("job_title") or raw.get("title") or "")
-    if not title or not is_mle_role(title):
+    if not title or not title_matches_keywords(title):
         return None
     url = str(raw.get("URL") or raw.get("url") or raw.get("share_url") or "")
     if not url:
@@ -1747,7 +1726,7 @@ def _hiringcafe_salary(raw: dict) -> str:
 
 def _normalize_hiringcafe_job(raw: dict) -> dict | None:
     title = str(_deep_first(raw, ("title", "jobTitle", "name")) or "")
-    if not title or not is_mle_role(title):
+    if not title or not title_matches_keywords(title):
         return None
     url = str(_deep_first(raw, ("apply_url", "applyUrl", "url", "jobUrl", "job_url")) or "")
     if not url:
@@ -1911,7 +1890,7 @@ CALCAREERS_BASE = "https://www.calcareers.ca.gov"
 CALCAREERS_SEARCH_URL = "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx"
 CALCAREERS_TIMEOUT = 30
 
-# Broad CalCareers queries; titles are still gated by is_mle_role() afterward.
+# Broad CalCareers queries; titles are still gated by title_matches_keywords() afterward.
 CALCAREERS_TERMS = _cfg("search_terms.calcareers", [])
 
 
@@ -2058,7 +2037,7 @@ def scrape_calcareers_recent() -> list:
             continue
         for job in _parse_calcareers_results(res_html):
             parsed_total += 1
-            if is_mle_role(job["title"]) and job["url"] not in jobs_by_url:
+            if title_matches_keywords(job["title"]) and job["url"] not in jobs_by_url:
                 time.sleep(REQUEST_DELAY)
                 details = _calcareers_posting_details(job["url"])
                 if details.get("work_location"):
@@ -2146,7 +2125,7 @@ def scrape_usajobs_recent() -> list:
                 continue
             for job in payload.get("Jobs", []):
                 title = (job.get("Title") or "").strip()
-                if not is_mle_role(title):
+                if not title_matches_keywords(title):
                     continue
                 uri = (job.get("PositionURI") or "").replace(":443", "")
                 if not uri and job.get("DocumentID"):
@@ -2229,7 +2208,7 @@ def scrape_governmentjobs_recent(days: int | None = None) -> list:
                 if not lk:
                     continue
                 title = _clean(lk.group(2))
-                if not is_mle_role(title):
+                if not title_matches_keywords(title):
                     continue
                 loc_m = loc_re.search(it)
                 location = _clean(loc_m.group(1)) if loc_m else ""
@@ -2320,7 +2299,7 @@ def scrape_calopps_recent() -> list:
                 continue
             scanned += 1
             title = _clean(lk.group(2))
-            if not is_mle_role(title):
+            if not title_matches_keywords(title):
                 continue
             href = html_mod.unescape(lk.group(1).strip())
             job_url = href if href.startswith("http") else "https://www.calopps.org" + ("" if href.startswith("/") else "/") + href
@@ -2487,7 +2466,7 @@ def scrape_csucareers_recent() -> list:
         if not batch:
             break
         for job in batch:
-            if not is_mle_role_text(job.get("title", ""), job.get("description", "")):
+            if not text_matches_keywords(job.get("title", ""), job.get("description", "")):
                 continue
             if job["url"] not in jobs_by_url:
                 jobs_by_url[job["url"]] = _ensure_work_arrangement(job)
@@ -2892,13 +2871,13 @@ def save_jobs_output(jobs: list, *, basename: str, title: str, subtitle: str,
     Save jobs to {basename}.{json,md,html}. Dedupes against the previous JSON at
     the same path so each email surfaces only postings new to this run.
     """
-    # Single chokepoint for the pharma exclusion: every source (LinkedIn,
-    # Indeed, priority, CalCareers) funnels through here, so dropping pharma
+    # Single chokepoint for the company exclusion: every source (LinkedIn,
+    # Indeed, priority, CalCareers) funnels through here, so dropping excluded
     # companies once keeps all digests AND all_jobs.json clean.
     before = len(jobs)
-    jobs = [j for j in jobs if not _is_pharma_company(j.get("company", ""))]
+    jobs = [j for j in jobs if not _is_excluded_company(j.get("company", ""))]
     if len(jobs) < before:
-        print(f"  🚫 Dropped {before - len(jobs)} pharma role(s)")
+        print(f"  🚫 Dropped {before - len(jobs)} excluded role(s)")
     for job in jobs:
         _ensure_work_arrangement(job)
 
@@ -3044,15 +3023,15 @@ def save_hiringcafe_results(jobs: list):
     )
 
 
-def save_biotech_linkedin_results(jobs: list):
+def save_priority_results(jobs: list):
     save_jobs_output(
         jobs,
         basename="jobs",
         title=f"🏛 Priority Employers — {PROFILE_LABEL} Roles",
-        subtitle=f"{PROFILE_SUBTITLE} · priority-employer allowlist · last {LINKEDIN_BIOTECH_LOOKBACK_SECONDS // 3600}h",
+        subtitle=f"{PROFILE_SUBTITLE} · priority-employer allowlist · last {LINKEDIN_PRIORITY_LOOKBACK_SECONDS // 3600}h",
         accent="#2ea04f",
         empty_message="No new priority-employer roles since the last run.",
-        window_label=f"last {LINKEDIN_BIOTECH_LOOKBACK_SECONDS // 3600}h",
+        window_label=f"last {LINKEDIN_PRIORITY_LOOKBACK_SECONDS // 3600}h",
     )
 
 
@@ -3178,13 +3157,19 @@ def save_results(jobs: list):
 
 
 # ---------------------------------------------------------------------------
-# Feasibility check — LLM-based filter for engineering leadership roles.
+# Feasibility check — LLM-based filter for relevant roles.
 # Adapter pattern: FeasibilityChecker ABC allows swapping backends
 # (Devin CLI, Anthropic API, pure algorithm) without changing call sites.
+# The filter prompt is config-driven (feasibility_check.prompt in config.json).
 # ---------------------------------------------------------------------------
 
+# Config-driven feasibility prompt. When empty, --feasibility-check exits with
+# an error asking the user to set feasibility_check.prompt in config.json.
+_FEASIBILITY_PROMPT = _cfg("feasibility_check.prompt", "")
+
+
 class FeasibilityChecker(abc.ABC):
-    """Check whether a job is plausibly an engineering leadership role."""
+    """Check whether a job is plausibly relevant to the configured search."""
 
     @abc.abstractmethod
     def check_batch(self, jobs: list[dict]) -> dict[str, bool]:
@@ -3199,18 +3184,21 @@ class DevinCLIChecker(FeasibilityChecker):
 
     BATCH_SIZE = 10
 
-    def __init__(self, model: str = "glm-5.2-high"):
+    def __init__(self, model: str = "glm-5.2-high", prompt: str = ""):
         self.model = model
+        self.prompt = prompt or _FEASIBILITY_PROMPT
 
     def check_batch(self, jobs: list[dict]) -> dict[str, bool]:
         if not jobs:
             return {}
+        if not self.prompt:
+            print("  ⚠️  No feasibility_check.prompt configured in config.json.")
+            print("      Add a prompt describing what makes a job relevant to your search.")
+            return {}
         lines = [
-            "You are a job filter. For each job below, reply with its number "
-            "followed by YES or NO. A job is YES if it is plausibly an "
-            "engineering leadership role (Director, VP, Head, Chief, or senior "
-            "engineering manager level) at a technology company. Reply with "
-            "one line per job, format: 'N. YES' or 'N. NO'.\n"
+            f"You are a job filter. For each job below, reply with its number "
+            f"followed by YES or NO. {self.prompt} "
+            "Reply with one line per job, format: 'N. YES' or 'N. NO'.\n"
         ]
         for i, job in enumerate(jobs, 1):
             lines.append(
@@ -3378,6 +3366,11 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if "--feasibility-check" in sys.argv:
+        if not _FEASIBILITY_PROMPT:
+            print("ERROR: --feasibility-check requires feasibility_check.prompt in config.json.")
+            print("       Add a prompt describing what makes a job relevant to your search.")
+            print("       Example: \"A job is YES if it is plausibly a senior role in [your domain]\"")
+            sys.exit(1)
         run_feasibility_check(DevinCLIChecker())
         sys.exit(0)
 
@@ -3423,7 +3416,7 @@ if __name__ == "__main__":
                 "raw": raw,
                 "hit_cap": hit_cap,
             })
-        all_jobs = [j for j in all_jobs if not _is_pharma_company(j.get("company", ""))]
+        all_jobs = [j for j in all_jobs if not _is_excluded_company(j.get("company", ""))]
         for job in all_jobs:
             _ensure_work_arrangement(job)
         print()
@@ -3797,16 +3790,15 @@ if __name__ == "__main__":
         save_csucareers_results(scrape_csucareers_recent())
         sys.exit(0)
 
-    if "--biotech-only" in sys.argv:
-        # "Priority Employers" digest (flag name kept so the GitHub workflow
-        # doesn't change). Source = the LinkedIn priority-employer allowlist,
-        # plus any verified direct-ATS boards added to CURATED_BIOTECHS (empty
-        # by default for env/tox employers — see that list's note). Cross-run
-        # dedupe via _load_prev_ids → save_biotech_linkedin_results gives
+    if "--priority-only" in sys.argv:
+        # "Priority Employers" digest. Source = the LinkedIn priority-employer
+        # allowlist, plus any verified direct-ATS boards added to
+        # CURATED_EMPLOYERS (empty by default — see that list's note).
+        # Cross-run dedupe via _load_prev_ids → save_priority_results gives
         # "new since last digest" semantics.
-        jobs = list(scrape_curated_biotechs())
+        jobs = list(scrape_curated_employers())
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
-        jobs.extend(scrape_linkedin_biotech())
+        jobs.extend(scrape_linkedin_priority())
 
         seen: set[tuple[str, str]] = set()
         deduped: list[dict] = []
@@ -3819,7 +3811,7 @@ if __name__ == "__main__":
         print(f"\n🏛  Combined priority-employer total: {len(deduped)} unique role(s) "
               f"(from {len(jobs)} across sources)")
 
-        save_biotech_linkedin_results(deduped)
+        save_priority_results(deduped)
         sys.exit(0)
 
     if "--priority-backfill" in sys.argv:
@@ -3828,8 +3820,8 @@ if __name__ == "__main__":
         backfill_s = LINKEDIN_BACKFILL_DAYS * 24 * 3600
         print(f"🔁 Priority Employer backfill (last {LINKEDIN_BACKFILL_DAYS} days)…")
         raw, _ = _linkedin_search(list(LINKEDIN_SEARCH_TERMS), backfill_s)
-        jobs = [j for j in raw if _is_biotech_company(j["company"])]
-        jobs = list(scrape_curated_biotechs()) + jobs
+        jobs = [j for j in raw if _is_priority_company(j["company"])]
+        jobs = list(scrape_curated_employers()) + jobs
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
         if jobs:
             _enrich_linkedin_postings(jobs)
@@ -3842,12 +3834,12 @@ if __name__ == "__main__":
             seen.add(key)
             deduped_p.append(j)
         print(f"  ✅ Backfill: {len(deduped_p)} unique priority-employer role(s)")
-        save_biotech_linkedin_results(deduped_p)
+        save_priority_results(deduped_p)
         sys.exit(0)
 
-    # Legacy default: direct-ATS sweep (CURATED_BIOTECHS). Empty by default for
-    # env/tox employers, so this prints 0; CI uses the three --*-only flags.
-    all_jobs = list(scrape_curated_biotechs())
+    # Legacy default: direct-ATS sweep (CURATED_EMPLOYERS). Empty by default,
+    # so this prints 0; CI uses the three --*-only flags.
+    all_jobs = list(scrape_curated_employers())
 
     before = len(all_jobs)
     all_jobs = [j for j in all_jobs if is_target_location(j.get("location", ""))]

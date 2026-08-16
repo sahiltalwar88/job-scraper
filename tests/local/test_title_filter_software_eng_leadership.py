@@ -1,11 +1,11 @@
-"""Test the fuzzy leadership pre-filter (is_leadership_role).
+"""Test the fuzzy leadership pre-filter (role_is_relevant).
 
 Test cases derived from the California 50-title sample and user-specified
 edge cases. This is the core decision gate — false positives waste LLM
 calls, false negatives miss real jobs.
 """
 import pytest
-from scrape_jobs import is_leadership_role
+from scrape_jobs import role_is_relevant
 
 
 # ---------------------------------------------------------------------------
@@ -78,56 +78,56 @@ WRONG_DOMAIN_CASES = [
 
 @pytest.mark.parametrize("title,company", PASS_CASES)
 def test_should_pass(title, company):
-    assert is_leadership_role(title, company) is True, (
+    assert role_is_relevant(title, company) is True, (
         f'Expected True for "{title}" but got False'
     )
 
 
 @pytest.mark.parametrize("title,company", EXCLUDE_CASES)
 def test_should_reject_excluded_domains(title, company):
-    assert is_leadership_role(title, company) is False, (
+    assert role_is_relevant(title, company) is False, (
         f'Expected False for "{title}" (excluded domain) but got True'
     )
 
 
 @pytest.mark.parametrize("title,company", BELOW_LEVEL_CASES)
 def test_should_reject_below_level(title, company):
-    assert is_leadership_role(title, company) is False, (
+    assert role_is_relevant(title, company) is False, (
         f'Expected False for "{title}" (below Director+) but got True'
     )
 
 
 @pytest.mark.parametrize("title,company", WRONG_DOMAIN_CASES)
 def test_should_reject_wrong_domain(title, company):
-    assert is_leadership_role(title, company) is False, (
+    assert role_is_relevant(title, company) is False, (
         f'Expected False for "{title}" (wrong domain) but got True'
     )
 
 
 def test_head_of_dropbox_priority_company():
     """Head of Dropbox passes via priority company rule (Dropbox in priority list)."""
-    assert is_leadership_role("Head of Dropbox", "Dropbox") is True
+    assert role_is_relevant("Head of Dropbox", "Dropbox") is True
 
 
 def test_head_of_sales_priority_company():
     """Head of Sales at a priority company passes — LLM decides."""
     # Google is in the priority list
-    assert is_leadership_role("Head of Sales", "Google") is True
+    assert role_is_relevant("Head of Sales", "Google") is True
 
 
 def test_head_of_sales_non_priority():
     """Head of Sales at non-priority company without domain token is rejected."""
-    assert is_leadership_role("Head of Sales", "Acme Corp") is False
+    assert role_is_relevant("Head of Sales", "Acme Corp") is False
 
 
 def test_empty_title():
-    assert is_leadership_role("") is False
+    assert role_is_relevant("") is False
 
 
 def test_none_title():
-    assert is_leadership_role(None) is False  # type: ignore[arg-type]
+    assert role_is_relevant(None) is False  # type: ignore[arg-type]
 
 
 def test_vp_at_priority_company():
     """VP at a priority company passes even without domain token."""
-    assert is_leadership_role("VP", "Google") is True
+    assert role_is_relevant("VP", "Google") is True

@@ -45,7 +45,7 @@ jobs:
           if [ "${{ github.event.inputs.backfill }}" = "true" ]; then
             python scrape_jobs.py --priority-backfill
           else
-            python scrape_jobs.py --biotech-only
+            python scrape_jobs.py --priority-only
           fi
         env:
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}

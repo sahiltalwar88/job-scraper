@@ -44,8 +44,9 @@ def test_merge_deduplicates_by_url(tmp_output_dir, sample_partition_files):
     assert len(all_jobs) == 11
 
 
-def test_merge_filters_pharma_companies(tmp_output_dir, sample_partition_files):
-    """Pharma companies (Pfizer, Genentech) should be filtered out during merge."""
+def test_merge_filters_excluded_companies(tmp_output_dir, sample_partition_files):
+    """Excluded companies (Pfizer, Genentech) should be filtered out during merge
+    when employers.exclude is configured."""
     _copy_partitions_to_output(tmp_output_dir, sample_partition_files)
 
     import glob
@@ -61,11 +62,38 @@ def test_merge_filters_pharma_companies(tmp_output_dir, sample_partition_files):
                 seen_urls.add(url)
                 all_jobs.append(j)
 
-    # Filter pharma (same as the production merge code)
-    filtered = [j for j in all_jobs if not scrape_jobs._is_pharma_company(j.get("company", ""))]
+    # Simulate configured exclusion terms (as employers.exclude would in production)
+    with patch.object(scrape_jobs, "_EXCLUDE_COMPANY_TERMS",
+                      ["pfizer", "genentech", "pharma"]):
+        filtered = [j for j in all_jobs
+                    if not scrape_jobs._is_excluded_company(j.get("company", ""))]
     companies = [j["company"] for j in filtered]
     assert "Pfizer" not in companies
     assert "Genentech" not in companies
+
+
+def test_merge_no_exclusion_when_not_configured(tmp_output_dir, sample_partition_files):
+    """When employers.exclude is empty, no companies should be filtered out."""
+    _copy_partitions_to_output(tmp_output_dir, sample_partition_files)
+
+    import glob
+    all_files = sorted(glob.glob(str(tmp_output_dir / "linkedin_partition_*.json")))
+    all_jobs = []
+    seen_urls = set()
+    for tf in all_files:
+        with open(tf) as f:
+            data = json.load(f)
+        for j in data.get("jobs", []):
+            url = j.get("url", "")
+            if url not in seen_urls:
+                seen_urls.add(url)
+                all_jobs.append(j)
+
+    # With empty exclusion terms, nothing is filtered
+    with patch.object(scrape_jobs, "_EXCLUDE_COMPANY_TERMS", []):
+        filtered = [j for j in all_jobs
+                    if not scrape_jobs._is_excluded_company(j.get("company", ""))]
+    assert len(filtered) == len(all_jobs)
 
 
 def test_merge_cap_hit_detection(sample_partition_files):

@@ -104,6 +104,33 @@
       "occupational health",
       "health and safety",
       "health & safety"
+    ],
+    "_fuzzy_comment": "Optional fuzzy pre-filter for LinkedIn partition backfill. Catches title variants the exact-phrase 'include' list misses. Leave all three empty to disable fuzzy filtering and use keyword-only matching. When configured, a job passes if it has a seniority token + domain token (e.g. 'Director of Toxicology'), or 'head of' + domain/priority company, or seniority + priority company.",
+    "fuzzy_seniority": [
+      "director",
+      "senior",
+      "principal",
+      "chief",
+      "manager",
+      "lead"
+    ],
+    "fuzzy_domain": [
+      "toxicolog",
+      "risk assess",
+      "environmental",
+      "exposure",
+      "hazard",
+      "water",
+      "chemical"
+    ],
+    "fuzzy_exclude": [
+      "pharma",
+      "clinical",
+      "drug discovery",
+      "sales",
+      "marketing",
+      "finance",
+      "human resources"
     ]
   },
   "search_terms": {
@@ -582,5 +609,34 @@
       "enabled": false,
       "days": 7
     }
+  },
+  "sector_classification": {
+    "_comment": "Dashboard Sector filter buckets. Each entry is [name, regex] tested against the company name. Applied top-to-bottom; falls back to 'Industry' if none match. Leave empty to disable sector classification.",
+    "terms": [
+      [
+        "Government",
+        "\\b(u\\.?s\\.?\\s+|state of |county of |city of |town of |port of )|\\b(department|agency|bureau|office|division|board|commission|authority|district)\\b|\\bepa\\b|environmental protection agency|ca\\.?\\s*oehha|\\bcdfw\\b|\\bcdtsc\\b|\\bswrcb\\b|\\bcarb\\b|\\bcdph\\b|\\bnoaa\\b|\\bnist\\b|\\bniehs\\b|\\bnih\\b|\\busgs\\b|\\bfda\\b|\\bnps\\b|army corps|air force|navy |dept\\. of |\\b(county|municipalities|municipal)\\b"
+      ],
+      [
+        "Academic",
+        "\\b(university|universit\u00e9|college|polytechnic|institute of technology|community college|school of medicine|graduate school)\\b|\\b(uc |cal poly|caltech|stanford|mit |harvard|yale |ucla|ucsd|ucsb|uci |ucr |ucsc|ucd )\\b"
+      ],
+      [
+        "Non-profit",
+        "\\b(foundation|conservancy|conservation|alliance|coalition|league|society|federation|greenpeace|audubon|sierra club|nature conservancy|natural resources defense|earthjustice|wildlife fund|environmental defense|waterkeeper|clean water|clean air|public interest)\\b|\\b(institute|center|centre)\\b|\\bnon-?profit\\b|\\b501\\s*\\(?c\\)?"
+      ],
+      [
+        "Consulting",
+        "\\b(stantec|arcadis|ramboll|aecom|tetra\\s*tech|brown and caldwell|cdm\\s*smith|kleinfelder|exponent|hdr\\b|wspa\\b|golder|jacobs\\b|wood\\s*plc|arup\\b|aptim\\b|icf\\b|roux\\s*assoc|gradient\\b|environ\\b|gssi\\b|scs\\s*engineers)\\b|\\bconsult(ing|ant|ants|ancy)?\\b"
+      ]
+    ]
+  },
+  "feasibility_check": {
+    "_comment": "LLM-based feasibility filter (--feasibility-check). The prompt describes what makes a job relevant to your search. Leave empty to disable the feasibility check.",
+    "prompt": "A job is YES if it is plausibly a senior role in environmental toxicology, risk assessment, exposure science, or regulatory science at a government agency, research institute, consulting firm, or nonprofit. Reply with one line per job."
+  },
+  "triage": {
+    "_comment": "Optional AI triage agent configuration (triage_agent.py). role_families is a pipe-delimited string of category labels the LLM uses to classify jobs.",
+    "role_families": "toxicology | risk-exposure-assessment | environmental-science | environmental-health-epi | water-quality | chemical-safety-regulatory | data-science | science-policy | academic | other"
   }
 }

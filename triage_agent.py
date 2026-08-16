@@ -30,6 +30,7 @@ OUTPUT_DIR = os.path.join(SCRIPT_DIR, "output")
 ALL_JOBS_PATH = os.path.join(OUTPUT_DIR, "all_jobs.json")
 SCORES_PATH = os.path.join(OUTPUT_DIR, "scores.json")
 SOURCE_FILES = ["jobs.json", "linkedin_jobs.json", "indeed_jobs.json"]
+CONFIG_PATH = os.path.join(SCRIPT_DIR, "config.json")
 
 DEFAULT_MODEL = "claude-haiku-4-5-20251001"
 JD_MAX_CHARS = 6000
@@ -39,9 +40,22 @@ JD_FETCHABLE_ATS = {"Greenhouse", "Workday", "Phenom", "Lever", "Ashby"}
 MODEL_TIMEOUT = 120   # seconds per model call (CLI path)
 FETCH_TIMEOUT = 15    # seconds per JD fetch
 
-ROLE_FAMILIES = ("toxicology | risk-exposure-assessment | environmental-science | "
-                 "environmental-health-epi | water-quality | chemical-safety-regulatory | "
-                 "data-science | science-policy | academic | other")
+
+def _load_role_families() -> str:
+    """Load role families from config.json → triage.role_families.
+    Falls back to a generic 'other' if not configured."""
+    try:
+        with open(CONFIG_PATH, encoding="utf-8") as f:
+            cfg = json.load(f)
+        families = (cfg.get("triage") or {}).get("role_families", "")
+        if families and isinstance(families, str):
+            return families
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return "other"
+
+
+ROLE_FAMILIES = _load_role_families()
 
 HEADERS = {
     "User-Agent": (

@@ -660,22 +660,16 @@
   let CONFIG = {};
 
   // Company exclusion — drop roles from companies in config.json → employers.exclude.
-  // (Previously hardcoded pharma list for env/tox scraping — now driven by config.)
   let EXCLUDE_COMPANY = [];
-  function isPharma(company) {
+  function isExcludedCompany(company) {
     const c = (company || '').toLowerCase();
     return EXCLUDE_COMPANY.some(t => t && t && c.includes(t));
   }
 
   // Role buckets for the Role filter: [name, RegExp], applied top-to-bottom.
-  let ROLE_CATS = [
-    ['VP/Head', /vp|vice president|head of/i],
-    ['Director', /director/i],
-    ['Engineering Manager', /engineering manager/i],
-    ['Platform', /platform/i],
-    ['Software', /software/i],
-  ];
-  let ROLE_NAMES = ROLE_CATS.map(r => r[0]).concat('Other');
+  // Empty by default; overridden by config.json → role_categories.terms.
+  let ROLE_CATS = [];
+  let ROLE_NAMES = ['Other'];
   function classifyRole(title) {
     const t = (title || '').toLowerCase();
     for (const [name, re] of ROLE_CATS) if (re.test(t)) return name;
@@ -695,6 +689,11 @@
       if (Array.isArray(pt)) STAR_TERMS = pt.map(([n, src]) => [n, new RegExp(src, 'i')]);
       const ex = (cfg.employers || {}).exclude;
       if (Array.isArray(ex)) EXCLUDE_COMPANY = ex.map(t => String(t).toLowerCase());
+      const sc = ((cfg.sector_classification || {}).terms) || [];
+      if (Array.isArray(sc) && sc.length) {
+        SECTOR_CATS = sc.map(([n, src]) => [n, new RegExp(src, 'i')]);
+        SECTOR_NAMES = SECTOR_CATS.map(r => r[0]).concat('Industry');
+      }
       const p = cfg.profile || {};
       if (p.title) {
         document.title = 'Job Triage — ' + p.title;
@@ -756,37 +755,17 @@
     return '';
   }
 
-  const SECTOR_NAMES = ['Government', 'Academic', 'Non-profit', 'Consulting', 'Industry'];
+  // Sector classification — config-driven via sector_classification.terms.
+  // Empty by default; overridden by config.json. Each entry is [name, regex].
+  // The regex is tested against the company name. Falls back to 'Industry'.
+  let SECTOR_CATS = [];
+  let SECTOR_NAMES = ['Industry'];
 
   function classifySector(j) {
-    const src = j._src || j.ats || '';
-    const co  = (j.company || '').toLowerCase();
-
-    // Source is the strongest signal — these boards are sector-specific.
-    if (src === 'USAJOBS' || src === 'CalCareers' || src === 'NEOGOV' || src === 'CalOpps') return 'Government';
-    if (src === 'CSUCareers') return 'Academic';
-
-    // Company name heuristics (applied when posting comes from a general board).
-    // Government — agencies, departments, counties, cities.
-    if (/\b(u\.?s\.?\s+|state of |county of |city of |town of |port of )/i.test(j.company)) return 'Government';
-    if (/\b(department|agency|bureau|office|division|board|commission|authority|district)\b/.test(co)
-        && !/consulting|consultants|inc\.|llc|corp|ltd/.test(co)) return 'Government';
-    if (/\bepa\b|environmental protection agency|ca\.?\s*oehha|\bcdfw\b|\bcdtsc\b|\bswrcb\b|\bcarb\b|\bcdph\b|\bnoaa\b|\bnist\b|\bniehs\b|\bnih\b|\busgs\b|\bfda\b|\bnps\b|army corps|air force|navy |dept\. of /.test(co)) return 'Government';
-    if (/\b(county|municipalities|municipal)\b/.test(co) && !/inc\.|llc|corp/.test(co)) return 'Government';
-
-    // Academic — universities, colleges, research institutes attached to academia.
-    if (/\b(university|université|college|polytechnic|institute of technology|community college|school of medicine|graduate school)\b/.test(co)) return 'Academic';
-    if (/\b(uc |cal poly|caltech|stanford|mit |harvard|yale |ucla|ucsd|ucsb|uci |ucr |ucsc|ucd )\b/.test(co)) return 'Academic';
-
-    // Non-profit — foundations, conservancies, advocacy orgs, research NGOs.
-    if (/\b(foundation|conservancy|conservation|alliance|coalition|league|society|federation|greenpeace|audubon|sierra club|nature conservancy|natural resources defense|earthjustice|wildlife fund|environmental defense|waterkeeper|clean water|clean air|public interest)\b/.test(co)) return 'Non-profit';
-    if (/\b(institute|center|centre)\b/.test(co) && !/inc\.|llc|corp\.|ltd\.|consulting/.test(co)) return 'Non-profit';
-    if (/\bnon-?profit\b|\b501\s*\(?c\)?/.test(co)) return 'Non-profit';
-
-    // Consulting — environmental/engineering consultancies.
-    if (/\b(stantec|arcadis|ramboll|aecom|tetra\s*tech|brown and caldwell|cdm\s*smith|kleinfelder|exponent|hdr\b|wspa\b|golder|jacobs\b|wood\s*plc|arup\b|aptim\b|icf\b|roux\s*assoc|gradient\b|environ\b|gssi\b|scs\s*engineers)\b/.test(co)) return 'Consulting';
-    if (/\bconsult(ing|ant|ants|ancy)?\b/.test(co)) return 'Consulting';
-
+    const co = (j.company || '');
+    for (const [name, re] of SECTOR_CATS) {
+      if (re.test(co)) return name;
+    }
     return 'Industry';
   }
 
@@ -1015,14 +994,8 @@
 
   // ---------- Priority-topic star ----------
   // Flag (★) roles touching signature topics, scanning title + company +
-  // description. Default fallback; overridden by config.json → priority_topics.
-  let STAR_TERMS = [
-    ['Distributed Systems', /distributed systems|internet.?scale|high throughput|high availability/i],
-    ['Developer Productivity', /developer productivity|developer experience|devex|platform engineering|internal tools/i],
-    ['AI-Native SDLC', /ai.?native|agentic|claude|copilot|cursor|ai.?enabled sdlc/i],
-    ['Engineering Governance', /dora|space.?framework|engineering governance|engineering metrics|code climate/i],
-    ['AI/ML Platform', /ai.?platform|ml.?platform|machine learning platform|ai infrastructure/i],
-  ];
+  // description. Empty by default; overridden by config.json → priority_topics.
+  let STAR_TERMS = [];
   function starHits(j) {
     const text = `${j.title || ''} ${j.company || ''} ${j.description || ''}`;
     return STAR_TERMS.filter(([, re]) => re.test(text)).map(([name]) => name);

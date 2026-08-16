@@ -1,15 +1,17 @@
 """Test _parse_linkedin_cards with real LinkedIn HTML.
 
 Uses ca_raw_5pages.html (50 real cards from California) saved from a
-previous scraping session.
+previous scraping session. Tests parsing structure only — filtering is
+applied by callers (role_is_relevant) and tested in tests/local/.
 """
-from scrape_jobs import _parse_linkedin_cards, is_leadership_role
+from scrape_jobs import _parse_linkedin_cards
 
 
 def test_parses_50_raw_cards(linkedin_search_results_html):
     """Real HTML should contain 50 raw cards."""
     jobs, raw_count = _parse_linkedin_cards(linkedin_search_results_html)
     assert raw_count == 50
+    assert len(jobs) == 50  # all cards parsed, no filtering at this layer
 
 
 def test_parsed_jobs_have_required_fields(linkedin_search_results_html):
@@ -24,24 +26,12 @@ def test_parsed_jobs_have_required_fields(linkedin_search_results_html):
         assert "date_posted" in job
 
 
-def test_parsed_jobs_pass_leadership_filter(linkedin_search_results_html):
-    """Every parsed job title should pass is_leadership_role (that's the filter)."""
+def test_company_parsed_for_all_cards(linkedin_search_results_html):
+    """Company must be parsed for every card (needed by role_is_relevant)."""
     jobs, _ = _parse_linkedin_cards(linkedin_search_results_html)
-    for job in jobs:
-        assert is_leadership_role(job["title"], job["company"]), (
-            f'"{job["title"]}" @ {job["company"]} passed _parse_linkedin_cards '
-            f'but failed is_leadership_role — filter mismatch'
-        )
-
-
-def test_company_parsed_before_filter(linkedin_search_results_html):
-    """Company must be available to is_leadership_role at filter time."""
-    jobs, _ = _parse_linkedin_cards(linkedin_search_results_html)
-    # If company wasn't parsed before the filter, priority-company matches
-    # would fail. Verify at least one job has a non-Unknown company.
     companies = [j["company"] for j in jobs]
     assert any(c != "Unknown" for c in companies), (
-        "All companies are 'Unknown' — company may not be parsed before filter"
+        "All companies are 'Unknown' — company may not be parsed correctly"
     )
 
 
@@ -52,8 +42,20 @@ def test_empty_html():
     assert raw_count == 0
 
 
-def test_no_matching_titles():
-    """HTML with no leadership titles should return ([], raw_count)."""
+def test_non_job_card_skipped():
+    """HTML with a <li> that has no jobPosting URN should be skipped."""
+    html = """
+    <li>
+      <div class="some-other-card">Not a job card</div>
+    </li>
+    """
+    jobs, raw_count = _parse_linkedin_cards(html)
+    assert jobs == []
+    assert raw_count == 0
+
+
+def test_single_card_parsed():
+    """A single valid card should be parsed with all fields."""
     html = """
     <li>
       <div class="base-card" data-entity-urn="urn:li:jobPosting:123">
@@ -71,4 +73,8 @@ def test_no_matching_titles():
     """
     jobs, raw_count = _parse_linkedin_cards(html)
     assert raw_count == 1
-    assert jobs == []  # "Software Engineer" doesn't pass is_leadership_role
+    assert len(jobs) == 1
+    assert jobs[0]["title"] == "Software Engineer"
+    assert jobs[0]["company"] == "TechCorp"
+    assert jobs[0]["location"] == "San Francisco, CA"
+    assert jobs[0]["date_posted"] == "2026-08-14"

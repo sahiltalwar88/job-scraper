@@ -25,13 +25,13 @@ The upstream repo had a single LinkedIn backfill that hit LinkedIn's ~1000-resul
 
 Both phases are under GitHub Actions' 256-matrix-item limit. See `linkedin_backfill.yml` for the full workflow.
 
-### Fuzzy leadership title pre-filter
+### Fuzzy title pre-filter
 
-Added `is_leadership_role()` — a broad fuzzy pre-filter that catches title variants the exact-phrase keyword filter misses (e.g. "Director, Engineering", "Senior Engineering Manager", "Head of Dropbox"). Configurable via `keywords.fuzzy_seniority`, `keywords.fuzzy_domain`, and `keywords.fuzzy_exclude` in `config.json`. The LLM feasibility check (`--feasibility-check`) makes the final cut.
+`role_is_relevant()` — a broad fuzzy pre-filter that catches title variants the exact-phrase keyword filter misses (e.g. "Director, Engineering", "Senior Engineering Manager", "Head of Dropbox"). Configurable via `keywords.fuzzy_seniority`, `keywords.fuzzy_domain`, and `keywords.fuzzy_exclude` in `config.json`. Leave all three empty to disable fuzzy filtering and fall back to keyword-only matching. The LLM feasibility check (`--feasibility-check`) makes the final cut.
 
 ### LLM feasibility checking
 
-Added `--feasibility-check` mode and `DevinCLIChecker` class that uses `devin -p` (GLM-5.2 High) to batch-check whether scraped jobs are plausibly engineering leadership roles. Tags each job in `all_jobs.json` with `feasible: true/false`. Incremental — only checks jobs without an existing `feasible` field.
+`--feasibility-check` mode and `DevinCLIChecker` class uses `devin -p` (GLM-5.2 High) to batch-check whether scraped jobs are plausibly relevant to the configured search. The filter prompt is config-driven via `feasibility_check.prompt` in `config.json`. Tags each job in `all_jobs.json` with `feasible: true/false`. Incremental — only checks jobs without an existing `feasible` field.
 
 ### State-level partition fan-out
 
@@ -207,7 +207,7 @@ Optional — only if you want to test scrapes on your own machine. Needs [Python
 
 ```bash
 python scrape_jobs.py --linkedin-only              # standard library only
-python scrape_jobs.py --biotech-only               # priority-employer digest
+python scrape_jobs.py --priority-only             # priority-employer digest
 python scrape_jobs.py --linkedin-backfill          # 7-day backfill
 python scrape_jobs.py --linkedin-emit-matrix       # preview partition matrix
 python scrape_jobs.py --linkedin-emit-matrix --phase high   # Phase 2 matrix
@@ -376,9 +376,13 @@ Everything you'd adjust lives in [`config.json`](config.json) (no code edits):
 - `locations.linkedin_partitions.high_volume.locations` — locations that need day-slicing in Phase 2
 - `location_filter.terms` — substrings for post-filtering
 - `employers.priority` — companies worth a daily digest
-- `employers.exclude` — companies to drop
-- `priority_topics` — gold-star highlights on the dashboard
+- `employers.exclude` — companies to drop (empty list = no company exclusion)
+- `keywords.fuzzy_seniority` / `fuzzy_domain` / `fuzzy_exclude` — optional fuzzy pre-filter (empty = disabled, falls back to keyword-only matching)
+- `priority_topics` — gold-star highlights on the dashboard and push notifications
 - `role_categories` — dashboard Role-filter buckets
+- `sector_classification` — dashboard Sector-filter buckets (empty = no sector classification)
+- `feasibility_check.prompt` — LLM feasibility filter prompt (empty = `--feasibility-check` disabled)
+- `triage.role_families` — pipe-delimited category labels for the AI triage agent
 - `profile` — dashboard title/subtitle/emoji
 
 Generate the whole file from your CV with [`docs/cv-to-config-prompt.md`](docs/cv-to-config-prompt.md), or edit it by hand (every key is commented in `config.example.json`).
