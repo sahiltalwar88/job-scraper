@@ -1196,6 +1196,11 @@
     const byUrl = new Map();
     let scraped_at = '', new_count = 0, new_jobs = [];
     let okCount = 0;
+    // Only count new_count/new_jobs from sources scraped within the last 2h.
+    // Stale source files (e.g. priority-employer digest from 17h ago) would
+    // otherwise inflate the "New this run" KPI with outdated counts.
+    const FRESH_MS = 2 * 60 * 60 * 1000;
+    const nowMs = Date.now();
     settled.forEach((r, i) => {
       if (r.status !== 'fulfilled') {
         console.warn(`[loadJobs] ${SOURCES[i].name}:`, r.reason?.message || r.reason);
@@ -1212,8 +1217,13 @@
         // from the master so sub-day date filters have a real timestamp.
         else if (isMaster && j.first_seen && !existing.first_seen) existing.first_seen = j.first_seen;
       });
-      (d.new_jobs || []).forEach(j => new_jobs.push(j));
-      new_count += (d.new_count || 0);
+      // Only accumulate new_count/new_jobs from fresh source files.
+      const srcTime = d.scraped_at ? Date.parse(d.scraped_at.replace(' UTC', 'Z')) : NaN;
+      const isFresh = isFinite(srcTime) && (nowMs - srcTime) < FRESH_MS;
+      if (isFresh) {
+        (d.new_jobs || []).forEach(j => new_jobs.push(j));
+        new_count += (d.new_count || 0);
+      }
       if ((d.scraped_at || '') > scraped_at) scraped_at = d.scraped_at;
     });
     if (okCount === 0) throw new Error('all sources failed');
