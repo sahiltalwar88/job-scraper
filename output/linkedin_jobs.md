@@ -1,32 +1,42 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-16 17:43 UTC*
+*Last updated: 2026-08-16 18:52 UTC*
 
-**6 new role(s)** since last run · 22 total in last 1h
+**8 new role(s)** since last run · 10 total in last 1h
 
-### [Digital Software Engineer Lead Analyst VP](https://www.linkedin.com/jobs/view/4408679739/) — Citi
-- 📍 **Location:** Irving, TX
-- 💰 **Salary:** $138,720.00 - $208,080.00
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4416730448/) — Regal Rexnord
+- 📍 **Location:** Cassville, MO
 - 🕒 **Posted:** 2026-08-16
 
-### [Senior Director, New Business](https://www.linkedin.com/jobs/view/4406762158/) — Metagenics
+### [Director, System Software Engineering - Metropolis Accelerated and Inferencing Software](https://www.linkedin.com/jobs/view/4395486187/) — NVIDIA
+- 📍 **Location:** Santa Clara, CA
+- 🕒 **Posted:** 2026-08-16
+
+### [Senior Lead Software Engineer – Equities Electronic Trading, Senior Vice President](https://www.linkedin.com/jobs/view/4407928562/) — Citi
 - 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $176,720.00 - $265,080.00
 - 🕒 **Posted:** 2026-08-16
 
-### [VP, Platform Operations](https://www.linkedin.com/jobs/view/4453991310/) — Fachvereinigung Deutscher Betonfertigteilbau e.V.
-- 📍 **Location:** United States
+### [Senior Lead Software Engineer Digital Solutions Vice President](https://www.linkedin.com/jobs/view/4407084057/) — Citi
+- 📍 **Location:** Jacksonville, FL
+- 💰 **Salary:** $125,600.00 - $188,400.00
 - 🕒 **Posted:** 2026-08-16
 
-### [Senior Director, Global Gas Technology](https://www.linkedin.com/jobs/view/4417791224/) — STERIS
-- 📍 **Location:** Mentor, OH
-- 💰 **Salary:** $167,450.00 - $216,700.00
+### [Senior Engineering Manager - Grid](https://www.linkedin.com/jobs/view/4396382793/) — Sargent & Lundy
+- 📍 **Location:** Minneapolis, MN
+- 💰 **Salary:** $165,610 - $253,015
 - 🕒 **Posted:** 2026-08-16
 
-### [Sr. Director, Applications Engineering - Commerce](https://www.linkedin.com/jobs/view/4407656195/) — Docusign
+### [Executive Director, Platform Architecture](https://www.linkedin.com/jobs/view/4409065404/) — The Options Clearing Corporation (OCC)
+- 📍 **Location:** Greater Chicago Area
+- 💰 **Salary:** $198,200.00 - $346,700.00
+- 🕒 **Posted:** 2026-08-16
+
+### [Head of GTM Tools & Technology](https://www.linkedin.com/jobs/view/4455195796/) — Nexus Venture Partners
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $284,400.00 - $423,475.00
+- 💰 **Salary:** $230,000 to $290,000,
 - 🕒 **Posted:** 2026-08-16
 
-### [Director of Event Technology I (SNE)-Marriott Colorado Springs](https://www.linkedin.com/jobs/view/4435480107/) — Encore
-- 📍 **Location:** Colorado Springs, CO
-- 💰 **Salary:** $56,160.00/yr - $66,560.00/yr
+### [Sr. Director, IT Product Management – Post Sales and Partner Technology](https://www.linkedin.com/jobs/view/4428187691/) — MongoDB
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $168,000—$330,000 USD
 - 🕒 **Posted:** 2026-08-16
