@@ -25,7 +25,7 @@ def test_batch_size_is_10():
 
 
 def test_check_batch_parses_yes_no():
-    """Valid YES/NO responses should be parsed correctly."""
+    """Valid PREFERRED/YES/NO responses should be parsed correctly."""
     jobs = [
         {"url": "https://linkedin.com/jobs/view/1/", "title": "Director of Engineering",
          "company": "A", "location": "SF"},
@@ -34,14 +34,14 @@ def test_check_batch_parses_yes_no():
         {"url": "https://linkedin.com/jobs/view/3/", "title": "VP of Engineering",
          "company": "C", "location": "LA"},
     ]
-    mock_result = MagicMock(stdout="1. YES\n2. NO\n3. YES\n", returncode=0)
+    mock_result = MagicMock(stdout="1. YES\n2. NO\n3. PREFERRED\n", returncode=0)
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
         checker = DevinCLIChecker()
         verdicts = checker.check_batch(jobs)
     assert verdicts == {
-        "https://linkedin.com/jobs/view/1/": True,
-        "https://linkedin.com/jobs/view/2/": False,
-        "https://linkedin.com/jobs/view/3/": True,
+        "https://linkedin.com/jobs/view/1/": "YES",
+        "https://linkedin.com/jobs/view/2/": "NO",
+        "https://linkedin.com/jobs/view/3/": "PREFERRED",
     }
 
 
@@ -77,7 +77,7 @@ def test_check_batch_tolerant_of_extra_whitespace():
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
         checker = DevinCLIChecker()
         verdicts = checker.check_batch(jobs)
-    assert verdicts == {"https://linkedin.com/jobs/view/1/": True}
+    assert verdicts == {"https://linkedin.com/jobs/view/1/": "YES"}
 
 
 def test_check_batch_timeout():
@@ -113,6 +113,6 @@ def test_check_batch_case_insensitive():
         checker = DevinCLIChecker()
         verdicts = checker.check_batch(jobs)
     assert verdicts == {
-        "https://linkedin.com/jobs/view/1/": True,
-        "https://linkedin.com/jobs/view/2/": False,
+        "https://linkedin.com/jobs/view/1/": "YES",
+        "https://linkedin.com/jobs/view/2/": "NO",
     }

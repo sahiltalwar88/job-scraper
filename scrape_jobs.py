@@ -3169,12 +3169,19 @@ _FEASIBILITY_PROMPT = _cfg("feasibility_check.prompt", "")
 
 
 class FeasibilityChecker(abc.ABC):
-    """Check whether a job is plausibly relevant to the configured search."""
+    """Check whether a job is plausibly relevant to the configured search.
+
+    Verdicts are tripartite strings: "preferred", "yes", or "no".
+    "preferred" = Big Tech / top-tier fit; "yes" = fits but not Big Tech;
+    "no" = doesn't fit. For backward compatibility, boolean verdicts are
+    accepted (True → "yes", False → "no").
+    """
 
     @abc.abstractmethod
-    def check_batch(self, jobs: list[dict]) -> dict[str, bool]:
-        """Return {url: feasible_bool} for each job. Jobs not in the
-        result dict default to feasible=True (safe default)."""
+    def check_batch(self, jobs: list[dict]) -> dict[str, str]:
+        """Return {url: verdict_str} for each job, where verdict_str is
+        "preferred", "yes", or "no". Jobs not in the result dict default
+        to "yes" (safe default)."""
         ...
 
 
@@ -3188,7 +3195,7 @@ class DevinCLIChecker(FeasibilityChecker):
         self.model = model
         self.prompt = prompt or _FEASIBILITY_PROMPT
 
-    def check_batch(self, jobs: list[dict]) -> dict[str, bool]:
+    def check_batch(self, jobs: list[dict]) -> dict[str, str]:
         if not jobs:
             return {}
         if not self.prompt:
@@ -3197,8 +3204,8 @@ class DevinCLIChecker(FeasibilityChecker):
             return {}
         lines = [
             f"You are a job filter. For each job below, reply with its number "
-            f"followed by YES or NO. {self.prompt} "
-            "Reply with one line per job, format: 'N. YES' or 'N. NO'.\n"
+            f"followed by PREFERRED, YES, or NO. {self.prompt} "
+            "Reply with one line per job, format: 'N. PREFERRED', 'N. YES', or 'N. NO'.\n"
         ]
         for i, job in enumerate(jobs, 1):
             lines.append(
@@ -3207,40 +3214,57 @@ class DevinCLIChecker(FeasibilityChecker):
                 f"Location: {job.get('location', '?')}"
             )
         prompt = "\n".join(lines)
+        # Unset ACP_BACKEND so the CLI uses its default backend instead of
+        # the Windsurf ACP backend (which fails in standalone subprocess mode
+        # when launched from the Devin Desktop WSL extension).
+        env = {k: v for k, v in os.environ.items() if k != "ACP_BACKEND"}
         result = subprocess.run(
             ["devin", "-p", prompt, "--model", self.model,
              "--respect-workspace-trust", "false"],
-            capture_output=True, text=True, timeout=60,
+            capture_output=True, text=True, timeout=60, env=env,
         )
-        verdicts: dict[str, bool] = {}
+        verdicts: dict[str, str] = {}
         for line in result.stdout.strip().split("\n"):
-            m = re.match(r"(\d+)\.\s*(YES|NO)", line.strip(), re.I)
+            m = re.match(r"(\d+)\.\s*(PREFERRED|YES|NO)", line.strip(), re.I)
             if m:
                 idx = int(m.group(1)) - 1
                 if 0 <= idx < len(jobs):
                     url = jobs[idx].get("url", "")
-                    verdicts[url] = m.group(2).upper() == "YES"
+                    verdicts[url] = m.group(2).upper()
         return verdicts
 
 
-def run_feasibility_check(checker: FeasibilityChecker) -> None:
-    """Tag each job in all_jobs.json with feasible: true/false.
+def run_feasibility_check(checker: FeasibilityChecker, limit: int = 0) -> None:
+    """Tag each job in all_jobs.json with feasible: true/false and feasibility tier.
 
     Only checks jobs without an existing `feasible` field (incremental).
-    Saves after each batch (crash-safe). Defaults to True on errors.
+    Saves after each batch (crash-safe). Defaults to feasible=True on errors.
+
+    Sets two fields per job:
+    - `feasible` (bool): True for "preferred" or "yes", False for "no".
+    - `feasibility` (str): "preferred", "yes", or "no" — the tier.
+
+    Args:
+        checker: The FeasibilityChecker backend to use.
+        limit: If > 0, only check this many unchecked jobs (for incremental testing).
     """
     path = os.path.join(OUTPUT_DIR, "all_jobs.json")
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     jobs = data.get("jobs", [])
     unchecked = [j for j in jobs if "feasible" not in j]
-    print(f"🔍 Feasibility check: {len(unchecked)}/{len(jobs)} jobs to check")
+    if limit > 0:
+        unchecked = unchecked[:limit]
+    print(f"🔍 Feasibility check: {len(unchecked)}/{len(jobs)} jobs to check"
+          + (f" (limit={limit})" if limit > 0 else ""))
     if not unchecked:
         print("  All jobs already checked.")
         return
     batch_size = checker.BATCH_SIZE
     checked = 0
-    feasible_count = 0
+    preferred_count = 0
+    yes_count = 0
+    no_count = 0
     for i in range(0, len(unchecked), batch_size):
         batch = unchecked[i:i + batch_size]
         try:
@@ -3250,17 +3274,31 @@ def run_feasibility_check(checker: FeasibilityChecker) -> None:
             verdicts = {}
         for job in batch:
             url = job.get("url", "")
-            feasible = verdicts.get(url, True)
+            verdict = verdicts.get(url, True)
+            # Normalize: bool verdicts (backward compat) → str tier
+            if isinstance(verdict, str):
+                tier = verdict.lower()
+            else:
+                tier = "yes" if verdict else "no"
+            feasible = tier != "no"
             job["feasible"] = feasible
+            job["feasibility"] = tier
             checked += 1
-            if feasible:
-                feasible_count += 1
+            if tier == "preferred":
+                preferred_count += 1
+            elif tier == "yes":
+                yes_count += 1
+            else:
+                no_count += 1
+        feasible_count = preferred_count + yes_count
         print(f"  📊 Checked {checked}/{len(unchecked)} "
-              f"({feasible_count} feasible, {checked - feasible_count} rejected)")
+              f"({preferred_count} preferred, {yes_count} yes, {no_count} no)")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
     total_feasible = sum(1 for j in jobs if j.get("feasible"))
-    print(f"\n✅ Done: {total_feasible}/{len(jobs)} feasible "
+    total_preferred = sum(1 for j in jobs if j.get("feasibility") == "preferred")
+    print(f"\n✅ Done this run: {preferred_count} preferred, {yes_count} yes, {no_count} no")
+    print(f"✅ Total in file: {total_preferred} preferred, {total_feasible} feasible "
           f"({len(jobs) - total_feasible} rejected)")
 
 
@@ -3371,7 +3409,16 @@ if __name__ == "__main__":
             print("       Add a prompt describing what makes a job relevant to your search.")
             print("       Example: \"A job is YES if it is plausibly a senior role in [your domain]\"")
             sys.exit(1)
-        run_feasibility_check(DevinCLIChecker())
+        limit = 0
+        if "--feasibility-limit" in sys.argv:
+            idx = sys.argv.index("--feasibility-limit")
+            if idx + 1 < len(sys.argv):
+                try:
+                    limit = int(sys.argv[idx + 1])
+                except ValueError:
+                    print("ERROR: --feasibility-limit requires an integer argument")
+                    sys.exit(1)
+        run_feasibility_check(DevinCLIChecker(), limit=limit)
         sys.exit(0)
 
     if "--linkedin-merge-backfill" in sys.argv:
