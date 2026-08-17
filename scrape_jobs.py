@@ -3265,41 +3265,60 @@ def run_feasibility_check(checker: FeasibilityChecker, limit: int = 0) -> None:
     preferred_count = 0
     yes_count = 0
     no_count = 0
+    error_count = 0
     for i in range(0, len(unchecked), batch_size):
         batch = unchecked[i:i + batch_size]
+        batch_failed = False
         try:
             verdicts = checker.check_batch(batch)
+            # Empty verdicts = all jobs in batch failed to get a response
+            if not verdicts:
+                batch_failed = True
         except Exception as e:
             print(f"  ⚠️  Batch {i//batch_size + 1} failed: {e}")
             verdicts = {}
+            batch_failed = True
         for job in batch:
             url = job.get("url", "")
-            verdict = verdicts.get(url, True)
-            # Normalize: bool verdicts (backward compat) → str tier
-            if isinstance(verdict, str):
-                tier = verdict.lower()
+            if batch_failed:
+                # Tag with error flag so downstream can filter, but default
+                # feasible=True (safe default — don't drop jobs on API failure).
+                # These can be re-checked later by filtering feasibility_error=true.
+                job["feasible"] = True
+                job["feasibility"] = "yes"
+                job["feasibility_error"] = True
+                checked += 1
+                error_count += 1
             else:
-                tier = "yes" if verdict else "no"
-            feasible = tier != "no"
-            job["feasible"] = feasible
-            job["feasibility"] = tier
-            checked += 1
-            if tier == "preferred":
-                preferred_count += 1
-            elif tier == "yes":
-                yes_count += 1
-            else:
-                no_count += 1
+                verdict = verdicts.get(url, True)
+                # Normalize: bool verdicts (backward compat) → str tier
+                if isinstance(verdict, str):
+                    tier = verdict.lower()
+                else:
+                    tier = "yes" if verdict else "no"
+                feasible = tier != "no"
+                job["feasible"] = feasible
+                job["feasibility"] = tier
+                checked += 1
+                if tier == "preferred":
+                    preferred_count += 1
+                elif tier == "yes":
+                    yes_count += 1
+                else:
+                    no_count += 1
         feasible_count = preferred_count + yes_count
         print(f"  📊 Checked {checked}/{len(unchecked)} "
-              f"({preferred_count} preferred, {yes_count} yes, {no_count} no)")
+              f"({preferred_count} preferred, {yes_count} yes, {no_count} no"
+              + (f", {error_count} error" if error_count else "") + ")")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
     total_feasible = sum(1 for j in jobs if j.get("feasible"))
     total_preferred = sum(1 for j in jobs if j.get("feasibility") == "preferred")
-    print(f"\n✅ Done this run: {preferred_count} preferred, {yes_count} yes, {no_count} no")
+    total_errors = sum(1 for j in jobs if j.get("feasibility_error"))
+    print(f"\n✅ Done this run: {preferred_count} preferred, {yes_count} yes, "
+          f"{no_count} no, {error_count} error")
     print(f"✅ Total in file: {total_preferred} preferred, {total_feasible} feasible "
-          f"({len(jobs) - total_feasible} rejected)")
+          f"({len(jobs) - total_feasible} rejected, {total_errors} error)")
 
 
 # ---------------------------------------------------------------------------
