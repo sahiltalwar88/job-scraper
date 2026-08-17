@@ -1,69 +1,39 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-17 14:52 UTC*
+*Last updated: 2026-08-17 15:47 UTC*
 
-**14 new role(s)** since last run · 29 total in last 1h
+**7 new role(s)** since last run · 23 total in last 1h
 
-### [Director, Engineering](https://www.linkedin.com/jobs/view/4451033251/) — Chalk
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $300,000.00/yr - $375,000.00/yr
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4454285146/) — Hera Technologies
+- 📍 **Location:** Irvine, CA
+- 💰 **Salary:** $120,000 to $170,000
 - 🕒 **Posted:** 2026-08-17
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4449230621/) — Chalk
-- 📍 **Location:** New York City Metropolitan Area
-- 💰 **Salary:** $300,000.00/yr - $375,000.00/yr
-- 🕒 **Posted:** 2026-08-17
-
-### [Senior Regional Engineering Manager](https://www.linkedin.com/jobs/view/4442378197/) — UG2
-- 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-08-17
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4444606392/) — The Kraft Group & Affiliates
-- 📍 **Location:** Worcester, MA
-- 💰 **Salary:** $212,000.00/yr - $250,000.00/yr
-- 🕒 **Posted:** 2026-08-17
-
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4378601107/) — National Hockey League (NHL)
-- 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-08-17
-
-### [Director, Data Analytics Engineering](https://www.linkedin.com/jobs/view/4452664089/) — Caterpillar Inc.
-- 📍 **Location:** Irving, TX
-- 💰 **Salary:** $189,080.00 - $283,630.00
-- 🕒 **Posted:** 2026-08-17
-
-### [Sr. Engineering Manager - Transportation](https://www.linkedin.com/jobs/view/4400637402/) — Farnsworth Group, Inc.
-- 📍 **Location:** Effingham, IL
-- 💰 **Salary:** $140,000 - $170,000
-- 🕒 **Posted:** 2026-08-17
-
-### [Sr. Manager, AI Engineering](https://www.linkedin.com/jobs/view/4361364847/) — Blue Cross Blue Shield of Massachusetts
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $173,430.00 - $211,970.00
-- 🕒 **Posted:** 2026-08-17
-
-### [GPS - Azure Senior Platform Engineer - Assistant Director](https://www.linkedin.com/jobs/view/4425330221/) — EY
-- 📍 **Location:** Providence, RI
-- 💰 **Salary:** $111,100 to $207,800
-- 🕒 **Posted:** 2026-08-17
-
-### [Sr. Engineering Manager - Transportation](https://www.linkedin.com/jobs/view/4400626771/) — Farnsworth Group, Inc.
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-08-17
-
-### [Senior Director, Infrastructure & Technology Services](https://www.linkedin.com/jobs/view/4442768645/) — Confidential Careers
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $220,000.00/yr - $240,000.00/yr
-- 🕒 **Posted:** 2026-08-17
-
-### [Director of Cloud Software Engineering](https://www.linkedin.com/jobs/view/4454272563/) — ACM Global Laboratories
-- 📍 **Location:** United States
+### [Director of Cloud Software Engineering](https://www.linkedin.com/jobs/view/4455312455/) — Rochester Regional Health
+- 📍 **Location:** Rochester, NY
 - 💰 **Salary:** $165,000.00 - $195,000.00
 - 🕒 **Posted:** 2026-08-17
 
-### [Operations Engineering Senior Manager](https://www.linkedin.com/jobs/view/4416739755/) — Flex
-- 📍 **Location:** Perai, Penang, Malaysia
+### [Senior Director, Head of Application Engineering and Productionization](https://www.linkedin.com/jobs/view/4455322041/) — Pfizer
+- 📍 **Location:** Cambridge, MA
+- 💰 **Salary:** $230,900.00 to $384,800.00
 - 🕒 **Posted:** 2026-08-17
 
-### [Director, Commercial Experience Architecture & Engineering](https://www.linkedin.com/jobs/view/4454275779/) — S&P Global
-- 📍 **Location:** Islamabad, Islāmābād, Pakistan
+### [Senior Director, Head of Application Engineering and Productionization](https://www.linkedin.com/jobs/view/4455308159/) — Pfizer
+- 📍 **Location:** Pennsylvania, United States
+- 💰 **Salary:** $230,900.00 to $384,800.00
+- 🕒 **Posted:** 2026-08-17
+
+### [Head of Software Engineering](https://www.linkedin.com/jobs/view/4454275811/) — Alfa AI
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $200,000.00/yr - $400,000.00/yr
+- 🕒 **Posted:** 2026-08-17
+
+### [Senior Manager, Test Engineering](https://www.linkedin.com/jobs/view/4452630156/) — MACOM
+- 📍 **Location:** Lowell, MA
+- 💰 **Salary:** $155,000 – $216,000
+- 🕒 **Posted:** 2026-08-17
+
+### [VP, Detection Intelligence & Content Engineering](https://www.linkedin.com/jobs/view/4455326045/) — Michael Page
+- 📍 **Location:** Iselin, NJ
+- 💰 **Salary:** $150,000.00/yr - $200,000.00/yr
 - 🕒 **Posted:** 2026-08-17
