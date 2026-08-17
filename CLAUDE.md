@@ -97,6 +97,33 @@ python triage_agent.py --limit 50
 python eval_triage.py
 ```
 
+### Feasibility checking
+
+The scraper can tag jobs with a tripartite feasibility verdict using the Devin CLI (`devin -p` / GLM-5.2 High). Each job gets two fields: `feasible` (bool) and `feasibility` (str: `"preferred"`, `"yes"`, or `"no"`).
+
+```bash
+# Tag all untagged jobs:
+python scrape_jobs.py --feasibility-check
+
+# Test on a small batch:
+python scrape_jobs.py --feasibility-check --feasibility-limit 20
+```
+
+The prompt is configured in `config.json` under `feasibility_check.prompt`. Jobs that already have a `feasible` field are skipped (incremental).
+
+**Parallel runs** (for large sets of untagged jobs):
+```bash
+python scripts/feasibility_slice.py --slice 0 --total-slices 3 &
+python scripts/feasibility_slice.py --slice 1 --total-slices 3 &
+python scripts/feasibility_slice.py --slice 2 --total-slices 3 &
+wait
+python scripts/merge_feasibility_slices.py
+```
+
+**Error handling:** Failed batches get `feasibility_error: true` (defaulting to `feasible: true`). Re-check by clearing feasibility fields and re-running.
+
+**ACP_BACKEND:** The Devin Desktop WSL extension sets `ACP_BACKEND=windsurf`, which breaks `devin -p` in subprocess mode. `DevinCLIChecker` strips it from the subprocess env. If calling `devin -p` manually from WSL, use `env -u ACP_BACKEND devin -p ...`.
+
 ### Add a new job source
 
 1. Create `.github/workflows/SOURCENAME_watch.yml` (copy an existing simple watcher as template).
