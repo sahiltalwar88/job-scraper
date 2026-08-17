@@ -18,7 +18,7 @@ class MockChecker(FeasibilityChecker):
 
     def check_batch(self, jobs):
         self.call_count += 1
-        return {j["url"]: self._verdicts.get(j["url"], True) for j in jobs}
+        return {j["url"]: self._verdicts.get(j["url"], "yes") for j in jobs}
 
 
 def test_tags_all_unchecked_jobs(tmp_output_dir, sample_all_jobs):
@@ -27,16 +27,17 @@ def test_tags_all_unchecked_jobs(tmp_output_dir, sample_all_jobs):
     path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     checker = MockChecker(verdicts={
-        "https://www.linkedin.com/jobs/view/4400000005/": True,
-        "https://www.linkedin.com/jobs/view/4400000006/": False,
-        "https://www.linkedin.com/jobs/view/4400000007/": True,
-        "https://www.linkedin.com/jobs/view/4400000010/": False,
+        "https://www.linkedin.com/jobs/view/4400000005/": "preferred",
+        "https://www.linkedin.com/jobs/view/4400000006/": "no",
+        "https://www.linkedin.com/jobs/view/4400000007/": "yes",
+        "https://www.linkedin.com/jobs/view/4400000010/": "no",
     })
     run_feasibility_check(checker)
 
     data = json.loads(path.read_text())
     for job in data["jobs"]:
         assert "feasible" in job, f"Job {job['url']} missing feasible field"
+        assert "feasibility" in job, f"Job {job['url']} missing feasibility field"
 
 
 def test_does_not_recheck_tagged_jobs(tmp_output_dir, sample_all_jobs):
@@ -53,20 +54,79 @@ def test_does_not_recheck_tagged_jobs(tmp_output_dir, sample_all_jobs):
 
 
 def test_safe_default_on_empty_verdicts(tmp_output_dir, sample_all_jobs):
-    """If checker returns empty dict, jobs default to feasible: True."""
+    """If checker returns empty dict, jobs default to feasible: True, feasibility: yes."""
     path = tmp_output_dir / "all_jobs.json"
     # Remove all feasible fields so all jobs are unchecked
     sample = json.loads(json.dumps(sample_all_jobs))
     for job in sample["jobs"]:
         job.pop("feasible", None)
+        job.pop("feasibility", None)
     path.write_text(json.dumps(sample, separators=(",", ":")))
 
-    checker = MockChecker(verdicts={})  # empty → all default to True
+    checker = MockChecker(verdicts={})  # empty → all default to "yes"
     run_feasibility_check(checker)
 
     data = json.loads(path.read_text())
     for job in data["jobs"]:
         assert job.get("feasible") is True
+        assert job.get("feasibility") == "yes"
+
+
+def test_tripartite_verdicts_set_correct_fields(tmp_output_dir, sample_all_jobs):
+    """PREFERRED/YES/NO verdicts should set feasible + feasibility correctly."""
+    path = tmp_output_dir / "all_jobs.json"
+    # Remove all feasible fields so all jobs are unchecked
+    sample = json.loads(json.dumps(sample_all_jobs))
+    for job in sample["jobs"]:
+        job.pop("feasible", None)
+        job.pop("feasibility", None)
+    path.write_text(json.dumps(sample, separators=(",", ":")))
+
+    checker = MockChecker(verdicts={
+        "https://www.linkedin.com/jobs/view/4400000001/": "preferred",
+        "https://www.linkedin.com/jobs/view/4400000002/": "yes",
+        "https://www.linkedin.com/jobs/view/4400000008/": "no",
+    })
+    run_feasibility_check(checker)
+
+    data = json.loads(path.read_text())
+    by_url = {j["url"]: j for j in data["jobs"]}
+
+    # preferred → feasible=True, feasibility="preferred"
+    assert by_url["https://www.linkedin.com/jobs/view/4400000001/"]["feasible"] is True
+    assert by_url["https://www.linkedin.com/jobs/view/4400000001/"]["feasibility"] == "preferred"
+
+    # yes → feasible=True, feasibility="yes"
+    assert by_url["https://www.linkedin.com/jobs/view/4400000002/"]["feasible"] is True
+    assert by_url["https://www.linkedin.com/jobs/view/4400000002/"]["feasibility"] == "yes"
+
+    # no → feasible=False, feasibility="no"
+    assert by_url["https://www.linkedin.com/jobs/view/4400000008/"]["feasible"] is False
+    assert by_url["https://www.linkedin.com/jobs/view/4400000008/"]["feasibility"] == "no"
+
+
+def test_boolean_verdict_backward_compat(tmp_output_dir, sample_all_jobs):
+    """Boolean verdicts (True/False) should still work, normalized to yes/no."""
+    path = tmp_output_dir / "all_jobs.json"
+    sample = json.loads(json.dumps(sample_all_jobs))
+    for job in sample["jobs"]:
+        job.pop("feasible", None)
+        job.pop("feasibility", None)
+    path.write_text(json.dumps(sample, separators=(",", ":")))
+
+    class BoolChecker(FeasibilityChecker):
+        BATCH_SIZE = 10
+        def __init__(self):
+            self.call_count = 0
+        def check_batch(self, jobs):
+            self.call_count += 1
+            return {j["url"]: True for j in jobs}  # boolean True
+
+    run_feasibility_check(BoolChecker())
+    data = json.loads(path.read_text())
+    for job in data["jobs"]:
+        assert job.get("feasible") is True
+        assert job.get("feasibility") == "yes"  # True → "yes"
 
 
 def test_idempotent_second_run(tmp_output_dir, sample_all_jobs):

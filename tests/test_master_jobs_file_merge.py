@@ -42,6 +42,7 @@ def test_preserves_feasible_true_tag(tmp_output_dir, sample_all_jobs):
     data = json.loads(path.read_text())
     job = next(j for j in data["jobs"] if j["url"] == "https://www.linkedin.com/jobs/view/4400000001/")
     assert job.get("feasible") is True
+    assert job.get("feasibility") == "preferred"
 
 
 def test_preserves_feasible_false_tag(tmp_output_dir, sample_all_jobs):
@@ -59,6 +60,7 @@ def test_preserves_feasible_false_tag(tmp_output_dir, sample_all_jobs):
     data = json.loads(path.read_text())
     job = next(j for j in data["jobs"] if j["url"] == "https://www.linkedin.com/jobs/view/4400000008/")
     assert job.get("feasible") is False
+    assert job.get("feasibility") == "no"
 
 
 def test_sets_first_seen_on_new_jobs(tmp_output_dir, sample_all_jobs):
