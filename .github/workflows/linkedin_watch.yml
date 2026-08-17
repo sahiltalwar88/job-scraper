@@ -38,6 +38,17 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Sync to latest origin/main
+        # actions/checkout captures the SHA at trigger time, not at start
+        # time. If another workflow committed between trigger and start
+        # (e.g. the priority-employer digest), we'd scrape on top of a stale
+        # all_jobs.json and overwrite the other workflow's jobs on commit.
+        # Sync to the latest origin/main before scraping to prevent this.
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
       - name: Write config.json from secret
         run: echo "$CONFIG_JSON" > config.json
         env:
