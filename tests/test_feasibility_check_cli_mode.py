@@ -170,3 +170,40 @@ def test_preserves_other_fields(tmp_output_dir, sample_all_jobs):
         assert "company" in job
         assert "url" in job
         assert "location" in job
+
+
+def test_feasibility_limit_caps_batch(tmp_output_dir, sample_all_jobs):
+    """--feasibility-limit should cap the number of jobs checked."""
+    path = tmp_output_dir / "all_jobs.json"
+    # Remove all feasible fields so all 10 jobs are unchecked
+    sample = json.loads(json.dumps(sample_all_jobs))
+    for job in sample["jobs"]:
+        job.pop("feasible", None)
+        job.pop("feasibility", None)
+    path.write_text(json.dumps(sample, separators=(",", ":")))
+
+    checker = MockChecker()
+    run_feasibility_check(checker, limit=3)
+
+    data = json.loads(path.read_text())
+    tagged = [j for j in data["jobs"] if "feasible" in j]
+    untagged = [j for j in data["jobs"] if "feasible" not in j]
+    assert len(tagged) == 3, f"Expected 3 tagged, got {len(tagged)}"
+    assert len(untagged) == 7, f"Expected 7 untagged, got {len(untagged)}"
+
+
+def test_feasibility_limit_zero_means_all(tmp_output_dir, sample_all_jobs):
+    """limit=0 should check all unchecked jobs (no limit)."""
+    path = tmp_output_dir / "all_jobs.json"
+    sample = json.loads(json.dumps(sample_all_jobs))
+    for job in sample["jobs"]:
+        job.pop("feasible", None)
+        job.pop("feasibility", None)
+    path.write_text(json.dumps(sample, separators=(",", ":")))
+
+    checker = MockChecker()
+    run_feasibility_check(checker, limit=0)
+
+    data = json.loads(path.read_text())
+    tagged = [j for j in data["jobs"] if "feasible" in j]
+    assert len(tagged) == 10, f"Expected all 10 tagged, got {len(tagged)}"
