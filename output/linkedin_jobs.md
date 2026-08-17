@@ -1,6 +1,9 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-17 03:18 UTC*
+*Last updated: 2026-08-17 04:31 UTC*
 
-**0 new role(s)** since last run · 0 total in last 1h
+**1 new role(s)** since last run · 1 total in last 1h
 
-No new roles since the last run.
+### [Director of Test](https://www.linkedin.com/jobs/view/4455233148/) — Anduril Industries
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $220,000—$292,000 USD
+- 🕒 **Posted:** 2026-08-17
