@@ -1,128 +1,125 @@
 # 🏛 Priority Employers — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-17 04:27 UTC*
+*Last updated: 2026-08-18 04:45 UTC*
 
-**27 new role(s)** since last run · 28 total in last 24h
+**26 new role(s)** since last run · 26 total in last 24h
 
-### [Director of Test](https://www.linkedin.com/jobs/view/4455233148/) — Anduril Industries
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $220,000—$292,000 USD
+### [Senior Director, Board Product Development Engineering](https://www.linkedin.com/jobs/view/4454440388/) — NVIDIA
+- 📍 **Location:** Santa Clara, CA
+- 🕒 **Posted:** 2026-08-18
+
+### [DCEO Chief Engineer, DCC Communities](https://www.linkedin.com/jobs/view/4455529646/) — Amazon Web Services (AWS)
+- 📍 **Location:** Sparks, NV
+- 🕒 **Posted:** 2026-08-18
+
+### [Sr. Software Development Manager, Amazon Leo, Network Observability, Amazon Leo](https://www.linkedin.com/jobs/view/4455544462/) — Amazon
+- 📍 **Location:** Redmond, WA
+- 🕒 **Posted:** 2026-08-18
+
+### [Sr. Director, Applied AI & Data Architect Portfolio Leader (TMT)](https://www.linkedin.com/jobs/view/4455557001/) — Salesforce
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $223,860 - $299,390 annually
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4452535181/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $122,500 - $355,400 per year
 - 🕒 **Posted:** 2026-08-17
 
-### [Clinical Engineering Enterprise Director](https://www.linkedin.com/jobs/view/4451914913/) — Intelas
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $165,000.00/yr - $190,000.00/yr
+### [Chief Engineer, Gateway Systems](https://www.linkedin.com/jobs/view/4454407129/) — Intellian Technologies
+- 📍 **Location:** California, United States
 - 🕒 **Posted:** 2026-08-17
 
-### [Director of Engineering – Studio Systems](https://www.linkedin.com/jobs/view/4386442391/) — Roblox
-- 📍 **Location:** San Mateo, CA
-- 💰 **Salary:** $399,420—$457,970 USD
-- 🕒 **Posted:** 2026-08-16
+### [Senior Engineering Manager - AI Developer Products](https://www.linkedin.com/jobs/view/4444498926/) — ServiceNow
+- 📍 **Location:** San Diego, CA
+- 💰 **Salary:** $171,900 - $300,800
+- 🕒 **Posted:** 2026-08-17
 
-### [Director, System Software Engineering - Metropolis Accelerated and Inferencing Software](https://www.linkedin.com/jobs/view/4395486187/) — NVIDIA
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-08-16
+### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4406774743/) — Databricks
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $228,600—$314,250 USD
+- 🕒 **Posted:** 2026-08-17
 
-### [Head of AI Forward Deployed Engineering (FDE), Public Sector](https://www.linkedin.com/jobs/view/4425318128/) — Databricks
-- 📍 **Location:** Washington, VA
-- 💰 **Salary:** $232,900—$320,200 USD
-- 🕒 **Posted:** 2026-08-16
-
-### [Chief Engineer, Maritime Integrated Systems](https://www.linkedin.com/jobs/view/4400306163/) — Anduril Industries
-- 📍 **Location:** Quincy, MA
-- 💰 **Salary:** $191,000—$253,000 USD
-- 🕒 **Posted:** 2026-08-16
-
-### [Director of Engineering - Application, Cloud and Offensive Security](https://www.linkedin.com/jobs/view/4408594179/) — Snowflake
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $304,000 - $437,000
-- 🕒 **Posted:** 2026-08-16
-
-### [Senior Director, Data Hall Design](https://www.linkedin.com/jobs/view/4425360107/) — Oracle
-- 📍 **Location:** Virginia, United States
-- 💰 **Salary:** $169,800 - $355,400 per year
-- 🕒 **Posted:** 2026-08-16
-
-### [Senior Manager, Systems Software Engineering - GeForce NOW Cloud](https://www.linkedin.com/jobs/view/4395470523/) — NVIDIA
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-08-16
-
-### [Director, Product Development Engineering-ASIC/SoC](https://www.linkedin.com/jobs/view/4406760598/) — AMD
+### [Director, Product Development Engineering-ASIC/SoC](https://www.linkedin.com/jobs/view/4406746608/) — AMD
 - 📍 **Location:** San Jose, CA
 - 💰 **Salary:** $232,880.00/yr - $349,320.00/yr
-- 🕒 **Posted:** 2026-08-16
+- 🕒 **Posted:** 2026-08-17
 
-### [Director, Mission Systems, Advanced Effects](https://www.linkedin.com/jobs/view/4428153781/) — Anduril Industries
-- 📍 **Location:** Costa Mesa, CA
-- 💰 **Salary:** $220,000—$292,000 USD
-- 🕒 **Posted:** 2026-08-16
+### [Director of Building Automation (Nashville, TN)](https://www.linkedin.com/jobs/view/4452291214/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $146,300 - $306,400 per year
+- 🕒 **Posted:** 2026-08-17
 
-### [Associate Vice President - Water/Wastewater](https://www.linkedin.com/jobs/view/4414061761/) — Pape-Dawson
-- 📍 **Location:** Longview, TX
-- 🕒 **Posted:** 2026-08-16
-
-### [Software Development Director](https://www.linkedin.com/jobs/view/4424813731/) — Oracle
+### [Technical Director, Unannounced Cloud Game](https://www.linkedin.com/jobs/view/4407217987/) — Netflix
 - 📍 **Location:** United States
-- 💰 **Salary:** $169,800 - $355,400 per year
-- 🕒 **Posted:** 2026-08-16
+- 💰 **Salary:** $360,000.00 - $550,000.00
+- 🕒 **Posted:** 2026-08-17
 
-### [Software Development Senior Manager](https://www.linkedin.com/jobs/view/4257613845/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $133,100 - $306,400 per year
-- 🕒 **Posted:** 2026-08-16
+### [Head of Partner Engineering, Google Cloud](https://www.linkedin.com/jobs/view/4454413216/) — Google
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $233000 - $324000
+- 🕒 **Posted:** 2026-08-17
 
-### [Senior Manager, Mobile Engineering, Android (Enterprise Platforms Technology)](https://www.linkedin.com/jobs/view/4455194473/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $229,900 - $262,400
-- 🕒 **Posted:** 2026-08-16
+### [Director Software Development,  AI Models and Research](https://www.linkedin.com/jobs/view/4313808369/) — AMD
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $246,400.00/yr - $369,600.00/yr
+- 🕒 **Posted:** 2026-08-17
 
-### [Chief Engineer, Fury Science & Tech](https://www.linkedin.com/jobs/view/4377094230/) — Anduril Industries
+### [Director, Site Reliability Engineering](https://www.linkedin.com/jobs/view/4455381332/) — Anduril Industries
 - 📍 **Location:** Costa Mesa, CA
-- 💰 **Salary:** $254,000—$336,000 USD
-- 🕒 **Posted:** 2026-08-16
+- 💰 **Salary:** $253,000—$336,000 USD
+- 🕒 **Posted:** 2026-08-17
 
-### [Senior Research Director - Center for Responsible AI in Learning and Assessment](https://www.linkedin.com/jobs/view/4370566616/) — ETS
-- 📍 **Location:** Princeton, NJ
-- 💰 **Salary:** $235,000 - $275,000
-- 🕒 **Posted:** 2026-08-16
+### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4452523192/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $120,000 - $306,400 per year
+- 🕒 **Posted:** 2026-08-17
 
-### [Director, IT](https://www.linkedin.com/jobs/view/4397204084/) — Figma
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $258,000—$348,000 USD
-- 🕒 **Posted:** 2026-08-16
+### [Senior Manager, Signals Engineering](https://www.linkedin.com/jobs/view/4452531200/) — Oracle
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $126,200 - $264,100 per year
+- 🕒 **Posted:** 2026-08-17
 
-### [Senior Director, Research-Skills Center](https://www.linkedin.com/jobs/view/4383802060/) — ETS
-- 📍 **Location:** Princeton, NJ
-- 🕒 **Posted:** 2026-08-16
+### [Senior Tech Lead Manager, Agentic Platform for Search Verticals](https://www.linkedin.com/jobs/view/4454240641/) — Google
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-08-17
 
-### [Sr. Director, IT Product Management – Post Sales and Partner Technology](https://www.linkedin.com/jobs/view/4428187691/) — MongoDB
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $168,000—$330,000 USD
-- 🕒 **Posted:** 2026-08-16
+### [Senior Software Engineering Manager, Workspace Acquisition and Onboarding](https://www.linkedin.com/jobs/view/4454268210/) — Google
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-08-17
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4352753152/) — Databricks
+### [Senior Software Engineering Manager, Google Compute Engine](https://www.linkedin.com/jobs/view/4454429093/) — Google
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-08-17
+
+### [Senior Software Engineering Manager, AI/ML Recommendations, Rankings, Predictions, YouTube](https://www.linkedin.com/jobs/view/4454238643/) — Google
+- 📍 **Location:** San Bruno, CA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-08-17
+
+### [Director, Customer Engineering, Compute and Enterprise AI](https://www.linkedin.com/jobs/view/4398682855/) — AMD
+- 📍 **Location:** Taipei, Taipei City, Taiwan
+- 🕒 **Posted:** 2026-08-17
+
+### [Director of Software Validation Engineering – ROCm](https://www.linkedin.com/jobs/view/4414053845/) — AMD
+- 📍 **Location:** Markham, Ontario, Canada
+- 💰 **Salary:** $172,000.00/yr - $258,000.00/yr
+- 🕒 **Posted:** 2026-08-17
+
+### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4454239658/) — Salesforce
+- 📍 **Location:** Hyderabad, Telangana, India
+- 🕒 **Posted:** 2026-08-17
+
+### [Senior Engineering Manager - Streaming](https://www.linkedin.com/jobs/view/4455286753/) — Roku
 - 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-08-16
+- 🕒 **Posted:** 2026-08-17
 
-### [Performance Modeling and Optimization Engineering Director](https://www.linkedin.com/jobs/view/4398684872/) — AMD
-- 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-08-16
+### [Senior Site Reliability Engineering Manager](https://www.linkedin.com/jobs/view/4455312118/) — Oracle
+- 📍 **Location:** United Kingdom
+- 🕒 **Posted:** 2026-08-17
 
-### [Director, Silicon Design Engineering](https://www.linkedin.com/jobs/view/4398829236/) — AMD
-- 📍 **Location:** Hsinchu Metropolitan Area
-- 🕒 **Posted:** 2026-08-16
-
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4418137355/) — Capital One
-- 📍 **Location:** Mexico City, Mexico
-- 🕒 **Posted:** 2026-08-16
-
-### [Head of Execution Technology](https://www.linkedin.com/jobs/view/4423642836/) — Optiver
-- 📍 **Location:** Mumbai, Maharashtra, India
-- 🕒 **Posted:** 2026-08-16
-
-### [Chief Engineer](https://www.linkedin.com/jobs/view/4388189691/) — Anduril Industries
-- 📍 **Location:** Amsterdam, North Holland, Netherlands
-- 🕒 **Posted:** 2026-08-16
-
-### [Senior Manager, Software Advanced Development](https://www.linkedin.com/jobs/view/4395484513/) — NVIDIA
-- 📍 **Location:** Yokneam Ilit, North District, Israel
-- 🕒 **Posted:** 2026-08-16
+### [Sr Manager, Technical Support Engineering](https://www.linkedin.com/jobs/view/4445670202/) — Salesforce
+- 📍 **Location:** Tokyo, Tokyo, Japan
+- 🕒 **Posted:** 2026-08-17
