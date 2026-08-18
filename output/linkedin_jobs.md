@@ -1,127 +1,96 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-18 15:06 UTC*
+*Last updated: 2026-08-18 16:00 UTC*
 
-**27 new role(s)** since last run · 50 total in last 1h
+**22 new role(s)** since last run · 51 total in last 1h
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4452810723/) — Jobot
-- 📍 **Location:** Cambridge, MA
-- 💰 **Salary:** $250,000 - $350,000 per year
+### [Director of Engineering, New Products](https://www.linkedin.com/jobs/view/4444705555/) — OVERJET
+- 📍 **Location:** San Mateo, CA
 - 🕒 **Posted:** 2026-08-18
 
-### [Director of Software Engineering – Marketplace](https://www.linkedin.com/jobs/view/4446158111/) — Zipline
-- 📍 **Location:** South San Francisco, CA
-- 💰 **Salary:** $250,000-$300,000
+### [Director, Software Engineering - MarTech](https://www.linkedin.com/jobs/view/4455760876/) — Macy's
+- 📍 **Location:** Johns Creek, GA
 - 🕒 **Posted:** 2026-08-18
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4454754878/) — The Green Recruitment Company
-- 📍 **Location:** Charlotte, NC
-- 💰 **Salary:** $180,000.00/yr - $205,000.00/yr
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4441722824/) — Eleven Recruiting
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $200,000.00/yr - $225,000.00/yr
 - 🕒 **Posted:** 2026-08-18
 
-### [VP of Engineering](https://www.linkedin.com/jobs/view/4454772165/) — ShipperHQ
-- 📍 **Location:** Austin, TX
+### [Director - Engineering - Purification & Conjugation Technologies - BR&D](https://www.linkedin.com/jobs/view/4437730004/) — Eli Lilly and Company
+- 📍 **Location:** Indianapolis, IN
+- 💰 **Salary:** $151,500 - $239,800
 - 🕒 **Posted:** 2026-08-18
 
-### [Senior Engineering Manager, Product](https://www.linkedin.com/jobs/view/4455756205/) — Duolingo
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $204,000—$306,000 USD
+### [Director, Package Design Engineering](https://www.linkedin.com/jobs/view/4455762649/) — Renesas Electronics
+- 📍 **Location:** Phoenix, AZ
 - 🕒 **Posted:** 2026-08-18
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4454762402/) — Space Executive
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $220,000.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4455766443/) — Talent Groups
-- 📍 **Location:** Minneapolis, MN
-- 💰 **Salary:** $50.00/hr - $55.00/hr
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4442860550/) — C3 AI
-- 📍 **Location:** Atlanta, GA
-- 🕒 **Posted:** 2026-08-18
-
-### [Director of Origination Technology](https://www.linkedin.com/jobs/view/4454462042/) — University of Nebraska-Lincoln
-- 📍 **Location:** Lincoln, Nebraska Metropolitan Area
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, AI Platform Reliability](https://www.linkedin.com/jobs/view/4452821074/) — LogicMonitor
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $247,500 USD - $275,000 USD
-- 🕒 **Posted:** 2026-08-18
-
-### [Director of System Engineering](https://www.linkedin.com/jobs/view/4455758445/) — Airbotics Talent
-- 📍 **Location:** Dallas-Fort Worth Metroplex
-- 🕒 **Posted:** 2026-08-18
-
-### [Vice President - Technology](https://www.linkedin.com/jobs/view/4369491292/) — Endress+Hauser Group
-- 📍 **Location:** Indiana, United States
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Engineering Manager, Product](https://www.linkedin.com/jobs/view/4455767055/) — Duolingo
-- 📍 **Location:** Pittsburgh, PA
-- 💰 **Salary:** $204,000—$306,000 USD
-- 🕒 **Posted:** 2026-08-18
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4455749447/) — Hyatt Regency
-- 📍 **Location:** Houston, TX
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Director, Engineering | Retail Analytics / CPG / Market Intelligence](https://www.linkedin.com/jobs/view/4454775189/) — NielsenIQ
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $151,800.00/yr - $220,000.00/yr
-- 🕒 **Posted:** 2026-08-18
-
-### [Director of Software](https://www.linkedin.com/jobs/view/4454748990/) — Skyways
-- 📍 **Location:** Austin, Texas Metropolitan Area
-- 💰 **Salary:** $200,000.00/yr - $250,000.00/yr
-- 🕒 **Posted:** 2026-08-18
-
-### [Vice President of Technology](https://www.linkedin.com/jobs/view/4455760123/) — StartupHakk
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-08-18
-
-### [Director of Technology](https://www.linkedin.com/jobs/view/4454763203/) — Vita Bella
-- 📍 **Location:** Scottsdale, AZ
-- 💰 **Salary:** $80k-$140
-- 🕒 **Posted:** 2026-08-18
-
-### [Sr. Manager, Network Engineering](https://www.linkedin.com/jobs/view/4454755907/) — Request Technology, LLC
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $180,000.00/yr - $200,000.00/yr
-- 🕒 **Posted:** 2026-08-18
-
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4454784015/) — ShipperHQ
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-08-18
-
-### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4443293182/) — Amazon
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Manager, Data Engineering](https://www.linkedin.com/jobs/view/4445987209/) — Stanley Black & Decker, Inc.
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-08-18
-
-### [Copy of Copy of Director, Package Design Engineering](https://www.linkedin.com/jobs/view/4455760571/) — Renesas Electronics
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-08-18
-
-### [Copy of Copy of Copy of Director, Package Design Engineering](https://www.linkedin.com/jobs/view/4455755623/) — Renesas Electronics
+### [Director, Package Design Engineering](https://www.linkedin.com/jobs/view/4455749774/) — Renesas Electronics
 - 📍 **Location:** Dallas, TX
 - 🕒 **Posted:** 2026-08-18
 
-### [Senior Manager, Software Engineering, Full Stack (Global Payment Network)](https://www.linkedin.com/jobs/view/4446196536/) — Capital One
+### [Director of OT Engineering](https://www.linkedin.com/jobs/view/4451901445/) — GTN Technical Staffing
+- 📍 **Location:** Spartanburg County, SC
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Software Engineer](https://www.linkedin.com/jobs/view/4454771427/) — UBS
+- 📍 **Location:** Raleigh, NC
+- 🕒 **Posted:** 2026-08-18
+
+### [Head of Software Engineering Acceleration (AI DevX)](https://www.linkedin.com/jobs/view/4434518391/) — SCIENTIFIC GAMES
+- 📍 **Location:** Alpharetta, GA
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4454774326/) — B2U Storage Solutions
+- 📍 **Location:** Lancaster, CA
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Technology Delivery Lead](https://www.linkedin.com/jobs/view/4444502823/) — KPMG US
+- 📍 **Location:** Dallas, TX
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Manager, AI Safety and Security Engineering](https://www.linkedin.com/jobs/view/4445410593/) — NVIDIA
+- 📍 **Location:** Colorado, United States
+- 🕒 **Posted:** 2026-08-18
+
+### [Software Engineering Sr. Manager – Marketplace](https://www.linkedin.com/jobs/view/4446163091/) — Zipline
+- 📍 **Location:** South San Francisco, CA
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Package Design Engineering](https://www.linkedin.com/jobs/view/4455766596/) — Renesas Electronics
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Engineering Manager, Software Supply Chain Security](https://www.linkedin.com/jobs/view/4437488199/) — Semgrep
+- 📍 **Location:** Boston, NY
+- 💰 **Salary:** $197,000- $288,000
+- 🕒 **Posted:** 2026-08-18
+
+### [Sr. Manager, Network Engineering](https://www.linkedin.com/jobs/view/4455767544/) — Brown & Brown
+- 📍 **Location:** Daytona Beach, FL
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Manager, AI and Automation Engineering](https://www.linkedin.com/jobs/view/4455760779/) — Jarvis Walker & Foster McKay
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-08-18
+
+### [Vice President of Technology](https://www.linkedin.com/jobs/view/4454781389/) — Joyce/Dayton
+- 📍 **Location:** Kettering, OH
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Technology Delivery Lead](https://www.linkedin.com/jobs/view/4444198976/) — KPMG US
+- 📍 **Location:** Orlando, FL
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Manager, IT Infrastructure - ServiceOps](https://www.linkedin.com/jobs/view/4455751884/) — Coca-Cola Consolidated
+- 📍 **Location:** Charlotte, NC
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Manager, Software Engineering, Full Stack (Global Payment Network)](https://www.linkedin.com/jobs/view/4446311137/) — Capital One
 - 📍 **Location:** Deerfield, IL
 - 💰 **Salary:** $209,000 - $238,500
 - 🕒 **Posted:** 2026-08-18
 
-### [Senior Manager, Clinical Engineering & Data Analytics- Dental Solutions](https://www.linkedin.com/jobs/view/4388331075/) — Solventum
-- 📍 **Location:** United States
-- 💰 **Salary:** $187,600.00/yr - $257,950.00/yr
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Director, Applied Research](https://www.linkedin.com/jobs/view/4446305180/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $318,100 - $363,100
+### [Senior Manager, AI Safety and Security Engineering](https://www.linkedin.com/jobs/view/4445404680/) — NVIDIA
+- 📍 **Location:** Tennessee, United States
 - 🕒 **Posted:** 2026-08-18
