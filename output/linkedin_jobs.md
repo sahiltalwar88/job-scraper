@@ -1,105 +1,82 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-17 23:50 UTC*
+*Last updated: 2026-08-18 02:02 UTC*
 
-**21 new role(s)** since last run · 49 total in last 1h
+**17 new role(s)** since last run · 17 total in last 1h
 
-### [Senior Manager, Warehouse Equipment Platform Engineering](https://www.linkedin.com/jobs/view/4455511257/) — The Coca-Cola Company
-- 📍 **Location:** Atlanta, GA
-- 🕒 **Posted:** 2026-08-17
+### [DCEO Chief Engineer, DCC Communities](https://www.linkedin.com/jobs/view/4455529646/) — Amazon Web Services (AWS)
+- 📍 **Location:** Sparks, NV
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455399960/) — Intuit
-- 📍 **Location:** Evansville, IN
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Director, Full Stack Engineering](https://www.linkedin.com/jobs/view/4455533886/) — Fidelity Investments
+- 📍 **Location:** Durham, NC
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455508112/) — Intuit
-- 📍 **Location:** Fort Wayne, IN
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4452530570/) — Regal Rexnord
+- 📍 **Location:** Cassville, MO
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455506285/) — Intuit
-- 📍 **Location:** Wichita, KS
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Sr. Manager Engineering, North America Applications and Systems](https://www.linkedin.com/jobs/view/4452530563/) — Regal Rexnord
+- 📍 **Location:** Radford, VA
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455513150/) — Intuit
-- 📍 **Location:** Bowling Green, KY
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4454447773/) — Jack & Jill
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $270k-$330k
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455520216/) — Intuit
-- 📍 **Location:** South Bend, IN
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Senior Manager - Technology Strategy Leader HYBRID TELEWORK](https://www.linkedin.com/jobs/view/4452526448/) — Lockheed Martin
+- 📍 **Location:** Colorado Springs, CO
+- 💰 **Salary:** $182500.00 - $338900.00
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455503338/) — Intuit
-- 📍 **Location:** West Lafayette, IN
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
-
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455507195/) — Intuit
-- 📍 **Location:** Eau Claire, WI
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
-
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455512077/) — Intuit
-- 📍 **Location:** Sioux City, IA
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
-
-### [Head of Product Development Engineering](https://www.linkedin.com/jobs/view/4455531140/) — Ethernovia
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $220,000 - $280,000
-- 🕒 **Posted:** 2026-08-17
-
-### [Senior Manager - MEP Facility Engineering](https://www.linkedin.com/jobs/view/4452519213/) — Blue Origin
-- 📍 **Location:** Greater Seattle Area
-- 💰 **Salary:** $158,257.00 - $221,559.45
-- 🕒 **Posted:** 2026-08-17
-
-### [Head of Test Development Engineering](https://www.linkedin.com/jobs/view/4455529124/) — Ethernovia
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $220,000 - $280,000
-- 🕒 **Posted:** 2026-08-17
-
-### [Senior Manager, Signals Engineering](https://www.linkedin.com/jobs/view/4452531200/) — Oracle
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $126,200 - $264,100 per year
-- 🕒 **Posted:** 2026-08-17
-
-### [Global Director, Software and Digital Strategy](https://www.linkedin.com/jobs/view/4455393596/) — NeuWave Medical Inc.
-- 📍 **Location:** Madison, WI
-- 🕒 **Posted:** 2026-08-17
-
-### [Director of Ops Technology](https://www.linkedin.com/jobs/view/4455545064/) — Swooped
+### [Director, Analytics Engineering](https://www.linkedin.com/jobs/view/4455558080/) — Webflow
 - 📍 **Location:** United States
-- 🕒 **Posted:** 2026-08-17
+- 💰 **Salary:** $284,000 - $355,000
+- 🕒 **Posted:** 2026-08-18
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4452523192/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-08-17
+### [AI Platform Chief Architect](https://www.linkedin.com/jobs/view/4455561224/) — U.S. Bank
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $181,730.00 - $213,800.00
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455522020/) — Intuit
-- 📍 **Location:** West Des Moines, IA
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Sr. Software Development Manager, Amazon Leo, Network Observability, Amazon Leo](https://www.linkedin.com/jobs/view/4455544462/) — Amazon
+- 📍 **Location:** Redmond, WA
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455502291/) — Intuit
-- 📍 **Location:** Delaware, OH
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+### [Head of Enterprise Risk](https://www.linkedin.com/jobs/view/4454458705/) — Anthropic
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $280,000—$340,000 USD
+- 🕒 **Posted:** 2026-08-18
 
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455399924/) — Intuit
-- 📍 **Location:** Cedar Rapids, IA
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
-
-### [VP of Technology - Head Architect, TurboTax](https://www.linkedin.com/jobs/view/4455504332/) — Intuit
+### [Senior Manager, Cloud Platform Engineering](https://www.linkedin.com/jobs/view/4455563212/) — Hightower Advisors
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-08-17
+- 💰 **Salary:** $140,000-$150,000
+- 🕒 **Posted:** 2026-08-18
 
-### [Senior Manager Data Engineering](https://www.linkedin.com/jobs/view/4452519287/) — Diebold Nixdorf
-- 📍 **Location:** North Canton, OH
-- 🕒 **Posted:** 2026-08-17
+### [Sr. Director, Applied AI & Data Architect Portfolio Leader (TMT)](https://www.linkedin.com/jobs/view/4455557001/) — Salesforce
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $223,860 - $299,390 annually
+- 🕒 **Posted:** 2026-08-18
+
+### [Sr. Manager, Technology - Security](https://www.linkedin.com/jobs/view/4455559463/) — Williams-Sonoma, Inc.
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $170,000-$202,000
+- 🕒 **Posted:** 2026-08-18
+
+### [Director of Origination Technology](https://www.linkedin.com/jobs/view/4454462042/) — University of Nebraska-Lincoln
+- 📍 **Location:** Lincoln, Nebraska Metropolitan Area
+- 🕒 **Posted:** 2026-08-18
+
+### [Executive Director AI Engineering and Process Automation](https://www.linkedin.com/jobs/view/4455571380/) — Presbyterian Healthcare Services
+- 📍 **Location:** Albuquerque, NM
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Platform Architecture](https://www.linkedin.com/jobs/view/4455564516/) — Briefly
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $180,000 to $220,000 annually
+- 🕒 **Posted:** 2026-08-18
+
+### [Senior Manager / Director, Business Technology, Sales & Partners](https://www.linkedin.com/jobs/view/4435037696/) — Alteryx
+- 📍 **Location:** United States
+- 💰 **Salary:** $154,000 - $204,000
+- 🕒 **Posted:** 2026-08-18
