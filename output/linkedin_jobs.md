@@ -1,170 +1,111 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-18 13:21 UTC*
+*Last updated: 2026-08-18 14:11 UTC*
 
-**36 new role(s)** since last run · 36 total in last 1h
+**23 new role(s)** since last run · 47 total in last 1h
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4454760235/) — Mathews Brothers Company
-- 📍 **Location:** Belfast, ME
-- 💰 **Salary:** $150,000 - $175,000 Annually
+### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4454744677/) — Jack & Jill
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $270k-$330k
 - 🕒 **Posted:** 2026-08-18
 
-### [Senior Director, Software Architect](https://www.linkedin.com/jobs/view/4366660952/) — Universal Creative
-- 📍 **Location:** Orlando, FL
+### [Sr. Engineering Manager - Transportation](https://www.linkedin.com/jobs/view/4400629664/) — Farnsworth Group, Inc.
+- 📍 **Location:** Nashville, TN
 - 🕒 **Posted:** 2026-08-18
 
-### [Chief Engineer, Intelligence Systems](https://www.linkedin.com/jobs/view/4409416385/) — Anduril Industries
-- 📍 **Location:** Reston, VA
-- 💰 **Salary:** $191,000—$253,000 USD
+### [Sr. Engineering Manager - Transportation](https://www.linkedin.com/jobs/view/4400632582/) — Farnsworth Group, Inc.
+- 📍 **Location:** Champaign, IL
+- 💰 **Salary:** $140,000 - $170,000
 - 🕒 **Posted:** 2026-08-18
 
-### [Director Software Dev Engineer](https://www.linkedin.com/jobs/view/4436200494/) — RadNet
-- 📍 **Location:** Somerville, MA
-- 💰 **Salary:** $198,000 to $262,000
+### [Chief Architect](https://www.linkedin.com/jobs/view/4454755628/) — Boeing Intelligence & Analytics
+- 📍 **Location:** Annapolis Junction, MD
+- 💰 **Salary:** $216,000.00/yr - $270,000.00/yr
 - 🕒 **Posted:** 2026-08-18
 
-### [Head of Engineering - Inbound Data](https://www.linkedin.com/jobs/view/4445426652/) — S&P Global
-- 📍 **Location:** Princeton, NJ
-- 💰 **Salary:** $185,000 to $265,000
+### [Director, Agentic Software Development](https://www.linkedin.com/jobs/view/4447229275/) — CSL
+- 📍 **Location:** Waltham, MA
+- 💰 **Salary:** $228,000-270,000
 - 🕒 **Posted:** 2026-08-18
 
-### [Regional Director, Architecture & Engineering](https://www.linkedin.com/jobs/view/4452803213/) — Blue Signal Search
-- 📍 **Location:** Phoenix, AZ
-- 🕒 **Posted:** 2026-08-18
-
-### [Head of Engineering - Data Distribution](https://www.linkedin.com/jobs/view/4445436512/) — S&P Global
-- 📍 **Location:** Princeton, NJ
-- 💰 **Salary:** $185,000 to $265,000
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Process Improvement Engineering Manager](https://www.linkedin.com/jobs/view/4445194474/) — Smithfield Foods
-- 📍 **Location:** Kansas City, MO
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Manager - Software Engineering](https://www.linkedin.com/jobs/view/4437733963/) — GE HealthCare
-- 📍 **Location:** Waukesha, WI
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, AI Platform and Portfolio Delivery](https://www.linkedin.com/jobs/view/4445487412/) — BetMGM
-- 📍 **Location:** New Jersey, United States
+### [Director, AI Platform and Portfolio Delivery](https://www.linkedin.com/jobs/view/4445488441/) — BetMGM
+- 📍 **Location:** Connecticut, United States
 - 💰 **Salary:** $176,240 to $230,000
 - 🕒 **Posted:** 2026-08-18
 
-### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4454728891/) — Kelly Science, Engineering, Technology & Telecom
-- 📍 **Location:** Addison, IL
+### [Washington, DC - Director, Endpoint and AV Engineering](https://www.linkedin.com/jobs/view/4418424385/) — Winston & Strawn LLP
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $230,000-$275,000
 - 🕒 **Posted:** 2026-08-18
 
-### [Software Engineering & Development Lead, Vice President, Onsite](https://www.linkedin.com/jobs/view/4449664999/) — State Street
-- 📍 **Location:** Irvine, CA
-- 💰 **Salary:** $125,000 - $215,000
+### [Deputy Chief Engineer, PES](https://www.linkedin.com/jobs/view/4369442024/) — Anduril Industries
+- 📍 **Location:** Costa Mesa, CA
+- 💰 **Salary:** $166,000—$220,000 USD
 - 🕒 **Posted:** 2026-08-18
 
-### [Director of Engineering, Infrastructure](https://www.linkedin.com/jobs/view/4427713358/) — Klaviyo
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $244,000—$366,000 USD
+### [Lift Director - Michels Infrastructure Solutions, Inc.](https://www.linkedin.com/jobs/view/4452802616/) — Michels Corporation
+- 📍 **Location:** Waco, TX
 - 🕒 **Posted:** 2026-08-18
 
-### [VP, Software Engineering](https://www.linkedin.com/jobs/view/4446167067/) — Guild
+### [Senior Engineering Manager, NAS Cloud Direct](https://www.linkedin.com/jobs/view/4446165266/) — Rubrik
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $218,300—$327,500 USD
+- 🕒 **Posted:** 2026-08-18
+
+### [Infrastructure Engineering Director (Remote)](https://www.linkedin.com/jobs/view/4455731864/) — Quik Hire Staffing
 - 📍 **Location:** United States
-- 💰 **Salary:** $300,000 - $355,950,
+- 💰 **Salary:** $350,000.00/yr - $500,000.00/yr
 - 🕒 **Posted:** 2026-08-18
 
-### [Group Director, Software Engineering- AI Shopping & Content Experiences](https://www.linkedin.com/jobs/view/4434534027/) — Walmart Global Tech
-- 📍 **Location:** Sunnyvale, CA
-- 💰 **Salary:** $254,000.00/yr - $481,000.00/yr
+### [Head of ML/AI Exploration, Architecture, & Engineering](https://www.linkedin.com/jobs/view/4417861619/) — X, The Moonshot Factory
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $307,000 - $422,000
 - 🕒 **Posted:** 2026-08-18
 
-### [Senior Manager - Software Development Engineering](https://www.linkedin.com/jobs/view/4455723254/) — CVS Health
-- 📍 **Location:** Harrisburg, PA
-- 💰 **Salary:** $106,605.00 - $260,590.00
+### [VP, Field Engineering at Turing](https://www.linkedin.com/jobs/view/4454737743/) — Jack & Jill
+- 📍 **Location:** San Francisco, CA
 - 🕒 **Posted:** 2026-08-18
 
-### [Senior Director, Data Center Infrastructure Management, Intelligence & Controls](https://www.linkedin.com/jobs/view/4446131015/) — Flexential
-- 📍 **Location:** United States
-- 💰 **Salary:** $195,000 - $235,000
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, ML Engineering & Infrastructure](https://www.linkedin.com/jobs/view/4369236479/) — Tubi
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $292,000—$417,200 USD
-- 🕒 **Posted:** 2026-08-18
-
-### [Head of Engineering - Inbound Data](https://www.linkedin.com/jobs/view/4445428600/) — S&P Global
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $185,000 to $265,000
-- 🕒 **Posted:** 2026-08-18
-
-### [Director of Transportation Design Engineering](https://www.linkedin.com/jobs/view/4445042967/) — Resource International, Inc.
-- 📍 **Location:** Carmel, IN
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, Network Engineering](https://www.linkedin.com/jobs/view/4454409683/) — All Points Broadband
-- 📍 **Location:** Richmond, VA
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Manager, Data Engineering](https://www.linkedin.com/jobs/view/4445996151/) — Stanley Black & Decker, Inc.
-- 📍 **Location:** Towson, MD
-- 🕒 **Posted:** 2026-08-18
-
-### [Sr Manager, Operations Engineering](https://www.linkedin.com/jobs/view/4442874447/) — American Airlines
-- 📍 **Location:** Fort Worth, TX
-- 🕒 **Posted:** 2026-08-18
-
-### [Head of Information Technology](https://www.linkedin.com/jobs/view/4445281709/) — Mitsubishi Heavy Industries
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4363500570/) — DBM Global Inc.
 - 📍 **Location:** Houston, TX
 - 🕒 **Posted:** 2026-08-18
 
-### [Director, Web Platform Engineering](https://www.linkedin.com/jobs/view/4454750496/) — Jobgether
-- 📍 **Location:** United States
-- 💰 **Salary:** $150,000–$170,000 USD
+### [Director of Engineering, Physical AI](https://www.linkedin.com/jobs/view/4443223900/) — Scale AI
+- 📍 **Location:** San Francisco Bay Area
+- 💰 **Salary:** $302,400—$378,000 USD
 - 🕒 **Posted:** 2026-08-18
 
-### [Sr. Lab Manager, Avionics Engineering Operations, Amazon Leo](https://www.linkedin.com/jobs/view/4455721187/) — Amazon
-- 📍 **Location:** Redmond, WA
+### [Director, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4442856659/) — C3 AI
+- 📍 **Location:** Houston, TX
 - 🕒 **Posted:** 2026-08-18
 
-### [Sr. Director, Platform Engineering](https://www.linkedin.com/jobs/view/4455578574/) — Gap Inc.
-- 📍 **Location:** Coppell, TX
+### [Director, Systems and Integration](https://www.linkedin.com/jobs/view/4437478037/) — Anduril Industries
+- 📍 **Location:** Costa Mesa, CA
+- 💰 **Salary:** $220,000—$300,000 USD
 - 🕒 **Posted:** 2026-08-18
 
-### [Head of Engineering - Inbound Data](https://www.linkedin.com/jobs/view/4445442461/) — S&P Global
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $185,000 to $265,000
+### [Senior Manager, Software Engineering- Full Stack](https://www.linkedin.com/jobs/view/4436264095/) — Safe-Guard Products International
+- 📍 **Location:** Atlanta, GA
 - 🕒 **Posted:** 2026-08-18
 
-### [Director, Client Software Development Services](https://www.linkedin.com/jobs/view/4455728262/) — I.T. Right, Inc - A VC3 Company
-- 📍 **Location:** United States
+### [Chief Data & Platform Officer](https://www.linkedin.com/jobs/view/4455724795/) — Millman Search
+- 📍 **Location:** Annapolis, MD
 - 🕒 **Posted:** 2026-08-18
 
-### [Director Of Engineering](https://www.linkedin.com/jobs/view/4455182762/) — New International Picture Company
-- 📍 **Location:** New York, United States
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Product Manager, Enterprise Platform](https://www.linkedin.com/jobs/view/4342295537/) — Fivetran
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $188,496—$235,620 USD
-- 🕒 **Posted:** 2026-08-18
-
-### [Senior Technical Product Manager, Data Engineering & Data Science Solutions](https://www.linkedin.com/jobs/view/4389857111/) — S&P Global
-- 📍 **Location:** Boulder, CO
-- 💰 **Salary:** $100,000 to $149,000
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, AI Platform and Portfolio Delivery](https://www.linkedin.com/jobs/view/4445493333/) — BetMGM
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $176,240 to $230,000
-- 🕒 **Posted:** 2026-08-18
-
-### [VP, Design - Virtual Expert Platform](https://www.linkedin.com/jobs/view/4378723059/) — Intuit
-- 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $338,000 - $457,500
-- 🕒 **Posted:** 2026-08-18
-
-### [Head of Engineering - Data Distribution](https://www.linkedin.com/jobs/view/4445436513/) — S&P Global
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $185,000 to $265,000
-- 🕒 **Posted:** 2026-08-18
-
-### [Director, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4442856660/) — C3 AI
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4363641994/) — Grindr
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $180,000—$230,000 USD
+- 🕒 **Posted:** 2026-08-18
+
+### [Chief Systems Architect, SIG](https://www.linkedin.com/jobs/view/4446130528/) — Anduril Industries
+- 📍 **Location:** Santa Ana, CA
+- 💰 **Salary:** $220,000—$292,000 USD
+- 🕒 **Posted:** 2026-08-18
+
+### [Executive Director, Underwriting Business Technology - Caremark](https://www.linkedin.com/jobs/view/4455727192/) — CVS Health
+- 📍 **Location:** Northbrook, IL
+- 💰 **Salary:** $131,500.00 - $303,195.00
+- 🕒 **Posted:** 2026-08-18
+
+### [Director, Software Systems, Process and Delivery](https://www.linkedin.com/jobs/view/4433105781/) — Edwards Lifesciences
+- 📍 **Location:** Irvine, CA
+- 💰 **Salary:** $159,000 to $226,000
 - 🕒 **Posted:** 2026-08-18
