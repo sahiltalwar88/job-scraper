@@ -1,109 +1,124 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-19 17:54 UTC*
+*Last updated: 2026-08-19 19:06 UTC*
 
-**22 new role(s)** since last run · 50 total in last 1h
+**26 new role(s)** since last run · 30 total in last 1h
 
-### [Applications Development Technology Lead – Vice President](https://www.linkedin.com/jobs/view/4417892602/) — Citi
-- 📍 **Location:** Rutherford, NJ
-- 💰 **Salary:** $142,320.00 - $213,480.00
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4456355610/) — Anderson International Corp
+- 📍 **Location:** Stow, OH
 - 🕒 **Posted:** 2026-08-19
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4440076249/) — Protouch Staffing
-- 📍 **Location:** Piscataway, NJ
-- 💰 **Salary:** $120,000.00/yr - $200,000.00/yr
+### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4441546660/) — Addison HVAC
+- 📍 **Location:** Orlando, FL
 - 🕒 **Posted:** 2026-08-19
 
-### [Sr. Manager, Engineering - Data Analytics Infrastructure (Hybrid)](https://www.linkedin.com/jobs/view/4453482182/) — CrowdStrike
+### [Senior Manager – Engineering](https://www.linkedin.com/jobs/view/4436869699/) — Broadcom
+- 📍 **Location:** Broomfield, CO
+- 🕒 **Posted:** 2026-08-19
+
+### [VP, Container Engineering](https://www.linkedin.com/jobs/view/4446353585/) — LPL Financial
 - 📍 **Location:** Austin, TX
-- 💰 **Salary:** $160,000 - $250,000 per year
+- 💰 **Salary:** $149,350.00 - $248,848.00
 - 🕒 **Posted:** 2026-08-19
 
-### [VP, Lead Software Engineer](https://www.linkedin.com/jobs/view/4446361316/) — LPL Financial
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $170,800.00 - $284,600.00
+### [Engineering Director, General Maintenance](https://www.linkedin.com/jobs/view/4456342764/) — JLL
+- 📍 **Location:** Houston, TX
 - 🕒 **Posted:** 2026-08-19
 
-### [Sr. Engineering Manager, Platform](https://www.linkedin.com/jobs/view/4436868187/) — Illumio
+### [Director, Post Sales Engineering (Req #1347)](https://www.linkedin.com/jobs/view/4445783700/) — ePlus inc.
+- 📍 **Location:** Glen Allen, VA
+- 🕒 **Posted:** 2026-08-19
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4455438716/) — Insight Global
+- 📍 **Location:** Santa Clara County, CA
+- 💰 **Salary:** $200,000.00/yr - $220,000.00/yr
+- 🕒 **Posted:** 2026-08-19
+
+### [Technology Director](https://www.linkedin.com/jobs/view/4455433653/) — Peraton
+- 📍 **Location:** San Diego, CA
+- 💰 **Salary:** $176,000 - $282,000
+- 🕒 **Posted:** 2026-08-19
+
+### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4456345945/) — Roku
 - 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $650,000 - $750,000 annually
 - 🕒 **Posted:** 2026-08-19
 
-### [Sr. Manager, Engineering - Data Analytics Infrastructure (Hybrid)](https://www.linkedin.com/jobs/view/4453482183/) — CrowdStrike
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4454575473/) — Boston Scientific
+- 📍 **Location:** Coventry, RI
+- 💰 **Salary:** $131700 - $250200
+- 🕒 **Posted:** 2026-08-19
+
+### [Director, IT Infrastructure & Engineering](https://www.linkedin.com/jobs/view/4446017146/) — Penumbra, Inc.
+- 📍 **Location:** Alameda, CA
+- 💰 **Salary:** $200,000 - $300,000
+- 🕒 **Posted:** 2026-08-19
+
+### [Senior Design Engineering Manager](https://www.linkedin.com/jobs/view/4456349764/) — PACE Staffing Alternatives
+- 📍 **Location:** Jefferson City, MO
+- 🕒 **Posted:** 2026-08-19
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4455440888/) — Valerian Technology
+- 📍 **Location:** San Diego, CA
+- 🕒 **Posted:** 2026-08-19
+
+### [Director of Engineering, Payments](https://www.linkedin.com/jobs/view/4449761294/) — Entrata
+- 📍 **Location:** Lehi, UT
+- 💰 **Salary:** $170,300.00/yr - $278,200.00/yr
+- 🕒 **Posted:** 2026-08-19
+
+### [Senior Engineering Manager – AI Advanced Development](https://www.linkedin.com/jobs/view/4455421954/) — World Wide Technology
+- 📍 **Location:** Maryland Heights, MO
+- 💰 **Salary:** $140,400 to $210,000 annually
+- 🕒 **Posted:** 2026-08-19
+
+### [Global Head of Enterprise Technology Services](https://www.linkedin.com/jobs/view/4429982709/) — Invesco
+- 📍 **Location:** Atlanta, GA
+- 🕒 **Posted:** 2026-08-19
+
+### [ConvergeSPORTS - Head Product Manager - Data and Product Engineering (Manager) -I nnovation_Delivery_Transformation](https://www.linkedin.com/jobs/view/4456370000/) — Deloitte
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $134,500-$265,100
+- 🕒 **Posted:** 2026-08-19
+
+### [ConvergeSPORTS - Head Product Manager - Data and Product Engineering (Manager) -I nnovation_Delivery_Transformation](https://www.linkedin.com/jobs/view/4456354915/) — Deloitte
+- 📍 **Location:** Pittsburgh, PA
+- 💰 **Salary:** $134,500-$265,100
+- 🕒 **Posted:** 2026-08-19
+
+### [Senior AI Engineering Manager, Video AI](https://www.linkedin.com/jobs/view/4456355910/) — LinkedIn
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $204,000 - $337,000
+- 🕒 **Posted:** 2026-08-19
+
+### [Director of Information Technology](https://www.linkedin.com/jobs/view/4456363256/) — IT Resources
+- 📍 **Location:** Arcadia, FL
+- 💰 **Salary:** $140,000.00/yr - $180,000.00/yr
+- 🕒 **Posted:** 2026-08-19
+
+### [Director ETL and Data Engineering](https://www.linkedin.com/jobs/view/4455427962/) — Church Pension Group
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $160,000 - $250,000 per year
+- 💰 **Salary:** $136,000 - $180,000
 - 🕒 **Posted:** 2026-08-19
 
-### [Director, Software Engineering - Risk Tech](https://www.linkedin.com/jobs/view/4446584928/) — Capital One
-- 📍 **Location:** Cambridge, MA
-- 💰 **Salary:** $269,100 - $307,200
+### [Senior Manager of Validation Engineering](https://www.linkedin.com/jobs/view/4455447005/) — INCOG BioPharma Services
+- 📍 **Location:** Fishers, IN
 - 🕒 **Posted:** 2026-08-19
 
-### [VP Global Software Development](https://www.linkedin.com/jobs/view/4456340549/) — Terumo Blood and Cell Technologies
-- 📍 **Location:** Lakewood, CO
-- 💰 **Salary:** $269,300.00 to $336,600.00
+### [ConvergeSPORTS - Head Product Manager - Data and Product Engineering (Manager) -I nnovation_Delivery_Transformation](https://www.linkedin.com/jobs/view/4456352875/) — Deloitte
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $134,500-$265,100
 - 🕒 **Posted:** 2026-08-19
 
-### [Director, Software Engineering - Risk Tech](https://www.linkedin.com/jobs/view/4446588664/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $269,100 - $307,200
+### [Director of Enterprise Technology](https://www.linkedin.com/jobs/view/4455426937/) — American Bible Society
+- 📍 **Location:** Philadelphia, PA
 - 🕒 **Posted:** 2026-08-19
 
-### [Senior Director, CTIO Engineering Technologists](https://www.linkedin.com/jobs/view/4455434468/) — Dell Technologies
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $318,665.00/yr - $412,390.00/yr
+### [Director of Technology](https://www.linkedin.com/jobs/view/4434703701/) — Amplify HR Management
+- 📍 **Location:** Northbrook, IL
+- 💰 **Salary:** $130,000.00/yr - $150,000.00/yr
 - 🕒 **Posted:** 2026-08-19
 
-### [Director of Data Engineering + ETL](https://www.linkedin.com/jobs/view/4455437394/) — Confidential NYC
-- 📍 **Location:** New York City Metropolitan Area
-- 💰 **Salary:** $160,000.00/yr - $180,000.00/yr
-- 🕒 **Posted:** 2026-08-19
-
-### [Infrastructure Engineering Director (Remote)](https://www.linkedin.com/jobs/view/4456346614/) — Hire Feed
-- 📍 **Location:** United States
-- 💰 **Salary:** $350,000.00/hr - $500,000.00/hr
-- 🕒 **Posted:** 2026-08-19
-
-### [Vice President, Head of Research and Platform Innovation](https://www.linkedin.com/jobs/view/4434870259/) — Flagship Pioneering
-- 📍 **Location:** Cambridge, MA
-- 💰 **Salary:** $290,000 - $315,000
-- 🕒 **Posted:** 2026-08-19
-
-### [Building Technology Systems – Assistant Vice President](https://www.linkedin.com/jobs/view/4427751667/) — WSP in the U.S.
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $134,000 - $185,000
-- 🕒 **Posted:** 2026-08-19
-
-### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4416829886/) — BAE Systems, Inc.
-- 📍 **Location:** Sterling, VA
-- 💰 **Salary:** $146670 - $249330
-- 🕒 **Posted:** 2026-08-19
-
-### [Head of Engineering (Backend/Infra)](https://www.linkedin.com/jobs/view/4423972662/) — Greylock Partners
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-08-19
-
-### [Senior Engineering Manager - Grid](https://www.linkedin.com/jobs/view/4398708262/) — Sargent & Lundy
-- 📍 **Location:** Clayton, MO
-- 💰 **Salary:** $165,610 - $253,015
-- 🕒 **Posted:** 2026-08-19
-
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4437863064/) — Fidelity Investments
-- 📍 **Location:** Roanoke, TX
-- 🕒 **Posted:** 2026-08-19
-
-### [Senior Engineering Manager (Maritime)](https://www.linkedin.com/jobs/view/4444115814/) — Haskoning
-- 📍 **Location:** Jakarta, Jakarta, Indonesia
-- 🕒 **Posted:** 2026-08-19
-
-### [Director, Automation Engineering](https://www.linkedin.com/jobs/view/4456349422/) — NBCUniversal
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $165,000.00/yr - $210,000.00/yr
-- 🕒 **Posted:** 2026-08-19
-
-### [Director, Network Solutions and Operations](https://www.linkedin.com/jobs/view/4429550872/) — Princess Cruises
-- 📍 **Location:** Fort Lauderdale, FL
-- 🕒 **Posted:** 2026-08-19
-
-### [Director of Infrastructure](https://www.linkedin.com/jobs/view/4455427705/) — Maricopa Community Colleges
-- 📍 **Location:** Tempe, AZ
-- 💰 **Salary:** $111,666.61/yr - $145,166.29/yr
+### [ConvergeSPORTS - Head Product Manager - Data and Product Engineering (Manager) -I nnovation_Delivery_Transformation](https://www.linkedin.com/jobs/view/4456362096/) — Deloitte
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $134,500-$265,100
 - 🕒 **Posted:** 2026-08-19
