@@ -1,59 +1,102 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-19 23:50 UTC*
+*Last updated: 2026-08-20 02:16 UTC*
 
-**12 new role(s)** since last run · 58 total in last 1h
+**20 new role(s)** since last run · 20 total in last 1h
 
-### [Sr. Manager – AI and R&D Infrastructure](https://www.linkedin.com/jobs/view/4456400944/) — HistoSonics, Inc.
-- 📍 **Location:** Greater Minneapolis-St. Paul Area
-- 💰 **Salary:** $170,000.00/yr - $195,000.00/yr
-- 🕒 **Posted:** 2026-08-19
+### [Director, Software Engineering Management](https://www.linkedin.com/jobs/view/4456439107/) — ServiceNow
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $221,200 - $387,100
+- 🕒 **Posted:** 2026-08-20
 
-### [Director Information Technology- Oracle Platform](https://www.linkedin.com/jobs/view/4456390971/) — Milwaukee Tool
-- 📍 **Location:** Menomonee Falls, WI
-- 🕒 **Posted:** 2026-08-19
+### [Director, Research Technology](https://www.linkedin.com/jobs/view/4456417798/) — RBC
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $210,000 - $275,000
+- 🕒 **Posted:** 2026-08-20
 
-### [Director, Engineering - Substation](https://www.linkedin.com/jobs/view/4429973267/) — Quanta Infrastructure Solutions Group
-- 📍 **Location:** Cleveland, OH
-- 🕒 **Posted:** 2026-08-19
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4456416978/) — CoverMyMeds
+- 📍 **Location:** Columbus, OH
+- 💰 **Salary:** $133,500 - $222,500
+- 🕒 **Posted:** 2026-08-20
 
-### [Director, Engineering - Transmission Line](https://www.linkedin.com/jobs/view/4303068516/) — Quanta Infrastructure Solutions Group
-- 📍 **Location:** Delta, UT
-- 🕒 **Posted:** 2026-08-19
+### [Sr Manager, Technology Operations Support](https://www.linkedin.com/jobs/view/4456435016/) — CoverMyMeds
+- 📍 **Location:** Columbus, OH
+- 💰 **Salary:** $99,000 - $165,000
+- 🕒 **Posted:** 2026-08-20
 
-### [Director, Engineering - Substation](https://www.linkedin.com/jobs/view/4430128833/) — Quanta Infrastructure Solutions Group
-- 📍 **Location:** Portland, OR
-- 🕒 **Posted:** 2026-08-19
+### [Enterprise Engineering Systems Director](https://www.linkedin.com/jobs/view/4453469809/) — The Aerospace Corporation
+- 📍 **Location:** El Segundo, CA
+- 💰 **Salary:** $168,200.00 - $252,400.00
+- 🕒 **Posted:** 2026-08-20
 
-### [Director, Engineering - Substation](https://www.linkedin.com/jobs/view/4429713815/) — Quanta Infrastructure Solutions Group
-- 📍 **Location:** Scottsdale, AZ
-- 🕒 **Posted:** 2026-08-19
+### [Enterprise Engineering Systems Director](https://www.linkedin.com/jobs/view/4453471821/) — The Aerospace Corporation
+- 📍 **Location:** Crystal City, VA
+- 💰 **Salary:** $168,200.00 - $252,400.00
+- 🕒 **Posted:** 2026-08-20
 
-### [Senior Manager, Digital and Technology Product (Hybrid)](https://www.linkedin.com/jobs/view/4456397466/) — American Family Insurance
-- 📍 **Location:** St Joseph, MO
-- 💰 **Salary:** $131,000.00 - $220,000.00
-- 🕒 **Posted:** 2026-08-19
+### [VP, Field Engineering at Turing](https://www.linkedin.com/jobs/view/4455479618/) — Jack & Jill
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-08-20
 
-### [Senior Manager, Digital and Technology Product (Hybrid)](https://www.linkedin.com/jobs/view/4456403339/) — American Family Insurance
-- 📍 **Location:** Madison, WI
-- 💰 **Salary:** $131,000.00 - $220,000.00
-- 🕒 **Posted:** 2026-08-19
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4456438328/) — LEGO Digital Play
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-08-20
 
-### [Senior Manager, Digital and Technology Product (Hybrid)](https://www.linkedin.com/jobs/view/4456401382/) — American Family Insurance
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $131,000.00 - $220,000.00
-- 🕒 **Posted:** 2026-08-19
+### [Enterprise Engineering Systems Director](https://www.linkedin.com/jobs/view/4453475841/) — The Aerospace Corporation
+- 📍 **Location:** Colorado Springs, CO
+- 💰 **Salary:** $168,200.00 - $252,400.00
+- 🕒 **Posted:** 2026-08-20
 
-### [Senior Manager, Digital and Technology Product (Hybrid)](https://www.linkedin.com/jobs/view/4456397465/) — American Family Insurance
-- 📍 **Location:** Phoenix, AZ
-- 💰 **Salary:** $131,000.00 - $220,000.00
-- 🕒 **Posted:** 2026-08-19
+### [Enterprise Engineering Systems Director](https://www.linkedin.com/jobs/view/4453477852/) — The Aerospace Corporation
+- 📍 **Location:** Albuquerque, NM
+- 💰 **Salary:** $168,200.00 - $252,400.00
+- 🕒 **Posted:** 2026-08-20
 
-### [Senior Manager, Digital and Technology Product (Hybrid)](https://www.linkedin.com/jobs/view/4456400382/) — American Family Insurance
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $131,000.00 - $220,000.00
-- 🕒 **Posted:** 2026-08-19
+### [Network Architecture and Engineering Director](https://www.linkedin.com/jobs/view/4455495181/) — Ascension
+- 📍 **Location:** United States
+- 💰 **Salary:** $152,083.90 - $214,706.69
+- 🕒 **Posted:** 2026-08-20
 
-### [Senior Manager Analog Engineering](https://www.linkedin.com/jobs/view/4456418069/) — Renesas Electronics
-- 📍 **Location:** Duluth, GA
-- 💰 **Salary:** $185,000.00/yr - $225,000.00/yr
-- 🕒 **Posted:** 2026-08-19
+### [Director, Software Engineering - Code Data](https://www.linkedin.com/jobs/view/4453498638/) — GHX
+- 📍 **Location:** United States
+- 💰 **Salary:** $150,000 - $214,000
+- 🕒 **Posted:** 2026-08-20
+
+### [Vice President, Technology & Digital Strategy](https://www.linkedin.com/jobs/view/4456447200/) — Shatterproof
+- 📍 **Location:** United States
+- 💰 **Salary:** $175,000 to $190,000
+- 🕒 **Posted:** 2026-08-20
+
+### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4455479693/) — Jack & Jill
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $270k-$330k
+- 🕒 **Posted:** 2026-08-20
+
+### [VP, Engineering](https://www.linkedin.com/jobs/view/4456436443/) — Rebuy Engine
+- 📍 **Location:** United States
+- 💰 **Salary:** $225,000 - $300,000 USD annually
+- 🕒 **Posted:** 2026-08-20
+
+### [Semiconductors Director I, Design Engineering](https://www.linkedin.com/jobs/view/4456442429/) — Fluor Corporation
+- 📍 **Location:** Greenville, SC
+- 💰 **Salary:** $166,500.00 - $309,500.00
+- 🕒 **Posted:** 2026-08-20
+
+### [Senior Manager, Sales Engineering - Majors, Southeast](https://www.linkedin.com/jobs/view/4456450317/) — Zscaler
+- 📍 **Location:** South Carolina, United States
+- 💰 **Salary:** $175,875—$251,250 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Senior Manager, Sales Engineering - Majors, TOLA](https://www.linkedin.com/jobs/view/4456435499/) — Zscaler
+- 📍 **Location:** Texas, United States
+- 💰 **Salary:** $175,875—$251,250 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [VP/Head of Engineering](https://www.linkedin.com/jobs/view/4456433529/) — Sailor Health
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $200,000.00/yr - $350,000.00/yr
+- 🕒 **Posted:** 2026-08-20
+
+### [Director of Engineering, AI & Robotics](https://www.linkedin.com/jobs/view/4456441524/) — MeeBoss
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $150,000-200,000/year
+- 🕒 **Posted:** 2026-08-20
