@@ -1,107 +1,128 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-20 05:00 UTC*
+*Last updated: 2026-08-20 13:24 UTC*
 
-**21 new role(s)** since last run · 22 total in last 1h
+**26 new role(s)** since last run · 26 total in last 1h
 
-### [Head of Data Engineering](https://www.linkedin.com/jobs/view/4455600191/) — Pivotal Health
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $240,000.00/yr - $270,000.00/yr
+### [Transportation Engineering Director](https://www.linkedin.com/jobs/view/4444173592/) — Consor
+- 📍 **Location:** Honolulu, HI
 - 🕒 **Posted:** 2026-08-20
 
-### [Head of Data Engineering](https://www.linkedin.com/jobs/view/4455616073/) — Pivotal Health
-- 📍 **Location:** Los Angeles, CA
-- 💰 **Salary:** $240,000.00/yr - $270,000.00/yr
+### [Chief Engineer](https://www.linkedin.com/jobs/view/4446877059/) — Anduril Industries
+- 📍 **Location:** Costa Mesa, CA
+- 💰 **Salary:** $253,000—$336,000 USD
 - 🕒 **Posted:** 2026-08-20
 
-### [Director, Data Center Building Automation (Nashville, TN on-site)](https://www.linkedin.com/jobs/view/4453843199/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4453894488/) — MRSL Group
+- 📍 **Location:** North Carolina, United States
 - 🕒 **Posted:** 2026-08-20
 
-### [Head of Data Engineering](https://www.linkedin.com/jobs/view/4455613128/) — Pivotal Health
-- 📍 **Location:** Brooklyn, NY
-- 💰 **Salary:** $240,000.00/yr - $270,000.00/yr
-- 🕒 **Posted:** 2026-08-20
-
-### [VP Software Engineering](https://www.linkedin.com/jobs/view/4453850142/) — Planted
-- 📍 **Location:** Oakland, CA
-- 💰 **Salary:** $275,000-$325,000
-- 🕒 **Posted:** 2026-08-20
-
-### [(USA) Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4453836167/) — NWArkansas
+### [Senior Director, Software Engineering - Agent Builder](https://www.linkedin.com/jobs/view/4446483990/) — Walmart
 - 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $160,000.00/yr - $320,000.00/yr
 - 🕒 **Posted:** 2026-08-20
 
-### [Director, Strategic Customer Engineering](https://www.linkedin.com/jobs/view/4453840251/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $146,300 - $306,400 per year
+### [VP of Engineering - AI Agentic Verification Platform /  AI Startup /](https://www.linkedin.com/jobs/view/4456712552/) — USA Tech Recruit
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $270,000.00/yr - $350,000.00/yr
 - 🕒 **Posted:** 2026-08-20
 
-### [Director, Strategic Customer Engineering](https://www.linkedin.com/jobs/view/4453842216/) — Oracle
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4453833280/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4453845219/) — Oracle
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4453832310/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4453833277/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Director, Strategic Customer Engineering](https://www.linkedin.com/jobs/view/4453850154/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Senior Director, Data Center Operations](https://www.linkedin.com/jobs/view/4453841259/) — Oracle
-- 📍 **Location:** Irving, TX
-- 💰 **Salary:** $169,800 - $355,400 per year
-- 🕒 **Posted:** 2026-08-20
-
-### [Senior Manager, Security Engineering and Operations](https://www.linkedin.com/jobs/view/4456473116/) — BioSpace
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $146,400.00 - $219,600.00
-- 🕒 **Posted:** 2026-08-20
-
-### [Director, People Technology Architecture](https://www.linkedin.com/jobs/view/4456472206/) — Alvarez & Marsal
-- 📍 **Location:** Houston, TX
-- 💰 **Salary:** $190,000 - $210,000 annually
-- 🕒 **Posted:** 2026-08-20
-
-### [Director, People Technology Architecture](https://www.linkedin.com/jobs/view/4456476086/) — Alvarez & Marsal
-- 📍 **Location:** Tampa, FL
-- 💰 **Salary:** $190,000 - $210,000 annually
-- 🕒 **Posted:** 2026-08-20
-
-### [Director, People Technology Architecture](https://www.linkedin.com/jobs/view/4456479062/) — Alvarez & Marsal
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $190,000 - $210,000 annually
-- 🕒 **Posted:** 2026-08-20
-
-### [Director, People Technology Architecture](https://www.linkedin.com/jobs/view/4456473198/) — Alvarez & Marsal
+### [Director, AI Lead - Finance Agents Engineering (Financial Close & Operations)](https://www.linkedin.com/jobs/view/4410552980/) — Aon
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $190,000 - $210,000 annually
+- 💰 **Salary:** $165,000 - $225,000 annually
 - 🕒 **Posted:** 2026-08-20
 
-### [Director, People Technology Architecture](https://www.linkedin.com/jobs/view/4456456438/) — Alvarez & Marsal
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $190,000 - $210,000 annually
+### [Senior Manager of Software Engineering](https://www.linkedin.com/jobs/view/4454351364/) — Morningstar
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $500-$2,000 annually
 - 🕒 **Posted:** 2026-08-20
 
-### [Unit Head – Batch Data Engineering](https://www.linkedin.com/jobs/view/4455617141/) — Permata Bank
-- 📍 **Location:** Kota Tangerang Selatan, Banten, Indonesia
+### [Senior Manager, Site Reliability Engineering -  Infrastructure Platform](https://www.linkedin.com/jobs/view/4453899388/) — Okta
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $232,000 USD - $319,000 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Senior Manager, Site Reliability Engineering -  Infrastructure Platform](https://www.linkedin.com/jobs/view/4453896377/) — Okta
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $232,000 USD - $319,000 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Vice President, Data Platform](https://www.linkedin.com/jobs/view/4395477926/) — Accordion
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $112,500 to $200,000 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Senior Engineering Manager, Agentic AI Platforms](https://www.linkedin.com/jobs/view/4429771218/) — LVT (LiveView Technologies)
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $250,200.00 - $300,00.00 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Director, Cloud Infrastructure](https://www.linkedin.com/jobs/view/4361427098/) — CubeSmart
+- 📍 **Location:** Malvern, PA
+- 🕒 **Posted:** 2026-08-20
+
+### [Sr Manager Data Engineering](https://www.linkedin.com/jobs/view/4455692397/) — RemoteHunter
+- 📍 **Location:** United States
+- 💰 **Salary:** $106,605.00/yr - $260,590.00/yr
+- 🕒 **Posted:** 2026-08-20
+
+### [Director, IT Infrastructure](https://www.linkedin.com/jobs/view/4418260478/) — Arrowhead Pharmaceuticals
+- 📍 **Location:** Madison, WI
+- 💰 **Salary:** $190,000 USD - $210,000 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Director, Technology Product Management](https://www.linkedin.com/jobs/view/4456724172/) — BlackRock
+- 📍 **Location:** Princeton, NJ
+- 💰 **Salary:** USD$215,000.00 - USD$275,000.00
+- 🕒 **Posted:** 2026-08-20
+
+### [Chief Engineer, Autonomous Flight](https://www.linkedin.com/jobs/view/4446857918/) — Anduril Industries
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $220,000—$330,000 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Director, Technology Product Management](https://www.linkedin.com/jobs/view/4456718190/) — BlackRock
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** USD$215,000.00 - USD$275,000.00
+- 🕒 **Posted:** 2026-08-20
+
+### [Software Engineering Director, Infrared Data Products](https://www.linkedin.com/jobs/view/4456721166/) — Muon Space
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $231,000 - $260,000,
+- 🕒 **Posted:** 2026-08-20
+
+### [Senior Director, Software Engineering - Agent Builder](https://www.linkedin.com/jobs/view/4446479989/) — Walmart
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $160,000.00/yr - $320,000.00/yr
+- 🕒 **Posted:** 2026-08-20
+
+### [Senior Manager, Site Reliability Engineering -  Infrastructure Platform](https://www.linkedin.com/jobs/view/4453894436/) — Okta
+- 📍 **Location:** Bellevue, WA
+- 💰 **Salary:** $232,000 USD - $319,000 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Sr Engineering Manager, Splunk Search Team](https://www.linkedin.com/jobs/view/4446737664/) — Cisco
+- 📍 **Location:** Durham, NC
+- 💰 **Salary:** $177,600.00 to $257,400.00
+- 🕒 **Posted:** 2026-08-20
+
+### [Director of Infrastructure](https://www.linkedin.com/jobs/view/4455674734/) — Insight Global
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $180,000.00/yr - $230,000.00/yr
+- 🕒 **Posted:** 2026-08-20
+
+### [Head of Engineering and Automation](https://www.linkedin.com/jobs/view/4446411994/) — Coloplast
+- 📍 **Location:** Cartago, Cartago, Costa Rica
+- 🕒 **Posted:** 2026-08-20
+
+### [Director, Data Engineering](https://www.linkedin.com/jobs/view/4446429464/) — Scotiabank
+- 📍 **Location:** Bogota, D.C., Capital District, Colombia
+- 🕒 **Posted:** 2026-08-20
+
+### [Technical Director - AI Roblox Studio](https://www.linkedin.com/jobs/view/4436820915/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $399,420—$457,970 USD
+- 🕒 **Posted:** 2026-08-20
+
+### [Vice President, Technology & Digital Strategy](https://www.linkedin.com/jobs/view/4456728589/) — Robert Half
+- 📍 **Location:** Washington, DC
 - 🕒 **Posted:** 2026-08-20
