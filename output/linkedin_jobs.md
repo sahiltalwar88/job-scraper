@@ -1,23 +1,39 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-22 19:48 UTC*
+*Last updated: 2026-08-22 20:47 UTC*
 
-**4 new role(s)** since last run · 25 total in last 1h
+**8 new role(s)** since last run · 9 total in last 1h
 
-### [Senior Manager, Engineering - Data Center Firmware](https://www.linkedin.com/jobs/view/4428783056/) — NVIDIA
-- 📍 **Location:** California, United States
+### [Product Engineering - Engineering Manager / Sr. Engineering Manager](https://www.linkedin.com/jobs/view/4455054386/) — Sprinter Health
+- 📍 **Location:** San Francisco, CA
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Manager, Product Manager-Retail Bank Platform Enablement](https://www.linkedin.com/jobs/view/4438824084/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $200,700 - $229,100
+### [Product Engineering - Engineering Manager / Sr. Engineering Manager](https://www.linkedin.com/jobs/view/4455060358/) — Sprinter Health
+- 📍 **Location:** Menlo Park, CA
 - 🕒 **Posted:** 2026-08-22
 
-### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4456663541/) — Jack & Jill
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $270k-$330k
+### [Director of Information Technology](https://www.linkedin.com/jobs/view/4457852608/) — Tombot
+- 📍 **Location:** Santa Clarita, CA
+- 💰 **Salary:** $155,000.00/yr - $190,000.00/yr
 - 🕒 **Posted:** 2026-08-22
 
-### [New Role! - Enterprise Data Management Pioneer! – Senior Director, Product and Technology Partnerships - $250k - $275k Base – Remote, EST/CST](https://www.linkedin.com/jobs/view/4457865249/) — ScoutLab.io
-- 📍 **Location:** United States
-- 💰 **Salary:** $250k - $275k
+### [VP, Field Engineering at Turing](https://www.linkedin.com/jobs/view/4456656560/) — Jack & Jill
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-08-22
+
+### [Director Sales, Marketing and Applications Engineering](https://www.linkedin.com/jobs/view/4457866340/) — PTR Global
+- 📍 **Location:** Agawam, MA
+- 💰 **Salary:** $90,000.00/yr - $120,000.00/yr
+- 🕒 **Posted:** 2026-08-22
+
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4456659575/) — Sarvanam Software
+- 📍 **Location:** Kathmandu, Bāgmatī, Nepal
+- 🕒 **Posted:** 2026-08-22
+
+### [VP Marketing - Agentic AI SaaS](https://www.linkedin.com/jobs/view/4457859329/) — STA
+- 📍 **Location:** New York City Metropolitan Area
+- 🕒 **Posted:** 2026-08-22
+
+### [Head of Marketing Operations](https://www.linkedin.com/jobs/view/4454548309/) — Stripe
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $202,200 - $303,400
 - 🕒 **Posted:** 2026-08-22
