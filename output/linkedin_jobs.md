@@ -1,46 +1,68 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-22 03:18 UTC*
+*Last updated: 2026-08-22 04:58 UTC*
 
-**9 new role(s)** since last run · 9 total in last 1h
+**14 new role(s)** since last run · 14 total in last 1h
 
-### [Director, Engineering, Maintenance & Reliability](https://www.linkedin.com/jobs/view/4457556552/) — Nivagen Pharmaceuticals, Inc.
-- 📍 **Location:** Sacramento, CA
+### [Director-Engineering Design Lead](https://www.linkedin.com/jobs/view/4457578231/) — BioSpace
+- 📍 **Location:** Huntsville, AL
+- 💰 **Salary:** $151,500 - $264,000
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Data Engineering](https://www.linkedin.com/jobs/view/4454695640/) — OnTrac
+### [Director Engineering](https://www.linkedin.com/jobs/view/4457592097/) — BioSpace
+- 📍 **Location:** New Albany, OH
+- 🕒 **Posted:** 2026-08-22
+
+### [Director, Data Engineering](https://www.linkedin.com/jobs/view/4457577192/) — EAB
+- 📍 **Location:** Richmond, VA
+- 💰 **Salary:** $103,500 – $130,000 per year
+- 🕒 **Posted:** 2026-08-22
+
+### [Sr. Manager, Engineering & Automation](https://www.linkedin.com/jobs/view/4443670523/) — Thermo Fisher Scientific
+- 📍 **Location:** Logan, UT
+- 🕒 **Posted:** 2026-08-22
+
+### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4455000698/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $122,500 - $355,400 per year
+- 🕒 **Posted:** 2026-08-22
+
+### [Director, Data Engineering](https://www.linkedin.com/jobs/view/4457597002/) — EAB
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $103,500 – $130,000 per year
+- 🕒 **Posted:** 2026-08-22
+
+### [Director Infrastructure](https://www.linkedin.com/jobs/view/4456606899/) — EXPRESS
+- 📍 **Location:** Columbus, Ohio Metropolitan Area
+- 🕒 **Posted:** 2026-08-22
+
+### [Senior Director, Data Center Operations](https://www.linkedin.com/jobs/view/4455001658/) — Oracle
+- 📍 **Location:** Abilene, TX
+- 💰 **Salary:** $169,800 - $355,400 per year
+- 🕒 **Posted:** 2026-08-22
+
+### [Senior Software Engineering Manager, Software Applications](https://www.linkedin.com/jobs/view/4457569728/) — General Motors
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-08-22
+
+### [Senior Manager, Technology Operations](https://www.linkedin.com/jobs/view/4455005544/) — Walmart
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $90,000.00/yr - $180,000.00/yr
+- 🕒 **Posted:** 2026-08-22
+
+### [Executive Director of Technology Operations](https://www.linkedin.com/jobs/view/4454698702/) — Kronos Capital
 - 📍 **Location:** United States
-- 💰 **Salary:** $180,000 - $225,000,
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Director of Software Engineering (Infrastructure)](https://www.linkedin.com/jobs/view/4457559657/) — JPMorganChase
-- 📍 **Location:** Jersey City, NJ
-- 💰 **Salary:** $232,750.00/yr - $325,000.00/yr
+### [Senior Director, Data Center Operations](https://www.linkedin.com/jobs/view/4455019610/) — Oracle
+- 📍 **Location:** Irving, TX
+- 💰 **Salary:** $169,800 - $355,400 per year
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4457561484/) — Marqeta
-- 📍 **Location:** California, United States
+### [Director, Data Engineering](https://www.linkedin.com/jobs/view/4457581186/) — EAB
+- 📍 **Location:** United States
+- 💰 **Salary:** $103,500 – $130,000 per year
 - 🕒 **Posted:** 2026-08-22
 
-### [Vice President - Senior Principal Infrastructure Engineer - Delivery Lead](https://www.linkedin.com/jobs/view/4450377618/) — Arcesium
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $220,000 - $280,000
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Commercial Process & Technology - Surgical](https://www.linkedin.com/jobs/view/4455559608/) — Medtronic
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $176,800.00 - $265,200.00
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Manager of Software Engineering - Big Data, Databricks](https://www.linkedin.com/jobs/view/4457554597/) — JPMorganChase
-- 📍 **Location:** Plano, TX
-- 🕒 **Posted:** 2026-08-22
-
-### [Head of Marketing Operations](https://www.linkedin.com/jobs/view/4454549326/) — Stripe
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $202,200 - $303,400
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Information Technology](https://www.linkedin.com/jobs/view/4457568556/) — Progyny, Inc.
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $160,000 - $175,000
+### [Sr. Manager, Process Engineering (Capital Projects and Validation)](https://www.linkedin.com/jobs/view/4445069183/) — Thermo Fisher Scientific
+- 📍 **Location:** Allentown, PA
 - 🕒 **Posted:** 2026-08-22
