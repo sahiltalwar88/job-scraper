@@ -1,70 +1,87 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-22 15:50 UTC*
+*Last updated: 2026-08-22 16:53 UTC*
 
-**14 new role(s)** since last run · 53 total in last 1h
+**18 new role(s)** since last run · 18 total in last 1h
 
-### [Director of Engineering, Core & Ads Serving Platform](https://www.linkedin.com/jobs/view/4447715298/) — Pinterest
+### [Director, Production and Test Engineering](https://www.linkedin.com/jobs/view/4430777905/) — True Anomaly
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $175,000 - $240,000
+- 🕒 **Posted:** 2026-08-22
+
+### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4430919425/) — Danfoss
+- 📍 **Location:** Tallahassee, FL
+- 🕒 **Posted:** 2026-08-22
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4426500900/) — Collective
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $285,452—$449,541 USD
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Engineering, Core & Ads Serving Platform](https://www.linkedin.com/jobs/view/4447706448/) — Pinterest
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $285,452—$449,541 USD
+### [Director of Core Platform Engineering](https://www.linkedin.com/jobs/view/4430713149/) — Arcade
+- 📍 **Location:** San Francisco, CA
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4389251224/) — M.G. Newell Corporation
-- 📍 **Location:** Louisville, KY
+### [Senior Director of Engineering](https://www.linkedin.com/jobs/view/4445515901/) — NYC Campaign Finance Board
+- 📍 **Location:** Manhattan, NY
+- 💰 **Salary:** $215,000.00/yr - $235,000.00/yr
 - 🕒 **Posted:** 2026-08-22
 
-### [Director, Engineering and Research](https://www.linkedin.com/jobs/view/4304195352/) — Rakuten International
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** USD $143,055.00 - $267,190.00 annually
-- 🕒 **Posted:** 2026-08-22
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4429386613/) — Weissman
-- 📍 **Location:** St Louis, MO
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Engineering - Platform](https://www.linkedin.com/jobs/view/4430762010/) — Huntress
+### [Associate Vice President, Security Engineering & Operations](https://www.linkedin.com/jobs/view/4446778893/) — Hyland
 - 📍 **Location:** United States
-- 💰 **Salary:** $240,000 to $300,000
 - 🕒 **Posted:** 2026-08-22
 
-### [Director Engineering](https://www.linkedin.com/jobs/view/4456331474/) — Amgen
-- 📍 **Location:** New Albany, OH
+### [Vice President of Infrastructure & Deployment (Remote/Hybrid)](https://www.linkedin.com/jobs/view/4456671090/) — Acasia
+- 📍 **Location:** The Woodlands, TX
+- 💰 **Salary:** $250,000.00 - $300,000.00
 - 🕒 **Posted:** 2026-08-22
 
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4430177952/) — Epsilon
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4457828325/) — Spectrum
+- 📍 **Location:** Greenwood Village, CO
+- 💰 **Salary:** $110,800.00/yr - $196,400.00/yr
+- 🕒 **Posted:** 2026-08-22
+
+### [Senior Analyst - Digital Engineering - Backend Engineer - Manager - Multiple Positions - 1718320](https://www.linkedin.com/jobs/view/4427867135/) — EY
+- 📍 **Location:** San Antonio, TX
+- 🕒 **Posted:** 2026-08-22
+
+### [Senior Software Engineering Manager, FrontEnd and API](https://www.linkedin.com/jobs/view/4457842113/) — Ford Motor Company
+- 📍 **Location:** United States
+- 💰 **Salary:** $141,700-$268,300
+- 🕒 **Posted:** 2026-08-22
+
+### [*Engineering Lead Analyst, VP - CONVERSION*](https://www.linkedin.com/jobs/view/4456675140/) — Citi
 - 📍 **Location:** Irving, TX
-- 💰 **Salary:** USD $129,500.00 - USD $240,500.00/Annually
+- 💰 **Salary:** $125,760.00 - $188,640.00
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Engineering JN -082026-180196](https://www.linkedin.com/jobs/view/4456658257/) — Goodwin Recruiting
-- 📍 **Location:** Hampden, ME
-- 💰 **Salary:** $140,000 to $200,000,
+### [Director, AI/ML Engineering](https://www.linkedin.com/jobs/view/4457842192/) — McKesson
+- 📍 **Location:** Irving, TX
+- 💰 **Salary:** $196,100 - $326,900
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Director, Product Management, Engineering 360](https://www.linkedin.com/jobs/view/4439087210/) — Capital One
-- 📍 **Location:** Richmond, VA
-- 💰 **Salary:** $269,600 - $307,700
+### [Director AV Product Engineering](https://www.linkedin.com/jobs/view/4417602509/) — Wayve
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $440,000 to $580,000,
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Engineering Operations Manager](https://www.linkedin.com/jobs/view/4361882969/) — STV
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $116,930.89 - $133,635.31
+### [Director of Ops Technology](https://www.linkedin.com/jobs/view/4457842198/) — Swooped
+- 📍 **Location:** United States
+- 💰 **Salary:** $195,000.00/yr - $244,000.00/yr
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Engineering Operations Manager](https://www.linkedin.com/jobs/view/4361806577/) — STV
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $116,930.89 - $133,635.31
+### [Director, Cloud Engineering](https://www.linkedin.com/jobs/view/4447700898/) — Inspira Financial
+- 📍 **Location:** Oak Brook, IL
+- 💰 **Salary:** $161,000-$200,000 per year
 - 🕒 **Posted:** 2026-08-22
 
-### [Hotel Assistant Director of Engineering JN -082026-180212](https://www.linkedin.com/jobs/view/4456654295/) — Goodwin Recruiting
-- 📍 **Location:** Albuquerque, NM
-- 💰 **Salary:** $55,000 - $65,000,
+### [VP, Product Platform & Engineering](https://www.linkedin.com/jobs/view/4457839200/) — Verra Mobility
+- 📍 **Location:** Mesa, AZ
 - 🕒 **Posted:** 2026-08-22
 
-### [Vice President, Infrastructure Solution Engineer](https://www.linkedin.com/jobs/view/4447577461/) — BNY
-- 📍 **Location:** Pittsburgh, PA
+### [Americas Tax Technology Group - Security Architect - Senior Manager](https://www.linkedin.com/jobs/view/4427877840/) — EY
+- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $89,700 to $260,200
+- 🕒 **Posted:** 2026-08-22
+
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4455063010/) — PureLogics
+- 📍 **Location:** Lahore District, Punjab, Pakistan
 - 🕒 **Posted:** 2026-08-22
