@@ -1,86 +1,46 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-22 02:04 UTC*
+*Last updated: 2026-08-22 03:18 UTC*
 
-**18 new role(s)** since last run · 18 total in last 1h
+**9 new role(s)** since last run · 9 total in last 1h
 
-### [Senior Director, Software Engineering (Developer Experience)](https://www.linkedin.com/jobs/view/4457572111/) — Capital One
-- 📍 **Location:** Richmond, VA
-- 💰 **Salary:** $314,800 - $359,300
+### [Director, Engineering, Maintenance & Reliability](https://www.linkedin.com/jobs/view/4457556552/) — Nivagen Pharmaceuticals, Inc.
+- 📍 **Location:** Sacramento, CA
 - 🕒 **Posted:** 2026-08-22
 
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4457538881/) — Fidelity Investments
-- 📍 **Location:** Roanoke, TX
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Director, Software Engineering (Developer Experience)](https://www.linkedin.com/jobs/view/4457563242/) — Capital One
-- 📍 **Location:** Plano, TX
-- 💰 **Salary:** $314,800 - $359,300
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4456612571/) — Jack & Jill
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $270k-$330k
-- 🕒 **Posted:** 2026-08-22
-
-### [Director of Technology](https://www.linkedin.com/jobs/view/4457562250/) — Trek Travel
-- 📍 **Location:** Madison, WI
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Engineering Manager for Self-Serve (Learning)](https://www.linkedin.com/jobs/view/4454678430/) — Databricks
-- 📍 **Location:** Mountain View, CA
-- 💰 **Salary:** $222,000—$300,000 USD
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Director, Solutions Engineering](https://www.linkedin.com/jobs/view/4456619585/) — Eltropy
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $270,000-$315,000
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Information Technology](https://www.linkedin.com/jobs/view/4457563082/) — HD Supply
-- 📍 **Location:** Atlanta, GA
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Director, Software Engineering (Developer Experience)](https://www.linkedin.com/jobs/view/4457553278/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $314,800 - $359,300
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Director, Software Engineering (Developer Experience)](https://www.linkedin.com/jobs/view/4457561237/) — Capital One
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $314,800 - $359,300
-- 🕒 **Posted:** 2026-08-22
-
-### [Head of Business Operations and Analytics](https://www.linkedin.com/jobs/view/4457544919/) — Ode with Anthropic
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Systems Engineering](https://www.linkedin.com/jobs/view/4456611484/) — Southland Industries
+### [Director of Data Engineering](https://www.linkedin.com/jobs/view/4454695640/) — OnTrac
 - 📍 **Location:** United States
-- 💰 **Salary:** $160,000.00 - $276,549.00
+- 💰 **Salary:** $180,000 - $225,000,
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Engineering and Design](https://www.linkedin.com/jobs/view/4457554307/) — AUC Group
-- 📍 **Location:** Houston, TX
+### [Senior Director of Software Engineering (Infrastructure)](https://www.linkedin.com/jobs/view/4457559657/) — JPMorganChase
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $232,750.00/yr - $325,000.00/yr
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Health Informatics and Technology](https://www.linkedin.com/jobs/view/4453039123/) — University of Denver
-- 📍 **Location:** Denver, CO
+### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4457561484/) — Marqeta
+- 📍 **Location:** California, United States
 - 🕒 **Posted:** 2026-08-22
 
-### [Director of Engineering Operations](https://www.linkedin.com/jobs/view/4457565273/) — Spirit Electronics
-- 📍 **Location:** Phoenix, AZ
+### [Vice President - Senior Principal Infrastructure Engineer - Delivery Lead](https://www.linkedin.com/jobs/view/4450377618/) — Arcesium
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $220,000 - $280,000
 - 🕒 **Posted:** 2026-08-22
 
-### [Senior Director of Enterprise Data Partners (EDP) – Finance - Digital and Technology Partners - Hybrid](https://www.linkedin.com/jobs/view/4456619476/) — Mount Sinai Health System
+### [Director, Commercial Process & Technology - Surgical](https://www.linkedin.com/jobs/view/4455559608/) — Medtronic
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $176,800.00 - $265,200.00
+- 🕒 **Posted:** 2026-08-22
+
+### [Senior Manager of Software Engineering - Big Data, Databricks](https://www.linkedin.com/jobs/view/4457554597/) — JPMorganChase
+- 📍 **Location:** Plano, TX
+- 🕒 **Posted:** 2026-08-22
+
+### [Head of Marketing Operations](https://www.linkedin.com/jobs/view/4454549326/) — Stripe
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $202,200 - $303,400
+- 🕒 **Posted:** 2026-08-22
+
+### [Director, Information Technology](https://www.linkedin.com/jobs/view/4457568556/) — Progyny, Inc.
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $183854 - $289990 Annually
-- 🕒 **Posted:** 2026-08-22
-
-### [Senior Director of Enterprise Data Partners (EDP) – Finance - Digital and Technology Partners - Hybrid](https://www.linkedin.com/jobs/view/4457550178/) — Mount Sinai Morningside
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $183854 - $289990 Annually
-- 🕒 **Posted:** 2026-08-22
-
-### [Director, Software Development](https://www.linkedin.com/jobs/view/4456611641/) — PowerPlan, Inc.
-- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $160,000 - $175,000
 - 🕒 **Posted:** 2026-08-22
