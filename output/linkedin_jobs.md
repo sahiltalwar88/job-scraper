@@ -1,6 +1,9 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-22 21:43 UTC*
+*Last updated: 2026-08-22 22:44 UTC*
 
-**0 new role(s)** since last run · 9 total in last 1h
+**1 new role(s)** since last run · 1 total in last 1h
 
-No new roles since the last run.
+### [Senior Manager - Technology and Strategy Practices](https://www.linkedin.com/jobs/view/4455054490/) — RGP
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $145,000-$200,000
+- 🕒 **Posted:** 2026-08-22
