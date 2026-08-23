@@ -1,21 +1,24 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-23 20:45 UTC*
+*Last updated: 2026-08-23 21:42 UTC*
 
-**4 new role(s)** since last run · 4 total in last 1h
+**4 new role(s)** since last run · 8 total in last 1h
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4455616835/) — Jabil
-- 📍 **Location:** Claremont, NH
-- 🕒 **Posted:** 2026-08-23
-
-### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4456820659/) — Jack & Jill
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $270k-$330k
-- 🕒 **Posted:** 2026-08-23
-
-### [VP, Field Engineering at Turing](https://www.linkedin.com/jobs/view/4456824625/) — Jack & Jill
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-08-23
-
-### [Executive Vice President of Technology](https://www.linkedin.com/jobs/view/4455811564/) — Automotive Technical Solutions
+### [Re:CAM - Vice President of Engineering](https://www.linkedin.com/jobs/view/4456811802/) — Re:Build Manufacturing
 - 📍 **Location:** United States
+- 💰 **Salary:** $192,223 to $288,334 per year
+- 🕒 **Posted:** 2026-08-23
+
+### [Sr Manager Data Engineering](https://www.linkedin.com/jobs/view/4456824729/) — RemoteHunter
+- 📍 **Location:** United States
+- 💰 **Salary:** $106,605 to $260,590
+- 🕒 **Posted:** 2026-08-23
+
+### [Sr. Director, Cloud and Infrastructure Transformation](https://www.linkedin.com/jobs/view/4458101975/) — Pfizer
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $214,900.00 to $358,100.00
+- 🕒 **Posted:** 2026-08-23
+
+### [Head of Immunodiagnostics and Next Generation Technology](https://www.linkedin.com/jobs/view/4438829272/) — Pfizer
+- 📍 **Location:** Pearl River, NY
+- 💰 **Salary:** $176,600.00 to $294,300.00
 - 🕒 **Posted:** 2026-08-23
