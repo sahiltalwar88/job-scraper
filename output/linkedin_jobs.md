@@ -1,24 +1,17 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-23 21:42 UTC*
+*Last updated: 2026-08-23 22:44 UTC*
 
-**4 new role(s)** since last run · 8 total in last 1h
+**3 new role(s)** since last run · 4 total in last 1h
 
-### [Re:CAM - Vice President of Engineering](https://www.linkedin.com/jobs/view/4456811802/) — Re:Build Manufacturing
+### [Director, AI Solutions Engineering](https://www.linkedin.com/jobs/view/4458145012/) — BAY6.AI
 - 📍 **Location:** United States
-- 💰 **Salary:** $192,223 to $288,334 per year
 - 🕒 **Posted:** 2026-08-23
 
-### [Sr Manager Data Engineering](https://www.linkedin.com/jobs/view/4456824729/) — RemoteHunter
-- 📍 **Location:** United States
-- 💰 **Salary:** $106,605 to $260,590
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4456815707/) — Celecart Inc.
+- 📍 **Location:** New York City Metropolitan Area
 - 🕒 **Posted:** 2026-08-23
 
-### [Sr. Director, Cloud and Infrastructure Transformation](https://www.linkedin.com/jobs/view/4458101975/) — Pfizer
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $214,900.00 to $358,100.00
-- 🕒 **Posted:** 2026-08-23
-
-### [Head of Immunodiagnostics and Next Generation Technology](https://www.linkedin.com/jobs/view/4438829272/) — Pfizer
-- 📍 **Location:** Pearl River, NY
-- 💰 **Salary:** $176,600.00 to $294,300.00
+### [Vice President, Business Development and Alliance Management](https://www.linkedin.com/jobs/view/4453237574/) — Xaira Therapeutics
+- 📍 **Location:** South San Francisco, CA
+- 💰 **Salary:** $250,000 - $325,000 annually
 - 🕒 **Posted:** 2026-08-23
