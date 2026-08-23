@@ -1,13 +1,21 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-23 19:46 UTC*
+*Last updated: 2026-08-23 20:45 UTC*
 
-**2 new role(s)** since last run · 12 total in last 1h
+**4 new role(s)** since last run · 4 total in last 1h
 
-### [Systems Director – GEOINT Research and Technology](https://www.linkedin.com/jobs/view/4455815520/) — The Aerospace Corporation
-- 📍 **Location:** Westfield, VA
-- 💰 **Salary:** $168,200.00 - $252,400.00
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4455616835/) — Jabil
+- 📍 **Location:** Claremont, NH
 - 🕒 **Posted:** 2026-08-23
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4456815707/) — Celecart Inc.
-- 📍 **Location:** New York City Metropolitan Area
+### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4456820659/) — Jack & Jill
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $270k-$330k
+- 🕒 **Posted:** 2026-08-23
+
+### [VP, Field Engineering at Turing](https://www.linkedin.com/jobs/view/4456824625/) — Jack & Jill
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-08-23
+
+### [Executive Vice President of Technology](https://www.linkedin.com/jobs/view/4455811564/) — Automotive Technical Solutions
+- 📍 **Location:** United States
 - 🕒 **Posted:** 2026-08-23
