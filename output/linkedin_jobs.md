@@ -1,130 +1,49 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-24 22:59 UTC*
+*Last updated: 2026-08-24 23:49 UTC*
 
-**28 new role(s)** since last run · 30 total in last 1h
+**10 new role(s)** since last run · 38 total in last 1h
 
-### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4456525715/) — Oracle
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-08-24
-
-### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4456539172/) — Oracle
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-08-24
-
-### [Director of Engineering (Mid-Atlantic)](https://www.linkedin.com/jobs/view/4458505734/) — Veolia
-- 📍 **Location:** Wilmington, DE
-- 🕒 **Posted:** 2026-08-24
-
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4445180697/) — Toyota North America
-- 📍 **Location:** Plano, TX
-- 🕒 **Posted:** 2026-08-24
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4457180573/) — Highgate
-- 📍 **Location:** Miami, FL
-- 🕒 **Posted:** 2026-08-24
-
-### [Director of Engineering, Flex Compute](https://www.linkedin.com/jobs/view/4458513707/) — Crusoe
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $285,000 - $335,000
-- 🕒 **Posted:** 2026-08-24
-
-### [AI Engineering Director](https://www.linkedin.com/jobs/view/4429360438/) — Brown Brothers Harriman
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $210,000 - $260,000
-- 🕒 **Posted:** 2026-08-24
-
-### [Senior Director, Data Architecture & Engineering](https://www.linkedin.com/jobs/view/4458526365/) — The Coca-Cola Company
+### [Chief Scientist](https://www.linkedin.com/jobs/view/4458510020/) — STR
 - 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $265,000 - $350,000
 - 🕒 **Posted:** 2026-08-24
 
-### [VP Sales Engineering](https://www.linkedin.com/jobs/view/4445161337/) — Vention
-- 📍 **Location:** Detroit, MI
+### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4456521707/) — Oracle
+- 📍 **Location:** United States
+- 💰 **Salary:** $120,000 - $306,400 per year
 - 🕒 **Posted:** 2026-08-24
 
-### [Senior Director, Semantic Data Platform](https://www.linkedin.com/jobs/view/4458526342/) — WEX
-- 📍 **Location:** Maine, United States
-- 💰 **Salary:** $230,800.00 - $283,600.00
+### [Senior Manager, Dispatch Test Engineering](https://www.linkedin.com/jobs/view/4458541162/) — Wabtec Corporation
+- 📍 **Location:** Fort Worth, TX
 - 🕒 **Posted:** 2026-08-24
 
-### [Senior Director, AI & Analytical Engineering](https://www.linkedin.com/jobs/view/4458514851/) — The Coca-Cola Company
-- 📍 **Location:** Atlanta, GA
+### [Collateral Technology Platform Lead – Managing Director](https://www.linkedin.com/jobs/view/4458547001/) — State Street
+- 📍 **Location:** Quincy, MA
+- 💰 **Salary:** $170,000 - $282,500
 - 🕒 **Posted:** 2026-08-24
 
-### [Section Chief (Transportation Engineering Manager I)](https://www.linkedin.com/jobs/view/4458510364/) — Maryland Department of Transportation
-- 📍 **Location:** Baltimore, MD
+### [Senior Field Engineering Manager](https://www.linkedin.com/jobs/view/4457197170/) — Beagle Technology Inc.
+- 📍 **Location:** Santa Maria, CA
 - 🕒 **Posted:** 2026-08-24
 
-### [Sr. Manager Silicon Design Engineering](https://www.linkedin.com/jobs/view/4451265789/) — AMD
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $242,050.00/yr - $321,600.00/yr
+### [Senior Manager, Dispatch Test Engineering](https://www.linkedin.com/jobs/view/4458534240/) — Wabtec Corporation
+- 📍 **Location:** Gambrills, MD
 - 🕒 **Posted:** 2026-08-24
 
-### [Director, IT Infrastructure](https://www.linkedin.com/jobs/view/4413822849/) — Conservation International
-- 📍 **Location:** Arlington, VA
-- 💰 **Salary:** $150,000 - $185,000 annually
+### [Head of Global Technology Partners - Oracle](https://www.linkedin.com/jobs/view/4457410010/) — Vertex Inc.
+- 📍 **Location:** United States
+- 💰 **Salary:** $189,600.00 - $246,400.00
 - 🕒 **Posted:** 2026-08-24
 
-### [Director, IT Infrastructure](https://www.linkedin.com/jobs/view/4413837288/) — Conservation International
-- 📍 **Location:** Virginia, United States
-- 💰 **Salary:** $150,000 - $185,000 annually
-- 🕒 **Posted:** 2026-08-24
-
-### [Senior Manager, AI & Developer Platform Product Management](https://www.linkedin.com/jobs/view/4447204828/) — Bain & Company
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $172,000 – $206,500
-- 🕒 **Posted:** 2026-08-24
-
-### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4456525714/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 🕒 **Posted:** 2026-08-24
-
-### [Senior Engineering Manager, Data Platform](https://www.linkedin.com/jobs/view/4458510436/) — Procore Technologies
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-08-24
-
-### [Vice President, Technology Operations](https://www.linkedin.com/jobs/view/4457174630/) — Phibro Animal Health
-- 📍 **Location:** Teaneck, NJ
-- 🕒 **Posted:** 2026-08-24
-
-### [Clinical Engineering Enterprise Director](https://www.linkedin.com/jobs/view/4451914913/) — Intelas
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $165,000.00/yr - $190,000.00/yr
-- 🕒 **Posted:** 2026-08-24
-
-### [Senior Manager, Reliability Engineering](https://www.linkedin.com/jobs/view/4457177481/) — Exol
+### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4456528644/) — Oracle
 - 📍 **Location:** United States
 - 🕒 **Posted:** 2026-08-24
 
-### [Sr Director, Enterprise Data and AI Platform](https://www.linkedin.com/jobs/view/4456536267/) — Dayforce
+### [Sr. Director, Developer Platform](https://www.linkedin.com/jobs/view/4457190546/) — Coupang
+- 📍 **Location:** San Francisco Bay Area
+- 🕒 **Posted:** 2026-08-24
+
+### [Director of Ops Technology](https://www.linkedin.com/jobs/view/4458525734/) — Swooped
 - 📍 **Location:** United States
-- 💰 **Salary:** $175,000.00/yr - $273,400.00/yr
-- 🕒 **Posted:** 2026-08-24
-
-### [Group Technology Director](https://www.linkedin.com/jobs/view/4457185660/) — CG Life
-- 📍 **Location:** United States
-- 💰 **Salary:** $200,000 - $225,000 USD
-- 🕒 **Posted:** 2026-08-24
-
-### [Senior Manager, Support Engineering](https://www.linkedin.com/jobs/view/4456521708/) — Oracle
-- 📍 **Location:** Harwood, ND
-- 💰 **Salary:** $98,700 - $209,500 per year
-- 🕒 **Posted:** 2026-08-24
-
-### [Director, Platform Product Manager - Houston, Texas (preferred) or United States-Remote](https://www.linkedin.com/jobs/view/4456518744/) — Quorum Software
-- 📍 **Location:** United States
-- 💰 **Salary:** $142,000 - $220,000
-- 🕒 **Posted:** 2026-08-24
-
-### [Vice President, Lead Software Engineer](https://www.linkedin.com/jobs/view/4457184696/) — Morgan Stanley
-- 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-08-24
-
-### [Sr Director of Cybersecurity Engineering](https://www.linkedin.com/jobs/view/4457172767/) — Blue Yonder
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $186,288 - $241,702
-- 🕒 **Posted:** 2026-08-24
-
-### [Senior Manager, AI & Developer Platform Product Management](https://www.linkedin.com/jobs/view/4447212717/) — Bain & Company
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $172,000 – $206,500
+- 💰 **Salary:** $90,000.00/yr - $110,000.00/yr
 - 🕒 **Posted:** 2026-08-24
