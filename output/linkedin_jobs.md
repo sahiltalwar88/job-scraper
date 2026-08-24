@@ -1,37 +1,47 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-24 15:33 UTC*
+*Last updated: 2026-08-24 16:09 UTC*
 
-**7 new role(s)** since last run · 33 total in last 1h
+**9 new role(s)** since last run · 27 total in last 1h
 
-### [Director, Analytics Engineering ($270k-$330k + Equity) at Current](https://www.linkedin.com/jobs/view/4457100012/) — Jack & Jill
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $270k-$330k
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4457108559/) — Evergreen Talent Partners
+- 📍 **Location:** York, PA
+- 💰 **Salary:** $175,000.00/yr - $200,000.00/yr
 - 🕒 **Posted:** 2026-08-24
 
-### [Head of Infrastructure Architecture](https://www.linkedin.com/jobs/view/4446806319/) — New York Technology Partners
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $250,000.00/yr - $270,000.00/yr
+### [Director of Engineering - EC](https://www.linkedin.com/jobs/view/4456893666/) — Montage International
+- 📍 **Location:** Peapack - Gladstone, NJ
+- 💰 **Salary:** $149,026.00 to $160,000.00
 - 🕒 **Posted:** 2026-08-24
 
-### [Executive Director of Platform Architecture](https://www.linkedin.com/jobs/view/4457004886/) — New York Technology Partners
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
+### [Vice President Fab Engineering](https://www.linkedin.com/jobs/view/4430097320/) — Skorpios Technologies, Inc.
+- 📍 **Location:** Temecula, CA
+- 💰 **Salary:** $190,000 – $260,000
 - 🕒 **Posted:** 2026-08-24
 
-### [Vice President of Engineering, PE](https://www.linkedin.com/jobs/view/4455897002/) — VMC Group
-- 📍 **Location:** New Jersey, United States
+### [Senior Engineering Manager, Factory Core](https://www.linkedin.com/jobs/view/4408896925/) — Hadrian
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $220,000 - $280,000
 - 🕒 **Posted:** 2026-08-24
 
-### [Director, IT & Infrastructure](https://www.linkedin.com/jobs/view/4458216899/) — Glocomms
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $190,000.00/yr - $250,000.00/yr
+### [.NET/ C# Software Engineering /. Azure Senior Hand On Manager](https://www.linkedin.com/jobs/view/4457112494/) — Request Technology, LLC
+- 📍 **Location:** United States
+- 💰 **Salary:** $195k - $234k
 - 🕒 **Posted:** 2026-08-24
 
-### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4402704925/) — Bevi
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $239,105—$295,365 USD
+### [Sr. Vice President of Engineering, Silicon Photonics](https://www.linkedin.com/jobs/view/4446470526/) — Skorpios Technologies, Inc.
+- 📍 **Location:** Temecula, CA
 - 🕒 **Posted:** 2026-08-24
 
-### [Director of Career Services - College of Engineering - Information Networking Institute](https://www.linkedin.com/jobs/view/4457102061/) — Carnegie Mellon University
-- 📍 **Location:** Pittsburgh, PA
+### [Vice President / Head of Enterprise Technology Architecture](https://www.linkedin.com/jobs/view/4458234294/) — Trilliad
+- 📍 **Location:** United States
+- 💰 **Salary:** $215,000–$245,000,
+- 🕒 **Posted:** 2026-08-24
+
+### [Platform Engineering Senior Manager](https://www.linkedin.com/jobs/view/4458245271/) — Sherwin-Williams
+- 📍 **Location:** Cleveland, OH
+- 💰 **Salary:** $143,108.68/yr - $186,723.67/yr
+- 🕒 **Posted:** 2026-08-24
+
+### [Senior Director, Platform Programs & Portfolio](https://www.linkedin.com/jobs/view/4456893655/) — Autodesk
+- 📍 **Location:** Portland, OR
 - 🕒 **Posted:** 2026-08-24
