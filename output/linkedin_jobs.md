@@ -1,103 +1,82 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-25 13:25 UTC*
+*Last updated: 2026-08-25 14:19 UTC*
 
-**21 new role(s)** since last run · 21 total in last 1h
+**17 new role(s)** since last run · 37 total in last 1h
 
-### [Director, Beverage Engineering](https://www.linkedin.com/jobs/view/4448357842/) — Danone
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $150,000.00 - $220,000.00 USD
+### [Vice President, Data Engineering & Analytics (1143681)](https://www.linkedin.com/jobs/view/4457185209/) — The Judge Group
+- 📍 **Location:** West Conshohocken, PA
 - 🕒 **Posted:** 2026-08-25
 
-### [Executive Director, Engineering - Allergan Aesthetics](https://www.linkedin.com/jobs/view/4448240729/) — Allergan Aesthetics, an AbbVie Company
-- 📍 **Location:** Irvine, CA
-- 💰 **Salary:** $182,000.00/yr - $346,000.00/yr
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4456918856/) — Foundation Recruiting and Consulting
+- 📍 **Location:** Itasca, IL
+- 💰 **Salary:** $165,000.00/yr - $185,000.00/yr
 - 🕒 **Posted:** 2026-08-25
 
-### [Director of Product Engineering](https://www.linkedin.com/jobs/view/4446808148/) — Scale
-- 📍 **Location:** United States
+### [Sr Engineering Manager 2 - Wind Yaw Systems](https://www.linkedin.com/jobs/view/4440083769/) — GE Vernova
+- 📍 **Location:** Greenville, SC
 - 🕒 **Posted:** 2026-08-25
 
-### [Processing Engineering Director](https://www.linkedin.com/jobs/view/4456911864/) — Blackfield Associates
-- 📍 **Location:** North Carolina, United States
-- 🕒 **Posted:** 2026-08-25
-
-### [Director of Engineering - Sales / Applications Engineering Team](https://www.linkedin.com/jobs/view/4445199039/) — The Davis Companies
-- 📍 **Location:** Burlington, MA
-- 💰 **Salary:** $180,000.00/yr - $200,000.00/yr
-- 🕒 **Posted:** 2026-08-25
-
-### [Director, Performance Engineering & Commissioning - Service Line Development](https://www.linkedin.com/jobs/view/4422339815/) — RE Tech Advisors
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $160,000-$190,000
-- 🕒 **Posted:** 2026-08-25
-
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4457478508/) — Energize Group
-- 📍 **Location:** San Francisco Bay Area
-- 💰 **Salary:** $250,000.00/yr - $350,000.00/yr
-- 🕒 **Posted:** 2026-08-25
-
-### [Director, Client Software Development Services](https://www.linkedin.com/jobs/view/4458748484/) — I.T. Right, Inc - A VC3 Company
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-08-25
-
-### [Executive Director, Analytics Engineering](https://www.linkedin.com/jobs/view/4456921007/) — Novartis ACC
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-08-25
-
-### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4448658848/) — Paylocity
-- 📍 **Location:** United States
-- 💰 **Salary:** $167k - $215k/yr
-- 🕒 **Posted:** 2026-08-25
-
-### [ServiceNow Platform Owner, Director](https://www.linkedin.com/jobs/view/4458729822/) — BlackRock
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** USD$215,000.00 - USD$275,000.00
-- 🕒 **Posted:** 2026-08-25
-
-### [ICAM Product Engineering Lead Senior Manager](https://www.linkedin.com/jobs/view/4448631448/) — Accenture Federal Services
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $135,200—$278,500 USD
-- 🕒 **Posted:** 2026-08-25
-
-### [Director, Platform Architecture](https://www.linkedin.com/jobs/view/4363027949/) — Deckers Brands
-- 📍 **Location:** Massachusetts, United States
-- 💰 **Salary:** $154,700.00 - $208,800.00
-- 🕒 **Posted:** 2026-08-25
-
-### [Head of Life and Annuities Technology](https://www.linkedin.com/jobs/view/4430828556/) — Transamerica
+### [Director, Engineering - Platform & App](https://www.linkedin.com/jobs/view/4448859138/) — AgentSync
 - 📍 **Location:** Denver, CO
-- 💰 **Salary:** $300,000 - $350,000 annually
+- 💰 **Salary:** $235K-$250K
 - 🕒 **Posted:** 2026-08-25
 
-### [Senior Engineering Manager, Systems Engineering](https://www.linkedin.com/jobs/view/4412151375/) — CesiumAstro
-- 📍 **Location:** Austin, TX
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4456941067/) — Foundation Recruiting and Consulting
+- 📍 **Location:** Itasca, IL
+- 💰 **Salary:** $165,000.00/yr - $185,000.00/yr
 - 🕒 **Posted:** 2026-08-25
 
-### [Backend Software Engineer - Associate / Assistant Vice President](https://www.linkedin.com/jobs/view/4412190568/) — iCapital
-- 📍 **Location:** Salt Lake City, UT
-- 💰 **Salary:** $95,000 to $140,000
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4458752631/) — Unlimited Technology, Inc.
+- 📍 **Location:** Herndon, VA
 - 🕒 **Posted:** 2026-08-25
 
-### [Head of Data & AI Practice, New York](https://www.linkedin.com/jobs/view/4403586554/) — ION
-- 📍 **Location:** New York, United States
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4442886326/) — Hanwha Aerospace USA
+- 📍 **Location:** Cheshire, CT
 - 🕒 **Posted:** 2026-08-25
 
-### [Senior Manager, Software Engineering - Procurement](https://www.linkedin.com/jobs/view/4439489425/) — Transamerica
-- 📍 **Location:** Cedar Rapids, IA
-- 💰 **Salary:** $134,000 - $170,000 annually
+### [Senior Engineering Manager, Systems Engineering](https://www.linkedin.com/jobs/view/4412147785/) — CesiumAstro
+- 📍 **Location:** Denver Metropolitan Area
+- 💰 **Salary:** $218,000 - $266,000
 - 🕒 **Posted:** 2026-08-25
 
-### [Director of Infrastructure Operations](https://www.linkedin.com/jobs/view/4456919139/) — Global Data Network
+### [Head of Revenue Technology & Architecture](https://www.linkedin.com/jobs/view/4446233648/) — Mercury
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $242,600—$303,300 USD
+- 🕒 **Posted:** 2026-08-25
+
+### [Executive Director of Platform Architecture](https://www.linkedin.com/jobs/view/4457004886/) — New York Technology Partners
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
+- 🕒 **Posted:** 2026-08-25
+
+### [Senior Engineering Manager, Video Enablement](https://www.linkedin.com/jobs/view/4448669075/) — GameChanger
 - 📍 **Location:** United States
-- 💰 **Salary:** $250,000.00/yr - $400,000.00/yr
 - 🕒 **Posted:** 2026-08-25
 
-### [Senior Director Information Technology](https://www.linkedin.com/jobs/view/4457472475/) — Insight Global
-- 📍 **Location:** Tampa, FL
-- 💰 **Salary:** $170,000.00/yr - $220,000.00/yr
+### [Senior Manager, Data Engineering](https://www.linkedin.com/jobs/view/4448345495/) — SRS Distribution Inc.
+- 📍 **Location:** McKinney, TX
 - 🕒 **Posted:** 2026-08-25
 
-### [Senior Manager, DevOps Engineering](https://www.linkedin.com/jobs/view/4446235232/) — Rocket Lab
-- 📍 **Location:** Chantilly, VA
-- 💰 **Salary:** $160,500 USD - $267,500 USD
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4430828567/) — TreeHouse Foods
+- 📍 **Location:** Illinois, United States
+- 💰 **Salary:** $132,300.00 - 198,500.00
+- 🕒 **Posted:** 2026-08-25
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4452286881/) — The Phoenix Group
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $220,000.00/yr - $275,000.00/yr
+- 🕒 **Posted:** 2026-08-25
+
+### [Assistant Director Safety & Engineering](https://www.linkedin.com/jobs/view/4440371858/) — Universal Studios Hollywood
+- 📍 **Location:** Universal City, CA
+- 💰 **Salary:** $145,000 - $185,000
+- 🕒 **Posted:** 2026-08-25
+
+### [Infrastructure Engineering Director (Remote)](https://www.linkedin.com/jobs/view/4458768293/) — Hire Feed
+- 📍 **Location:** United States
+- 💰 **Salary:** $350,000.00/yr - $500,000.00/yr
+- 🕒 **Posted:** 2026-08-25
+
+### [Director of Technology](https://www.linkedin.com/jobs/view/4458759441/) — Vanderbloemen
+- 📍 **Location:** Gallatin, TN
 - 🕒 **Posted:** 2026-08-25
