@@ -1,73 +1,92 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-26 02:11 UTC*
+*Last updated: 2026-08-26 03:30 UTC*
 
-**15 new role(s)** since last run · 15 total in last 1h
+**19 new role(s)** since last run · 19 total in last 1h
 
-### [Group Director - Toll Technology](https://www.linkedin.com/jobs/view/4456797563/) — HNTB
-- 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $225,746.07 - $360,607.36
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4459115046/) — Step
+- 📍 **Location:** San Mateo, CA
 - 🕒 **Posted:** 2026-08-26
 
-### [Group Director - Toll Technology](https://www.linkedin.com/jobs/view/4456789646/) — HNTB
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $225,746.07 - $360,607.36
+### [Director of Software Engineering [Multiple Positions Available]](https://www.linkedin.com/jobs/view/4459094951/) — JPMorganChase
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $388,918.00/yr - $388,918.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Product Director - Core Platform](https://www.linkedin.com/jobs/view/4457668389/) — Red Rover
-- 📍 **Location:** Exton, PA
+### [Area Director of Engineering](https://www.linkedin.com/jobs/view/4457673558/) — Sage Hospitality Group
+- 📍 **Location:** Boulder, CO
 - 🕒 **Posted:** 2026-08-26
 
-### [Senior Manager of RF Design Engineering](https://www.linkedin.com/jobs/view/4459096208/) — Mini-Circuits
-- 📍 **Location:** Hialeah, FL
-- 💰 **Salary:** $175,000 - $200,000 per year
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4457673527/) — Hyatt Vacation Ownership
+- 📍 **Location:** Escondido, CA
+- 💰 **Salary:** $130,000-$140,000
 - 🕒 **Posted:** 2026-08-26
 
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4457663789/) — FutureTech Recruitment
-- 📍 **Location:** United States
-- 💰 **Salary:** $250,000.00/yr - $325,000.00/yr
+### [Senior Director of Software Engineering [Multiple Positions Available]](https://www.linkedin.com/jobs/view/4459116027/) — JPMorganChase
+- 📍 **Location:** Plano, TX
 - 🕒 **Posted:** 2026-08-26
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4459093292/) — Allia Health Group
-- 📍 **Location:** United States
+### [Automation Engineering Director](https://www.linkedin.com/jobs/view/4459103377/) — Tech Etch
+- 📍 **Location:** Plymouth, MA
+- 💰 **Salary:** $115,000-$180,000
 - 🕒 **Posted:** 2026-08-26
 
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4458755113/) — Compiled Health
-- 📍 **Location:** United States
+### [Director, Site Reliability Engineering](https://www.linkedin.com/jobs/view/4438396836/) — Vertafore
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $175,000 - $220,000
 - 🕒 **Posted:** 2026-08-26
 
-### [COO for Engineering / Head of Engineering Hub](https://www.linkedin.com/jobs/view/4459080732/) — BNY
-- 📍 **Location:** New York, NY
+### [Director, site Reliability - Web & Mobile](https://www.linkedin.com/jobs/view/4459107319/) — Princess Cruises
+- 📍 **Location:** Fort Lauderdale, FL
 - 🕒 **Posted:** 2026-08-26
 
-### [Group Director - Toll Technology](https://www.linkedin.com/jobs/view/4457002549/) — HNTB
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $225,746.07 - $360,607.36
+### [Director - Application Site-Reliability Engineering](https://www.linkedin.com/jobs/view/4459108190/) — Caris Life Sciences
+- 📍 **Location:** Irving, TX
 - 🕒 **Posted:** 2026-08-26
 
-### [Data Engineering Senior Manager](https://www.linkedin.com/jobs/view/4457685122/) — Booz Allen Hamilton
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $125,300.00 to $233,000.00
+### [Vice President, Data Engineering & Analytics (1143681)](https://www.linkedin.com/jobs/view/4457185209/) — The Judge Group
+- 📍 **Location:** West Conshohocken, PA
 - 🕒 **Posted:** 2026-08-26
 
-### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4457680158/) — Pearson
-- 📍 **Location:** Hoboken, NJ
-- 💰 **Salary:** $150,000 - $220,000 Annually
+### [IT Senior Manager - Infrastructure Group (This is an In-Person Position)](https://www.linkedin.com/jobs/view/4459096587/) — Bernalillo County
+- 📍 **Location:** Albuquerque, NM
+- 💰 **Salary:** $92,456.00 - $143,333.00
 - 🕒 **Posted:** 2026-08-26
 
-### [Group Director - Toll Technology](https://www.linkedin.com/jobs/view/4456784656/) — HNTB
-- 📍 **Location:** Oakland, CA
-- 💰 **Salary:** $225,746.07 - $360,607.36
+### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4457691087/) — Blue Shield of California
+- 📍 **Location:** California, United States
+- 💰 **Salary:** $148940.00 to $223300.00
 - 🕒 **Posted:** 2026-08-26
 
-### [Senior Director - Technology Transformation Advisory (Financial Services)](https://www.linkedin.com/jobs/view/4459081933/) — 3Cloud
-- 📍 **Location:** United States
-- 💰 **Salary:** $183,400—$229,300 USD
+### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4457686199/) — EY
+- 📍 **Location:** Cleveland, OH
+- 💰 **Salary:** $170,600 to $390,000
 - 🕒 **Posted:** 2026-08-26
 
-### [Director of Engineering, UAS Development](https://www.linkedin.com/jobs/view/4459103162/) — Harmattan AI
-- 📍 **Location:** Rabat, Rabat-Salé-Kénitra, Morocco
+### [Executive Director - Principal Software Engineer Order Management System](https://www.linkedin.com/jobs/view/4459102403/) — JPMorganChase
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $204,250.00/yr - $285,000.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Senior Software Engineering Manager - Azure Product Owner.](https://www.linkedin.com/jobs/view/4457662884/) — Medtronic
-- 📍 **Location:** Coyol, Alajuela, Costa Rica
+### [Director, Performance Engineering and Test Automation](https://www.linkedin.com/jobs/view/4457692022/) — Blue Shield of California
+- 📍 **Location:** California, United States
+- 💰 **Salary:** $181830.00 to $272800.00
+- 🕒 **Posted:** 2026-08-26
+
+### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4457680257/) — EY
+- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $170,600 to $390,000
+- 🕒 **Posted:** 2026-08-26
+
+### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4457688139/) — EY
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $170,600 to $390,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Head of Marketing Operations](https://www.linkedin.com/jobs/view/4454548309/) — Stripe
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $202,200 - $303,400
+- 🕒 **Posted:** 2026-08-26
+
+### [Chief Technology Officer (AI)](https://www.linkedin.com/jobs/view/4459109479/) — Robert Walters
+- 📍 **Location:** Jakarta, Jakarta, Indonesia
 - 🕒 **Posted:** 2026-08-26
