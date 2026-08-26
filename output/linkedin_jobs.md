@@ -1,92 +1,114 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-26 03:30 UTC*
+*Last updated: 2026-08-26 13:31 UTC*
 
-**19 new role(s)** since last run · 19 total in last 1h
+**23 new role(s)** since last run · 23 total in last 1h
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4459115046/) — Step
-- 📍 **Location:** San Mateo, CA
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4452286881/) — The Phoenix Group
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $220,000.00/yr - $275,000.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Director of Software Engineering [Multiple Positions Available]](https://www.linkedin.com/jobs/view/4459094951/) — JPMorganChase
+### [Director, Mobile & Platform Engineering](https://www.linkedin.com/jobs/view/4449423619/) — SKIMS
+- 📍 **Location:** Los Angeles Metropolitan Area
+- 💰 **Salary:** $200,000 - $250,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Director of Data & Intelligence Engineering](https://www.linkedin.com/jobs/view/4446677238/) — Forvis Mazars US
+- 📍 **Location:** Indianapolis, IN
+- 🕒 **Posted:** 2026-08-26
+
+### [Director of Engineering, Dynamic Platform](https://www.linkedin.com/jobs/view/4449485770/) — Fireblocks
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $220,000 - $300,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Engineering Manager - Workers KV](https://www.linkedin.com/jobs/view/4457256490/) — Cloudflare
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Manager, Software Engineering - Procurement](https://www.linkedin.com/jobs/view/4439491376/) — Transamerica
+- 📍 **Location:** Philadelphia, PA
+- 💰 **Salary:** $134,000 - $170,000 annually
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Manager, Analytics Engineering](https://www.linkedin.com/jobs/view/4449040404/) — FOX Tech
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $160,000.00-187,000.00 annually
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Manager, Data Engineering](https://www.linkedin.com/jobs/view/4449090024/) — Farther
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-08-26
+
+### [Head of Vehicle Software](https://www.linkedin.com/jobs/view/4443282323/) — Gram Partners.
+- 📍 **Location:** Long Beach, CA
+- 💰 **Salary:** $250,000.00/yr - $350,000.00/yr
+- 🕒 **Posted:** 2026-08-26
+
+### [Global Head of Commercial Technology Portfolio](https://www.linkedin.com/jobs/view/4403663482/) — S&P Global
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $220,000 to $325,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Software Engineering Manager, Credit Card](https://www.linkedin.com/jobs/view/4437550556/) — Gemini
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $195,000 - $300,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Software Engineering Manager, Credit Card](https://www.linkedin.com/jobs/view/4437565043/) — Gemini
+- 📍 **Location:** Miami, FL
+- 💰 **Salary:** $195,000 - $300,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Software Engineering Manager, Accelerators Systems](https://www.linkedin.com/jobs/view/4439426636/) — Google
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $262000 - $365000
+- 🕒 **Posted:** 2026-08-26
+
+### [Director, Cell & Gene Therapy Research Technology (Boston)](https://www.linkedin.com/jobs/view/4439882969/) — Vertex Pharmaceuticals
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $198,000 - $297,000
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Manager Systems Engineering](https://www.linkedin.com/jobs/view/4410318527/) — X4 Life Sciences
+- 📍 **Location:** Massachusetts, United States
+- 💰 **Salary:** $160,000.00/yr - $190,000.00/yr
+- 🕒 **Posted:** 2026-08-26
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4459300307/) — BAM Ventures
 - 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $388,918.00/yr - $388,918.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Area Director of Engineering](https://www.linkedin.com/jobs/view/4457673558/) — Sage Hospitality Group
-- 📍 **Location:** Boulder, CO
+### [Vice President, Senior Backend Engineer (Java) - Aladdin Engineering](https://www.linkedin.com/jobs/view/4459184783/) — BlackRock
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** USD$155,000.00 - USD$210,000.00
 - 🕒 **Posted:** 2026-08-26
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4457673527/) — Hyatt Vacation Ownership
-- 📍 **Location:** Escondido, CA
-- 💰 **Salary:** $130,000-$140,000
+### [Senior Director of Development, College of Engineering](https://www.linkedin.com/jobs/view/4457947276/) — University of Rhode Island Foundation
+- 📍 **Location:** South Kingstown, RI
+- 💰 **Salary:** $125,000.00/yr - $145,000.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Senior Director of Software Engineering [Multiple Positions Available]](https://www.linkedin.com/jobs/view/4459116027/) — JPMorganChase
-- 📍 **Location:** Plano, TX
+### [Manager/Senior Manager, Legal Technology and AI](https://www.linkedin.com/jobs/view/4457251646/) — Flagship Pioneering
+- 📍 **Location:** Cambridge, MA
+- 💰 **Salary:** $108,000 - $176,000
 - 🕒 **Posted:** 2026-08-26
 
-### [Automation Engineering Director](https://www.linkedin.com/jobs/view/4459103377/) — Tech Etch
-- 📍 **Location:** Plymouth, MA
-- 💰 **Salary:** $115,000-$180,000
+### [Data Center Campus Director](https://www.linkedin.com/jobs/view/4459186823/) — Microsoft
+- 📍 **Location:** Johor Baharu, Johore, Malaysia
 - 🕒 **Posted:** 2026-08-26
 
-### [Director, Site Reliability Engineering](https://www.linkedin.com/jobs/view/4438396836/) — Vertafore
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $175,000 - $220,000
+### [Senior Manager, Platform Security](https://www.linkedin.com/jobs/view/4442639355/) — Gemini
+- 📍 **Location:** Miami, FL
+- 💰 **Salary:** $195,000 - $300,000
 - 🕒 **Posted:** 2026-08-26
 
-### [Director, site Reliability - Web & Mobile](https://www.linkedin.com/jobs/view/4459107319/) — Princess Cruises
-- 📍 **Location:** Fort Lauderdale, FL
-- 🕒 **Posted:** 2026-08-26
-
-### [Director - Application Site-Reliability Engineering](https://www.linkedin.com/jobs/view/4459108190/) — Caris Life Sciences
-- 📍 **Location:** Irving, TX
-- 🕒 **Posted:** 2026-08-26
-
-### [Vice President, Data Engineering & Analytics (1143681)](https://www.linkedin.com/jobs/view/4457185209/) — The Judge Group
-- 📍 **Location:** West Conshohocken, PA
-- 🕒 **Posted:** 2026-08-26
-
-### [IT Senior Manager - Infrastructure Group (This is an In-Person Position)](https://www.linkedin.com/jobs/view/4459096587/) — Bernalillo County
-- 📍 **Location:** Albuquerque, NM
-- 💰 **Salary:** $92,456.00 - $143,333.00
-- 🕒 **Posted:** 2026-08-26
-
-### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4457691087/) — Blue Shield of California
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $148940.00 to $223300.00
-- 🕒 **Posted:** 2026-08-26
-
-### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4457686199/) — EY
-- 📍 **Location:** Cleveland, OH
-- 💰 **Salary:** $170,600 to $390,000
-- 🕒 **Posted:** 2026-08-26
-
-### [Executive Director - Principal Software Engineer Order Management System](https://www.linkedin.com/jobs/view/4459102403/) — JPMorganChase
-- 📍 **Location:** Jersey City, NJ
-- 💰 **Salary:** $204,250.00/yr - $285,000.00/yr
-- 🕒 **Posted:** 2026-08-26
-
-### [Director, Performance Engineering and Test Automation](https://www.linkedin.com/jobs/view/4457692022/) — Blue Shield of California
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $181830.00 to $272800.00
-- 🕒 **Posted:** 2026-08-26
-
-### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4457680257/) — EY
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $170,600 to $390,000
-- 🕒 **Posted:** 2026-08-26
-
-### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4457688139/) — EY
-- 📍 **Location:** Charlotte, NC
-- 💰 **Salary:** $170,600 to $390,000
-- 🕒 **Posted:** 2026-08-26
-
-### [Head of Marketing Operations](https://www.linkedin.com/jobs/view/4454548309/) — Stripe
+### [Executive Director of Platform Architecture](https://www.linkedin.com/jobs/view/4457004886/) — New York Technology Partners
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $202,200 - $303,400
+- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Chief Technology Officer (AI)](https://www.linkedin.com/jobs/view/4459109479/) — Robert Walters
-- 📍 **Location:** Jakarta, Jakarta, Indonesia
+### [Sr. Manager, Software](https://www.linkedin.com/jobs/view/4423226620/) — LifeStance Health
+- 📍 **Location:** United States
+- 💰 **Salary:** $157,000 - $195,000/annually
 - 🕒 **Posted:** 2026-08-26
