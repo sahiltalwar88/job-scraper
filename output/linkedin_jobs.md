@@ -1,143 +1,154 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-27 12:14 UTC*
+*Last updated: 2026-08-27 22:31 UTC*
 
-**30 new role(s)** since last run · 30 total in last 1h
+**32 new role(s)** since last run · 32 total in last 1h
 
-### [Doubletree Albuquerque - Director Engineering](https://www.linkedin.com/jobs/view/4449913912/) — Aimbridge Hospitality
-- 📍 **Location:** Albuquerque, NM
+### [Director of Engineering, PDLC Agents Platform (Hybrid - Seattle, WA)](https://www.linkedin.com/jobs/view/4460112317/) — Nordstrom
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $200,500.00 - $332,000.00
 - 🕒 **Posted:** 2026-08-27
 
-### [Director, Embedded Systems Engineering](https://www.linkedin.com/jobs/view/4413098014/) — Spellman High Voltage Electronics Corporation
-- 📍 **Location:** Hauppauge, NY
-- 💰 **Salary:** $200,000 - $275,000
+### [AI Platform Director - Data Engineering](https://www.linkedin.com/jobs/view/4460105540/) — First Citizens Bank
+- 📍 **Location:** Raleigh, NC
 - 🕒 **Posted:** 2026-08-27
 
-### [Director, Avionics Engineering, V-BAT](https://www.linkedin.com/jobs/view/4449944044/) — Shield AI
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4460126030/) — Ladish Valves
+- 📍 **Location:** Houston, TX
+- 🕒 **Posted:** 2026-08-27
+
+### [Director AI Platform Engineering](https://www.linkedin.com/jobs/view/4460104860/) — BMO U.S.
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $150,700.00 - $261,800.00
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of Engineering, Spacecraft](https://www.linkedin.com/jobs/view/4458686458/) — Katalyst Space
+- 📍 **Location:** Broomfield, CO
+- 💰 **Salary:** $195,000 - $260,000 annually
+- 🕒 **Posted:** 2026-08-27
+
+### [Director AI Platform Engineering](https://www.linkedin.com/jobs/view/4460116360/) — BMO U.S.
+- 📍 **Location:** Florida, United States
+- 💰 **Salary:** $150,700.00 - $261,800.00
+- 🕒 **Posted:** 2026-08-27
+
+### [Technology Director – Enterprise Services & Business Platforms](https://www.linkedin.com/jobs/view/4458025699/) — Raymond James
+- 📍 **Location:** St. Petersburg, FL
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4457673527/) — Hyatt Vacation Ownership
+- 📍 **Location:** Escondido, CA
+- 💰 **Salary:** $140,000-$160,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Director of Engineering](https://www.linkedin.com/jobs/view/4458673568/) — Lattice
+- 📍 **Location:** United States
+- 💰 **Salary:** $283,000 - $354,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4460108651/) — Danfoss
+- 📍 **Location:** Utica, NY
+- 🕒 **Posted:** 2026-08-27
+
+### [Engineering Sr Manager](https://www.linkedin.com/jobs/view/4460116189/) — Graphic Packaging International
+- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $156,600.00/yr - $208,800.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Application Development Technology Senior Lead- Senior Vice President](https://www.linkedin.com/jobs/view/4458675842/) — Citi
+- 📍 **Location:** Tampa, FL
+- 💰 **Salary:** $141,440.00 - $212,160.00
+- 🕒 **Posted:** 2026-08-27
+
+### [Director AI Platform Engineering](https://www.linkedin.com/jobs/view/4460105514/) — BMO U.S.
+- 📍 **Location:** California, United States
+- 💰 **Salary:** $150,700.00 - $261,800.00
+- 🕒 **Posted:** 2026-08-27
+
+### [(USA) Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4458017893/) — Walmart Global Tech
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $110,000.00/yr - $220,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4452711846/) — Mainspring Energy
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $187,000.00/yr - $220,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, AI Platform](https://www.linkedin.com/jobs/view/4458689226/) — Scotiabank
 - 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $220,000 - $340,000
 - 🕒 **Posted:** 2026-08-27
 
-### [Director of Photonics Systems Engineering](https://www.linkedin.com/jobs/view/4448061474/) — Monarch Quantum
-- 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $200,000.00/yr - $300,000.00/yr
+### [Up to $125k/year | Director of Engineering | Honolulu, HI](https://www.linkedin.com/jobs/view/4460126564/) — Staffing Solutions of Hawaii
+- 📍 **Location:** Honolulu, HI
+- 💰 **Salary:** $105,000 to $125,000/year
 - 🕒 **Posted:** 2026-08-27
 
-### [Director of Platform Engineering | Remote](https://www.linkedin.com/jobs/view/4449398041/) — Crossing Hurdles
-- 📍 **Location:** United States
-- 💰 **Salary:** $350,000.00/yr - $500,000.00/yr
+### [Senior Manager, Data Engineering & Data Governance](https://www.linkedin.com/jobs/view/4458022739/) — Akkodis
+- 📍 **Location:** Texas, United States
+- 💰 **Salary:** $65.00/hr - $71.00/hr
 - 🕒 **Posted:** 2026-08-27
 
-### [Director / Senior Director, Research Engineering, Life Sciences AI](https://www.linkedin.com/jobs/view/4449647629/) — Lila Sciences
+### [Director of Data Engineering & Platform](https://www.linkedin.com/jobs/view/4452892544/) — Cooley LLP
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $320,000 USD - $490,000 USD
+- 💰 **Salary:** $260,000 - $320,000
 - 🕒 **Posted:** 2026-08-27
 
-### [Director, Technology Applications- CPG & S&OP](https://www.linkedin.com/jobs/view/4448054993/) — Green Thumb Industries (GTI)
-- 📍 **Location:** United States
-- 💰 **Salary:** $160,000—$190,000 USD
+### [(USA) Senior Manager, Technology Operations - Marketplace Discoverability](https://www.linkedin.com/jobs/view/4458025820/) — Walmart
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $90,000.00/yr - $180,000.00/yr
 - 🕒 **Posted:** 2026-08-27
 
-### [Senior Engineering Manager, AI](https://www.linkedin.com/jobs/view/4449928358/) — AlphaSense
-- 📍 **Location:** United States
-- 💰 **Salary:** $275,000—$375,000 USD
+### [Hotel Director of Engineering](https://www.linkedin.com/jobs/view/4460127432/) — Davidson Hospitality Group
+- 📍 **Location:** North Atlanta, GA
 - 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Site Reliability Engineering (FedRAMP) - ThousandEyes](https://www.linkedin.com/jobs/view/4404072838/) — Cisco
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $214,100.00 to $309,800.00
+### [Senior Director, Infrastructure & Network](https://www.linkedin.com/jobs/view/4458682496/) — Qualys
+- 📍 **Location:** Foster City, CA
+- 💰 **Salary:** $215,000 - $255,000 per year
 - 🕒 **Posted:** 2026-08-27
 
-### [SOC Director](https://www.linkedin.com/jobs/view/4438416989/) — TENEX.AI
-- 📍 **Location:** Overland Park, KS
+### [Director AI Platform Engineering](https://www.linkedin.com/jobs/view/4460118341/) — BMO U.S.
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $150,700.00 - $261,800.00
 - 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Engineering (Nova)](https://www.linkedin.com/jobs/view/4449310155/) — Iterable
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $189,500 - $290,000
+### [Director AI Platform Engineering](https://www.linkedin.com/jobs/view/4460107441/) — BMO U.S.
+- 📍 **Location:** Texas, United States
+- 💰 **Salary:** $150,700.00 - $261,800.00
 - 🕒 **Posted:** 2026-08-27
 
-### [T26-9724; Software Engineering & Development, VP](https://www.linkedin.com/jobs/view/4454823494/) — State Street
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $120,000 - $202,500
+### [Senior Embedded Software Manager](https://www.linkedin.com/jobs/view/4456042769/) — Mainspring Energy
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $185,000.00/yr - $220,000.00/yr
 - 🕒 **Posted:** 2026-08-27
 
-### [Director of Technology](https://www.linkedin.com/jobs/view/4455355899/) — Horvath & Tremblay
-- 📍 **Location:** Greater Boston
+### [Director, Reliability Engineering](https://www.linkedin.com/jobs/view/4454763732/) — Mainspring Energy
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $200,000.00/yr - $265,000.00/yr
 - 🕒 **Posted:** 2026-08-27
 
-### [VP, Information Technology](https://www.linkedin.com/jobs/view/4458613755/) — NPAworldwide
-- 📍 **Location:** Syracuse, NY
+### [Group Director of Engineering](https://www.linkedin.com/jobs/view/4458035012/) — Relais & Châteaux
+- 📍 **Location:** Westerly, RI
 - 🕒 **Posted:** 2026-08-27
 
-### [Vice President of Infrastructure](https://www.linkedin.com/jobs/view/4458615733/) — Uline
-- 📍 **Location:** Waukegan, IL
-- 🕒 **Posted:** 2026-08-27
-
-### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454579304/) — State Street
-- 📍 **Location:** Quincy, MA
-- 💰 **Salary:** $120,000 - $202,500
-- 🕒 **Posted:** 2026-08-27
-
-### [Vice President of Infrastructure](https://www.linkedin.com/jobs/view/4458621036/) — Uline
-- 📍 **Location:** Glenview, IL
-- 🕒 **Posted:** 2026-08-27
-
-### [Head of Software, Enterprise Solutions](https://www.linkedin.com/jobs/view/4431431522/) — S&P Global
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $207,000 to $323,000
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Engineering (Nova)](https://www.linkedin.com/jobs/view/4449302912/) — Iterable
-- 📍 **Location:** United States
-- 💰 **Salary:** $189,500 - $290,000
-- 🕒 **Posted:** 2026-08-27
-
-### [Vice President of Infrastructure](https://www.linkedin.com/jobs/view/4458600980/) — Uline
-- 📍 **Location:** Kenosha, WI
-- 🕒 **Posted:** 2026-08-27
-
-### [Head of Sales Engineering](https://www.linkedin.com/jobs/view/4432455396/) — Numeric
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $225,000.00/yr - $315,000.00/yr
-- 🕒 **Posted:** 2026-08-27
-
-### [SR Director of Product Management, Windows API Platform](https://www.linkedin.com/jobs/view/4440226420/) — Qualcomm
-- 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $227,700.00 - $341,500.00
-- 🕒 **Posted:** 2026-08-27
-
-### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4440212121/) — Accenture
-- 📍 **Location:** Culver City, CA
-- 💰 **Salary:** $132,500 to $366,300
-- 🕒 **Posted:** 2026-08-27
-
-### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454570352/) — State Street
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $120,000 - $202,500
-- 🕒 **Posted:** 2026-08-27
-
-### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454561422/) — State Street
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $120,000 - $202,500
-- 🕒 **Posted:** 2026-08-27
-
-### [Director, Interconnect Technology Signal Integrity (SI)](https://www.linkedin.com/jobs/view/4457759936/) — Molex
-- 📍 **Location:** Tamsui District, New Taipei City, Taiwan
-- 🕒 **Posted:** 2026-08-27
-
-### [VP/Director of Power Infrastructure - Hyperscale](https://www.linkedin.com/jobs/view/4459686468/) — Spencer Ogden
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4460119488/) — MeeBoss
 - 📍 **Location:** United States
 - 🕒 **Posted:** 2026-08-27
 
-### [Vice President of Infrastructure](https://www.linkedin.com/jobs/view/4458611799/) — Uline
-- 📍 **Location:** Milwaukee, WI
+### [Senior Director, AI Services & Software Product Management](https://www.linkedin.com/jobs/view/4460121550/) — Amtex Systems Inc
+- 📍 **Location:** Park Ridge, NJ
 - 🕒 **Posted:** 2026-08-27
 
-### [Director of Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4438013568/) — TENEX.AI
+### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4445180697/) — Toyota North America
+- 📍 **Location:** Plano, TX
+- 🕒 **Posted:** 2026-08-27
+
+### [Vice President of Infrastructure](https://www.linkedin.com/jobs/view/4458022787/) — QVentures
 - 📍 **Location:** United States
+- 💰 **Salary:** $220,000 – $330,000 per annum
 - 🕒 **Posted:** 2026-08-27
 
-### [Director of Enterprise Architecture](https://www.linkedin.com/jobs/view/4449681693/) — ALO
-- 📍 **Location:** San Ramon, CA
-- 💰 **Salary:** $240,000-$260,000 per year
+### [Director, Software Product Development](https://www.linkedin.com/jobs/view/4460118666/) — Abbott
+- 📍 **Location:** Livermore, CA
+- 💰 **Salary:** $197,300.00 – $394,700.00
 - 🕒 **Posted:** 2026-08-27
