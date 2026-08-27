@@ -1,170 +1,214 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-27 01:17 UTC*
+*Last updated: 2026-08-27 10:03 UTC*
 
-**36 new role(s)** since last run · 38 total in last 1h
+**44 new role(s)** since last run · 44 total in last 1h
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4415141741/) — NeurOptics
-- 📍 **Location:** Irvine, CA
-- 💰 **Salary:** $175,000.00/yr - $250,000.00/yr
+### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4458365873/) — Blackrock Neurotech
+- 📍 **Location:** Salt Lake City, UT
 - 🕒 **Posted:** 2026-08-27
 
-### [Director, Software Engineering – Web Platform](https://www.linkedin.com/jobs/view/4459621380/) — Marriott International
-- 📍 **Location:** Bethesda, MD
-- 💰 **Salary:** $127,000-$215,000 annually
+### [VP of Engineering, Storage Protocols](https://www.linkedin.com/jobs/view/4455035067/) — NetApp
+- 📍 **Location:** San Jose, CA
 - 🕒 **Posted:** 2026-08-27
 
-### [Director, Platform & Data Engineering (Hybrid or Remote)](https://www.linkedin.com/jobs/view/4457298824/) — Oregon Tool
-- 📍 **Location:** Portland, OR
-- 💰 **Salary:** $185,000 to $230,000
+### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4457816158/) — LaStellar Group
+- 📍 **Location:** New York City Metropolitan Area
+- 💰 **Salary:** $250,000.00/yr - $350,000.00/yr
 - 🕒 **Posted:** 2026-08-27
 
-### [Sr. Director Software Engineering](https://www.linkedin.com/jobs/view/4459617373/) — WTW
+### [Head of Cloud Engineering and DevOps](https://www.linkedin.com/jobs/view/4448051619/) — Ares Management
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $250,000 - $300,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Software Engineering Senior Manager (Req. #002356)](https://www.linkedin.com/jobs/view/4459668869/) — Wells Fargo
+- 📍 **Location:** Iselin, NJ
+- 💰 **Salary:** $261,248 - $305,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Embedded Software - Engines](https://www.linkedin.com/jobs/view/4419627762/) — Blue Origin
+- 📍 **Location:** Greater Seattle Area
+- 💰 **Salary:** $197,004.00 - $275,805.60
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager of Software Engineering - Fullstack/AWS/API](https://www.linkedin.com/jobs/view/4450218326/) — JPMorganChase
+- 📍 **Location:** Plano, TX
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, Infrastructure Partnerships Strategy](https://www.linkedin.com/jobs/view/4459666853/) — RTX
+- 📍 **Location:** Farmington, CT
+- 🕒 **Posted:** 2026-08-27
+
+### [SVP, Head of Agentic Engineering and Acceleration](https://www.linkedin.com/jobs/view/4449117312/) — Nuvei
+- 📍 **Location:** Atlanta, GA
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, Engineering Manager](https://www.linkedin.com/jobs/view/4440850333/) — AssetMark
+- 📍 **Location:** Concord, CA
+- 💰 **Salary:** $206,000-$258,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of Software Engineering - C&SI Originations](https://www.linkedin.com/jobs/view/4459673616/) — JPMorganChase
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $204,250.00/yr - $285,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4459670756/) — White Lodging
+- 📍 **Location:** Louisville, KY
+- 🕒 **Posted:** 2026-08-27
+
+### [Systems Engineering Director (Remote)](https://www.linkedin.com/jobs/view/4449927891/) — CareFirst BlueCross BlueShield
+- 📍 **Location:** Reston, VA
+- 💰 **Salary:** $163,440 - $303,386
+- 🕒 **Posted:** 2026-08-27
+
+### [Chief Engineer (Hotel Maintenance)](https://www.linkedin.com/jobs/view/4435376910/) — Motto By Hilton Philadelphia Rittenhouse Square
+- 📍 **Location:** Philadelphia, PA
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of Security Technology Engineering and Operations](https://www.linkedin.com/jobs/view/4449963671/) — U.S. Bank
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $160,000 to $240,000
+- 💰 **Salary:** $164,390.00 - $193,400.00
 - 🕒 **Posted:** 2026-08-27
 
-### [Lead Director - Software Engineering (Health100 Platform)](https://www.linkedin.com/jobs/view/4459134054/) — CVS Health
-- 📍 **Location:** Woonsocket, RI
-- 💰 **Salary:** $144,200.00 - $288,400.00
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4440995352/) — Alvarez & Marsal
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $150,000 – $225,000
 - 🕒 **Posted:** 2026-08-27
 
-### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459625256/) — Pinterest
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $329,585—$576,774 USD
-- 🕒 **Posted:** 2026-08-27
-
-### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459620343/) — Pinterest
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $329,585—$576,774 USD
-- 🕒 **Posted:** 2026-08-27
-
-### [Director Technology](https://www.linkedin.com/jobs/view/4457295883/) — Sierra Nevada Corporation
-- 📍 **Location:** Herndon, VA
-- 💰 **Salary:** $210,124.21 - $288,920.79
-- 🕒 **Posted:** 2026-08-27
-
-### [Director Technology](https://www.linkedin.com/jobs/view/4457719080/) — Sierra Nevada Corporation
-- 📍 **Location:** Arlington, VA
-- 💰 **Salary:** $210,124.21 - $288,920.79
-- 🕒 **Posted:** 2026-08-27
-
-### [Sr Software Development Manager, EC2](https://www.linkedin.com/jobs/view/4459623352/) — Amazon Web Services (AWS)
-- 📍 **Location:** San Diego, CA
-- 🕒 **Posted:** 2026-08-27
-
-### [Sr Software Development Manager, EC2](https://www.linkedin.com/jobs/view/4459624327/) — Amazon Web Services (AWS)
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458310810/) — NVIDIA
-- 📍 **Location:** New York, United States
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458305855/) — NVIDIA
-- 📍 **Location:** District of Columbia, United States
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Engineering Manager - Enablement](https://www.linkedin.com/jobs/view/4434379425/) — honeycomb.io
+### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4457740985/) — YMX Logistics
 - 📍 **Location:** United States
-- 💰 **Salary:** $208,260 - $234,000 USD
 - 🕒 **Posted:** 2026-08-27
 
-### [Senior Software Engineering Manager, AI Software Engineering Enablement](https://www.linkedin.com/jobs/view/4459632624/) — FM
-- 📍 **Location:** Johnston, RI
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4440989585/) — Alvarez & Marsal
+- 📍 **Location:** Miami, FL
+- 💰 **Salary:** $150,000 – $225,000
 - 🕒 **Posted:** 2026-08-27
 
-### [Division Director Simulation and Technology](https://www.linkedin.com/jobs/view/4459394497/) — HCA Healthcare
-- 📍 **Location:** St. Petersburg, FL
+### [Senior Manager Service Engineering](https://www.linkedin.com/jobs/view/4457741887/) — Generac
+- 📍 **Location:** Waukesha, WI
 - 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Engineering - Autonomous Vehicles](https://www.linkedin.com/jobs/view/4457999953/) — NVIDIA
-- 📍 **Location:** Redmond, WA
-- 🕒 **Posted:** 2026-08-27
-
-### [VP, Head of Technology, Retirement Plan Services](https://www.linkedin.com/jobs/view/4319092162/) — Lincoln Financial
-- 📍 **Location:** Radnor, PA
-- 💰 **Salary:** $192,750 - $308,400
-- 🕒 **Posted:** 2026-08-27
-
-### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459626288/) — Pinterest
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $329,585—$576,774 USD
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458315821/) — NVIDIA
-- 📍 **Location:** Massachusetts, United States
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Engineering Manager – Cloud Product Experience](https://www.linkedin.com/jobs/view/4459629587/) — Aerospike
-- 📍 **Location:** Mountain View, CA
-- 💰 **Salary:** $250,000 – $310,000
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Engineering Manager, ML Platform](https://www.linkedin.com/jobs/view/4459627389/) — Sift
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-08-27
-
-### [Mission Engineering & Capability Integration Senior Manager](https://www.linkedin.com/jobs/view/4457712672/) — Lockheed Martin
-- 📍 **Location:** Arlington, AZ
-- 💰 **Salary:** $228100.00 - $423700.00
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458301889/) — NVIDIA
-- 📍 **Location:** California, United States
-- 🕒 **Posted:** 2026-08-27
-
-### [Director Technology](https://www.linkedin.com/jobs/view/4457298835/) — Sierra Nevada Corporation
-- 📍 **Location:** Hagerstown, MD
-- 💰 **Salary:** $210,124.21 - $288,920.79
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458301891/) — NVIDIA
-- 📍 **Location:** Washington, United States
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458309855/) — NVIDIA
+### [Senior Manager, GPU Application Engineering](https://www.linkedin.com/jobs/view/4412964458/) — AMD
 - 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $218,400.00/yr - $327,600.00/yr
 - 🕒 **Posted:** 2026-08-27
 
-### [Engineering Asst Director](https://www.linkedin.com/jobs/view/4459629735/) — WESTGATE VACTION RESORTS PRIVATE LIMITED
-- 📍 **Location:** Kissimmee, FL
+### [Senior Manager Solutions Engineering- Remote](https://www.linkedin.com/jobs/view/4441238510/) — Akamai Technologies
+- 📍 **Location:** Cambridge, MA
+- 💰 **Salary:** $146,300 - $263,300/year
 - 🕒 **Posted:** 2026-08-27
 
-### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459622308/) — Pinterest
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $329,585—$576,774 USD
+### [Sr. Manager Clinical Research Engineering](https://www.linkedin.com/jobs/view/4441236294/) — Intuitive
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $193,000.00/yr - $340,400.00/yr
 - 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Software Development Engineering](https://www.linkedin.com/jobs/view/4457703812/) — Workday
-- 📍 **Location:** Pleasanton, CA
-- 💰 **Salary:** $209,600 USD - $314,400 USD
+### [Workforce IAM Senior Technology Manager](https://www.linkedin.com/jobs/view/4438668702/) — M&T Bank
+- 📍 **Location:** Buffalo, NY
+- 💰 **Salary:** $167,600.00 - $279,400.00
 - 🕒 **Posted:** 2026-08-27
 
-### [VP Senior Software Developer Analytics, Platforms, Applications](https://www.linkedin.com/jobs/view/4436838460/) — PIMCO
-- 📍 **Location:** Newport Beach, CA
-- 💰 **Salary:** $ 175,000.00 - $ 240,000.00
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4441203157/) — Alvarez & Marsal
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $150,000 – $225,000
 - 🕒 **Posted:** 2026-08-27
 
-### [Assistant Director of Engineering](https://www.linkedin.com/jobs/view/4459632351/) — Sheraton Hotels & Resorts
-- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4440996431/) — Alvarez & Marsal
+- 📍 **Location:** Dallas, TX
+- 💰 **Salary:** $150,000 – $225,000
 - 🕒 **Posted:** 2026-08-27
 
-### [Director of Information Technology](https://www.linkedin.com/jobs/view/4458307995/) — BlueSky Resource Solutions
-- 📍 **Location:** Norcross, GA
-- 💰 **Salary:** $190,000.00/yr - $200,000.00/yr
-- 🕒 **Posted:** 2026-08-27
-
-### [Senior Director, Central Technology](https://www.linkedin.com/jobs/view/4454920858/) — ArenaNet
-- 📍 **Location:** United States
-- 💰 **Salary:** $218,763.00/yr - $339,081.00/yr
-- 🕒 **Posted:** 2026-08-26
-
-### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454579304/) — State Street
-- 📍 **Location:** Quincy, MA
-- 💰 **Salary:** $120,000 - $202,500
-- 🕒 **Posted:** 2026-08-26
-
-### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454570352/) — State Street
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4440996345/) — Alvarez & Marsal
 - 📍 **Location:** Boston, MA
-- 💰 **Salary:** $120,000 - $202,500
-- 🕒 **Posted:** 2026-08-26
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4441200177/) — Alvarez & Marsal
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4440994468/) — Alvarez & Marsal
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, Data Engineering](https://www.linkedin.com/jobs/view/4432502782/) — AssetMark
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $192,000-$240,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Application Software Engineering](https://www.linkedin.com/jobs/view/4438003428/) — Oracle
+- 📍 **Location:** Reston, VA
+- 💰 **Salary:** $118,300 - $264,100 per year
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CIO Domain](https://www.linkedin.com/jobs/view/4440993542/) — Alvarez & Marsal
+- 📍 **Location:** Philadelphia, PA
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CIO Domain](https://www.linkedin.com/jobs/view/4440987694/) — Alvarez & Marsal
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of IT and Infrastructure - FinTech](https://www.linkedin.com/jobs/view/4449340910/) — Jobot
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $180,000.00/yr - $225,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of IT and Infrastructure - FinTech](https://www.linkedin.com/jobs/view/4449344815/) — Jobot
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $180,000.00/yr - $225,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CIO Domain](https://www.linkedin.com/jobs/view/4441203156/) — Alvarez & Marsal
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CTO Domain](https://www.linkedin.com/jobs/view/4440990468/) — Alvarez & Marsal
+- 📍 **Location:** Philadelphia, PA
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CIO Domain](https://www.linkedin.com/jobs/view/4440991405/) — Alvarez & Marsal
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, PEPI - Technology Services CIO Domain](https://www.linkedin.com/jobs/view/4441202256/) — Alvarez & Marsal
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $150,000 – $225,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Director, Infrastructure Engineering](https://www.linkedin.com/jobs/view/4449329109/) — Enlyte
+- 📍 **Location:** United States
+- 💰 **Salary:** $130,796 - $185,000 annually
+- 🕒 **Posted:** 2026-08-27
+
+### [Sr. Manager, Software Engineering](https://www.linkedin.com/jobs/view/4440833048/) — Care.com
+- 📍 **Location:** Dallas, TX
+- 💰 **Salary:** $180,000.00/yr - $200,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Head of Information Technology](https://www.linkedin.com/jobs/view/4458372330/) — HR Ways - Hiring Tech Talent
+- 📍 **Location:** Karāchi, Sindh, Pakistan
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Engineering Manager - Agentic Analytics](https://www.linkedin.com/jobs/view/4432032880/) — Snowflake
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $264,000.00/yr - $379,500.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Systems Engineering Director (Remote)](https://www.linkedin.com/jobs/view/4449922911/) — CareFirst BlueCross BlueShield
+- 📍 **Location:** Reston, VA
+- 💰 **Salary:** $163,440 - $303,386
+- 🕒 **Posted:** 2026-08-27
+
+### [Founding Head of Engineering](https://www.linkedin.com/jobs/view/4457748638/) — Stealth Startup
+- 📍 **Location:** Tbilisi, Georgia
+- 💰 **Salary:** $8,000-10,000
+- 🕒 **Posted:** 2026-08-27
