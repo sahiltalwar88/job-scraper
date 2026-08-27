@@ -1,152 +1,170 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-26 23:47 UTC*
+*Last updated: 2026-08-27 01:17 UTC*
 
-**31 new role(s)** since last run · 31 total in last 1h
+**36 new role(s)** since last run · 38 total in last 1h
 
-### [Director of Engineering, Data](https://www.linkedin.com/jobs/view/4457997620/) — Convective
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-08-26
-
-### [Engineering Director (25943)](https://www.linkedin.com/jobs/view/4458300607/) — NEOTech
-- 📍 **Location:** Carlsbad, CA
-- 🕒 **Posted:** 2026-08-26
-
-### [Treasury Management, Card Technology, Engineering Director](https://www.linkedin.com/jobs/view/4459393821/) — M&T Bank
-- 📍 **Location:** Buffalo, NY
-- 💰 **Salary:** $201,200.00 - $335,300.00
-- 🕒 **Posted:** 2026-08-26
-
-### [Senior Director, Network Engineering](https://www.linkedin.com/jobs/view/4457700566/) — Oracle
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $193,600 - $414,400 per year
-- 🕒 **Posted:** 2026-08-26
-
-### [Senior Director, Network Engineering](https://www.linkedin.com/jobs/view/4457710504/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $193,600 - $414,400 per year
-- 🕒 **Posted:** 2026-08-26
-
-### [Sr. Manager/Director of Engineering (TLine)](https://www.linkedin.com/jobs/view/4458319050/) — Grid United
-- 📍 **Location:** Houston, TX
-- 🕒 **Posted:** 2026-08-26
-
-### [Engineering Technical Director](https://www.linkedin.com/jobs/view/4459395726/) — Power Design
-- 📍 **Location:** St. Petersburg, FL
-- 🕒 **Posted:** 2026-08-26
-
-### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4446923706/) — advisorey.
-- 📍 **Location:** New York City Metropolitan Area
-- 🕒 **Posted:** 2026-08-26
-
-### [Head of Commercial/Business Banking Sales, Lending & Credit Technology](https://www.linkedin.com/jobs/view/4459393822/) — M&T Bank
-- 📍 **Location:** Buffalo, NY
-- 💰 **Salary:** $201,200.00 - $335,300.00
-- 🕒 **Posted:** 2026-08-26
-
-### [10451 - Director, Engineering – Sales Applications](https://www.linkedin.com/jobs/view/4457997875/) — Hyundai AutoEver America
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4415141741/) — NeurOptics
 - 📍 **Location:** Irvine, CA
-- 💰 **Salary:** $235,620 to $336,930
-- 🕒 **Posted:** 2026-08-26
+- 💰 **Salary:** $175,000.00/yr - $250,000.00/yr
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Engineering Manager, Commerce Platform](https://www.linkedin.com/jobs/view/4448442198/) — Rover.com
-- 📍 **Location:** Greater Seattle Area
-- 💰 **Salary:** $198,696-$264,266
-- 🕒 **Posted:** 2026-08-26
+### [Director, Software Engineering – Web Platform](https://www.linkedin.com/jobs/view/4459621380/) — Marriott International
+- 📍 **Location:** Bethesda, MD
+- 💰 **Salary:** $127,000-$215,000 annually
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4456049320/) — Enercon Services, Inc.
-- 📍 **Location:** Kennesaw, GA
-- 💰 **Salary:** USD $150,000.00 - USD $220,000.00 /Yr
-- 🕒 **Posted:** 2026-08-26
+### [Director, Platform & Data Engineering (Hybrid or Remote)](https://www.linkedin.com/jobs/view/4457298824/) — Oregon Tool
+- 📍 **Location:** Portland, OR
+- 💰 **Salary:** $185,000 to $230,000
+- 🕒 **Posted:** 2026-08-27
 
-### [(USA) Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4457291800/) — Walmart Global Tech
-- 📍 **Location:** Bentonville, AR
-- 💰 **Salary:** $110,000.00/yr - $220,000.00/yr
-- 🕒 **Posted:** 2026-08-26
+### [Sr. Director Software Engineering](https://www.linkedin.com/jobs/view/4459617373/) — WTW
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $160,000 to $240,000
+- 🕒 **Posted:** 2026-08-27
 
-### [Engineering Division- Dallas - Vice President, Systems Engineering - 10427768](https://www.linkedin.com/jobs/view/4458303647/) — Goldman Sachs
-- 📍 **Location:** Dallas, TX
-- 🕒 **Posted:** 2026-08-26
+### [Lead Director - Software Engineering (Health100 Platform)](https://www.linkedin.com/jobs/view/4459134054/) — CVS Health
+- 📍 **Location:** Woonsocket, RI
+- 💰 **Salary:** $144,200.00 - $288,400.00
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4458307554/) — Freddie Mac
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $168,000 - $252,000
-- 🕒 **Posted:** 2026-08-26
+### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459625256/) — Pinterest
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $329,585—$576,774 USD
+- 🕒 **Posted:** 2026-08-27
 
-### [Director of Business Technology & Data Services - Denver](https://www.linkedin.com/jobs/view/4459610933/) — State of Colorado
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $120,000-$132,000 per year
-- 🕒 **Posted:** 2026-08-26
+### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459620343/) — Pinterest
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $329,585—$576,774 USD
+- 🕒 **Posted:** 2026-08-27
 
-### [Vice President, Data, Analytics, AI & Technology](https://www.linkedin.com/jobs/view/4459609937/) — Bristol Myers Squibb
+### [Director Technology](https://www.linkedin.com/jobs/view/4457295883/) — Sierra Nevada Corporation
+- 📍 **Location:** Herndon, VA
+- 💰 **Salary:** $210,124.21 - $288,920.79
+- 🕒 **Posted:** 2026-08-27
+
+### [Director Technology](https://www.linkedin.com/jobs/view/4457719080/) — Sierra Nevada Corporation
+- 📍 **Location:** Arlington, VA
+- 💰 **Salary:** $210,124.21 - $288,920.79
+- 🕒 **Posted:** 2026-08-27
+
+### [Sr Software Development Manager, EC2](https://www.linkedin.com/jobs/view/4459623352/) — Amazon Web Services (AWS)
 - 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $307,190 - $372,242
-- 🕒 **Posted:** 2026-08-26
+- 🕒 **Posted:** 2026-08-27
 
-### [VP of Technology & AI Infrastructure](https://www.linkedin.com/jobs/view/4459623020/) — Swooped
+### [Sr Software Development Manager, EC2](https://www.linkedin.com/jobs/view/4459624327/) — Amazon Web Services (AWS)
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458310810/) — NVIDIA
+- 📍 **Location:** New York, United States
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458305855/) — NVIDIA
+- 📍 **Location:** District of Columbia, United States
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Engineering Manager - Enablement](https://www.linkedin.com/jobs/view/4434379425/) — honeycomb.io
 - 📍 **Location:** United States
-- 💰 **Salary:** $200,000.00/yr - $225,000.00/yr
-- 🕒 **Posted:** 2026-08-26
+- 💰 **Salary:** $208,260 - $234,000 USD
+- 🕒 **Posted:** 2026-08-27
 
-### [Director of Ops Technology](https://www.linkedin.com/jobs/view/4459623012/) — Swooped
-- 📍 **Location:** United States
-- 💰 **Salary:** $195,000.00/yr - $244,000.00/yr
-- 🕒 **Posted:** 2026-08-26
+### [Senior Software Engineering Manager, AI Software Engineering Enablement](https://www.linkedin.com/jobs/view/4459632624/) — FM
+- 📍 **Location:** Johnston, RI
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4457702570/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-08-26
+### [Division Director Simulation and Technology](https://www.linkedin.com/jobs/view/4459394497/) — HCA Healthcare
+- 📍 **Location:** St. Petersburg, FL
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4457710494/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-08-26
+### [Senior Manager, Engineering - Autonomous Vehicles](https://www.linkedin.com/jobs/view/4457999953/) — NVIDIA
+- 📍 **Location:** Redmond, WA
+- 🕒 **Posted:** 2026-08-27
 
-### [Director - AI Engineering](https://www.linkedin.com/jobs/view/4459616107/) — New York Life
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $147,500-$211,000
-- 🕒 **Posted:** 2026-08-26
+### [VP, Head of Technology, Retirement Plan Services](https://www.linkedin.com/jobs/view/4319092162/) — Lincoln Financial
+- 📍 **Location:** Radnor, PA
+- 💰 **Salary:** $192,750 - $308,400
+- 🕒 **Posted:** 2026-08-27
 
-### [Director of Engineering, Cloud & Reliability](https://www.linkedin.com/jobs/view/4458310753/) — Boulevard
-- 📍 **Location:** United States
-- 💰 **Salary:** $209,500 - $270,000 per year
-- 🕒 **Posted:** 2026-08-26
+### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459626288/) — Pinterest
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $329,585—$576,774 USD
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Director, Network Engineering](https://www.linkedin.com/jobs/view/4457296637/) — Oracle
+### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458315821/) — NVIDIA
+- 📍 **Location:** Massachusetts, United States
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Engineering Manager – Cloud Product Experience](https://www.linkedin.com/jobs/view/4459629587/) — Aerospike
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $250,000 – $310,000
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Engineering Manager, ML Platform](https://www.linkedin.com/jobs/view/4459627389/) — Sift
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-08-27
+
+### [Mission Engineering & Capability Integration Senior Manager](https://www.linkedin.com/jobs/view/4457712672/) — Lockheed Martin
+- 📍 **Location:** Arlington, AZ
+- 💰 **Salary:** $228100.00 - $423700.00
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458301889/) — NVIDIA
+- 📍 **Location:** California, United States
+- 🕒 **Posted:** 2026-08-27
+
+### [Director Technology](https://www.linkedin.com/jobs/view/4457298835/) — Sierra Nevada Corporation
+- 📍 **Location:** Hagerstown, MD
+- 💰 **Salary:** $210,124.21 - $288,920.79
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458301891/) — NVIDIA
+- 📍 **Location:** Washington, United States
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458309855/) — NVIDIA
 - 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $193,600 - $414,400 per year
-- 🕒 **Posted:** 2026-08-26
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Supply Chain Engineering](https://www.linkedin.com/jobs/view/4457299581/) — Oracle
-- 📍 **Location:** Houston, TX
-- 💰 **Salary:** $126,200 - $264,100 per year
-- 🕒 **Posted:** 2026-08-26
+### [Engineering Asst Director](https://www.linkedin.com/jobs/view/4459629735/) — WESTGATE VACTION RESORTS PRIVATE LIMITED
+- 📍 **Location:** Kissimmee, FL
+- 🕒 **Posted:** 2026-08-27
 
-### [Data Platform Enablement, Managing Director](https://www.linkedin.com/jobs/view/4459632083/) — State Street
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $170,000 - $282,500
-- 🕒 **Posted:** 2026-08-26
+### [Sr. Director, Security Engineering](https://www.linkedin.com/jobs/view/4459622308/) — Pinterest
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $329,585—$576,774 USD
+- 🕒 **Posted:** 2026-08-27
 
-### [Data Platform Enablement, Managing Director](https://www.linkedin.com/jobs/view/4459624135/) — State Street
-- 📍 **Location:** Princeton, NJ
-- 💰 **Salary:** $170,000 - $282,500
-- 🕒 **Posted:** 2026-08-26
+### [Senior Manager, Software Development Engineering](https://www.linkedin.com/jobs/view/4457703812/) — Workday
+- 📍 **Location:** Pleasanton, CA
+- 💰 **Salary:** $209,600 USD - $314,400 USD
+- 🕒 **Posted:** 2026-08-27
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4457711462/) — Oracle
+### [VP Senior Software Developer Analytics, Platforms, Applications](https://www.linkedin.com/jobs/view/4436838460/) — PIMCO
+- 📍 **Location:** Newport Beach, CA
+- 💰 **Salary:** $ 175,000.00 - $ 240,000.00
+- 🕒 **Posted:** 2026-08-27
+
+### [Assistant Director of Engineering](https://www.linkedin.com/jobs/view/4459632351/) — Sheraton Hotels & Resorts
+- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+- 🕒 **Posted:** 2026-08-27
+
+### [Director of Information Technology](https://www.linkedin.com/jobs/view/4458307995/) — BlueSky Resource Solutions
+- 📍 **Location:** Norcross, GA
+- 💰 **Salary:** $190,000.00/yr - $200,000.00/yr
+- 🕒 **Posted:** 2026-08-27
+
+### [Senior Director, Central Technology](https://www.linkedin.com/jobs/view/4454920858/) — ArenaNet
 - 📍 **Location:** United States
-- 💰 **Salary:** $120,000 - $306,400 per year
+- 💰 **Salary:** $218,763.00/yr - $339,081.00/yr
 - 🕒 **Posted:** 2026-08-26
 
-### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4457299586/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-08-26
-
-### [Data Platform Enablement, Managing Director](https://www.linkedin.com/jobs/view/4459634057/) — State Street
+### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454579304/) — State Street
 - 📍 **Location:** Quincy, MA
-- 💰 **Salary:** $170,000 - $282,500
+- 💰 **Salary:** $120,000 - $202,500
 - 🕒 **Posted:** 2026-08-26
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4459629143/) — MeeBoss
-- 📍 **Location:** United States
+### [AI Platform and Ops Lead, Vice President](https://www.linkedin.com/jobs/view/4454570352/) — State Street
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $120,000 - $202,500
 - 🕒 **Posted:** 2026-08-26
