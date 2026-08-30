@@ -1,21 +1,21 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-08-30 06:50 UTC*
+*Last updated: 2026-08-30 08:39 UTC*
 
 **4 new role(s)** since last run · 4 total in last 1h
 
-### [VP, Head of Technology, Retirement Plan Services](https://www.linkedin.com/jobs/view/4319092162/) — Lincoln Financial
-- 📍 **Location:** Radnor, PA
-- 💰 **Salary:** $192,750 - $308,400
+### [Director of  Engineering](https://www.linkedin.com/jobs/view/4460888875/) — Marriott International
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $152,000-$203,000 annually
 - 🕒 **Posted:** 2026-08-30
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4459451276/) — Save The Bees
-- 📍 **Location:** San Francisco Bay Area
+### [Vice President - Restaurant Technology & Operations - Arby’s & SONIC](https://www.linkedin.com/jobs/view/4458845513/) — Inspire
+- 📍 **Location:** Atlanta, GA
 - 🕒 **Posted:** 2026-08-30
 
-### [Co-Founder & Chief Technology Officer (CTO) | Sovereign Ledger & Healthcare Revenue Integrity USA ONLY](https://www.linkedin.com/jobs/view/4459708909/) — Apex Medical Partners
-- 📍 **Location:** New York, United States
+### [Head of Restaurant Technology](https://www.linkedin.com/jobs/view/4458845519/) — Concessions International
+- 📍 **Location:** Atlanta, GA
 - 🕒 **Posted:** 2026-08-30
 
-### [Director, ADAS User Experience Product - Autonomous Vehicles](https://www.linkedin.com/jobs/view/4458834456/) — NVIDIA AI
-- 📍 **Location:** Santa Clara, CA
+### [Director of Engineering, UAS Development](https://www.linkedin.com/jobs/view/4460889808/) — Harmattan AI
+- 📍 **Location:** Rabat, Rabat-Salé-Kénitra, Morocco
 - 🕒 **Posted:** 2026-08-30
