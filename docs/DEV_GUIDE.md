@@ -18,7 +18,7 @@ Designed to be forked. No server. No paid services required (AI triage is option
 | `scrape_jobs.py` | Main scraper. Dispatched by all watcher workflows. |
 | `triage_agent.py` | Claude API fit-scoring agent. Run by `triage.yml`. |
 | `triage.html` | The dashboard. Pure client-side JS; reads `output/*.json` at page-load time. |
-| `output/` | All scraped data (gitignored upstream). `all_jobs.json` = 14-day rolling master. |
+| `output/` | All scraped data (gitignored upstream). `all_jobs.json` = rolling master (last 50d). `output/deltas/` = per-run delta files for incremental consumers (LinkedIn only). See `docs/JOB_SCHEMA.md` for the data contract. |
 
 ## Workflow architecture
 
@@ -132,6 +132,95 @@ python scripts/merge_feasibility_slices.py
 2. Add a corresponding `--sourcename` flag to `scrape_jobs.py`.
 3. The watcher should write to `output/SOURCENAME_jobs.json` (and `.md`/`.html`).
 4. `triage.html` discovers output files at runtime — no changes needed to the dashboard unless adding new fields.
+5. To enable delta production for the new source, pass `source="sourcename"` to `save_jobs_output()` and add `output/deltas/` to the workflow's `git add -f` line. Deltas are optional — sources without them still merge into `all_jobs.json` normally.
+
+### Delta files (incremental consumption)
+
+LinkedIn runs produce per-run delta files in `output/deltas/` so downstream consumers (job-hunter, custom pipelines) can fetch only what changed instead of re-parsing the full `all_jobs.json`.
+
+- **Delta file**: `output/deltas/<timestamp>_linkedin.json` — contains `added` and `updated` arrays of full job records.
+- **Manifest**: `output/deltas/index.jsonl` — append-only, one line per delta file with run_at, filename, source, and counts.
+- **Pruning**: Delta files and manifest lines older than 30 days are removed on each run.
+- **Only LinkedIn** produces deltas in this fork. Other sources merge into `all_jobs.json` as before. The mechanism is source-agnostic — any source can opt in by passing `source=` to `save_jobs_output()`.
+- **Transport**: Consumers can read `output/deltas/` from the filesystem (co-located repos) or fetch via HTTP from GitHub Pages / `raw.githubusercontent.com` (portable across machines).
+
+#### Delta envelope format
+
+Each delta file is a JSON object:
+
+```json
+{
+  "run_at": "2026-08-31T14:00:00Z",
+  "source": "linkedin",
+  "added": [ {job object}, ... ],
+  "updated": [ {job object}, ... ]
+}
+```
+
+- `run_at` — ISO-8601 UTC timestamp of the scraper run. Matches the filename.
+- `source` — Source label (same values as the `ats` field on job records).
+- `added` — Jobs newly added to `all_jobs.json` this run (got a new `first_seen`).
+- `updated` — Existing jobs that were enriched this run (gained `description` or `salary` via duplicate merge). Contains the full updated job record.
+
+If a run produces no new and no enriched jobs, no delta file is written and no manifest line is appended.
+
+#### Manifest line format
+
+`output/deltas/index.jsonl` — one JSON object per line:
+
+```json
+{"run_at": "2026-08-31T14:00:00Z", "file": "2026-08-31T14-00-00Z_linkedin.json", "source": "linkedin", "added": 5, "updated": 2}
+```
+
+#### Consumption pattern
+
+1. Fetch `output/deltas/index.jsonl` (filesystem or HTTP).
+2. Parse each line. Track the set of `run_at` values already processed.
+3. For each unprocessed line, fetch `output/deltas/<file>`.
+4. Upsert all jobs in `added` and `updated` into your store — both arrays contain full job records, upsert by `url`.
+5. Record `run_at` as processed.
+6. On cold start (no processed state), fall back to a full sync from `output/all_jobs.json`, then switch to delta mode.
+
+### Job record fields
+
+Job records appear in `all_jobs.json`, per-source files, and delta files. The machine-validatable schema is at `schema/jobs.schema.json`.
+
+**Required fields** (always present):
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `url` | string | Canonical posting URL (http/https). Primary key. |
+| `title` | string | Job title. |
+| `company` | string | Employer name. |
+| `ats` | string | Source label: `LinkedIn`, `Indeed`, `Glassdoor`, `ZipRecruiter`, `GoogleJobs`, `HiringCafe`, `CalCareers`, `CSUCareers`, `USAJOBS`, `NEOGOV`, `CalOpps`, `Greenhouse`, `Workday`, `Priority`. |
+| `first_seen` | string | ISO-8601 UTC timestamp added by the merge step. Present on master + deltas, not on per-source files. |
+
+**Optional fields** (may be absent depending on source):
+
+| Field | Type | Description | Sources that populate it |
+|-------|------|-------------|------------------------|
+| `location` | string | Location string. May be empty. | All sources |
+| `date_posted` | string | ISO date or relative string. Format varies. | All sources, may be empty |
+| `salary` | string | Raw salary string. May be empty. | Most sources |
+| `description` | string | Job description (LinkedIn: ≤12k chars; JobSpy: ≤6k). **Absent for government boards.** | LinkedIn (detail-page fetch), Indeed/Glassdoor/ZipRecruiter (inline), Google Jobs (inline), HiringCafe (inline), CSU Careers (short summary) |
+| `direct_url` | string | Direct apply URL when different from `url`. | Some sources; backfilled during merge |
+| `job_type` | string | Employment type (full-time, contract, etc.). | Some sources; backfilled during merge |
+| `is_remote` | boolean | Remote signal. | Some sources (JobSpy boards) |
+| `telework` | string | Board-specific telework label. | CalCareers, NEOGOV |
+| `work_arrangement` | string | Normalized: `On-site`, `Remote`, `Hybrid`. | Sources where inferable |
+| `salary_source` | string | Where salary was extracted from. | Some sources |
+| `salary_currency` | string | Currency code (e.g. USD). | Some sources |
+| `emails` | string | Contact emails, comma-separated. | JobSpy sources |
+| `company_url` | string | Employer homepage URL. | Some sources |
+| `duplicate_urls` | array[string] | Alternate URLs for the same job. | Added by merge step |
+
+**Triage agent fields** (written by `triage_agent.py`, appear in `all_jobs.json` only — not in delta files):
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `feasible` | boolean | Whether the job passed feasibility check. |
+| `feasibility` | string | Verdict: `preferred`, `yes`, or `no`. |
+| `feasibility_error` | boolean | True if the feasibility batch failed. |
 
 ## Secrets vs variables
 

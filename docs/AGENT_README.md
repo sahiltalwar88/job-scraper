@@ -21,8 +21,9 @@ identical locally and in CI — only the "call the model" line differs.
 ## How the pieces fit
 
 ```
-scrapers (all day) ──commit──► all_jobs.json  (cumulative master, first_seen, ~14d)
+scrapers (all day) ──commit──► all_jobs.json  (cumulative master, first_seen, ~50d)
                                + 3 rolling source JSONs
+                               + output/deltas/  (per-run deltas, LinkedIn only, 30d)
 triage.yml (nightly 09:00 UTC) ─reads master─► scores every UNSCORED role ─commits─► scores.json
 triage.html (GitHub Pages) ────fetches all_jobs.json + scores.json ──► ★ Rank tab
 ```
@@ -31,6 +32,10 @@ triage.html (GitHub Pages) ────fetches all_jobs.json + scores.json ─�
 `linkedin_jobs.json` holds only the last ~hour (verified: a single end-of-day read
 missed ~485 of one day's 498 LinkedIn roles). The scrapers now merge every run's
 `new_jobs` into this master so nothing is lost.
+
+`output/deltas/` contains per-run delta files (LinkedIn only) so downstream
+consumers can incrementally process only new/enriched jobs instead of re-parsing
+the full master. See `docs/JOB_SCHEMA.md` for the data contract.
 
 ## Running locally (no API key needed)
 

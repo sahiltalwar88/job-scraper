@@ -20,14 +20,17 @@ job-scraper/
 ├── scoring_profile.json      # AI triage calibration (gitignored). Copy from scoring_profile.example.json
 ├── scoring_profile.example.json  # Template. DO NOT EDIT
 ├── requirements.txt          # Python deps (only needed for Indeed/Glassdoor/ZipRecruiter/Google)
-├── output/                   # All scraped data (gitignored upstream). all_jobs.json = 14-day rolling master (Layer 4)
+├── output/                   # All scraped data (gitignored upstream). all_jobs.json = 50-day rolling master (Layer 4)
+│   └── deltas/               # Per-run delta files (LinkedIn only, 30d retention). See docs/JOB_SCHEMA.md
 ├── .github/workflows/        # 18 watcher + utility workflows (Layer 4 orchestrators)
 │   └── disabled/             # Source watchers turned off by default (calcareers, glassdoor, indeed, etc.)
 ├── scripts/                  # One-command setup, config-secret export, feasibility slice/merge helpers
 ├── docs/                     # Long-form docs + deep-dive change logs (Layer 3 reference)
 │   ├── DEV_GUIDE.md          # Canonical dev guide — read this before editing scrapers/workflows
 │   ├── AGENT_README.md       # Canonical triage-agent doc — read this before editing triage_agent.py
+│   ├── JOB_SCHEMA.md         # Data contract for job records + delta files (read before writing a consumer)
 │   └── deep-dive/            # Dated architecture/change notes
+├── schema/                   # Machine-validatable JSON Schema (jobs.schema.json, delta.schema.json)
 ├── tests/                    # Pytest suite (fixtures/, local/ for WSL-only tests)
 ├── CLAUDE.md                 # This file — auto-generated from IDENTITY.md. Do not edit directly.
 ├── README.md                 # Canonical user-facing docs
