@@ -18,7 +18,7 @@ job-scraper/
 ├── scoring_profile.json      # AI triage calibration (gitignored). Copy from scoring_profile.example.json
 ├── scoring_profile.example.json  # Template. DO NOT EDIT
 ├── requirements.txt          # Python deps (only needed for Indeed/Glassdoor/ZipRecruiter/Google)
-├── output/                   # All scraped data (gitignored upstream). all_jobs.json = 50-day rolling master (Layer 4)
+├── output/                   # All scraped data (gitignored upstream). all_jobs.json = 30-day rolling master (Layer 4)
 │   └── deltas/               # Per-run delta files (LinkedIn only, 30d retention). See docs/JOB_SCHEMA.md
 ├── .github/workflows/        # 18 watcher + utility workflows (Layer 4 orchestrators)
 │   └── disabled/             # Source watchers turned off by default (calcareers, glassdoor, indeed, etc.)

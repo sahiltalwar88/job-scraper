@@ -2791,7 +2791,7 @@ def _load_prev_ids(json_path: str) -> set[str]:
     return ids
 
 
-ALL_JOBS_PRUNE_DAYS = 50
+ALL_JOBS_PRUNE_DAYS = 30
 # Delta files and manifest lines older than this are pruned on each run.
 # Consumers needing historical data beyond this window should use all_jobs.json.
 DELTA_PRUNE_DAYS = 30

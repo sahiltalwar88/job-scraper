@@ -82,8 +82,8 @@
     },
     "work_arrangement": {
       "type": "string",
-      "description": "Normalized work mode: On-site, Remote, Hybrid, or absent.",
-      "enum": ["On-site", "Remote", "Hybrid"]
+      "description": "Normalized work mode derived from is_remote, telework, job_type, and location text. Empty string when undetermined.",
+      "enum": ["On-site", "Remote in-state eligible", "Remote out-of-state eligible", "Telecommute eligible", ""]
     },
     "salary_source": {
       "type": "string",
