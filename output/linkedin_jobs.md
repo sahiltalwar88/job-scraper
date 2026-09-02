@@ -1,227 +1,213 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-02 17:10 UTC*
+*Last updated: 2026-09-02 20:05 UTC*
 
-**48 new role(s)** since last run · 48 total in last 1h
+**44 new role(s)** since last run · 44 total in last 1h
 
-### [Director, Engineering](https://www.linkedin.com/jobs/view/4452498922/) — Addepar
-- 📍 **Location:** New York City Metropolitan Area
+### [Ld Director - Software Engineering](https://www.linkedin.com/jobs/view/4462455067/) — CVS Health
+- 📍 **Location:** Wellesley Hills, MA
+- 💰 **Salary:** $144,200.00 - $288,400.00
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Director, Physical Design & Backend Engineering (HPC)](https://www.linkedin.com/jobs/view/4443531664/) — Renesas Electronics
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Director, AI Engineering](https://www.linkedin.com/jobs/view/4449886501/) — IntePros
-- 📍 **Location:** Philadelphia, PA
-- 💰 **Salary:** $150,000.00/yr - $175,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4459963816/) — Zest Technical Solutions
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Director, Engineering](https://www.linkedin.com/jobs/view/4452681845/) — Argon Medical Devices, Inc.
-- 📍 **Location:** Plano, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Platform Engineering Manager](https://www.linkedin.com/jobs/view/4450109004/) — FanDuel
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $183,000 - $229,000 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Platform Engineering Manager](https://www.linkedin.com/jobs/view/4450101005/) — FanDuel
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $183,000 - $229,000 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Production Engineering](https://www.linkedin.com/jobs/view/4431514953/) — CoreWeave
-- 📍 **Location:** Livingston, NJ
-- 💰 **Salary:** $207,000 to $275,000
-- 🕒 **Posted:** 2026-09-02
-
-### [Regional VP of Engineering services](https://www.linkedin.com/jobs/view/4459960769/) — Jobot
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $200,000.00/yr - $300,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Director, TS/MS and Site Head – Elanco Technology Center](https://www.linkedin.com/jobs/view/4373154854/) — Elanco
-- 📍 **Location:** Indianapolis, IN
-- 🕒 **Posted:** 2026-09-02
-
-### [Head of Data Engineering & Platform](https://www.linkedin.com/jobs/view/4449890108/) — Mercury
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $289,700—$362,100 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Software & Product Development Operations](https://www.linkedin.com/jobs/view/4426553700/) — West Monroe
-- 📍 **Location:** Los Angeles Metropolitan Area
-- 💰 **Salary:** $209,800—$246,800 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Production Engineering](https://www.linkedin.com/jobs/view/4431515979/) — CoreWeave
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $207,000 to $275,000
-- 🕒 **Posted:** 2026-09-02
-
-### [Director, Engineering, Fleet Obtainability, Management and Efficiency](https://www.linkedin.com/jobs/view/4460996589/) — Google
-- 📍 **Location:** Sunnyvale, CA
-- 💰 **Salary:** $307000 - $427000
-- 🕒 **Posted:** 2026-09-02
-
-### [Global Banking & Markets- New York - Vice President, Systems Engineering- 10442645](https://www.linkedin.com/jobs/view/4451915228/) — Goldman Sachs
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $213,000 - $271,000
-- 🕒 **Posted:** 2026-09-02
-
-### [Engineering Director](https://www.linkedin.com/jobs/view/4462422549/) — PIC Wire & Cable
-- 📍 **Location:** Waukesha, WI
-- 🕒 **Posted:** 2026-09-02
-
-### [Asset & Wealth Management - Dallas - Vice President, Software Engineering - 10415601](https://www.linkedin.com/jobs/view/4451924100/) — Goldman Sachs
-- 📍 **Location:** Dallas, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4415397613/) — Blue Cross Blue Shield of Massachusetts
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $163,800.00 - $200,200.00
-- 🕒 **Posted:** 2026-09-02
-
-### [Director, Engineering - Motors](https://www.linkedin.com/jobs/view/4432347360/) — SharkNinja
-- 📍 **Location:** Needham, MA
-- 💰 **Salary:** $190,000—$210,000 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Engineering Manager, Mobile](https://www.linkedin.com/jobs/view/4443900548/) — Mudflap
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $250,000.00/yr - $300,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Data Engineering - Valorant](https://www.linkedin.com/jobs/view/4452625200/) — Riot Games
-- 📍 **Location:** Los Angeles, CA
-- 💰 **Salary:** $209,900.00 - $293,400.00 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Director, CCAR Technology Lead - Finance](https://www.linkedin.com/jobs/view/4385117575/) — SMBC Group
+### [Director of PV Engineering](https://www.linkedin.com/jobs/view/4450597862/) — SunEnergy1
 - 📍 **Location:** Charlotte, NC
 - 🕒 **Posted:** 2026-09-02
 
-### [Head of Infrastructure - Stealth Aviation Safety Intelligence Startup](https://www.linkedin.com/jobs/view/4460994864/) — UP.Labs
+### [Director Lead - Systems Engineering](https://www.linkedin.com/jobs/view/4461333111/) — Ally
+- 📍 **Location:** Detroit, MI
+- 💰 **Salary:** $135,000.00 - $235,000.00
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, Telemetry Engineering and Operations](https://www.linkedin.com/jobs/view/4437301906/) — NTT Global Data Centers
 - 📍 **Location:** United States
+- 💰 **Salary:** $218,800 - $312,500
 - 🕒 **Posted:** 2026-09-02
 
-### [VP, Technology and Digital Product Delivery](https://www.linkedin.com/jobs/view/4449863617/) — McGraw Hill
-- 📍 **Location:** United States
-- 💰 **Salary:** $187,000 - $235,000 annually
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Engineering Manager, Core Automation (Platform)](https://www.linkedin.com/jobs/view/4453056546/) — Coinbase
-- 📍 **Location:** United States
-- 💰 **Salary:** $253,895 USD - $298,700 USD
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Engineering CORE](https://www.linkedin.com/jobs/view/4453125767/) — Raytheon
-- 📍 **Location:** McKinney, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Sr Manager, Software Engineer](https://www.linkedin.com/jobs/view/4443921473/) — Capital One
+### [Head of Platform Engineering, Control Services](https://www.linkedin.com/jobs/view/4462435983/) — Soni
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $250,800 - $286,200
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Manager, Technical Support Engineering - Cloud](https://www.linkedin.com/jobs/view/4453003705/) — CoreWeave
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $198,000 to $264,000
-- 🕒 **Posted:** 2026-09-02
-
-### [Sr. Director, Data & Integrations Engineering](https://www.linkedin.com/jobs/view/4462427341/) — Cedar
-- 📍 **Location:** United States
-- 💰 **Salary:** $280,500 - $330,000
-- 🕒 **Posted:** 2026-09-02
-
-### [Head of AI Solutions, COO Technology - MD (C16)](https://www.linkedin.com/jobs/view/4442656503/) — Citi
+### [Director, Analytics Engineering](https://www.linkedin.com/jobs/view/4462446440/) — ConsultNet Technology Services and Solutions
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $250,000.00 - $500,000.00
+- 💰 **Salary:** $280,000-$320,000
 - 🕒 **Posted:** 2026-09-02
 
-### [VP Engineering - Data Products](https://www.linkedin.com/jobs/view/4461307424/) — dentsu
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $136,000 - $171,500
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4461305420/) — Smule, Inc.
-- 📍 **Location:** Salt Lake City, UT
-- 🕒 **Posted:** 2026-09-02
-
-### [GPS - Azure Senior Platform Engineer - Assistant Director](https://www.linkedin.com/jobs/view/4412830485/) — EY
-- 📍 **Location:** Fort Worth, TX
-- 💰 **Salary:** $111,100 to $207,800
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4459969959/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-09-02
-
-### [VP, Infrastructure](https://www.linkedin.com/jobs/view/4461303468/) — SHAZAM Network - ITS, Inc.
-- 📍 **Location:** Johnston, IA
-- 💰 **Salary:** $135,000.00/yr - $185,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Director Product Management - PK Software](https://www.linkedin.com/jobs/view/4431534208/) — PCCA
-- 📍 **Location:** Houston, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Technology](https://www.linkedin.com/jobs/view/4461306359/) — LHH
-- 📍 **Location:** Fort Worth, TX
-- 💰 **Salary:** $178,000.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Information Technology](https://www.linkedin.com/jobs/view/4461303346/) — MANIFEST Technology
-- 📍 **Location:** Minnesota, United States
-- 💰 **Salary:** $175,000.00/yr - $200,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Information Technology](https://www.linkedin.com/jobs/view/4460994880/) — City of Cleveland - City Hall
-- 📍 **Location:** Cleveland, OH
-- 🕒 **Posted:** 2026-09-02
-
-### [Chief Technology Officer (Fractional)](https://www.linkedin.com/jobs/view/4461306168/) — BOOMER TECHNOLOGY GROUP
-- 📍 **Location:** Princeton, NJ
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4459979252/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 🕒 **Posted:** 2026-09-02
-
-### [Vice President - AI Safety Platform Engineering](https://www.linkedin.com/jobs/view/4461309431/) — Goldman Sachs
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $130000-$250000
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Engineering - Logistics](https://www.linkedin.com/jobs/view/4462429520/) — Quality Theorem
-- 📍 **Location:** Redmond, WA
-- 💰 **Salary:** $200,000.00/yr - $282,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Vice President, Lead Software Engineer](https://www.linkedin.com/jobs/view/4461305407/) — Morgan Stanley
-- 📍 **Location:** Alpharetta, GA
-- 🕒 **Posted:** 2026-09-02
-
-### [Head of App and Web Technology](https://www.linkedin.com/jobs/view/4459970917/) — IHG Hotels & Resorts
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $183,751.00/yr - $235,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Core Infrastructure Engineering, Data Plane](https://www.linkedin.com/jobs/view/4459969966/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-09-02
-
-### [Sr. Manager Engineering and Maintenance](https://www.linkedin.com/jobs/view/4339009566/) — Simtra BioPharma Solutions
-- 📍 **Location:** Bloomington, IN
-- 🕒 **Posted:** 2026-09-02
-
-### [Director, Data Engineering (Google Cloud Platform)](https://www.linkedin.com/jobs/view/4462441114/) — TTEC Digital
+### [Technical Services Director, Global Data Center & Lab Infrastructure](https://www.linkedin.com/jobs/view/4461309945/) — Graphcore
 - 📍 **Location:** Austin, TX
-- 💰 **Salary:** $165,000.00/yr - $195,000.00/yr
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Director - Software Engineering (MuleSoft) (Hybrid - Newark, NJ)](https://www.linkedin.com/jobs/view/4344547309/) — Broadridge
+- 📍 **Location:** Newark, NJ
+- 💰 **Salary:** $165,000 - $175,000
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager Software Engineering](https://www.linkedin.com/jobs/view/4459995288/) — Empower
+- 📍 **Location:** United States
+- 💰 **Salary:** $125,400.00 - $181,875.00
+- 🕒 **Posted:** 2026-09-02
+
+### [Deputy Director, Airport/Chief Infrastructure Officer](https://www.linkedin.com/jobs/view/4461312909/) — Charlotte Douglas International Airport
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $240,000.00/yr - $302,000.00/yr
+- 🕒 **Posted:** 2026-09-02
+
+### [Associate Vice President, Software Engineering](https://www.linkedin.com/jobs/view/4462457034/) — Deloitte
+- 📍 **Location:** Mechanicsburg, PA
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager, Software Engineering 1](https://www.linkedin.com/jobs/view/4453118282/) — L3Harris Technologies
+- 📍 **Location:** Rochester, NY
+- 💰 **Salary:** $140,500 to $261,500
+- 🕒 **Posted:** 2026-09-02
+
+### [Sr. Manager, Network Infrastructure & Planning](https://www.linkedin.com/jobs/view/4435600593/) — Alaska Communications
+- 📍 **Location:** Anchorage, AK
+- 💰 **Salary:** $117,046.00 - $160,007.00
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, Principal Architect – Agentic Engineering](https://www.linkedin.com/jobs/view/4461317953/) — Vista Equity Partners
+- 📍 **Location:** United States
+- 💰 **Salary:** $200,000 - $315,000
+- 🕒 **Posted:** 2026-09-02
+
+### [Vice President, Software Engineering (Customer Communications)](https://www.linkedin.com/jobs/view/4442757362/) — Broadridge
+- 📍 **Location:** Newark, NJ
+- 💰 **Salary:** $250,000.00- $275,000.00 USD
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, Technology Delivery](https://www.linkedin.com/jobs/view/4462451196/) — Invitation Homes
+- 📍 **Location:** Dallas, TX
+- 💰 **Salary:** $127,200.00 - $220,480.00
+- 🕒 **Posted:** 2026-09-02
+
+### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4457540989/) — Matrix Design Group LLC
+- 📍 **Location:** Fort Myers, FL
+- 🕒 **Posted:** 2026-09-02
+
+### [Head of Software](https://www.linkedin.com/jobs/view/4461331202/) — TetraMem - Accelerate The World
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $200,000 - $350,000
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, Engineering](https://www.linkedin.com/jobs/view/4462455539/) — Vanguard Soap
+- 📍 **Location:** Memphis, TN
+- 🕒 **Posted:** 2026-09-02
+
+### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4462445706/) — Block Engineering
+- 📍 **Location:** Southborough, MA
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager, ASIC Design Engineering](https://www.linkedin.com/jobs/view/4450498902/) — Cornelis Networks
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Engineering Manager - Agent Experience](https://www.linkedin.com/jobs/view/4459994422/) — Robinhood
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $1—$1 USD
+- 🕒 **Posted:** 2026-09-02
+
+### [Director of Engineering - Transportation Design](https://www.linkedin.com/jobs/view/4459998127/) — GPI / Greenman-Pedersen, Inc.
+- 📍 **Location:** Rochester, New York Metropolitan Area
+- 💰 **Salary:** $150,000.00/yr - $170,000.00/yr
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, Network Infrastructure and Planning](https://www.linkedin.com/jobs/view/4459997170/) — Alaska Communications
+- 📍 **Location:** Anchorage, AK
+- 💰 **Salary:** $130,725.00 - $178,707.00
+- 🕒 **Posted:** 2026-09-02
+
+### [Sr. Manager, Field Engineering](https://www.linkedin.com/jobs/view/4461335127/) — Otis Elevator Co.
+- 📍 **Location:** Little Rock, AR
+- 🕒 **Posted:** 2026-09-02
+
+### [Head of NeoCloud TPUaaS/GPUaaS Leasing](https://www.linkedin.com/jobs/view/4461322361/) — Google
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $222000 - $308000
+- 🕒 **Posted:** 2026-09-02
+
+### [Director of Information Technology](https://www.linkedin.com/jobs/view/4450358258/) — iS CLINICAL
+- 📍 **Location:** Mesa, AZ
+- 💰 **Salary:** $145,000.00/yr - $155,000.00/yr
+- 🕒 **Posted:** 2026-09-02
+
+### [Head of Information Technology](https://www.linkedin.com/jobs/view/4462464196/) — Gainor Staffing
+- 📍 **Location:** Ipswich, MA
+- 💰 **Salary:** $235,000.00/yr - $270,000.00/yr
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462452613/) — Salesforce
+- 📍 **Location:** New Boston, NH
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462455487/) — Salesforce
+- 📍 **Location:** New Hampshire, United States
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Head of NeoCloud TPUaaS/GPUaaS Leasing](https://www.linkedin.com/jobs/view/4461332200/) — Google
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $222000 - $308000
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager, AI Client Enablement Platform](https://www.linkedin.com/jobs/view/4461337059/) — Capital Group
+- 📍 **Location:** Irvine, CA
+- 💰 **Salary:** $208,245-$354,017
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager, AI Client Enablement Platform](https://www.linkedin.com/jobs/view/4461314998/) — Capital Group
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $208,245-$354,017
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, Strategic Infrastructure Partnerships](https://www.linkedin.com/jobs/view/4461332178/) — GTN Technical Staffing
+- 📍 **Location:** Dallas, TX
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462461297/) — Salesforce
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462455492/) — Salesforce
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462447719/) — Salesforce
+- 📍 **Location:** New York City Metropolitan Area
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462444740/) — Salesforce
+- 📍 **Location:** New York City Metropolitan Area
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462457372/) — Salesforce
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462452609/) — Salesforce
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462452611/) — Salesforce
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Director, AgentExchange Security & Labs](https://www.linkedin.com/jobs/view/4462464027/) — Salesforce
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $172,500 - $313,700 annually
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager, AI Client Enablement Platform](https://www.linkedin.com/jobs/view/4461319821/) — Capital Group
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $208,245-$354,017
+- 🕒 **Posted:** 2026-09-02
+
+### [Sr. Manager, Field Engineering](https://www.linkedin.com/jobs/view/4461322349/) — Otis Elevator Co.
+- 📍 **Location:** Farmington, CT
 - 🕒 **Posted:** 2026-09-02
