@@ -1,141 +1,225 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-02 01:17 UTC*
+*Last updated: 2026-09-02 06:07 UTC*
 
-**29 new role(s)** since last run · 29 total in last 1h
+**45 new role(s)** since last run · 45 total in last 1h
 
-### [Director, Tegra Firmware](https://www.linkedin.com/jobs/view/4460678402/) — NVIDIA
-- 📍 **Location:** Santa Clara, CA
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459902609/) — Accenture
+- 📍 **Location:** Oklahoma City, OK
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Sr. Software Engineering Manager](https://www.linkedin.com/jobs/view/4462077881/) — Honeywell Technologies
-- 📍 **Location:** Duluth, GA
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459910410/) — Accenture
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Director Reliability, Automation & Performance Engineering](https://www.linkedin.com/jobs/view/4446432236/) — Catalyst Brands LLC
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** USD $135,150.00 - USD $225,250.00 /Yr
+### [Senior Manager - AI Network Engineering](https://www.linkedin.com/jobs/view/4459913265/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $169,800 - $355,400 per year
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Manager Software Engineering](https://www.linkedin.com/jobs/view/4462089980/) — CVS Health
-- 📍 **Location:** Springfield, IL
-- 💰 **Salary:** $106,605.00 - $284,280.00
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4460922629/) — Exploria Kids
+- 📍 **Location:** Madison, WI
 - 🕒 **Posted:** 2026-09-02
 
-### [Sr. Manager, Engineering - Cloud Security](https://www.linkedin.com/jobs/view/4459440056/) — Illumio
-- 📍 **Location:** San Jose, CA
+### [Director Engineering - Synthetic Molecule Design and Development](https://www.linkedin.com/jobs/view/4460925728/) — BioSpace
+- 📍 **Location:** Indianapolis, IN
+- 💰 **Salary:** $151,500 - $264,000
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Manager, Marketing Solutions Engineering](https://www.linkedin.com/jobs/view/4460682588/) — GEICO
-- 📍 **Location:** Bethesda, MD
-- 💰 **Salary:** $130,000.00/yr - $260,000.00/yr
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459917168/) — Accenture
+- 📍 **Location:** Cleveland, OH
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Manager, Marketing Solutions Engineering](https://www.linkedin.com/jobs/view/4460669596/) — GEICO
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $130,000.00/yr - $260,000.00/yr
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459917164/) — Accenture
+- 📍 **Location:** Overland Park, KS
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4421900468/) — Aurelius Systems
-- 📍 **Location:** San Francisco Bay Area
-- 💰 **Salary:** $275,000.00/yr - $315,000.00/yr
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459905495/) — Accenture
+- 📍 **Location:** Cincinnati, OH
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Tax Innovation - Software Engineering - Director](https://www.linkedin.com/jobs/view/4462093563/) — PwC
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $150,000 - $438,000
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459599725/) — Accenture
+- 📍 **Location:** Minneapolis, MN
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Tax Innovation - Software Engineering - Director](https://www.linkedin.com/jobs/view/4462078951/) — PwC
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $150,000 - $438,000
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459906514/) — Accenture
+- 📍 **Location:** Beaverton, OR
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Sr Manager, Software Engineering - Stores Post Purchase](https://www.linkedin.com/jobs/view/4462117049/) — Lowe's Companies, Inc.
-- 📍 **Location:** Charlotte, NC
-- 💰 **Salary:** $130,000.00 - $247,000.00 annually
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459922052/) — Accenture
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Engineering Manager, API Catalog](https://www.linkedin.com/jobs/view/4462112203/) — Postman
-- 📍 **Location:** San Francisco Bay Area
-- 💰 **Salary:** $280,000 to $320,000,
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459909408/) — Accenture
+- 📍 **Location:** Carmel, IN
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Director, Lifecycle Engineering](https://www.linkedin.com/jobs/view/4462107328/) — Nscale
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $350,000 USD - $420,000 USD
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459920137/) — Accenture
+- 📍 **Location:** St Louis, MO
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Director Infrastructure Engineering](https://www.linkedin.com/jobs/view/4462103275/) — Health Care Service Corporation
-- 📍 **Location:** Richardson, TX
-- 💰 **Salary:** $133,400.00 - $247,700.00
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459599727/) — Accenture
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Sr. Director, Science and Technology](https://www.linkedin.com/jobs/view/4460678642/) — TreeHouse Foods
-- 📍 **Location:** Oak Brook, IL
-- 💰 **Salary:** $208,100 - 312,100
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459917167/) — Accenture
+- 📍 **Location:** Raleigh, NC
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Tax Innovation - Software Engineering - Director](https://www.linkedin.com/jobs/view/4462083800/) — PwC
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $150,000 - $438,000
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459913300/) — Accenture
+- 📍 **Location:** Detroit, MI
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Sr. Engineering Manager - Full Stack](https://www.linkedin.com/jobs/view/4456046908/) — Illumio
-- 📍 **Location:** San Jose, CA
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459919145/) — Accenture
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4379497776/) — Illumio
-- 📍 **Location:** San Jose, CA
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459903551/) — Accenture
+- 📍 **Location:** Albany, NY
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior SATCOM Algorithm Engineering Manager](https://www.linkedin.com/jobs/view/4460680935/) — TalentBridge
-- 📍 **Location:** Chandler, AZ
-- 💰 **Salary:** $180,000.00/yr - $220,000.00/yr
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459599733/) — Accenture
+- 📍 **Location:** Miami, FL
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Director of Product, Customer Care](https://www.linkedin.com/jobs/view/4462095550/) — Lyft
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $236,000 - $295,000
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459914284/) — Accenture
+- 📍 **Location:** Sacramento, CA
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Client Service Delivery Senior Manager – Infrastructure](https://www.linkedin.com/jobs/view/4460676671/) — Accenture
-- 📍 **Location:** Albany, New York Metropolitan Area
-- 💰 **Salary:** $132,500 to $302,400
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459915283/) — Accenture
+- 📍 **Location:** Milwaukee, WI
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-02
 
-### [Director of Product Development](https://www.linkedin.com/jobs/view/4459587274/) — The Blockchain Technology & Cryptocurrency Club of Temple University
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, AI Platform Engineering Management](https://www.linkedin.com/jobs/view/4462099812/) — ServiceNow
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $190,900 - $334,100
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Engineering Manager - Crucible](https://www.linkedin.com/jobs/view/4460688279/) — Firestorm
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459599726/) — Accenture
 - 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $175,000 – $220,000 USD
-- 🕒 **Posted:** 2026-09-01
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
 
-### [Director of Engineering, HRIS Core Flows](https://www.linkedin.com/jobs/view/4462075842/) — Rippling
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-09-01
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459916254/) — Accenture
+- 📍 **Location:** Culver City, CA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
 
-### [Engineering Asst Director](https://www.linkedin.com/jobs/view/4459587139/) — Westgate Resorts
-- 📍 **Location:** Kissimmee, FL
-- 🕒 **Posted:** 2026-09-01
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459919150/) — Accenture
+- 📍 **Location:** Morristown, NJ
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
 
-### [Director, Network Engineering & Operations](https://www.linkedin.com/jobs/view/4462094480/) — Addison Group
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459922046/) — Accenture
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $140,000-150,000
-- 🕒 **Posted:** 2026-09-01
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
 
-### [VP of Technology & AI Infrastructure](https://www.linkedin.com/jobs/view/4462080883/) — Swooped
+### [Vice President, Engineering](https://www.linkedin.com/jobs/view/4462113784/) — Conductor
 - 📍 **Location:** United States
-- 💰 **Salary:** $200,000.00/yr - $225,000.00/yr
-- 🕒 **Posted:** 2026-09-01
+- 🕒 **Posted:** 2026-09-02
 
-### [Senior Director Software Engineering](https://www.linkedin.com/jobs/view/4460685386/) — Cotiviti
+### [Vice President, Technology](https://www.linkedin.com/jobs/view/4449756888/) — Morgan Stanley
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459902614/) — Accenture
+- 📍 **Location:** Des Moines, IA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459920139/) — Accenture
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459909400/) — Accenture
+- 📍 **Location:** Pittsburgh, PA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459913301/) — Accenture
+- 📍 **Location:** Kirkland, WA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459905493/) — Accenture
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459920138/) — Accenture
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [Director of Software Engineering - Data Platforms - #4919](https://www.linkedin.com/jobs/view/4460922758/) — BioSpace
+- 📍 **Location:** Sunnyvale, CA
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager Technical Lead, Content Technology & MLR Enablement](https://www.linkedin.com/jobs/view/4460936737/) — BioSpace
+- 📍 **Location:** Philadelphia, PA
+- 💰 **Salary:** $141,600.00 - $212,400.00
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459901633/) — Accenture
+- 📍 **Location:** Hartford, CT
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459599731/) — Accenture
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [Senior Manager - AI Network Engineering](https://www.linkedin.com/jobs/view/4459903517/) — Oracle
 - 📍 **Location:** United States
-- 💰 **Salary:** $207,000 to $247,000 per year
-- 🕒 **Posted:** 2026-09-01
+- 💰 **Salary:** $169,800 - $355,400 per year
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459598975/) — Accenture
+- 📍 **Location:** Arlington, VA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459599729/) — Accenture
+- 📍 **Location:** Philadelphia, PA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459920141/) — Accenture
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459918139/) — Accenture
+- 📍 **Location:** Redmond, WA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459916256/) — Accenture
+- 📍 **Location:** Walnut Creek, CA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459914280/) — Accenture
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
+
+### [AI Native Software Engineering Senior Manager/Assoc Director](https://www.linkedin.com/jobs/view/4459907504/) — Accenture
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $132,500 to $366,300
+- 🕒 **Posted:** 2026-09-02
