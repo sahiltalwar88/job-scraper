@@ -1,120 +1,94 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-02 22:53 UTC*
+*Last updated: 2026-09-03 01:23 UTC*
 
-**26 new role(s)** since last run · 26 total in last 1h
+**20 new role(s)** since last run · 20 total in last 1h
 
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4462494007/) — Belcan
-- 📍 **Location:** Farmington, CT
-- 💰 **Salary:** $150,000 - 200,000k
-- 🕒 **Posted:** 2026-09-02
+### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4462719362/) — Fidelity Investments
+- 📍 **Location:** Durham, NC
+- 🕒 **Posted:** 2026-09-03
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4462490242/) — Jewelers Mutual Group
-- 📍 **Location:** Raleigh, NC
-- 🕒 **Posted:** 2026-09-02
+### [Director, Engineering and Technology](https://www.linkedin.com/jobs/view/4462720187/) — Monumental Sports & Entertainment
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $180k - $220k USD
+- 🕒 **Posted:** 2026-09-03
 
-### [Director, Engineering - Substation](https://www.linkedin.com/jobs/view/4462490189/) — Quanta Infrastructure Solutions Group
-- 📍 **Location:** Columbus, OH
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Automation Engineering](https://www.linkedin.com/jobs/view/4459998682/) — Walmart
-- 📍 **Location:** Bentonville, AR
-- 💰 **Salary:** $110,000.00/yr - $220,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Engineering Manager, Software Systems and Architecture](https://www.linkedin.com/jobs/view/4462487520/) — Allegion
-- 📍 **Location:** Carmel, IN
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Architectural and Engineering Lead, Senior Vice President](https://www.linkedin.com/jobs/view/4461336856/) — Citi
-- 📍 **Location:** Tampa, FL
-- 💰 **Salary:** $141,440.00 - $212,160.00
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Technical Director, Hydrometallurgy & Mineral Processing Engineering](https://www.linkedin.com/jobs/view/4462470873/) — WSP in the U.S.
-- 📍 **Location:** South Jordan, UT
-- 🕒 **Posted:** 2026-09-02
-
-### [SAP NS2 Director, Cloud Infrastructure & DevSecOps](https://www.linkedin.com/jobs/view/4461337812/) — SAP
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Sr. Manager, MedTech Technology Product Lifecycle Management Platform](https://www.linkedin.com/jobs/view/4462487394/) — Johnson & Johnson Innovative Medicine
-- 📍 **Location:** Raritan, NJ
-- 💰 **Salary:** $122,000 - $211,025
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Manager, Franchise Technology Programs](https://www.linkedin.com/jobs/view/4461338911/) — F45 Corporate Training | DIFC, Dubai
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [VP of Engineering- San Francisco HQ](https://www.linkedin.com/jobs/view/4440618999/) — Orb
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Engineering (AI)](https://www.linkedin.com/jobs/view/4461345621/) — Ultimate Staffing
-- 📍 **Location:** Salt Lake City, UT
-- 💰 **Salary:** $195,000.00/yr - $225,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Director Engineering and Continuous Improvement](https://www.linkedin.com/jobs/view/4462471365/) — DHL Supply Chain
+### [Director, AI Platform](https://www.linkedin.com/jobs/view/4460442111/) — Cargill
 - 📍 **Location:** Atlanta, GA
-- 🕒 **Posted:** 2026-09-02
+- 💰 **Salary:** $145,000-$235,000
+- 🕒 **Posted:** 2026-09-03
 
-### [Senior Manager, SAP Business Technology Platform AI Engineering](https://www.linkedin.com/jobs/view/4462468970/) — Johnson & Johnson
-- 📍 **Location:** Raritan, NJ
-- 💰 **Salary:** $137,000 - $236,325
-- 🕒 **Posted:** 2026-09-02
+### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4460422226/) — Zebra Technologies
+- 📍 **Location:** Holtsville, NY
+- 💰 **Salary:** $156,960.00 - $235,440.00
+- 🕒 **Posted:** 2026-09-03
 
-### [Director, Technology Strategy & Operations - USRM Tech](https://www.linkedin.com/jobs/view/4462487603/) — Liberty Mutual Insurance
+### [Executive Vice President of Technology](https://www.linkedin.com/jobs/view/4460436220/) — JW3 BioTechnologies LLC
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-03
+
+### [Head of AI Enablement - Technology, Data and Operations, Wholesale Division](https://www.linkedin.com/jobs/view/4462719589/) — Truist
+- 📍 **Location:** Charlotte, NC
+- 🕒 **Posted:** 2026-09-03
+
+### [Sr. Software Development Manager, AWS Neuron](https://www.linkedin.com/jobs/view/4462714077/) — Amazon Web Services (AWS)
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-09-03
+
+### [Sr. Software Development Manager, AWS Neuron](https://www.linkedin.com/jobs/view/4462727037/) — Amazon Web Services (AWS)
+- 📍 **Location:** Cupertino, CA
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Engineering Manager, Security Products](https://www.linkedin.com/jobs/view/4460442177/) — CoreWeave
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $207,000 to $275,000
+- 🕒 **Posted:** 2026-09-03
+
+### [Director of Engineering - New Ventures](https://www.linkedin.com/jobs/view/4462725442/) — kadence
+- 📍 **Location:** Los Angeles Metropolitan Area
+- 🕒 **Posted:** 2026-09-03
+
+### [Sr. Manager - Medical Visualization & Realtime Graphics Engineering](https://www.linkedin.com/jobs/view/4462725456/) — Arthrex
+- 📍 **Location:** Naples, FL
+- 🕒 **Posted:** 2026-09-03
+
+### [Sr. Manager - Medical Visualization & Realtime Graphics Engineering](https://www.linkedin.com/jobs/view/4462729415/) — Arthrex
+- 📍 **Location:** Naples, FL
+- 🕒 **Posted:** 2026-09-03
+
+### [Director, Infrastructure](https://www.linkedin.com/jobs/view/4462720550/) — Whip Media
+- 📍 **Location:** Santa Monica, CA
+- 💰 **Salary:** $180,000.00/yr - $200,000.00/yr
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Director, Controllership & Operations](https://www.linkedin.com/jobs/view/4462725447/) — Salesforce
 - 📍 **Location:** Indianapolis, IN
-- 💰 **Salary:** $156,000.00/yr - $281,000.00/yr
-- 🕒 **Posted:** 2026-09-02
+- 🕒 **Posted:** 2026-09-03
 
-### [Site Head IT - Business Technology MTO](https://www.linkedin.com/jobs/view/4462467992/) — Alcon
-- 📍 **Location:** Houston, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Director, Technology Strategy & Operations - USRM Tech](https://www.linkedin.com/jobs/view/4462496143/) — Liberty Mutual Insurance
-- 📍 **Location:** Portsmouth, NH
-- 💰 **Salary:** $156,000.00/yr - $281,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Director- Technology It](https://www.linkedin.com/jobs/view/4460408320/) — The MetroHealth System (Cleveland, OH)
-- 📍 **Location:** Cleveland, OH
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Cloud Infrastructure Manager](https://www.linkedin.com/jobs/view/4462486629/) — Ringside Talent
-- 📍 **Location:** Cleveland, OH
-- 💰 **Salary:** $120,000.00/yr - $140,000.00/yr
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Director of Technology](https://www.linkedin.com/jobs/view/4325772611/) — Lovejoy ISD
-- 📍 **Location:** Allen, TX
-- 🕒 **Posted:** 2026-09-02
-
-### [Sr. Manager, Software Development](https://www.linkedin.com/jobs/view/4462499200/) — FORTNA
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-02
-
-### [Vice President of Utility Infrastructure](https://www.linkedin.com/jobs/view/4461335535/) — Utility Solutions Group LLC
-- 📍 **Location:** North Carolina, United States
-- 🕒 **Posted:** 2026-09-02
-
-### [(USA) Senior Manager, Technology Operations](https://www.linkedin.com/jobs/view/4460404264/) — Walmart
-- 📍 **Location:** Bentonville, AR
-- 🕒 **Posted:** 2026-09-02
-
-### [Director of Information Technology](https://www.linkedin.com/jobs/view/4461351113/) — Fortune
+### [Director, Biomedical Services III](https://www.linkedin.com/jobs/view/4462722319/) — Intelas
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $150,000- 165,000
+- 💰 **Salary:** $130,000- $140,000/yr
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Director, Controllership & Operations](https://www.linkedin.com/jobs/view/4462722461/) — Salesforce
+- 📍 **Location:** Atlanta, GA
+- 🕒 **Posted:** 2026-09-03
+
+### [Director, Government Services & Infrastructure](https://www.linkedin.com/jobs/view/4462723127/) — Quantum Sky
+- 📍 **Location:** Reston, VA
+- 💰 **Salary:** $200,000.00/yr - $250,000.00/yr
+- 🕒 **Posted:** 2026-09-03
+
+### [VP, Corporate Strategy](https://www.linkedin.com/jobs/view/4462732526/) — ServiceNow
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $263,900 - $448,600
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4461345944/) — Rad AI
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $215,000.00/yr - $250,000.00/yr
 - 🕒 **Posted:** 2026-09-02
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4460422000/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-09-02
-
-### [Senior Director – BMS/EMPS Controls Design & Strategy](https://www.linkedin.com/jobs/view/4460405387/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $185,500 - $414,400 per year
+### [Corporate Vice President - Enterprise PKI & Cryptographic Engineering](https://www.linkedin.com/jobs/view/4462705257/) — New York Life
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $147,500-$211,000
 - 🕒 **Posted:** 2026-09-02
