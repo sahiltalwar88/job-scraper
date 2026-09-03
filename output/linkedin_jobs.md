@@ -1,151 +1,140 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-03 20:08 UTC*
+*Last updated: 2026-09-03 22:52 UTC*
 
-**32 new role(s)** since last run · 32 total in last 1h
+**30 new role(s)** since last run · 30 total in last 1h
 
-### [Director, Software Engineer](https://www.linkedin.com/jobs/view/4463114021/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $269,100 - $307,200
+### [Sentinel Director 1 - Specialty Engineering](https://www.linkedin.com/jobs/view/4463137055/) — Northrop Grumman
+- 📍 **Location:** Roy, UT
+- 💰 **Salary:** $193,800.00 - $321,000.00
 - 🕒 **Posted:** 2026-09-03
 
-### [Director, Software Engineer](https://www.linkedin.com/jobs/view/4462894970/) — Capital One
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $269,100 - $307,200
+### [Director of Engineering (Full time)](https://www.linkedin.com/jobs/view/4463132087/) — Margaritaville Hollywood Beach Resort
+- 📍 **Location:** Hollywood Beach-Quadoman, FL
 - 🕒 **Posted:** 2026-09-03
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4460749318/) — Natek Energy
-- 📍 **Location:** Albany, New York Metropolitan Area
+### [Senior Director, Application Engineering](https://www.linkedin.com/jobs/view/4463132228/) — Renesas Electronics
+- 📍 **Location:** Austin, TX
 - 🕒 **Posted:** 2026-09-03
 
-### [Director of Process Engineering](https://www.linkedin.com/jobs/view/4462891855/) — Killdeer Mountain Manufacturing, Inc.
-- 📍 **Location:** Dickinson, ND
+### [Director, Global Engineering Programs (Hybrid)](https://www.linkedin.com/jobs/view/4461902969/) — AbbVie
+- 📍 **Location:** North Chicago, IL
+- 💰 **Salary:** $182,000.00/yr - $346,000.00/yr
 - 🕒 **Posted:** 2026-09-03
 
-### [Sr. Director of Engineering](https://www.linkedin.com/jobs/view/4462889415/) — The Texas Water Company
-- 📍 **Location:** New Braunfels, TX
+### [VP AI Technology, Innovation & Delivery](https://www.linkedin.com/jobs/view/4461913564/) — Regeneron
+- 📍 **Location:** Tarrytown, NY
 - 🕒 **Posted:** 2026-09-03
 
-### [Director, Technology](https://www.linkedin.com/jobs/view/4462897850/) — Huge
+### [Senior Manager, DFM and SMT Engineering](https://www.linkedin.com/jobs/view/4461923050/) — Celestica
+- 📍 **Location:** Richardson, TX
+- 🕒 **Posted:** 2026-09-03
+
+### [Director, Platform and Intelligence Value Stream](https://www.linkedin.com/jobs/view/4460756569/) — Elite Technology
 - 📍 **Location:** United States
-- 💰 **Salary:** $163,000—$200,000 USD
+- 💰 **Salary:** $211,500- $235,000
 - 🕒 **Posted:** 2026-09-03
 
-### [Forward Deployed Data Engineering - Director](https://www.linkedin.com/jobs/view/4453653980/) — PwC
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $150,000 - $438,000
+### [Head of Data Infrastructure](https://www.linkedin.com/jobs/view/4460753550/) — Beacon Software
+- 📍 **Location:** San Francisco, CA
 - 🕒 **Posted:** 2026-09-03
 
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4463100866/) — Parallax Space
-- 📍 **Location:** Redondo Beach, CA
+### [Senior Manager, Technology Consulting](https://www.linkedin.com/jobs/view/4461900882/) — EPAM Systems
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $180,000 - $220,000
 - 🕒 **Posted:** 2026-09-03
 
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4462897908/) — Parallax Space
+### [Vice President Director, Technology - AI Orchestration](https://www.linkedin.com/jobs/view/4461905730/) — Digitas North America
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** USD $135,375.00 - USD $216,684.00/Annually
+- 🕒 **Posted:** 2026-09-03
+
+### [Director, Test Engineering](https://www.linkedin.com/jobs/view/4463124914/) — NetApp
+- 📍 **Location:** San Jose, CA
+- 🕒 **Posted:** 2026-09-03
+
+### [Director, Data Engineering (Underwriting Analytics)](https://www.linkedin.com/jobs/view/4461911899/) — Travelers
+- 📍 **Location:** Hartford, CT
+- 💰 **Salary:** $139,400.00 - $230,000.00
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Technology Manager](https://www.linkedin.com/jobs/view/4463141009/) — Bank of America
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $135,900.00/yr - $220,000.00/yr
+- 🕒 **Posted:** 2026-09-03
+
+### [Service Delivery Head (infrastructure)](https://www.linkedin.com/jobs/view/4461917780/) — Yochana
+- 📍 **Location:** Beachwood, OH
+- 🕒 **Posted:** 2026-09-03
+
+### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4463119860/) — ZoomInfo
+- 📍 **Location:** United States
+- 💰 **Salary:** $191,730—$301,290 USD
+- 🕒 **Posted:** 2026-09-03
+
+### [Sentinel Director 1 - Specialty Engineering](https://www.linkedin.com/jobs/view/4463139048/) — Northrop Grumman
+- 📍 **Location:** Huntsville, AL
+- 💰 **Salary:** $193,800.00 - $321,000.00
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Manager, Engineering (DevOps, Infrastructure, and Release Engineering)](https://www.linkedin.com/jobs/view/4460724287/) — Abacus Insights
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Data Engineering Manager](https://www.linkedin.com/jobs/view/4462478456/) — Diligente Technologies
+- 📍 **Location:** San Jose, CA
+- 🕒 **Posted:** 2026-09-03
+
+### [Head of Engineering and Maintenance 3461167](https://www.linkedin.com/jobs/view/4461915789/) — Wetalentia
+- 📍 **Location:** Pennsylvania, United States
+- 💰 **Salary:** $160,000.00/yr - $180,000.00/yr
+- 🕒 **Posted:** 2026-09-03
+
+### [Sr. Director, Engineering, Adobe Intelligence Platform](https://www.linkedin.com/jobs/view/4461921295/) — Adobe
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $276,200 - $429,350
+- 🕒 **Posted:** 2026-09-03
+
+### [(USA) Senior Manager, Technology Operations](https://www.linkedin.com/jobs/view/4460765576/) — Walmart
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $90,000.00/yr - $180,000.00/yr
+- 🕒 **Posted:** 2026-09-03
+
+### [SDS Director of Test Engineering](https://www.linkedin.com/jobs/view/4463133159/) — Northrop Grumman
+- 📍 **Location:** Roy, UT
+- 💰 **Salary:** $176,100.00 - $264,100.00
+- 🕒 **Posted:** 2026-09-03
+
+### [Director of Business Technology](https://www.linkedin.com/jobs/view/4463125792/) — T&M Associates
+- 📍 **Location:** New Jersey, United States
+- 💰 **Salary:** $160,000 - $192,000
+- 🕒 **Posted:** 2026-09-03
+
+### [Director of Product, Enterprise Platform](https://www.linkedin.com/jobs/view/4463133077/) — Axion
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-09-03
+
+### [Delivery AI Software Engineering Senior Manager](https://www.linkedin.com/jobs/view/4461930139/) — Boston Consulting Group (BCG)
+- 📍 **Location:** Casablanca, Casablanca-Settat, Morocco
+- 🕒 **Posted:** 2026-09-03
+
+### [Senior Manager, Revenue Marketing, Water Infrastructure and Forma Design](https://www.linkedin.com/jobs/view/4461911864/) — Autodesk
 - 📍 **Location:** Denver, CO
 - 🕒 **Posted:** 2026-09-03
 
-### [Director, Infrastructure Engineer](https://www.linkedin.com/jobs/view/4463106044/) — BNY
-- 📍 **Location:** Lake Mary, FL
+### [Senior Manager, Revenue Marketing, Water Infrastructure and Forma Design](https://www.linkedin.com/jobs/view/4461905971/) — Autodesk
+- 📍 **Location:** Colorado, United States
 - 🕒 **Posted:** 2026-09-03
 
-### [Head of AI Enablement - Technology, Data and Operations, Wholesale Division](https://www.linkedin.com/jobs/view/4462719589/) — Truist
-- 📍 **Location:** Charlotte, NC
+### [Senior Director, RGM Product AI Engineering](https://www.linkedin.com/jobs/view/4463134320/) — The Coca-Cola Company
+- 📍 **Location:** Atlanta, GA
 - 🕒 **Posted:** 2026-09-03
 
-### [Senior Manager, Machine Learning Engineering](https://www.linkedin.com/jobs/view/4462897491/) — Metropolis Technologies
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $200,000.00 USD to $250,000.00 USD annually
+### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4460768480/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $146,300 - $306,400 per year
 - 🕒 **Posted:** 2026-09-03
 
-### [Asst. Director of Engineering](https://www.linkedin.com/jobs/view/4460748252/) — Crescent Hotels & Resorts
-- 📍 **Location:** Orlando, FL
-- 🕒 **Posted:** 2026-09-03
-
-### [Sr. Manager, Engineering - Final Assembly & FLC AME,](https://www.linkedin.com/jobs/view/4463103757/) — Baxter International Inc.
-- 📍 **Location:** Skaneateles Falls, NY
-- 💰 **Salary:** $152,000 - $209,000
-- 🕒 **Posted:** 2026-09-03
-
-### [Director of Information Technology](https://www.linkedin.com/jobs/view/4406625140/) — Silfex, Inc. - A Division of Lam Research Corporation
-- 📍 **Location:** Springfield, OH
-- 🕒 **Posted:** 2026-09-03
-
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4462896971/) — Onchain Group
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Manager, AI Engineer (Gen AI Platform Services: Agentic AI, Guardrails, Evaluation)](https://www.linkedin.com/jobs/view/4462899955/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $229,900 - $262,400
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Manager, AI Engineer (Gen AI Platform Services: Agentic AI, Guardrails, Evaluation)](https://www.linkedin.com/jobs/view/4463100927/) — Capital One
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $229,900 - $262,400
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Manager, AI Engineer (Gen AI Platform Services: Agentic AI, Guardrails, Evaluation)](https://www.linkedin.com/jobs/view/4462890988/) — Capital One
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $229,900 - $262,400
-- 🕒 **Posted:** 2026-09-03
-
-### [Director, Presales Engineering (Req#1329)](https://www.linkedin.com/jobs/view/4434354105/) — ePlus inc.
-- 📍 **Location:** Irvine, CA
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Manager, AI Engineer (Gen AI Platform Services: Agentic AI, Guardrails, Evaluation)](https://www.linkedin.com/jobs/view/4462889962/) — Capital One
-- 📍 **Location:** Cambridge, MA
-- 💰 **Salary:** $229,900 - $262,400
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Director, Technology](https://www.linkedin.com/jobs/view/4463110048/) — Leading Educators
-- 📍 **Location:** United States
-- 💰 **Salary:** $127,487 to $172,483 per year
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Manager, AI Infrastructure and Networking](https://www.linkedin.com/jobs/view/4463103386/) — Verizon
-- 📍 **Location:** Temple Terrace, FL
-- 💰 **Salary:** $128,000.00 - $245,000.00
-- 🕒 **Posted:** 2026-09-03
-
-### [Director, Product Management, Data](https://www.linkedin.com/jobs/view/4462898628/) — Salesforce
-- 📍 **Location:** New Hampshire, United States
-- 💰 **Salary:** $197,300 - $313,700 annually
-- 🕒 **Posted:** 2026-09-03
-
-### [Director Business Development - Technology Alliances Manager](https://www.linkedin.com/jobs/view/4462896701/) — Akamai Technologies
-- 📍 **Location:** Cambridge, MA
-- 💰 **Salary:** $164,300 - $295,700/year
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Manager, AI Infrastructure and Networking](https://www.linkedin.com/jobs/view/4462886716/) — Verizon
-- 📍 **Location:** Basking Ridge, NJ
-- 💰 **Salary:** $128,000.00 - $245,000.00
-- 🕒 **Posted:** 2026-09-03
-
-### [Director, Product Management, Data](https://www.linkedin.com/jobs/view/4462884941/) — Salesforce
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $197,300 - $313,700 annually
-- 🕒 **Posted:** 2026-09-03
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4461693982/) — Accor
-- 📍 **Location:** Sepang, Selangor, Malaysia
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Engineering Manager, AI Platform](https://www.linkedin.com/jobs/view/4463115203/) — Duolingo
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $204,000—$306,000 USD
-- 🕒 **Posted:** 2026-09-03
-
-### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4461914111/) — Stealth Startup
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Engineering Manager, AI Platform](https://www.linkedin.com/jobs/view/4463109359/) — Duolingo
-- 📍 **Location:** Pittsburgh, PA
-- 💰 **Salary:** $204,000—$306,000 USD
-- 🕒 **Posted:** 2026-09-03
-
-### [Senior Director, Technology Operations](https://www.linkedin.com/jobs/view/4463110304/) — The Community Preservation Corporation
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
+### [Senior Manager, Supply Chain Engineering](https://www.linkedin.com/jobs/view/4460757825/) — Oracle
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $126,200 - $264,100 per year
 - 🕒 **Posted:** 2026-09-03
