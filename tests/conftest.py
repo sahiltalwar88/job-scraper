@@ -21,15 +21,15 @@ def fixtures_dir():
 
 @pytest.fixture
 def linkedin_search_results_html():
-    """Real LinkedIn search results HTML (5 pages, 50 cards) from California."""
-    path = FIXTURES_DIR / "linkedin_search_results_california_5pages.html"
+    """Real LinkedIn search results HTML (10 cards) from California."""
+    path = FIXTURES_DIR / "linkedin_search_results_california.html"
     return path.read_text(encoding="utf-8")
 
 
 @pytest.fixture
 def linkedin_job_posting_html():
-    """Real LinkedIn job posting detail page HTML."""
-    path = FIXTURES_DIR / "linkedin_job_posting_detail_page.html"
+    """Real LinkedIn job posting detail page HTML (trimmed to description section)."""
+    path = FIXTURES_DIR / "linkedin_job_posting_detail.html"
     return path.read_text(encoding="utf-8")
 
 
