@@ -13,6 +13,19 @@ sys.path.insert(0, str(SCRAPER_DIR))
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 
 
+@pytest.fixture(autouse=True)
+def _isolate_output_dir(tmp_path, monkeypatch):
+    """Safeguard: redirect OUTPUT_DIR to a temp dir for every test.
+
+    This prevents any test from accidentally modifying the real output/
+    directory, even if it doesn't explicitly use the tmp_output_dir fixture.
+    Tests that DO use tmp_output_dir get their own subdirectory; this just
+    ensures the default is always a temp path, never the real output/.
+    """
+    import scrape_jobs
+    monkeypatch.setattr(scrape_jobs, "OUTPUT_DIR", str(tmp_path / "output"))
+
+
 @pytest.fixture
 def fixtures_dir():
     """Path to test fixtures directory."""

@@ -6,6 +6,7 @@ representing different states (California, Texas, New York with a cap-hit).
 """
 import json
 import shutil
+import unittest.mock as mock
 
 import scrape_jobs
 
@@ -18,11 +19,17 @@ def _copy_partitions_to_output(tmp_output_dir, sample_partition_files):
 
 
 def test_merge_deduplicates_by_url(tmp_output_dir, sample_partition_files):
-    """3 partition files with overlapping URLs → correct unique count."""
+    """3 partition files with overlapping URLs → correct unique count.
+
+    Patches _EXCLUDE_COMPANY_TERMS to [] so the count reflects deduplication
+    only, not employer filtering (which is config-dependent — config.example.json
+    excludes Pfizer/Genentech that appear in the fixture).
+    """
     _copy_partitions_to_output(tmp_output_dir, sample_partition_files)
 
-    all_jobs, stats, cap_hits = scrape_jobs._linkedin_merge_backfill_files(
-        str(tmp_output_dir))
+    with mock.patch.object(scrape_jobs, "_EXCLUDE_COMPANY_TERMS", []):
+        all_jobs, stats, cap_hits = scrape_jobs._linkedin_merge_backfill_files(
+            str(tmp_output_dir))
 
     # california: 5 jobs, texas: 5 jobs (1 overlap with california),
     # new_york: 3 jobs (1 overlap with texas)
@@ -70,14 +77,20 @@ def test_merge_cap_hit_detection(tmp_output_dir, sample_partition_files):
 
 
 def test_partial_merge_no_crash(tmp_output_dir, sample_partition_files):
-    """Merge with only 1 of 3 partition files should work without crashing."""
+    """Merge with only 1 of 3 partition files should work without crashing.
+
+    Patches _EXCLUDE_COMPANY_TERMS to [] so the count reflects the partition
+    contents only (config.example.json excludes Pfizer which appears in the
+    California fixture).
+    """
     shutil.copy(
         sample_partition_files[0],
         tmp_output_dir / f"linkedin_partition_{sample_partition_files[0].name}",
     )
 
-    all_jobs, stats, cap_hits = scrape_jobs._linkedin_merge_backfill_files(
-        str(tmp_output_dir))
+    with mock.patch.object(scrape_jobs, "_EXCLUDE_COMPANY_TERMS", []):
+        all_jobs, stats, cap_hits = scrape_jobs._linkedin_merge_backfill_files(
+            str(tmp_output_dir))
 
     assert len(all_jobs) == 5  # all 5 from California partition
 
