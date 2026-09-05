@@ -1,19 +1,23 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-05 21:48 UTC*
+*Last updated: 2026-09-05 23:03 UTC*
 
-**3 new role(s)** since last run · 4 total in last 1h
+**4 new role(s)** since last run · 4 total in last 1h
 
-### [Software Engineering Director, Cloud Services](https://www.linkedin.com/jobs/view/4462650142/) — Physics World
-- 📍 **Location:** Bothell, WA
-- 💰 **Salary:** $221,925 - $290,558
+### [Director, Information Security Engineering and Architecture](https://www.linkedin.com/jobs/view/4437452134/) — Atlas Air
+- 📍 **Location:** White Plains, NY
+- 💰 **Salary:** $191,000—$258,000 USD
 - 🕒 **Posted:** 2026-09-05
 
-### [Head of Systems Engineering](https://www.linkedin.com/jobs/view/4461488569/) — Cellanome
-- 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $230,000 - $270,000/year
+### [VP, Technology Transformation Lead](https://www.linkedin.com/jobs/view/4463779678/) — DeWinter Group
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $200,000 - $250,000/year
 - 🕒 **Posted:** 2026-09-05
 
-### [Senior Software Engineering Manager, Developer Tools](https://www.linkedin.com/jobs/view/4462667123/) — Physics World
-- 📍 **Location:** Bothell, WA
-- 💰 **Salary:** $200,698 - $262,765
+### [Director, Technology Risk and Business Continuity](https://www.linkedin.com/jobs/view/4448066344/) — UNFCU
+- 📍 **Location:** Queens, NY
+- 💰 **Salary:** $150,000 - $200,000 annually
+- 🕒 **Posted:** 2026-09-05
+
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4455833808/) — Asomatik
+- 📍 **Location:** Algiers, Algiers, Algeria
 - 🕒 **Posted:** 2026-09-05
