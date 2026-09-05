@@ -1,196 +1,120 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-04 22:47 UTC*
+*Last updated: 2026-09-05 00:38 UTC*
 
-**42 new role(s)** since last run · 44 total in last 1h
+**25 new role(s)** since last run · 25 total in last 1h
 
-### [EWIS Engineering Group Head II](https://www.linkedin.com/jobs/view/4462461896/) — Gulfstream Aerospace
-- 📍 **Location:** Savannah, GA
-- 🕒 **Posted:** 2026-09-04
+### [Senior Director of Agentic Software Development](https://www.linkedin.com/jobs/view/4461417142/) — FactSet
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-05
 
-### [Director, Mission Engineering & Management](https://www.linkedin.com/jobs/view/4423335391/) — Vast
-- 📍 **Location:** Long Beach, CA
-- 💰 **Salary:** $188,600—$267,720 USD
-- 🕒 **Posted:** 2026-09-04
+### [Assistant Director of Engineering](https://www.linkedin.com/jobs/view/4463677048/) — Marriott International
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $98,000-$134,000 Annually
+- 🕒 **Posted:** 2026-09-05
 
-### [Director – GPU Stack Unified Build & Release Platform](https://www.linkedin.com/jobs/view/4461403420/) — AMD
+### [Head of Backend Development, Payments & Marketplace Infrastructure](https://www.linkedin.com/jobs/view/4429006566/) — SALERRU
+- 📍 **Location:** Brooklyn Center, MN
+- 🕒 **Posted:** 2026-09-05
+
+### [Sr. Manager, Security Engineering, Corporate Services Security (CPSS)](https://www.linkedin.com/jobs/view/4463670607/) — Amazon
+- 📍 **Location:** Arlington, VA
+- 🕒 **Posted:** 2026-09-05
+
+### [Senior Manager - Software Development Engineering](https://www.linkedin.com/jobs/view/4463676182/) — CVS Health
+- 📍 **Location:** Trenton, NJ
+- 💰 **Salary:** $106,605.00 - $260,590.00
+- 🕒 **Posted:** 2026-09-05
+
+### [Senior Manager, Battery Design Engineering](https://www.linkedin.com/jobs/view/4462346286/) — Brelle
+- 📍 **Location:** Los Alamitos, CA
+- 💰 **Salary:** $170,000 - $200,000
+- 🕒 **Posted:** 2026-09-05
+
+### [Director, Product Development Engineering - Optics](https://www.linkedin.com/jobs/view/4462327906/) — Crosslinked
+- 📍 **Location:** Rochester, NY
+- 💰 **Salary:** $204k – $306k
+- 🕒 **Posted:** 2026-09-05
+
+### [Head of Software](https://www.linkedin.com/jobs/view/4461331202/) — TetraMem - Accelerate The World
 - 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $246,400.00/yr - $369,600.00/yr
-- 🕒 **Posted:** 2026-09-04
+- 💰 **Salary:** $200,000 - $350,000
+- 🕒 **Posted:** 2026-09-05
 
-### [Director / Fellow – Developer Productivity & Platform, ROCm](https://www.linkedin.com/jobs/view/4461197430/) — AMD
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $246,400.00/yr - $369,600.00/yr
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Director of Software Engineering](https://www.linkedin.com/jobs/view/4462318855/) — Insight Global
-- 📍 **Location:** Wauconda, IL
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Engineering](https://www.linkedin.com/jobs/view/4463628295/) — Sunday
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Manager, Systems Engineering](https://www.linkedin.com/jobs/view/4462325073/) — Pivotal
-- 📍 **Location:** Palo Alto, CA
-- 🕒 **Posted:** 2026-09-04
-
-### [VP Software Engineering (Digital Bank)](https://www.linkedin.com/jobs/view/4461411316/) — Credit One Bank
-- 📍 **Location:** Las Vegas, NV
-- 🕒 **Posted:** 2026-09-04
-
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4462337030/) — DISH TV
-- 📍 **Location:** Englewood, CO
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Global Engineering](https://www.linkedin.com/jobs/view/4463646582/) — AMETEK
-- 📍 **Location:** Minneapolis, MN
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Manager, Development Engineering](https://www.linkedin.com/jobs/view/4462335050/) — Rolls-Royce
-- 📍 **Location:** Aiken, SC
-- 💰 **Salary:** $126,694 - $205,878
-- 🕒 **Posted:** 2026-09-04
-
-### [Technical Director Technology - AI Engineering, Technology and Digital, FT, M-F, 8:30A - 5P](https://www.linkedin.com/jobs/view/4463633794/) — Baptist Health
-- 📍 **Location:** Florida, United States
-- 💰 **Salary:** $240479.71 - $312623.62
-- 🕒 **Posted:** 2026-09-04
-
-### [Director of Development Engineering](https://www.linkedin.com/jobs/view/4460447290/) — Oklo Inc
+### [Director, Global Workplace Design](https://www.linkedin.com/jobs/view/4462322640/) — NVIDIA
 - 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $225,000-$275,000
+- 🕒 **Posted:** 2026-09-05
+
+### [Lead Director - AI Governance Engineering](https://www.linkedin.com/jobs/view/4463620222/) — CVS Health
+- 📍 **Location:** Richmond, VA
+- 💰 **Salary:** $144,200.00 - $288,400.00
+- 🕒 **Posted:** 2026-09-05
+
+### [Director of Controls Engineering](https://www.linkedin.com/jobs/view/4462343107/) — Oishii
+- 📍 **Location:** Phillipsburg, NJ
+- 💰 **Salary:** $165,000.00/yr - $175,000.00/yr
 - 🕒 **Posted:** 2026-09-04
 
-### [Marriott Austin North - Director Engineering](https://www.linkedin.com/jobs/view/4461199551/) — Aimbridge Hospitality
-- 📍 **Location:** Round Rock, TX
+### [Senior Manager, Facility Engineering](https://www.linkedin.com/jobs/view/4461407889/) — Corning Incorporated
+- 📍 **Location:** Corning, NY
+- 💰 **Salary:** $169,173.00 - $232,613.00
 - 🕒 **Posted:** 2026-09-04
 
-### [Director of Engineering - Design](https://www.linkedin.com/jobs/view/4447430355/) — SaniSure
-- 📍 **Location:** Camarillo, CA
-- 💰 **Salary:** $190,000.00/yr - $200,000.00/yr
+### [Director of Gas Storage & Compression Engineering](https://www.linkedin.com/jobs/view/4452711435/) — Optimize Search Group
+- 📍 **Location:** Addison, TX
 - 🕒 **Posted:** 2026-09-04
 
-### [Senior Manager, Network Architecture & Engineering](https://www.linkedin.com/jobs/view/4463629945/) — Modine Manufacturing Company
-- 📍 **Location:** Racine, WI
-- 💰 **Salary:** $129,600 - $181,800
-- 🕒 **Posted:** 2026-09-04
-
-### [Director Human Factors & Sustaining Engineering](https://www.linkedin.com/jobs/view/4462327170/) — Regeneron
-- 📍 **Location:** East Greenbush, NY
-- 💰 **Salary:** $147,800.00 - $286,900.00
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Manager, Digital Workplace & Infrastructure](https://www.linkedin.com/jobs/view/4463643680/) — Modine Manufacturing Company
-- 📍 **Location:** Racine, WI
-- 💰 **Salary:** $129,600 - $181,800
-- 🕒 **Posted:** 2026-09-04
-
-### [Director Clinical Systems Engineering](https://www.linkedin.com/jobs/view/4462339000/) — Crossroads
-- 📍 **Location:** Greenville, SC
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Scale-up & Engineering](https://www.linkedin.com/jobs/view/4444015864/) — Premier Nutrition: The Good Energy People
-- 📍 **Location:** Emeryville, CA
-- 💰 **Salary:** $200k to $220k
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Manager, Infrastructure & Operations - Americas](https://www.linkedin.com/jobs/view/4463635796/) — Modine Manufacturing Company
-- 📍 **Location:** Racine, WI
-- 💰 **Salary:** $129,600 - $181,8000
-- 🕒 **Posted:** 2026-09-04
-
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4462329073/) — DISH TV
-- 📍 **Location:** Englewood, CO
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Business Unit Manager - Hyperscale/Data Center Infrastructure](https://www.linkedin.com/jobs/view/4462303945/) — Jabil
-- 📍 **Location:** Grantsville, UT
-- 🕒 **Posted:** 2026-09-04
-
-### [Head of US Software Engineering Practice (US)](https://www.linkedin.com/jobs/view/4461409529/) — TD
-- 📍 **Location:** Mount Laurel, NJ
-- 💰 **Salary:** $250,000 - $275,000 USD
-- 🕒 **Posted:** 2026-09-04
-
-### [Engineering Vice President, Business Group Chief Engineer](https://www.linkedin.com/jobs/view/4461194721/) — AV
-- 📍 **Location:** Simi Valley, CA
-- 💰 **Salary:** $224,500 - $359,000
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Software Engineer (Circle Engineer)](https://www.linkedin.com/jobs/view/4454913277/) — Travelers
-- 📍 **Location:** Hartford, CT
-- 💰 **Salary:** $139,400.00 - $230,000.00
-- 🕒 **Posted:** 2026-09-04
-
-### [Applications Development - Customer Management Engineering, Director](https://www.linkedin.com/jobs/view/4463666022/) — Citi
-- 📍 **Location:** Irving, TX
-- 💰 **Salary:** $170,000.00 - $300,000.00
-- 🕒 **Posted:** 2026-09-04
-
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4463655339/) — Foundersmax
+### [Director, Delivery (Engineering)](https://www.linkedin.com/jobs/view/4463650573/) — DEPT®
 - 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4461198867/) — Chalk
-- 📍 **Location:** New York City Metropolitan Area
-- 💰 **Salary:** $300,000.00/yr - $350,000.00/yr
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Digital Engineering](https://www.linkedin.com/jobs/view/4462327185/) — Thresh Consulting
-- 📍 **Location:** New York City Metropolitan Area
-- 💰 **Salary:** $250,000.00/yr - $295,000.00/yr
-- 🕒 **Posted:** 2026-09-04
-
-### [Director Software Engineer](https://www.linkedin.com/jobs/view/4463655256/) — Travelers
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $139,400.00 - $230,000.00
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Manager of Software Engineering](https://www.linkedin.com/jobs/view/4462322335/) — Come Near
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-04
-
-### [Senior Marketing Engineering & Operations Manager](https://www.linkedin.com/jobs/view/4460833287/) — Allego
-- 📍 **Location:** Waltham, MA
-- 💰 **Salary:** $135,000 - $160,000
-- 🕒 **Posted:** 2026-09-04
-
-### [Assistant Director of Engineering](https://www.linkedin.com/jobs/view/4463651277/) — Omni Hotels & Resorts
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-04
-
-### [Associate VP, CenterWell Primary Care Technology](https://www.linkedin.com/jobs/view/4461412481/) — Humana
-- 📍 **Location:** Louisville, KY
-- 💰 **Salary:** $172,200.00/yr - $236,900.00/yr
-- 🕒 **Posted:** 2026-09-04
-
-### [Associate VP, CenterWell Primary Care Technology](https://www.linkedin.com/jobs/view/4461403824/) — Humana
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $172,200.00/yr - $236,900.00/yr
-- 🕒 **Posted:** 2026-09-04
-
-### [VP, Technology Operations](https://www.linkedin.com/jobs/view/4461198799/) — Expion Health
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-04
-
-### [Director of Business Systems & Technology | Quote to Cash](https://www.linkedin.com/jobs/view/4463659233/) — Epicor
-- 📍 **Location:** Lehi, UT
-- 🕒 **Posted:** 2026-09-04
-
-### [Director of Business Systems & Technology | Quote to Cash](https://www.linkedin.com/jobs/view/4463664166/) — Epicor
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4461409648/) — Chalk
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $300,000.00/yr - $350,000.00/yr
-- 🕒 **Posted:** 2026-09-04
-
-### [Director, Delivery (Engineering)](https://www.linkedin.com/jobs/view/4463648748/) — DEPT®
-- 📍 **Location:** Illinois, United States
 - 💰 **Salary:** $138.40—$160,000 USD
 - 🕒 **Posted:** 2026-09-04
 
-### [Senior Manager, Software Development - Clients & Accounts](https://www.linkedin.com/jobs/view/4462339117/) — Wealthsimple
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4461419062/) — Sydecar
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $200K - $230K
+- 🕒 **Posted:** 2026-09-04
+
+### [Senior Manager, Technology Enablement](https://www.linkedin.com/jobs/view/4451710403/) — Morgan, Lewis & Bockius LLP
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $136,800.00 - $218,850.00
+- 🕒 **Posted:** 2026-09-04
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4461412653/) — Sydecar
 - 📍 **Location:** New York, NY
+- 💰 **Salary:** $200K - $230K
+- 🕒 **Posted:** 2026-09-04
+
+### [Director, Security Engineering | Remote, USA](https://www.linkedin.com/jobs/view/4463672128/) — Optiv
+- 📍 **Location:** Overland Park, KS
+- 🕒 **Posted:** 2026-09-04
+
+### [Director, Operational Technology (OT) Engineering](https://www.linkedin.com/jobs/view/4462330372/) — NorthMark Compute & Cloud
+- 📍 **Location:** Spartanburg, SC
+- 🕒 **Posted:** 2026-09-04
+
+### [Director, Delivery (Engineering)](https://www.linkedin.com/jobs/view/4463659316/) — DEPT®
+- 📍 **Location:** United States
+- 💰 **Salary:** $138.40—$160,000 USD
+- 🕒 **Posted:** 2026-09-04
+
+### [Senior Director, Power Systems Engineering – OCI Data Center Infrastructure](https://www.linkedin.com/jobs/view/4461412571/) — Oracle
+- 📍 **Location:** United States
+- 💰 **Salary:** $182,000 - $414,400 per year
+- 🕒 **Posted:** 2026-09-04
+
+### [Preconstruction Director, Advanced Technology](https://www.linkedin.com/jobs/view/4463664343/) — Graham
+- 📍 **Location:** Dallas, TX
+- 🕒 **Posted:** 2026-09-04
+
+### [Director, Digital & Technology Services](https://www.linkedin.com/jobs/view/4463648956/) — Alvarez & Marsal
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $150,000 - $210,000 annually
+- 🕒 **Posted:** 2026-09-04
+
+### [Senior Director / VP, Solutions Engineering (REMOTE - EST)](https://www.linkedin.com/jobs/view/4462324255/) — LEVELOCITI
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-04
+
+### [Director, Delivery (Engineering)](https://www.linkedin.com/jobs/view/4463650574/) — DEPT®
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $138.40—$160,000 USD
 - 🕒 **Posted:** 2026-09-04
