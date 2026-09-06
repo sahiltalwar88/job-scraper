@@ -1,36 +1,44 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-06 05:21 UTC*
+*Last updated: 2026-09-06 06:09 UTC*
 
-**7 new role(s)** since last run · 7 total in last 1h
+**8 new role(s)** since last run · 14 total in last 1h
 
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4463793669/) — EngRadar
-- 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $180,000 - $254,000
+### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461808494/) — CoreWeave
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $157,000 to $210,000
 - 🕒 **Posted:** 2026-09-06
 
-### [SDS Director of Test Engineering](https://www.linkedin.com/jobs/view/4463133159/) — Northrop Grumman
-- 📍 **Location:** Roy, UT
-- 💰 **Salary:** $176,100.00 - $264,100.00
+### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461827409/) — CoreWeave
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $157,000 to $210,000
 - 🕒 **Posted:** 2026-09-06
 
-### [Sr. Director, Software Engineering, Digital for Research & CMC Development](https://www.linkedin.com/jobs/view/4464006533/) — BioSpace
-- 📍 **Location:** Cambridge, MA
-- 💰 **Salary:** $210,900.00 - $379,200.00
-- 🕒 **Posted:** 2026-09-06
-
-### [VP AI Technology, Innovation & Delivery](https://www.linkedin.com/jobs/view/4464008534/) — BioSpace
-- 📍 **Location:** Tarrytown, NY
-- 🕒 **Posted:** 2026-09-06
-
-### [Director of IT Systems - ServiceNow Platform](https://www.linkedin.com/jobs/view/4447168423/) — NWN
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-06
-
-### [Sr. Engineering Manager, Inference](https://www.linkedin.com/jobs/view/4461817400/) — CoreWeave
+### [Senior Manager, Technical Support Engineering - Cloud](https://www.linkedin.com/jobs/view/4461824427/) — CoreWeave
 - 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $188,000 to $303,000
+- 💰 **Salary:** $198,000 to $264,000
 - 🕒 **Posted:** 2026-09-06
 
-### [AI Digital Product Sr Manager  Agentic Platform (REMOTE)](https://www.linkedin.com/jobs/view/4464000577/) — BioSpace
-- 📍 **Location:** Washington, DC
+### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461817442/) — CoreWeave
+- 📍 **Location:** Livingston, NJ
+- 💰 **Salary:** $157,000 to $210,000
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461821435/) — CoreWeave
+- 📍 **Location:** Bellevue, WA
+- 💰 **Salary:** $157,000 to $210,000
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Manager, Technical Support Engineering - Cloud](https://www.linkedin.com/jobs/view/4461827401/) — CoreWeave
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $198,000 to $264,000
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461813472/) — CoreWeave
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $157,000 to $210,000
+- 🕒 **Posted:** 2026-09-06
+
+### [VP Digital & Technology Solutions Partner - Finance, Accounting & Oracle ERP](https://www.linkedin.com/jobs/view/4463791696/) — BioSpace
+- 📍 **Location:** Sleepy Hollow, NY
+- 💰 **Salary:** $300,000.00 - $500,000.00
 - 🕒 **Posted:** 2026-09-06
