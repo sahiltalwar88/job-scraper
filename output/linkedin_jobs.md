@@ -1,44 +1,74 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-06 06:09 UTC*
+*Last updated: 2026-09-06 15:43 UTC*
 
-**8 new role(s)** since last run · 14 total in last 1h
+**15 new role(s)** since last run · 15 total in last 1h
 
-### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461808494/) — CoreWeave
-- 📍 **Location:** Sunnyvale, CA
-- 💰 **Salary:** $157,000 to $210,000
+### [Director of Engineering – Studio Systems](https://www.linkedin.com/jobs/view/4386442391/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $399,420—$457,970 USD
 - 🕒 **Posted:** 2026-09-06
 
-### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461827409/) — CoreWeave
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $157,000 to $210,000
-- 🕒 **Posted:** 2026-09-06
-
-### [Senior Manager, Technical Support Engineering - Cloud](https://www.linkedin.com/jobs/view/4461824427/) — CoreWeave
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $198,000 to $264,000
-- 🕒 **Posted:** 2026-09-06
-
-### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461817442/) — CoreWeave
-- 📍 **Location:** Livingston, NJ
-- 💰 **Salary:** $157,000 to $210,000
-- 🕒 **Posted:** 2026-09-06
-
-### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461821435/) — CoreWeave
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $157,000 to $210,000
-- 🕒 **Posted:** 2026-09-06
-
-### [Senior Manager, Technical Support Engineering - Cloud](https://www.linkedin.com/jobs/view/4461827401/) — CoreWeave
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $198,000 to $264,000
-- 🕒 **Posted:** 2026-09-06
-
-### [Senior Technology Design Manager - Data Hall Fit Out](https://www.linkedin.com/jobs/view/4461813472/) — CoreWeave
+### [Director, Platform Engineering](https://www.linkedin.com/jobs/view/4427656248/) — InvestCloud, Inc.
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $157,000 to $210,000
+- 💰 **Salary:** $200,000 - $230,000
 - 🕒 **Posted:** 2026-09-06
 
-### [VP Digital & Technology Solutions Partner - Finance, Accounting & Oracle ERP](https://www.linkedin.com/jobs/view/4463791696/) — BioSpace
-- 📍 **Location:** Sleepy Hollow, NY
-- 💰 **Salary:** $300,000.00 - $500,000.00
+### [Director, Scale-up & Engineering](https://www.linkedin.com/jobs/view/4444015864/) — Premier Nutrition: The Good Energy People
+- 📍 **Location:** Emeryville, CA
+- 💰 **Salary:** $200k to $220k
+- 🕒 **Posted:** 2026-09-06
+
+### [Vice President (Identity) , Engineering](https://www.linkedin.com/jobs/view/4416303727/) — Zeta Global
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $400,000 - $500,000.00
+- 🕒 **Posted:** 2026-09-06
+
+### [VP, Functional Design Engineering](https://www.linkedin.com/jobs/view/4433377517/) — LPL Financial
+- 📍 **Location:** Fort Mill, SC
+- 💰 **Salary:** $149,350.00 - $248,848.00
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Engineering Manager, Portfolio Accounting](https://www.linkedin.com/jobs/view/4406713673/) — Ridgeline
+- 📍 **Location:** Reno, NV
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4427231298/) — Mars
+- 📍 **Location:** Franklin, TN
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Vice President, Technology Strategist](https://www.linkedin.com/jobs/view/4434901688/) — BNY
+- 📍 **Location:** Pittsburgh, PA
+- 🕒 **Posted:** 2026-09-06
+
+### [Vice President, AI / Machine Learning Data Engineering](https://www.linkedin.com/jobs/view/4417716811/) — BNY
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Manager Technology, Strategy & Portfolio](https://www.linkedin.com/jobs/view/4464017897/) — Walgreens
+- 📍 **Location:** Deerfield, IL
+- 💰 **Salary:** $125,000.00/yr - $240,625.00/yr
+- 🕒 **Posted:** 2026-09-06
+
+### [Performance Engineering - Sr. QA Manager](https://www.linkedin.com/jobs/view/4445346417/) — McKesson
+- 📍 **Location:** Maryland, United States
+- 💰 **Salary:** $121,500 - $202,500
+- 🕒 **Posted:** 2026-09-06
+
+### [GPS - Azure Senior Platform Engineer - Assistant Director](https://www.linkedin.com/jobs/view/4416754416/) — EY
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $111,100 to $207,800
+- 🕒 **Posted:** 2026-09-06
+
+### [GPS - Azure Senior Platform Engineer - Assistant Director](https://www.linkedin.com/jobs/view/4416745412/) — EY
+- 📍 **Location:** Orlando, FL
+- 💰 **Salary:** $111,100 to $207,800
+- 🕒 **Posted:** 2026-09-06
+
+### [Technology Consulting - SAP Technical Consultant, Senior Manager (Kuala Lumpur)](https://www.linkedin.com/jobs/view/4385040523/) — EY
+- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+- 🕒 **Posted:** 2026-09-06
+
+### [Director of Optimization Engineering](https://www.linkedin.com/jobs/view/4441810933/) — Adapture Renewables, Inc.
+- 📍 **Location:** Oakland, CA
+- 💰 **Salary:** $200,000 - $245,000
 - 🕒 **Posted:** 2026-09-06
