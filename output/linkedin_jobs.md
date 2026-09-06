@@ -1,74 +1,81 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-06 15:43 UTC*
+*Last updated: 2026-09-06 18:33 UTC*
 
-**15 new role(s)** since last run · 15 total in last 1h
+**17 new role(s)** since last run · 17 total in last 1h
 
-### [Director of Engineering – Studio Systems](https://www.linkedin.com/jobs/view/4386442391/) — Roblox
-- 📍 **Location:** San Mateo, CA
-- 💰 **Salary:** $399,420—$457,970 USD
+### [Director, Software Engineering - Shopping (Remote-Eligible)](https://www.linkedin.com/jobs/view/4428345956/) — Capital One
+- 📍 **Location:** McLean, VA
+- 💰 **Salary:** $244,700 - $279,200
 - 🕒 **Posted:** 2026-09-06
 
-### [Director, Platform Engineering](https://www.linkedin.com/jobs/view/4427656248/) — InvestCloud, Inc.
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $200,000 - $230,000
+### [Director Engineering, Internal IT](https://www.linkedin.com/jobs/view/4436407425/) — Etsy
+- 📍 **Location:** Brooklyn, NY
 - 🕒 **Posted:** 2026-09-06
 
-### [Director, Scale-up & Engineering](https://www.linkedin.com/jobs/view/4444015864/) — Premier Nutrition: The Good Energy People
-- 📍 **Location:** Emeryville, CA
-- 💰 **Salary:** $200k to $220k
+### [Data Engineering Director](https://www.linkedin.com/jobs/view/4461840555/) — SoTalent
+- 📍 **Location:** Shelton, CT
 - 🕒 **Posted:** 2026-09-06
 
-### [Vice President (Identity) , Engineering](https://www.linkedin.com/jobs/view/4416303727/) — Zeta Global
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $400,000 - $500,000.00
+### [Director, HVAC and Hotel Equipment](https://www.linkedin.com/jobs/view/4464048041/) — Carnival Cruise Line
+- 📍 **Location:** Miami, FL
 - 🕒 **Posted:** 2026-09-06
 
-### [VP, Functional Design Engineering](https://www.linkedin.com/jobs/view/4433377517/) — LPL Financial
-- 📍 **Location:** Fort Mill, SC
+### [VP, Functional Design Engineering](https://www.linkedin.com/jobs/view/4433364890/) — LPL Financial
+- 📍 **Location:** Austin, TX
 - 💰 **Salary:** $149,350.00 - $248,848.00
 - 🕒 **Posted:** 2026-09-06
 
-### [Senior Engineering Manager, Portfolio Accounting](https://www.linkedin.com/jobs/view/4406713673/) — Ridgeline
-- 📍 **Location:** Reno, NV
+### [VP of Engineering](https://www.linkedin.com/jobs/view/4464059041/) — Fuse Energy
+- 📍 **Location:** San Francisco, CA
 - 🕒 **Posted:** 2026-09-06
 
-### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4427231298/) — Mars
-- 📍 **Location:** Franklin, TN
-- 🕒 **Posted:** 2026-09-06
-
-### [Senior Vice President, Technology Strategist](https://www.linkedin.com/jobs/view/4434901688/) — BNY
-- 📍 **Location:** Pittsburgh, PA
-- 🕒 **Posted:** 2026-09-06
-
-### [Vice President, AI / Machine Learning Data Engineering](https://www.linkedin.com/jobs/view/4417716811/) — BNY
+### [Senior Director, Index Research & Development](https://www.linkedin.com/jobs/view/4361557078/) — ICE
 - 📍 **Location:** New York, NY
 - 🕒 **Posted:** 2026-09-06
 
-### [Senior Manager Technology, Strategy & Portfolio](https://www.linkedin.com/jobs/view/4464017897/) — Walgreens
+### [Senior Engineering Manager, Mapping](https://www.linkedin.com/jobs/view/4445270290/) — Lyft
+- 📍 **Location:** San Francisco County, CA
+- 💰 **Salary:** $208,000 - $260,000,
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Manager, Software Engineering, Full Stack (Global Payment Network)](https://www.linkedin.com/jobs/view/4436736521/) — Capital One
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $209,000 - $238,500
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Lead Software Engineer Digital Solutions Vice President](https://www.linkedin.com/jobs/view/4407084057/) — Citi
+- 📍 **Location:** Jacksonville, FL
+- 💰 **Salary:** $125,600.00 - $188,400.00
+- 🕒 **Posted:** 2026-09-06
+
+### [Director Reliability, Automation & Performance Engineering](https://www.linkedin.com/jobs/view/4446432236/) — Catalyst Brands LLC
+- 📍 **Location:** Dallas, TX
+- 💰 **Salary:** USD $135,150.00 - USD $225,250.00 /Yr
+- 🕒 **Posted:** 2026-09-06
+
+### [Senior Manager, Software Engineering, Full Stack (Global Payment Network)](https://www.linkedin.com/jobs/view/4436733664/) — Capital One
 - 📍 **Location:** Deerfield, IL
-- 💰 **Salary:** $125,000.00/yr - $240,625.00/yr
+- 💰 **Salary:** $209,000 - $238,500
 - 🕒 **Posted:** 2026-09-06
 
-### [Performance Engineering - Sr. QA Manager](https://www.linkedin.com/jobs/view/4445346417/) — McKesson
-- 📍 **Location:** Maryland, United States
-- 💰 **Salary:** $121,500 - $202,500
+### [Sr Software Development Manager- Remote](https://www.linkedin.com/jobs/view/4445250644/) — BeyondTrust
+- 📍 **Location:** United States
 - 🕒 **Posted:** 2026-09-06
 
-### [GPS - Azure Senior Platform Engineer - Assistant Director](https://www.linkedin.com/jobs/view/4416754416/) — EY
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $111,100 to $207,800
+### [Managing Director - Technology Product Management](https://www.linkedin.com/jobs/view/4464045043/) — CohnReznick
+- 📍 **Location:** Dallas, TX
 - 🕒 **Posted:** 2026-09-06
 
-### [GPS - Azure Senior Platform Engineer - Assistant Director](https://www.linkedin.com/jobs/view/4416745412/) — EY
-- 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $111,100 to $207,800
+### [Senior Director, Strategic Operational Technology](https://www.linkedin.com/jobs/view/4407057379/) — Lonza
+- 📍 **Location:** Walkersville, MD
 - 🕒 **Posted:** 2026-09-06
 
-### [Technology Consulting - SAP Technical Consultant, Senior Manager (Kuala Lumpur)](https://www.linkedin.com/jobs/view/4385040523/) — EY
-- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+### [Senior Manager, Mobile Engineering, Android (Enterprise Platforms Technology)](https://www.linkedin.com/jobs/view/4455194473/) — Capital One
+- 📍 **Location:** McLean, VA
+- 💰 **Salary:** $229,900 - $262,400
 - 🕒 **Posted:** 2026-09-06
 
-### [Director of Optimization Engineering](https://www.linkedin.com/jobs/view/4441810933/) — Adapture Renewables, Inc.
-- 📍 **Location:** Oakland, CA
-- 💰 **Salary:** $200,000 - $245,000
+### [Director, Information Security Office Consultant](https://www.linkedin.com/jobs/view/4436743143/) — Capital One
+- 📍 **Location:** Richmond, VA
+- 💰 **Salary:** $269,100 - $307,200
 - 🕒 **Posted:** 2026-09-06
