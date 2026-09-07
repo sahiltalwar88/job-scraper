@@ -1,13 +1,25 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-07 01:13 UTC*
+*Last updated: 2026-09-07 05:22 UTC*
 
-**2 new role(s)** since last run · 9 total in last 1h
+**5 new role(s)** since last run · 5 total in last 1h
 
-### [Senior Vice President of Technology](https://www.linkedin.com/jobs/view/4464077363/) — Reale Mutua Assicurazioni Chieri
-- 📍 **Location:** United States
+### [Director of Engineering, EV/BESS](https://www.linkedin.com/jobs/view/4462902666/) — GigFinder.ai
+- 📍 **Location:** Indiana, United States
 - 🕒 **Posted:** 2026-09-07
 
-### [Vice President, Technology Operations](https://www.linkedin.com/jobs/view/4464081443/) — Swooped
-- 📍 **Location:** United States
-- 💰 **Salary:** $282,000—$322,000 USD
+### [Director Human Factors & Sustaining Engineering](https://www.linkedin.com/jobs/view/4464067951/) — BioSpace
+- 📍 **Location:** East Greenbush, NY
+- 💰 **Salary:** $147,800.00 - $286,900.00
+- 🕒 **Posted:** 2026-09-07
+
+### [Senior Director, Power Systems Engineering - OCI Data Center Infrastructure](https://www.linkedin.com/jobs/view/4462925086/) — GigFinder.ai
+- 📍 **Location:** Indiana, United States
+- 🕒 **Posted:** 2026-09-07
+
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4461861817/) — Stealth Startup
+- 📍 **Location:** New York, United States
+- 🕒 **Posted:** 2026-09-07
+
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4461874768/) — Stealth Startup
+- 📍 **Location:** New York, United States
 - 🕒 **Posted:** 2026-09-07
