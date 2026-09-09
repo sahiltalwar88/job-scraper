@@ -1,133 +1,174 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-09 20:01 UTC*
+*Last updated: 2026-09-09 22:52 UTC*
 
-**29 new role(s)** since last run · 29 total in last 1h
+**37 new role(s)** since last run · 37 total in last 1h
 
-### [Director, Software Engineering - Risk Tech](https://www.linkedin.com/jobs/view/4446588664/) — Capital One
-- 📍 **Location:** McLean, VA
-- 💰 **Salary:** $269,100 - $307,200
+### [Director of Engineering - KENTUCKY JN -092026-180908](https://www.linkedin.com/jobs/view/4464128653/) — Goodwin Recruiting
+- 📍 **Location:** Louisville, KY
+- 💰 **Salary:** $140,000 - $160,000,
 - 🕒 **Posted:** 2026-09-09
 
-### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4465317147/) — Trova
-- 📍 **Location:** Florida, United States
-- 💰 **Salary:** $190,000.00/yr - $210,000.00/yr
+### [Director, Engineering - Transmission Line](https://www.linkedin.com/jobs/view/4465338568/) — Quanta Infrastructure Solutions Group
+- 📍 **Location:** Scottsdale, AZ
 - 🕒 **Posted:** 2026-09-09
 
-### [Senior Director of Engineering](https://www.linkedin.com/jobs/view/4464652909/) — Storm4
-- 📍 **Location:** Cleveland, OH
-- 💰 **Salary:** $250,000.00/yr - $315,000.00/yr
+### [Director, Engineering - Transmission Line](https://www.linkedin.com/jobs/view/4465339553/) — Quanta Infrastructure Solutions Group
+- 📍 **Location:** Milwaukee County, WI
 - 🕒 **Posted:** 2026-09-09
 
-### [Clinical Engineering Enterprise Director](https://www.linkedin.com/jobs/view/4464989266/) — Intelas
+### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4465336094/) — Cardone Ventures
+- 📍 **Location:** Scottsdale, AZ
+- 💰 **Salary:** $200,000.00/yr - $275,000.00/yr
+- 🕒 **Posted:** 2026-09-09
+
+### [Director of Network Engineering](https://www.linkedin.com/jobs/view/4465332617/) — PlanIT Group, LLC
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-09
+
+### [Clinical Engineering Enterprise Director](https://www.linkedin.com/jobs/view/4464145024/) — Intelas
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $165,000- $190,000/yr
+- 💰 **Salary:** $165,000.00/yr - $190,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Director, Systems Engineering](https://www.linkedin.com/jobs/view/4454797903/) — Worcester Polytechnic Institute
-- 📍 **Location:** Worcester, MA
-- 💰 **Salary:** $109,000 – $135,000 per year
+### [Director, Medical Insights Platform Lead](https://www.linkedin.com/jobs/view/4465332054/) — Pfizer
+- 📍 **Location:** Cambridge, MA
+- 💰 **Salary:** $176,600.00 to $294,300.00
 - 🕒 **Posted:** 2026-09-09
 
-### [Director of Physical & Digital Infrastructure](https://www.linkedin.com/jobs/view/4465314020/) — La Rabida Children's Hospital
+### [Global Engineering Process Lead, Sr. Manager](https://www.linkedin.com/jobs/view/4465339318/) — Vertiv
+- 📍 **Location:** Westerville, OH
+- 🕒 **Posted:** 2026-09-09
+
+### [Sr FPGA Engineering Manager (Onsite)](https://www.linkedin.com/jobs/view/4465332345/) — Collins Aerospace
+- 📍 **Location:** El Segundo, CA
+- 🕒 **Posted:** 2026-09-09
+
+### [Full Stack Java Engineering Manager,  Vice President](https://www.linkedin.com/jobs/view/4464142111/) — Citi
+- 📍 **Location:** Tampa, FL
+- 💰 **Salary:** $125,600.00 - $188,400.00
+- 🕒 **Posted:** 2026-09-09
+
+### [Director of Physical & Digital Infrastructure](https://www.linkedin.com/jobs/view/4465333512/) — La Rabida Children's Hospital
 - 📍 **Location:** Chicago, IL
 - 💰 **Salary:** $160,000.00/yr - $214,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Vice President of Technology (Working Alongside the CTO)](https://www.linkedin.com/jobs/view/4465326160/) — Revilo Technologies
-- 📍 **Location:** United States
+### [Director of Corporate Infrastructure](https://www.linkedin.com/jobs/view/4465329756/) — SoFi
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $192,000.00/yr - $330,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Transportation Engineering & Operations Bureau Chief](https://www.linkedin.com/jobs/view/4444902338/) — Arlington County Government
+### [Director - IT Systems Engineering Delivery](https://www.linkedin.com/jobs/view/4461378504/) — HonorHealth
+- 📍 **Location:** Phoenix, AZ
+- 🕒 **Posted:** 2026-09-09
+
+### [Managing Director, Global KYC Technology Head](https://www.linkedin.com/jobs/view/4464138192/) — Citi
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $250,000.00 - $500,000.00
+- 🕒 **Posted:** 2026-09-09
+
+### [Chief Product & Technology Officer](https://www.linkedin.com/jobs/view/4463071273/) — Rise Technical
+- 📍 **Location:** United States
+- 💰 **Salary:** $250,000.00/yr - $450,000.00/yr
+- 🕒 **Posted:** 2026-09-09
+
+### [IT Senior Manager - Infrastructure Group (This is an In-Person Position)](https://www.linkedin.com/jobs/view/4459096587/) — Bernalillo County
+- 📍 **Location:** Albuquerque, NM
+- 💰 **Salary:** $92,456.00 - $143,333.00
+- 🕒 **Posted:** 2026-09-09
+
+### [Sr. Engineering Manager, SDET](https://www.linkedin.com/jobs/view/4464140244/) — Cribl
+- 📍 **Location:** United States
+- 💰 **Salary:** $225,000—$270,000 USD
+- 🕒 **Posted:** 2026-09-09
+
+### [Senior Manager Data Engineering](https://www.linkedin.com/jobs/view/4463083202/) — Publicis Sapient
 - 📍 **Location:** Arlington, VA
+- 💰 **Salary:** $160,000-$262,000
 - 🕒 **Posted:** 2026-09-09
 
-### [Data Center Chief Engineer , DCEO](https://www.linkedin.com/jobs/view/4455980839/) — Amazon Web Services (AWS)
-- 📍 **Location:** Hampton, GA
+### [Senior Assistant Vice President for Technology](https://www.linkedin.com/jobs/view/4442769116/) — SUNY Downstate Health Sciences University
+- 📍 **Location:** Brooklyn, NY
 - 🕒 **Posted:** 2026-09-09
 
-### [VP Cloud Operations - Based East or Central US Time zone - Global Software Company](https://www.linkedin.com/jobs/view/4465318342/) — Kingston Consulting Global Ltd
-- 📍 **Location:** United States
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4460493517/) — KPMG US
+- 📍 **Location:** Oklahoma City, OK
+- 💰 **Salary:** $198000 - $368000 K
 - 🕒 **Posted:** 2026-09-09
 
-### [Global Head of Enterprise Technology Services](https://www.linkedin.com/jobs/view/4429982709/) — Invesco
-- 📍 **Location:** Atlanta, GA
+### [Vice President, Strategic Alliances](https://www.linkedin.com/jobs/view/4463092315/) — Google
+- 📍 **Location:** Sunnyvale, CA
 - 🕒 **Posted:** 2026-09-09
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4464119131/) — Hot Topic
-- 📍 **Location:** City of Industry, CA
-- 💰 **Salary:** $300,000.00/yr - $350,000.00/yr
+### [Microsoft M365 Senior Technology Manager](https://www.linkedin.com/jobs/view/4463079320/) — Bank of America
+- 📍 **Location:** Plano, TX
 - 🕒 **Posted:** 2026-09-09
 
-### [Chief Engineer, Data Center Engg Ops](https://www.linkedin.com/jobs/view/4455920494/) — Amazon Web Services (AWS)
-- 📍 **Location:** Stafford, VA
+### [Director, Enterprise Execution & Strategic Initiatives](https://www.linkedin.com/jobs/view/4465339551/) — AV
+- 📍 **Location:** Dayton, OH
+- 💰 **Salary:** $170,500 - $272,750
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr. Manager, Software Development, Elastic File System](https://www.linkedin.com/jobs/view/4455922178/) — Amazon Web Services (AWS)
-- 📍 **Location:** Boston, MA
+### [Director of Engineering, Safety](https://www.linkedin.com/jobs/view/4422062177/) — Discord
+- 📍 **Location:** San Francisco Bay Area
+- 💰 **Salary:** $400,000 to $450,000
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4455916737/) — Amazon
-- 📍 **Location:** Seattle, WA
+### [Director, Ceramic Technology](https://www.linkedin.com/jobs/view/4449867969/) — Utility
+- 📍 **Location:** Englewood, CO
+- 💰 **Salary:** $200,000 - $250,000
 - 🕒 **Posted:** 2026-09-09
 
-### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4464111582/) — Theron Partners Inc.
-- 📍 **Location:** Sioux Falls, SD
+### [Engineering Manager/Director - Integration and V&V Testing](https://www.linkedin.com/jobs/view/4463084386/) — IT Resource Hunter
+- 📍 **Location:** El Segundo, CA
 - 🕒 **Posted:** 2026-09-09
 
-### [Senior Manager – Real Estate Technology Infrastructure](https://www.linkedin.com/jobs/view/4448460133/) — Hines
+### [Director, Power Infrastructure](https://www.linkedin.com/jobs/view/4464146285/) — Bitdeer (NASDAQ: BTDR)
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-09-09
+
+### [Senior Manager Data Engineering](https://www.linkedin.com/jobs/view/4463086245/) — Publicis Sapient
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $160,000-$262,000
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Enterprise Execution & Strategic Initiatives](https://www.linkedin.com/jobs/view/4465333556/) — AV
+- 📍 **Location:** Albuquerque, NM
+- 💰 **Salary:** $170,500 - $272,750
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Engineering](https://www.linkedin.com/jobs/view/4465341508/) — Quanta Infrastructure Solutions Group
+- 📍 **Location:** Chicago, IL
+- 🕒 **Posted:** 2026-09-09
+
+### [Sr. Manager, Security Engineering](https://www.linkedin.com/jobs/view/4463085359/) — Total Wine & More
+- 📍 **Location:** Bethesda, MD
+- 💰 **Salary:** $145,750.00/yr - $204,400.00/yr
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Engineering PMO - Transmission Line](https://www.linkedin.com/jobs/view/4465347491/) — Quanta Infrastructure Solutions Group
 - 📍 **Location:** Houston, TX
 - 🕒 **Posted:** 2026-09-09
 
-### [Director, Continuous Improvement](https://www.linkedin.com/jobs/view/4463060838/) — Howmet Aerospace
-- 📍 **Location:** Cleveland, OH
+### [Director, Enterprise Execution & Strategic Initiatives](https://www.linkedin.com/jobs/view/4465349503/) — AV
+- 📍 **Location:** Huntsville, AL
+- 💰 **Salary:** $170,500 - $272,750
 - 🕒 **Posted:** 2026-09-09
 
-### [Chief Information Officer / Chief Technology Officer — Supply Chain & Logistics, Portland, Oregon](https://www.linkedin.com/jobs/view/4464104923/) — Space Executive
-- 📍 **Location:** Portland, Oregon Metropolitan Area
-- 💰 **Salary:** $300,000 to $400,000,
+### [Director, Sales Engineering](https://www.linkedin.com/jobs/view/4464138217/) — Visual Edge IT
+- 📍 **Location:** Dallas, TX
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr Manager, AI Technology Operations](https://www.linkedin.com/jobs/view/4465326075/) — Gap Inc.
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $171,800.00 - $223,400.00
+### [Senior Manager, IGA Architect, Cyber Technology Consulting](https://www.linkedin.com/jobs/view/4463093408/) — Kroll
+- 📍 **Location:** United States
+- 💰 **Salary:** $175,000 to $200,000
 - 🕒 **Posted:** 2026-09-09
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4464123458/) — Space Executive
-- 📍 **Location:** San Francisco Bay Area
-- 💰 **Salary:** $350,000 to $500,000
+### [Sr Director, Technology Partner Alliances Development](https://www.linkedin.com/jobs/view/4461992859/) — Black Duck
+- 📍 **Location:** Chicago, IL
 - 🕒 **Posted:** 2026-09-09
 
-### [Data Center Chief Engineer , DCEO](https://www.linkedin.com/jobs/view/4455982827/) — Amazon Web Services (AWS)
-- 📍 **Location:** Avondale, AZ
-- 🕒 **Posted:** 2026-09-09
-
-### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4464115736/) — Félix
-- 📍 **Location:** Miami, FL
-- 🕒 **Posted:** 2026-09-09
-
-### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4464119617/) — Félix
-- 📍 **Location:** San Francisco, CA
-- 🕒 **Posted:** 2026-09-09
-
-### [Data Center Chief Engineer](https://www.linkedin.com/jobs/view/4455980883/) — Amazon Web Services (AWS)
-- 📍 **Location:** Sparks, NV
-- 🕒 **Posted:** 2026-09-09
-
-### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4464120588/) — Félix
-- 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-09-09
-
-### [Head of Treasury Strategy & Transformation](https://www.linkedin.com/jobs/view/4464111598/) — Anthropic
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $300,000—$385,000 USD
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Engineering Manager, Mortgage](https://www.linkedin.com/jobs/view/4465313640/) — Checkr, Inc.
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $269,000—$316,000 USD
-- 🕒 **Posted:** 2026-09-09
-
-### [Sr Manager, AI Technology Operations](https://www.linkedin.com/jobs/view/4465310182/) — Gap Inc.
-- 📍 **Location:** Columbia, SC
-- 💰 **Salary:** $171,800.00 - $223,400.00
+### [Director, Strategy and Operations, Data Cloud](https://www.linkedin.com/jobs/view/4463084338/) — Google
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $262000 - $364000
 - 🕒 **Posted:** 2026-09-09
