@@ -1,196 +1,133 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-09 16:54 UTC*
+*Last updated: 2026-09-09 20:01 UTC*
 
-**42 new role(s)** since last run · 42 total in last 1h
+**29 new role(s)** since last run · 29 total in last 1h
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4465300058/) — Keller Executive Search
-- 📍 **Location:** Missouri City, MO
+### [Director, Software Engineering - Risk Tech](https://www.linkedin.com/jobs/view/4446588664/) — Capital One
+- 📍 **Location:** McLean, VA
+- 💰 **Salary:** $269,100 - $307,200
+- 🕒 **Posted:** 2026-09-09
+
+### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4465317147/) — Trova
+- 📍 **Location:** Florida, United States
 - 💰 **Salary:** $190,000.00/yr - $210,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Director, Engineering (Remote)](https://www.linkedin.com/jobs/view/4439330271/) — STERIS
-- 📍 **Location:** Mentor, OH
-- 💰 **Salary:** $144,500.00 - $187,000.00
+### [Senior Director of Engineering](https://www.linkedin.com/jobs/view/4464652909/) — Storm4
+- 📍 **Location:** Cleveland, OH
+- 💰 **Salary:** $250,000.00/yr - $315,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Engineering Director - Verification IP](https://www.linkedin.com/jobs/view/4463888562/) — Siemens EDA (Siemens Digital Industries Software)
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-09
-
-### [Strategic Engineering Director – Critical Infrastructure](https://www.linkedin.com/jobs/view/4465078808/) — Cognisant
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-09
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4463054170/) — TPG Hotels and Resorts
-- 📍 **Location:** Washington, DC
-- 🕒 **Posted:** 2026-09-09
-
-### [Director of Enterprise Data Engineering](https://www.linkedin.com/jobs/view/4455950697/) — Western Veterinary Partners
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $185,000—$215,000 USD
-- 🕒 **Posted:** 2026-09-09
-
-### [Executive Director of Platform Architecture](https://www.linkedin.com/jobs/view/4465071892/) — New York Technology Partners
+### [Clinical Engineering Enterprise Director](https://www.linkedin.com/jobs/view/4464989266/) — Intelas
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
+- 💰 **Salary:** $165,000- $190,000/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Cleared R&D Senior Manager- Stockpile Engineering & ND Product Realization, Onsite](https://www.linkedin.com/jobs/view/4463887511/) — Sandia National Laboratories
-- 📍 **Location:** Albuquerque, NM
-- 💰 **Salary:** $193,000 - $328,200
+### [Director, Systems Engineering](https://www.linkedin.com/jobs/view/4454797903/) — Worcester Polytechnic Institute
+- 📍 **Location:** Worcester, MA
+- 💰 **Salary:** $109,000 – $135,000 per year
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr. Manager, Software Development, Amazon Leo for Government (ALG)](https://www.linkedin.com/jobs/view/4455940255/) — Amazon
-- 📍 **Location:** Los Angeles, CA
-- 🕒 **Posted:** 2026-09-09
-
-### [Sr. Manager, Wireless Systems Engineering, Amazon Leo](https://www.linkedin.com/jobs/view/4455796268/) — Amazon
-- 📍 **Location:** San Diego, CA
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Manager of Software Engineering](https://www.linkedin.com/jobs/view/4465073554/) — JPMorganChase
-- 📍 **Location:** Jersey City, NJ
-- 💰 **Salary:** $175,750.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-09-09
-
-### [Head of Engineering, AI Platform](https://www.linkedin.com/jobs/view/4465075877/) — Drift AI
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $274,000 to $305,000
-- 🕒 **Posted:** 2026-09-09
-
-### [Deputy Head of Production, Autonomous Airpower (Fury)](https://www.linkedin.com/jobs/view/4465067799/) — Anduril Industries
-- 📍 **Location:** Ashville, OH
-- 💰 **Salary:** $190,000—$252,000 USD
-- 🕒 **Posted:** 2026-09-09
-
-### [Director, Software Engineering (Security Business Group)](https://www.linkedin.com/jobs/view/4465060967/) — Cisco
-- 📍 **Location:** Milpitas, CA
-- 💰 **Salary:** $250,600.00 to $362,600.00
-- 🕒 **Posted:** 2026-09-09
-
-### [VP, Head of Technology, Group Protection](https://www.linkedin.com/jobs/view/4446522123/) — Lincoln Financial
-- 📍 **Location:** Radnor, PA
-- 💰 **Salary:** $192,750 - $308,400
-- 🕒 **Posted:** 2026-09-09
-
-### [Patch and Repave Senior Engineering Manager](https://www.linkedin.com/jobs/view/4465092041/) — Bank of America
-- 📍 **Location:** Charlotte, NC
-- 💰 **Salary:** $135,900.00/yr - $220,000.00/yr
-- 🕒 **Posted:** 2026-09-09
-
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4439498189/) — Augmodo
-- 📍 **Location:** United States
-- 💰 **Salary:** $235,000 USD - $285,000 USD
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Manager, Data Engineering (Snowflake)](https://www.linkedin.com/jobs/view/4463891317/) — Sud Recruiting
-- 📍 **Location:** United States
-- 💰 **Salary:** $185,000.00/yr - $195,000.00/yr
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Manager, Payment Technology](https://www.linkedin.com/jobs/view/4454934194/) — Gables Search Group
+### [Director of Physical & Digital Infrastructure](https://www.linkedin.com/jobs/view/4465314020/) — La Rabida Children's Hospital
 - 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $160,000.00/yr - $214,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4463894418/) — Stryker
-- 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $155,900 - $259,700 USD
+### [Vice President of Technology (Working Alongside the CTO)](https://www.linkedin.com/jobs/view/4465326160/) — Revilo Technologies
+- 📍 **Location:** United States
 - 🕒 **Posted:** 2026-09-09
 
-### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4454910768/) — Collective Health
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $268,000 USD - $335,000 USD
+### [Transportation Engineering & Operations Bureau Chief](https://www.linkedin.com/jobs/view/4444902338/) — Arlington County Government
+- 📍 **Location:** Arlington, VA
 - 🕒 **Posted:** 2026-09-09
 
-### [Patch and Repave Senior Engineering Manager](https://www.linkedin.com/jobs/view/4465090056/) — Bank of America
-- 📍 **Location:** Plano, TX
-- 💰 **Salary:** $135,900.00/yr - $220,000.00/yr
+### [Data Center Chief Engineer , DCEO](https://www.linkedin.com/jobs/view/4455980839/) — Amazon Web Services (AWS)
+- 📍 **Location:** Hampton, GA
 - 🕒 **Posted:** 2026-09-09
 
-### [Patch and Repave Senior Engineering Manager](https://www.linkedin.com/jobs/view/4465090057/) — Bank of America
-- 📍 **Location:** Jersey City, NJ
-- 💰 **Salary:** $135,900.00/yr - $220,000.00/yr
+### [VP Cloud Operations - Based East or Central US Time zone - Global Software Company](https://www.linkedin.com/jobs/view/4465318342/) — Kingston Consulting Global Ltd
+- 📍 **Location:** United States
 - 🕒 **Posted:** 2026-09-09
 
-### [Senior Engineering Manager, Cloud Product Experience](https://www.linkedin.com/jobs/view/4461997657/) — Aerospike
-- 📍 **Location:** Mountain View, CA
-- 💰 **Salary:** $250,000 – $310,000
+### [Global Head of Enterprise Technology Services](https://www.linkedin.com/jobs/view/4429982709/) — Invesco
+- 📍 **Location:** Atlanta, GA
 - 🕒 **Posted:** 2026-09-09
 
-### [Assistant Director for Election Technology, Division of Elections](https://www.linkedin.com/jobs/view/4456350121/) — Tennessee Secretary of State
-- 📍 **Location:** Nashville, TN
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4464119131/) — Hot Topic
+- 📍 **Location:** City of Industry, CA
+- 💰 **Salary:** $300,000.00/yr - $350,000.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Head of AI and Machine Learning Engineering](https://www.linkedin.com/jobs/view/4465081497/) — Drift AI
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $275,000-305,000
+### [Chief Engineer, Data Center Engg Ops](https://www.linkedin.com/jobs/view/4455920494/) — Amazon Web Services (AWS)
+- 📍 **Location:** Stafford, VA
 - 🕒 **Posted:** 2026-09-09
 
-### [Data Center Chief Engineer](https://www.linkedin.com/jobs/view/4455924131/) — Amazon Web Services (AWS)
-- 📍 **Location:** Sparks, NV
+### [Sr. Manager, Software Development, Elastic File System](https://www.linkedin.com/jobs/view/4455922178/) — Amazon Web Services (AWS)
+- 📍 **Location:** Boston, MA
 - 🕒 **Posted:** 2026-09-09
 
-### [Senior Manager Analog Engineering](https://www.linkedin.com/jobs/view/4446324073/) — Renesas Electronics
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $225,000K - $275,000K
-- 🕒 **Posted:** 2026-09-09
-
-### [Sr. Software Development Manager](https://www.linkedin.com/jobs/view/4455794492/) — Amazon
-- 📍 **Location:** Middlesex County, MA
-- 🕒 **Posted:** 2026-09-09
-
-### [Sr Release Manager, Design Engineering](https://www.linkedin.com/jobs/view/4455900481/) — Amazon Web Services (AWS)
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Manager, Tax Technology Consulting](https://www.linkedin.com/jobs/view/4463879539/) — Ryan
-- 📍 **Location:** Indianapolis, IN
-- 💰 **Salary:** $158,000.00 - $211,750.00
-- 🕒 **Posted:** 2026-09-09
-
-### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4463883501/) — Stryker
-- 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $155,900 - $259,700 USD
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Software Development Manager , Access Management Services](https://www.linkedin.com/jobs/view/4455907777/) — Amazon
-- 📍 **Location:** San Diego, CA
-- 🕒 **Posted:** 2026-09-09
-
-### [National Consulting - Microsoft Enterprise Platform - Senior Manager (Architect & Solution Lead Role](https://www.linkedin.com/jobs/view/4443223018/) — EY
-- 📍 **Location:** Raleigh, NC
-- 💰 **Salary:** $170,600 to $390,000
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Director of Information Technology- Onsite](https://www.linkedin.com/jobs/view/4417891833/) — Eccalon, LLC
-- 📍 **Location:** Detroit, MI
-- 🕒 **Posted:** 2026-09-09
-
-### [EY-Parthenon - Strategy and Execution - Deal Technology - PE - Director - Multiple Locations](https://www.linkedin.com/jobs/view/4434589190/) — EY-Parthenon
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $205,000 to $235,000
-- 🕒 **Posted:** 2026-09-09
-
-### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4463883639/) — PDI Technologies
-- 📍 **Location:** Houston, TX
-- 🕒 **Posted:** 2026-09-09
-
-### [Engineering Director - Verification IP](https://www.linkedin.com/jobs/view/4463883584/) — Siemens EDA (Siemens Digital Industries Software)
-- 📍 **Location:** Fremont, CA
-- 🕒 **Posted:** 2026-09-09
-
-### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4463894565/) — PDI Technologies
-- 📍 **Location:** Alpharetta, GA
-- 🕒 **Posted:** 2026-09-09
-
-### [Senior Manager of Data Engineering & Business Intelligence, Alexa Audio](https://www.linkedin.com/jobs/view/4455903347/) — Amazon
+### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4455916737/) — Amazon
 - 📍 **Location:** Seattle, WA
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr. Manager, Engineering](https://www.linkedin.com/jobs/view/4463884688/) — PDI Technologies
-- 📍 **Location:** Temple, TX
+### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4464111582/) — Theron Partners Inc.
+- 📍 **Location:** Sioux Falls, SD
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr. Value Engineering Manager, Value Engineering](https://www.linkedin.com/jobs/view/4455904593/) — Amazon
-- 📍 **Location:** Nashville, TN
+### [Senior Manager – Real Estate Technology Infrastructure](https://www.linkedin.com/jobs/view/4448460133/) — Hines
+- 📍 **Location:** Houston, TX
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Continuous Improvement](https://www.linkedin.com/jobs/view/4463060838/) — Howmet Aerospace
+- 📍 **Location:** Cleveland, OH
+- 🕒 **Posted:** 2026-09-09
+
+### [Chief Information Officer / Chief Technology Officer — Supply Chain & Logistics, Portland, Oregon](https://www.linkedin.com/jobs/view/4464104923/) — Space Executive
+- 📍 **Location:** Portland, Oregon Metropolitan Area
+- 💰 **Salary:** $300,000 to $400,000,
+- 🕒 **Posted:** 2026-09-09
+
+### [Sr Manager, AI Technology Operations](https://www.linkedin.com/jobs/view/4465326075/) — Gap Inc.
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $171,800.00 - $223,400.00
+- 🕒 **Posted:** 2026-09-09
+
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4464123458/) — Space Executive
+- 📍 **Location:** San Francisco Bay Area
+- 💰 **Salary:** $350,000 to $500,000
+- 🕒 **Posted:** 2026-09-09
+
+### [Data Center Chief Engineer , DCEO](https://www.linkedin.com/jobs/view/4455982827/) — Amazon Web Services (AWS)
+- 📍 **Location:** Avondale, AZ
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4464115736/) — Félix
+- 📍 **Location:** Miami, FL
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4464119617/) — Félix
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-09-09
+
+### [Data Center Chief Engineer](https://www.linkedin.com/jobs/view/4455980883/) — Amazon Web Services (AWS)
+- 📍 **Location:** Sparks, NV
+- 🕒 **Posted:** 2026-09-09
+
+### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4464120588/) — Félix
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-09
+
+### [Head of Treasury Strategy & Transformation](https://www.linkedin.com/jobs/view/4464111598/) — Anthropic
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $300,000—$385,000 USD
+- 🕒 **Posted:** 2026-09-09
+
+### [Senior Engineering Manager, Mortgage](https://www.linkedin.com/jobs/view/4465313640/) — Checkr, Inc.
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $269,000—$316,000 USD
+- 🕒 **Posted:** 2026-09-09
+
+### [Sr Manager, AI Technology Operations](https://www.linkedin.com/jobs/view/4465310182/) — Gap Inc.
+- 📍 **Location:** Columbia, SC
+- 💰 **Salary:** $171,800.00 - $223,400.00
 - 🕒 **Posted:** 2026-09-09
