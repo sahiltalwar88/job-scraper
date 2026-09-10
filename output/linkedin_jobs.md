@@ -1,108 +1,108 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-10 01:25 UTC*
+*Last updated: 2026-09-10 06:15 UTC*
 
-**23 new role(s)** since last run · 24 total in last 1h
+**22 new role(s)** since last run · 22 total in last 1h
 
-### [Building Engineering Services Regional Business Group Director - North Central](https://www.linkedin.com/jobs/view/4464153545/) — HDR
-- 📍 **Location:** Kansas City, MO
-- 💰 **Salary:** $225,000 - $275,000
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4464185091/) — Linktree
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $300,000- $325,000
 - 🕒 **Posted:** 2026-09-10
 
-### [Building Engineering Services Regional Business Group Director - South Central](https://www.linkedin.com/jobs/view/4464134955/) — HDR
-- 📍 **Location:** San Antonio, TX
-- 🕒 **Posted:** 2026-09-10
-
-### [Sr. Manager, Software Development, Prime Video](https://www.linkedin.com/jobs/view/4465367313/) — Prime Video & Amazon MGM Studios
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-09-10
-
-### [Senior Manager, Software Development, Aurora DSQL](https://www.linkedin.com/jobs/view/4465361279/) — Amazon Web Services (AWS)
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-09-10
-
-### [Senior Manager - Software Development Engineering](https://www.linkedin.com/jobs/view/4465374289/) — CVS Health
-- 📍 **Location:** Scottsdale, AZ
-- 💰 **Salary:** $106,605.00 - $260,590.00
-- 🕒 **Posted:** 2026-09-10
-
-### [Sr. Manager, Software Development, Prime Video](https://www.linkedin.com/jobs/view/4465362368/) — Prime Video & Amazon MGM Studios
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-09-10
-
-### [Head of Infrastructure Portfolio](https://www.linkedin.com/jobs/view/4465360442/) — Alliant Energy
-- 📍 **Location:** Madison, WI
-- 🕒 **Posted:** 2026-09-10
-
-### [VP/ Sr. Director - Global Head of Value Engineering](https://www.linkedin.com/jobs/view/4464160081/) — Eftsure
-- 📍 **Location:** Dallas, TX
-- 🕒 **Posted:** 2026-09-10
-
-### [Building Engineering Services Regional Business Group Director - North Central](https://www.linkedin.com/jobs/view/4464138883/) — HDR
-- 📍 **Location:** Omaha, NE
-- 💰 **Salary:** $225,000 - $275,000
-- 🕒 **Posted:** 2026-09-10
-
-### [Vice President of Applications (Information Technology) - ONSITE](https://www.linkedin.com/jobs/view/4465099676/) — Centra Health
-- 📍 **Location:** Lynchburg, VA
-- 💰 **Salary:** $252,904 - $404,647
-- 🕒 **Posted:** 2026-09-10
-
-### [Building Engineering Services Regional Business Group Director - South Central](https://www.linkedin.com/jobs/view/4464130978/) — HDR
-- 📍 **Location:** Greater Houston
-- 🕒 **Posted:** 2026-09-10
-
-### [Building Engineering Services Regional Business Group Director - North Central](https://www.linkedin.com/jobs/view/4464134956/) — HDR
-- 📍 **Location:** Minneapolis, MN
-- 💰 **Salary:** $225,000 - $275,000
-- 🕒 **Posted:** 2026-09-10
-
-### [Building Engineering Services Regional Business Group Director - North Central](https://www.linkedin.com/jobs/view/4464143751/) — HDR
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $225,000 - $275,000
-- 🕒 **Posted:** 2026-09-10
-
-### [Building Engineering Services Regional Business Group Director - South Central](https://www.linkedin.com/jobs/view/4464135888/) — HDR
-- 📍 **Location:** Dallas, TX
-- 🕒 **Posted:** 2026-09-10
-
-### [Building Engineering Services Regional Business Group Director - South Central](https://www.linkedin.com/jobs/view/4464154457/) — HDR
-- 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-10
-
-### [Director of Product Management – Digital (Data Engineering)](https://www.linkedin.com/jobs/view/4465367627/) — Oliver James
-- 📍 **Location:** New York, United States
-- 🕒 **Posted:** 2026-09-10
-
-### [Senior Information Technology Manager](https://www.linkedin.com/jobs/view/4463074759/) — Nielsen Associates
-- 📍 **Location:** Melville, NY
-- 💰 **Salary:** $180,000.00/yr - $190,000.00/yr
-- 🕒 **Posted:** 2026-09-10
-
-### [Senior Director of Software Engineering](https://www.linkedin.com/jobs/view/4465376827/) — GE HealthCare
-- 📍 **Location:** Waukesha, WI
-- 💰 **Salary:** $228,160.00-$342,240.00
-- 🕒 **Posted:** 2026-09-10
-
-### [Senior Director of Software Engineering](https://www.linkedin.com/jobs/view/4465373859/) — GE HealthCare
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $228,160.00-$342,240.00
-- 🕒 **Posted:** 2026-09-10
-
-### [VP Engineering / CTO](https://www.linkedin.com/jobs/view/4464164079/) — StartX Med
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4464179597/) — Linktree
 - 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $300,000- $325,000
 - 🕒 **Posted:** 2026-09-10
 
-### [Director of  Information Technology (Seattle or San Francisco)](https://www.linkedin.com/jobs/view/4461537015/) — Beale Infrastructure
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $215k - $250k
+### [Director, AI Engineering](https://www.linkedin.com/jobs/view/4465619033/) — Cisco
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $250,600.00 to $362,600.00
 - 🕒 **Posted:** 2026-09-10
 
-### [Sr Manager, AI Technology Operations](https://www.linkedin.com/jobs/view/4465326075/) — Gap Inc.
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $171,800.00 - $223,400.00
+### [Director of Solid State Science & API Engineering (SSAE), Material Analytical Science](https://www.linkedin.com/jobs/view/4465617242/) — Boehringer Ingelheim
+- 📍 **Location:** Ridgefield, CT
 - 🕒 **Posted:** 2026-09-10
 
-### [Director of Operational Technology](https://www.linkedin.com/jobs/view/4465360217/) — Canopy Aerospace & Defense
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $175,000 to $195,000
-- 🕒 **Posted:** 2026-09-09
+### [Sr. Manager, Engineering & Automation](https://www.linkedin.com/jobs/view/4443670523/) — Thermo Fisher Scientific
+- 📍 **Location:** Logan, UT
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Engineering Manager, Customer Runtimes](https://www.linkedin.com/jobs/view/4463427051/) — Pantheon
+- 📍 **Location:** Raleigh, NC
+- 💰 **Salary:** $195,840 - $244,800 USD per year
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Manager, Support Engineering](https://www.linkedin.com/jobs/view/4463429069/) — Oracle
+- 📍 **Location:** Anthony, NM
+- 💰 **Salary:** $98,700 - $209,500 per year
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4464131644/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $295,250—$345,040 USD
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Manager - Database Engineering](https://www.linkedin.com/jobs/view/4463428196/) — Zelis
+- 📍 **Location:** Morristown, NJ
+- 💰 **Salary:** $139,000.00 - $176,700.00
+- 🕒 **Posted:** 2026-09-10
+
+### [GCN Director Sales Engineering](https://www.linkedin.com/jobs/view/4464159921/) — Ciena
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4460489629/) — KPMG US
+- 📍 **Location:** Portland, OR
+- 💰 **Salary:** $198000 - $368000 K
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4460475700/) — KPMG US
+- 📍 **Location:** Boulder, CO
+- 💰 **Salary:** $198000 - $368000 K
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4464157707/) — KPMG US
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $198000 - $368000 K
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4464163577/) — KPMG US
+- 📍 **Location:** Morristown, NJ
+- 💰 **Salary:** $198000 - $368000 K
+- 🕒 **Posted:** 2026-09-10
+
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4379269535/) — Charge Robotics
+- 📍 **Location:** San Leandro, CA
+- 💰 **Salary:** $180,000.00/yr - $300,000.00/yr
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Production Technology](https://www.linkedin.com/jobs/view/4463418348/) — Sesame Workshop
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Manager, Avionics Engineering - Millennium Space Systems](https://www.linkedin.com/jobs/view/4465369197/) — Millennium Space Systems
+- 📍 **Location:** El Segundo, CA
+- 💰 **Salary:** $179,000 - $268,000
+- 🕒 **Posted:** 2026-09-10
+
+### [Director of Immune Phenotyping Platform](https://www.linkedin.com/jobs/view/4463439193/) — Weill Cornell Medicine
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $236,300.00 - $287,300.00
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Carrier Development](https://www.linkedin.com/jobs/view/4464163529/) — Uber Freight
+- 📍 **Location:** Rogers, AR
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4460487606/) — KPMG US
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $198000 - $368000 K
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Product Manager- Customer Success & AI Platform](https://www.linkedin.com/jobs/view/4462171208/) — Nutanix
+- 📍 **Location:** Durham, NC
+- 🕒 **Posted:** 2026-09-10
+
+### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4460477691/) — KPMG US
+- 📍 **Location:** Pittsburgh, PA
+- 💰 **Salary:** $198000 - $368000 K
+- 🕒 **Posted:** 2026-09-10
