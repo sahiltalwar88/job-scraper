@@ -1,31 +1,26 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-12 06:03 UTC*
+*Last updated: 2026-09-12 06:41 UTC*
 
-**6 new role(s)** since last run · 6 total in last 1h
+**5 new role(s)** since last run · 11 total in last 1h
 
-### [VP of Engineering](https://www.linkedin.com/jobs/view/4466459757/) — Enterprise Engineering Inc. (EEI)
+### [Director, Server CPU Product Architecture](https://www.linkedin.com/jobs/view/4465169780/) — NVIDIA
+- 📍 **Location:** Santa Clara, CA
+- 🕒 **Posted:** 2026-09-12
+
+### [VP, Head of Technology, Retirement Plan Services](https://www.linkedin.com/jobs/view/4319092162/) — Lincoln Financial
+- 📍 **Location:** Radnor, PA
+- 💰 **Salary:** $192,750 - $308,400
+- 🕒 **Posted:** 2026-09-12
+
+### [Data Engineering Vice President, Data Engineering – BlackRock Data Office](https://www.linkedin.com/jobs/view/4466482175/) — BlackRock
 - 📍 **Location:** New York, NY
+- 💰 **Salary:** USD$0.00 - USD$0.00
 - 🕒 **Posted:** 2026-09-12
 
-### [Director, Network Engineering & Operations](https://www.linkedin.com/jobs/view/4466473111/) — PlanIT Group, LLC
-- 📍 **Location:** United States
+### [Senior Director Information Technology (IT)](https://www.linkedin.com/jobs/view/4466420122/) — Honeywell Technologies
+- 📍 **Location:** Raleigh, NC
 - 🕒 **Posted:** 2026-09-12
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4464269460/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-09-12
-
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4464282399/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-09-12
-
-### [Senior Java Software Engineer - Vice President](https://www.linkedin.com/jobs/view/4453589532/) — Morgan Stanley
-- 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-09-12
-
-### [T26-9768;Software Engineering & Development, VP](https://www.linkedin.com/jobs/view/4466447691/) — State Street
-- 📍 **Location:** Princeton, NJ
-- 💰 **Salary:** $130,000 - $212,500
+### [Senior Director Information Technology (IT)](https://www.linkedin.com/jobs/view/4466427109/) — Honeywell Technologies
+- 📍 **Location:** Charlotte, NC
 - 🕒 **Posted:** 2026-09-12
