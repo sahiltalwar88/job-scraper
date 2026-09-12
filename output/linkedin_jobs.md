@@ -1,138 +1,97 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-11 22:53 UTC*
+*Last updated: 2026-09-12 01:24 UTC*
 
-**29 new role(s)** since last run · 32 total in last 1h
+**20 new role(s)** since last run · 22 total in last 1h
 
-### [Director of Engineering, Compute Cloud](https://www.linkedin.com/jobs/view/4466398507/) — Crusoe
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $285,000 - 335,000
-- 🕒 **Posted:** 2026-09-11
+### [Director Engineering Development](https://www.linkedin.com/jobs/view/4464251717/) — Continental Electronics Corporation
+- 📍 **Location:** Richardson, TX
+- 💰 **Salary:** $199,000.00/yr - $237,000.00/yr
+- 🕒 **Posted:** 2026-09-12
 
-### [Transportation Engineering Director](https://www.linkedin.com/jobs/view/4466398311/) — Pasco Police Department
-- 📍 **Location:** New Port Richey, FL
-- 🕒 **Posted:** 2026-09-11
+### [SerDes IP Systems Engineering Director](https://www.linkedin.com/jobs/view/4465194193/) — Cadence
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $178,500.00/yr - $331,500.00/yr
+- 🕒 **Posted:** 2026-09-12
 
-### [Director, Broadband Network Engineering](https://www.linkedin.com/jobs/view/4465162488/) — JSI
-- 📍 **Location:** Lubbock, TX
-- 🕒 **Posted:** 2026-09-11
-
-### [Senior Director, Engineering, SecOps, Google Cloud Security](https://www.linkedin.com/jobs/view/4465163504/) — Google
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $364000 - $505000
-- 🕒 **Posted:** 2026-09-11
-
-### [Senior Director, Engineering, SecOps, Google Cloud Security](https://www.linkedin.com/jobs/view/4465159534/) — Google
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $364000 - $505000
-- 🕒 **Posted:** 2026-09-11
-
-### [Director of Engineering-Marriott Columbus Downtown](https://www.linkedin.com/jobs/view/4465172510/) — Coury Hospitality
-- 📍 **Location:** Columbus, OH
-- 🕒 **Posted:** 2026-09-11
-
-### [Head of Engineering - USV](https://www.linkedin.com/jobs/view/4466406267/) — Owen Daniels
-- 📍 **Location:** Virginia Beach, VA
-- 🕒 **Posted:** 2026-09-11
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4426659338/) — Lumicity
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-11
-
-### [VP - Test, Technology and Operations](https://www.linkedin.com/jobs/view/4464252224/) — onsemi
-- 📍 **Location:** Allen, TX
-- 🕒 **Posted:** 2026-09-11
-
-### [Senior Manager, Software Development Engineering](https://www.linkedin.com/jobs/view/4466409078/) — Envestnet
-- 📍 **Location:** Powhatan, VA
-- 💰 **Salary:** $167,500 to $209,400
-- 🕒 **Posted:** 2026-09-11
-
-### [Senior Manager, Design Engineering](https://www.linkedin.com/jobs/view/4462001024/) — CIRCOR International, Inc.
-- 📍 **Location:** Warren, MA
-- 🕒 **Posted:** 2026-09-11
-
-### [(USA) Senior Manager, Automation Engineering](https://www.linkedin.com/jobs/view/4464250284/) — Walmart
-- 📍 **Location:** Bentonville, AR
-- 💰 **Salary:** $110,000.00/yr - $220,000.00/yr
-- 🕒 **Posted:** 2026-09-11
-
-### [Sr. Manager, Platform Delivery Lead, Data & AI](https://www.linkedin.com/jobs/view/4453272046/) — Gilead Sciences
-- 📍 **Location:** Raleigh, NC
-- 💰 **Salary:** $146,200.00 - $189,200.00
-- 🕒 **Posted:** 2026-09-11
-
-### [Core AI Platform Architect - Vice President](https://www.linkedin.com/jobs/view/4466408137/) — iCapital
+### [Executive Director, Analytics Engineering](https://www.linkedin.com/jobs/view/4466416386/) — CVS Health
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $170,000 to $210,000
-- 🕒 **Posted:** 2026-09-11
+- 💰 **Salary:** $175,100.00 - $334,750.00
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Manager : Tax Technology Implementations](https://www.linkedin.com/jobs/view/4464230895/) — DoorDash
+### [Head of Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4466416682/) — Blitzy
+- 📍 **Location:** Cambridge, MA
+- 🕒 **Posted:** 2026-09-12
+
+### [Sr Director, Engineering - MP&A and Finance](https://www.linkedin.com/jobs/view/4466428321/) — Kavaliro
 - 📍 **Location:** Philadelphia, PA
-- 💰 **Salary:** $155,000—$228,000 USD
-- 🕒 **Posted:** 2026-09-11
+- 💰 **Salary:** $220,000 to $240,000 annually
+- 🕒 **Posted:** 2026-09-12
 
-### [Chief Information & AI Officer](https://www.linkedin.com/jobs/view/4465172487/) — FairSquare
-- 📍 **Location:** San Diego, CA
-- 🕒 **Posted:** 2026-09-11
+### [GenAI Software Engineering Transformation, Director](https://www.linkedin.com/jobs/view/4466427578/) — MUFG
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $214k - $231k
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Director, Engineering, SecOps, Google Cloud Security](https://www.linkedin.com/jobs/view/4465153478/) — Google
+### [GenAI Software Engineering Transformation, Director](https://www.linkedin.com/jobs/view/4466427579/) — MUFG
+- 📍 **Location:** Jersey City, NJ
+- 💰 **Salary:** $214k - $231k
+- 🕒 **Posted:** 2026-09-12
+
+### [Technology & Integration Director, Local Media](https://www.linkedin.com/jobs/view/4465191141/) — National Basketball Association (NBA)
+- 📍 **Location:** Secaucus, NJ
+- 💰 **Salary:** $140,000 - $180,000
+- 🕒 **Posted:** 2026-09-12
+
+### [AI Senior Manager, AI Engineering](https://www.linkedin.com/jobs/view/4465194268/) — Capital Group
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $187,016-$317,927
+- 🕒 **Posted:** 2026-09-12
+
+### [Sr Manager, Firmware/FPGA Engineering](https://www.linkedin.com/jobs/view/4464254630/) — Continental Electronics Corporation
+- 📍 **Location:** Richardson, TX
+- 💰 **Salary:** $180,000.00/yr - $195,000.00/yr
+- 🕒 **Posted:** 2026-09-12
+
+### [Senior Manager, Software Engineering, Intelligence Systems](https://www.linkedin.com/jobs/view/4466400128/) — Anduril Industries
 - 📍 **Location:** Reston, VA
-- 💰 **Salary:** $364000 - $505000
-- 🕒 **Posted:** 2026-09-11
+- 💰 **Salary:** $220,000—$292,000 USD
+- 🕒 **Posted:** 2026-09-12
 
-### [Chief Information & AI Officer](https://www.linkedin.com/jobs/view/4465153475/) — FairSquare
-- 📍 **Location:** Orlando, FL
-- 🕒 **Posted:** 2026-09-11
+### [Senior Manager - Software Development Engineering (Technology & AI)](https://www.linkedin.com/jobs/view/4466412462/) — CVS Health
+- 📍 **Location:** Richardson, TX
+- 💰 **Salary:** $118,450.00 - $236,900.00
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Director, Accessibility Engineering](https://www.linkedin.com/jobs/view/4466388679/) — Spectrum
-- 📍 **Location:** Greenwood Village, CO
-- 💰 **Salary:** $155,600.00/yr - $275,800.00/yr
-- 🕒 **Posted:** 2026-09-11
+### [VP, Head of Technology, Retirement Plan Services](https://www.linkedin.com/jobs/view/4319092162/) — Lincoln Financial
+- 📍 **Location:** Radnor, PA
+- 💰 **Salary:** $192,750 - $308,400
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Director, Engineering, SecOps, Google Cloud Security](https://www.linkedin.com/jobs/view/4465154481/) — Google
-- 📍 **Location:** Sunnyvale, CA
-- 💰 **Salary:** $364000 - $505000
-- 🕒 **Posted:** 2026-09-11
+### [Director of Infrastructure & Security](https://www.linkedin.com/jobs/view/4466422461/) — Removery
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Director of Engineering](https://www.linkedin.com/jobs/view/4466404539/) — Weld North Education (now Imagine Learning)
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-11
+### [Senior Manager, Marketing Technology](https://www.linkedin.com/jobs/view/4426133478/) — Memphis Grizzlies
+- 📍 **Location:** Memphis, TN
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Manager Datacenter Engineering](https://www.linkedin.com/jobs/view/4460119678/) — DigitalOcean
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $156,800.00 - $196,000.00
-- 🕒 **Posted:** 2026-09-11
+### [Director of Engineering, AI Security Incubation & Innovation](https://www.linkedin.com/jobs/view/4466413763/) — ServiceNow
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $240,100 - $420,200
+- 🕒 **Posted:** 2026-09-12
 
-### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4464134285/) — Stryker
+### [Head of Technology Partnerships](https://www.linkedin.com/jobs/view/4466417490/) — Telnyx
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $155,900 - $259,700 USD
-- 🕒 **Posted:** 2026-09-11
+- 🕒 **Posted:** 2026-09-12
 
-### [Senior Director, Infrastructure and Sovereign Environments, SRE, Google Cloud](https://www.linkedin.com/jobs/view/4465148487/) — Google
-- 📍 **Location:** Sunnyvale, CA
-- 💰 **Salary:** $364000 - $505000
-- 🕒 **Posted:** 2026-09-11
+### [Senior Director IT Product Management – Marketing & Customer Technology](https://www.linkedin.com/jobs/view/4466415492/) — Sprouts Healthy Communities Foundation
+- 📍 **Location:** Greater Phoenix Area
+- 🕒 **Posted:** 2026-09-12
 
-### [Core AI Platform Engineer - Assistant Vice President](https://www.linkedin.com/jobs/view/4466407162/) — iCapital
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $120,000 to $170,000
-- 🕒 **Posted:** 2026-09-11
+### [VP Technology Strategy and Transactions](https://www.linkedin.com/jobs/view/4464242704/) — Teradyne
+- 📍 **Location:** North Reading, MA
+- 🕒 **Posted:** 2026-09-12
 
-### [FinOps Platform Engineering, Sr. Manager](https://www.linkedin.com/jobs/view/4464252236/) — Medidata Solutions
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $114,750- $153,000
-- 🕒 **Posted:** 2026-09-11
-
-### [Senior Manager : Tax Technology Implementations](https://www.linkedin.com/jobs/view/4464229861/) — DoorDash
-- 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $155,000—$228,000 USD
-- 🕒 **Posted:** 2026-09-11
-
-### [VP, Software Engineering - QB & IAS](https://www.linkedin.com/jobs/view/4466406639/) — Intuit
-- 📍 **Location:** Mountain View, CA
-- 💰 **Salary:** $384,500 - $520,500
-- 🕒 **Posted:** 2026-09-11
-
-### [Director, Platform Product Management](https://www.linkedin.com/jobs/view/4466396749/) — GridUnity
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-11
+### [Director of Information Technology](https://www.linkedin.com/jobs/view/4465176183/) — Spherion Staffing WI & Northern IL
+- 📍 **Location:** Madison, WI
+- 🕒 **Posted:** 2026-09-12
