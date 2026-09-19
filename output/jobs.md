@@ -1,171 +1,218 @@
 # 🏛 Priority Employers — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-18 09:05 UTC*
+*Last updated: 2026-09-19 08:56 UTC*
 
-**38 new role(s)** since last run · 43 total in last 24h
+**48 new role(s)** since last run · 49 total in last 24h
 
-### [Director, Engineering (Platform)](https://www.linkedin.com/jobs/view/4467816805/) — Juniper Square
-- 📍 **Location:** United States
-- 💰 **Salary:** $230,000 - $285,000
-- 🕒 **Posted:** 2026-09-18
+### [Engineering Director, Storage](https://www.linkedin.com/jobs/view/4468076025/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $399,420—$457,970 USD
+- 🕒 **Posted:** 2026-09-19
 
-### [Director, AI Enablement](https://www.linkedin.com/jobs/view/4466656689/) — NVIDIA AI
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-09-18
+### [Director, Network Engineering](https://www.linkedin.com/jobs/view/4466938994/) — Oracle
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $146,300 - $306,400 per year
+- 🕒 **Posted:** 2026-09-19
 
-### [Head of Infrastructure Security Engineering - EDA Clusters](https://www.linkedin.com/jobs/view/4466653736/) — NVIDIA AI
-- 📍 **Location:** Durham, CA
-- 🕒 **Posted:** 2026-09-18
+### [Head of Flight Dynamics, Amazon Leo](https://www.linkedin.com/jobs/view/4469264463/) — Amazon
+- 📍 **Location:** Redmond, WA
+- 🕒 **Posted:** 2026-09-19
 
-### [Head of Applied AI Engineering](https://www.linkedin.com/jobs/view/4424460601/) — Vi
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-18
+### [Director, Field Engineering Emerging Enterprises & Startups](https://www.linkedin.com/jobs/view/4466955001/) — Databricks
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-09-19
 
-### [Head of Global Customer Engineering - Internal EDA Infrastructure](https://www.linkedin.com/jobs/view/4466650805/) — NVIDIA AI
-- 📍 **Location:** Durham, CA
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4468847139/) — Snap Inc.
-- 📍 **Location:** Los Angeles, CA
-- 💰 **Salary:** $276,000-$414,000 annually
-- 🕒 **Posted:** 2026-09-18
-
-### [Director, Enterprise Network Deployment & Automation](https://www.linkedin.com/jobs/view/4467812904/) — NVIDIA
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Engineering Manager-Streaming Apps, Fullstack](https://www.linkedin.com/jobs/view/4466659237/) — Roku
-- 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Engineering Manager, Infrastructure Security Engineering - DGX Cloud](https://www.linkedin.com/jobs/view/4466651848/) — NVIDIA AI
-- 📍 **Location:** Greater Sudbury, Ontario, Canada
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Engineering Manager (hands-on) - Work Environment](https://www.linkedin.com/jobs/view/4469130098/) — Alan
-- 📍 **Location:** France
-- 🕒 **Posted:** 2026-09-18
-
-### [Head of High-Frequency Market Data Engineering](https://www.linkedin.com/jobs/view/4438434270/) — Two Sigma
+### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4469282130/) — Amazon
 - 📍 **Location:** New York, United States
-- 🕒 **Posted:** 2026-09-17
+- 🕒 **Posted:** 2026-09-19
 
-### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4431716875/) — Anduril Industries
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $292,000—$386,000 USD
-- 🕒 **Posted:** 2026-09-17
+### [Founding Head of Power Development — Grid & Data Centres](https://www.linkedin.com/jobs/view/4469296899/) — General Intelligence Holdings
+- 📍 **Location:** London Area, United Kingdom
+- 🕒 **Posted:** 2026-09-19
 
-### [Director, Enterprise Network Deployment & Automation](https://www.linkedin.com/jobs/view/4466614317/) — NVIDIA AI
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-09-17
+### [Senior Manager, Software Development, Accessibility](https://www.linkedin.com/jobs/view/4469268435/) — Amazon
+- 📍 **Location:** Hyderabad, Telangana, India
+- 🕒 **Posted:** 2026-09-19
 
-### [Associate Vice President - Residentl](https://www.linkedin.com/jobs/view/4467594415/) — Pape-Dawson
-- 📍 **Location:** Orlando, FL
-- 🕒 **Posted:** 2026-09-17
+### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4466946837/) — Oracle
+- 📍 **Location:** Bristol, England, United Kingdom
+- 🕒 **Posted:** 2026-09-19
 
-### [Sr Software Development Manager, EC2](https://www.linkedin.com/jobs/view/4459623352/) — Amazon Web Services (AWS)
-- 📍 **Location:** San Diego, CA
-- 🕒 **Posted:** 2026-09-17
+### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4466906875/) — Oracle
+- 📍 **Location:** Washington, United States
+- 💰 **Salary:** $122,500 - $355,400 per year
+- 🕒 **Posted:** 2026-09-18
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4457711462/) — Oracle
+### [Director, Software Engineer (Global Payment Network)](https://www.linkedin.com/jobs/view/4460348441/) — Capital One
+- 📍 **Location:** Plano, TX
+- 💰 **Salary:** $244,700 - $279,200
+- 🕒 **Posted:** 2026-09-18
+
+### [Director of Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4438013568/) — TENEX.AI
 - 📍 **Location:** United States
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-09-17
+- 🕒 **Posted:** 2026-09-18
 
-### [Sr. Manager, Software Engineering, iOS (Enterprise Platform Technology)](https://www.linkedin.com/jobs/view/4449954865/) — Capital One
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $209,000 - $238,500
-- 🕒 **Posted:** 2026-09-17
+### [Portfolio Leader (Manager/Director Levels)](https://www.linkedin.com/jobs/view/4441494028/) — Salesforce
+- 📍 **Location:** New York City Metropolitan Area
+- 💰 **Salary:** $155,190 - $299,390 annually
+- 🕒 **Posted:** 2026-09-18
 
-### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4459827295/) — Capital One
+### [Senior Manager, Forward Deployed Engineering, AWS Forward Deployed Engineering, US Government](https://www.linkedin.com/jobs/view/4460150276/) — Amazon Web Services (AWS)
+- 📍 **Location:** Arlington, VA
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4458042032/) — Oracle
+- 📍 **Location:** United States
+- 💰 **Salary:** $146,300 - $306,400 per year
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, ML Infrastructure for Ads Safety](https://www.linkedin.com/jobs/view/4449183652/) — Google
+- 📍 **Location:** Pittsburgh, PA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-09-18
+
+### [Sr Manager Forward Deployed Engineering, AWS Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4460344315/) — Amazon Web Services (AWS)
+- 📍 **Location:** Boston, MA
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, Application Software Engineering](https://www.linkedin.com/jobs/view/4429854485/) — Oracle
+- 📍 **Location:** United States
+- 💰 **Salary:** $118,300 - $264,100 per year
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, Core Infrastructure Engineering- Nashville, TN](https://www.linkedin.com/jobs/view/4457788857/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $146,300 - $306,400 per year
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Express AI Foundations](https://www.linkedin.com/jobs/view/4423270550/) — Adobe
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $160,900 - $317,775 annually
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, Mobile Engineering, iOS (Enterprise Platforms Technology)](https://www.linkedin.com/jobs/view/4440976893/) — Capital One
 - 📍 **Location:** Chicago, IL
 - 💰 **Salary:** $209,000 - $238,500
-- 🕒 **Posted:** 2026-09-17
+- 🕒 **Posted:** 2026-09-18
 
-### [Sr. Manager, Machine Learning Engineering-Applied Research](https://www.linkedin.com/jobs/view/4449411095/) — Pinterest
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $227,871—$469,147 USD
-- 🕒 **Posted:** 2026-09-17
-
-### [Director of Engineering and Documentation](https://www.linkedin.com/jobs/view/4468812464/) — Intelligent Manufacturing Solutions (IMS)
-- 📍 **Location:** Londonderry, NH
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Engineering & Integration Manager](https://www.linkedin.com/jobs/view/4462085313/) — KoBold Metals
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Engineering Manager - Agentic Analytics](https://www.linkedin.com/jobs/view/4432032880/) — Snowflake
-- 📍 **Location:** Menlo Park, CA
-- 💰 **Salary:** $264,000.00/yr - $379,500.00/yr
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Manager, Software Engineering - RL Post-Training Frameworks](https://www.linkedin.com/jobs/view/4458310810/) — NVIDIA
-- 📍 **Location:** New York, United States
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Engineering Manager - Workers KV](https://www.linkedin.com/jobs/view/4457256490/) — Cloudflare
+### [Software Development Senior Manager](https://www.linkedin.com/jobs/view/4458036092/) — Oracle
 - 📍 **Location:** Austin, TX
-- 🕒 **Posted:** 2026-09-17
+- 💰 **Salary:** $224,141 - $ 251,999 per year
+- 🕒 **Posted:** 2026-09-18
 
-### [Senior Software Engineering Manager, Simulation Platforms](https://www.linkedin.com/jobs/view/4449927118/) — Anduril Industries
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $220,000—$292,000 USD
-- 🕒 **Posted:** 2026-09-17
+### [Senior Engineering Manager V&V Media](https://www.linkedin.com/jobs/view/4441231733/) — Twilio
+- 📍 **Location:** United States
+- 💰 **Salary:** $207,200 - $259,000
+- 🕒 **Posted:** 2026-09-18
 
-### [Senior Software Engineering Manager, GCBP Engineering Productivity](https://www.linkedin.com/jobs/view/4458393082/) — Google
-- 📍 **Location:** Sunnyvale, CA
-- 💰 **Salary:** $262000 - $364000
-- 🕒 **Posted:** 2026-09-17
+### [Chief Engineer, Software-Defined Vehicle Platform](https://www.linkedin.com/jobs/view/4448716028/) — Anduril Industries
+- 📍 **Location:** Costa Mesa, CA
+- 💰 **Salary:** $253,000—$295,000 USD
+- 🕒 **Posted:** 2026-09-18
 
-### [Senior Manager, Engineering - Autonomous Vehicles](https://www.linkedin.com/jobs/view/4457999953/) — NVIDIA
-- 📍 **Location:** Redmond, WA
-- 🕒 **Posted:** 2026-09-17
+### [Senior Engineering Manager - Android Connectivity](https://www.linkedin.com/jobs/view/4418855449/) — Rivian and Volkswagen Group Technologies
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $237,700.00/yr - $326,150.00/yr
+- 🕒 **Posted:** 2026-09-18
 
-### [Director, AI Research - Recursive Self-Improvement](https://www.linkedin.com/jobs/view/4447318812/) — AMD
+### [Senior Engineering Manager, Search and Discovery](https://www.linkedin.com/jobs/view/4391876628/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $345,040—$399,420 USD
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | USA | Remote](https://www.linkedin.com/jobs/view/4469220755/) — Grafana Labs
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Machine Learning Engineering Manager, Safety AI Systems](https://www.linkedin.com/jobs/view/4440631771/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $295,250—$345,040 USD
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, ASIC Chip Engineering](https://www.linkedin.com/jobs/view/4450001905/) — NVIDIA
 - 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $246,400.00/yr - $369,600.00/yr
-- 🕒 **Posted:** 2026-09-17
+- 🕒 **Posted:** 2026-09-18
 
-### [Director of Enterprise Architecture](https://www.linkedin.com/jobs/view/4449680726/) — ALO
-- 📍 **Location:** Beverly Hills, CA
-- 💰 **Salary:** $240,000-$260,000 per year
-- 🕒 **Posted:** 2026-09-17
+### [Sr. Manager, Test & Development Engineering](https://www.linkedin.com/jobs/view/4449795763/) — Rivian
+- 📍 **Location:** Wittmann, AZ
+- 💰 **Salary:** $153,300 - $191,600
+- 🕒 **Posted:** 2026-09-18
 
-### [Director, Silicon Physical Design CAD](https://www.linkedin.com/jobs/view/4450250313/) — Microsoft
-- 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-09-17
+### [Senior Manager, GPU Application Engineering](https://www.linkedin.com/jobs/view/4412964458/) — AMD
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $218,400.00/yr - $327,600.00/yr
+- 🕒 **Posted:** 2026-09-18
 
-### [Senior Director, Compiler Engineering](https://www.linkedin.com/jobs/view/4440607015/) — NVIDIA
-- 📍 **Location:** Shenzhen, Guangdong, China
-- 🕒 **Posted:** 2026-09-17
+### [Senior Manager, Storage Engineering](https://www.linkedin.com/jobs/view/4458698454/) — NVIDIA
+- 📍 **Location:** Santa Clara, CA
+- 🕒 **Posted:** 2026-09-18
 
-### [Engineering Portfolio & Governance Director](https://www.linkedin.com/jobs/view/4466616494/) — Metalsa
-- 📍 **Location:** Monterrey, Nuevo León, Mexico
-- 🕒 **Posted:** 2026-09-17
+### [Sr Manager, EPC Software & Controls TPM](https://www.linkedin.com/jobs/view/4458697087/) — Rivian
+- 📍 **Location:** Carson, CA
+- 💰 **Salary:** $196,000-$245,000
+- 🕒 **Posted:** 2026-09-18
 
-### [Flight Control Systems – IPT Head](https://www.linkedin.com/jobs/view/4467589906/) — Intellectt Inc
-- 📍 **Location:** Quebec, Canada
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Engineering Manager, Non-Linear Productivity](https://www.linkedin.com/jobs/view/4440080538/) — GitLab
-- 📍 **Location:** Canada
-- 💰 **Salary:** $190,000—$245,000 USD
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Manager, Data Engineering](https://www.linkedin.com/jobs/view/4449029866/) — Dropbox
-- 📍 **Location:** Canada
-- 💰 **Salary:** $209,100—$282,900
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Engineering Manager, Rider Loyalty, Partnerships, and Rider Pay](https://www.linkedin.com/jobs/view/4440079444/) — Lyft
-- 📍 **Location:** Toronto, Ontario, Canada
-- 🕒 **Posted:** 2026-09-17
-
-### [Sr. Manager, Battery Cell Engineering](https://www.linkedin.com/jobs/view/4413179076/) — Rivian
-- 📍 **Location:** Tustin, CA
-- 🕒 **Posted:** 2026-09-17
-
-### [Senior Manager, Reliability Engineering- (Nashville, TN - onsite)](https://www.linkedin.com/jobs/view/4438035152/) — Oracle
-- 📍 **Location:** Nashville, TN
+### [Senior Manager, Reliability Engineering- (Nashville, TN - onsite)](https://www.linkedin.com/jobs/view/4438023455/) — Oracle
+- 📍 **Location:** United States
 - 💰 **Salary:** $126,200 - $264,100 per year
-- 🕒 **Posted:** 2026-09-17
+- 🕒 **Posted:** 2026-09-18
+
+### [Sr. Technical Delivery Director, Global Delivery Center](https://www.linkedin.com/jobs/view/4460128758/) — Snowflake
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $208,000.00/yr - $273,000.00/yr
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, Software Engineering - Full Stack (People Manager)](https://www.linkedin.com/jobs/view/4469223643/) — Capital One
+- 📍 **Location:** Mexico City, Mexico
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Software Engineering Manager, Google Cloud](https://www.linkedin.com/jobs/view/4467877685/) — Google
+- 📍 **Location:** Bengaluru, Karnataka, India
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | Canada | Remote](https://www.linkedin.com/jobs/view/4469215787/) — Grafana Labs
+- 📍 **Location:** Greater Toronto Area, Canada
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | Sweden | Remote](https://www.linkedin.com/jobs/view/4469220756/) — Grafana Labs
+- 📍 **Location:** Stockholm, Stockholm County, Sweden
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager of Graphics Software Development](https://www.linkedin.com/jobs/view/4466934417/) — AMD
+- 📍 **Location:** Warsaw, Mazowieckie, Poland
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | Spain | Remote](https://www.linkedin.com/jobs/view/4469226502/) — Grafana Labs
+- 📍 **Location:** Madrid, Community of Madrid, Spain
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | United Kingdom | Remote](https://www.linkedin.com/jobs/view/4469226501/) — Grafana Labs
+- 📍 **Location:** London Area, United Kingdom
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Manager, Platform Software Engineering (Full Stack))](https://www.linkedin.com/jobs/view/4434536166/) — Oracle
+- 📍 **Location:** Casablanca-Settat, Morocco
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | Ireland | Remote](https://www.linkedin.com/jobs/view/4469231469/) — Grafana Labs
+- 📍 **Location:** Dublin, County Dublin, Ireland
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Engineering Manager, Grafana Frontend | Germany | Remote](https://www.linkedin.com/jobs/view/4469234375/) — Grafana Labs
+- 📍 **Location:** Germany
+- 🕒 **Posted:** 2026-09-18
+
+### [Sr Manager, Software Dev, 3P AM Gen AI Solutions, ISS](https://www.linkedin.com/jobs/view/4460343306/) — Amazon
+- 📍 **Location:** Hyderabad, Telangana, India
+- 🕒 **Posted:** 2026-09-18
+
+### [Senior Data Center Design Manager, Data Center Engineering](https://www.linkedin.com/jobs/view/4460342339/) — Amazon Web Services (AWS)
+- 📍 **Location:** Sydney, New South Wales, Australia
+- 🕒 **Posted:** 2026-09-18
+
+### [Chief Engineer, DCEO](https://www.linkedin.com/jobs/view/4469199805/) — Amazon Web Services (AWS)
+- 📍 **Location:** Cape Town, Western Cape, South Africa
+- 🕒 **Posted:** 2026-09-18
+
+### [Director, Sovereign Cloud Delivery](https://www.linkedin.com/jobs/view/4467871792/) — Google
+- 📍 **Location:** Canberra, Australian Capital Territory, Australia
+- 🕒 **Posted:** 2026-09-18
