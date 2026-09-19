@@ -1,110 +1,147 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-18 22:47 UTC*
+*Last updated: 2026-09-19 01:24 UTC*
 
-**23 new role(s)** since last run · 23 total in last 1h
+**30 new role(s)** since last run · 30 total in last 1h
 
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4466917957/) — Walmart
-- 📍 **Location:** Bentonville, AR
-- 💰 **Salary:** $130,000.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-09-18
+### [Director of Engineering, AI Takeoff Team](https://www.linkedin.com/jobs/view/4466936956/) — Okta
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $275,000 USD - $378,000 USD
+- 🕒 **Posted:** 2026-09-19
 
-### [Director of Engineering - iCasino (FBG)](https://www.linkedin.com/jobs/view/4466937426/) — Fanatics
+### [Head of Flight Dynamics, Amazon Leo](https://www.linkedin.com/jobs/view/4469264463/) — Amazon
+- 📍 **Location:** Redmond, WA
+- 🕒 **Posted:** 2026-09-19
+
+### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4469282130/) — Amazon
+- 📍 **Location:** New York, United States
+- 🕒 **Posted:** 2026-09-19
+
+### [Senior Manager - Software Development Engineering](https://www.linkedin.com/jobs/view/4469279221/) — CVS Health
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $118,450.00 - $236,900.00
+- 🕒 **Posted:** 2026-09-19
+
+### [Head of Infrastructure (Remote)](https://www.linkedin.com/jobs/view/4469271304/) — Cubic Corporation
+- 📍 **Location:** Home Place, MD
+- 💰 **Salary:** $165,000.00 - $190,000.00
+- 🕒 **Posted:** 2026-09-19
+
+### [Infrastructure, Capital Projects & Climate Advisory Director](https://www.linkedin.com/jobs/view/4469282216/) — val's services
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $193,800 - $318,750 USD
-- 🕒 **Posted:** 2026-09-18
+- 🕒 **Posted:** 2026-09-19
 
-### [Director of Engineering-Engineering-The Park Vista - A Doubletree by Hilton Hotel](https://www.linkedin.com/jobs/view/4469248373/) — The Park Vista - A DoubleTree by Hilton
-- 📍 **Location:** Gatlinburg, TN
-- 🕒 **Posted:** 2026-09-18
-
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4466929738/) — Walmart Data Ventures
-- 📍 **Location:** Bentonville, AR
-- 💰 **Salary:** $130,000.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-09-18
-
-### [Director, Engineering & Operations Support](https://www.linkedin.com/jobs/view/4469261279/) — Novelis
-- 📍 **Location:** Atlanta, GA
-- 🕒 **Posted:** 2026-09-18
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4469239087/) — Millennium Broadband Solutions
-- 📍 **Location:** Green Bay, WI
-- 🕒 **Posted:** 2026-09-18
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4469236577/) — Millennium Broadband Solutions
-- 📍 **Location:** Madison, WI
-- 🕒 **Posted:** 2026-09-18
-
-### [Sr Director, Software Engineer*](https://www.linkedin.com/jobs/view/4466932738/) — Circana
+### [Head of Infrastructure (Remote)](https://www.linkedin.com/jobs/view/4469277130/) — Cubic Corporation
 - 📍 **Location:** Chicago, IL
-- 🕒 **Posted:** 2026-09-18
+- 💰 **Salary:** $165,000.00 - $190,000.00
+- 🕒 **Posted:** 2026-09-19
 
-### [Senior Director, Technology Operations - Digital Innovation (Style & Trend)](https://www.linkedin.com/jobs/view/4466923789/) — Walmart
-- 📍 **Location:** Bentonville, AR
-- 💰 **Salary:** $130,000.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-09-18
+### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4469278170/) — Amazon
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-09-19
 
-### [Sr. Engineering Manager, AI and Agents](https://www.linkedin.com/jobs/view/4466933748/) — GoodRx
-- 📍 **Location:** Orange County, CA
-- 💰 **Salary:** $226,000.00 - $361,000.00
-- 🕒 **Posted:** 2026-09-18
+### [Sr Manager, Software Development, Ads AI Core Services](https://www.linkedin.com/jobs/view/4469280166/) — Amazon
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-09-19
 
-### [Senior Engineering Manager - Android Connectivity](https://www.linkedin.com/jobs/view/4418855449/) — Rivian and Volkswagen Group Technologies
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $237,700.00/yr - $326,150.00/yr
-- 🕒 **Posted:** 2026-09-18
+### [Senior Director, Flights Engineering](https://www.linkedin.com/jobs/view/4468048325/) — Priceline
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $210,000- $265,000K USD
+- 🕒 **Posted:** 2026-09-19
 
-### [VP, Global Infrastructure & Operations](https://www.linkedin.com/jobs/view/4469260039/) — Reinsurance Group of America, Incorporated
-- 📍 **Location:** St Louis, MO
-- 💰 **Salary:** $215,150.00 - $320,730.00
-- 🕒 **Posted:** 2026-09-18
+### [Senior Director, Flights Engineering](https://www.linkedin.com/jobs/view/4468040610/) — Priceline
+- 📍 **Location:** Norwalk, CT
+- 💰 **Salary:** $210,000- $265,000K USD
+- 🕒 **Posted:** 2026-09-19
 
-### [Senior Manager, AI & Developer Platform Product Management](https://www.linkedin.com/jobs/view/4447204828/) — Bain & Company
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $172,000 – $206,500
-- 🕒 **Posted:** 2026-09-18
+### [Assistant Director for A.S. Technology & Infrastructure](https://www.linkedin.com/jobs/view/4466947123/) — UC Santa Barbara
+- 📍 **Location:** Santa Barbara, CA
+- 💰 **Salary:** $90,000 to $99,500/year
+- 🕒 **Posted:** 2026-09-19
 
-### [Senior Manager, AI & Developer Platform Product Management](https://www.linkedin.com/jobs/view/4447212717/) — Bain & Company
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $172,000 – $206,500
-- 🕒 **Posted:** 2026-09-18
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4469239068/) — Millennium Broadband Solutions
-- 📍 **Location:** Delavan, WI
-- 🕒 **Posted:** 2026-09-18
-
-### [Technology Integration Director](https://www.linkedin.com/jobs/view/4469241900/) — Brink’s Inc
-- 📍 **Location:** Coppell, TX
-- 🕒 **Posted:** 2026-09-18
-
-### [Director of Forensic Engineering](https://www.linkedin.com/jobs/view/4469256726/) — Pinchin US
-- 📍 **Location:** Sarasota, FL
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466173343/) — Stryker
-- 📍 **Location:** Mahwah, NJ
-- 💰 **Salary:** $135,600 - $225,900 USD
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466174332/) — Stryker
-- 📍 **Location:** Flower Mound, TX
-- 💰 **Salary:** $135,600 - $225,900 USD
-- 🕒 **Posted:** 2026-09-18
-
-### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466177294/) — Stryker
+### [Senior Manager, Solutions Engineering – Launch Team Readiness, West](https://www.linkedin.com/jobs/view/4469284370/) — Skydio
 - 📍 **Location:** United States
-- 💰 **Salary:** $135,600 - $225,900 USD
-- 🕒 **Posted:** 2026-09-18
+- 💰 **Salary:** $187,000 - $220,000
+- 🕒 **Posted:** 2026-09-19
 
-### [Data Engineering Director](https://www.linkedin.com/jobs/view/4429492414/) — RGP
+### [Senior Manager, Solutions Engineering – State, Local, Educational (SLED) Majors East](https://www.linkedin.com/jobs/view/4469279479/) — Skydio
+- 📍 **Location:** United States
+- 💰 **Salary:** $172,000-$215,000
+- 🕒 **Posted:** 2026-09-19
+
+### [Head of Architecture, Direct Platform](https://www.linkedin.com/jobs/view/4469286024/) — Morningstar
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $170,000 - $213,000
+- 💰 **Salary:** $500-$2,000 annually
+- 🕒 **Posted:** 2026-09-19
+
+### [Senior Manager, Solutions Engineering – State, Local, Educational (SLED) Small Cities](https://www.linkedin.com/jobs/view/4469268794/) — Skydio
+- 📍 **Location:** United States
+- 💰 **Salary:** $172,000 - 215,000
+- 🕒 **Posted:** 2026-09-19
+
+### [Director, Field Engineering Emerging Enterprises & Startups](https://www.linkedin.com/jobs/view/4466955001/) — Databricks
+- 📍 **Location:** San Francisco, CA
+- 🕒 **Posted:** 2026-09-19
+
+### [Director, SLED Solutions Engineering](https://www.linkedin.com/jobs/view/4469272595/) — Skydio
+- 📍 **Location:** United States
+- 💰 **Salary:** $196,000 - $245,000
+- 🕒 **Posted:** 2026-09-19
+
+### [Vice President, Technology Operations](https://www.linkedin.com/jobs/view/4469268842/) — Swooped
+- 📍 **Location:** United States
+- 💰 **Salary:** $282,000 to $322,000 USD per year
+- 🕒 **Posted:** 2026-09-19
+
+### [Head of Data Operations, Direct Platform](https://www.linkedin.com/jobs/view/4469265893/) — Morningstar
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $500-$2,000 annually
+- 🕒 **Posted:** 2026-09-19
+
+### [Associate Vice President, Technology Product Management](https://www.linkedin.com/jobs/view/4469279225/) — CVS Health
+- 📍 **Location:** Northbrook, IL
+- 💰 **Salary:** $185,400.00 - $375,950.00
+- 🕒 **Posted:** 2026-09-19
+
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4469272755/) — Swooped
+- 📍 **Location:** United States
+- 💰 **Salary:** $220,000 to $230,000,
+- 🕒 **Posted:** 2026-09-19
+
+### [Senior Engineering Manager - Credit Cards](https://www.linkedin.com/jobs/view/4466955036/) — Mercury
+- 📍 **Location:** United States
+- 💰 **Salary:** $239,000—$298,800 USD
+- 🕒 **Posted:** 2026-09-19
+
+### [Senior Engineering Manager - Credit Cards](https://www.linkedin.com/jobs/view/4466948155/) — Mercury
+- 📍 **Location:** Portland, OR
+- 💰 **Salary:** $239,000—$298,800 USD
+- 🕒 **Posted:** 2026-09-19
+
+### [Director of Infrastructure & IT Operations](https://www.linkedin.com/jobs/view/4469260934/) — Strategic Employment Partners (SEP)
+- 📍 **Location:** United States
 - 🕒 **Posted:** 2026-09-18
 
-### [Platform Architect - Vice President](https://www.linkedin.com/jobs/view/4468032405/) — Morgan Stanley
-- 📍 **Location:** Alpharetta, GA
+### [AWS Platform Operations Lead, Vice President](https://www.linkedin.com/jobs/view/4469260835/) — State Street
+- 📍 **Location:** Quincy, MA
+- 💰 **Salary:** $120,000 - $217,500
 - 🕒 **Posted:** 2026-09-18
 
-### [Executive Director, Technology Strategy, Business Effectiveness](https://www.linkedin.com/jobs/view/4469251796/) — CIBC US
+### [Corporate Vice President - NEXUS Technology](https://www.linkedin.com/jobs/view/4469257984/) — New York Life
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $180,000 - $244,600
+- 💰 **Salary:** $185,000-$264,500
+- 🕒 **Posted:** 2026-09-18
+
+### [Corporate Vice President - Private Markets Technology](https://www.linkedin.com/jobs/view/4469268293/) — New York Life
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $185,000-$264,500
+- 🕒 **Posted:** 2026-09-18
+
+### [Corporate Vice President - Client & Distribution Technology](https://www.linkedin.com/jobs/view/4469262499/) — New York Life
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $185,000-$264,500
+- 🕒 **Posted:** 2026-09-18
+
+### [Corporate Vice President - Financial Modeling Technology](https://www.linkedin.com/jobs/view/4469263297/) — New York Life
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $185,000-$264,500
 - 🕒 **Posted:** 2026-09-18
