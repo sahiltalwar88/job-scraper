@@ -1,33 +1,70 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-20 00:15 UTC*
+*Last updated: 2026-09-20 05:03 UTC*
 
-**6 new role(s)** since last run · 6 total in last 1h
+**14 new role(s)** since last run · 14 total in last 1h
 
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4468094901/) — Exoserva
-- 📍 **Location:** United States
-- 💰 **Salary:** $190,000–$240,000 USD
-- 🕒 **Posted:** 2026-09-20
-
-### [VP Information Technology (Paramus, NJ)](https://www.linkedin.com/jobs/view/4468402809/) — Coach USA
-- 📍 **Location:** Paramus, NJ
-- 💰 **Salary:** $185,000 - $225,000
-- 🕒 **Posted:** 2026-09-20
-
-### [SERDES IP SYSTEMS ENGINEERING DIRECTOR](https://www.linkedin.com/jobs/view/4468413504/) — Semiconductor Engineering
-- 📍 **Location:** San Jose, CA
-- 🕒 **Posted:** 2026-09-19
-
-### [Senior Director, Analytics Engineering, Data Analytics & AI](https://www.linkedin.com/jobs/view/4469576113/) — Snowflake
-- 📍 **Location:** Menlo Park, CA
-- 💰 **Salary:** $292,000.00/yr - $383,200.00/yr
-- 🕒 **Posted:** 2026-09-19
-
-### [Software Engineering & Development, VP](https://www.linkedin.com/jobs/view/4465093479/) — State Street
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $120,000 - $217,500
-- 🕒 **Posted:** 2026-09-19
-
-### [Head of Engineering](https://www.linkedin.com/jobs/view/4468097877/) — FutureTech Recruitment
+### [Head of AI Platform Engineering](https://www.linkedin.com/jobs/view/4468434376/) — Postman
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $250,000.00/yr - $400,000.00/yr
-- 🕒 **Posted:** 2026-09-19
+- 💰 **Salary:** $310,000.00 to $400,000.00
+- 🕒 **Posted:** 2026-09-20
+
+### [Senior Manager - Machine Learning Engineering](https://www.linkedin.com/jobs/view/4468441027/) — Visalytics
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $190,900 - $334,100
+- 🕒 **Posted:** 2026-09-20
+
+### [Senior Manager Packaging Engineering](https://www.linkedin.com/jobs/view/4469568820/) — BioSpace
+- 📍 **Location:** New Albany, OH
+- 🕒 **Posted:** 2026-09-20
+
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466174332/) — Stryker
+- 📍 **Location:** Flower Mound, TX
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466177294/) — Stryker
+- 📍 **Location:** United States
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466173343/) — Stryker
+- 📍 **Location:** Mahwah, NJ
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [Sr Director - Engineering (Automation, Maintenance, Process)](https://www.linkedin.com/jobs/view/4469566940/) — BioSpace
+- 📍 **Location:** Huntsville, AL
+- 💰 **Salary:** $163,500 - $239,800
+- 🕒 **Posted:** 2026-09-20
+
+### [Head of Platform Technologies MSAT Recombinant Mammalian Drug Substance CoE](https://www.linkedin.com/jobs/view/4469584113/) — BioSpace
+- 📍 **Location:** Framingham, MA
+- 🕒 **Posted:** 2026-09-20
+
+### [Director - Engineering and Maintenance](https://www.linkedin.com/jobs/view/4469584117/) — BioSpace
+- 📍 **Location:** Baltimore, MD
+- 🕒 **Posted:** 2026-09-20
+
+### [Director, Engineering, Applied AI](https://www.linkedin.com/jobs/view/4467330152/) — McGraw Hill
+- 📍 **Location:** United States
+- 💰 **Salary:** $175,000 - $220,000 annually
+- 🕒 **Posted:** 2026-09-20
+
+### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4464152085/) — Stryker
+- 📍 **Location:** Texas, United States
+- 💰 **Salary:** $155,900 - $259,700 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4463884520/) — Stryker
+- 📍 **Location:** Arizona, United States
+- 💰 **Salary:** $155,900 - $259,700 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4467179138/) — Stryker
+- 📍 **Location:** United States
+- 💰 **Salary:** $155,900 - $259,700 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [Head of AI Driven Digital Customer Engagement Management Platform](https://www.linkedin.com/jobs/view/4469567874/) — BioSpace
+- 📍 **Location:** Morristown, NJ
+- 🕒 **Posted:** 2026-09-20
