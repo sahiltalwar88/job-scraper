@@ -1,23 +1,33 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-19 21:33 UTC*
+*Last updated: 2026-09-20 00:15 UTC*
 
-**4 new role(s)** since last run · 4 total in last 1h
+**6 new role(s)** since last run · 6 total in last 1h
 
-### [VP of Systems Engineering - Federal](https://www.linkedin.com/jobs/view/4469550845/) — govconcareershub.com
-- 📍 **Location:** New York, NY
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4468094901/) — Exoserva
+- 📍 **Location:** United States
+- 💰 **Salary:** $190,000–$240,000 USD
+- 🕒 **Posted:** 2026-09-20
+
+### [VP Information Technology (Paramus, NJ)](https://www.linkedin.com/jobs/view/4468402809/) — Coach USA
+- 📍 **Location:** Paramus, NJ
+- 💰 **Salary:** $185,000 - $225,000
+- 🕒 **Posted:** 2026-09-20
+
+### [SERDES IP SYSTEMS ENGINEERING DIRECTOR](https://www.linkedin.com/jobs/view/4468413504/) — Semiconductor Engineering
+- 📍 **Location:** San Jose, CA
 - 🕒 **Posted:** 2026-09-19
 
-### [Senior Director, Business Development, T1 CSP Customers - DC GPU](https://www.linkedin.com/jobs/view/4465232743/) — AMD
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $256,400.00/yr - $384,600.00/yr
+### [Senior Director, Analytics Engineering, Data Analytics & AI](https://www.linkedin.com/jobs/view/4469576113/) — Snowflake
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $292,000.00/yr - $383,200.00/yr
 - 🕒 **Posted:** 2026-09-19
 
-### [Head of AEO & SEO](https://www.linkedin.com/jobs/view/4456448490/) — Stripe
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $210,200 - $315,200
+### [Software Engineering & Development, VP](https://www.linkedin.com/jobs/view/4465093479/) — State Street
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $120,000 - $217,500
 - 🕒 **Posted:** 2026-09-19
 
-### [Head of AEO & SEO](https://www.linkedin.com/jobs/view/4456437568/) — Stripe
-- 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $210,200 - $315,200
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4468097877/) — FutureTech Recruitment
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $250,000.00/yr - $400,000.00/yr
 - 🕒 **Posted:** 2026-09-19
