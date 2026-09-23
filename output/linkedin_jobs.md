@@ -1,62 +1,193 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-23 01:42 UTC*
+*Last updated: 2026-09-23 07:59 UTC*
 
-**12 new role(s)** since last run · 12 total in last 1h
+**38 new role(s)** since last run · 38 total in last 1h
 
-### [Director Software Engineering and Architecture](https://www.linkedin.com/jobs/view/4468946264/) — Midcontinent Independent System Operator (MISO)
-- 📍 **Location:** Carmel, IN
-- 💰 **Salary:** $201,000-226,000
+### [Director of Engineering, Retail Media](https://www.linkedin.com/jobs/view/4469421530/) — Ulta Beauty
+- 📍 **Location:** Bolingbrook, IL
+- 💰 **Salary:** $143,000.00 - $230,000.00
 - 🕒 **Posted:** 2026-09-23
 
-### [Director, Corporate Engineering](https://www.linkedin.com/jobs/view/4449421161/) — WM
-- 📍 **Location:** United States
-- 💰 **Salary:** $152,000.00/yr - $218,000.00/yr
-- 🕒 **Posted:** 2026-09-23
-
-### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4469077493/) — Elevo Learning
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $130,000- $160,000
-- 🕒 **Posted:** 2026-09-23
-
-### [Director, Engineering Operations](https://www.linkedin.com/jobs/view/4470649692/) — Félix
-- 📍 **Location:** New York, United States
-- 💰 **Salary:** $255,000.00/yr - $285,000.00/yr
-- 🕒 **Posted:** 2026-09-23
-
-### [Executive Director, Software Engineering – Pharmacy & Consumer Wellness (PCW)](https://www.linkedin.com/jobs/view/4470497043/) — CVS Health
-- 📍 **Location:** Woonsocket, RI
-- 💰 **Salary:** $175,100.00 - $334,750.00
-- 🕒 **Posted:** 2026-09-23
-
-### [Sr. Chief Engineer, DCEO, AWS DC Operations Engineering, DCEO](https://www.linkedin.com/jobs/view/4470659057/) — Amazon Web Services (AWS)
-- 📍 **Location:** Hermiston, OR
-- 🕒 **Posted:** 2026-09-23
-
-### [Director, Software Engineering – Acute Devices](https://www.linkedin.com/jobs/view/4468956105/) — Vantive
+### [Director, Software Engineering – Acute Devices](https://www.linkedin.com/jobs/view/4468973822/) — Vantive
 - 📍 **Location:** Minneapolis, MN
 - 💰 **Salary:** $200,000 - $275,000 annually
 - 🕒 **Posted:** 2026-09-23
 
-### [Product Management Senior Director](https://www.linkedin.com/jobs/view/4470655701/) — Salesforce
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $218,400 - $365,200 annually
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470692378/) — Deloitte
+- 📍 **Location:** Hartford, CT
+- 💰 **Salary:** $163,400 to $322,100
 - 🕒 **Posted:** 2026-09-23
 
-### [Senior Director, Tableau AMER](https://www.linkedin.com/jobs/view/4470657481/) — Salesforce
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470695147/) — Deloitte
+- 📍 **Location:** Minneapolis, MN
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470685733/) — Deloitte
+- 📍 **Location:** Jacksonville, FL
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470689478/) — Deloitte
+- 📍 **Location:** Stamford, CT
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470695136/) — Deloitte
+- 📍 **Location:** Columbus, OH
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470679924/) — Deloitte
+- 📍 **Location:** Cincinnati, OH
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470682888/) — Deloitte
+- 📍 **Location:** Greater Indianapolis
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470683824/) — Deloitte
+- 📍 **Location:** Pittsburgh, PA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470680879/) — Deloitte
+- 📍 **Location:** Philadelphia, PA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470692394/) — Deloitte
+- 📍 **Location:** Tempe, AZ
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470695141/) — Deloitte
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470697131/) — Deloitte
+- 📍 **Location:** Tampa, FL
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470698107/) — Deloitte
+- 📍 **Location:** Richmond, VA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470901006/) — Deloitte
+- 📍 **Location:** Kansas City, MO
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470690448/) — Deloitte
+- 📍 **Location:** Detroit, MI
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470681848/) — Deloitte
+- 📍 **Location:** San Diego, CA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470691411/) — Deloitte
+- 📍 **Location:** St Louis, MO
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470685725/) — Deloitte
+- 📍 **Location:** Morristown, NJ
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470677998/) — Deloitte
+- 📍 **Location:** Raleigh, NC
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470697137/) — Deloitte
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $223,860 - $299,390 annually
+- 💰 **Salary:** $163,400 to $322,100
 - 🕒 **Posted:** 2026-09-23
 
-### [Director, Product Design - AI & Context](https://www.linkedin.com/jobs/view/4469088730/) — Figma
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470699052/) — Deloitte
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470901005/) — Deloitte
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470698113/) — Deloitte
+- 📍 **Location:** Miami, FL
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470687671/) — Deloitte
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470689485/) — Deloitte
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470690465/) — Deloitte
+- 📍 **Location:** Costa Mesa, CA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470678915/) — Deloitte
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470901003/) — Deloitte
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470698106/) — Deloitte
+- 📍 **Location:** Dallas, TX
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470697139/) — Deloitte
+- 📍 **Location:** McLean, VA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470696143/) — Deloitte
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470696135/) — Deloitte
+- 📍 **Location:** Houston, TX
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470686722/) — Deloitte
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $290,000—$376,000 USD
+- 💰 **Salary:** $163,400 to $322,100
 - 🕒 **Posted:** 2026-09-23
 
-### [Vice President Information Technology](https://www.linkedin.com/jobs/view/4469076957/) — unHR LLC
-- 📍 **Location:** Georgia, United States
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470691420/) — Deloitte
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $163,400 to $322,100
 - 🕒 **Posted:** 2026-09-23
 
-### [Director, Technology](https://www.linkedin.com/jobs/view/4463084815/) — Henry Schein One
-- 📍 **Location:** United States
-- 💰 **Salary:** $165,000 - $210,000,
+### [IT Engineering and Strategy Transformation Senior Manager](https://www.linkedin.com/jobs/view/4470688475/) — Deloitte
+- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $163,400 to $322,100
+- 🕒 **Posted:** 2026-09-23
+
+### [Deputy Head of Engineering](https://www.linkedin.com/jobs/view/4470905254/) — Airswift
+- 📍 **Location:** Pasir Gudang, Johore, Malaysia
 - 🕒 **Posted:** 2026-09-23
