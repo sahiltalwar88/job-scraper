@@ -391,9 +391,17 @@ Generate the whole file from your CV with [`docs/cv-to-config-prompt.md`](docs/c
 
 ## Staying up to date with upstream
 
-Enable the **`sync_upstream.yml`** workflow (**Actions → Sync from upstream → Enable workflow**) and it rebases new code improvements from the upstream repo every Monday.
+Enable the **`sync_upstream.yml`** workflow (**Actions → Sync from upstream → Enable workflow**) and it merges new code improvements from the upstream repo every Monday. Your `output/` data, `config.json` and `scoring_profile.json` always stay exactly as your fork has them.
 
-> **Use the workflow, not the GitHub "Sync fork" button.** Because your fork has commits upstream doesn't (your `config.json`, your scraped data), GitHub's built-in button shows "Discard N commits" — which would delete your config. The `sync_upstream.yml` workflow handles this correctly by rebasing your commits on top of upstream.
+> **Use the workflow, not the GitHub "Sync fork" button.** Because your fork has commits upstream doesn't (your `config.json`, your scraped data), GitHub's built-in button shows "Discard N commits" — which would delete your config. The `sync_upstream.yml` workflow handles this correctly by merging upstream into your fork (see [`scripts/sync-upstream.sh`](scripts/sync-upstream.sh)).
+
+**Add a `SYNC_TOKEN` secret** so syncs that include workflow-file changes can push. GitHub never lets the default Actions token change files under `.github/workflows/`, and upstream updates often do. Create a [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) scoped to your fork with **Contents: Read and write** and **Workflows: Read and write**, then save it as the repository secret `SYNC_TOKEN`. Without it, those syncs fail with "Push refused".
+
+**If a sync fails**, run it from a local clone instead; it pushes with your own GitHub login:
+
+```bash
+bash scripts/sync-upstream.sh
+```
 
 ---
 

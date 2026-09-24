@@ -46,10 +46,11 @@ The "raw sources" are external job boards and GitHub Actions inputs, not files i
 | `ENABLE_DATA_COMMITS` var | GitHub Actions **Variables** | Feature flag — must be `true` for scrapers to commit |
 | `ANTHROPIC_API_KEY`, `CANDIDATE_PROFILE`, `CANDIDATE_RESUME` | GitHub Actions **Secrets** | Optional — required only for AI triage |
 | `PUSHOVER_TOKEN`, `PUSHOVER_USER` | GitHub Actions **Secrets** | Optional — push notifications |
+| `SYNC_TOKEN` | GitHub Actions **Secrets** | Optional — fine-grained PAT (Contents + Workflows write) so `sync_upstream.yml` can push upstream workflow-file changes |
 
 ## Related repos
 
-- **Upstream:** `scottcoffin/Job_Scraper` (inferred from dashboard URL in `docs/AGENT_README.md`). This is a fork. `sync_upstream.yml` rebases weekly — safer than GitHub's "Sync fork" button.
+- **Upstream:** `scottcoffin/Job_Scraper` (inferred from dashboard URL in `docs/AGENT_README.md`). This is a fork. `sync_upstream.yml` merges weekly via `scripts/sync-upstream.sh`, keeping the fork's `output/` and config — safer than GitHub's "Sync fork" button.
 
 ## Rules
 

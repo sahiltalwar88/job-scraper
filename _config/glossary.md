@@ -19,5 +19,5 @@ Domain terms for `job-scraper`. Read when a workflow, scraper field, or triage o
 | **ENABLE_DATA_COMMITS** | GitHub Actions **Variable** (not a secret). Must be `"true"` for scrapers to commit. Common fork-setup failure. |
 | **CONFIG_JSON** | GitHub Actions **Secret** holding the user's `config.json` as a single-line, ASCII-safe minified JSON. Multi-line storage breaks GitHub's redaction and the partition matrix. Export via `scripts/export-config-secret.sh`. |
 | **concurrency group `job-scraper-commit-push`** | Serializes all commit workflows to prevent push conflicts on `output/`. Any new committing workflow must join it. |
-| **sync_upstream** | Weekly workflow that rebases this fork onto upstream. Safer than GitHub's "Sync fork" button because it preserves `merge=ours` user files. |
+| **sync_upstream** | Weekly workflow that merges upstream into this fork (logic in `scripts/sync-upstream.sh`). Safer than GitHub's "Sync fork" button because it preserves `merge=ours` user files. |
 | **triage.html** | The dashboard. Pure client-side JS; no build step. Reads `output/*.json` at page-load. Hosted on GitHub Pages (main branch, `/` root). |
