@@ -1,73 +1,95 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-25 00:04 UTC*
+*Last updated: 2026-09-25 05:09 UTC*
 
-**15 new role(s)** since last run · 15 total in last 1h
+**19 new role(s)** since last run · 19 total in last 1h
 
-### [Director, Platform Engineering](https://www.linkedin.com/jobs/view/4471802526/) — Visa
-- 📍 **Location:** Foster City, CA
-- 💰 **Salary:** $219,100.00 to $ 350,800.00 USD per year
-- 🕒 **Posted:** 2026-09-24
+### [Director - Engineering, High Speed SerDes & Analog / Mixed-Signal (Silicon One Optics Group)](https://www.linkedin.com/jobs/view/4471850109/) — Cisco
+- 📍 **Location:** Carlsbad, CA
+- 💰 **Salary:** $220,900.00 to $291,500.00
+- 🕒 **Posted:** 2026-09-25
 
-### [Director, Data Engineering](https://www.linkedin.com/jobs/view/4469795397/) — SQUIRE
+### [Director, Engineering, Camera Imaging and Display](https://www.linkedin.com/jobs/view/4470086014/) — Google
+- 📍 **Location:** San Diego, CA
+- 💰 **Salary:** $281000 - $391000
+- 🕒 **Posted:** 2026-09-25
+
+### [Director, Engineering, Camera Imaging and Display](https://www.linkedin.com/jobs/view/4470078227/) — Google
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $281000 - $391000
+- 🕒 **Posted:** 2026-09-25
+
+### [Head of Product Engineering](https://www.linkedin.com/jobs/view/4471832855/) — Caselle, Inc.
+- 📍 **Location:** Provo, UT
+- 🕒 **Posted:** 2026-09-25
+
+### [Head of Platform](https://www.linkedin.com/jobs/view/4471851060/) — Caselle, Inc.
+- 📍 **Location:** Provo, UT
+- 🕒 **Posted:** 2026-09-25
+
+### [Sr. Manager, Engineering & Automation](https://www.linkedin.com/jobs/view/4443670523/) — Thermo Fisher Scientific
+- 📍 **Location:** Logan, UT
+- 🕒 **Posted:** 2026-09-25
+
+### [Director - Engineering, High Speed SerDes & Analog / Mixed-Signal (Silicon One Optics Group)](https://www.linkedin.com/jobs/view/4471843597/) — Cisco
+- 📍 **Location:** Allentown, PA
+- 💰 **Salary:** $220,900.00 to $291,500.00
+- 🕒 **Posted:** 2026-09-25
+
+### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4470112724/) — Walmart Global Tech
+- 📍 **Location:** Bellevue, WA
+- 💰 **Salary:** $132,000.00/yr - $264,000.00/yr
+- 🕒 **Posted:** 2026-09-25
+
+### [Senior Engineering Manager, Member Experience](https://www.linkedin.com/jobs/view/4470121476/) — Omada Health
 - 📍 **Location:** United States
-- 💰 **Salary:** $200,000 - $230,000
-- 🕒 **Posted:** 2026-09-24
+- 💰 **Salary:** $202,400 - $253,000
+- 🕒 **Posted:** 2026-09-25
 
-### [VP of Engineering and AI Architecture](https://www.linkedin.com/jobs/view/4471802558/) — Burtch Works
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $200,000.00/yr - $240,000.00/yr
-- 🕒 **Posted:** 2026-09-24
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466173343/) — Stryker
+- 📍 **Location:** Mahwah, NJ
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-25
 
-### [The Core Engineering-L2-Dallas-Vice President-Software Engineering](https://www.linkedin.com/jobs/view/4470036884/) — Goldman Sachs
-- 📍 **Location:** Dallas, TX
-- 🕒 **Posted:** 2026-09-24
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466174332/) — Stryker
+- 📍 **Location:** Flower Mound, TX
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-25
 
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4469792388/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-09-24
-
-### [Sr. Manager, Software Engineering – Marketplace](https://www.linkedin.com/jobs/view/4471695817/) — Zipline
-- 📍 **Location:** South San Francisco, CA
-- 💰 **Salary:** $217,000 - $270,000
-- 🕒 **Posted:** 2026-09-24
-
-### [Sr. Engineering Manager](https://www.linkedin.com/jobs/view/4471806305/) — Veritas Search Group
-- 📍 **Location:** City of Industry, CA
-- 💰 **Salary:** $170,000.00/yr - $190,000.00/yr
-- 🕒 **Posted:** 2026-09-24
-
-### [Vice President, Technology Operations](https://www.linkedin.com/jobs/view/4471815129/) — Swooped
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466177294/) — Stryker
 - 📍 **Location:** United States
-- 💰 **Salary:** $282,000.00/yr - $320,000.00/yr
-- 🕒 **Posted:** 2026-09-24
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-25
 
-### [Senior Strategic Product Technology & Capture Manager](https://www.linkedin.com/jobs/view/4469782792/) — Woodward, Inc.
-- 📍 **Location:** Fort Collins, CO
-- 🕒 **Posted:** 2026-09-24
+### [VP of Enterprise Technology and Business Operations](https://www.linkedin.com/jobs/view/4437068766/) — AvidXchange, Inc.
+- 📍 **Location:** Charlotte, NC
+- 🕒 **Posted:** 2026-09-25
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4471808364/) — Swooped
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-24
+### [Director, Product Management, Serverless, Orchestration and Firebase](https://www.linkedin.com/jobs/view/4470073385/) — Google
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $281000 - $391000
+- 🕒 **Posted:** 2026-09-25
 
-### [VP of Engineering (Circuit Design)](https://www.linkedin.com/jobs/view/4459433152/) — SBT
-- 📍 **Location:** San Francisco Bay Area
-- 🕒 **Posted:** 2026-09-24
+### [Director, Product Management, Serverless, Orchestration and Firebase](https://www.linkedin.com/jobs/view/4470080205/) — Google
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $281000 - $391000
+- 🕒 **Posted:** 2026-09-25
 
-### [Senior Director, Product and Platform Security](https://www.linkedin.com/jobs/view/4471800894/) — Toast
-- 📍 **Location:** United States
-- 💰 **Salary:** $275,000—$440,000 USD
-- 🕒 **Posted:** 2026-09-24
+### [Director - AI Engineering - Enterprise AI Platforms](https://www.linkedin.com/jobs/view/4470065975/) — American Express
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $144,250.00/yr - $256,250.00/yr
+- 🕒 **Posted:** 2026-09-25
 
-### [The Core Engineering-New York-Vice President-AI Product Manager - Enterprise Platforms & Workflow Transformation](https://www.linkedin.com/jobs/view/4470038748/) — Goldman Sachs
+### [Director - AI Engineering - Enterprise AI Platforms](https://www.linkedin.com/jobs/view/4470083263/) — American Express
 - 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-09-24
+- 💰 **Salary:** $144,250.00/yr - $256,250.00/yr
+- 🕒 **Posted:** 2026-09-25
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4471800609/) — Swooped
-- 📍 **Location:** United States
-- 💰 **Salary:** $22,000.00/yr - $230,000.00/yr
-- 🕒 **Posted:** 2026-09-24
+### [Chief AI Officer / Head of Engineering at Banks, Insurers & Asset Managemenet Firms](https://www.linkedin.com/jobs/view/4471843924/) — Ethos
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $500.00/hr - $500.00/hr
+- 🕒 **Posted:** 2026-09-25
 
-### [Director - Software Engineering, SLT, BI, Systems (HW), AI](https://www.linkedin.com/jobs/view/4471815380/) — Advantest
-- 📍 **Location:** Lake Forest, CA
-- 🕒 **Posted:** 2026-09-24
+### [Chief AI Officer / Head of Engineering at Banks, Insurers & Asset Managemenet Firms](https://www.linkedin.com/jobs/view/4471860159/) — Ethos
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $500.00/hr - $500.00/hr
+- 🕒 **Posted:** 2026-09-25
