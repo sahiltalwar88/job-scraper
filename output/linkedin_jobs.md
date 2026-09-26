@@ -1,57 +1,52 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-26 16:35 UTC*
+*Last updated: 2026-09-26 20:01 UTC*
 
-**12 new role(s)** since last run · 13 total in last 1h
+**11 new role(s)** since last run · 11 total in last 1h
 
-### [Software Engineering Director, Agentic Evaluations](https://www.linkedin.com/jobs/view/4471038729/) — Jobgether
-- 📍 **Location:** United States
-- 💰 **Salary:** $260,000–$320,000,
+### [Director of Engineering & Security](https://www.linkedin.com/jobs/view/4450740904/) — Rosewood Washington, D.C.
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $120,000 - $135,000
 - 🕒 **Posted:** 2026-09-26
 
-### [Sr. Manager, Software Engineering](https://www.linkedin.com/jobs/view/4408047893/) — Avalara
-- 📍 **Location:** United States
+### [Senior Director of Engineering, Core Product](https://www.linkedin.com/jobs/view/4472299504/) — Coursedog
+- 📍 **Location:** Washington, DC
+- 💰 **Salary:** $175,000 - $200,000
 - 🕒 **Posted:** 2026-09-26
 
-### [Senior Engineering Manager, Data Platform](https://www.linkedin.com/jobs/view/4451296061/) — Hadrian
-- 📍 **Location:** Los Angeles, CA
-- 💰 **Salary:** $249,000 - $299,000
+### [Sanitary Infrastructure Division Chief](https://www.linkedin.com/jobs/view/4472289972/) — City of Alexandria, Virginia
+- 📍 **Location:** Alexandria, VA
 - 🕒 **Posted:** 2026-09-26
 
-### [Sr Engineering Manager – Network Infrastructure (Hybrid - Seattle)](https://www.linkedin.com/jobs/view/4427145616/) — Nordstrom
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $191,000-$297,000 annually
+### [Director Site Reliability Engineer, AI Infrastructure](https://www.linkedin.com/jobs/view/4472400545/) — d-Matrix
+- 📍 **Location:** Santa Clara, CA
 - 🕒 **Posted:** 2026-09-26
 
-### [Senior Manager IT - Platform Product & Experience (Remote)](https://www.linkedin.com/jobs/view/4454321017/) — First Citizens Bank
-- 📍 **Location:** Raleigh, NC
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4444751307/) — Direct Supply
+- 📍 **Location:** Milwaukee, WI
 - 🕒 **Posted:** 2026-09-26
 
-### [Head of Field Engineering Operations](https://www.linkedin.com/jobs/view/4407534197/) — Vercel
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $260,000-$300,000
+### [Senior Manager AI Platform Architecture](https://www.linkedin.com/jobs/view/4430244296/) — ECLARO
+- 📍 **Location:** Bolingbrook, IL
+- 💰 **Salary:** $145,000.00/yr - $190,000.00/yr
 - 🕒 **Posted:** 2026-09-26
 
-### [Vice President of Technology](https://www.linkedin.com/jobs/view/4472293340/) — Swisscanto Asset Management Deutschland
-- 📍 **Location:** United States
+### [Senior Director, IT Engineering & Support - 1038](https://www.linkedin.com/jobs/view/4472413035/) — Quantinuum
+- 📍 **Location:** Broomfield, CO
+- 💰 **Salary:** $200,000.00/yr - $270,000.00/yr
 - 🕒 **Posted:** 2026-09-26
 
-### [Vice President of Technology Innovation](https://www.linkedin.com/jobs/view/4470562643/) — CIH CAPITAL MANAGEMENT
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-26
-
-### [Senior Manager Oracle/PeopleSoft Technology Applications (Senior Manager, Software Development, Engineering and Services)](https://www.linkedin.com/jobs/view/4472404131/) — Northwell Health
-- 📍 **Location:** Melville, NY
-- 💰 **Salary:** $152,000.00/yr - $266,000.00/yr
-- 🕒 **Posted:** 2026-09-26
-
-### [Vice President of Technology Development](https://www.linkedin.com/jobs/view/4472288776/) — AFRICAPITAL MANAGEMENT
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-26
-
-### [Head of IT and Business Technology Solutions (D365 Preferred)](https://www.linkedin.com/jobs/view/4471046398/) — eleven200, LLC
-- 📍 **Location:** Orange County, FL
-- 🕒 **Posted:** 2026-09-26
-
-### [Senior Director of Agentic Software Development](https://www.linkedin.com/jobs/view/4461417142/) — FactSet
+### [Director, Product Management, AWS Developer Tools](https://www.linkedin.com/jobs/view/4472402367/) — Amazon Web Services (AWS)
 - 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-26
+
+### [Technology And Innovation Director](https://www.linkedin.com/jobs/view/4472404468/) — Nassau County Board of County Commissioners
+- 📍 **Location:** Yulee, FL
+- 🕒 **Posted:** 2026-09-26
+
+### [Director of Engineering, UAS Development](https://www.linkedin.com/jobs/view/4472296787/) — Harmattan AI
+- 📍 **Location:** Rabat, Rabat-Salé-Kénitra, Morocco
+- 🕒 **Posted:** 2026-09-26
+
+### [HEAD OF INFORMATION TECHNOLOGY (IT), DIGITAL PLATFORMS & CREATIVE TECHNOLOGY](https://www.linkedin.com/jobs/view/4472294704/) — PSALM'S WINGS HOLDINGS
+- 📍 **Location:** Lagos, Lagos State, Nigeria
 - 🕒 **Posted:** 2026-09-26
