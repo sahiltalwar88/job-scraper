@@ -403,6 +403,8 @@ Enable the **`sync_upstream.yml`** workflow (**Actions â†’ Sync from upstream â†
 bash scripts/sync-upstream.sh
 ```
 
+> The sync never changes your copy of `sync_upstream.yml` or `scripts/sync-upstream.sh`, so a bad upstream edit can't break your syncs. To pick up a newer version of either, copy it from upstream by hand.
+
 ---
 
 ## Attribution
