@@ -1,91 +1,77 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-26 00:09 UTC*
+*Last updated: 2026-09-26 05:08 UTC*
 
-**19 new role(s)** since last run · 19 total in last 1h
+**15 new role(s)** since last run · 15 total in last 1h
 
-### [Dual Property Assistant Director of Engineering](https://www.linkedin.com/jobs/view/4472211820/) — W Hotels
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $87,000-$119,000 annually
+### [Director, Reliability Engineering (Nashville, TN on-site)](https://www.linkedin.com/jobs/view/4470542371/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $146,300 - $306,400 per year
 - 🕒 **Posted:** 2026-09-26
 
-### [Director, Engineering](https://www.linkedin.com/jobs/view/4470716764/) — Novolex
-- 📍 **Location:** Cedar Rapids, IA
-- 🕒 **Posted:** 2026-09-25
+### [Site Engineering & Maintenance Head](https://www.linkedin.com/jobs/view/4472253449/) — BioSpace
+- 📍 **Location:** Irvine, CA
+- 💰 **Salary:** $240,000 – $270,000
+- 🕒 **Posted:** 2026-09-26
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4472202811/) — Teklysium Inc.
-- 📍 **Location:** Sausalito, CA
-- 🕒 **Posted:** 2026-09-25
+### [Senior Director, Application Engineering](https://www.linkedin.com/jobs/view/4472256383/) — Renesas Electronics
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-09-26
 
-### [Director Reliability Engineering & Streetcar](https://www.linkedin.com/jobs/view/4470504620/) — DART (Dallas Area Rapid Transit)
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $105,654.00 - $174,330.00
-- 🕒 **Posted:** 2026-09-25
+### [Senior Manager, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4470526865/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $146,300 - $306,400 per year
+- 🕒 **Posted:** 2026-09-26
 
-### [Director, Systems Engineering](https://www.linkedin.com/jobs/view/4470722632/) — CyrusOne
-- 📍 **Location:** Dallas, TX
-- 🕒 **Posted:** 2026-09-25
+### [(USA) Senior Manager, Automation Engineering](https://www.linkedin.com/jobs/view/4470537406/) — Walmart
+- 📍 **Location:** Bentonville, AR
+- 💰 **Salary:** $110,000.00/yr - $220,000.00/yr
+- 🕒 **Posted:** 2026-09-26
 
-### [Director, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4472207657/) — DaVita Kidney Care
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $129,000.00/yr - $205,000.00/yr
-- 🕒 **Posted:** 2026-09-25
+### [Senior Data Science Manager, Developer Platform](https://www.linkedin.com/jobs/view/4470782311/) — Discord
+- 📍 **Location:** San Francisco Bay Area
+- 💰 **Salary:** $342,000 to $380,000
+- 🕒 **Posted:** 2026-09-26
 
-### [Director, Solution Engineering – Solutions Validation & Customer Use Cases](https://www.linkedin.com/jobs/view/4472204587/) — Hewlett Packard Enterprise
-- 📍 **Location:** Sunnyvale, CA
-- 🕒 **Posted:** 2026-09-25
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466173343/) — Stryker
+- 📍 **Location:** Mahwah, NJ
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-26
 
-### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4472201781/) — Ziply Fiber
-- 📍 **Location:** Portland, OR
-- 💰 **Salary:** $125,600 to $166,000 annually
-- 🕒 **Posted:** 2026-09-25
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466174332/) — Stryker
+- 📍 **Location:** Flower Mound, TX
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-26
 
-### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4472208552/) — Ziply Fiber
-- 📍 **Location:** Everett, WA
-- 💰 **Salary:** $125,600 to $166,000 annually
-- 🕒 **Posted:** 2026-09-25
-
-### [Sr Manager IT- Data Engineering](https://www.linkedin.com/jobs/view/4472096982/) — Milwaukee Tool
-- 📍 **Location:** Menomonee Falls, WI
-- 🕒 **Posted:** 2026-09-25
-
-### [Head of Markets Data & Risk Technology, Managing Director, Onsite](https://www.linkedin.com/jobs/view/4468256766/) — State Street
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $170,000 - $282,500
-- 🕒 **Posted:** 2026-09-25
-
-### [Senior Director, Agile Delivery & Technology PMO (Member Data)](https://www.linkedin.com/jobs/view/4470518193/) — DataSpring
-- 📍 **Location:** Washington, DC
-- 🕒 **Posted:** 2026-09-25
-
-### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4472095950/) — Ziply Fiber
-- 📍 **Location:** Spokane, WA
-- 💰 **Salary:** $113,100 to $149,000 annually
-- 🕒 **Posted:** 2026-09-25
-
-### [Sr. Manager, Capacity Engineering](https://www.linkedin.com/jobs/view/4472216386/) — Pinterest
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466177294/) — Stryker
 - 📍 **Location:** United States
-- 💰 **Salary:** $208,592—$429,454 USD
-- 🕒 **Posted:** 2026-09-25
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-26
 
-### [Sr. Manager, Capacity Engineering](https://www.linkedin.com/jobs/view/4472218302/) — Pinterest
+### [Director, Global Security Technology (Remote)](https://www.linkedin.com/jobs/view/4467179138/) — Stryker
+- 📍 **Location:** United States
+- 💰 **Salary:** $155,900 - $259,700 USD
+- 🕒 **Posted:** 2026-09-26
+
+### [Senior Engineering Manager, Financial Data, Reporting & Analytics](https://www.linkedin.com/jobs/view/4472262034/) — Commure
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $208,592—$429,454 USD
-- 🕒 **Posted:** 2026-09-25
+- 💰 **Salary:** $240,000.00/yr - $275,000.00/yr
+- 🕒 **Posted:** 2026-09-26
 
-### [Director Event Technology II - Sheraton Waikiki](https://www.linkedin.com/jobs/view/4470365623/) — Encore
-- 📍 **Location:** Honolulu, HI
-- 💰 **Salary:** $66,291.00/yr - $86,178.00/yr
-- 🕒 **Posted:** 2026-09-25
+### [Senior Engineering Manager, Financial Data, Reporting & Analytics](https://www.linkedin.com/jobs/view/4472244461/) — Commure
+- 📍 **Location:** Mountain View, CA
+- 💰 **Salary:** $240,000.00/yr - $275,000.00/yr
+- 🕒 **Posted:** 2026-09-26
 
-### [Director, Digital Commerce Engineering (Customer Experience Platforms)](https://www.linkedin.com/jobs/view/4472207888/) — Aeroflow Health
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-25
+### [Director of Enterprise Applications and Platform Services](https://www.linkedin.com/jobs/view/4470782560/) — University of New England
+- 📍 **Location:** Biddeford, ME
+- 🕒 **Posted:** 2026-09-26
 
-### [Director Engineering - UAS/AAM](https://www.linkedin.com/jobs/view/4472222094/) — Honeywell Aerospace
-- 📍 **Location:** Phoenix, AZ
-- 🕒 **Posted:** 2026-09-25
+### [Executive Director, Digital & Technology - Law, Security, Compliance](https://www.linkedin.com/jobs/view/4472252487/) — BioSpace
+- 📍 **Location:** Sleepy Hollow, NY
+- 💰 **Salary:** $255,000.00 - $424,900.00
+- 🕒 **Posted:** 2026-09-26
 
-### [Sr Manager, Technology Business Management](https://www.linkedin.com/jobs/view/4472214499/) — DaVita Kidney Care
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $115,000.00/yr - $183,000.00/yr
-- 🕒 **Posted:** 2026-09-25
+### [Senior Director, Digital & Technology, Portfolio & Financial Management](https://www.linkedin.com/jobs/view/4472261252/) — BioSpace
+- 📍 **Location:** Sleepy Hollow, NY
+- 💰 **Salary:** $203,000.00 - $338,400.00
+- 🕒 **Posted:** 2026-09-26
