@@ -1,47 +1,28 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-27 20:17 UTC*
+*Last updated: 2026-09-27 23:09 UTC*
 
-**10 new role(s)** since last run · 10 total in last 1h
+**5 new role(s)** since last run · 5 total in last 1h
 
-### [Director, Software Engineering – Acute Devices](https://www.linkedin.com/jobs/view/4470820379/) — Vantive
-- 📍 **Location:** Minneapolis, MN
-- 💰 **Salary:** $200,000 - $275,000 annually
-- 🕒 **Posted:** 2026-09-27
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4472450953/) — Addition Management
-- 📍 **Location:** Greenville-Spartanburg-Anderson, South Carolina Area
-- 💰 **Salary:** $225,000.00/yr - $275,000.00/yr
-- 🕒 **Posted:** 2026-09-27
-
-### [Director of Engineering (Utility-Scale Solar & BESS)](https://www.linkedin.com/jobs/view/4465785200/) — Expert Executive Recruiters (EER Global)
-- 📍 **Location:** Arlington, VA
-- 💰 **Salary:** $160,000.00/yr - $210,000.00/yr
-- 🕒 **Posted:** 2026-09-27
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4472451870/) — Cumberland Additive, Inc.
-- 📍 **Location:** Pflugerville, TX
-- 🕒 **Posted:** 2026-09-27
-
-### [Sr. Design Engineering Manager](https://www.linkedin.com/jobs/view/4472462357/) — American Plastics
-- 📍 **Location:** Jefferson City, MO
-- 🕒 **Posted:** 2026-09-27
-
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4472464184/) — Mega Exchange
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4471096753/) — FutureTech Recruitment
 - 📍 **Location:** United States
+- 💰 **Salary:** $210,000.00/yr - $240,000.00/yr
 - 🕒 **Posted:** 2026-09-27
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4470815540/) — Face Rock
+### [Senior Director, Package Design Engineering](https://www.linkedin.com/jobs/view/4472458990/) — Renesas Electronics
+- 📍 **Location:** Austin, TX
+- 🕒 **Posted:** 2026-09-27
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4471303541/) — FutureTech Recruitment
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $415,000.00/yr - $450,000.00/yr
+- 🕒 **Posted:** 2026-09-27
+
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466174332/) — Stryker
+- 📍 **Location:** Flower Mound, TX
+- 💰 **Salary:** $135,600 - $225,900 USD
+- 🕒 **Posted:** 2026-09-27
+
+### [Senior Platform Manager, EDT Solution Delivery AEM (Remote)](https://www.linkedin.com/jobs/view/4466177294/) — Stryker
 - 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-27
-
-### [Vice President of Technology](https://www.linkedin.com/jobs/view/4472453959/) — Matrixport-NY
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-27
-
-### [Vice President of Technology Innovation](https://www.linkedin.com/jobs/view/4470809815/) — Gulf Investment & Marketing Group (GIMG) Ltd
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-27
-
-### [Director of Information Technology](https://www.linkedin.com/jobs/view/4471190397/) — Company
-- 📍 **Location:** Bergen County, NJ
+- 💰 **Salary:** $135,600 - $225,900 USD
 - 🕒 **Posted:** 2026-09-27
