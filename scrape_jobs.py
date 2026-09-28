@@ -107,7 +107,7 @@ def _cfg(path: str, default):
 
 
 # Short field label + geo subtitle for the digest titles, from config.profile.
-# "Environmental / Toxicology Job Tracker" → "Environmental / Toxicology".
+# e.g. "Engineering Job Tracker" → "Engineering".
 PROFILE_LABEL = re.sub(
     r'\s*(job\s*tracker|tracker|jobs?)\s*$', '',
     str(_cfg("profile.title", "Job")), flags=re.I).strip() or "Job"
@@ -126,7 +126,7 @@ REQUEST_DELAY = 0.3
 # LinkedIn needs a longer inter-request gap; jitter is added at call sites
 LINKEDIN_REQUEST_DELAY = 3.0
 
-# Biotech digest should only contain reliably fresh roles.
+# Priority digest should only contain reliably fresh roles.
 FRESH_JOB_LOOKBACK = timedelta(hours=24)
 
 # Titles containing any excluded term are dropped (config.json → keywords.exclude).
@@ -414,12 +414,10 @@ def is_recent_posting(job: dict, *, now: datetime | None = None) -> bool:
 # - greenhouse: "slug" (used in boards-api.greenhouse.io/v1/boards/{slug}/jobs)
 # - workday:    "url"  (full /wday/cxs/{tenant}/{site}/jobs endpoint)
 #
-# NOTE: The original biotech employers were on public Greenhouse/Workday boards.
-# Environmental / toxicology employers (Ramboll, Exponent, ToxStrategies, Tetra
-# Tech, ICF, NGOs, etc.) overwhelmingly use iCIMS / Taleo / SuccessFactors,
-# which have no clean public JSON endpoint — so this direct-ATS path is left
-# EMPTY and the LinkedIn + JobSpy keyword watchers (which need no slug) are the
-# primary sources. To add a verified board here, confirm it returns JSON first:
+# NOTE: Many employers use iCIMS / Taleo / SuccessFactors, which have no
+# clean public JSON endpoint — so this direct-ATS path may be EMPTY and the
+# LinkedIn + JobSpy keyword watchers (which need no slug) are the primary
+# sources. To add a verified board here, confirm it returns JSON first:
 #   curl https://boards-api.greenhouse.io/v1/boards/<slug>/jobs   # Greenhouse
 # then add e.g.:
 #   {"name": "Example Co", "ats": "greenhouse", "slug": "exampleco",
@@ -3268,11 +3266,61 @@ def save_results(jobs: list):
             subtitle=f"{PROFILE_SUBTITLE} · posted in the last 24 hours",
             timestamp=timestamp,
             jobs=jobs,
-            empty_message="No environmental/toxicology roles posted in the last 24 hours.",
+            empty_message="No priority roles posted in the last 24 hours.",
             accent="#2ea04f",
         ))
 
     print(f"\n📄 Saved jobs.json/.md/.html ({len(jobs)} total roles)")
+
+
+
+def _linkedin_merge_backfill_files(output_dir: str) -> tuple[list[dict], list[dict], list[str]]:
+    """Merge per-term and per-partition backfill JSON files into a single job list.
+
+    Globs ``linkedin_backfill_*.json`` and ``linkedin_partition_*.json`` from
+    output_dir, deduplicates by URL, filters excluded companies, and normalizes
+    work_arrangement on each job.
+
+    Returns (all_jobs, partition_stats, cap_hits) where:
+    - all_jobs: deduplicated, filtered, work-arrangement-normalized job list
+    - partition_stats: list of dicts with per-partition summary info
+    - cap_hits: list of partition keys that hit the 1000-card cap
+    """
+    import glob
+    term_files = sorted(glob.glob(os.path.join(output_dir, "linkedin_backfill_*.json")))
+    part_files = sorted(glob.glob(os.path.join(output_dir, "linkedin_partition_*.json")))
+    all_files = term_files + part_files
+    all_jobs: list[dict] = []
+    seen_urls: set[str] = set()
+    cap_hits: list[str] = []
+    partition_stats: list[dict] = []
+    for tf in all_files:
+        with open(tf, encoding="utf-8") as f:
+            data = json.load(f)
+        part_key = data.get("partition_key", data.get("term", os.path.basename(tf)))
+        part_jobs = data.get("jobs", [])
+        raw = data.get("raw_cards", 0)
+        hit_cap = data.get("hit_cap", False)
+        new_count = 0
+        for j in part_jobs:
+            url = j.get("url", "")
+            if url not in seen_urls:
+                seen_urls.add(url)
+                all_jobs.append(j)
+                new_count += 1
+        if hit_cap:
+            cap_hits.append(part_key)
+        partition_stats.append({
+            "partition": part_key,
+            "jobs": len(part_jobs),
+            "new": new_count,
+            "raw": raw,
+            "hit_cap": hit_cap,
+        })
+    all_jobs = [j for j in all_jobs if not _is_excluded_company(j.get("company", ""))]
+    for job in all_jobs:
+        _ensure_work_arrangement(job)
+    return all_jobs, partition_stats, cap_hits
 
 
 # ---------------------------------------------------------------------------
