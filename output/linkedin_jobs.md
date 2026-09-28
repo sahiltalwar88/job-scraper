@@ -1,18 +1,40 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-28 01:47 UTC*
+*Last updated: 2026-09-28 08:50 UTC*
 
-**3 new role(s)** since last run · 3 total in last 1h
+**8 new role(s)** since last run · 8 total in last 1h
 
-### [Director, Software Engineering – Acute Devices](https://www.linkedin.com/jobs/view/4470819896/) — Vantive
-- 📍 **Location:** Minneapolis, MN
-- 💰 **Salary:** $200,000 - $275,000 annually
+### [Director of Product Engineering - Remote](https://www.linkedin.com/jobs/view/4472484887/) — TGI Sport
+- 📍 **Location:** Austin, TX
 - 🕒 **Posted:** 2026-09-28
 
-### [VP, Technical Engineering](https://www.linkedin.com/jobs/view/4472480252/) — Opensity Solutions
-- 📍 **Location:** Chicago, IL
+### [Head of Software Engeering (Early Stage B2B AI Startup)](https://www.linkedin.com/jobs/view/4471339163/) — Walter Bacon, Inc.
+- 📍 **Location:** San Francisco Bay Area
 - 🕒 **Posted:** 2026-09-28
 
-### [Senior Manager, Applications Engineering & Motors](https://www.linkedin.com/jobs/view/4410224707/) — Niron Magnetics, Inc.
-- 📍 **Location:** Minneapolis, MN
-- 💰 **Salary:** $135,000-190,000
+### [Technical Director (Bespoke Software Solutions) $250k Remote – US East Coast](https://www.linkedin.com/jobs/view/4472490680/) — Ingenio Global
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Engineering Manager, Media Foundation](https://www.linkedin.com/jobs/view/4449051136/) — Airbnb
+- 📍 **Location:** United States
+- 💰 **Salary:** $248,000—$310,000 USD
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Manager, Machine Learning Engineering - Communication & Connectivity](https://www.linkedin.com/jobs/view/4444258053/) — Airbnb
+- 📍 **Location:** United States
+- 💰 **Salary:** $248,000—$310,000 USD
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Engineering Manager, Platform](https://www.linkedin.com/jobs/view/4470846553/) — TalentHop
+- 📍 **Location:** United States
+- 💰 **Salary:** $194,051.00/yr - $285,369.00/yr
+- 🕒 **Posted:** 2026-09-28
+
+### [Head of Engineering - USV](https://www.linkedin.com/jobs/view/4472499402/) — Owen Daniels
+- 📍 **Location:** Virginia Beach, VA
+- 🕒 **Posted:** 2026-09-28
+
+### [AI/ML Engineering Director](https://www.linkedin.com/jobs/view/4471336558/) — Jobgether
+- 📍 **Location:** United States
+- 💰 **Salary:** $170,144–$230,000,
 - 🕒 **Posted:** 2026-09-28
