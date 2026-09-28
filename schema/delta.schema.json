@@ -14,23 +14,8 @@
     },
     "source": {
       "type": "string",
-      "description": "Source label (same values as the ats field on job records).",
-      "enum": [
-        "LinkedIn",
-        "Indeed",
-        "Glassdoor",
-        "ZipRecruiter",
-        "GoogleJobs",
-        "HiringCafe",
-        "CalCareers",
-        "CSUCareers",
-        "USAJOBS",
-        "NEOGOV",
-        "CalOpps",
-        "Greenhouse",
-        "Workday",
-        "Priority"
-      ]
+      "description": "Lowercase source identifier passed to save_jobs_output(source=...), e.g. \"linkedin\". Also the filename suffix. Not the same as the ats label on job records (\"LinkedIn\").",
+      "pattern": "^[a-z0-9_]+$"
     },
     "added": {
       "type": "array",

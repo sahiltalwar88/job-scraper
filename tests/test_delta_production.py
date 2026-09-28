@@ -11,6 +11,7 @@ Tests cover:
 """
 import json
 import os
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
 import pytest
@@ -340,3 +341,29 @@ class TestWriteDelta:
         manifest = _read_manifest(tmp_output_dir)
         assert manifest[0]["added"] == 0
         assert manifest[0]["updated"] == 1
+
+
+class TestDeltaMatchesSchema:
+    """The files the scraper writes must validate against schema/delta.schema.json."""
+
+    def test_written_delta_validates(self, tmp_output_dir, sample_all_jobs):
+        jsonschema = pytest.importorskip("jsonschema")
+        referencing = pytest.importorskip("referencing")
+        path = tmp_output_dir / "all_jobs.json"
+        path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
+        existing = next(j for j in sample_all_jobs["jobs"] if not j.get("description"))
+        _merge_into_all_jobs([
+            _make_job("https://www.linkedin.com/jobs/view/9900000001/"),
+            {**existing, "description": "Backfilled description"},
+        ], source="linkedin")
+
+        manifest = _read_manifest(tmp_output_dir)
+        delta = _read_delta(tmp_output_dir, manifest[0]["file"])
+        assert delta["added"] and delta["updated"]
+
+        schema_dir = Path(__file__).parent.parent / "schema"
+        jobs_schema = json.loads((schema_dir / "jobs.schema.json").read_text(encoding="utf-8"))
+        delta_schema = json.loads((schema_dir / "delta.schema.json").read_text(encoding="utf-8"))
+        registry = referencing.Registry().with_resource(
+            "jobs.schema.json", referencing.Resource.from_contents(jobs_schema))
+        jsonschema.Draft202012Validator(delta_schema, registry=registry).validate(delta)
