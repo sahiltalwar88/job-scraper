@@ -1,124 +1,156 @@
 # 🏛 Priority Employers — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-28 10:46 UTC*
+*Last updated: 2026-09-29 12:27 UTC*
 
-**26 new role(s)** since last run · 26 total in last 24h
+**34 new role(s)** since last run · 39 total in last 24h
 
-### [Senior Director, Software Development](https://www.linkedin.com/jobs/view/4433131607/) — Oracle
+### [Director, Enterprise AI & Machine Learning Engineering](https://www.linkedin.com/jobs/view/4473064218/) — Instacart
+- 📍 **Location:** United States
+- 💰 **Salary:** $313,000—$330,500 USD
+- 🕒 **Posted:** 2026-09-29
+
+### [Director, Core Infrastructure Engineering](https://www.linkedin.com/jobs/view/4443226119/) — Oracle
 - 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $193,600 - $414,400 per year
-- 🕒 **Posted:** 2026-09-28
+- 💰 **Salary:** $169,800 - $355,400 per year
+- 🕒 **Posted:** 2026-09-29
 
-### [Director, Analog IP Design , Analog IP Design](https://www.linkedin.com/jobs/view/4472472385/) — Amazon Web Services (AWS)
-- 📍 **Location:** Will County, IL
-- 🕒 **Posted:** 2026-09-28
+### [Director of Building Automation (Nashville, TN)](https://www.linkedin.com/jobs/view/4452291214/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $146,300 - $306,400 per year
+- 🕒 **Posted:** 2026-09-29
 
-### [Director, Product Development Engineering-ASIC/SoC](https://www.linkedin.com/jobs/view/4406760598/) — AMD
+### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4452523192/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $120,000 - $306,400 per year
+- 🕒 **Posted:** 2026-09-29
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4471297246/) — On
+- 📍 **Location:** London, England, United Kingdom
+- 🕒 **Posted:** 2026-09-29
+
+### [Senior Engineering Manager - Streaming](https://www.linkedin.com/jobs/view/4455286753/) — Roku
+- 📍 **Location:** Bengaluru, Karnataka, India
+- 🕒 **Posted:** 2026-09-29
+
+### [Senior Manager, Platform Software Engineering (Full Stack))](https://www.linkedin.com/jobs/view/4434536166/) — Oracle
+- 📍 **Location:** Casablanca-Settat, Morocco
+- 🕒 **Posted:** 2026-09-29
+
+### [Senior Manager, Software Development, Billing and Procurement Experience](https://www.linkedin.com/jobs/view/4473228923/) — Amazon Web Services (AWS)
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-29
+
+### [Director, Debit & Money Management Engineering](https://www.linkedin.com/jobs/view/4473006849/) — PayPal
 - 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $232,880.00/yr - $349,320.00/yr
+- 💰 **Salary:** $218,000.00 - $323,950.00 Annually
 - 🕒 **Posted:** 2026-09-28
 
-### [Senior Manager, Machine Learning Engineering - Communication & Connectivity](https://www.linkedin.com/jobs/view/4444258053/) — Airbnb
+### [Director of Engineering – Studio Systems](https://www.linkedin.com/jobs/view/4386442391/) — Roblox
+- 📍 **Location:** San Mateo, CA
+- 💰 **Salary:** $399,420—$457,970 USD
+- 🕒 **Posted:** 2026-09-28
+
+### [Director, Engineering, Product Experimentation and Evaluations](https://www.linkedin.com/jobs/view/4471556596/) — Google
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $307000 - $427000
+- 🕒 **Posted:** 2026-09-28
+
+### [Public Works Deputy Director/City Engineer](https://www.linkedin.com/jobs/view/4471541263/) — City of Appleton Wisconsin
+- 📍 **Location:** Appleton, WI
+- 💰 **Salary:** $93,662 - $140,483 annually
+- 🕒 **Posted:** 2026-09-28
+
+### [Director, Cloud Engineering](https://www.linkedin.com/jobs/view/4471221316/) — Oracle
 - 📍 **Location:** United States
-- 💰 **Salary:** $248,000—$310,000 USD
+- 💰 **Salary:** $169,800 - $284,300 per year
 - 🕒 **Posted:** 2026-09-28
 
-### [Senior Engineering Manager, Media Foundation](https://www.linkedin.com/jobs/view/4449051136/) — Airbnb
-- 📍 **Location:** United States
-- 💰 **Salary:** $248,000—$310,000 USD
+### [Associate Vice President - Water/Wastewater](https://www.linkedin.com/jobs/view/4414061761/) — Pape-Dawson
+- 📍 **Location:** Longview, TX
 - 🕒 **Posted:** 2026-09-28
 
-### [Software Development Senior Manager](https://www.linkedin.com/jobs/view/4257613845/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $133,100 - $306,400 per year
+### [Senior Director, TPgM, Product Verticals (ML), Google Cloud](https://www.linkedin.com/jobs/view/4471541335/) — Google
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $336000 - $467000
 - 🕒 **Posted:** 2026-09-28
 
-### [Senior Director, Data Hall Design](https://www.linkedin.com/jobs/view/4425360107/) — Oracle
-- 📍 **Location:** Virginia, United States
-- 💰 **Salary:** $169,800 - $355,400 per year
+### [Associate Vice President - Land Development](https://www.linkedin.com/jobs/view/4471541685/) — Pape-Dawson
+- 📍 **Location:** Savannah, GA
 - 🕒 **Posted:** 2026-09-28
 
-### [Sr Director Data Automation, Supply Chain](https://www.linkedin.com/jobs/view/4441841763/) — Oracle
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $169,800 - $355,400 per year
+### [Vice President - Land Development](https://www.linkedin.com/jobs/view/4471533953/) — Pape-Dawson
+- 📍 **Location:** Savannah, GA
 - 🕒 **Posted:** 2026-09-28
 
-### [Senior Director, Data Center Operations](https://www.linkedin.com/jobs/view/4461877173/) — Oracle
-- 📍 **Location:** Saline, MI
-- 💰 **Salary:** $169,800 - $355,400 per year
-- 🕒 **Posted:** 2026-09-28
-
-### [Head of Structures Department](https://www.linkedin.com/jobs/view/4470830809/) — Quadrante Meta Engineering
-- 📍 **Location:** Madrid, Community of Madrid, Spain
-- 🕒 **Posted:** 2026-09-28
-
-### [Director Front-end SoC Design](https://www.linkedin.com/jobs/view/4423671048/) — AMD
-- 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-09-28
-
-### [Performance Modeling and Optimization Engineering Director](https://www.linkedin.com/jobs/view/4398684872/) — AMD
-- 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-09-28
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4352753152/) — Databricks
-- 📍 **Location:** Bengaluru, Karnataka, India
-- 🕒 **Posted:** 2026-09-28
-
-### [Senior Manager, Software Engineering, Missionforce](https://www.linkedin.com/jobs/view/4472705023/) — Salesforce
-- 📍 **Location:** Hyderabad, Telangana, India
-- 🕒 **Posted:** 2026-09-28
-
-### [Technical Director, Unannounced Cloud Game](https://www.linkedin.com/jobs/view/4407217987/) — Netflix
-- 📍 **Location:** United States
-- 💰 **Salary:** $360,000.00 - $550,000.00
-- 🕒 **Posted:** 2026-09-28
-
-### [Senior Software Engineering Manager, NetSoft, Google Global Infrastructure](https://www.linkedin.com/jobs/view/4471350339/) — Google
-- 📍 **Location:** Sunnyvale, CA
+### [Senior Tech Lead Manager, Agentic Platform for Search Verticals](https://www.linkedin.com/jobs/view/4454240641/) — Google
+- 📍 **Location:** Mountain View, CA
 - 💰 **Salary:** $262000 - $364000
 - 🕒 **Posted:** 2026-09-28
 
-### [Director of Engineering, AI Functions](https://www.linkedin.com/jobs/view/4454811750/) — Snowflake
-- 📍 **Location:** Menlo Park, CA
-- 💰 **Salary:** $264,000.00/yr - $379,500.00/yr
-- 🕒 **Posted:** 2026-09-27
-
-### [Director, HVAC and Hotel Equipment](https://www.linkedin.com/jobs/view/4464048041/) — Carnival Cruise Line
-- 📍 **Location:** Miami, FL
-- 🕒 **Posted:** 2026-09-27
-
-### [Senior Engineering Manager - OLTP](https://www.linkedin.com/jobs/view/4454876501/) — Snowflake
-- 📍 **Location:** Menlo Park, CA
-- 💰 **Salary:** $264,000.00/yr - $379,500.00/yr
-- 🕒 **Posted:** 2026-09-27
-
-### [Chief Engineer, Fury Aircraft Development](https://www.linkedin.com/jobs/view/4386973782/) — Anduril Industries
+### [Chief Engineer, Fury Advanced Development & Prototyping](https://www.linkedin.com/jobs/view/4377094230/) — Anduril Industries
 - 📍 **Location:** Costa Mesa, CA
 - 💰 **Salary:** $254,000—$336,000 USD
-- 🕒 **Posted:** 2026-09-27
+- 🕒 **Posted:** 2026-09-28
 
-### [Sr. Engineering Manager - Pipelines Engine](https://www.linkedin.com/jobs/view/4384724954/) — Databricks
-- 📍 **Location:** Mountain View, CA
-- 💰 **Salary:** $228,600—$317,233 USD
-- 🕒 **Posted:** 2026-09-27
+### [Chief Engineer, Maritime Integrated Systems](https://www.linkedin.com/jobs/view/4400306163/) — Anduril Industries
+- 📍 **Location:** Quincy, MA
+- 💰 **Salary:** $191,000—$253,000 USD
+- 🕒 **Posted:** 2026-09-28
 
-### [Senior Manager, GPU Cloud Infrastructure - GeForce NOW](https://www.linkedin.com/jobs/view/4395924016/) — NVIDIA
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-09-27
+### [Senior Software Engineering Manager, AI/ML Recommendations, Rankings, Predictions, YouTube](https://www.linkedin.com/jobs/view/4454238643/) — Google
+- 📍 **Location:** San Bruno, CA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-09-28
 
-### [Product Management, Director - AI Platforms and Infra](https://www.linkedin.com/jobs/view/4451730396/) — Meta
-- 📍 **Location:** Menlo Park, CA
-- 💰 **Salary:** $249,000.00/yr - $323,000.00/yr
-- 🕒 **Posted:** 2026-09-27
+### [Sr. Director, IT Product Management – Post Sales and Partner Technology](https://www.linkedin.com/jobs/view/4428187691/) — MongoDB
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $168,000—$330,000 USD
+- 🕒 **Posted:** 2026-09-28
 
-### [Senior Product Manager, Inference Platform](https://www.linkedin.com/jobs/view/4426153858/) — Roblox
-- 📍 **Location:** San Mateo, CA
-- 💰 **Salary:** $280,540—$330,950 USD
-- 🕒 **Posted:** 2026-09-27
+### [Director, Software Engineering - Big Data Platform & Storage](https://www.linkedin.com/jobs/view/4473025313/) — SalesForce-ad
+- 📍 **Location:** Hyderabad, Telangana, India
+- 🕒 **Posted:** 2026-09-28
 
-### [Director, Engineering – Software Engineering and AI Inferencing Platforms](https://www.linkedin.com/jobs/view/4395482501/) — NVIDIA
-- 📍 **Location:** Hanoi, Hanoi, Vietnam
-- 🕒 **Posted:** 2026-09-27
+### [Director, Software Engineering - Big Data Platform & Storage](https://www.linkedin.com/jobs/view/4472728691/) — Salesforce
+- 📍 **Location:** Hyderabad, Telangana, India
+- 🕒 **Posted:** 2026-09-28
 
-### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4417312374/) — Capital One
-- 📍 **Location:** Mexico City, Mexico
-- 🕒 **Posted:** 2026-09-27
+### [Director, Software Engineering Management](https://www.linkedin.com/jobs/view/4472076107/) — ServiceNow
+- 📍 **Location:** Toronto, Ontario, Canada
+- 💰 **Salary:** $100,000 - $200,000,
+- 🕒 **Posted:** 2026-09-28
+
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4471501324/) — Guardsquare
+- 📍 **Location:** Leuven, Flemish Region, Belgium
+- 🕒 **Posted:** 2026-09-28
+
+### [Director, Platform Delivery](https://www.linkedin.com/jobs/view/4473032488/) — Carnival UK (P&O Cruises & Cunard)
+- 📍 **Location:** Southampton, England, United Kingdom
+- 🕒 **Posted:** 2026-09-28
+
+### [Director, Platform Centre of Excellence](https://www.linkedin.com/jobs/view/4473045090/) — Carnival UK (P&O Cruises & Cunard)
+- 📍 **Location:** Southampton, England, United Kingdom
+- 🕒 **Posted:** 2026-09-28
+
+### [Director of Operations](https://www.linkedin.com/jobs/view/4471516604/) — TechBlocks
+- 📍 **Location:** Greater Toronto Area, Canada
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4317033730/) — Anduril Industries
+- 📍 **Location:** Melbourne, Victoria, Australia
+- 🕒 **Posted:** 2026-09-28
+
+### [Sr Manager, Software Engineering](https://www.linkedin.com/jobs/view/4472755525/) — PayPal
+- 📍 **Location:** Bengaluru, Karnataka, India
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Manager, Head of Engineering Standards & DevOps](https://www.linkedin.com/jobs/view/4473037375/) — Carnival UK (P&O Cruises & Cunard)
+- 📍 **Location:** Southampton, England, United Kingdom
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Manager, Integration Platform Delivery](https://www.linkedin.com/jobs/view/4473029634/) — Carnival UK (P&O Cruises & Cunard)
+- 📍 **Location:** Southampton, England, United Kingdom
+- 🕒 **Posted:** 2026-09-28
+
+### [Senior Director, AI Solutions](https://www.linkedin.com/jobs/view/4437811924/) — Intellias
+- 📍 **Location:** United Kingdom
+- 🕒 **Posted:** 2026-09-28
