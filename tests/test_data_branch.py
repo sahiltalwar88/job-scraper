@@ -109,6 +109,21 @@ def test_data_branch_gets_mains_code_and_keeps_its_data(remote, shallow):
     assert git(remote.bare, "merge-base", "--is-ancestor", old_data_tip, "sahil-data", check=False) == ""
 
 
+def test_update_works_without_a_git_identity(remote, tmp_path, monkeypatch):
+    """GitHub runners have no git identity until a workflow's commit step sets one."""
+    remote.write_commit_push("main", {"code.py": "VERSION = 2\n"}, "main: newer code")
+    runner = remote.runner()
+    bare_config = tmp_path / "no-identity-gitconfig"
+    bare_config.write_text("[protocol \"file\"]\n\tallow = always\n")
+    monkeypatch.setenv("GIT_CONFIG_GLOBAL", str(bare_config))
+    for var in ("GIT_AUTHOR_NAME", "GIT_COMMITTER_NAME", "GIT_AUTHOR_EMAIL", "GIT_COMMITTER_EMAIL"):
+        monkeypatch.setenv(var, "")  # like a runner: git can't work out a name
+
+    remote.use_data_branch(runner, "sahil-data")
+
+    assert remote.show("sahil-data", "code.py") == "VERSION = 2"
+
+
 def test_data_branch_unchanged_when_main_has_nothing_new(remote):
     tip = git(remote.bare, "rev-parse", "sahil-data")
     runner = remote.runner()

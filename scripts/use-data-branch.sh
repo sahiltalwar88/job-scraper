@@ -21,6 +21,14 @@ set -euo pipefail
 
 BRANCH="${DATA_BRANCH:-main}"
 
+# The update commit below is made before workflows configure a git identity.
+if [ -z "$(git config user.name || true)" ]; then
+  export GIT_AUTHOR_NAME="${GIT_AUTHOR_NAME:-github-actions[bot]}"
+  export GIT_AUTHOR_EMAIL="${GIT_AUTHOR_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}"
+  export GIT_COMMITTER_NAME="${GIT_COMMITTER_NAME:-$GIT_AUTHOR_NAME}"
+  export GIT_COMMITTER_EMAIL="${GIT_COMMITTER_EMAIL:-$GIT_AUTHOR_EMAIL}"
+fi
+
 # Explicit refspecs: shallow clones may only track main by default.
 fetch() { git fetch -q origin "+refs/heads/$1:refs/remotes/origin/$1"; }
 
