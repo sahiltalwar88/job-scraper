@@ -1,114 +1,249 @@
-# Generate your `config.json` from your CV (no coding)
+# Generate your `config.json` from your résumé
 
-Copy **everything in the box below**, paste it into your favorite chatbot
-(ChatGPT, Claude, Gemini, Copilot…), then attach or paste **your CV/résumé** and
-a line about **where you want to work**. The model returns a finished
-`config.json` — save it over the `config.json` in your repo and commit it.
+This is the starting point for setting up this scraper for **your** search. Sit down once with:
 
-> Tip: also tell it anything special, e.g. "only senior roles", "no startups",
-> "exclude pharma", "I also do data science", "remote only".
+- your **résumé** (or CV),
+- your **LinkedIn profile** (a PDF export or the URL), and
+- an idea of **what and where** you want to work.
+
+An AI assistant interviews you, then writes `config.json` (and, if you want fit-scored phone alerts, `scoring_profile.json`). The [checklist at the end](#after-the-files-are-written) takes you from those files to a running scraper.
+
+**How to use it:**
+- **With an AI agent** (Claude Code, Devin, Cursor, …) in a clone of your fork: ask it to follow this file. It asks the questions below, writes the files, and runs the checklist with you.
+- **With a chatbot** (ChatGPT, Claude, Gemini, …): paste the text in the box, attach your résumé and LinkedIn PDF, answer its questions, then save what it returns and follow the checklist yourself.
+
+The full list of everything the setup covers, including sources and features you might not use, is in [`docs/setup-skill-plan.md`](setup-skill-plan.md).
 
 ---
 
 ```
-You are configuring a personal job-search tracker. Read my CV (below) and my
-location preferences, then output a SINGLE JSON object — valid config.json,
-nothing else, no markdown fences, no commentary.
+You are setting up a personal job scraper for me. It searches job boards for
+postings whose TITLE matches my search, and shows them on a dashboard. Read my
+résumé and LinkedIn profile (attached or pasted below), then INTERVIEW me before
+writing anything. Ask in small groups, propose answers from my résumé, and let
+me confirm or change them.
 
-The tracker scrapes job boards (LinkedIn, Indeed, Glassdoor, ZipRecruiter,
-Google Jobs, HiringCafe, USAJOBS, etc.), keeps postings
-whose TITLE matches my keywords, and shows them on a dashboard. Matching is
-case-insensitive substring on the job title.
+## Ask me about
 
-Produce this exact shape, filled in for ME based on my CV:
+1. Target roles: which job titles, which seniority, which field or domain; any
+   titles or seniority levels to exclude (always exclude internships/co-ops).
+2. Locations: which US states or cities, and whether remote counts. This
+   scraper's location filter only accepts US locations and "Remote"; postings
+   in other countries (Canada, UK, Australia, India, …) are always dropped.
+3. Sources. LinkedIn is always on. Optional sources (each is a workflow I move
+   from .github/workflows/disabled/ to .github/workflows/ to turn on):
+   Indeed, Glassdoor, ZipRecruiter, Google Jobs (these four need no key; Google
+   Jobs can use a SerpAPI or Oxylabs key as a fallback), HiringCafe, USAJOBS (US
+   federal), CalCareers (California state), CSU Careers (California State
+   University), and NEOGOV/GovernmentJobs + CalOpps (US state/local government).
+4. Employers: companies I'd most like to work for (they get a daily digest and
+   loosen the title filter), and company names to always drop (e.g. staffing
+   agencies).
+5. Highlights: 3-6 skills or topics that should get a gold star on the
+   dashboard and trigger a phone alert when a job mentions them.
+6. Dashboard: a short tracker title, a subtitle (my locations), and one emoji.
+7. Phone alerts (Pushover): do I want them? If yes, do I also want alerts for
+   jobs that score well against my résumé (then write scoring_profile.json too),
+   and do I want a weekly digest?
+8. AI fit-scoring with the Claude API (optional, costs API credit): do I want
+   it? If yes, which role families should jobs be sorted into.
+
+## Then output config.json
+
+Output ONE JSON object: valid JSON, no comments, no markdown fences. Include
+EVERY key below, exactly this shape. Use [] or "" for anything I don't use:
+any key you leave out falls back to config.example.json, which is someone
+else's search.
 
 {
-  "profile": {
-    "title": "<short name for my tracker, e.g. 'Data Science Job Tracker'>",
-    "subtitle": "<my target locations, e.g. 'Bay Area · Remote'>",
-    "emoji": "<one relevant emoji>"
-  },
+  "profile": { "title": "<e.g. 'Data Analyst Tracker'>", "subtitle": "<e.g. 'Chicago · Remote'>", "emoji": "<one emoji>" },
   "keywords": {
-    "include": [ "<20-60 job-TITLE phrases that fit my field>" ],
-    "exclude": [ "<titles to drop: intern, internship, postdoc, etc., plus any roles clearly NOT for me>" ]
+    "include": [ "<20-60 lowercase job-TITLE phrases that fit me>" ],
+    "exclude": [ "intern", "internship", "co-op", "trainee", "<other titles to drop>" ],
+    "fuzzy_seniority": [ "<seniority words, e.g. 'senior', 'lead', 'principal'; [] to turn fuzzy matching off>" ],
+    "fuzzy_domain": [ "<domain words, e.g. 'data', 'analytics'; [] to turn fuzzy matching off>" ],
+    "fuzzy_exclude": [ "<words that disqualify a fuzzy match, e.g. 'sales'>" ]
   },
   "search_terms": {
-    "linkedin": [ "<15-25 queries to type into LinkedIn search>" ],
-    "indeed":   [ "<6-10 broad queries for Indeed>" ],
-    "glassdoor": [ "<6-10 broad queries for Glassdoor>" ],
-    "ziprecruiter": [ "<6-10 broad queries for ZipRecruiter>" ],
-    "google_jobs": [ "<6-10 broad queries for Google Jobs>" ],
-    "hiring_cafe": [ "<6-10 broad queries for HiringCafe>" ]
+    "linkedin": [ "<at most 8 LinkedIn search queries>" ],
+    "indeed": [ "<6-10 broad queries, or [] if Indeed is off>" ],
+    "glassdoor": [], "ziprecruiter": [], "google_jobs": [], "hiring_cafe": [],
+    "usajobs": [ "<queries if USAJOBS is on, else []>" ],
+    "calcareers": [ "<queries if CalCareers is on, else []>" ],
+    "governmentjobs": [ "<queries if NEOGOV is on, else []>" ],
+    "workday": []
   },
   "locations": {
-    "linkedin": [ { "name": "<label>", "location": "<City/Region, State, Country>", "geoId": "" } ],
-    "indeed":   [ { "location": "<City, ST  OR  State>", "country": "USA" } ],
-    "glassdoor": [ { "location": "<City, ST  OR  State>", "country": "USA" } ],
-    "ziprecruiter": [ { "location": "<City, ST  OR  State>", "country": "USA" } ],
-    "google_jobs": [ { "location": "<City, ST  OR  State>", "country": "USA" } ],
-    "hiring_cafe": [ { "location": "<Country, State, or City>" } ]
+    "linkedin": [ { "name": "<label>", "location": "<City, State, United States | State, United States | United States | Remote>", "geoId": "" } ],
+    "linkedin_partitions": {
+      "states": [ <COPY THE 50-STATE LIST BELOW VERBATIM, or [] if I only want specific places> ],
+      "high_volume": {
+        "locations": [ <see the high-volume rule below> ],
+        "day_slices": true
+      }
+    },
+    "indeed": [ { "location": "<City, ST or State>", "country": "USA" } ],
+    "glassdoor": [], "ziprecruiter": [], "google_jobs": []
   },
-  "google_jobs": {
-    "queries": [],
-    "serpapi_api_key": "",
-    "oxylabs_username": "",
-    "oxylabs_password": ""
-  },
-  "hiring_cafe": {
-    "max_pages": 3
-  },
-  "employers": {
-    "priority": [ "<optional: organizations I'd love to work for; [] if none>" ],
-    "exclude":  [ "<optional: company-name substrings to always drop, e.g. recruiting agencies; [] if none>" ]
-  },
-  "priority_topics": {
-    "terms": [ [ "<topic label>", "<a JS regex matching it>" ] ]
-  },
-  "role_categories": {
-    "terms": [ [ "<role bucket label>", "<a JS regex matching titles in that bucket>" ] ]
-  },
-  "notify": { "min_fit": 75 }
+  "location_filter": { "terms": [ "<lowercase place substrings, e.g. 'chicago', ', il', 'illinois', 'remote', 'united states'>" ] },
+  "google_jobs": { "queries": [], "serpapi_api_key": "", "oxylabs_username": "", "oxylabs_password": "" },
+  "jobspy": { "proxies": [], "user_agent": "" },
+  "hiring_cafe": { "max_pages": 3 },
+  "csucareers": { "max_pages": 30 },
+  "employers": { "priority": [ "<companies, or []>" ], "exclude": [ "<company-name substrings, or []>" ] },
+  "priority_topics": { "terms": [ [ "<label>", "<regex>" ] ] },
+  "role_categories": { "terms": [ [ "<role bucket>", "<regex over the title>" ] ] },
+  "sector_classification": { "terms": [ [ "<sector>", "<regex over the company name>" ] ] },
+  "notify": { "weekly_digest": { "enabled": false, "days": 7 } },
+  "feasibility_check": { "prompt": "" },
+  "triage": { "role_families": "<pipe-separated role families if AI fit-scoring is on, else 'other'>" }
 }
 
-Rules:
-- keywords.include: use FULL words/phrases as they appear in real titles
-  ("data scientist", "machine learning engineer"), not stems. Multi-word phrases
-  match as substrings. Be specific enough to avoid unrelated fields.
-- keywords.exclude: always include intern/internship/co-op/trainee; add seniority
-  or off-field terms if I asked (e.g. "junior", "manager", a competing field).
-- search_terms are broader than keywords (they're what you'd type in a search box).
-- locations: convert my target places to the format shown. For LinkedIn, set
-  "geoId": "" unless I gave you one — the tracker resolves the text. Use a
-  separate entry per place. For Indeed/Glassdoor/ZipRecruiter/Google Jobs,
-  "country" is "USA", "Australia", "Canada", "GB", etc. HiringCafe's public
-  search route currently defaults to United States, so keep its location as
-  "United States" unless I explicitly ask otherwise.
-- google_jobs.queries: keep [] unless I explicitly provide exact Google Jobs
-  search-box text to use verbatim.
-- google_jobs API credentials: keep serpapi_api_key, oxylabs_username, and
-  oxylabs_password empty; these should be GitHub Actions secrets, not generated
-  into config.json, unless I explicitly ask for local-only config credentials.
-- hiring_cafe: keep the default max_pages unless I ask for deeper searches.
-- priority_topics: 3-6 of MY standout specialties/skills (these get starred &
-  filterable). Each regex is a plain JavaScript regex source string (no slashes,
-  no flags). Escape backslashes for JSON (write \\b not \b).
-- role_categories: 5-9 buckets that group the kinds of roles I'd see, ordered
-  most-specific first. Same regex rules. The dashboard's Role filter uses these.
-- Output ONLY the JSON object.
+50-state list for locations.linkedin_partitions.states (copy verbatim):
+[
+  { "name": "Alabama", "location": "Alabama, United States" },
+  { "name": "Alaska", "location": "Alaska, United States" },
+  { "name": "Arizona", "location": "Arizona, United States" },
+  { "name": "Arkansas", "location": "Arkansas, United States" },
+  { "name": "California", "location": "California, United States" },
+  { "name": "Colorado", "location": "Colorado, United States" },
+  { "name": "Connecticut", "location": "Connecticut, United States" },
+  { "name": "Delaware", "location": "Delaware, United States" },
+  { "name": "Florida", "location": "Florida, United States" },
+  { "name": "Georgia", "location": "Georgia, United States" },
+  { "name": "Hawaii", "location": "Hawaii, United States" },
+  { "name": "Idaho", "location": "Idaho, United States" },
+  { "name": "Illinois", "location": "Illinois, United States" },
+  { "name": "Indiana", "location": "Indiana, United States" },
+  { "name": "Iowa", "location": "Iowa, United States" },
+  { "name": "Kansas", "location": "Kansas, United States" },
+  { "name": "Kentucky", "location": "Kentucky, United States" },
+  { "name": "Louisiana", "location": "Louisiana, United States" },
+  { "name": "Maine", "location": "Maine, United States" },
+  { "name": "Maryland", "location": "Maryland, United States" },
+  { "name": "Massachusetts", "location": "Massachusetts, United States" },
+  { "name": "Michigan", "location": "Michigan, United States" },
+  { "name": "Minnesota", "location": "Minnesota, United States" },
+  { "name": "Mississippi", "location": "Mississippi, United States" },
+  { "name": "Missouri", "location": "Missouri, United States" },
+  { "name": "Montana", "location": "Montana, United States" },
+  { "name": "Nebraska", "location": "Nebraska, United States" },
+  { "name": "Nevada", "location": "Nevada, United States" },
+  { "name": "New Hampshire", "location": "New Hampshire, United States" },
+  { "name": "New Jersey", "location": "New Jersey, United States" },
+  { "name": "New Mexico", "location": "New Mexico, United States" },
+  { "name": "New York", "location": "New York, United States" },
+  { "name": "North Carolina", "location": "North Carolina, United States" },
+  { "name": "North Dakota", "location": "North Dakota, United States" },
+  { "name": "Ohio", "location": "Ohio, United States" },
+  { "name": "Oklahoma", "location": "Oklahoma, United States" },
+  { "name": "Oregon", "location": "Oregon, United States" },
+  { "name": "Pennsylvania", "location": "Pennsylvania, United States" },
+  { "name": "Rhode Island", "location": "Rhode Island, United States" },
+  { "name": "South Carolina", "location": "South Carolina, United States" },
+  { "name": "South Dakota", "location": "South Dakota, United States" },
+  { "name": "Tennessee", "location": "Tennessee, United States" },
+  { "name": "Texas", "location": "Texas, United States" },
+  { "name": "Utah", "location": "Utah, United States" },
+  { "name": "Vermont", "location": "Vermont, United States" },
+  { "name": "Virginia", "location": "Virginia, United States" },
+  { "name": "Washington", "location": "Washington, United States" },
+  { "name": "West Virginia", "location": "West Virginia, United States" },
+  { "name": "Wisconsin", "location": "Wisconsin, United States" },
+  { "name": "Wyoming", "location": "Wyoming, United States" }
+]
 
-MY CV:
-<paste your CV here, or attach it>
+## Rules
 
-MY TARGET LOCATIONS / PREFERENCES:
-<e.g. "San Francisco Bay Area and remote; senior IC roles; no agencies">
+- keywords.include / keywords.exclude: full lowercase words or phrases as they
+  appear in real titles ("data analyst", not "analy"). A single word only
+  matches as a whole word, so stems never match; a multi-word phrase matches
+  anywhere in the title.
+- Fuzzy matching (fuzzy_seniority + fuzzy_domain): when BOTH are non-empty,
+  LinkedIn titles are kept if they pair a seniority word with a domain word,
+  instead of needing a keywords.include phrase. Use whole words. Set both to []
+  unless my titles vary a lot (e.g. "Director, Engineering" vs "Head of
+  Engineering").
+- search_terms.linkedin: AT MOST 8. The one-time backfill runs 2 search terms
+  per job across all 50 states, and GitHub allows at most 256 jobs per phase
+  (8 terms = 4 batches x 43 states = 172 jobs; 10 would be 215, but then
+  high-volume locations no longer fit). Pick the 8 queries that cover my
+  titles best.
+- Other boards' search_terms are broader than keywords (what you'd type in a
+  search box). Glassdoor, ZipRecruiter, Google Jobs and HiringCafe use Indeed's
+  terms and locations when theirs are []. Leave a disabled board's lists [].
+- High-volume rule: if states is the 50-state list, set high_volume.locations to
+  these 9 (their "location" must match the states entries exactly):
+  "United States", "Remote", and California, Texas, New York, Washington,
+  Virginia, Massachusetts, Illinois as { "name": "<State>", "location":
+  "<State>, United States" }. With at most 8 search terms that is 4 x 9 x 7 =
+  252 jobs. Use fewer if my field is small; if states is [], use [].
+- locations.linkedin: one entry per place I named, plus { "name": "Remote",
+  "location": "Remote", "geoId": "" } if remote counts. Leave geoId "" unless I
+  give one.
+- location_filter.terms: every way my places appear in a job's location text
+  (city, ", ST", state name, metro name), plus "remote" and "united states" if
+  those count. US state names are always accepted anyway.
+- employers.priority: full company names, 6+ characters where possible
+  (matching is a loose substring match).
+- Regexes (priority_topics, role_categories, sector_classification): plain
+  regex source that works in BOTH Python and JavaScript: no slashes, no flags,
+  no inline (?i); matching is already case-insensitive. Double every backslash
+  for JSON (write \\b, not \b). role_categories: 5-9 buckets, most specific
+  first. sector_classification: 3-8 sectors matched against company names
+  (e.g. [ "Healthcare", "health|hospital|medical" ]), or [] to skip.
+- google_jobs keys, jobspy proxies: keep empty; credentials go in GitHub
+  secrets, not in this file.
+- feasibility_check.prompt: keep "" (it needs the Devin CLI; see the setup
+  plan doc).
+
+## If I want résumé-scored alerts, also output scoring_profile.json
+
+A second JSON object, same rules:
+
+{
+  "version": 1,
+  "description": "<one line: whose search this scores>",
+  "settings": { "title_multiplier": 3, "body_multiplier": 1, "score_multiplier": 1.6, "generic_cap": 35, "standout_threshold": 60 },
+  "fit_terms": [ { "pattern": "<regex>", "weight": <1-16> } ],
+  "signature_terms": [ "<regex for my rarest, most specific strengths>" ],
+  "poor_fit_terms": [ { "pattern": "<regex>", "penalty": <1-20> } ]
+}
+
+- fit_terms: 10-25 regexes for my skills, tools, domains and titles; weight
+  16 for exact target titles down to 3 for generic skills. A title match counts
+  3x a description match.
+- signature_terms: 3-8 regexes that only a strong match would mention. Jobs
+  matching none are capped at generic_cap.
+- poor_fit_terms: regexes for things I don't want (wrong seniority, domains).
+
+Output ONLY the JSON object(s).
+
+MY RÉSUMÉ AND LINKEDIN:
+<attach or paste>
 ```
 
 ---
 
-## Optional: better LinkedIn location filtering (`geoId`)
+## After the files are written
 
-`geoId: ""` works for most city/metro searches (LinkedIn resolves the text). For
-tighter filtering you can fill in the numeric geoId. A few common ones:
+1. **Save** the output as `config.json` in the repo root, and `scoring_profile.json` if you made one. Don't commit either: `config.json` is gitignored. This repo commits a `scoring_profile.json` that has fit scoring turned off; keep your own as a secret instead.
+2. **Store them as secrets** (single line, made by the export script; see README "Setup" → Step 4):
+   - `bash scripts/export-config-secret.sh` → repository secret **`CONFIG_JSON`**
+   - `bash scripts/export-config-secret.sh scoring_profile.json` → secret **`SCORING_PROFILE_JSON`** (optional)
+3. **GitHub settings** (README "Setup" → Steps 3–4): enable Actions; Settings → Actions → General → Workflow permissions → **Read and write**; Pages from `main`, `/`; repository **variable** `ENABLE_DATA_COMMITS` = `true`.
+4. **Optional secrets and variables**, for what you chose:
+   - Phone alerts: secrets `PUSHOVER_TOKEN`, `PUSHOVER_USER`; variable `NOTIFY_MIN_FIT` (default 75). Weekly digest: variable `WEEKLY_DIGEST_PUSHOVER` = `true` (and optionally `WEEKLY_DIGEST_DAYS`, `DASHBOARD_URL`).
+   - Google Jobs fallback: secret `SERPAPI_API_KEY`, or `OXYLABS_USERNAME` + `OXYLABS_PASSWORD`. Indeed/Glassdoor/ZipRecruiter/Google Jobs: optional secret `JOBSPY_PROXIES`, variable `JOBSPY_USER_AGENT`. Glassdoor's schedule: variable `ENABLE_GLASSDOOR_WATCHER` = `true`.
+   - AI fit-scoring: secrets `ANTHROPIC_API_KEY`, `CANDIDATE_PROFILE` (required), `CANDIDATE_RESUME`.
+   - Weekly upstream sync: secret `SYNC_TOKEN` (README "Staying up to date with upstream").
+5. **Turn on the sources you chose**: move each one's workflow from `.github/workflows/disabled/` to `.github/workflows/` and push. The same goes for `triage.yml` (AI fit-scoring) and `weekly_digest.yml`.
+6. **First runs**, one at a time (they share a lock, and GitHub cancels queued runs): **Validate Setup** → **Clear Job Data** (your fork starts with this repo's jobs) → **LinkedIn Backfill (Parallel)** → each other source you turned on, with its backfill option → **Test Pushover Notification** if you set up alerts.
+7. **Check**: open `https://<you>.github.io/<repo>/triage.html` and spot-check that the jobs match your search.
+
+## Optional: LinkedIn `geoId`
+
+`geoId: ""` works for most places (LinkedIn resolves the text). For tighter filtering, fill in the numeric geoId from the `geoId=` value in a LinkedIn job-search URL:
 
 | Place | geoId |
 |---|---|
@@ -118,16 +253,9 @@ tighter filtering you can fill in the numeric geoId. A few common ones:
 | New York City Metro | `90000070` |
 | Greater Boston | `90000007` |
 | Greater Seattle | `90000091` |
-| United Kingdom | `101165590` |
-| Canada | `101174742`* |
-| Australia | `101452733` |
 
-To find another: open LinkedIn job search, pick your location, and copy the
-`geoId=` value from the URL. (*Region geoIds occasionally drift — verify by
-checking that a search returns jobs from the right place.)
+(Region geoIds occasionally drift; check that a search returns jobs from the right place.)
 
-## Don't want to use an LLM?
+## Without an AI
 
-Just edit `config.json` by hand — it's commented and self-explanatory. The two
-things most people change: `keywords.include` / `search_terms` (what roles) and
-`locations` (where). Everything else is optional.
+Copy `config.example.json` to `config.json` and edit it by hand; every key is commented there. Keep every section (use `[]` for unused lists), for the same reason as above.
