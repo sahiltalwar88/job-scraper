@@ -72,6 +72,12 @@ def _deep_merge(base: dict, override: dict) -> dict:
     return merged
 
 
+# Notices about which config files were used. Printed when scrape_jobs.py runs
+# as a script, not on import: tools that import it (e.g. job-hunter, from a
+# clone with no config.json) would otherwise log them as their own errors.
+_CONFIG_NOTICES: list[str] = []
+
+
 def _load_config() -> dict:
     base = _read_json(os.path.join(SCRIPT_DIR, "config.example.json")) or {}
     user = _read_json(os.path.join(SCRIPT_DIR, "config.json"))
@@ -82,12 +88,12 @@ def _load_config() -> dict:
                 "both missing or unparseable). Copy config.example.json to config.json, "
                 "or fix its JSON syntax, and re-run."
             )
-        print("  ℹ️  config.json not found; using config.example.json as-is "
-              "(copy it to config.json and customize)")
+        _CONFIG_NOTICES.append("  ℹ️  config.json not found; using config.example.json as-is "
+                               "(copy it to config.json and customize)")
         return base
     if not base:
-        print("  ⚠️  config.example.json not loaded; using config.json only "
-              "(newer optional keys may be missing)")
+        _CONFIG_NOTICES.append("  ⚠️  config.example.json not loaded; using config.json only "
+                               "(newer optional keys may be missing)")
         return user
     return _deep_merge(base, user)
 
@@ -3379,6 +3385,9 @@ def _linkedin_merge_backfill_files(output_dir: str) -> tuple[list[dict], list[di
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    for notice in _CONFIG_NOTICES:
+        print(notice)
+
     # Removed flag: unknown flags otherwise fall through to a full default scrape.
     if "--feasibility-check" in sys.argv or "--feasibility-limit" in sys.argv:
         sys.exit("--feasibility-check was removed: job-hunter decides which jobs are worth "
