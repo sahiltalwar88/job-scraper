@@ -1,50 +1,54 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-30 08:02 UTC*
+*Last updated: 2026-09-30 09:14 UTC*
 
-**10 new role(s)** since last run · 10 total in last 1h
+**10 new role(s)** since last run · 13 total in last 1h
 
-### [Sr. Director - AI & Agentic Platform Engineering](https://www.linkedin.com/jobs/view/4473719416/) — Gap Inc.
-- 📍 **Location:** Coppell, TX
-- 💰 **Salary:** $236,700.00 - $319,500.00
+### [Smart Mobility Hub - Tolling Technology Principal Director](https://www.linkedin.com/jobs/view/4469055940/) — Accenture
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $163,000 to $413,600
 - 🕒 **Posted:** 2026-09-30
 
-### [Sr. Director - AI & Agentic Platform Engineering](https://www.linkedin.com/jobs/view/4473713971/) — Gap Inc.
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $236,700.00 - $319,500.00
-- 🕒 **Posted:** 2026-09-30
-
-### [Senior Software Development Manager](https://www.linkedin.com/jobs/view/4472133118/) — biBerk Business Insurance
-- 📍 **Location:** Pittston, PA
-- 💰 **Salary:** $160,000 to $210,000 per year
-- 🕒 **Posted:** 2026-09-30
-
-### [Senior Engineering Manager, Platform](https://www.linkedin.com/jobs/view/4472126636/) — TalentHop
+### [Senior Engineering Manager, Clinical](https://www.linkedin.com/jobs/view/4472132825/) — Jobgether
 - 📍 **Location:** United States
-- 💰 **Salary:** $194,051.00/yr - $285,369.00/yr
+- 💰 **Salary:** $260,000–$310,000,
 - 🕒 **Posted:** 2026-09-30
 
-### [Senior Manager, Global Digital & Technology Systems Engineering](https://www.linkedin.com/jobs/view/4472119941/) — Jobgether
+### [Senior Regional Engineering Manager](https://www.linkedin.com/jobs/view/4472150022/) — Smithfield Foods
 - 📍 **Location:** United States
-- 💰 **Salary:** $136,900–$181,900 annually
+- 💰 **Salary:** $120,000 - $162,500 annually
 - 🕒 **Posted:** 2026-09-30
 
-### [Div Head - AI Solution & Platform](https://www.linkedin.com/jobs/view/4472121786/) — PT. Integra Putra Mandiri
-- 📍 **Location:** Gambir, Jakarta, Indonesia
+### [AI Forward Deployed Engineering Senior Manager | Sales ReInvention](https://www.linkedin.com/jobs/view/4469735162/) — Accenture
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $132,500 to $366,300
 - 🕒 **Posted:** 2026-09-30
 
-### [Sr. Manager, Analytics & BI Engineering](https://www.linkedin.com/jobs/view/4472131631/) — TalentHop
-- 📍 **Location:** United States
+### [Technology Delivery Senior Manager - Chemicals/Natural Resources](https://www.linkedin.com/jobs/view/4466648641/) — Accenture
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $132,500 to $302,400
 - 🕒 **Posted:** 2026-09-30
 
-### [Senior Manager- Platform Engineering/DevOps](https://www.linkedin.com/jobs/view/4472126918/) — TalentHop
-- 📍 **Location:** United States
-- 💰 **Salary:** $106,605.00/yr - $260,590.00/yr
+### [Smart Mobility Hub - Tolling Technology Senior Manager](https://www.linkedin.com/jobs/view/4469054979/) — Accenture
+- 📍 **Location:** Austin, TX
+- 💰 **Salary:** $132,500 to $302,400
 - 🕒 **Posted:** 2026-09-30
 
-### [Head of Procurement Platforms — Platform Owner (Technology)](https://www.linkedin.com/jobs/view/4456479587/) — Prudential Services Asia
-- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+### [Infrastructure Advisory & Transformation Senior Manager](https://www.linkedin.com/jobs/view/4471248637/) — Accenture
+- 📍 **Location:** St Louis, MO
+- 💰 **Salary:** $132,500 to $302,400
 - 🕒 **Posted:** 2026-09-30
 
-### [Director, IT Infrastructure & Operations](https://www.linkedin.com/jobs/view/4473735297/) — Signal Corps Regimental Association
-- 📍 **Location:** Pittsburgh, PA
+### [Technology Strategy Principal Director, Banking & Capital Markets](https://www.linkedin.com/jobs/view/4468512613/) — Accenture
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $150,900 to $387,800
+- 🕒 **Posted:** 2026-09-30
+
+### [AI Engineer - FDE Software Engineering Sr. Manager](https://www.linkedin.com/jobs/view/4466848538/) — Accenture
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $132,500 to $302,400
+- 🕒 **Posted:** 2026-09-30
+
+### [Sr. Manager Brewery Technology](https://www.linkedin.com/jobs/view/4473748052/) — Molson Coors Beverage Company
+- 📍 **Location:** Golden, CO
+- 💰 **Salary:** $164,400.00/yr - $215,800.00/yr
 - 🕒 **Posted:** 2026-09-30
