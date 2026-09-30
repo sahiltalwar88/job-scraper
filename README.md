@@ -69,7 +69,7 @@ You need a free [GitHub account](https://github.com/signup). Everything runs on 
 
 Click **Fork** at the top of this page and keep **"Copy the `main` branch only"** ticked (the default), then optionally clone locally. With the GitHub CLI, pass the same option: `gh repo fork sahiltalwar88/job-scraper --default-branch-only`.
 
-> **If your fork has a `sahil-data` branch, delete it.** It holds the maintainer's own job data (see [Where job data is stored](#where-job-data-is-stored)) and isn't needed: Settings → Branches, or `git push origin --delete sahil-data`.
+> **If your fork has a `sahil-data` branch, delete it.** You'll have one if you unticked "Copy the `main` branch only", or used `gh repo fork` without `--default-branch-only`. It's the maintainer's own job data (see [Where job data is stored](#where-job-data-is-stored)): it isn't checked out and your workflows never use it (they commit to your `main` unless you set `DATA_BRANCH`), so nothing breaks, but it's a large copy you don't need. Delete it under Settings → Branches, or with `git push origin --delete sahil-data`.
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/job-scraper.git
