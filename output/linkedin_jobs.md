@@ -1,81 +1,50 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-09-30 01:30 UTC*
+*Last updated: 2026-09-30 08:02 UTC*
 
-**17 new role(s)** since last run · 17 total in last 1h
+**10 new role(s)** since last run · 10 total in last 1h
 
-### [Director of Engineering, Database Excellence](https://www.linkedin.com/jobs/view/4473579070/) — GitLab
-- 📍 **Location:** United States
-- 💰 **Salary:** $230,400—$345,600 USD
+### [Sr. Director - AI & Agentic Platform Engineering](https://www.linkedin.com/jobs/view/4473719416/) — Gap Inc.
+- 📍 **Location:** Coppell, TX
+- 💰 **Salary:** $236,700.00 - $319,500.00
 - 🕒 **Posted:** 2026-09-30
 
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4473572538/) — ProFound People
-- 📍 **Location:** Phoenix, AZ
-- 🕒 **Posted:** 2026-09-30
-
-### [Sr. Manager, Software Development, Amazon FAI](https://www.linkedin.com/jobs/view/4473557952/) — Amazon
-- 📍 **Location:** Boston, MA
-- 🕒 **Posted:** 2026-09-30
-
-### [Director, Infrastructure & IT Operations](https://www.linkedin.com/jobs/view/4473575354/) — Swooped
-- 📍 **Location:** United States
-- 💰 **Salary:** $170,000.00/yr - $180,000.00/yr
-- 🕒 **Posted:** 2026-09-30
-
-### [Senior Manager, Staff Software Engineering - Applied AI](https://www.linkedin.com/jobs/view/4471983261/) — GEICO
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $150,000.00/yr - $300,000.00/yr
-- 🕒 **Posted:** 2026-09-30
-
-### [Senior Manager, Component Engineering](https://www.linkedin.com/jobs/view/4471987210/) — Everpure
-- 📍 **Location:** Santa Clara, CA
-- 💰 **Salary:** $205,000—$308,000 USD
-- 🕒 **Posted:** 2026-09-30
-
-### [Vice President, Fund Finance Technology](https://www.linkedin.com/jobs/view/4471786590/) — Ares Management
-- 📍 **Location:** Los Angeles, CA
-- 🕒 **Posted:** 2026-09-30
-
-### [Vice President, Fund Finance Technology](https://www.linkedin.com/jobs/view/4471778846/) — Ares Management
-- 📍 **Location:** New York, NY
-- 🕒 **Posted:** 2026-09-30
-
-### [Technical Architect Director - PubSec - Mulesoft](https://www.linkedin.com/jobs/view/4473581534/) — Salesforce
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $197,300 - $313,700 annually
-- 🕒 **Posted:** 2026-09-30
-
-### [Chief Critical Infrastructure Engineer](https://www.linkedin.com/jobs/view/4473574381/) — DataBank
-- 📍 **Location:** South Fulton, GA
-- 🕒 **Posted:** 2026-09-30
-
-### [Sr. Engagement Manager, Forward Deployed Engineering - Public Sector](https://www.linkedin.com/jobs/view/4471786661/) — Databricks
-- 📍 **Location:** Washington, DC
-- 💰 **Salary:** $130,300—$179,200 USD
-- 🕒 **Posted:** 2026-09-30
-
-### [Senior Mgr. Engineering Certification , Prime Air - Office of the Chief Engineer](https://www.linkedin.com/jobs/view/4473559904/) — Amazon
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-09-30
-
-### [Sr. Director of Product Management, Data 360](https://www.linkedin.com/jobs/view/4473570649/) — Salesforce
-- 📍 **Location:** Bellevue, WA
-- 💰 **Salary:** $218,400 - $365,200 annually
-- 🕒 **Posted:** 2026-09-30
-
-### [Sr. Director of Product Management, Data 360](https://www.linkedin.com/jobs/view/4473575559/) — Salesforce
+### [Sr. Director - AI & Agentic Platform Engineering](https://www.linkedin.com/jobs/view/4473713971/) — Gap Inc.
 - 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $218,400 - $365,200 annually
+- 💰 **Salary:** $236,700.00 - $319,500.00
 - 🕒 **Posted:** 2026-09-30
 
-### [Director, Product Management - Data Platform](https://www.linkedin.com/jobs/view/4443653176/) — Asurion
-- 📍 **Location:** San Mateo, CA
+### [Senior Software Development Manager](https://www.linkedin.com/jobs/view/4472133118/) — biBerk Business Insurance
+- 📍 **Location:** Pittston, PA
+- 💰 **Salary:** $160,000 to $210,000 per year
 - 🕒 **Posted:** 2026-09-30
 
-### [Division Head - AI Solution & Platform](https://www.linkedin.com/jobs/view/4471983434/) — PT. Integra Putra Mandiri
+### [Senior Engineering Manager, Platform](https://www.linkedin.com/jobs/view/4472126636/) — TalentHop
+- 📍 **Location:** United States
+- 💰 **Salary:** $194,051.00/yr - $285,369.00/yr
+- 🕒 **Posted:** 2026-09-30
+
+### [Senior Manager, Global Digital & Technology Systems Engineering](https://www.linkedin.com/jobs/view/4472119941/) — Jobgether
+- 📍 **Location:** United States
+- 💰 **Salary:** $136,900–$181,900 annually
+- 🕒 **Posted:** 2026-09-30
+
+### [Div Head - AI Solution & Platform](https://www.linkedin.com/jobs/view/4472121786/) — PT. Integra Putra Mandiri
 - 📍 **Location:** Gambir, Jakarta, Indonesia
 - 🕒 **Posted:** 2026-09-30
 
-### [Director, Product Management - Data Platform](https://www.linkedin.com/jobs/view/4471984476/) — Tanium
+### [Sr. Manager, Analytics & BI Engineering](https://www.linkedin.com/jobs/view/4472131631/) — TalentHop
 - 📍 **Location:** United States
-- 💰 **Salary:** $214,000 to $328,000
+- 🕒 **Posted:** 2026-09-30
+
+### [Senior Manager- Platform Engineering/DevOps](https://www.linkedin.com/jobs/view/4472126918/) — TalentHop
+- 📍 **Location:** United States
+- 💰 **Salary:** $106,605.00/yr - $260,590.00/yr
+- 🕒 **Posted:** 2026-09-30
+
+### [Head of Procurement Platforms — Platform Owner (Technology)](https://www.linkedin.com/jobs/view/4456479587/) — Prudential Services Asia
+- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+- 🕒 **Posted:** 2026-09-30
+
+### [Director, IT Infrastructure & Operations](https://www.linkedin.com/jobs/view/4473735297/) — Signal Corps Regimental Association
+- 📍 **Location:** Pittsburgh, PA
 - 🕒 **Posted:** 2026-09-30
