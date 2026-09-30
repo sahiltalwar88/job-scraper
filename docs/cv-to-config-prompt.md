@@ -27,9 +27,12 @@ me confirm or change them.
 
 1. Target roles: which job titles, which seniority, which field or domain; any
    titles or seniority levels to exclude (always exclude internships/co-ops).
-2. Locations: which US states or cities, and whether remote counts. This
-   scraper's location filter only accepts US locations and "Remote"; postings
-   in other countries (Canada, UK, Australia, India, …) are always dropped.
+2. Locations: which states, cities or countries, and whether remote counts.
+   The one-time parallel backfill only covers the US (states, US-wide, Remote).
+   Places outside the US work for the hourly watcher, and for the watcher's
+   single-job backfill, as long as their country is in location_filter.terms;
+   otherwise postings in a built-in list of non-US countries (Canada, UK,
+   Australia, India, …) are dropped.
 3. Sources. LinkedIn is always on. Optional sources (each is a workflow I move
    from .github/workflows/disabled/ to .github/workflows/ to turn on):
    Indeed, Glassdoor, ZipRecruiter, Google Jobs (these four need no key; Google
@@ -182,7 +185,9 @@ else's search.
   give one.
 - location_filter.terms: every way my places appear in a job's location text
   (city, ", ST", state name, metro name), plus "remote" and "united states" if
-  those count. US state names are always accepted anyway.
+  those count. US state names are always accepted anyway. For a place outside
+  the US, include its country as a whole word (e.g. "australia"), or its
+  postings are dropped.
 - employers.priority: full company names, 6+ characters where possible
   (matching is a loose substring match).
 - Regexes (priority_topics, role_categories, sector_classification): plain

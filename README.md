@@ -146,7 +146,17 @@ In the **Actions** tab, open each active workflow and click **Run workflow**:
 | **Workflow Watchdog** | Hourly :33 PT, 5am–8pm | Re-dispatches missed LinkedIn runs |
 | **Validate Setup** | Manual only | Checks required config/secrets |
 
-Your fork starts with an empty `output/`; the first runs fill it with your own jobs. The backfill workflow is the most important for a new setup — it pulls 7 days of history across all 50 states in parallel.
+Your fork starts with an empty `output/`; the first runs fill it with your own jobs. A backfill is the most important first run: it pulls the last 7 days of postings.
+
+#### Two ways to backfill LinkedIn
+
+| | **LinkedIn Backfill (Parallel)** (recommended) | **LinkedIn Watcher** with "One-time backfill" ticked |
+|---|---|---|
+| Where | **US only**: the states in `locations.linkedin_partitions.states`, plus US-wide and Remote | **Anywhere** in `locations.linkedin` |
+| How | Many small jobs side by side; high-volume places split into one-day slices | One job, one search per term and location |
+| Limits | GitHub allows at most 256 jobs per phase (so at most 8 search terms with all 50 states) | Each search returns at most ~1,000 results, so busy places get cut off; LinkedIn rate-limits long runs, and GitHub stops any job after 6 hours, losing everything unsaved |
+
+Outside the US, use the Watcher's checkbox with a short list of places, and add each country to `location_filter.terms` (for example `"australia"`). The location filter otherwise drops postings in a built-in list of non-US countries, so that terms like `", ca"` for California can't match Canada.
 
 ### Step 6 — Phone notifications (optional)
 

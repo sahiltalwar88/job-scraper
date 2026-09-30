@@ -111,7 +111,7 @@ One at a time (they share the `job-scraper-commit-push` lock, and GitHub cancels
 
 - **Omitted keys inherit the example's search.** `config.json` is merged over `config.example.json` (the upstream author's toxicology search). Write every section; use `[]` for unused ones.
 - **Backfill matrix limit.** GitHub allows 256 jobs per phase: Phase 1 = ⌈terms/2⌉ × (states + US-wide + Remote − high-volume); Phase 2 = ⌈terms/2⌉ × high-volume × 7. 8 terms, 50 states and 9 high-volume locations give 172 and 252.
-- **US-only location filter.** `is_target_location()` always rejects a fixed list of non-US countries (Canada, UK, Australia, India, …). Non-US searches don't work for LinkedIn or NEOGOV.
+- **Non-US searches.** `is_target_location()` rejects a built-in list of non-US countries unless the user's `location_filter.terms` names the country (e.g. `"australia"`). The parallel backfill covers only the US (states, US-wide, Remote); outside the US, use the LinkedIn Watcher's single-job backfill and explain its limits (about 1,000 results per search, LinkedIn rate limits, GitHub's 6-hour job limit).
 - **Regexes run in two engines.** `priority_topics` is matched by Python (alerts) and JavaScript (dashboard): no inline flags, doubled backslashes in JSON.
 - **Fork with `main` only.** This repo keeps its own data on a `sahil-data` branch; GitHub's Fork button copies only `main` by default, but `gh repo fork` copies every branch unless given `--default-branch-only`. If a fork has `sahil-data`, delete it.
 - **Sync source.** Forks of this repo sync from it by default; `sync.upstream_repo` in `config.json` changes that (this repo's own config points at ScottCoffin/Job_Scraper).
