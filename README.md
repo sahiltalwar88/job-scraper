@@ -387,7 +387,7 @@ Generate the whole file from your CV with [`docs/cv-to-config-prompt.md`](docs/c
 
 ## Staying up to date with upstream
 
-Enable the **`sync_upstream.yml`** workflow (**Actions → Sync from upstream → Enable workflow**) and it merges new code improvements from the upstream repo every Monday. Your `output/` data, `config.json` and `scoring_profile.json` always stay exactly as your fork has them.
+Enable the **`sync_upstream.yml`** workflow (**Actions → Sync from upstream → Enable workflow**) and it merges new code improvements every Monday, from [sahiltalwar88/job-scraper](https://github.com/sahiltalwar88/job-scraper) by default. To sync from a different repo, set `sync.upstream_repo` in your `config.json` (and update the `CONFIG_JSON` secret), for example `"sync": {"upstream_repo": "ScottCoffin/Job_Scraper"}`. Your `output/` data, `config.json` and `scoring_profile.json` always stay exactly as your fork has them.
 
 > **Use the workflow, not the GitHub "Sync fork" button.** Because your fork has commits upstream doesn't (your `config.json`, your scraped data), GitHub's built-in button shows "Discard N commits" — which would delete your config. The `sync_upstream.yml` workflow handles this correctly by merging upstream into your fork (see [`scripts/sync-upstream.sh`](scripts/sync-upstream.sh)).
 

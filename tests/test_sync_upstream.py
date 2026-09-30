@@ -3,6 +3,7 @@
 Each test builds a throwaway "upstream" repo, a fork that shares its history,
 and a bare "origin" the fork pushes to, then runs the real script against them.
 """
+import json
 import os
 import re
 import subprocess
@@ -74,10 +75,12 @@ class Repos:
         commit(self.fork, msg, files, remove)
         git(self.fork, "push", "-q", "origin", "main")
 
-    def sync(self):
+    def sync(self, upstream_env=True, extra_env=None):
+        env = {k: v for k, v in os.environ.items() if k != "UPSTREAM_URL"}
+        if upstream_env:
+            env["UPSTREAM_URL"] = str(self.upstream)
         return subprocess.run(["bash", "scripts/sync-upstream.sh"], cwd=self.fork,
-                              env={**os.environ, "UPSTREAM_URL": str(self.upstream)},
-                              capture_output=True, text=True)
+                              env={**env, **(extra_env or {})}, capture_output=True, text=True)
 
 
 BASE_FILES = {
@@ -274,6 +277,39 @@ def test_untracked_personal_config_survives_a_stopped_sync(repos):
     assert repos.origin_head() == before
     assert not repos.exists("config.json")
     assert (repos.fork / "config.json").read_text() == '{"personal": true}\n'
+
+
+def test_sync_source_comes_from_config_json(repos):
+    _untrack_config(repos)
+    (repos.fork / "config.json").write_text(json.dumps({"sync": {"upstream_repo": str(repos.upstream)}}))
+    commit(repos.upstream, "upstream code", {"code.py": "VALUE = 'upstream'\n"})
+
+    result = repos.sync(upstream_env=False)
+
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert repos.show("code.py") == "VALUE = 'upstream'"
+
+
+def test_upstream_url_env_overrides_config_json(repos):
+    _untrack_config(repos)
+    (repos.fork / "config.json").write_text(json.dumps({"sync": {"upstream_repo": "/nonexistent/repo"}}))
+    commit(repos.upstream, "upstream code", {"code.py": "VALUE = 'upstream'\n"})
+
+    result = repos.sync()
+
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert repos.show("code.py") == "VALUE = 'upstream'"
+
+
+def test_default_sync_source_is_the_job_hunter_repo(repos):
+    """With no config and no override, forks follow sahiltalwar88/job-scraper."""
+    _untrack_config(repos)
+    (repos.fork / "config.json").unlink()
+
+    # Block network access so the test only checks where it would fetch from.
+    result = repos.sync(upstream_env=False, extra_env={"GIT_ALLOW_PROTOCOL": "file"})
+
+    assert "Syncing from https://github.com/sahiltalwar88/job-scraper.git" in result.stdout
 
 
 def test_refuses_to_run_with_uncommitted_changes(repos):

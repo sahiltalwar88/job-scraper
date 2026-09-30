@@ -28,17 +28,38 @@
 # config.json. A rebase replays that delete and wipes the fork's config.
 #
 # Environment:
-#   UPSTREAM_URL  upstream repo (default: ScottCoffin/Job_Scraper)
+#   UPSTREAM_URL  overrides where to sync from (URL or local path)
+#
+# Where to sync from, in order: UPSTREAM_URL; config.json's
+# sync.upstream_repo ("owner/repo", a URL, or a path); otherwise
+# sahiltalwar88/job-scraper, the repo job-hunter users fork. The maintainer's
+# own fork sets sync.upstream_repo to ScottCoffin/Job_Scraper.
 
 set -euo pipefail
 
-UPSTREAM_URL="${UPSTREAM_URL:-https://github.com/ScottCoffin/Job_Scraper.git}"
 
 err() {
   if [ -n "${GITHUB_ACTIONS:-}" ]; then echo "::error::$*"; else echo "Error: $*" >&2; fi
 }
 
 cd "$(git rev-parse --show-toplevel)"
+
+DEFAULT_UPSTREAM="sahiltalwar88/job-scraper"
+if [ -z "${UPSTREAM_URL:-}" ]; then
+  configured=$(python3 -c '
+import json
+try:
+    print(((json.load(open("config.json")).get("sync") or {}).get("upstream_repo") or "").strip())
+except (OSError, ValueError, AttributeError):
+    pass
+' 2>/dev/null || true)
+  repo="${configured:-$DEFAULT_UPSTREAM}"
+  case "$repo" in
+    *://*|/*|./*|../*|*.git) UPSTREAM_URL="$repo" ;;
+    *) UPSTREAM_URL="https://github.com/$repo.git" ;;
+  esac
+fi
+echo "Syncing from $UPSTREAM_URL"
 
 # Resetting output/ below would discard uncommitted local changes.
 if ! git diff --quiet || ! git diff --cached --quiet; then

@@ -22,8 +22,9 @@ name: Sync from upstream
 # to stay current; the button offers "Discard N commits" which would delete
 # your config.
 #
-# UPSTREAM SOURCE: https://github.com/ScottCoffin/Job_Scraper
-# Do NOT point this at your own personal fork.
+# UPSTREAM SOURCE: sahiltalwar88/job-scraper by default (the repo job-hunter
+# users fork). To sync from somewhere else, set sync.upstream_repo in your
+# config.json (and CONFIG_JSON secret), e.g. "ScottCoffin/Job_Scraper".
 
 on:
   schedule:
@@ -63,6 +64,12 @@ jobs:
         # scripts/sync-upstream.sh uses pyflakes to refuse merges that leave
         # names undefined in code this fork has customized.
         run: pip install pyflakes
+
+      - name: Write config.json from secret
+        # sync.upstream_repo in config.json picks the repo to sync from.
+        run: if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
 
       - name: Merge from upstream
         run: |
