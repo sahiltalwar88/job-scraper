@@ -16,6 +16,12 @@ on:
         type: boolean
         default: false
 
+env:
+  # Branch that holds this repo's job data (repository variable; default
+  # main). The maintainer's repo uses a separate branch so forks start empty.
+  DATA_BRANCH: ${{ vars.DATA_BRANCH || 'main' }}
+  ENABLE_DATA_COMMITS: ${{ vars.ENABLE_DATA_COMMITS }}
+
 jobs:
   digest:
     name: Send weekly Pushover brief
@@ -27,6 +33,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
+      - name: Check out the latest job data
+        # actions/checkout captures the commit at trigger time; another workflow
+        # may have committed since. Puts us on DATA_BRANCH (default main).
+        run: bash scripts/use-data-branch.sh
 
       - name: Set up Python
         uses: actions/setup-python@v5

@@ -235,7 +235,7 @@ MY RÉSUMÉ AND LINKEDIN:
    - AI fit-scoring: secrets `ANTHROPIC_API_KEY`, `CANDIDATE_PROFILE` (required), `CANDIDATE_RESUME`.
    - Weekly upstream sync: secret `SYNC_TOKEN` (README "Staying up to date with upstream").
 5. **Turn on the sources you chose**: move each one's workflow from `.github/workflows/disabled/` to `.github/workflows/` and push. The same goes for `triage.yml` (AI fit-scoring) and `weekly_digest.yml`.
-6. **First runs**, one at a time (they share a lock, and GitHub cancels queued runs): **Validate Setup** → **Clear Job Data** (your fork starts with this repo's jobs) → **LinkedIn Backfill (Parallel)** → each other source you turned on, with its backfill option → **Test Pushover Notification** if you set up alerts.
+6. **First runs**, one at a time (they share a lock, and GitHub cancels queued runs): **Validate Setup** → **LinkedIn Backfill (Parallel)** → each other source you turned on, with its backfill option → **Test Pushover Notification** if you set up alerts.
 7. **Check**: open `https://<you>.github.io/<repo>/triage.html` and spot-check that the jobs match your search.
 
 ## Optional: LinkedIn `geoId`

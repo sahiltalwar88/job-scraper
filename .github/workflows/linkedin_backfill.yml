@@ -18,6 +18,12 @@ name: LinkedIn Backfill (Parallel)
 on:
   workflow_dispatch:
 
+env:
+  # Branch that holds this repo's job data (repository variable; default
+  # main). The maintainer's repo uses a separate branch so forks start empty.
+  DATA_BRANCH: ${{ vars.DATA_BRANCH || 'main' }}
+  ENABLE_DATA_COMMITS: ${{ vars.ENABLE_DATA_COMMITS }}
+
 jobs:
   # ─── Phase 1: Low-volume locations ────────────────────────────────────────
   emit-matrix-phase1:
@@ -112,11 +118,10 @@ jobs:
           pattern: linkedin-partition-*
           merge-multiple: true
           path: output/
-      - name: Sync to latest origin/main before merge
-        run: |
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
+      - name: Check out the latest job data
+        # actions/checkout captures the commit at trigger time; another workflow
+        # may have committed since. Puts us on DATA_BRANCH (default main).
+        run: bash scripts/use-data-branch.sh
       - name: Merge partition results
         run: python scrape_jobs.py --linkedin-merge-backfill
       - name: Commit Phase 1 results
@@ -129,8 +134,8 @@ jobs:
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi
           git diff --cached --quiet || git commit -m "chore: linkedin backfill phase 1 [$(date -u '+%Y-%m-%d %H:%MZ')]"
-          git pull --rebase -X theirs origin main
-          git push
+          git pull --rebase -X theirs origin "$DATA_BRANCH"
+          git push origin "HEAD:$DATA_BRANCH"
 
   # ─── Phase 2: High-volume locations (1-day slices) ───────────────────────
   emit-matrix-phase2:
@@ -226,11 +231,10 @@ jobs:
           pattern: linkedin-partition-*
           merge-multiple: true
           path: output/
-      - name: Sync to latest origin/main before merge
-        run: |
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
+      - name: Check out the latest job data
+        # actions/checkout captures the commit at trigger time; another workflow
+        # may have committed since. Puts us on DATA_BRANCH (default main).
+        run: bash scripts/use-data-branch.sh
       - name: Merge partition results
         run: python scrape_jobs.py --linkedin-merge-backfill
       - name: Record workflow run
@@ -264,5 +268,5 @@ jobs:
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi
           git diff --cached --quiet || git commit -m "chore: linkedin backfill phase 2 (high-volume day slices) [$(date -u '+%Y-%m-%d %H:%MZ')]"
-          git pull --rebase -X theirs origin main
-          git push
+          git pull --rebase -X theirs origin "$DATA_BRANCH"
+          git push origin "HEAD:$DATA_BRANCH"

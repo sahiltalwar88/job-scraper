@@ -14,6 +14,12 @@ concurrency:
   group: job-scraper-commit-push
   cancel-in-progress: false
 
+env:
+  # Branch that holds this repo's job data (repository variable; default
+  # main). The maintainer's repo uses a separate branch so forks start empty.
+  DATA_BRANCH: ${{ vars.DATA_BRANCH || 'main' }}
+  ENABLE_DATA_COMMITS: ${{ vars.ENABLE_DATA_COMMITS }}
+
 jobs:
   clear:
     name: Reset all job data
@@ -25,6 +31,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
+      - name: Check out the latest job data
+        # actions/checkout captures the commit at trigger time; another workflow
+        # may have committed since. Puts us on DATA_BRANCH (default main).
+        run: bash scripts/use-data-branch.sh
 
       - name: Reset all output JSON files
         run: |
@@ -96,5 +107,5 @@ jobs:
           git diff --cached --quiet \
             && echo "Nothing to clear (output already empty)." \
             || git commit -m "chore: clear all job data [$(date -u '+%Y-%m-%d %H:%MZ')]"
-          git pull --no-rebase -X ours origin main
-          git push
+          git pull --no-rebase -X ours origin "$DATA_BRANCH"
+          git push origin "HEAD:$DATA_BRANCH"

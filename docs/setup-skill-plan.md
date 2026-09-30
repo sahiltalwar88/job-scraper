@@ -10,7 +10,7 @@ A setup skill in this repo (and, later, in [Scott Coffin's upstream repo](https:
 
 ### 1. GitHub (clicks the user or `gh` does)
 
-- Fork; Actions tab → "I understand my workflows, enable them" (forks start with scheduled workflows off).
+- Fork with `main` only (`gh repo fork sahiltalwar88/job-scraper --default-branch-only`); Actions tab → "I understand my workflows, enable them" (forks start with scheduled workflows off).
 - Settings → Actions → General → Workflow permissions → **Read and write** (workflows commit; the watchdog needs `actions: write`).
 - Default branch must stay **`main`** (workflows fetch `origin main`; Pages deploys from it).
 - Pages: deploy from branch `main`, folder `/`. Free Pages needs a public repo, which also makes `output/` public.
@@ -22,6 +22,7 @@ A setup skill in this repo (and, later, in [Scott Coffin's upstream repo](https:
 | Variable | Needed for | Default / notes |
 |---|---|---|
 | `ENABLE_DATA_COMMITS` = `true` | **Required**: every data commit | Without it, scrapers run and save nothing |
+| `DATA_BRANCH` | Where job data is committed | `main` (leave unset); the maintainer's repo uses `sahil-data` |
 | `NOTIFY_MIN_FIT` | Phone alerts | 75. The config key `notify.min_fit` is **not read** |
 | `WEEKLY_DIGEST_PUSHOVER` = `true` | Weekly digest | Or `notify.weekly_digest.enabled` in config |
 | `WEEKLY_DIGEST_DAYS` | Weekly digest | 7 |
@@ -112,10 +113,9 @@ One at a time (they share the `job-scraper-commit-push` lock, and GitHub cancels
 - **Backfill matrix limit.** GitHub allows 256 jobs per phase: Phase 1 = ⌈terms/2⌉ × (states + US-wide + Remote − high-volume); Phase 2 = ⌈terms/2⌉ × high-volume × 7. 8 terms, 50 states and 9 high-volume locations give 172 and 252.
 - **US-only location filter.** `is_target_location()` always rejects a fixed list of non-US countries (Canada, UK, Australia, India, …). Non-US searches don't work for LinkedIn or NEOGOV.
 - **Regexes run in two engines.** `priority_topics` is matched by Python (alerts) and JavaScript (dashboard): no inline flags, doubled backslashes in JSON.
-- **A fork starts with this repo's jobs** in `output/`: run Clear Job Data before the backfill.
-- **Forks of this repo sync from Scott Coffin's repo**, not from this one (`scripts/sync-upstream.sh` defaults `UPSTREAM_URL` to ScottCoffin/Job_Scraper and the workflow doesn't override it).
-- **`scripts/setup.sh`** doesn't set `CONFIG_JSON` or `SCORING_PROFILE_JSON`, and says to "enable" `triage.yml` when it must first be moved out of `disabled/`.
-- **Clear Job Data** doesn't reset `csucareers_jobs.json` or `scores.json`.
+- **Fork with `main` only.** This repo keeps its own data on a `sahil-data` branch; GitHub's Fork button copies only `main` by default, but `gh repo fork` copies every branch unless given `--default-branch-only`. If a fork has `sahil-data`, delete it.
+- **Sync source.** Forks of this repo sync from it by default; `sync.upstream_repo` in `config.json` changes that (this repo's own config points at ScottCoffin/Job_Scraper).
+- **`scripts/setup.sh`** sets `CONFIG_JSON` (asking for the config path) but not `SCORING_PROFILE_JSON`, and says to "enable" `triage.yml` when it must first be moved out of `disabled/`.
 - **Scoring defaults differ**: with no profile settings, `notify.py` caps generic jobs at 35 while the dashboard uses 0, and they treat an empty `signature_terms` list differently.
 
 ## Porting to Scott Coffin's repo (next PR)

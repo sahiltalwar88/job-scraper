@@ -67,7 +67,9 @@ You need a free [GitHub account](https://github.com/signup). Everything runs on 
 
 ### Step 1 — Fork and clone
 
-Click **Fork** at the top of this page, then optionally clone locally:
+Click **Fork** at the top of this page and keep **"Copy the `main` branch only"** ticked (the default), then optionally clone locally. With the GitHub CLI, pass the same option: `gh repo fork sahiltalwar88/job-scraper --default-branch-only`.
+
+> **If your fork has a `sahil-data` branch, delete it.** It holds the maintainer's own job data (see [Where job data is stored](#where-job-data-is-stored)) and isn't needed: Settings → Branches, or `git push origin --delete sahil-data`.
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/job-scraper.git
@@ -144,7 +146,7 @@ In the **Actions** tab, open each active workflow and click **Run workflow**:
 | **Workflow Watchdog** | Hourly :33 PT, 5am–8pm | Re-dispatches missed LinkedIn runs |
 | **Validate Setup** | Manual only | Checks required config/secrets |
 
-Your fork starts with this repo's own job data in `output/`. To start clean, run **Clear Job Data** first. The first manual run then seeds your dataset. The backfill workflow is the most important for a new setup — it pulls 7 days of history across all 50 states in parallel.
+Your fork starts with an empty `output/`; the first runs fill it with your own jobs. The backfill workflow is the most important for a new setup — it pulls 7 days of history across all 50 states in parallel.
 
 ### Step 6 — Phone notifications (optional)
 
@@ -288,6 +290,10 @@ Some tests depend on the maintainer's specific `config.json` (its titles, partit
 
 All output files are gitignored upstream and populated by CI when `ENABLE_DATA_COMMITS=true`.
 
+### Where job data is stored
+
+By default, workflows commit job data to `main`, next to the code, and the dashboard and job-hunter read it from there. A repo that others fork can keep its data off `main` instead: set the repository **variable** `DATA_BRANCH` to a branch name, and every workflow writes `output/` there, bringing that branch up to date with `main`'s code on each run. `main` then stays empty, so forks start clean. This repo does that with `DATA_BRANCH=sahil-data`: its dashboard is published from `sahil-data`, and job-hunter's clone tracks it. Forks don't need to set anything.
+
 ---
 
 ## Repo structure
@@ -350,6 +356,7 @@ GitHub Actions uses two distinct namespaces:
 |------|------|---------|
 | `CONFIG_JSON` | Secret | Full `config.json` contents (single-line, ASCII-safe) |
 | `ENABLE_DATA_COMMITS` | Variable | `true` = commit scraped data to repo |
+| `DATA_BRANCH` | Variable | Branch that job data is committed to (optional; default `main`) |
 | `PUSHOVER_TOKEN` / `PUSHOVER_USER` | Secret | Phone notifications (optional) |
 | `SCORING_PROFILE_JSON` | Secret | Your `scoring_profile.json` (single line, via the export script), used to score notifications (optional) |
 | `NOTIFY_MIN_FIT` | Variable | Fit score that triggers a notification (optional, default 75) |
