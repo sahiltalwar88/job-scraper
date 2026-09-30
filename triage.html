@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Job Triage — Engineering Leadership</title>
+<title>Job Triage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -343,7 +343,7 @@
   .scorechip.fit { cursor: help; }
   .scorechip.top { box-shadow: 0 0 0 1px rgba(34,197,94,0.5); }
 
-  /* Priority-topic star/highlight (distributed systems, dev productivity, AI/ML, etc.) */
+  /* Priority-topic star/highlight (topics from config.json → priority_topics) */
   .job.starred { outline: 1.5px solid rgba(251,191,36,0.55); outline-offset: -1px;
     background: rgba(251,191,36,0.06); }
   .starbadge { color: #fbbf24; font-size: 14px; margin-right: 4px; cursor: help;
@@ -402,7 +402,7 @@
 
 <header>
   <h1>Job Triage</h1>
-  <span class="sub" id="snapshot-line" aria-live="polite" aria-atomic="true">United States · Remote · Engineering Leadership · loading…</span>
+  <span class="sub" id="snapshot-line" aria-live="polite" aria-atomic="true">Loading…</span>
   <span class="grow"></span>
   <div class="theme-toggle" id="theme-controls" aria-label="Theme">
     <button type="button" data-theme-mode="system" title="Match system theme">System</button>
@@ -510,7 +510,7 @@
   <div class="controls-row">
     <span class="pillgroup-label">Highlight</span>
     <button type="button" class="pill" id="star-only" aria-pressed="false"
-      title="Show only roles touching priority topics (distributed systems, developer productivity, AI/ML platform, AI-native SDLC, engineering governance)">★ Priority topics</button>
+      title="Show only roles touching your priority topics (config.json → priority_topics)">★ Priority topics</button>
   </div>
   <div class="controls-row">
     <span class="pillgroup-label">Salary</span>
@@ -564,7 +564,6 @@
   <a href="https://scottcoff.in" target="_blank" rel="noopener noreferrer">Dr. Scott Coffin</a>,
   based on the original Bay Area ML job scraper by
   <a href="https://github.com/ernestod1998" target="_blank" rel="noopener noreferrer">Ernesto Diaz</a>.
-  Forked and adapted for engineering leadership roles by Sahil Talwar.
 </footer>
 
 </div>
@@ -2173,6 +2172,21 @@
   }
 
   // ---------- Refresh flow ----------
+  // Point the repo links at the repo this dashboard is published from
+  // (<user>.github.io/<repo>/ → github.com/<user>/<repo>). Elsewhere (e.g.
+  // served locally) keep the source-repo link and hide Clear Job Data, which
+  // would otherwise open someone else's repo.
+  (function linkToOwnRepo() {
+    const m = location.hostname.match(/^([^.]+)\.github\.io$/i);
+    const repoName = location.pathname.split('/').filter(Boolean)[0];
+    const clear = document.getElementById('clear-data-link');
+    if (!m || !repoName) { if (clear) clear.style.display = 'none'; return; }
+    const repo = `https://github.com/${m[1]}/${repoName}`;
+    const link = document.getElementById('repo-link');
+    if (link) link.href = repo;
+    if (clear) clear.href = `${repo}/actions/workflows/clear_data.yml`;
+  })();
+
   async function refresh() {
     $('snapshot-line').textContent = 'Loading…';
     try {

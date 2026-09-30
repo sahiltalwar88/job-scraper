@@ -18,7 +18,7 @@ Designed to be forked. No server. No paid services required (AI triage is option
 | `scrape_jobs.py` | Main scraper. Dispatched by all watcher workflows. |
 | `triage_agent.py` | Claude API fit-scoring agent. Run by `triage.yml`. |
 | `triage.html` | The dashboard. Pure client-side JS; reads `output/*.json` at page-load time. |
-| `output/` | All scraped data (gitignored upstream). `all_jobs.json` = rolling master (last 50d). `output/deltas/` = per-run delta files for incremental consumers (LinkedIn only). See `docs/JOB_SCHEMA.md` for the data contract. |
+| `output/` | All scraped data (gitignored upstream). `all_jobs.json` = rolling master (last 30d). `output/deltas/` = per-run delta files for incremental consumers (LinkedIn only). See `docs/JOB_SCHEMA.md` for the data contract. |
 
 ## Workflow architecture
 

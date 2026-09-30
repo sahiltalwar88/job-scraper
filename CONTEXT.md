@@ -38,7 +38,7 @@ The project is an automation pipeline, not a knowledge-compilation pipeline. Sta
 - **Purpose:** Pull postings from job boards on a schedule.
 - **Inputs:** `config.json` (keywords, locations, employers); external job boards.
 - **Process:** Watcher workflows (`.github/workflows/*_watch.yml`, `scrape_jobs.yml`) run on cron → call `scrape_jobs.py --<source>` → produce per-source `new_jobs`.
-- **Outputs:** `output/<source>_jobs.{json,md,html}`; new jobs merged into `output/all_jobs.json` (14-day rolling master).
+- **Outputs:** `output/<source>_jobs.{json,md,html}`; new jobs merged into `output/all_jobs.json` (30-day rolling master).
 
 ### Stage 2 — Commit
 - **Purpose:** Persist scraped data to the repo so the dashboard can read it.
