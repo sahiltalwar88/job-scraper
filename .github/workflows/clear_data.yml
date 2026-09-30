@@ -48,6 +48,7 @@ jobs:
               "output/usajobs_jobs.json",
               "output/governmentjobs_jobs.json",
               "output/calopps_jobs.json",
+              "output/csucareers_jobs.json",
           ]
           empty_source = {"scraped_at": now, "total": 0, "new_count": 0, "jobs": [], "new_jobs": []}
           for path in source_files:
@@ -59,6 +60,11 @@ jobs:
           with open("output/all_jobs.json", "w", encoding="utf-8") as f:
               json.dump({"updated_at": now, "jobs": []}, f)
           print("✅ output/all_jobs.json cleared")
+
+          # AI fit-scoring verdicts (triage agent)
+          with open("output/scores.json", "w", encoding="utf-8") as f:
+              json.dump({"scores": {}}, f)
+          print("✅ output/scores.json cleared")
 
           # Pushover dedup tracker
           with open("output/notified.json", "w", encoding="utf-8") as f:
@@ -83,7 +89,8 @@ jobs:
             output/glassdoor_jobs.json output/ziprecruiter_jobs.json \
             output/google_jobs.json output/hiringcafe_jobs.json \
             output/calcareers_jobs.json output/usajobs_jobs.json \
-            output/governmentjobs_jobs.json output/calopps_jobs.json
+            output/governmentjobs_jobs.json output/calopps_jobs.json \
+            output/csucareers_jobs.json output/scores.json
           # Stage delta directory deletions (git add -A picks up removed files)
           git add -A output/deltas/ 2>/dev/null || true
           git diff --cached --quiet \

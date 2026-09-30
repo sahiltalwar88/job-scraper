@@ -6,6 +6,7 @@
 #   2. Enables GitHub Actions with read+write workflow permissions
 #   3. Enables GitHub Pages (main branch, / root)
 #   4. Sets ENABLE_DATA_COMMITS=true (the variable that makes scrapers save results)
+#      and the CONFIG_JSON secret from your config.json
 #   5. Optionally sets Pushover notification secrets
 #   6. Optionally sets Anthropic API key for AI fit-scoring
 #   7. Optionally triggers a first-time backfill run on all watchers
@@ -70,14 +71,21 @@ fi
 # ── 3. Config files ─────────────────────────────────────────────────────────────
 step "Checking config files"
 
-if [ -f "config.json" ]; then
-  ok "config.json found."
+# config.json is gitignored: workflows get it from the CONFIG_JSON secret.
+CONFIG_PATH=$(ask "Path to your config.json [config.json]:")
+CONFIG_PATH=${CONFIG_PATH:-config.json}
+if [ -f "$CONFIG_PATH" ]; then
+  if bash "$(dirname "$0")/export-config-secret.sh" "$CONFIG_PATH" | gh secret set CONFIG_JSON --repo "$REPO" 2>/dev/null; then
+    ok "CONFIG_JSON secret set from $CONFIG_PATH (single line, via scripts/export-config-secret.sh)."
+  else
+    err "Could not set CONFIG_JSON from $CONFIG_PATH (is it valid JSON?)."
+    info "Set it manually: bash scripts/export-config-secret.sh $CONFIG_PATH, then paste into"
+    info "Settings → Secrets and variables → Actions → New repository secret → CONFIG_JSON."
+  fi
 else
-  warn "config.json not found."
-  info "You must create this before scrapers will return useful results."
-  info "Option A: Copy config.example.json → config.json and fill in your keywords/locations."
-  info "Option B: Use docs/cv-to-config-prompt.md with an LLM to generate one from your CV."
-  info "You can do this in the GitHub web UI (Add file → config.json) or locally."
+  warn "$CONFIG_PATH not found — the scrapers need it."
+  info "Create it from docs/cv-to-config-prompt.md (an AI interviews you from your résumé),"
+  info "or copy config.example.json and edit it, then re-run this script."
 fi
 
 if [ -f "scoring_profile.json" ]; then
