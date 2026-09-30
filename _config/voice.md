@@ -15,7 +15,7 @@ Mixed: **LLM agents** (routing through IDENTITY/CONTEXT) and **engineers** (huma
 
 ## Vocabulary
 
-- Use the terms defined in `_config/glossary.md` precisely: "watcher workflow", "partition", `all_jobs.json`, "feasibility check", "triage", "JD fetch", `ACP_BACKEND`, `ENABLE_DATA_COMMITS`.
+- Use the terms defined in `_config/glossary.md` precisely: "watcher workflow", "partition", `all_jobs.json`, "triage", "JD fetch", `ENABLE_DATA_COMMITS`.
 - Distinguish **Secret** (`secrets.*`) from **Variable** (`vars.*`) explicitly whenever a GitHub Actions setting is involved — this is the most common fork-setup error.
 - Distinguish **user file** (`config.json`) from **upstream template** (`config.example.json`) when discussing config.
 

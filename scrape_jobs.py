@@ -9,7 +9,6 @@ Tune the search in config.json: title keywords, board-specific search terms,
 priority employers, locations, and LinkedIn geoIds / JobSpy locations.
 """
 
-import abc
 import http.cookiejar
 import base64
 import json
@@ -154,7 +153,7 @@ _KEYWORD_RE = re.compile(
 # Fuzzy pre-filter — deliberately BROAD. Used by the LinkedIn partitioned
 # backfill to catch title variants the exact-phrase KEYWORDS miss
 # (e.g. "Director, Engineering", "Senior Engineering Manager", "Head of
-# Dropbox"). The LLM feasibility check (--feasibility-check) makes the final
+# Dropbox"). Downstream filtering (e.g. job-hunter's grading) makes the final
 # cut. Config: keywords.fuzzy_seniority, keywords.fuzzy_domain,
 # keywords.fuzzy_exclude. Leave all three empty to disable the fuzzy filter
 # and fall back to keyword-only matching (keywords.include).
@@ -193,7 +192,7 @@ def role_is_relevant(title: str, company: str = "") -> bool:
     When the fuzzy pre-filter is configured (keywords.fuzzy_seniority and
     keywords.fuzzy_domain both non-empty), applies a broad fuzzy match that
     catches title variants the exact-phrase KEYWORDS miss. Deliberately
-    permissive — the LLM feasibility check (--feasibility-check) makes the
+    permissive — downstream filtering (e.g. job-hunter's grading) makes the
     final cut.
 
     When the fuzzy pre-filter is not configured (either list empty), falls
@@ -3354,224 +3353,15 @@ def _linkedin_merge_backfill_files(output_dir: str) -> tuple[list[dict], list[di
 
 
 # ---------------------------------------------------------------------------
-# Feasibility check — LLM-based filter for relevant roles.
-# Adapter pattern: FeasibilityChecker ABC allows swapping backends
-# (Devin CLI, Anthropic API, pure algorithm) without changing call sites.
-# The filter prompt is config-driven (feasibility_check.prompt in config.json).
-# ---------------------------------------------------------------------------
-
-# Config-driven feasibility prompt. When empty, --feasibility-check exits with
-# an error asking the user to set feasibility_check.prompt in config.json.
-_FEASIBILITY_PROMPT = _cfg("feasibility_check.prompt", "")
-
-
-class FeasibilityChecker(abc.ABC):
-    """Check whether a job is plausibly relevant to the configured search.
-
-    Verdicts are tripartite strings: "preferred", "yes", or "no".
-    "preferred" = Big Tech / top-tier fit; "yes" = fits but not Big Tech;
-    "no" = doesn't fit. For backward compatibility, boolean verdicts are
-    accepted (True → "yes", False → "no").
-    """
-
-    @abc.abstractmethod
-    def check_batch(self, jobs: list[dict]) -> dict[str, str]:
-        """Return {url: verdict_str} for each job, where verdict_str is
-        "preferred", "yes", or "no". Jobs not in the result dict default
-        to "yes" (safe default)."""
-        ...
-
-
-class DevinCLIChecker(FeasibilityChecker):
-    """Uses `devin -p` (GLM-5.2 High, free promo) for feasibility checks.
-    Batches 10 jobs per call to minimize subprocess overhead."""
-
-    BATCH_SIZE = 10
-
-    def __init__(self, model: str = "glm-5.2-high", prompt: str = ""):
-        self.model = model
-        self.prompt = prompt or _FEASIBILITY_PROMPT
-
-    def check_batch(self, jobs: list[dict]) -> dict[str, str]:
-        if not jobs:
-            return {}
-        if not self.prompt:
-            print("  ⚠️  No feasibility_check.prompt configured in config.json.")
-            print("      Add a prompt describing what makes a job relevant to your search.")
-            return {}
-        lines = [
-            f"You are a job filter. For each job below, reply with its number "
-            f"followed by PREFERRED, YES, or NO. {self.prompt} "
-            "Reply with one line per job, format: 'N. PREFERRED', 'N. YES', or 'N. NO'.\n"
-        ]
-        for i, job in enumerate(jobs, 1):
-            lines.append(
-                f"{i}. Title: {job.get('title', '?')} | "
-                f"Company: {job.get('company', '?')} | "
-                f"Location: {job.get('location', '?')}"
-            )
-        prompt = "\n".join(lines)
-        # Unset ACP_BACKEND so the CLI uses its default backend instead of
-        # the Windsurf ACP backend (which fails in standalone subprocess mode
-        # when launched from the Devin Desktop WSL extension).
-        env = {k: v for k, v in os.environ.items() if k != "ACP_BACKEND"}
-        result = subprocess.run(
-            ["devin", "-p", prompt, "--model", self.model,
-             "--respect-workspace-trust", "false"],
-            capture_output=True, text=True, timeout=60, env=env,
-        )
-        verdicts: dict[str, str] = {}
-        for line in result.stdout.strip().split("\n"):
-            m = re.match(r"(\d+)\.\s*(PREFERRED|YES|NO)", line.strip(), re.I)
-            if m:
-                idx = int(m.group(1)) - 1
-                if 0 <= idx < len(jobs):
-                    url = jobs[idx].get("url", "")
-                    verdicts[url] = m.group(2).upper()
-        return verdicts
-
-
-def run_feasibility_check(checker: FeasibilityChecker, limit: int = 0) -> None:
-    """Tag each job in all_jobs.json with feasible: true/false and feasibility tier.
-
-    Only checks jobs without an existing `feasible` field (incremental).
-    Saves after each batch (crash-safe). Defaults to feasible=True on errors.
-
-    Sets two fields per job:
-    - `feasible` (bool): True for "preferred" or "yes", False for "no".
-    - `feasibility` (str): "preferred", "yes", or "no" — the tier.
-
-    Args:
-        checker: The FeasibilityChecker backend to use.
-        limit: If > 0, only check this many unchecked jobs (for incremental testing).
-    """
-    path = os.path.join(OUTPUT_DIR, "all_jobs.json")
-    with open(path, encoding="utf-8") as f:
-        data = json.load(f)
-    jobs = data.get("jobs", [])
-    unchecked = [j for j in jobs if "feasible" not in j]
-    if limit > 0:
-        unchecked = unchecked[:limit]
-    print(f"🔍 Feasibility check: {len(unchecked)}/{len(jobs)} jobs to check"
-          + (f" (limit={limit})" if limit > 0 else ""))
-    if not unchecked:
-        print("  All jobs already checked.")
-        return
-    batch_size = checker.BATCH_SIZE
-    checked = 0
-    preferred_count = 0
-    yes_count = 0
-    no_count = 0
-    error_count = 0
-    for i in range(0, len(unchecked), batch_size):
-        batch = unchecked[i:i + batch_size]
-        batch_failed = False
-        try:
-            verdicts = checker.check_batch(batch)
-            # Empty verdicts = all jobs in batch failed to get a response
-            if not verdicts:
-                batch_failed = True
-        except Exception as e:
-            print(f"  ⚠️  Batch {i//batch_size + 1} failed: {e}")
-            verdicts = {}
-            batch_failed = True
-        for job in batch:
-            url = job.get("url", "")
-            if batch_failed:
-                # Tag with error flag so downstream can filter, but default
-                # feasible=True (safe default — don't drop jobs on API failure).
-                # These can be re-checked later by filtering feasibility_error=true.
-                job["feasible"] = True
-                job["feasibility"] = "yes"
-                job["feasibility_error"] = True
-                checked += 1
-                error_count += 1
-            else:
-                verdict = verdicts.get(url, True)
-                # Normalize: bool verdicts (backward compat) → str tier
-                if isinstance(verdict, str):
-                    tier = verdict.lower()
-                else:
-                    tier = "yes" if verdict else "no"
-                feasible = tier != "no"
-                job["feasible"] = feasible
-                job["feasibility"] = tier
-                checked += 1
-                if tier == "preferred":
-                    preferred_count += 1
-                elif tier == "yes":
-                    yes_count += 1
-                else:
-                    no_count += 1
-        feasible_count = preferred_count + yes_count
-        print(f"  📊 Checked {checked}/{len(unchecked)} "
-              f"({preferred_count} preferred, {yes_count} yes, {no_count} no"
-              + (f", {error_count} error" if error_count else "") + ")")
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
-    total_feasible = sum(1 for j in jobs if j.get("feasible"))
-    total_preferred = sum(1 for j in jobs if j.get("feasibility") == "preferred")
-    total_errors = sum(1 for j in jobs if j.get("feasibility_error"))
-    print(f"\n✅ Done this run: {preferred_count} preferred, {yes_count} yes, "
-          f"{no_count} no, {error_count} error")
-    print(f"✅ Total in file: {total_preferred} preferred, {total_feasible} feasible "
-          f"({len(jobs) - total_feasible} rejected, {total_errors} error)")
-
-
-def _linkedin_merge_backfill_files(output_dir: str) -> tuple[list[dict], list[dict], list[str]]:
-    """Merge per-term and per-partition backfill JSON files into a single job list.
-
-    Globs ``linkedin_backfill_*.json`` and ``linkedin_partition_*.json`` from
-    output_dir, deduplicates by URL, filters excluded companies, and normalizes
-    work_arrangement on each job.
-
-    Returns (all_jobs, partition_stats, cap_hits) where:
-    - all_jobs: deduplicated, filtered, work-arrangement-normalized job list
-    - partition_stats: list of dicts with per-partition summary info
-    - cap_hits: list of partition keys that hit the 1000-card cap
-    """
-    import glob
-    term_files = sorted(glob.glob(os.path.join(output_dir, "linkedin_backfill_*.json")))
-    part_files = sorted(glob.glob(os.path.join(output_dir, "linkedin_partition_*.json")))
-    all_files = term_files + part_files
-    all_jobs: list[dict] = []
-    seen_urls: set[str] = set()
-    cap_hits: list[str] = []
-    partition_stats: list[dict] = []
-    for tf in all_files:
-        with open(tf, encoding="utf-8") as f:
-            data = json.load(f)
-        part_key = data.get("partition_key", data.get("term", os.path.basename(tf)))
-        part_jobs = data.get("jobs", [])
-        raw = data.get("raw_cards", 0)
-        hit_cap = data.get("hit_cap", False)
-        new_count = 0
-        for j in part_jobs:
-            url = j.get("url", "")
-            if url not in seen_urls:
-                seen_urls.add(url)
-                all_jobs.append(j)
-                new_count += 1
-        if hit_cap:
-            cap_hits.append(part_key)
-        partition_stats.append({
-            "partition": part_key,
-            "jobs": len(part_jobs),
-            "new": new_count,
-            "raw": raw,
-            "hit_cap": hit_cap,
-        })
-    all_jobs = [j for j in all_jobs if not _is_excluded_company(j.get("company", ""))]
-    for job in all_jobs:
-        _ensure_work_arrangement(job)
-    return all_jobs, partition_stats, cap_hits
-
-
-# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    # Removed flag: unknown flags otherwise fall through to a full default scrape.
+    if "--feasibility-check" in sys.argv or "--feasibility-limit" in sys.argv:
+        sys.exit("--feasibility-check was removed: job-hunter decides which jobs are worth "
+                 "grading. Nothing was scraped.")
+
     if "--indeed-only" in sys.argv:
         save_indeed_results(scrape_indeed_recent())
         sys.exit(0)
@@ -3666,24 +3456,6 @@ if __name__ == "__main__":
             json.dump({"term": term, "jobs": jobs, "raw_cards": raw_cards}, f,
                       indent=2, ensure_ascii=False)
         print(f"  📄 Wrote {term_path}")
-        sys.exit(0)
-
-    if "--feasibility-check" in sys.argv:
-        if not _FEASIBILITY_PROMPT:
-            print("ERROR: --feasibility-check requires feasibility_check.prompt in config.json.")
-            print("       Add a prompt describing what makes a job relevant to your search.")
-            print("       Example: \"A job is YES if it is plausibly a senior role in [your domain]\"")
-            sys.exit(1)
-        limit = 0
-        if "--feasibility-limit" in sys.argv:
-            idx = sys.argv.index("--feasibility-limit")
-            if idx + 1 < len(sys.argv):
-                try:
-                    limit = int(sys.argv[idx + 1])
-                except ValueError:
-                    print("ERROR: --feasibility-limit requires an integer argument")
-                    sys.exit(1)
-        run_feasibility_check(DevinCLIChecker(), limit=limit)
         sys.exit(0)
 
     if "--linkedin-merge-backfill" in sys.argv:
@@ -3876,8 +3648,8 @@ if __name__ == "__main__":
         all_jobs = [j for j in all_jobs if is_target_location(j.get("location", ""))]
         print(f"\n  📍 Location filter: {before} → {len(all_jobs)} roles")
         # Enrichment (JD fetching) is deferred to the job-hunter pipeline.
-        # The scraper only discovers and filters jobs; JDs are fetched only
-        # for jobs that pass the LLM feasibility check.
+        # The scraper only discovers and filters jobs; job-hunter fetches JDs
+        # for the jobs it decides to grade.
         print(f"  ✅ Partition \"{partition_key}\": {len(all_jobs)} role(s) (raw: {total_raw})"
               f"{' [CAP-HIT]' if any_cap_hit else ''}")
         part_path = os.path.join(OUTPUT_DIR, f"linkedin_partition_{partition_key}.json")

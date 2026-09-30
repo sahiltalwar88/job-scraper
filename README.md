@@ -27,11 +27,7 @@ Each phase must stay under GitHub Actions' 256-job matrix limit, which is why se
 
 ### Fuzzy title pre-filter
 
-`role_is_relevant()` — a broad fuzzy pre-filter that pairs a seniority word with a domain word, catching title variants the exact-phrase keyword filter misses (for an engineering-leadership search, e.g. "Director, Engineering" or "Senior Engineering Manager"). Configurable via `keywords.fuzzy_seniority`, `keywords.fuzzy_domain`, and `keywords.fuzzy_exclude` in `config.json`. Leave all three empty to disable fuzzy filtering and fall back to keyword-only matching. The LLM feasibility check (`--feasibility-check`) makes the final cut.
-
-### LLM feasibility checking
-
-`--feasibility-check` mode and `DevinCLIChecker` class uses `devin -p` (GLM-5.2 High) to batch-check whether scraped jobs are plausibly relevant to the configured search. The filter prompt is config-driven via `feasibility_check.prompt` in `config.json`. Tags each job in `all_jobs.json` with `feasible: true/false`. Incremental — only checks jobs without an existing `feasible` field.
+`role_is_relevant()` — a broad fuzzy pre-filter that pairs a seniority word with a domain word, catching title variants the exact-phrase keyword filter misses (for an engineering-leadership search, e.g. "Director, Engineering" or "Senior Engineering Manager"). Configurable via `keywords.fuzzy_seniority`, `keywords.fuzzy_domain`, and `keywords.fuzzy_exclude` in `config.json`. Leave all three empty to disable fuzzy filtering and fall back to keyword-only matching. Downstream grading (for example in job-hunter) makes the final cut.
 
 ### State-level partition fan-out
 
@@ -212,7 +208,6 @@ python scrape_jobs.py --priority-only             # priority-employer digest
 python scrape_jobs.py --linkedin-backfill          # 7-day backfill
 python scrape_jobs.py --linkedin-emit-matrix       # preview partition matrix
 python scrape_jobs.py --linkedin-emit-matrix --phase high   # Phase 2 matrix
-python scrape_jobs.py --feasibility-check          # LLM feasibility tagging
 python -m http.server 8000                         # then open http://localhost:8000/triage.html
 ```
 
@@ -238,8 +233,6 @@ tests/
 │       ├── california_director_vp.json
 │       ├── texas_director_vp.json
 │       └── new_york_head_senior_manager_cap_hit.json
-├── test_feasibility_check_cli_mode.py
-├── test_feasibility_checker_adapter.py
 ├── test_job_deduplication.py
 ├── test_linkedin_jd_extraction.py
 ├── test_linkedin_partition_merge.py
@@ -385,7 +378,6 @@ Everything you'd adjust lives in [`config.json`](config.json) (no code edits):
 - `priority_topics` — gold-star highlights on the dashboard and push notifications
 - `role_categories` — dashboard Role-filter buckets
 - `sector_classification` — dashboard Sector-filter buckets (empty = no sector classification)
-- `feasibility_check.prompt` — LLM feasibility filter prompt (empty = `--feasibility-check` disabled)
 - `triage.role_families` — pipe-delimited category labels for the AI triage agent
 - `profile` — dashboard title/subtitle/emoji
 

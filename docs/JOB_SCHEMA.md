@@ -80,12 +80,6 @@ Job records appear in `all_jobs.json`, the per-source files and delta files.
 | `company_url` | string | Employer homepage URL. | Some sources |
 | `duplicate_urls` | array[string] | Alternate URLs for the same job. | Added by merge step |
 
-**Feasibility fields** (written by the feasibility check, `scrape_jobs.py --feasibility-check`; appear in `all_jobs.json` only, not in delta files):
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `feasible` | boolean | Whether the job passed the feasibility check. |
-| `feasibility` | string | Verdict: `preferred`, `yes`, or `no`. |
-| `feasibility_error` | boolean | True if the feasibility batch failed. |
+Older records may also carry `feasible`, `feasibility` and `feasibility_error` from a feature that has since been removed; nothing writes them any more.
 
 Records allow extra fields (`additionalProperties: true`), so downstream tools may add their own.

@@ -24,7 +24,7 @@ job-scraper/
 │   └── deltas/               # Per-run delta files (LinkedIn only, 30d retention). See docs/JOB_SCHEMA.md
 ├── .github/workflows/        # 18 watcher + utility workflows (Layer 4 orchestrators)
 │   └── disabled/             # Source watchers turned off by default (calcareers, glassdoor, indeed, etc.)
-├── scripts/                  # One-command setup, config-secret export, feasibility slice/merge helpers
+├── scripts/                  # One-command setup, config-secret export, upstream sync
 ├── docs/                     # Long-form docs + deep-dive change logs (Layer 3 reference)
 │   ├── DEV_GUIDE.md          # Canonical dev guide — read this before editing scrapers/workflows
 │   ├── AGENT_README.md       # Canonical triage-agent doc — read this before editing triage_agent.py
@@ -62,4 +62,3 @@ The "raw sources" are external job boards and GitHub Actions inputs, not files i
 4. **`docs/DEV_GUIDE.md` and `README.md` are canonical** for usage and dev tasks. IDENTITY.md / CONTEXT.md route to them; they do not replace them. If a fact lives in DEV_GUIDE.md, link to it — don't duplicate.
 5. **Secrets vs variables:** `ENABLE_DATA_COMMITS` is a **Variable** (plaintext, log-visible). API keys and credentials are **Secrets**. Confusing the two is the #1 fork-setup failure.
 6. **Concurrency group `job-scraper-commit-push`** serializes all commit workflows. Any new workflow that commits must join this group or it will race and corrupt `output/`.
-7. **`ACP_BACKEND=windsurf` breaks `devin -p` in subprocess mode.** `DevinCLIChecker` strips it; if calling `devin -p` manually from WSL, use `env -u ACP_BACKEND devin -p ...`.

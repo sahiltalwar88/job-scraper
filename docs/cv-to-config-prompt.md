@@ -95,7 +95,6 @@ else's search.
   "role_categories": { "terms": [ [ "<role bucket>", "<regex over the title>" ] ] },
   "sector_classification": { "terms": [ [ "<sector>", "<regex over the company name>" ] ] },
   "notify": { "weekly_digest": { "enabled": false, "days": 7 } },
-  "feasibility_check": { "prompt": "" },
   "triage": { "role_families": "<pipe-separated role families if AI fit-scoring is on, else 'other'>" }
 }
 
@@ -194,8 +193,6 @@ else's search.
   (e.g. [ "Healthcare", "health|hospital|medical" ]), or [] to skip.
 - google_jobs keys, jobspy proxies: keep empty; credentials go in GitHub
   secrets, not in this file.
-- feasibility_check.prompt: keep "" (it needs the Devin CLI; see the setup
-  plan doc).
 
 ## If I want résumé-scored alerts, also output scoring_profile.json
 

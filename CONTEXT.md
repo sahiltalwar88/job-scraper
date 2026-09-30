@@ -10,7 +10,6 @@
 | Add a new job source | New `.github/workflows/<source>_watch.yml` + new `--<source>` flag in `scrape_jobs.py` | An existing simple watcher (e.g. `hiringcafe_watch.yml` in `disabled/`); `docs/DEV_GUIDE.md` → "Add a new job source" |
 | Fix / extend the scraper | `scrape_jobs.py` | `docs/DEV_GUIDE.md` → "Run a scraper locally"; relevant test in `tests/` |
 | Fix / extend the triage agent | `triage_agent.py` | `docs/AGENT_README.md` (canonical), then `docs/DEV_GUIDE.md` → "Run the triage agent locally" |
-| Run feasibility checks (Devin CLI) | `scrape_jobs.py --feasibility-check` | `docs/DEV_GUIDE.md` → "Feasibility checking"; `scripts/feasibility_slice.py` for parallel |
 | Edit my search config | `config.json` (never `config.example.json`) | `config.example.json` for documented fields |
 | Calibrate AI triage | `scoring_profile.json` (never `scoring_profile.example.json`) | `scoring_profile.example.json` |
 | Serve the dashboard locally | `python -m http.server 8000` → `http://localhost:8000/triage.html` | `triage.html` |
@@ -54,14 +53,7 @@ The project is an automation pipeline, not a knowledge-compilation pipeline. Sta
 - **Outputs:** `output/scores.json` (consumed by `triage.html` ★ Rank tab).
 - **Routing:** Disabled by default. Without the three secrets, this stage is skipped entirely.
 
-### Stage 4 — Feasibility check (optional)
-- **Purpose:** Tag each job with a tripartite verdict (`feasible` bool + `feasibility` ∈ `preferred|yes|no`) using the Devin CLI.
-- **Inputs:** `output/all_jobs.json` (jobs lacking a `feasible` field); `config.json` → `feasibility_check.prompt`.
-- **Process:** `scrape_jobs.py --feasibility-check` (or `scripts/feasibility_slice.py` for parallel) calls `devin -p` per batch. Already-tagged jobs are skipped (incremental). Failed batches get `feasibility_error: true` and default `feasible: true`.
-- **Outputs:** Mutates `feasible` / `feasibility` / `feasibility_error` fields on jobs in `output/all_jobs.json`.
-- **Routing:** On `ACP_BACKEND=windsurf` (Devin Desktop WSL extension), `devin -p` breaks in subprocess mode — `DevinCLIChecker` strips it. Manual calls: `env -u ACP_BACKEND devin -p ...`.
-
-### Stage 5 — Publish
+### Stage 4 — Publish
 - **Purpose:** Serve the dashboard.
 - **Inputs:** `output/all_jobs.json`, `output/scores.json`, per-source `output/<source>_jobs.json`.
 - **Process:** GitHub Pages serves `triage.html` from `main` root. The page fetches `output/*.json` at load and renders client-side.
@@ -73,5 +65,5 @@ The project is an automation pipeline, not a knowledge-compilation pipeline. Sta
 | File | Purpose |
 |------|---------|
 | `_config/conventions.md` | Naming, file-layout, and workflow conventions. Re-exports `docs/DEV_GUIDE.md`. |
-| `_config/glossary.md` | Domain terms: watcher, partition, all_jobs.json, feasibility, triage, ACP_BACKEND, etc. |
+| `_config/glossary.md` | Domain terms: watcher, partition, all_jobs.json, triage, etc. |
 | `_config/voice.md` | Tone, audience, evidence standards for any docs/commits written here. |

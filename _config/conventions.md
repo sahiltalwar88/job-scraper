@@ -25,7 +25,6 @@
 ### CLI flags
 - `scrape_jobs.py --<source>-only` / `--<source>` for per-source runs.
 - `triage_agent.py --limit N --no-jd --since N --dry-run --model ID --from-files`.
-- Feasibility: `scrape_jobs.py --feasibility-check [--feasibility-limit N]`.
 
 ### Tests
 - Pytest. WSL-only tests go in `tests/local/`. Fixtures in `tests/fixtures/`.

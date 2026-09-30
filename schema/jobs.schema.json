@@ -5,7 +5,13 @@
   "description": "A single scraped job posting. Canonical contract between job-scraper (producer) and downstream consumers. See docs/JOB_SCHEMA.md for full field documentation.",
   "type": "object",
   "additionalProperties": true,
-  "required": ["url", "title", "company", "ats", "first_seen"],
+  "required": [
+    "url",
+    "title",
+    "company",
+    "ats",
+    "first_seen"
+  ],
   "properties": {
     "url": {
       "type": "string",
@@ -83,7 +89,13 @@
     "work_arrangement": {
       "type": "string",
       "description": "Normalized work mode derived from is_remote, telework, job_type, and location text. Empty string when undetermined.",
-      "enum": ["On-site", "Remote in-state eligible", "Remote out-of-state eligible", "Telecommute eligible", ""]
+      "enum": [
+        "On-site",
+        "Remote in-state eligible",
+        "Remote out-of-state eligible",
+        "Telecommute eligible",
+        ""
+      ]
     },
     "salary_source": {
       "type": "string",
@@ -103,21 +115,10 @@
     },
     "duplicate_urls": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Alternate URLs for the same job, accumulated during cross-source duplicate merge."
-    },
-    "feasible": {
-      "type": "boolean",
-      "description": "Triage agent field — whether the job passed feasibility check. Not present in delta files."
-    },
-    "feasibility": {
-      "type": "string",
-      "description": "Triage agent field — verdict: preferred, yes, or no. Not present in delta files.",
-      "enum": ["preferred", "yes", "no"]
-    },
-    "feasibility_error": {
-      "type": "boolean",
-      "description": "Triage agent field — true if the feasibility batch failed. Not present in delta files."
     }
   }
 }

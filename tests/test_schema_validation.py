@@ -3,9 +3,8 @@
 Catches schema drift — if the schema or fixtures are updated independently,
 this test fails rather than silently shipping an invalid contract.
 
-Fork note: the fork's fixture is `sample_all_jobs_with_feasibility_tags.json`
-and the fork's schema includes feasibility fields (feasible, feasibility,
-feasibility_error). This test validates the fork's actual contract.
+The fixture's jobs carry legacy feasibility tags from a removed feature; they
+still validate because records allow extra fields.
 """
 import json
 from pathlib import Path
@@ -14,7 +13,6 @@ import pytest
 
 SCHEMA_PATH = Path(__file__).parent.parent / "schema" / "jobs.schema.json"
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
-# Fork uses a feasibility-tagged fixture; the schema includes feasibility fields.
 SAMPLE_FIXTURE = FIXTURES_DIR / "sample_all_jobs_with_feasibility_tags.json"
 
 
@@ -64,20 +62,6 @@ def test_schema_required_fields_minimal():
     assert "company" in required
     assert "ats" in required
     assert "first_seen" in required
-
-
-def test_schema_includes_fork_feasibility_fields():
-    """Fork-specific feasibility fields must remain in the schema.
-
-    The fork has a feasibility checker that tags jobs with feasibility
-    verdicts. The schema must continue to allow these fields so the
-    fixture (and real output) validates. This guards against accidentally
-    porting the upstream commit that removed feasibility fields.
-    """
-    schema = _load_schema()
-    properties = schema["properties"]
-    assert "feasible" in properties, "Schema must include 'feasible' (fork feature)"
-    assert "feasibility" in properties, "Schema must include 'feasibility' (fork feature)"
 
 
 def test_schema_keeps_job_schema_doc_reference():
