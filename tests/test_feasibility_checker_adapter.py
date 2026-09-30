@@ -9,6 +9,9 @@ import pytest
 
 from scrape_jobs import FeasibilityChecker, DevinCLIChecker
 
+# The checker needs a configured prompt; don't rely on config.example.json providing one.
+TEST_PROMPT = "Classify each job as PREFERRED, YES or NO for a test search."
+
 
 def test_feasibility_checker_is_abstract():
     """FeasibilityChecker cannot be instantiated directly."""
@@ -36,7 +39,7 @@ def test_check_batch_parses_yes_no():
     ]
     mock_result = MagicMock(stdout="1. YES\n2. NO\n3. PREFERRED\n", returncode=0)
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
-        checker = DevinCLIChecker()
+        checker = DevinCLIChecker(prompt=TEST_PROMPT)
         verdicts = checker.check_batch(jobs)
     assert verdicts == {
         "https://linkedin.com/jobs/view/1/": "YES",
@@ -51,7 +54,7 @@ def test_check_batch_malformed_output():
              "company": "C", "location": "L"}]
     mock_result = MagicMock(stdout="This is not a valid response", returncode=0)
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
-        checker = DevinCLIChecker()
+        checker = DevinCLIChecker(prompt=TEST_PROMPT)
         verdicts = checker.check_batch(jobs)
     assert verdicts == {}
 
@@ -62,7 +65,7 @@ def test_check_batch_empty_output():
              "company": "C", "location": "L"}]
     mock_result = MagicMock(stdout="", returncode=0)
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
-        checker = DevinCLIChecker()
+        checker = DevinCLIChecker(prompt=TEST_PROMPT)
         verdicts = checker.check_batch(jobs)
     assert verdicts == {}
 
@@ -75,7 +78,7 @@ def test_check_batch_tolerant_of_extra_whitespace():
     ]
     mock_result = MagicMock(stdout="\n\n  1.   YES  \n\n", returncode=0)
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
-        checker = DevinCLIChecker()
+        checker = DevinCLIChecker(prompt=TEST_PROMPT)
         verdicts = checker.check_batch(jobs)
     assert verdicts == {"https://linkedin.com/jobs/view/1/": "YES"}
 
@@ -86,14 +89,14 @@ def test_check_batch_timeout():
              "company": "C", "location": "L"}]
     with patch("scrape_jobs.subprocess.run",
                side_effect=subprocess.TimeoutExpired("devin", 60)):
-        checker = DevinCLIChecker()
+        checker = DevinCLIChecker(prompt=TEST_PROMPT)
         with pytest.raises(subprocess.TimeoutExpired):
             checker.check_batch(jobs)
 
 
 def test_check_batch_empty_jobs():
     """Empty job list should return {} without calling subprocess."""
-    checker = DevinCLIChecker()
+    checker = DevinCLIChecker(prompt=TEST_PROMPT)
     with patch("scrape_jobs.subprocess.run") as mock_run:
         verdicts = checker.check_batch([])
         assert verdicts == {}
@@ -110,7 +113,7 @@ def test_check_batch_case_insensitive():
     ]
     mock_result = MagicMock(stdout="1. yes\n2. No\n", returncode=0)
     with patch("scrape_jobs.subprocess.run", return_value=mock_result):
-        checker = DevinCLIChecker()
+        checker = DevinCLIChecker(prompt=TEST_PROMPT)
         verdicts = checker.check_batch(jobs)
     assert verdicts == {
         "https://linkedin.com/jobs/view/1/": "YES",
