@@ -2176,12 +2176,16 @@
   async function refresh() {
     $('snapshot-line').textContent = 'Loading…';
     try {
-      // config.json drives branding / role buckets / stars / exclusions.
-      // Missing or invalid → keep the built-in defaults (applyConfig no-ops).
-      try {
-        const cr = await fetch('config.json?v=' + Date.now());
-        if (cr.ok) applyConfig(await cr.json());
-      } catch { /* keep defaults */ }
+      // config.json drives branding / role buckets / stars / exclusions. It's
+      // only present when served locally; on GitHub Pages use the subset the
+      // scrapers commit (output/dashboard_config.json). Missing or invalid →
+      // keep the built-in defaults (applyConfig no-ops).
+      for (const path of ['config.json', 'output/dashboard_config.json']) {
+        try {
+          const cr = await fetch(path + '?v=' + Date.now());
+          if (cr.ok) { applyConfig(await cr.json()); break; }
+        } catch { /* try the next one */ }
+      }
       SEED = await loadJobs();
       SEED.jobs.forEach(enrich);
       replaceJobs(SEED.jobs);

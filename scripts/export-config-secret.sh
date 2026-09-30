@@ -15,6 +15,7 @@
 # Usage:
 #   bash scripts/export-config-secret.sh              # print to stdout
 #   bash scripts/export-config-secret.sh --clip        # copy to Windows clipboard (WSL)
+#   bash scripts/export-config-secret.sh scoring_profile.json   # for the SCORING_PROFILE_JSON secret
 #
 # Then paste the output into:
 #   Settings → Secrets and variables → Actions → New repository secret
@@ -40,17 +41,31 @@ if [ ! -f "$CONFIG_PATH" ]; then
   exit 1
 fi
 
-OUTPUT=$(python3 -c "
-import json
-with open('$CONFIG_PATH') as f:
-    data = json.load(f)
-print(json.dumps(data, separators=(',', ':'), ensure_ascii=True))
-")
+SECRET_NAME=CONFIG_JSON
+case "$(basename "$CONFIG_PATH")" in
+  scoring_profile*) SECRET_NAME=SCORING_PROFILE_JSON ;;
+esac
+
+# scoring_profile.json regexes are often written with single backslashes
+# ("\bword\b"), which strict JSON rejects; repair them the way notify.py does.
+OUTPUT=$(python3 - "$CONFIG_PATH" "$(cd "$(dirname "$0")/.." && pwd)" <<'PY'
+import json, sys
+path, repo = sys.argv[1], sys.argv[2]
+text = open(path, encoding="utf-8").read()
+try:
+    data = json.loads(text)
+except json.JSONDecodeError:
+    sys.path.insert(0, repo)
+    from notify import _repair_json_regex_escapes
+    data = json.loads(_repair_json_regex_escapes(text))
+print(json.dumps(data, separators=(",", ":"), ensure_ascii=True))
+PY
+)
 
 if [ "$CLIP" = true ]; then
   if command -v clip.exe &>/dev/null; then
     echo -n "$OUTPUT" | clip.exe
-    echo "Copied to Windows clipboard. Paste into the CONFIG_JSON secret field."
+    echo "Copied to Windows clipboard. Paste into the $SECRET_NAME secret field."
   else
     echo "Error: clip.exe not found (not running under WSL?)" >&2
     echo "$OUTPUT"

@@ -32,10 +32,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Emit Phase 1 work matrix
         id: emit
         run: python scrape_jobs.py --linkedin-emit-matrix --phase low
@@ -61,10 +65,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Write partition spec
         run: echo '${{ toJSON(matrix.partition) }}' > output/partition_spec.json
       - name: Scrape partition
@@ -90,10 +98,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Download all Phase 1 artifacts
         uses: actions/download-artifact@v4
         with:
@@ -112,7 +124,7 @@ jobs:
         run: |
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/all_jobs.json
+          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/all_jobs.json output/dashboard_config.json
           # output/deltas/ only exists once a run has written a delta; a
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi
@@ -134,10 +146,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Emit Phase 2 work matrix
         id: emit
         run: python scrape_jobs.py --linkedin-emit-matrix --phase high
@@ -163,10 +179,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Write partition spec
         run: echo '${{ toJSON(matrix.partition) }}' > output/partition_spec.json
       - name: Scrape partition (day slice)
@@ -192,10 +212,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Download all Phase 2 artifacts
         uses: actions/download-artifact@v4
         with:
@@ -235,7 +259,7 @@ jobs:
         run: |
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/notified.json
+          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/dashboard_config.json output/notified.json
           # output/deltas/ only exists once a run has written a delta; a
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi

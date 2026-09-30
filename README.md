@@ -161,6 +161,8 @@ Get a push when a relevant new role appears, via [Pushover](https://pushover.net
 
 Without these secrets, notifications are off and everything else works.
 
+Each alert is sent when a job touches one of your `priority_topics`, or scores at least `NOTIFY_MIN_FIT` (a repository **variable**, default 75) against the resume-fit terms in `scoring_profile.json`. This repo ships a `scoring_profile.json` with fit scoring turned off (no terms), so out of the box alerts come only from `priority_topics`. To score alerts against your own terms without committing them, store your profile as the `SCORING_PROFILE_JSON` secret: run `bash scripts/export-config-secret.sh scoring_profile.json` and paste the output into a new repository secret with that name. Workflows write it over the committed file.
+
 ### Step 7 — AI fit-scoring (optional, advanced)
 
 `triage_agent.py` can score each role against your resume with the Claude API. Needs `ANTHROPIC_API_KEY`, `CANDIDATE_PROFILE`, and `CANDIDATE_RESUME` secrets. The `triage.yml` workflow is disabled by default — enable it only if you use this feature.
@@ -287,6 +289,7 @@ Some tests depend on the user's specific `config.json` (engineering leadership t
 | `jobs.json` / `.md` / `.html` | Priority-employer digest | Allowlisted employer roles, last 24h, deduped |
 | `all_jobs.json` | Accumulator | Cumulative 14-day master (feeds dashboard + triage) |
 | `notified.json` | Pushover | Notification dedup log |
+| `dashboard_config.json` | Every scrape | The display-only part of your `config.json` (`profile`, `role_categories`, `priority_topics`, `sector_classification`, `employers.exclude`) for the GitHub Pages dashboard, which can't read the gitignored `config.json`. No search terms or locations. |
 | `workflow_runs.jsonl` | All workflows | CI run audit log |
 | `linkedin_matrix.json` | Backfill emit step | Partition work matrix (debugging) |
 | `linkedin_partition_*.json` | Backfill workers | Per-partition results (ephemeral) |
@@ -356,6 +359,8 @@ GitHub Actions uses two distinct namespaces:
 | `CONFIG_JSON` | Secret | Full `config.json` contents (single-line, ASCII-safe) |
 | `ENABLE_DATA_COMMITS` | Variable | `true` = commit scraped data to repo |
 | `PUSHOVER_TOKEN` / `PUSHOVER_USER` | Secret | Phone notifications (optional) |
+| `SCORING_PROFILE_JSON` | Secret | Your `scoring_profile.json` (single line, via the export script), used to score notifications (optional) |
+| `NOTIFY_MIN_FIT` | Variable | Fit score that triggers a notification (optional, default 75) |
 | `ANTHROPIC_API_KEY` | Secret | AI triage scoring (optional) |
 | `CANDIDATE_PROFILE` / `CANDIDATE_RESUME` | Secret | Resume for AI triage (optional) |
 

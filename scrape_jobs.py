@@ -2893,6 +2893,32 @@ def _prune_deltas(deltas_dir: str, now_iso: str) -> None:
         print(f"  📦 Pruned {pruned} delta(s) older than {DELTA_PRUNE_DAYS}d")
 
 
+# Sections of config.json the dashboard (triage.html) needs. config.json itself
+# is gitignored and reaches Actions only through the CONFIG_JSON secret, so a
+# GitHub Pages dashboard can't load it; this subset is committed alongside the
+# data instead. It deliberately excludes search terms and locations.
+DASHBOARD_CONFIG_KEYS = ("profile", "role_categories", "priority_topics", "sector_classification")
+
+
+def write_dashboard_config() -> None:
+    """Write output/dashboard_config.json from the user's own config.json.
+
+    Reads config.json directly (not merged over config.example.json), so the
+    example's categories and topics never show up on someone else's dashboard.
+    """
+    user = _read_json(os.path.join(SCRIPT_DIR, "config.json"))
+    if not isinstance(user, dict):
+        return
+    subset = {k: user[k] for k in DASHBOARD_CONFIG_KEYS if k in user}
+    exclude = (user.get("employers") or {}).get("exclude")
+    if exclude is not None:
+        subset["employers"] = {"exclude": exclude}
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    with open(os.path.join(OUTPUT_DIR, "dashboard_config.json"), "w", encoding="utf-8") as f:
+        json.dump(subset, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+
 def _merge_into_all_jobs(new_jobs: list, source: str | None = None) -> int:
     """
     Maintain all_jobs.json — a cumulative, URL/content-deduped master of every role the
@@ -3012,6 +3038,10 @@ def save_jobs_output(jobs: list, *, basename: str, title: str, subtitle: str,
         _merge_into_all_jobs(jobs, source=source)
     except Exception as e:
         print(f"  ⚠️  all_jobs.json accumulator failed (non-fatal): {e}")
+    try:
+        write_dashboard_config()
+    except Exception as e:
+        print(f"  ⚠️  dashboard_config.json not written (non-fatal): {e}")
 
     # Push the highly-relevant new roles to Pushover (no-op without creds).
     try:

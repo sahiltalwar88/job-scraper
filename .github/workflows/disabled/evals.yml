@@ -39,6 +39,15 @@ jobs:
       # ~9 Haiku calls with the prompt-cached profile prefix — pennies per run.
       # Exit code 1 on any failed case fails the workflow.
       # Skipped silently when CANDIDATE_PROFILE secret is not set (e.g. upstream template).
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
+
       - name: Run evals
         if: ${{ env.CANDIDATE_PROFILE != '' }}
         env:

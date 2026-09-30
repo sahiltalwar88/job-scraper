@@ -49,10 +49,14 @@ jobs:
           git checkout main
           git reset --hard origin/main
 
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
 
       - name: Scrape LinkedIn (last 1h, or 7-day backfill)
         run: |
@@ -93,7 +97,7 @@ jobs:
         run: |
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/notified.json
+          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/dashboard_config.json output/notified.json
           # output/deltas/ only exists once a run has written a delta; a
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi

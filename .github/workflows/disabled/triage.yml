@@ -38,6 +38,15 @@ jobs:
       # Profile/resume arrive as env vars straight from Actions secrets —
       # never written to disk, never committed (the repo is public).
       # --limit bounds worst-case daily spend; raise/lower as the cost knob.
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
+
       - name: Run triage agent
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

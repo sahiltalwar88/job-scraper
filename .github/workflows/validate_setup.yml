@@ -74,6 +74,14 @@ jobs:
             echo "   NOTIFY_MIN_FIT: not set (default 75 used)"
           fi
 
+          if [ -n "$SCORING_PROFILE_JSON" ]; then
+            echo "✓  SCORING_PROFILE_JSON secret: configured (your resume-fit terms score notifications)"
+          else
+            echo "   SCORING_PROFILE_JSON: not set — notifications use the committed scoring_profile.json"
+            echo "   (or scoring_profile.example.json if there is none). To use your own terms:"
+            echo "   bash scripts/export-config-secret.sh scoring_profile.json"
+          fi
+
           if [ "$WEEKLY_DIGEST_PUSHOVER" = "true" ]; then
             echo "✓  WEEKLY_DIGEST_PUSHOVER = true"
           else
@@ -84,6 +92,7 @@ jobs:
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
           NOTIFY_MIN_FIT: ${{ vars.NOTIFY_MIN_FIT }}
           WEEKLY_DIGEST_PUSHOVER: ${{ vars.WEEKLY_DIGEST_PUSHOVER }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
 
       - name: Check optional — AI fit-scoring
         run: |

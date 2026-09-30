@@ -18,10 +18,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Write config.json from secret
-        run: echo "$CONFIG_JSON" > config.json
+      - name: Write config.json and scoring_profile.json from secrets
+        # Only when set: an empty secret must not overwrite a committed file.
+        run: |
+          if [ -n "$CONFIG_JSON" ]; then echo "$CONFIG_JSON" > config.json; fi
+          if [ -n "$SCORING_PROFILE_JSON" ]; then echo "$SCORING_PROFILE_JSON" > scoring_profile.json; fi
         env:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
 
       - name: Send test Pushover notification
         run: python notify.py --test
