@@ -1035,10 +1035,10 @@ def scrape_linkedin_recent() -> list:
 
 def scrape_linkedin_priority() -> list:
     """
-    Last 24h on LinkedIn, filtered to the priority-employer allowlist (env/tox
-    consulting, research institutes, agencies, NGOs, universities, product
-    safety). LinkedIn's f_I industry filter is silently ignored on the public
-    guest endpoint, so we use the env/tox keyword terms + a company allowlist.
+    Last 24h on LinkedIn, filtered to the priority-employer allowlist
+    (config.json → employers.priority). LinkedIn's f_I industry filter is
+    silently ignored on the public guest endpoint, so we use the LinkedIn
+    search terms + the company allowlist.
     """
     print(f"🏛  Scraping LinkedIn priority employers (last {LINKEDIN_PRIORITY_LOOKBACK_SECONDS // 3600}h)...")
     raw, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, LINKEDIN_PRIORITY_LOOKBACK_SECONDS)
@@ -2027,7 +2027,7 @@ def _calcareers_payload(hidden: dict, event_target: str, keyword: str) -> dict:
 
 
 def scrape_calcareers_recent() -> list:
-    """CalCareers env/tox roles via the ASP.NET search postback (method proven by
+    """CalCareers roles via the ASP.NET search postback (method proven by
     the OpenPostings project). Fully guarded — returns previous results on any
     failure so a flaky run never nukes the dashboard's CalCareers column."""
     print("🏛  Scraping CalCareers (California state jobs)...")
@@ -2097,7 +2097,7 @@ def save_calcareers_results(jobs: list):
 #
 # Uses the public usajobs.gov website search (NO API key): GET the Results page
 # to seed a session cookie, then POST /Search/ExecuteSearch per keyword. Returns
-# federal env/tox roles WITH salary (SalaryDisplay). Verified working from a
+# federal roles WITH salary (SalaryDisplay). Verified working from a
 # plain client. Source surfaced via the OpenPostings ATS catalog
 # (https://github.com/Masterjx9/OpenPostings), which lists usajobs among 80+
 # providers; we query the official public endpoint directly.
@@ -2116,9 +2116,9 @@ def _usajobs_date(date_display: str) -> str:
 
 
 def scrape_usajobs_recent() -> list:
-    """Federal env/tox roles from usajobs.gov (no API key). Guarded — returns the
+    """Federal roles from usajobs.gov (no API key). Guarded — returns the
     previous results on any failure so a flaky run never blanks the column."""
-    print("🇺🇸 Scraping USAJOBS (federal env/tox roles)...")
+    print("🇺🇸 Scraping USAJOBS (federal roles)...")
     jobs_by_url: dict[str, dict] = {}
     headers = {
         **HEADERS,
@@ -2187,9 +2187,9 @@ def save_usajobs_results(jobs: list):
 
 
 # ---------------------------------------------------------------------------
-# GovernmentJobs.com / NEOGOV — state, county & city agencies (air & water
-# districts, county environmental health, etc.). HTML search; keyword-filterable.
-# Post-filtered to CA/OR (the board is nationwide). Source from the OpenPostings
+# GovernmentJobs.com / NEOGOV — state, county & city agencies. HTML search;
+# keyword-filterable. Post-filtered by location_filter.terms (the board is
+# nationwide). Source from the OpenPostings
 # ATS catalog (https://github.com/Masterjx9/OpenPostings).
 # ---------------------------------------------------------------------------
 
@@ -2201,7 +2201,7 @@ GOVERNMENTJOBS_PAGES = 2
 
 
 def scrape_governmentjobs_recent(days: int | None = None) -> list:
-    """State/local-gov env roles via governmentjobs.com, filtered to CA/OR."""
+    """State/local-gov roles via governmentjobs.com, filtered by location_filter.terms."""
     d = days if days is not None else GOVERNMENTJOBS_DAYS
     print(f"🏛  Scraping GovernmentJobs/NEOGOV (last {d} days)...")
     item_re = re.compile(r'<li[^>]*class=["\'][^"\']*\bjob-item\b[^"\']*["\'][^>]*>([\s\S]*?)</li>', re.I)
@@ -2235,7 +2235,7 @@ def scrape_governmentjobs_recent(days: int | None = None) -> list:
                 loc_m = loc_re.search(it)
                 location = _clean(loc_m.group(1)) if loc_m else ""
                 if not is_target_location(location):
-                    continue   # board is nationwide — keep CA/OR only
+                    continue   # board is nationwide — keep the configured locations only
                 href = re.sub(r'\s+', '', lk.group(1))
                 job_url = href if href.startswith("http") else GOVERNMENTJOBS_BASE + "/" + href.lstrip("/")
                 if job_url in jobs_by_url:
@@ -2257,7 +2257,7 @@ def scrape_governmentjobs_recent(days: int | None = None) -> list:
                     "ats": "NEOGOV",
                 }
     jobs = list(jobs_by_url.values())
-    print(f"  ✅ NEOGOV: {len(jobs)} CA/OR role(s) (from {raw_items} scanned)")
+    print(f"  ✅ NEOGOV: {len(jobs)} role(s) in your locations (from {raw_items} scanned)")
     if not jobs and raw_items == 0:
         return _load_prev_jobs(os.path.join(OUTPUT_DIR, "governmentjobs_jobs.json"))
     return jobs
@@ -2293,7 +2293,7 @@ def _calopps_company(href: str) -> str:
 
 
 def scrape_calopps_recent() -> list:
-    """California local-agency env/tox roles from calopps.org (CA-only board)."""
+    """California local-agency roles from calopps.org (CA-only board)."""
     print("🏛  Scraping CalOpps (California local agencies)...")
     import html as html_mod
     row_re = re.compile(r'<tr[^>]*>([\s\S]*?)</tr>', re.I)
@@ -2351,7 +2351,7 @@ def scrape_calopps_recent() -> list:
             re.sub(r'<[^>]+>', ' ', ph), re.I)
         if sm:
             job["salary"] = re.sub(r'\s+', ' ', sm.group(1)).strip()
-    print(f"  ✅ CalOpps: {len(jobs)} env/tox role(s) (from {scanned} scanned)")
+    print(f"  ✅ CalOpps: {len(jobs)} matching role(s) (from {scanned} scanned)")
     if not jobs and scanned == 0:
         return _load_prev_jobs(os.path.join(OUTPUT_DIR, "calopps_jobs.json"))
     return jobs
