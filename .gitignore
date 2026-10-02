@@ -11,7 +11,8 @@ shortlist.*
 # Upstream never commits these so pulling upstream never creates merge conflicts.
 # Fork owners: copy from *.example.json, customize, then commit to YOUR fork.
 config.json
-scoring_profile.json
+# scoring_profile.json is committed on purpose: it ships with fit scoring off, so
+# notify.py doesn't fall back to scoring_profile.example.json (another field's terms).
 
 # ── Scraped results & CI-generated data (unique per fork) ─────────────────────
 # output/ holds everything the scrapers write. Upstream never commits these so

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "Empty scoring profile — dashboard scoring is disabled. Job fit grading is handled by the job-hunter pipeline.",
+  "description": "Fit scoring is off (no terms), on the dashboard and for notifications, which then come only from priority_topics. To score jobs, add terms here or set the SCORING_PROFILE_JSON secret (see README, Step 6).",
   "settings": {
     "title_multiplier": 3,
     "body_multiplier": 1,
