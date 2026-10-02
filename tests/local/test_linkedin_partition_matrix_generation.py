@@ -9,7 +9,6 @@ import os
 import subprocess
 import sys
 
-import pytest
 
 SCRAPER_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -101,7 +100,7 @@ def test_phase2_cumulative_lookback():
 
 def test_phase2_target_dates_are_recent():
     """Target dates should be within the last 7 days (allowing for timezone drift)."""
-    from datetime import datetime, timedelta
+    from datetime import datetime
     matrix = _run_emit_matrix("high")
     now = datetime.now()
     for item in matrix:

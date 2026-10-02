@@ -108,7 +108,6 @@ def test_no_partition_files(tmp_output_dir):
 def test_merge_handles_both_term_and_partition_files(tmp_output_dir):
     """linkedin_backfill_*.json (term files) and linkedin_partition_*.json
     should both be merged into a single result."""
-    import json
     # Term file
     with open(tmp_output_dir / "linkedin_backfill_term1.json", "w") as f:
         json.dump({"term": "term1", "jobs": [

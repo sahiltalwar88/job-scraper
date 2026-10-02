@@ -29,5 +29,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BACKFILLS: ${{ inputs.backfills }}
-        # Unquoted on purpose: one argument per workflow.
-        run: bash scripts/run-backfill-queue.sh $BACKFILLS
+        run: |
+          read -ra backfills <<< "$BACKFILLS"
+          bash scripts/run-backfill-queue.sh "${backfills[@]}"

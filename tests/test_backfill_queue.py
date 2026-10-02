@@ -39,7 +39,7 @@ FAKE_GH = textwrap.dedent('''\
     elif args[:2] == ["run", "list"]:
         q = opt("-q")
         since = re.search(r'createdAt >= "([^"]+)"', q).group(1)
-        newer_than = int(re.search(r"databaseId > (\d+)", q).group(1))
+        newer_than = int(re.search(r"databaseId > (\\d+)", q).group(1))
         runs = [r for r in state["runs"] if r["wf"] == opt("--workflow")
                 and r["createdAt"] >= since and r["id"] > newer_than]
         if runs:
