@@ -129,7 +129,7 @@ jobs:
         run: |
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/all_jobs.json output/dashboard_config.json
+          bash scripts/add-output.sh output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/all_jobs.json output/dashboard_config.json
           # output/deltas/ only exists once a run has written a delta; a
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi
@@ -272,7 +272,7 @@ jobs:
         run: |
           git config user.name  "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -f output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/dashboard_config.json output/notified.json
+          bash scripts/add-output.sh output/linkedin_jobs.json output/linkedin_jobs.md output/linkedin_jobs.html output/workflow_runs.jsonl output/all_jobs.json output/dashboard_config.json output/notified.json
           # output/deltas/ only exists once a run has written a delta; a
           # missing pathspec would make git add (and this step) fail.
           if [ -d output/deltas ]; then git add -f output/deltas/; fi

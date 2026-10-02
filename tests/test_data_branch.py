@@ -71,6 +71,8 @@ def remote(tmp_path, monkeypatch):
     (seed / "output").mkdir(parents=True)
     (seed / "code.py").write_text("VERSION = 1\n")
     (seed / "output" / "all_jobs.json").write_text(EMPTY)
+    (seed / "scripts").mkdir()
+    (seed / "scripts" / "add-output.sh").write_text((REPO_ROOT / "scripts" / "add-output.sh").read_text())
     git(seed, "init", "-q")
     git(seed, "add", "-A", "-f")
     git(seed, "commit", "-q", "-m", "main: code + empty output")
