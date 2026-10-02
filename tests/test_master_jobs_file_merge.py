@@ -106,3 +106,35 @@ def test_empty_master_file(tmp_output_dir):
 
     data = json.loads((tmp_output_dir / "all_jobs.json").read_text())
     assert len(data["jobs"]) == 1
+
+
+def _old_record(job_id, days_ago):
+    """A record from before first_seen existed: only date_posted says how old it is."""
+    from datetime import datetime, timedelta, timezone
+    posted = (datetime.now(timezone.utc) - timedelta(days=days_ago)).strftime("%Y-%m-%d")
+    return {"url": f"https://www.linkedin.com/jobs/view/{job_id}/", "company": "OldCo",
+            "title": f"Director of Engineering {job_id}", "location": "Remote",
+            "ats": "LinkedIn", "date_posted": posted}
+
+
+def test_records_without_first_seen_age_out_by_date_posted(tmp_output_dir):
+    path = tmp_output_dir / "all_jobs.json"
+    path.write_text(json.dumps({"jobs": [_old_record(7700000001, 45), _old_record(7700000002, 3)]}))
+
+    _merge_into_all_jobs([])
+
+    jobs = json.loads(path.read_text())["jobs"]
+    assert [j["url"] for j in jobs] == ["https://www.linkedin.com/jobs/view/7700000002/"]
+    assert jobs[0]["first_seen"].startswith(jobs[0]["date_posted"])
+
+
+def test_every_kept_record_has_first_seen(tmp_output_dir):
+    path = tmp_output_dir / "all_jobs.json"
+    undated = _old_record(7700000003, 0)
+    del undated["date_posted"]
+    path.write_text(json.dumps({"jobs": [undated]}))
+
+    _merge_into_all_jobs([])
+
+    jobs = json.loads(path.read_text())["jobs"]
+    assert len(jobs) == 1 and jobs[0]["first_seen"]

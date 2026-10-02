@@ -143,10 +143,13 @@ In the **Actions** tab, open each active workflow and click **Run workflow**:
 | **LinkedIn Watcher** | Hourly :17 PT, 5am–8pm | Last 1h of LinkedIn postings |
 | **Priority Employer Digest** | Daily 8 PM PT | Last 24h from priority employers |
 | **LinkedIn Backfill (Parallel)** | Manual only | Two-phase historical backfill (7 days) |
+| **Backfill queue** | Manual only | Runs several backfills one after another |
 | **Workflow Watchdog** | Hourly :33 PT, 5am–8pm | Re-dispatches missed LinkedIn runs |
 | **Validate Setup** | Manual only | Checks required config/secrets |
 
 Your fork starts with an empty `output/`; the first runs fill it with your own jobs. A backfill is the most important first run: it pulls the last 7 days of postings.
+
+To backfill several boards, run **Backfill queue** with the workflows in the order you want (for example `scrape_jobs.yml:backfill linkedin_backfill.yml`; `:backfill` ticks a watcher's "One-time backfill"), or answer yes when `scripts/setup.sh` offers a backfill. It starts each one only after the previous one finishes. Starting them all by hand at once loses most of them: the workflows that save data share one queue, which GitHub limits to one running and one waiting run, cancelling the waiting run when another arrives.
 
 #### Two ways to backfill LinkedIn
 
@@ -311,7 +314,7 @@ By default, workflows commit job data to `main`, next to the code, and the dashb
 ```
 ├── config.json                     # YOUR settings (gitignored; stored as CONFIG_JSON secret)
 ├── config.example.json             # Template config (toxicology example — do not edit)
-├── scoring_profile.json            # AI triage calibration (gitignored; optional)
+├── scoring_profile.json            # Notification fit scoring; ships with scoring off (see Step 6)
 ├── triage.html                     # Interactive dashboard (served by GitHub Pages)
 ├── scrape_jobs.py                  # All scraping logic (reads config.json)
 ├── notify.py                       # Pushover notifications (optional)
@@ -320,6 +323,7 @@ By default, workflows commit job data to `main`, next to the code, and the dashb
 ├── requirements.txt                # python-jobspy (for re-enabling Indeed/Glassdoor/etc.)
 ├── scripts/
 │   ├── setup.sh                    # One-command GitHub setup (requires gh CLI)
+│   ├── run-backfill-queue.sh       # Runs backfills one at a time (Backfill queue workflow)
 │   └── export-config-secret.sh     # Export config.json as single-line secret
 ├── tests/                          # Pytest acceptance test suite
 │   ├── conftest.py
@@ -333,10 +337,11 @@ By default, workflows commit job data to `main`, next to the code, and the dashb
     ├── linkedin_watch.yml          # Hourly :17 PT — LinkedIn (last 1h)
     ├── linkedin_watch_backup.yml   # Watchdog :33 PT — re-dispatches missed runs
     ├── linkedin_backfill.yml       # Manual — two-phase parallel backfill (7 days)
+    ├── backfill_queue.yml          # Manual — run several backfills one after another
     ├── scrape_jobs.yml             # Daily — priority-employer digest
     ├── notify_test.yml             # Manual — test Pushover notification
     ├── validate_setup.yml          # Manual — check required config/secrets
-    ├── tests.yml                   # On push — run pytest (excludes tests/local/)
+    ├── tests.yml                   # On push, except data commits — run pytest (excludes tests/local/)
     ├── clear_data.yml              # Manual — reset all output files
     ├── sync_upstream.yml           # Weekly — rebase code updates from upstream
     └── disabled/                   # Disabled workflow files (non-LinkedIn sources)

@@ -9,7 +9,8 @@
 #      and the CONFIG_JSON secret from your config.json
 #   5. Optionally sets Pushover notification secrets
 #   6. Optionally sets Anthropic API key for AI fit-scoring
-#   7. Optionally triggers a first-time backfill run on all watchers
+#   7. Optionally starts a first-time backfill of the enabled watchers, one
+#      after another (the Backfill queue workflow)
 #
 # Requirements:
 #   gh CLI (https://cli.github.com) installed and authenticated
@@ -134,8 +135,8 @@ fi
 # ── 6. GitHub Pages ─────────────────────────────────────────────────────────────
 step "Enabling GitHub Pages"
 
-PAGES_STATUS=$(gh api "repos/$REPO/pages" -q .status 2>/dev/null || true)
-if [ -n "$PAGES_STATUS" ]; then
+# Test the exit status: on a 404, gh prints the error body to stdout.
+if gh api "repos/$REPO/pages" --silent 2>/dev/null; then
   PAGES_URL=$(gh api "repos/$REPO/pages" -q .html_url 2>/dev/null || true)
   ok "GitHub Pages already active: $PAGES_URL"
 else
@@ -156,6 +157,8 @@ fi
 step "Pushover phone notifications (optional)"
 
 EXISTING_SECRETS=$(gh secret list --json name -q '.[].name' 2>/dev/null || true)
+HAVE_PUSHOVER_TOKEN=false
+echo "$EXISTING_SECRETS" | grep -q "^PUSHOVER_TOKEN$" && HAVE_PUSHOVER_TOKEN=true
 
 if echo "$EXISTING_SECRETS" | grep -q "^PUSHOVER_TOKEN$"; then
   ok "PUSHOVER_TOKEN already set."
@@ -163,6 +166,7 @@ else
   info "Pushover sends a push notification the moment a high-fit role appears."
   info "One-time ~\$5 app (iOS/Android); API is free. See README Step 6."
   TOKEN=$(ask "Pushover API Token (press Enter to skip):")
+  [ -n "$TOKEN" ] && HAVE_PUSHOVER_TOKEN=true
   if [ -n "$TOKEN" ]; then
     printf '%s' "$TOKEN" | gh secret set PUSHOVER_TOKEN \
       && ok "PUSHOVER_TOKEN set." \
@@ -175,7 +179,8 @@ fi
 if echo "$EXISTING_SECRETS" | grep -q "^PUSHOVER_USER$"; then
   ok "PUSHOVER_USER already set."
 else
-  if ! echo "$EXISTING_SECRETS" | grep -q "^PUSHOVER_TOKEN$"; then
+  # The user key is only useful with a token; don't ask after a skipped token.
+  if $HAVE_PUSHOVER_TOKEN; then
     USER_KEY=$(ask "Pushover User Key (press Enter to skip):")
     if [ -n "$USER_KEY" ]; then
       printf '%s' "$USER_KEY" | gh secret set PUSHOVER_USER \
@@ -211,41 +216,52 @@ fi
 # ── 9. First-time backfill (optional) ───────────────────────────────────────────
 step "First-time backfill (optional)"
 
-info "A backfill seeds your dataset with 30–61 days of historical listings."
-info "Recommended for new setups — takes ~5 minutes for all watchers."
+info "A backfill fetches recent listings once, so your dashboard has jobs before the"
+info "regular runs catch up. Each board's backfill runs after the previous one finishes"
+info "(the Backfill queue workflow, on GitHub), so you can close this window. How long it"
+info "takes depends on your search: minutes for a small one, hours for a big one."
 TRIGGER=$(ask "Run backfill now? [y/N]:")
 
 if [[ "${TRIGGER,,}" =~ ^y ]]; then
-  declare -A WATCHERS=(
-    ["linkedin_watch.yml"]="backfill"
-    ["indeed_watch.yml"]="backfill"
-    ["ziprecruiter_watch.yml"]="backfill"
-    ["hiringcafe_watch.yml"]="backfill"
-    ["localgov_watch.yml"]="backfill"
-    ["scrape_jobs.yml"]="backfill"
-  )
-  # These don't have a backfill toggle — normal run is a full snapshot
-  NO_BACKFILL_WATCHERS=("calcareers_watch.yml" "usajobs_watch.yml")
+  info "LinkedIn has two ways to backfill the last 7 days:"
+  info "  p) parallel: splits the search into many small jobs (one per search term and"
+  info "     location) that run at once. Fastest for a big search. Check its size first:"
+  info "     python scrape_jobs.py --linkedin-emit-matrix"
+  info "  s) single run: the whole search in one job. Fine for a small search."
+  LINKEDIN_MODE=$(ask "LinkedIn backfill: [P]arallel, [s]ingle run, or [n]one:")
 
-  for wf in "${!WATCHERS[@]}"; do
-    if gh workflow run "$wf" --field backfill=true 2>/dev/null; then
-      info "  ✓ Triggered: $wf (with backfill)"
-    else
-      info "  – Skipped: $wf (not found or workflow disabled)"
-    fi
+  ACTIVE=$(gh workflow list --repo "$REPO" --json path,state \
+             -q '.[] | select(.state == "active") | .path' 2>/dev/null || true)
+  is_active() { echo "$ACTIVE" | grep -q "/$1\$"; }
+
+  # The other boards first, LinkedIn last. ":backfill" runs a watcher with
+  # backfill=true; calcareers and usajobs have no toggle (a normal run is a
+  # full snapshot). Boards not enabled in this fork are skipped.
+  BACKFILLS=()
+  for wf in indeed_watch.yml ziprecruiter_watch.yml hiringcafe_watch.yml localgov_watch.yml scrape_jobs.yml; do
+    if is_active "$wf"; then BACKFILLS+=("$wf:backfill"); fi
   done
-
-  for wf in "${NO_BACKFILL_WATCHERS[@]}"; do
-    if gh workflow run "$wf" 2>/dev/null; then
-      info "  ✓ Triggered: $wf (full snapshot)"
-    else
-      info "  – Skipped: $wf"
-    fi
+  for wf in calcareers_watch.yml usajobs_watch.yml; do
+    if is_active "$wf"; then BACKFILLS+=("$wf"); fi
   done
+  case "${LINKEDIN_MODE,,}" in
+    n*) ;;
+    s*) if is_active linkedin_watch.yml; then BACKFILLS+=("linkedin_watch.yml:backfill"); fi ;;
+    *)  if is_active linkedin_backfill.yml; then BACKFILLS+=("linkedin_backfill.yml"); fi ;;
+  esac
 
-  ok "Backfill runs triggered. Monitor progress in the Actions tab."
+  if [ ${#BACKFILLS[@]} -eq 0 ]; then
+    info "Nothing to backfill: none of those workflows are enabled in this fork."
+  elif gh workflow run backfill_queue.yml --repo "$REPO" --ref main \
+         -f backfills="${BACKFILLS[*]}" 2>/dev/null; then
+    ok "Backfill queue started, in this order: ${BACKFILLS[*]}"
+    info "Follow it in the Actions tab (Backfill queue)."
+  else
+    warn "Could not start the Backfill queue workflow. Run it by hand: Actions → Backfill queue →"
+    info "Run workflow, with: ${BACKFILLS[*]}"
+  fi
 else
-  info "Skipped. Trigger manually: Actions → [Watcher] → Run workflow → check 'One-time backfill'."
+  info "Skipped. Later: Actions → Backfill queue → Run workflow (e.g. 'linkedin_backfill.yml')."
 fi
 
 # ── Summary ─────────────────────────────────────────────────────────────────────

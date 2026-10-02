@@ -104,8 +104,10 @@ jobs:
             output/csucareers_jobs.json output/scores.json
           # Stage delta directory deletions (git add -A picks up removed files)
           git add -A output/deltas/ 2>/dev/null || true
-          git diff --cached --quiet \
-            && echo "Nothing to clear (output already empty)." \
-            || git commit -m "chore: clear all job data [$(date -u '+%Y-%m-%d %H:%MZ')]"
+          if git diff --cached --quiet; then
+            echo "Nothing to clear (output already empty)."
+          else
+            git commit -m "chore: clear all job data [$(date -u '+%Y-%m-%d %H:%MZ')]"
+          fi
           git pull --no-rebase -X ours origin "$DATA_BRANCH"
           git push origin "HEAD:$DATA_BRANCH"

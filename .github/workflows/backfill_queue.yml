@@ -1,0 +1,34 @@
+name: Backfill queue
+
+# Runs backfills one after another: each starts only once the previous one has
+# finished, so none is cancelled by the shared commit queue (see
+# scripts/run-backfill-queue.sh). setup.sh starts it; you can also run it by hand.
+#
+# NOTE: deliberately NOT in the job-scraper-commit-push concurrency group. It
+# never commits; it only dispatches and waits (like the Workflow Watchdog).
+on:
+  workflow_dispatch:
+    inputs:
+      backfills:
+        description: "Workflow files, space-separated, run in this order. Add :backfill to run one with backfill=true, e.g. 'scrape_jobs.yml:backfill linkedin_backfill.yml'"
+        required: true
+        type: string
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    # GitHub stops a job after 6 hours; backfills not started by then don't run.
+    timeout-minutes: 355
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run each backfill after the previous one finishes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BACKFILLS: ${{ inputs.backfills }}
+        run: |
+          read -ra backfills <<< "$BACKFILLS"
+          bash scripts/run-backfill-queue.sh "${backfills[@]}"

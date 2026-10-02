@@ -1,19 +1,13 @@
 name: Tests
 
 on:
+  # Every change except data commits, which only touch output/ (hourly).
   push:
-    paths:
-      - "scrape_jobs.py"
-      - "scripts/sync-upstream.sh"
-      - ".github/workflows/sync_upstream.yml"
-      - "tests/**"
-      - ".github/workflows/tests.yml"
+    paths-ignore:
+      - "output/**"
   pull_request:
-    paths:
-      - "scrape_jobs.py"
-      - "scripts/sync-upstream.sh"
-      - ".github/workflows/sync_upstream.yml"
-      - "tests/**"
+    paths-ignore:
+      - "output/**"
   workflow_dispatch:
 
 jobs:

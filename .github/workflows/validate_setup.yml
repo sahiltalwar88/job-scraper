@@ -171,7 +171,6 @@ jobs:
 
       - name: Print summary
         run: |
-          REQUIRED_PASS=${{ steps.required.outputs.REQUIRED_PASS }}
           REQUIRED_FAIL=${{ steps.required.outputs.REQUIRED_FAIL }}
 
           echo ""

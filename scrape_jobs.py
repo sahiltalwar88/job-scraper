@@ -685,7 +685,6 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
     is also empty. A module-level _RATE_LIMITED flag dynamically increases the
     inter-request delay when 429s have been seen.
     """
-    global _RATE_LIMITED
     if geos is None:
         geos = LINKEDIN_GEOS
     jobs_by_id: dict[str, dict] = {}
@@ -695,7 +694,6 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
     for geo in geos:
         geo_param = f"&geoId={geo['geoId']}" if geo.get("geoId") else ""
         for term in terms:
-            term_start = pages_fetched
             for start in range(0, max_results, 10):
                 # Dynamic delay: increase when we've been rate-limited
                 delay = LINKEDIN_REQUEST_DELAY + random.uniform(0, 2)
@@ -777,7 +775,6 @@ def _linkedin_search_partition(term: str, location: str, lookback_seconds: int,
     cumulatively (e.g. day 3 uses r345600 = last 4 days), but we filter to keep
     only jobs from the target day. Earlier days are captured by their own workers.
     """
-    global _RATE_LIMITED
     jobs_by_id: dict[str, dict] = {}
     total_raw_cards = 0
     consecutive_empty = 0
@@ -2946,6 +2943,16 @@ def write_dashboard_config() -> None:
         f.write("\n")
 
 
+def _first_seen_fallback(job: dict, stamp: str) -> str:
+    """first_seen for a record that lacks it: its date_posted, else now."""
+    posted = str(job.get("date_posted") or "")[:10]
+    try:
+        datetime.strptime(posted, "%Y-%m-%d")
+    except ValueError:
+        return stamp
+    return f"{posted}T00:00:00Z"
+
+
 def _merge_into_all_jobs(new_jobs: list, source: str | None = None) -> int:
     """
     Maintain all_jobs.json — a cumulative, URL/content-deduped master of every role the
@@ -3010,9 +3017,14 @@ def _merge_into_all_jobs(new_jobs: list, source: str | None = None) -> int:
             if source and enriched > before_enriched:
                 delta_updated.append(dict(existing))
 
+    # Records from before first_seen existed age out by date_posted instead of
+    # counting as new forever; consumers rely on every record having first_seen.
+    for entry in entries:
+        if not entry.get("first_seen"):
+            entry["first_seen"] = _first_seen_fallback(entry, stamp)
     cutoff = (now - timedelta(days=ALL_JOBS_PRUNE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    kept = [j for j in entries if j.get("first_seen", stamp) >= cutoff]
-    kept.sort(key=lambda j: j.get("first_seen", ""), reverse=True)
+    kept = [j for j in entries if j["first_seen"] >= cutoff]
+    kept.sort(key=lambda j: j["first_seen"], reverse=True)
 
     with open(path, "w", encoding="utf-8") as f:
         # Compact separators: the dashboard downloads this file on every load.
@@ -3506,9 +3518,9 @@ if __name__ == "__main__":
             cap_flag = " 🚨 CAP-HIT" if s["hit_cap"] else ""
             print(f"  📦 {s['partition']}: {s['jobs']} jobs ({s['new']} new){cap_flag}")
         print()
-        print(f"  ═══════════════════════════════════════════════════════════")
+        print("  ═══════════════════════════════════════════════════════════")
         print(f"  📊 SUMMARY: {len(all_jobs)} unique jobs from {len(all_files)} partitions")
-        print(f"  ═══════════════════════════════════════════════════════════")
+        print("  ═══════════════════════════════════════════════════════════")
         # Top 10 partitions by job count
         top = sorted(partition_stats, key=lambda s: -s["jobs"])[:10]
         for s in top:
@@ -3521,9 +3533,9 @@ if __name__ == "__main__":
             print(f"  🚨🚨🚨 CAP-HIT ALERT: {len(cap_hits)} partition(s) hit the 1000-card cap:")
             for pk in cap_hits:
                 print(f"    - {pk}")
-            print(f"  These partitions may have missed results.")
-            print(f"  Recommended action: re-run those partitions with a shorter")
-            print(f"  time window (e.g. 30 min).")
+            print("  These partitions may have missed results.")
+            print("  Recommended action: re-run those partitions with a shorter")
+            print("  time window (e.g. 30 min).")
         print()
         save_linkedin_results(all_jobs)
         print(f"  ✅ Merge complete: {len(all_jobs)} jobs in linkedin_jobs.json + all_jobs.json")
@@ -3722,7 +3734,7 @@ if __name__ == "__main__":
             any_cap_hit = any_cap_hit or hit_cap
         before = len(all_jobs)
         all_jobs = [j for j in all_jobs if is_target_location(j.get("location", ""))]
-        print(f"\n🧪 Test results:")
+        print("\n🧪 Test results:")
         print(f"   Total raw cards: {total_raw}")
         print(f"   Unique jobs (pre-filter): {before}")
         print(f"   Location-filtered: {len(all_jobs)}")
@@ -3783,12 +3795,12 @@ if __name__ == "__main__":
                 }, f, indent=2, ensure_ascii=False)
             print(f"  📄 Wrote {part_path} ({len(day_jobs)} jobs)")
 
-        print(f"\n🧪 Phase 2 test results:")
+        print("\n🧪 Phase 2 test results:")
         print(f"   Total unique jobs across all day-slices: {len(all_results)}")
         print(f"   Days with jobs: "
               f"{sorted(set(j['date_posted'] for j in all_results))}")
         # Verify no cap hits on any day-slice
-        print(f"   All day-slices under cap: verified (max_results=200)")
+        print("   All day-slices under cap: verified (max_results=200)")
 
         # Test merge: simulate --linkedin-merge-backfill on just our test files
         import glob
@@ -3806,7 +3818,7 @@ if __name__ == "__main__":
                     merged_jobs.append(j)
             print(f"    {data['partition_key']}: {len(data.get('jobs', []))} jobs")
         print(f"  → Merged: {len(merged_jobs)} unique jobs")
-        print(f"\n✅ Phase 2 day-slice test complete. Test files in output/")
+        print("\n✅ Phase 2 day-slice test complete. Test files in output/")
         sys.exit(0)
 
     if "--linkedin-test" in sys.argv:
@@ -3823,17 +3835,17 @@ if __name__ == "__main__":
                                            geos=LINKEDIN_GEOS, max_results=test_max)
         before = len(jobs)
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
-        print(f"\n🧪 Test results:")
+        print("\n🧪 Test results:")
         print(f"   Raw cards fetched: {raw_cards}")
         print(f"   Keyword-matched: {before}")
         print(f"   Location-filtered: {len(jobs)}")
         print(f"   Rate-limited during run: {_RATE_LIMITED}")
         if jobs:
             from collections import Counter
-            print(f"\n   Sample titles (first 10):")
+            print("\n   Sample titles (first 10):")
             for title, count in Counter(j["title"] for j in jobs).most_common(10):
                 print(f"     {count:3d}  {title}")
-            print(f"\n   Sample locations (first 10):")
+            print("\n   Sample locations (first 10):")
             for loc, count in Counter(j["location"] for j in jobs).most_common(10):
                 print(f"     {count:3d}  {loc}")
         test_path = os.path.join(OUTPUT_DIR, "linkedin_test.json")

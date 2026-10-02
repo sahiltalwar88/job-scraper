@@ -10,7 +10,6 @@ Tests cover:
 - Filename includes source to avoid collisions
 """
 import json
-import os
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 

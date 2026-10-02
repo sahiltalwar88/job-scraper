@@ -9,7 +9,6 @@ still validate because records allow extra fields.
 import json
 from pathlib import Path
 
-import pytest
 
 SCHEMA_PATH = Path(__file__).parent.parent / "schema" / "jobs.schema.json"
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
