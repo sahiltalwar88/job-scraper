@@ -209,9 +209,9 @@ jobs:
   merge-phase2:
     name: Merge Phase 2 + commit
     needs: [emit-matrix-phase2, fanout-phase2]
-    # Also runs when Phase 2 had no work (fanout skipped), to record the run.
-    # The artifacts pattern still matches Phase 1's partitions; re-merging them
-    # is a no-op because merges dedupe by URL.
+    # Also runs when Phase 2 had no work (fanout skipped), but then only to
+    # record the run: re-merging Phase 1's artifacts (the download pattern
+    # matches them too) would re-save its results with none marked new.
     if: >-
       !cancelled() && needs.emit-matrix-phase2.result == 'success' &&
       (needs.fanout-phase2.result == 'success' || needs.fanout-phase2.result == 'skipped')
@@ -235,6 +235,7 @@ jobs:
           CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
           SCORING_PROFILE_JSON: ${{ secrets.SCORING_PROFILE_JSON }}
       - name: Download all Phase 2 artifacts
+        if: needs.fanout-phase2.result == 'success'
         uses: actions/download-artifact@v4
         with:
           pattern: linkedin-partition-*
@@ -245,6 +246,7 @@ jobs:
         # may have committed since. Puts us on DATA_BRANCH (default main).
         run: bash scripts/use-data-branch.sh
       - name: Merge partition results
+        if: needs.fanout-phase2.result == 'success'
         run: python scrape_jobs.py --linkedin-merge-backfill
       - name: Record workflow run
         run: |
