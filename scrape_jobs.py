@@ -2946,6 +2946,16 @@ def write_dashboard_config() -> None:
         f.write("\n")
 
 
+def _first_seen_fallback(job: dict, stamp: str) -> str:
+    """first_seen for a record that lacks it: its date_posted, else now."""
+    posted = str(job.get("date_posted") or "")[:10]
+    try:
+        datetime.strptime(posted, "%Y-%m-%d")
+    except ValueError:
+        return stamp
+    return f"{posted}T00:00:00Z"
+
+
 def _merge_into_all_jobs(new_jobs: list, source: str | None = None) -> int:
     """
     Maintain all_jobs.json — a cumulative, URL/content-deduped master of every role the
@@ -3010,9 +3020,14 @@ def _merge_into_all_jobs(new_jobs: list, source: str | None = None) -> int:
             if source and enriched > before_enriched:
                 delta_updated.append(dict(existing))
 
+    # Records from before first_seen existed age out by date_posted instead of
+    # counting as new forever; consumers rely on every record having first_seen.
+    for entry in entries:
+        if not entry.get("first_seen"):
+            entry["first_seen"] = _first_seen_fallback(entry, stamp)
     cutoff = (now - timedelta(days=ALL_JOBS_PRUNE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    kept = [j for j in entries if j.get("first_seen", stamp) >= cutoff]
-    kept.sort(key=lambda j: j.get("first_seen", ""), reverse=True)
+    kept = [j for j in entries if j["first_seen"] >= cutoff]
+    kept.sort(key=lambda j: j["first_seen"], reverse=True)
 
     with open(path, "w", encoding="utf-8") as f:
         # Compact separators: the dashboard downloads this file on every load.
