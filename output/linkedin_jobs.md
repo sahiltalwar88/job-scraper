@@ -1,23 +1,14 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-03 22:15 UTC*
+*Last updated: 2026-10-03 23:24 UTC*
 
-**4 new role(s)** since last run · 4 total in last 1h
+**2 new role(s)** since last run · 2 total in last 1h
 
-### [Senior Manager, Software Engineering - Remote](https://www.linkedin.com/jobs/view/4475344562/) — Optum
-- 📍 **Location:** Hartford, CT
-- 💰 **Salary:** $112,700 - $193,200 annually
+### [Senior Manager, Security Engineering](https://www.linkedin.com/jobs/view/4473459156/) — Oracle
+- 📍 **Location:** North Carolina, United States
+- 💰 **Salary:** $126,200 - $264,100 per year
 - 🕒 **Posted:** 2026-10-03
 
-### [E11EVEN - Assistant Director of Engineering](https://www.linkedin.com/jobs/view/4473880379/) — Highgate
-- 📍 **Location:** Miami, FL
-- 🕒 **Posted:** 2026-10-03
-
-### [Chief Technology & Information Officer](https://www.linkedin.com/jobs/view/4441613188/) — Education Week
-- 📍 **Location:** Bethesda, MD
-- 💰 **Salary:** $180,000–$220,000,
-- 🕒 **Posted:** 2026-10-03
-
-### [Director of Software Engineering](https://www.linkedin.com/jobs/view/4474340390/) — Ramsey Solutions
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $116,500- $200,000/year
+### [Senior Manager, Security Engineering](https://www.linkedin.com/jobs/view/4473457361/) — Oracle
+- 📍 **Location:** United States
+- 💰 **Salary:** $126,200 - $264,100 per year
 - 🕒 **Posted:** 2026-10-03
