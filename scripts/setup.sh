@@ -26,6 +26,8 @@ info() { echo -e "   $*"; }
 err()  { echo -e "${RED}✗${NC}  $*"; }
 step() { echo -e "\n${CYAN}──${NC} $*"; }
 ask()  { local prompt="$1"; local REPLY; read -r -p "   ${prompt} " REPLY; echo "$REPLY"; }
+# Lowercase without bash 4's ${var,,}: macOS ships bash 3.2.
+lower() { printf '%s' "$1" | tr '[:upper:]' '[:lower:]'; }
 
 echo ""
 echo "╔═════════════════════════════════════════════════════╗"
@@ -222,7 +224,7 @@ info "(the Backfill queue workflow, on GitHub), so you can close this window. Ho
 info "takes depends on your search: minutes for a small one, hours for a big one."
 TRIGGER=$(ask "Run backfill now? [y/N]:")
 
-if [[ "${TRIGGER,,}" =~ ^y ]]; then
+if [[ "$(lower "$TRIGGER")" =~ ^y ]]; then
   info "LinkedIn has two ways to backfill the last 7 days:"
   info "  p) parallel: splits the search into many small jobs (one per search term and"
   info "     location) that run at once. Fastest for a big search. Check its size first:"
@@ -244,7 +246,7 @@ if [[ "${TRIGGER,,}" =~ ^y ]]; then
   for wf in calcareers_watch.yml usajobs_watch.yml; do
     if is_active "$wf"; then BACKFILLS+=("$wf"); fi
   done
-  case "${LINKEDIN_MODE,,}" in
+  case "$(lower "$LINKEDIN_MODE")" in
     n*) ;;
     s*) if is_active linkedin_watch.yml; then BACKFILLS+=("linkedin_watch.yml:backfill"); fi ;;
     *)  if is_active linkedin_backfill.yml; then BACKFILLS+=("linkedin_backfill.yml"); fi ;;
