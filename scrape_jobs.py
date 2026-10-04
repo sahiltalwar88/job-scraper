@@ -556,7 +556,9 @@ def scrape_curated_employers() -> list:
 
 LINKEDIN_SEARCH_TERMS = _cfg("search_terms.linkedin", [])
 
-LINKEDIN_LOOKBACK_SECONDS = 3600          # 1h — every-2h watcher only surfaces the freshest hour
+LINKEDIN_LOOKBACK_SECONDS = 3600          # 1h: the watcher's shortest window (see _linkedin_catch_up_seconds)
+LINKEDIN_CATCH_UP_MAX_SECONDS = 24 * 3600  # longest window after missed runs
+LINKEDIN_CATCH_UP_OVERLAP_SECONDS = 600    # re-cover the edge of the last run; dupes merge
 LINKEDIN_PRIORITY_LOOKBACK_SECONDS = 86400 # 24h — priority digest is a daily 8pm PT run
 
 # Geographies to search. geoId is LinkedIn's authoritative region filter; an
@@ -753,6 +755,10 @@ def _linkedin_search(terms: list[str], lookback_seconds: int,
                         "salary": p.get("salary", ""),
                         "ats": "LinkedIn",
                     }
+            else:
+                # Every page up to max_results was full: LinkedIn had more.
+                print(f"  🚨 CAP-HIT: \"{term}\" in {geo['name']} reached {max_results} results; "
+                      f"anything beyond that in this window was not fetched.")
 
     jobs = list(jobs_by_id.values())
     jobs.sort(key=lambda j: -_iso_to_ts(j.get("date_posted", "")))
@@ -1013,10 +1019,48 @@ def _enrich_linkedin_postings(jobs: list) -> tuple[int, int]:
         )
     return salary_filled, desc_filled
 
-def scrape_linkedin_recent() -> list:
-    print(f"🔎 Scraping LinkedIn (last {LINKEDIN_LOOKBACK_SECONDS // 3600}h)...")
-    jobs, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, LINKEDIN_LOOKBACK_SECONDS,
-                                        max_results=100)
+def _linkedin_catch_up_seconds(now: datetime | None = None) -> int:
+    """How far back the watcher looks: since the last recorded LinkedIn run.
+
+    GitHub starts scheduled runs late or not at all, so a fixed one-hour window
+    misses everything posted between runs. output/workflow_runs.jsonl records
+    each committed watcher and parallel-backfill run; look back to the newest,
+    plus a little overlap, clamped to 1-24h (1h when there's no record yet).
+    """
+    now = now or datetime.now(timezone.utc)
+    last = None
+    try:
+        with open(os.path.join(OUTPUT_DIR, "workflow_runs.jsonl"), encoding="utf-8") as f:
+            for line in f:
+                try:
+                    entry = json.loads(line)
+                    if entry.get("workflow") not in ("linkedin", "linkedin-backfill-2phase"):
+                        continue
+                    ts = datetime.strptime(entry["timestamp"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+                except (ValueError, KeyError, TypeError, AttributeError):
+                    continue
+                last = ts if last is None or ts > last else last
+    except FileNotFoundError:
+        pass
+    if last is None:
+        return LINKEDIN_LOOKBACK_SECONDS
+    since = int((now - last).total_seconds()) + LINKEDIN_CATCH_UP_OVERLAP_SECONDS
+    return max(LINKEDIN_LOOKBACK_SECONDS, min(since, LINKEDIN_CATCH_UP_MAX_SECONDS))
+
+
+def _hours_label(seconds: int) -> str:
+    if seconds >= 2 * 86400:
+        return f"last {round(seconds / 86400)} days"
+    return f"last {max(1, round(seconds / 3600))}h"
+
+
+def scrape_linkedin_recent(lookback_seconds: int = LINKEDIN_LOOKBACK_SECONDS) -> list:
+    print(f"🔎 Scraping LinkedIn ({_hours_label(lookback_seconds)})...")
+    # Up to LinkedIn's 1000-per-search cap; paging stops as soon as LinkedIn
+    # runs out (a busy 24h search measured ~540 cards), so short windows cost
+    # nothing extra. A search that reaches the cap is logged as CAP-HIT.
+    jobs, raw_cards = _linkedin_search(LINKEDIN_SEARCH_TERMS, lookback_seconds,
+                                        max_results=1000)
     # Block guard (mirrors Indeed's): zero raw cards across every term means
     # LinkedIn gave us nothing — rate-limited or blocked, not a quiet hour.
     # Reuse the previous results so we don't clobber the dedupe baseline.
@@ -3136,15 +3180,15 @@ def save_jobs_output(jobs: list, *, basename: str, title: str, subtitle: str,
     print(f"📄 Saved {basename}.json/.md/.html ({len(new_jobs)} new of {len(jobs)} total)")
 
 
-def save_linkedin_results(jobs: list):
+def save_linkedin_results(jobs: list, window_seconds: int = LINKEDIN_LOOKBACK_SECONDS):
     save_jobs_output(
         jobs,
         basename="linkedin_jobs",
         title=f"🔥 LinkedIn — {PROFILE_LABEL} Roles",
-        subtitle=f"{PROFILE_SUBTITLE} · last {LINKEDIN_LOOKBACK_SECONDS // 3600}h",
+        subtitle=f"{PROFILE_SUBTITLE} · {_hours_label(window_seconds)}",
         accent="#3b82f6",
         empty_message="No new roles since the last run.",
-        window_label=f"last {LINKEDIN_LOOKBACK_SECONDS // 3600}h",
+        window_label=_hours_label(window_seconds),
         source="linkedin",
     )
 
@@ -3451,11 +3495,12 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if "--linkedin-only" in sys.argv:
-        jobs = scrape_linkedin_recent()
+        window = _linkedin_catch_up_seconds()
+        jobs = scrape_linkedin_recent(window)
         before = len(jobs)
         jobs = [j for j in jobs if is_target_location(j.get("location", ""))]
         print(f"📍 Location filter: {before} → {len(jobs)} roles")
-        save_linkedin_results(jobs)
+        save_linkedin_results(jobs, window)
         sys.exit(0)
 
     if "--linkedin-backfill" in sys.argv:
@@ -3472,7 +3517,7 @@ if __name__ == "__main__":
         if jobs:
             _enrich_linkedin_postings(jobs)
         print(f"  ✅ Backfill: {len(jobs)} role(s) found")
-        save_linkedin_results(jobs)
+        save_linkedin_results(jobs, LINKEDIN_BACKFILL_DAYS * 86400)
         sys.exit(0)
 
     if "--linkedin-backfill-term" in sys.argv:
@@ -3537,7 +3582,7 @@ if __name__ == "__main__":
             print("  Recommended action: re-run those partitions with a shorter")
             print("  time window (e.g. 30 min).")
         print()
-        save_linkedin_results(all_jobs)
+        save_linkedin_results(all_jobs, LINKEDIN_BACKFILL_DAYS * 86400)
         print(f"  ✅ Merge complete: {len(all_jobs)} jobs in linkedin_jobs.json + all_jobs.json")
         for tf in all_files:
             os.remove(tf)
