@@ -1,13 +1,8 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-04 00:43 UTC*
+*Last updated: 2026-10-04 02:58 UTC*
 
-**2 new role(s)** since last run · 2 total in last 1h
+**1 new role(s)** since last run · 1 total in last 1h
 
-### [Vice President of Engineering](https://www.linkedin.com/jobs/view/4473453609/) — Abacus Academy
+### [Senior Engineering Manager, Agent Platform & Growth](https://www.linkedin.com/jobs/view/4473469024/) — Render
 - 📍 **Location:** United States
 - 🕒 **Posted:** 2026-10-04
-
-### [Senior Director of Engineering – Horizon Catalog, Collaboration & Marketplace](https://www.linkedin.com/jobs/view/4475348588/) — Snowflake
-- 📍 **Location:** Menlo Park, CA
-- 💰 **Salary:** $340,000.00/yr - $488,700.00/yr
-- 🕒 **Posted:** 2026-10-03
