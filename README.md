@@ -140,7 +140,7 @@ In the **Actions** tab, open each active workflow and click **Run workflow**:
 
 | Workflow | Schedule | Description |
 |----------|----------|-------------|
-| **LinkedIn Watcher** | Hourly :17 PT, 5am–8pm | Last 1h of LinkedIn postings |
+| **LinkedIn Watcher** | Hourly :17 PT, 5am–8pm | LinkedIn postings since its last run (1–24h) |
 | **Priority Employer Digest** | Daily 8 PM PT | Last 24h from priority employers |
 | **LinkedIn Backfill (Parallel)** | Manual only | Two-phase historical backfill (7 days) |
 | **Backfill queue** | Manual only | Runs several backfills one after another |
@@ -160,6 +160,18 @@ To backfill several boards, run **Backfill queue** with the workflows in the ord
 | Limits | GitHub allows at most 256 jobs per phase (so at most 8 search terms with all 50 states) | Each search returns at most ~1,000 results, so busy places get cut off; LinkedIn rate-limits long runs, and GitHub stops any job after 6 hours, losing everything unsaved |
 
 Outside the US, use the Watcher's checkbox with a short list of places, and add each country to `location_filter.terms` (for example `"australia"`). The location filter otherwise drops postings in a built-in list of non-US countries, so that terms like `", ca"` for California can't match Canada.
+
+#### When GitHub skips scheduled runs
+
+GitHub starts scheduled workflows late, or skips them, when it's busy; on some days only a handful of the LinkedIn Watcher's 16 hourly slots run. Nothing is lost: each Watcher run looks back to the previous one (at least 1 hour, at most 24), so a late or skipped run is covered by the next.
+
+To keep runs close to hourly anyway, you can opt in to starting them from your own computer. It adds one hourly cron entry that starts the LinkedIn Watcher and the Priority Employer Digest in their scheduled hours, only when GitHub hasn't run them that hour. It needs the GitHub CLI (`gh`) logged in, and runs only while your computer is on (on Windows, while WSL is running):
+
+```bash
+python3 scripts/local-trigger.py install     # turn on (your fork, from this clone's origin)
+python3 scripts/local-trigger.py status      # check it, with its latest log lines
+python3 scripts/local-trigger.py uninstall   # turn off
+```
 
 ### Step 6 — Phone notifications (optional)
 
@@ -292,7 +304,7 @@ Some tests depend on the maintainer's specific `config.json` (its titles, partit
 
 | File | Source | Description |
 |------|--------|-------------|
-| `linkedin_jobs.json` / `.md` / `.html` | LinkedIn watcher | Roles in configured locations, last 1h, deduped |
+| `linkedin_jobs.json` / `.md` / `.html` | LinkedIn watcher | Roles in configured locations since the last run, deduped |
 | `jobs.json` / `.md` / `.html` | Priority-employer digest | Allowlisted employer roles, last 24h, deduped |
 | `all_jobs.json` | Accumulator | Cumulative 30-day master (feeds dashboard + triage) |
 | `notified.json` | Pushover | Notification dedup log |
@@ -324,6 +336,7 @@ By default, workflows commit job data to `main`, next to the code, and the dashb
 ├── scripts/
 │   ├── setup.sh                    # One-command GitHub setup (requires gh CLI)
 │   ├── run-backfill-queue.sh       # Runs backfills one at a time (Backfill queue workflow)
+│   ├── local-trigger.py            # Optional hourly cron that fills GitHub's skipped slots
 │   └── export-config-secret.sh     # Export config.json as single-line secret
 ├── tests/                          # Pytest acceptance test suite
 │   ├── conftest.py
@@ -334,7 +347,7 @@ By default, workflows commit job data to `main`, next to the code, and the dashb
 │   └── triage.gif                  # Dashboard demo
 ├── output/                         # Scraped data (gitignored; populated by CI)
 └── .github/workflows/
-    ├── linkedin_watch.yml          # Hourly :17 PT — LinkedIn (last 1h)
+    ├── linkedin_watch.yml          # Hourly :17 PT — LinkedIn (since its last run)
     ├── linkedin_watch_backup.yml   # Watchdog :33 PT — re-dispatches missed runs
     ├── linkedin_backfill.yml       # Manual — two-phase parallel backfill (7 days)
     ├── backfill_queue.yml          # Manual — run several backfills one after another
