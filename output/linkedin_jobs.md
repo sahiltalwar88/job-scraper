@@ -1,164 +1,157 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-07 21:57 UTC*
+*Last updated: 2026-10-07 23:00 UTC*
 
-**34 new role(s)** since last run · 50 total in last 1h
+**32 new role(s)** since last run · 80 total in last 1h
 
-### [Director, Software and Data Engineering](https://www.linkedin.com/jobs/view/4475498338/) — Xtalks
-- 📍 **Location:** Emeryville, CA
-- 💰 **Salary:** $268,000-$355,000 USD
+### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4475479834/) — The Coca-Cola Company
+- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $217,400.00/yr - $245,300.00/yr
 - 🕒 **Posted:** 2026-10-07
 
-### [Director Software Engineering](https://www.linkedin.com/jobs/view/4474475708/) — Siemens Healthineers
-- 📍 **Location:** Palo Alto, CA
-- 💰 **Salary:** $251,410 - $345,686
+### [Senior Manager IT Infrastructure](https://www.linkedin.com/jobs/view/4476947140/) — Haemonetics
+- 📍 **Location:** Hillsborough County, NH
+- 💰 **Salary:** $124,300.00-$211,700.00/Annual
 - 🕒 **Posted:** 2026-10-07
 
-### [Director Engineering](https://www.linkedin.com/jobs/view/4475477974/) — Refresco
-- 📍 **Location:** Fort Worth, TX
+### [Senior Manager IT Infrastructure](https://www.linkedin.com/jobs/view/4476939483/) — Haemonetics
+- 📍 **Location:** Middlesex County, MA
+- 💰 **Salary:** $124,300.00-$211,700.00/Annual
 - 🕒 **Posted:** 2026-10-07
 
-### [Embassy Suites Baltimore at BWI Airport - Director Engineering](https://www.linkedin.com/jobs/view/4476926790/) — Aimbridge Hospitality
-- 📍 **Location:** Linthicum Heights, MD
-- 💰 **Salary:** $80,000.00/yr - $80,000.00/yr
+### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4476948122/) — Blackstone Law, APC
+- 📍 **Location:** Beverly Hills, CA
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4475704139/) — Consilio LLC
-- 📍 **Location:** United States
+### [Director of Engineering & Development](https://www.linkedin.com/jobs/view/4475715032/) — SitelogIQ
+- 📍 **Location:** Los Angeles, CA
+- 💰 **Salary:** $145,000 - $180,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Executive Director, ERP & Value Chain Platform Engineering](https://www.linkedin.com/jobs/view/4475702236/) — The Estée Lauder Companies Inc.
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $177,100.00 to $304,500.00
+### [Director of Engineering & Development](https://www.linkedin.com/jobs/view/4475712131/) — SitelogIQ
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $145,000 - $180,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, General Engineering](https://www.linkedin.com/jobs/view/4476923862/) — Collins Aerospace
-- 📍 **Location:** Cedar Rapids, IA
-- 💰 **Salary:** $176,238.00 to $251,600.00 USD per year
+### [Director of Engineering & Development](https://www.linkedin.com/jobs/view/4475713070/) — SitelogIQ
+- 📍 **Location:** Ontario, CA
+- 💰 **Salary:** $145,000 - $180,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Technology Transformation](https://www.linkedin.com/jobs/view/4472346664/) — Blue Shield of California
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $181830.00 to $272800.00
+### [Internal Only: Director of Programs and Engineering](https://www.linkedin.com/jobs/view/4474492188/) — X-Bow Systems
+- 📍 **Location:** Luling, TX
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior VP, Technology](https://www.linkedin.com/jobs/view/4476934294/) — govconcareershub.com
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $200,000 - $350,000 USD
+### [Director Engineering Technical Support](https://www.linkedin.com/jobs/view/4474483633/) — Lamb Weston
+- 📍 **Location:** Kennewick, WA
+- 💰 **Salary:** $164,470.00 - $246,710.00
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Technology Transformation](https://www.linkedin.com/jobs/view/4472369377/) — Stellarus
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $181830.00 to $272800.00
+### [Senior Director, Engineering](https://www.linkedin.com/jobs/view/4452681845/) — Argon Medical Devices, Inc.
+- 📍 **Location:** Plano, TX
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Director, Infrastructure & Operations](https://www.linkedin.com/jobs/view/4476922713/) — Champion Windows & Home Exteriors
-- 📍 **Location:** West Chester, OH
-- 💰 **Salary:** $160,000 – $180,000
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4476931848/) — Nickerson Talent Solutions
+- 📍 **Location:** Columbus, MS
+- 💰 **Salary:** $140,000.00/yr - $180,000.00/yr
 - 🕒 **Posted:** 2026-10-07
 
-### [SAP NS2 Director, Applications and Technology Portfolio Management (APMO)](https://www.linkedin.com/jobs/view/4474477675/) — SAP
-- 📍 **Location:** Herndon, VA
-- 💰 **Salary:** $159,800.00/yr - $332,300.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Technical Executive Director, SAP Basis & Platform Operations](https://www.linkedin.com/jobs/view/4475702263/) — The Estée Lauder Companies Inc.
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $177,100.00 to $304,500.00
-- 🕒 **Posted:** 2026-10-07
-
-### [Head of Technology Portfolio & Operating Office](https://www.linkedin.com/jobs/view/4476931520/) — TD
-- 📍 **Location:** Mount Laurel, NJ
-- 💰 **Salary:** $200,000 - $280,000 USD
-- 🕒 **Posted:** 2026-10-07
-
-### [Director, Software Technical Product Management](https://www.linkedin.com/jobs/view/4476939043/) — Illumina
-- 📍 **Location:** San Diego, CA
-- 💰 **Salary:** $205,100 - $307,700
-- 🕒 **Posted:** 2026-10-07
-
-### [VP, Product Engineering](https://www.linkedin.com/jobs/view/4475700210/) — Coates Group
+### [Director Platform Engineering - SRE / Observability](https://www.linkedin.com/jobs/view/4475494769/) — Request Technology, LLC
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $242,000 - $275,000
+- 💰 **Salary:** $175,000.00/yr - $240,000.00/yr
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior FPGA Engineering Manager (Onsite)](https://www.linkedin.com/jobs/view/4476925842/) — Collins Aerospace
-- 📍 **Location:** Cedar Rapids, IA
+### [Senior Engineering Manager (REMOTE)](https://www.linkedin.com/jobs/view/4476933763/) — Fanatics
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $163,000 - $265,000 USD
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Engineering Manager, Containers](https://www.linkedin.com/jobs/view/4476925854/) — Mirantis
+### [Senior Manager, Site Reliability Engineering - Cloud Infrastructure](https://www.linkedin.com/jobs/view/4476932782/) — Futurex
+- 📍 **Location:** Bulverde, TX
+- 🕒 **Posted:** 2026-10-07
+
+### [(USA) Senior Manager, Software Engineering](https://www.linkedin.com/jobs/view/4474483577/) — VIZIO
+- 📍 **Location:** Denver, CO
+- 💰 **Salary:** $121,000.00/yr - $242,000.00/yr
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Engineering](https://www.linkedin.com/jobs/view/4476931858/) — Crusoe
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $250,000 -$300,000
+- 🕒 **Posted:** 2026-10-07
+
+### [Sr Manager, QA Engineering](https://www.linkedin.com/jobs/view/4474479695/) — TalentHop
 - 📍 **Location:** United States
 - 🕒 **Posted:** 2026-10-07
 
-### [Director of Corporate Engineering](https://www.linkedin.com/jobs/view/4452296298/) — Ports America
-- 📍 **Location:** Morristown, NJ
+### [Senior Manager – Controls and Automation Software Development](https://www.linkedin.com/jobs/view/4442698720/) — Patterson-UTI
+- 📍 **Location:** Houston, TX
 - 🕒 **Posted:** 2026-10-07
 
-### [Director of Data Engineering and Analytics](https://www.linkedin.com/jobs/view/4476927638/) — Merck
-- 📍 **Location:** Rahway, NJ
+### [Director, Broadcast Engineering](https://www.linkedin.com/jobs/view/4476938609/) — Barclays Center
+- 📍 **Location:** Brooklyn, NY
+- 💰 **Salary:** $124,500 - $130,000
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager of Software Engineering](https://www.linkedin.com/jobs/view/4476944342/) — Wallick
+- 📍 **Location:** New Albany, OH
+- 🕒 **Posted:** 2026-10-07
+
+### [Software Engineering, Senior Director](https://www.linkedin.com/jobs/view/4475718008/) — Freddie Mac
+- 📍 **Location:** McLean, VA
+- 💰 **Salary:** $228,000 - $342,000
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4474487480/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $120,000 - $306,400 per year
+- 🕒 **Posted:** 2026-10-07
+
+### [Sr. Manager, AI Platform Engineering](https://www.linkedin.com/jobs/view/4476941510/) — United Airlines
+- 📍 **Location:** Chicago, IL
+- 💰 **Salary:** $147,060.00 to $191,516.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, Ceramic Technology](https://www.linkedin.com/jobs/view/4449867969/) — Utility
+- 📍 **Location:** Englewood, CO
+- 💰 **Salary:** $200,000 - $250,000
+- 🕒 **Posted:** 2026-10-07
+
+### [Director of Data Engineering and Analytics](https://www.linkedin.com/jobs/view/4476937727/) — Merck
+- 📍 **Location:** West Point, PA
 - 💰 **Salary:** $190,800.00 - $300,300.00
 - 🕒 **Posted:** 2026-10-07
 
-### [Technical Director, PLM Platform Engineering](https://www.linkedin.com/jobs/view/4475495564/) — The Estée Lauder Companies Inc.
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $139,850.00 to $241,550.00
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475719022/) — Repligen Corporation
+- 📍 **Location:** South Carolina, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Head of Engineering - USV](https://www.linkedin.com/jobs/view/4476938131/) — Owen Daniels
-- 📍 **Location:** Virginia Beach, VA
-- 💰 **Salary:** $150,000.00/yr - $200,000.00/yr
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475496911/) — Repligen Corporation
+- 📍 **Location:** New York, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Software Engineering Manager, Global E-commerce - Global E-Commerce Core Shopping & Experience](https://www.linkedin.com/jobs/view/4475701346/) — TikTok
-- 📍 **Location:** San Jose, CA
-- 💰 **Salary:** $308000 - $588000 annually
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475718074/) — Repligen Corporation
+- 📍 **Location:** New Mexico, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476930642/) — American Family Insurance
-- 📍 **Location:** Madison, WI
-- 💰 **Salary:** $131,000.00 - $220,000.00
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475709471/) — Repligen Corporation
+- 📍 **Location:** Montana, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476926921/) — American Family Insurance
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $131,000.00 - $220,000.00
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475719025/) — Repligen Corporation
+- 📍 **Location:** Iowa, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476922953/) — American Family Insurance
-- 📍 **Location:** Madison, WI
-- 💰 **Salary:** $131,000.00 - $220,000.00
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475703640/) — Repligen Corporation
+- 📍 **Location:** Illinois, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476923984/) — American Family Insurance
-- 📍 **Location:** Boston, MA
-- 💰 **Salary:** $131,000.00 - $220,000.00
-- 🕒 **Posted:** 2026-10-07
-
-### [Sr. Manager, IT Infrastructure & Operations (Remote)](https://www.linkedin.com/jobs/view/4475496589/) — Harte Hanks
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-10-07
-
-### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4475491866/) — LHH
-- 📍 **Location:** United States
-- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Director Advanced Infrastructure Solutions (AI/HPC)](https://www.linkedin.com/jobs/view/4474677327/) — Brookfield Global Recruitment Services
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-10-07
-
-### [Director of Engineering, Digital Experience](https://www.linkedin.com/jobs/view/4474486366/) — Mission Pet Health
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-10-07
-
-### [Orlando Technology Audit & Advisory Senior Manager](https://www.linkedin.com/jobs/view/4476938183/) — Protiviti
-- 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $118,000.00 - $189,000.00
-- 🕒 **Posted:** 2026-10-07
-
-### [Hiring Event - Chief Software Engineer V](https://www.linkedin.com/jobs/view/4475490853/) — Pacific Northwest National Laboratory
-- 📍 **Location:** Richland, WA
-- 🕒 **Posted:** 2026-10-07
-
-### [Hiring Event - Chief Software Engineer V](https://www.linkedin.com/jobs/view/4475703363/) — Pacific Northwest National Laboratory
-- 📍 **Location:** Seattle, WA
+### [Senior Service Systems, Infrastructure and Analytics Manager](https://www.linkedin.com/jobs/view/4475702720/) — Repligen Corporation
+- 📍 **Location:** Missouri, United States
+- 💰 **Salary:** $134,000-$192,000
 - 🕒 **Posted:** 2026-10-07
