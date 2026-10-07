@@ -1,122 +1,164 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-07 20:44 UTC*
+*Last updated: 2026-10-07 21:57 UTC*
 
-**25 new role(s)** since last run · 58 total in last 1h
+**34 new role(s)** since last run · 50 total in last 1h
 
-### [Senior Manager, Product Development Engineering](https://www.linkedin.com/jobs/view/4460506362/) — Bradshaw Home
-- 📍 **Location:** Tampa, FL
+### [Director, Software and Data Engineering](https://www.linkedin.com/jobs/view/4475498338/) — Xtalks
+- 📍 **Location:** Emeryville, CA
+- 💰 **Salary:** $268,000-$355,000 USD
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Engineering Manager, Platform](https://www.linkedin.com/jobs/view/4474485071/) — TalentHop
-- 📍 **Location:** United States
-- 💰 **Salary:** $194,051 - $285,369 USD annually
+### [Director Software Engineering](https://www.linkedin.com/jobs/view/4474475708/) — Siemens Healthineers
+- 📍 **Location:** Palo Alto, CA
+- 💰 **Salary:** $251,410 - $345,686
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Test Engineering Manager](https://www.linkedin.com/jobs/view/4476918372/) — Sapphire Recruitment
-- 📍 **Location:** Syracuse, NY
-- 💰 **Salary:** $140,000.00/yr - $190,000.00/yr
+### [Director Engineering](https://www.linkedin.com/jobs/view/4475477974/) — Refresco
+- 📍 **Location:** Fort Worth, TX
 - 🕒 **Posted:** 2026-10-07
 
-### [Sr. Manager, OEM Process Engineering](https://www.linkedin.com/jobs/view/4474477359/) — Getinge
-- 📍 **Location:** Merrimack, NH
+### [Embassy Suites Baltimore at BWI Airport - Director Engineering](https://www.linkedin.com/jobs/view/4476926790/) — Aimbridge Hospitality
+- 📍 **Location:** Linthicum Heights, MD
+- 💰 **Salary:** $80,000.00/yr - $80,000.00/yr
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Director, Software Engineering](https://www.linkedin.com/jobs/view/4475479834/) — The Coca-Cola Company
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $217,400.00/yr - $245,300.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Head of Permitting](https://www.linkedin.com/jobs/view/4476904948/) — Mesabi Metallics
-- 📍 **Location:** Iowa, United States
-- 🕒 **Posted:** 2026-10-07
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4474469664/) — Hyatt Regency
-- 📍 **Location:** Panamá, Panama
-- 🕒 **Posted:** 2026-10-07
-
-### [VP of Platform Engineering](https://www.linkedin.com/jobs/view/4475481828/) — FutureTech Recruitment
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $400,000.00/yr - $500,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Director of Engineering and Controls, Systems Integration](https://www.linkedin.com/jobs/view/4474465968/) — Jobot
-- 📍 **Location:** Dallas, TX
-- 💰 **Salary:** $250,000.00/yr - $260,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Vice President, Technology, Innovation & AI](https://www.linkedin.com/jobs/view/4475480890/) — World Food Program USA
-- 📍 **Location:** Washington DC-Baltimore Area
-- 💰 **Salary:** $187,660.00/yr - $192,660.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [VP, Technology Strategy](https://www.linkedin.com/jobs/view/4476911968/) — Mission Rock Residential, LLC
-- 📍 **Location:** Denver, CO
-- 💰 **Salary:** $160,000 – $185,000,
-- 🕒 **Posted:** 2026-10-07
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4475480919/) — iENG Design
-- 📍 **Location:** Raleigh, NC
-- 💰 **Salary:** $150,000.00/yr - $175,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Director, Digital Analytics Architecture and Engineering](https://www.linkedin.com/jobs/view/4476926484/) — Collette
-- 📍 **Location:** Pawtucket, RI
-- 💰 **Salary:** $180,000 - $215,000
-- 🕒 **Posted:** 2026-10-07
-
-### [Vice President, Technology, Innovation & AI](https://www.linkedin.com/jobs/view/4475480917/) — World Food Program USA
-- 📍 **Location:** Washington DC-Baltimore Area
-- 💰 **Salary:** $187,660.00/yr - $192,660.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Director of Engineering](https://www.linkedin.com/jobs/view/4475700043/) — iENG Design
-- 📍 **Location:** Atlanta, GA
-- 💰 **Salary:** $150,000.00/yr - $175,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Engineering Director](https://www.linkedin.com/jobs/view/4475495266/) — Pop-Up Talent
-- 📍 **Location:** San Antonio, TX
-- 💰 **Salary:** $115,000.00/yr - $125,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Director of Programs & Engineering- Internal Applicants Only](https://www.linkedin.com/jobs/view/4474489092/) — X-Bow Systems
-- 📍 **Location:** Luling, TX
-- 🕒 **Posted:** 2026-10-07
-
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4476921573/) — Verra Mobility
-- 📍 **Location:** Mesa, AZ
-- 🕒 **Posted:** 2026-10-07
-
-### [Vice President of Infrastructure](https://www.linkedin.com/jobs/view/4475473929/) — Airwallex
+### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4475704139/) — Consilio LLC
 - 📍 **Location:** United States
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Blockchain Platform Architect – Technology Incubation – R&D](https://www.linkedin.com/jobs/view/4474475656/) — Charles Schwab
-- 📍 **Location:** Omaha, NE
-- 💰 **Salary:** $219,000.00/yr - $274,000.00/yr
+### [Executive Director, ERP & Value Chain Platform Engineering](https://www.linkedin.com/jobs/view/4475702236/) — The Estée Lauder Companies Inc.
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $177,100.00 to $304,500.00
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Blockchain Platform Architect – Technology Incubation – R&D](https://www.linkedin.com/jobs/view/4474475655/) — Charles Schwab
+### [Senior Manager, General Engineering](https://www.linkedin.com/jobs/view/4476923862/) — Collins Aerospace
+- 📍 **Location:** Cedar Rapids, IA
+- 💰 **Salary:** $176,238.00 to $251,600.00 USD per year
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, Technology Transformation](https://www.linkedin.com/jobs/view/4472346664/) — Blue Shield of California
+- 📍 **Location:** California, United States
+- 💰 **Salary:** $181830.00 to $272800.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior VP, Technology](https://www.linkedin.com/jobs/view/4476934294/) — govconcareershub.com
+- 📍 **Location:** California, United States
+- 💰 **Salary:** $200,000 - $350,000 USD
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, Technology Transformation](https://www.linkedin.com/jobs/view/4472369377/) — Stellarus
+- 📍 **Location:** California, United States
+- 💰 **Salary:** $181830.00 to $272800.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Director, Infrastructure & Operations](https://www.linkedin.com/jobs/view/4476922713/) — Champion Windows & Home Exteriors
+- 📍 **Location:** West Chester, OH
+- 💰 **Salary:** $160,000 – $180,000
+- 🕒 **Posted:** 2026-10-07
+
+### [SAP NS2 Director, Applications and Technology Portfolio Management (APMO)](https://www.linkedin.com/jobs/view/4474477675/) — SAP
+- 📍 **Location:** Herndon, VA
+- 💰 **Salary:** $159,800.00/yr - $332,300.00/yr
+- 🕒 **Posted:** 2026-10-07
+
+### [Technical Executive Director, SAP Basis & Platform Operations](https://www.linkedin.com/jobs/view/4475702263/) — The Estée Lauder Companies Inc.
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $177,100.00 to $304,500.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Head of Technology Portfolio & Operating Office](https://www.linkedin.com/jobs/view/4476931520/) — TD
+- 📍 **Location:** Mount Laurel, NJ
+- 💰 **Salary:** $200,000 - $280,000 USD
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, Software Technical Product Management](https://www.linkedin.com/jobs/view/4476939043/) — Illumina
+- 📍 **Location:** San Diego, CA
+- 💰 **Salary:** $205,100 - $307,700
+- 🕒 **Posted:** 2026-10-07
+
+### [VP, Product Engineering](https://www.linkedin.com/jobs/view/4475700210/) — Coates Group
 - 📍 **Location:** Chicago, IL
-- 💰 **Salary:** $219,000.00/yr - $274,000.00/yr
+- 💰 **Salary:** $242,000 - $275,000
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Blockchain Platform Architect – Technology Incubation – R&D](https://www.linkedin.com/jobs/view/4474479504/) — Charles Schwab
+### [Senior FPGA Engineering Manager (Onsite)](https://www.linkedin.com/jobs/view/4476925842/) — Collins Aerospace
+- 📍 **Location:** Cedar Rapids, IA
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Engineering Manager, Containers](https://www.linkedin.com/jobs/view/4476925854/) — Mirantis
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-10-07
+
+### [Director of Corporate Engineering](https://www.linkedin.com/jobs/view/4452296298/) — Ports America
+- 📍 **Location:** Morristown, NJ
+- 🕒 **Posted:** 2026-10-07
+
+### [Director of Data Engineering and Analytics](https://www.linkedin.com/jobs/view/4476927638/) — Merck
+- 📍 **Location:** Rahway, NJ
+- 💰 **Salary:** $190,800.00 - $300,300.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Technical Director, PLM Platform Engineering](https://www.linkedin.com/jobs/view/4475495564/) — The Estée Lauder Companies Inc.
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $139,850.00 to $241,550.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Head of Engineering - USV](https://www.linkedin.com/jobs/view/4476938131/) — Owen Daniels
+- 📍 **Location:** Virginia Beach, VA
+- 💰 **Salary:** $150,000.00/yr - $200,000.00/yr
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Software Engineering Manager, Global E-commerce - Global E-Commerce Core Shopping & Experience](https://www.linkedin.com/jobs/view/4475701346/) — TikTok
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $308000 - $588000 annually
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476930642/) — American Family Insurance
+- 📍 **Location:** Madison, WI
+- 💰 **Salary:** $131,000.00 - $220,000.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476926921/) — American Family Insurance
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $131,000.00 - $220,000.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476922953/) — American Family Insurance
+- 📍 **Location:** Madison, WI
+- 💰 **Salary:** $131,000.00 - $220,000.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Engineering (Hybrid)](https://www.linkedin.com/jobs/view/4476923984/) — American Family Insurance
+- 📍 **Location:** Boston, MA
+- 💰 **Salary:** $131,000.00 - $220,000.00
+- 🕒 **Posted:** 2026-10-07
+
+### [Sr. Manager, IT Infrastructure & Operations (Remote)](https://www.linkedin.com/jobs/view/4475496589/) — Harte Hanks
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Engineering Manager](https://www.linkedin.com/jobs/view/4475491866/) — LHH
+- 📍 **Location:** United States
+- 💰 **Salary:** $225,000.00/yr - $250,000.00/yr
+- 🕒 **Posted:** 2026-10-07
+
+### [Director Advanced Infrastructure Solutions (AI/HPC)](https://www.linkedin.com/jobs/view/4474677327/) — Brookfield Global Recruitment Services
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-10-07
+
+### [Director of Engineering, Digital Experience](https://www.linkedin.com/jobs/view/4474486366/) — Mission Pet Health
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-10-07
+
+### [Orlando Technology Audit & Advisory Senior Manager](https://www.linkedin.com/jobs/view/4476938183/) — Protiviti
 - 📍 **Location:** Orlando, FL
-- 💰 **Salary:** $219,000.00/yr - $274,000.00/yr
+- 💰 **Salary:** $118,000.00 - $189,000.00
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Blockchain Platform Architect – Technology Incubation – R&D](https://www.linkedin.com/jobs/view/4474476574/) — Charles Schwab
-- 📍 **Location:** Southlake, TX
-- 💰 **Salary:** $219,000.00/yr - $274,000.00/yr
+### [Hiring Event - Chief Software Engineer V](https://www.linkedin.com/jobs/view/4475490853/) — Pacific Northwest National Laboratory
+- 📍 **Location:** Richland, WA
 - 🕒 **Posted:** 2026-10-07
 
-### [Director, Blockchain Platform Architect – Technology Incubation – R&D](https://www.linkedin.com/jobs/view/4474492011/) — Charles Schwab
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $219,000.00/yr - $274,000.00/yr
-- 🕒 **Posted:** 2026-10-07
-
-### [Director, Blockchain Platform Architect – Technology Incubation – R&D](https://www.linkedin.com/jobs/view/4474481470/) — Charles Schwab
-- 📍 **Location:** San Francisco, CA
-- 💰 **Salary:** $219,000.00/yr - $274,000.00/yr
+### [Hiring Event - Chief Software Engineer V](https://www.linkedin.com/jobs/view/4475703363/) — Pacific Northwest National Laboratory
+- 📍 **Location:** Seattle, WA
 - 🕒 **Posted:** 2026-10-07
