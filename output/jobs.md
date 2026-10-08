@@ -1,76 +1,110 @@
 # 🏛 Priority Employers — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-07 13:26 UTC*
+*Last updated: 2026-10-08 06:38 UTC*
 
-**16 new role(s)** since last run · 42 total in last 24h
+**24 new role(s)** since last run · 40 total in last 24h
 
-### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4446255959/) — Oracle
-- 📍 **Location:** Redwood City, CA
-- 💰 **Salary:** $122,500 - $355,400 per year
-- 🕒 **Posted:** 2026-10-07
-
-### [Director, Cybersecurity Engineering](https://www.linkedin.com/jobs/view/4467958314/) — PayPal
-- 📍 **Location:** Scottsdale, AZ
-- 💰 **Salary:** $188,000.00 - $279,400.00 Annually
-- 🕒 **Posted:** 2026-10-07
-
-### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4445862513/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-10-07
-
-### [Senior Manager, Network Development Engineering](https://www.linkedin.com/jobs/view/4465585240/) — Oracle
-- 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $146,300 - $306,400 per year
-- 🕒 **Posted:** 2026-10-07
-
-### [Senior Manager, Platform Software Engineering, AI Acceleration, Developer Tools](https://www.linkedin.com/jobs/view/4465598089/) — Oracle
-- 📍 **Location:** United States
-- 💰 **Salary:** $120,000 - $306,400 per year
-- 🕒 **Posted:** 2026-10-07
-
-### [Senior Manager, Software Engineering - Slack Core Mobile](https://www.linkedin.com/jobs/view/4466574571/) — Salesforce
+### [Director, Security Software Engineering, Google Cloud](https://www.linkedin.com/jobs/view/4475725302/) — Google
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $172,500 - $260,100 annually
-- 🕒 **Posted:** 2026-10-07
+- 💰 **Salary:** $307000 - $427000
+- 🕒 **Posted:** 2026-10-08
 
-### [Senior Engineering Manager, LMTS - Qualified](https://www.linkedin.com/jobs/view/4458261978/) — Salesforce
+### [Senior Director, ATE Test Development](https://www.linkedin.com/jobs/view/4475705906/) — NVIDIA
+- 📍 **Location:** Santa Clara, CA
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr Manager, Engineering - Engineer](https://www.linkedin.com/jobs/view/4476970525/) — Uber
+- 📍 **Location:** Sunnyvale, CA
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr. Engineering Manager, Core Services - Slack](https://www.linkedin.com/jobs/view/4476964367/) — Salesforce
 - 📍 **Location:** Seattle, WA
 - 💰 **Salary:** $172,500 - $260,100 annually
-- 🕒 **Posted:** 2026-10-07
+- 🕒 **Posted:** 2026-10-08
 
-### [Senior Director of Power Generation Operations (Nashville, TN)](https://www.linkedin.com/jobs/view/4446224871/) — Oracle
+### [Sr Manager Software Dev, Advertising Full Funnel Agentic Intelligence](https://www.linkedin.com/jobs/view/4476958318/) — Amazon
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr. Manager, Prototyping AI and Customer Engineering, AWS Prototyping and AI Customer Engineering (PACE)](https://www.linkedin.com/jobs/view/4476940939/) — Amazon Web Services (AWS)
+- 📍 **Location:** Jersey City, NJ
+- 🕒 **Posted:** 2026-10-08
+
+### [Director, Platform Software Engineering](https://www.linkedin.com/jobs/view/4477111013/) — Oracle
 - 📍 **Location:** Nashville, TN
-- 💰 **Salary:** $161,700 - $338,500 per year
+- 💰 **Salary:** $122,500 - $355,400 per year
+- 🕒 **Posted:** 2026-10-08
+
+### [Director, Hydrodynamics](https://www.linkedin.com/jobs/view/4475737893/) — Carnival UK (P&O Cruises & Cunard)
+- 📍 **Location:** Southampton, England, United Kingdom
+- 🕒 **Posted:** 2026-10-08
+
+### [Director AI Engineering (Remote Eligible)](https://www.linkedin.com/jobs/view/4476746503/) — Capital One
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $244,700 - $279,200
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Software Engineering, Missionforce](https://www.linkedin.com/jobs/view/4476597015/) — SalesForce-ad
-- 📍 **Location:** Hyderabad, Telangana, India
+### [Director, Rack Scale Software Architecture](https://www.linkedin.com/jobs/view/4422066408/) — NVIDIA
+- 📍 **Location:** Austin, TX
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Software Engineering Manager](https://www.linkedin.com/jobs/view/4476727166/) — Microsoft
-- 📍 **Location:** Hyderabad, Telangana, India
+### [Head of Infrastructure Security Engineering - EDA Clusters](https://www.linkedin.com/jobs/view/4466592527/) — NVIDIA
+- 📍 **Location:** California, United States
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Forward Deployed Engineering](https://www.linkedin.com/jobs/view/4412556724/) — Databricks
-- 📍 **Location:** Paris, Île-de-France, France
+### [Director, Machine Learning Engineer](https://www.linkedin.com/jobs/view/4476756213/) — Capital One
+- 📍 **Location:** McLean, VA
+- 💰 **Salary:** $269,100 - $307,200
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Manager, Platform Software Engineering (Full Stack))](https://www.linkedin.com/jobs/view/4434536166/) — Oracle
-- 📍 **Location:** Casablanca-Settat, Morocco
+### [Sr. Manager, Software Development, WW Sustainability](https://www.linkedin.com/jobs/view/4465581679/) — Amazon
+- 📍 **Location:** Seattle, WA
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Software Engineer Manager](https://www.linkedin.com/jobs/view/4476717512/) — Microsoft
-- 📍 **Location:** Bengaluru, Karnataka, India
+### [Senior Manager, Platform Software Engineering](https://www.linkedin.com/jobs/view/4474487480/) — Oracle
+- 📍 **Location:** Nashville, TN
+- 💰 **Salary:** $120,000 - $306,400 per year
 - 🕒 **Posted:** 2026-10-07
 
-### [Sr. Manager, Field Engineering](https://www.linkedin.com/jobs/view/4456549073/) — Databricks
-- 📍 **Location:** Seoul, Seoul, South Korea
+### [Senior Software Engineering Manager, Global E-commerce - Global E-Commerce Core Shopping & Experience](https://www.linkedin.com/jobs/view/4475701346/) — TikTok
+- 📍 **Location:** San Jose, CA
+- 💰 **Salary:** $308000 - $588000 annually
 - 🕒 **Posted:** 2026-10-07
 
-### [Senior Engineering Manager - Continuous Deployment](https://www.linkedin.com/jobs/view/4467720542/) — GitLab
-- 📍 **Location:** Bengaluru, Karnataka, India
+### [Sr. Software Development Manager, Relational Database Services](https://www.linkedin.com/jobs/view/4467935049/) — Amazon Web Services (AWS)
+- 📍 **Location:** Austin, TX
 - 🕒 **Posted:** 2026-10-07
 
-### [Vice President, Technology Strategy & Engineering](https://www.linkedin.com/jobs/view/4475433560/) — Citadel Credit Union
-- 📍 **Location:** Exton, PA
+### [Head of Gov Compute Delivery, EC2 Gov](https://www.linkedin.com/jobs/view/4467999445/) — Amazon Web Services (AWS)
+- 📍 **Location:** Denver, CO
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Software Engineering Manager, Google Cloud Storage Semantic Search](https://www.linkedin.com/jobs/view/4475462248/) — Google
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $262000 - $364000
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, AI Research](https://www.linkedin.com/jobs/view/4447315886/) — AMD
+- 📍 **Location:** Santa Clara, CA
+- 💰 **Salary:** $246,400.00/yr - $369,600.00/yr
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, Operational Technology Security](https://www.linkedin.com/jobs/view/4475461247/) — Google
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $256000 - $356000
+- 🕒 **Posted:** 2026-10-07
+
+### [Director of Software Development India, Alexa Ambient Computing Technologies](https://www.linkedin.com/jobs/view/4468202397/) — Amazon
+- 📍 **Location:** Chennai, Tamil Nadu, India
+- 🕒 **Posted:** 2026-10-07
+
+### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4467984166/) — Capital One
+- 📍 **Location:** Toronto, Ontario, Canada
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Software Development Manager, S3](https://www.linkedin.com/jobs/view/4467933036/) — Amazon Web Services (AWS)
+- 📍 **Location:** Vancouver, British Columbia, Canada
+- 🕒 **Posted:** 2026-10-07
+
+### [Senior Manager, Firmware Engineering, Modem Protocol Stack](https://www.linkedin.com/jobs/view/4466507908/) — Google
+- 📍 **Location:** Banqiao District, New Taipei City, Taiwan
 - 🕒 **Posted:** 2026-10-07
