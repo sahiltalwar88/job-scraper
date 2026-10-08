@@ -1,30 +1,34 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-08 02:58 UTC*
+*Last updated: 2026-10-08 03:54 UTC*
 
-**6 new role(s)** since last run · 31 total in last 1h
+**7 new role(s)** since last run · 30 total in last 1h
 
-### [Director – Business Transformation](https://www.linkedin.com/jobs/view/4475712947/) — Intellectt Inc
-- 📍 **Location:** Towson, MD
-- 💰 **Salary:** $90.00/hr - $120.00/hr
+### [Senior Manager, Platform Engineering](https://www.linkedin.com/jobs/view/4476982470/) — Vanguard
+- 📍 **Location:** Wayne, PA
 - 🕒 **Posted:** 2026-10-08
 
-### [Product Engineering Manager | SR WVB](https://www.linkedin.com/jobs/view/4475734221/) — Texas Instruments
-- 📍 **Location:** Phoenix, AZ
+### [Director of Engineering](https://www.linkedin.com/jobs/view/4476984354/) — Amphenol Communications Solutions
+- 📍 **Location:** Harrisburg, PA
 - 🕒 **Posted:** 2026-10-08
 
-### [Chief Technology Officer](https://www.linkedin.com/jobs/view/4476761715/) — Gizmo
-- 📍 **Location:** Texas City, TX
+### [Sr Director of Software Engineering](https://www.linkedin.com/jobs/view/4476983360/) — JPMorganChase
+- 📍 **Location:** Columbus, OH
 - 🕒 **Posted:** 2026-10-08
 
-### [Director, Software Engineering](https://www.linkedin.com/jobs/view/4475719788/) — American Traffic Solutions
-- 📍 **Location:** Mesa, AZ
+### [Sr Director, Payments Engineering](https://www.linkedin.com/jobs/view/4474801781/) — Zuora Community
+- 📍 **Location:** Foster City, CA
+- 💰 **Salary:** $303,600—$417,450 USD
 - 🕒 **Posted:** 2026-10-08
 
-### [Director, Pipeline Engineering](https://www.linkedin.com/jobs/view/4476968887/) — Nscale
-- 📍 **Location:** Houston, TX
-- 💰 **Salary:** $170,000—$290,000 USD
+### [Head of Digital Engineering, APAC](https://www.linkedin.com/jobs/view/4476967971/) — GTS Consulting
+- 📍 **Location:** Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
 - 🕒 **Posted:** 2026-10-08
 
-### [Senior Workplace Operations Manager - AI, Technology, and Innovation](https://www.linkedin.com/jobs/view/4476971916/) — CBRE
-- 📍 **Location:** San Jose, CA
+### [Head of Engineering](https://www.linkedin.com/jobs/view/4470924095/) — Fintonia Group
+- 📍 **Location:** WP. Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+- 🕒 **Posted:** 2026-10-08
+
+### [Senior Manager AI Platform Architecture](https://www.linkedin.com/jobs/view/4430244296/) — ECLARO
+- 📍 **Location:** Bolingbrook, IL
+- 💰 **Salary:** $160,000.00/yr - $190,000.00/yr
 - 🕒 **Posted:** 2026-10-08
