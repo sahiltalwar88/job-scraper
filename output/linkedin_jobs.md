@@ -1,77 +1,92 @@
 # 🔥 LinkedIn — Sahil Talwar — Engineering Leadership Roles
-*Last updated: 2026-10-08 01:10 UTC*
+*Last updated: 2026-10-08 01:51 UTC*
 
-**16 new role(s)** since last run · 120 total in last 1h
+**18 new role(s)** since last run · 66 total in last 1h
 
-### [Director of Robotic Engineering](https://www.linkedin.com/jobs/view/4475720216/) — Eccalon, LLC
-- 📍 **Location:** Detroit, MI
+### [Director of Data Engineering and Analytics](https://www.linkedin.com/jobs/view/4476959633/) — MSD Ireland
+- 📍 **Location:** Rahway, NJ
+- 💰 **Salary:** $190,800.00 - $300,300.00
 - 🕒 **Posted:** 2026-10-08
 
-### [Director of Data Engineering and Analytics](https://www.linkedin.com/jobs/view/4474491571/) — TGH Senior Center Powered by Greenbrook Medical
+### [Director, Client Platform Engineering](https://www.linkedin.com/jobs/view/4474802074/) — Workday
+- 📍 **Location:** Pleasanton, CA
+- 💰 **Salary:** $198,700 USD - $298,100 USD
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr. Engineering Manager, Core Services - Slack](https://www.linkedin.com/jobs/view/4476964367/) — Salesforce
+- 📍 **Location:** Seattle, WA
+- 💰 **Salary:** $172,500 - $260,100 annually
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr. Engineering Manager, Core Services - Slack](https://www.linkedin.com/jobs/view/4476955769/) — Salesforce
+- 📍 **Location:** Atlanta, GA
+- 💰 **Salary:** $172,500 - $260,100 annually
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr. Engineering Manager, Core Services - Slack](https://www.linkedin.com/jobs/view/4476971201/) — Salesforce
+- 📍 **Location:** San Francisco, CA
+- 💰 **Salary:** $172,500 - $260,100 annually
+- 🕒 **Posted:** 2026-10-08
+
+### [Senior Director, Agentic Engineering](https://www.linkedin.com/jobs/view/4476799802/) — Truist
+- 📍 **Location:** Charlotte, NC
+- 💰 **Salary:** $240,000 - $360,000
+- 🕒 **Posted:** 2026-10-08
+
+### [Director, Security Software Engineering, Google Cloud](https://www.linkedin.com/jobs/view/4475725302/) — Google
 - 📍 **Location:** New York, NY
-- 💰 **Salary:** $160,000–$190,000
+- 💰 **Salary:** $307000 - $427000
 - 🕒 **Posted:** 2026-10-08
 
-### [Director of Data Engineering and Analytics](https://www.linkedin.com/jobs/view/4474483913/) — Greenbrook Medical
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $160,000–$190,000
+### [Director, Security Software Engineering, Google Cloud](https://www.linkedin.com/jobs/view/4475734023/) — Google
+- 📍 **Location:** Sunnyvale, CA
+- 💰 **Salary:** $307000 - $427000
 - 🕒 **Posted:** 2026-10-08
 
-### [Senior Manager, Software Development Engineering - Lodging Connectivity](https://www.linkedin.com/jobs/view/4475701978/) — Expedia Group
-- 📍 **Location:** Austin, TX
-- 💰 **Salary:** $184,500.00/yr - $258,000.00/yr
+### [Systems Director - Space-Based Interceptor Ground Segment Engineering](https://www.linkedin.com/jobs/view/4474800152/) — The Aerospace Corporation
+- 📍 **Location:** Huntsville, AL
+- 💰 **Salary:** $168,200.00 - $252,400.00
 - 🕒 **Posted:** 2026-10-08
 
-### [Senior Engineering Manager, Loyalty](https://www.linkedin.com/jobs/view/4475708800/) — Expedia Group
-- 📍 **Location:** Seattle, WA
-- 💰 **Salary:** $184,500.00/yr - $258,000.00/yr
+### [Systems Director - Space-Based Interceptor Space Segment Engineering](https://www.linkedin.com/jobs/view/4474802107/) — The Aerospace Corporation
+- 📍 **Location:** Huntsville, AL
+- 💰 **Salary:** $168,200.00 - $252,400.00
 - 🕒 **Posted:** 2026-10-08
 
-### [Sr Manager Software Dev, Advertising Full Funnel Agentic Intelligence](https://www.linkedin.com/jobs/view/4476958318/) — Amazon
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-10-08
-
-### [Sr. Manager, Prototyping AI and Customer Engineering, AWS Prototyping and AI Customer Engineering (PACE)](https://www.linkedin.com/jobs/view/4476940939/) — Amazon Web Services (AWS)
-- 📍 **Location:** Jersey City, NJ
-- 🕒 **Posted:** 2026-10-08
-
-### [Sr Manager Software Dev, Advertising Full Funnel Agentic Intelligence](https://www.linkedin.com/jobs/view/4476949749/) — Amazon
-- 📍 **Location:** Seattle, WA
-- 🕒 **Posted:** 2026-10-08
-
-### [Director, Infrastructure & IT Operations](https://www.linkedin.com/jobs/view/4476953637/) — Swooped
+### [Cybersecurity Engineering & Operations Director](https://www.linkedin.com/jobs/view/4476966553/) — Onit
 - 📍 **Location:** United States
-- 💰 **Salary:** $170,000.00/yr - $180,000.00/yr
+- 💰 **Salary:** $150,000 - $190,000
 - 🕒 **Posted:** 2026-10-08
 
-### [Sr Director, Payments Engineering](https://www.linkedin.com/jobs/view/4476955641/) — Zuora
-- 📍 **Location:** Foster City, CA
-- 💰 **Salary:** $303,600—$417,450 USD
+### [Director, Software Engineering – Acute Devices](https://www.linkedin.com/jobs/view/4474801153/) — Vantive
+- 📍 **Location:** Minneapolis, MN
+- 💰 **Salary:** $200,000 - $275,000 annually
 - 🕒 **Posted:** 2026-10-08
 
-### [Engineering Manager Senior](https://www.linkedin.com/jobs/view/4475707995/) — FactorlT
-- 📍 **Location:** Mexico City, Mexico
+### [Director of Engineering, Brokerage Platform](https://www.linkedin.com/jobs/view/4474488773/) — Robinhood
+- 📍 **Location:** Menlo Park, CA
+- 💰 **Salary:** $294,000—$345,000 USD
 - 🕒 **Posted:** 2026-10-08
 
-### [Sr. Director of Network Infrastructure and Planning](https://www.linkedin.com/jobs/view/4474494420/) — Alaska Communications
-- 📍 **Location:** Anchorage, AK
-- 💰 **Salary:** $161,475.00 - $215,299.00
+### [Sr Manager, Process Engineering](https://www.linkedin.com/jobs/view/4463572429/) — Gilead Sciences
+- 📍 **Location:** Santa Monica, CA
+- 💰 **Salary:** $153,935.00 - $199,210.00
 - 🕒 **Posted:** 2026-10-08
 
-### [Sr. Director of Network Infrastructure and Planning](https://www.linkedin.com/jobs/view/4474804008/) — Alaska Communications
-- 📍 **Location:** Colorado, United States
-- 💰 **Salary:** $161,475.00 - $215,299.00
+### [Senior Director, Infrastructure & Operations](https://www.linkedin.com/jobs/view/4475735043/) — Great Day Improvements
+- 📍 **Location:** Twinsburg, OH
+- 💰 **Salary:** $160,000 - $180,000
 - 🕒 **Posted:** 2026-10-08
 
-### [Senior Engineering Manager, OLO](https://www.linkedin.com/jobs/view/4474592949/) — Owner.com
+### [Sr Manager, Engineering - Engineer](https://www.linkedin.com/jobs/view/4476977245/) — Uber
+- 📍 **Location:** Seattle, WA
+- 🕒 **Posted:** 2026-10-08
+
+### [Sr Manager, Engineering - Engineer](https://www.linkedin.com/jobs/view/4476970525/) — Uber
+- 📍 **Location:** Sunnyvale, CA
+- 🕒 **Posted:** 2026-10-08
+
+### [Senior Manager - Digital Engineering](https://www.linkedin.com/jobs/view/4476355824/) — Ferguson
 - 📍 **Location:** United States
-- 💰 **Salary:** $250K-$270K
+- 💰 **Salary:** $9,458.97 - $16,551.03
 - 🕒 **Posted:** 2026-10-08
-
-### [Director Information Technology Operations](https://www.linkedin.com/jobs/view/4476951968/) — Swooped
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-10-08
-
-### [Senior Director, ATE Test Development](https://www.linkedin.com/jobs/view/4475705906/) — NVIDIA
-- 📍 **Location:** Santa Clara, CA
-- 🕒 **Posted:** 2026-10-07
